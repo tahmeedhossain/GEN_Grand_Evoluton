@@ -1,0 +1,4448 @@
+{
+ "branch": {
+  "id": "HEP",
+  "title": "Standard Model Epistemic Graph",
+  "btype": "H",
+  "source": "tahmeedhossain/GEN_HEP, data/v1.2_sm_epistemic_graph.json",
+  "version": "1.2",
+  "time_axis": "step (1..12) of the historical sequence",
+  "native_layers": [
+   "S",
+   "M",
+   "O"
+  ],
+  "layer_map": {
+   "S": "S",
+   "M": "M",
+   "O": "O"
+  },
+  "notes": "Edges: s2m, m2o (pred/fit/frame/cand), m2s back-edge, m2m lineage; AND routes with (sector, n) and (group, n) legs. Generic layer edges (from/to the whole state layer) are expanded to one route per state node and flagged generic."
+ },
+ "nodes": [
+  {
+   "uid": "HEP:H1",
+   "branch": "HEP",
+   "native_id": "H1",
+   "label": "H_{1} — one-particle Hilbert space",
+   "layer": "S",
+   "sublayer": "S.hilbert",
+   "native_layer": "state",
+   "era": "quantum",
+   "t": 1,
+   "concept": "hilbert_state",
+   "extra": {
+    "kind": "hilbert",
+    "sub": "rays |ψ⟩; no particle-number degree of freedom",
+    "years": "1925–32",
+    "desc": "A state is a ray in a separable Hilbert space H_{1}. The space describes exactly one particle: there is no operator in the one-particle framework whose eigenvalue is a particle number.",
+    "refs": [
+     "von Neumann 1932"
+    ],
+    "steps_present": [
+     1
+    ],
+    "in_final": false,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:u_vac",
+   "branch": "HEP",
+   "native_id": "u_vac",
+   "label": "p^{μ} = 0",
+   "layer": "S",
+   "sublayer": "S.uir",
+   "native_layer": "state",
+   "era": "quantum",
+   "t": 2,
+   "concept": null,
+   "extra": {
+    "kind": "uir",
+    "sub": "trivial representation (vacuum)",
+    "inst": "becomes |0⟩ of every Fock sector",
+    "years": "1939",
+    "steps_present": [
+     2,
+     3
+    ],
+    "in_final": false,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:u_m0",
+   "branch": "HEP",
+   "native_id": "u_m0",
+   "label": "m > 0, s = 0",
+   "layer": "S",
+   "sublayer": "S.uir",
+   "native_layer": "state",
+   "era": "quantum",
+   "t": 2,
+   "concept": null,
+   "extra": {
+    "kind": "uir",
+    "sub": "massive scalar; little group SO(3)",
+    "inst": "no instance in 1939 (π^{±} 1947, H 2012)",
+    "years": "1939",
+    "steps_present": [
+     2,
+     3
+    ],
+    "in_final": false,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:u_mh",
+   "branch": "HEP",
+   "native_id": "u_mh",
+   "label": "m > 0, s = ½",
+   "layer": "S",
+   "sublayer": "S.uir",
+   "native_layer": "state",
+   "era": "quantum",
+   "t": 2,
+   "concept": null,
+   "extra": {
+    "kind": "uir",
+    "sub": "massive spinor",
+    "inst": "e^{−} (1897), p (1919), n (1932), μ (1937)",
+    "years": "1939",
+    "steps_present": [
+     2,
+     3
+    ],
+    "in_final": false,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:u_m1",
+   "branch": "HEP",
+   "native_id": "u_m1",
+   "label": "m > 0, s = 1",
+   "layer": "S",
+   "sublayer": "S.uir",
+   "native_layer": "state",
+   "era": "quantum",
+   "t": 2,
+   "concept": null,
+   "extra": {
+    "kind": "uir",
+    "sub": "massive vector",
+    "inst": "no instance in 1939 (ρ 1961; W, Z 1983)",
+    "years": "1939",
+    "steps_present": [
+     2,
+     3
+    ],
+    "in_final": false,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:u_0h",
+   "branch": "HEP",
+   "native_id": "u_0h",
+   "label": "m = 0, h = ±½",
+   "layer": "S",
+   "sublayer": "S.uir",
+   "native_layer": "state",
+   "era": "quantum",
+   "t": 2,
+   "concept": null,
+   "extra": {
+    "kind": "uir",
+    "sub": "massless; little group ISO(2), helicity ½",
+    "inst": "ν (hypothesis 1930; detected 1956)",
+    "years": "1939",
+    "steps_present": [
+     2,
+     3
+    ],
+    "in_final": false,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:u_01",
+   "branch": "HEP",
+   "native_id": "u_01",
+   "label": "m = 0, h = ±1",
+   "layer": "S",
+   "sublayer": "S.uir",
+   "native_layer": "state",
+   "era": "quantum",
+   "t": 2,
+   "concept": null,
+   "extra": {
+    "kind": "uir",
+    "sub": "massless, helicity 1",
+    "inst": "γ",
+    "years": "1939",
+    "steps_present": [
+     2,
+     3
+    ],
+    "in_final": false,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:u_02",
+   "branch": "HEP",
+   "native_id": "u_02",
+   "label": "m = 0, h = ±2",
+   "layer": "S",
+   "sublayer": "S.uir",
+   "native_layer": "state",
+   "era": "quantum",
+   "t": 2,
+   "concept": null,
+   "extra": {
+    "kind": "uir",
+    "sub": "massless, helicity 2",
+    "inst": "graviton (hypothetical; not detected)",
+    "years": "1939",
+    "steps_present": [
+     2,
+     3
+    ],
+    "in_final": false,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:u_cs",
+   "branch": "HEP",
+   "native_id": "u_cs",
+   "label": "m = 0, continuous spin",
+   "layer": "S",
+   "sublayer": "S.uir",
+   "native_layer": "state",
+   "era": "quantum",
+   "t": 2,
+   "concept": null,
+   "extra": {
+    "kind": "uir",
+    "dashed": true,
+    "sub": "infinite-dimensional ISO(2) representations",
+    "inst": "no known instance",
+    "years": "1939",
+    "steps_present": [
+     2,
+     3
+    ],
+    "in_final": false,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:u_tach",
+   "branch": "HEP",
+   "native_id": "u_tach",
+   "label": "m^{2} < 0",
+   "layer": "S",
+   "sublayer": "S.uir",
+   "native_layer": "state",
+   "era": "quantum",
+   "t": 2,
+   "concept": null,
+   "extra": {
+    "kind": "uir",
+    "dashed": true,
+    "sub": "tachyonic; little group SO(2,1)",
+    "inst": "no known instance",
+    "years": "1939",
+    "steps_present": [
+     2,
+     3
+    ],
+    "in_final": false,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:s_e",
+   "branch": "HEP",
+   "native_id": "s_e",
+   "label": "e^{−}",
+   "layer": "S",
+   "sublayer": "S.sector",
+   "native_layer": "state",
+   "era": "quantum",
+   "t": 4,
+   "concept": "electron_field",
+   "extra": {
+    "kind": "sector",
+    "uir": "m>0, s=½",
+    "stat": "f",
+    "years": "1897 / field 1928",
+    "desc": "Fock sector built on the electron UIR. The Dirac field ψ_{e} annihilates e^{−} and creates e^{+}, so the N-particle nodes count electrons and positrons together.",
+    "refs": [
+     "Dirac 1928",
+     "Anderson 1933"
+    ],
+    "steps_present": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "in_final": true,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:s_p",
+   "branch": "HEP",
+   "native_id": "s_p",
+   "label": "p",
+   "layer": "S",
+   "sublayer": "S.sector",
+   "native_layer": "state",
+   "era": "quantum",
+   "t": 4,
+   "concept": null,
+   "extra": {
+    "kind": "sector",
+    "uir": "m>0, s=½",
+    "stat": "f",
+    "years": "1919",
+    "desc": "Proton sector (Rutherford 1919). Treated as elementary in Fermi's theory; replaced by quark sectors at Step 9 (the proton is a bound state of the strong sector, which is outside this graph).",
+    "steps_present": [
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "in_final": false,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:s_n",
+   "branch": "HEP",
+   "native_id": "s_n",
+   "label": "n",
+   "layer": "S",
+   "sublayer": "S.sector",
+   "native_layer": "state",
+   "era": "quantum",
+   "t": 4,
+   "concept": null,
+   "extra": {
+    "kind": "sector",
+    "uir": "m>0, s=½",
+    "stat": "f",
+    "years": "1932",
+    "desc": "Neutron sector (Chadwick 1932). Replaced by quark sectors at Step 9.",
+    "refs": [
+     "Chadwick 1932"
+    ],
+    "steps_present": [
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "in_final": false,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:s_nu",
+   "branch": "HEP",
+   "native_id": "s_nu",
+   "label": "ν",
+   "layer": "S",
+   "sublayer": "S.sector",
+   "native_layer": "state",
+   "era": "quantum",
+   "t": 4,
+   "concept": null,
+   "extra": {
+    "kind": "sector",
+    "uir": "m=0, h=∓½",
+    "stat": "f",
+    "years": "1930 / 1956",
+    "desc": "Neutrino sector as assumed from Pauli (1930) to 1962: a single massless species. Detected by Cowan & Reines (1956). Split into ν_{e} and ν_{μ} at Step 7.",
+    "refs": [
+     "Cowan et al. 1956"
+    ],
+    "steps_present": [
+     4,
+     5,
+     6
+    ],
+    "in_final": false,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:s_g",
+   "branch": "HEP",
+   "native_id": "s_g",
+   "label": "γ",
+   "layer": "S",
+   "sublayer": "S.sector",
+   "native_layer": "state",
+   "era": "quantum",
+   "t": 4,
+   "concept": "photon",
+   "extra": {
+    "kind": "sector",
+    "uir": "m=0, h=±1",
+    "stat": "b",
+    "years": "field 1927",
+    "desc": "Photon sector: the quantized radiation field A_{μ} of Dirac (1927). Bosonic ladder: symmetrized N-photon states.",
+    "refs": [
+     "Dirac 1927"
+    ],
+    "steps_present": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "in_final": true,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:s_mu",
+   "branch": "HEP",
+   "native_id": "s_mu",
+   "label": "μ",
+   "layer": "S",
+   "sublayer": "S.sector",
+   "native_layer": "state",
+   "era": "quantum",
+   "t": 7,
+   "concept": null,
+   "extra": {
+    "kind": "sector",
+    "uir": "m>0, s=½",
+    "stat": "f",
+    "years": "1937",
+    "desc": "Muon sector (Neddermeyer & Anderson 1937). Shown not to be Yukawa's strongly interacting meson by Conversi, Pancini & Piccioni (1947).",
+    "refs": [
+     "Neddermeyer & Anderson 1937",
+     "Conversi et al. 1947"
+    ],
+    "steps_present": [
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "in_final": true,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:s_nue",
+   "branch": "HEP",
+   "native_id": "s_nue",
+   "label": "ν_{e}",
+   "layer": "S",
+   "sublayer": "S.sector",
+   "native_layer": "state",
+   "era": "quantum",
+   "t": 7,
+   "concept": null,
+   "extra": {
+    "kind": "sector",
+    "uir": "m=0, h=−½",
+    "stat": "f",
+    "years": "1962",
+    "desc": "Electron-neutrino sector. In the SM as drawn it is massless and left-handed only (no right-handed state), which is what blocks a mass term at Step 11.",
+    "refs": [
+     "Danby et al. 1962"
+    ],
+    "steps_present": [
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "in_final": true,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:s_num",
+   "branch": "HEP",
+   "native_id": "s_num",
+   "label": "ν_{μ}",
+   "layer": "S",
+   "sublayer": "S.sector",
+   "native_layer": "state",
+   "era": "quantum",
+   "t": 7,
+   "concept": null,
+   "extra": {
+    "kind": "sector",
+    "uir": "m=0, h=−½",
+    "stat": "f",
+    "years": "1962",
+    "desc": "Muon-neutrino sector, distinguished from ν_{e} by Danby et al. (1962): neutrinos from π→μν produce μ, not e.",
+    "refs": [
+     "Danby et al. 1962"
+    ],
+    "steps_present": [
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "in_final": true,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:s_u",
+   "branch": "HEP",
+   "native_id": "s_u",
+   "label": "u",
+   "layer": "S",
+   "sublayer": "S.sector",
+   "native_layer": "state",
+   "era": "quantum",
+   "t": 9,
+   "concept": null,
+   "extra": {
+    "kind": "sector",
+    "uir": "m>0, s=½",
+    "stat": "f",
+    "years": "1964 / 1969",
+    "desc": "Up-quark sector (Gell-Mann 1964; Zweig 1964; point-like constituents seen in deep inelastic scattering, SLAC 1969). Colour and the gluon sector are not drawn.",
+    "refs": [
+     "Gell-Mann 1964",
+     "Bloom et al. 1969"
+    ],
+    "steps_present": [
+     9,
+     10,
+     11,
+     12
+    ],
+    "in_final": true,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:s_d",
+   "branch": "HEP",
+   "native_id": "s_d",
+   "label": "d",
+   "layer": "S",
+   "sublayer": "S.sector",
+   "native_layer": "state",
+   "era": "quantum",
+   "t": 9,
+   "concept": null,
+   "extra": {
+    "kind": "sector",
+    "uir": "m>0, s=½",
+    "stat": "f",
+    "years": "1964 / 1969",
+    "desc": "Down-quark sector. In the charged current it enters as the Cabibbo-rotated combination d' = cos θ_{C} d + sin θ_{C} s (Cabibbo 1963).",
+    "refs": [
+     "Cabibbo 1963"
+    ],
+    "steps_present": [
+     9,
+     10,
+     11,
+     12
+    ],
+    "in_final": true,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:s_W",
+   "branch": "HEP",
+   "native_id": "s_W",
+   "label": "W^{±}",
+   "layer": "S",
+   "sublayer": "S.sector",
+   "native_layer": "state",
+   "era": "quantum",
+   "t": 9,
+   "concept": null,
+   "extra": {
+    "kind": "sector",
+    "uir": "m>0, s=1",
+    "stat": "b",
+    "years": "1983",
+    "desc": "Charged weak boson sector, M_{W} ≈ 80.4 GeV. First observed at the CERN SPS collider (UA1, UA2, 1983).",
+    "refs": [
+     "Arnison et al. 1983",
+     "Banner et al. 1983"
+    ],
+    "steps_present": [
+     9,
+     10,
+     11,
+     12
+    ],
+    "in_final": true,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:s_Z",
+   "branch": "HEP",
+   "native_id": "s_Z",
+   "label": "Z^{0}",
+   "layer": "S",
+   "sublayer": "S.sector",
+   "native_layer": "state",
+   "era": "quantum",
+   "t": 9,
+   "concept": null,
+   "extra": {
+    "kind": "sector",
+    "uir": "m>0, s=1",
+    "stat": "b",
+    "years": "1983",
+    "desc": "Neutral weak boson sector, M_{Z} ≈ 91.19 GeV (UA1/UA2 1983; LEP precision 1989–2000).",
+    "refs": [
+     "Arnison et al. 1983b",
+     "LEP EWWG 2006"
+    ],
+    "steps_present": [
+     9,
+     10,
+     11,
+     12
+    ],
+    "in_final": true,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:s_H",
+   "branch": "HEP",
+   "native_id": "s_H",
+   "label": "H",
+   "layer": "S",
+   "sublayer": "S.sector",
+   "native_layer": "state",
+   "era": "quantum",
+   "t": 10,
+   "concept": null,
+   "extra": {
+    "kind": "sector",
+    "uir": "m>0, s=0",
+    "stat": "b",
+    "years": "2012",
+    "desc": "Higgs-boson sector, m_{H} ≈ 125 GeV (ATLAS, CMS 2012). The scalar doublet Φ has one physical excitation after three components are absorbed by W^{±}, Z.",
+    "refs": [
+     "ATLAS 2012",
+     "CMS 2012"
+    ],
+    "steps_present": [
+     10,
+     11,
+     12
+    ],
+    "in_final": true,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:m_U",
+   "branch": "HEP",
+   "native_id": "m_U",
+   "label": "Unitary evolution U(t) = e^{−iĤt/ħ}",
+   "layer": "M",
+   "sublayer": "M.frame",
+   "native_layer": "model",
+   "era": "quantum",
+   "t": 1,
+   "concept": "schrodinger_evolution",
+   "extra": {
+    "kind": "frame",
+    "sub": "one-parameter unitary group on H_{1}",
+    "years": "1926–32",
+    "desc": "Time evolution is a strongly continuous one-parameter unitary group generated by the Hamiltonian (Stone 1932). It maps H_{1} onto H_{1}: the back-edge to the state layer. Particle number is conserved by construction.",
+    "refs": [
+     "Schrödinger 1926",
+     "Stone 1932"
+    ],
+    "steps_present": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "in_final": true,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:m_A",
+   "branch": "HEP",
+   "native_id": "m_A",
+   "label": "Observable postulate: Â = Â^{†}, Born rule",
+   "layer": "M",
+   "sublayer": "M.frame",
+   "native_layer": "model",
+   "era": "quantum",
+   "t": 1,
+   "concept": "observable_postulate",
+   "extra": {
+    "kind": "frame",
+    "sub": "outcomes = spectrum; p = |⟨a|ψ⟩|^{2}",
+    "years": "1927–32",
+    "desc": "Every self-adjoint operator on H_{1} is an observable; its spectrum lists the possible outcomes and the Born rule gives their probabilities (von Neumann 1932). This node sends one edge to each Hermitian operator in the observable layer.",
+    "refs": [
+     "von Neumann 1932",
+     "Born 1926"
+    ],
+    "steps_present": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "in_final": true,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:m_L",
+   "branch": "HEP",
+   "native_id": "m_L",
+   "label": "Particle Lagrangian L = ½mẋ^{2} − V(x)",
+   "layer": "M",
+   "sublayer": "M.frame",
+   "native_layer": "model",
+   "era": "quantum",
+   "t": 1,
+   "concept": "lagrangian",
+   "extra": {
+    "kind": "frame",
+    "sub": "Legendre transform → Ĥ = p̂^{2}/2m + V(x̂)",
+    "years": "1926",
+    "desc": "The one-particle Lagrangian fixes the Hamiltonian and therefore both the evolution U(t) and the energy spectrum (e.g. E_{n} = −13.6 eV/n^{2} for hydrogen). Replaced by relativistic wave equations at Step 2 and by the free-field Lagrangian at Step 4.",
+    "refs": [
+     "Schrödinger 1926",
+     "Dirac 1933"
+    ],
+    "steps_present": [
+     1,
+     2,
+     3
+    ],
+    "in_final": false,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:m_field",
+   "branch": "HEP",
+   "native_id": "m_field",
+   "label": "Quantum field on Fock space (a, a^{†})",
+   "layer": "M",
+   "sublayer": "M.frame",
+   "native_layer": "model",
+   "era": "quantum",
+   "t": 4,
+   "concept": "creation_annihilation",
+   "extra": {
+    "kind": "frame",
+    "sub": "φ(x) = Σ_{p}(a_{p}u_{p} + a_{p}^{†}u_{p}^{*}); L_{0} of free fields",
+    "years": "1927–40",
+    "desc": "The field is the operator that adds or removes one quantum of a given UIR. The Fock space of a species is ⊕_{N} Sym^{N}H_{1} (bosons) or ⊕_{N} Λ^{N}H_{1} (fermions) (Fock 1932); spin–statistics proved by Fierz (1939) and Pauli (1940). The free Lagrangian L_{0} = ψ̄(iγ·∂ − m)ψ − ¼F_{μν}F^{μν} + … reproduces the UIR wave equations. With L_{int} = 0 the S-matrix is 1: no transitions.",
+    "refs": [
+     "Dirac 1927",
+     "Jordan & Wigner 1928",
+     "Heisenberg & Pauli 1929",
+     "Fock 1932",
+     "Fierz 1939",
+     "Pauli 1940"
+    ],
+    "steps_present": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "in_final": true,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:m_qed",
+   "branch": "HEP",
+   "native_id": "m_qed",
+   "label": "QED vertex −e ψ̄γ^{μ}ψ A_{μ}",
+   "layer": "M",
+   "sublayer": "M.fund",
+   "native_layer": "model",
+   "era": "quantum",
+   "t": 5,
+   "concept": "qed_interaction",
+   "extra": {
+    "kind": "fund",
+    "sub": "minimal coupling of the quantized fields; e(1) ∧ γ(1)",
+    "years": "1927–49",
+    "desc": "Minimal coupling p → p − eA applied to the quantized fields gives the single interaction term −e ψ̄γ^{μ}ψA_{μ}. One vertex changes N_{γ} by ±1 and N_{e} by 0 (scattering) or ±2 (pair creation/annihilation). Renormalized to all orders by Tomonaga, Schwinger, Feynman and Dyson (1946–49). At Step 9 it is identified as the electromagnetic part of the SU(2)_{L}×U(1)_{Y} gauge interaction with e = g sin θ_{W}.",
+    "refs": [
+     "Dirac 1927",
+     "Heisenberg & Pauli 1929",
+     "Tomonaga 1946",
+     "Schwinger 1948",
+     "Feynman 1949",
+     "Dyson 1949"
+    ],
+    "steps_present": [
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ],
+    "in_final": false,
+    "absorbed": true
+   }
+  },
+  {
+   "uid": "HEP:m_fermi",
+   "branch": "HEP",
+   "native_id": "m_fermi",
+   "label": "Fermi contact term G_{F}(p̄γ^{μ}n)(ēγ_{μ}ν)",
+   "layer": "M",
+   "sublayer": "M.eff",
+   "native_layer": "model",
+   "era": "quantum",
+   "t": 6,
+   "concept": null,
+   "extra": {
+    "kind": "eff",
+    "sub": "four fermions at one point; n(1)∧p(1)∧e(1)∧ν̄(1)",
+    "years": "1934",
+    "desc": "Fermi copied the structure of the QED vertex: a nucleon current in place of the electron current and the created pair (e, ν̄) in place of the emitted photon. Gamow & Teller (1936) added axial-vector/tensor terms for ΔJ = 1 transitions. G_{F} ≈ 1.166×10^{−5} GeV^{−2} is dimensionful; the amplitude grows like G_{F}s and partial-wave unitarity fails at √s of order a few hundred GeV (textbook argument), so the node cannot be fundamental.",
+    "refs": [
+     "Fermi 1934a",
+     "Fermi 1934b",
+     "Gamow & Teller 1936"
+    ],
+    "steps_present": [
+     6,
+     7
+    ],
+    "in_final": false,
+    "absorbed": true
+   }
+  },
+  {
+   "uid": "HEP:m_mu",
+   "branch": "HEP",
+   "native_id": "m_mu",
+   "label": "Muon-decay contact term (G_{F}/√2)(ν̄_{μ}γ^{μ}μ)(ēγ_{μ}ν_{e})",
+   "layer": "M",
+   "sublayer": "M.eff",
+   "native_layer": "model",
+   "era": "quantum",
+   "t": 7,
+   "concept": null,
+   "extra": {
+    "kind": "eff",
+    "sub": "same G_{F} as β decay: universal Fermi interaction",
+    "years": "1947–50",
+    "desc": "A second four-fermion node for μ → e ν̄_{e} ν_{μ} and for μ capture. The decisive fact is that one constant fits β decay, μ decay and μ capture (Puppi 1948; Klein 1948; Tiomno & Wheeler 1949; Lee, Rosenbluth & Yang 1949). τ_{μ}^{−1} = G_{F}^{2}m_{μ}^{5}/192π^{3} (with small corrections) makes τ_{μ} the most precise source of G_{F}.",
+    "refs": [
+     "Puppi 1948",
+     "Klein 1948",
+     "Tiomno & Wheeler 1949",
+     "Lee, Rosenbluth & Yang 1949",
+     "Michel 1950"
+    ],
+    "steps_present": [
+     7
+    ],
+    "in_final": false,
+    "absorbed": true
+   }
+  },
+  {
+   "uid": "HEP:m_va",
+   "branch": "HEP",
+   "native_id": "m_va",
+   "label": "Universal V−A current–current (G_{F}/√2) J_{μ}J^{μ†}",
+   "layer": "M",
+   "sublayer": "M.eff",
+   "native_layer": "model",
+   "era": "quantum",
+   "t": 8,
+   "concept": null,
+   "extra": {
+    "kind": "eff",
+    "sub": "J^{μ} = Σ ψ̄γ^{μ}(1−γ^{5})ψ′; one node for β, μ decay, μ capture",
+    "years": "1958",
+    "desc": "Feynman & Gell-Mann (1958) and Sudarshan & Marshak (1958) replaced the two contact nodes by one current–current term with vector-minus-axial currents. It fixes the Michel parameter ρ = ¾, the neutrino helicity −1 and the parity-violating asymmetries. The hadronic current carries |g_{A}/g_{V}| ≈ 1.27 and, after Cabibbo (1963), cos θ_{C}. Still dimensionful: an effective node.",
+    "refs": [
+     "Feynman & Gell-Mann 1958",
+     "Sudarshan & Marshak 1958",
+     "Cabibbo 1963"
+    ],
+    "steps_present": [
+     8
+    ],
+    "in_final": false,
+    "absorbed": true
+   }
+  },
+  {
+   "uid": "HEP:m_cc",
+   "branch": "HEP",
+   "native_id": "m_cc",
+   "label": "Charged-current gauge vertex (g/√2) W^{+}_{μ} J^{μ}_{CC} + h.c.",
+   "layer": "M",
+   "sublayer": "M.fund",
+   "native_layer": "model",
+   "era": "quantum",
+   "t": 9,
+   "concept": null,
+   "extra": {
+    "kind": "fund",
+    "sub": "J^{μ}_{CC} = ν̄_{L}γ^{μ}e_{L} + ν̄_{μL}γ^{μ}μ_{L} + ū_{L}γ^{μ}d′_{L}",
+    "years": "1961–67",
+    "desc": "W exchange replaces the contact term. For q^{2} ≪ M_{W}^{2} the propagator reduces to 1/M_{W}^{2} and the V−A node is recovered with G_{F}/√2 = g^{2}/(8M_{W}^{2}): the effective node is the low-energy limit of this one (Weinberg 1979). Renormalizable in the spontaneously broken gauge theory ('t Hooft 1971; 't Hooft & Veltman 1972).",
+    "refs": [
+     "Schwinger 1957",
+     "Bludman 1958",
+     "Glashow 1961",
+     "Weinberg 1967",
+     "Salam 1968",
+     "'t Hooft 1971",
+     "'t Hooft & Veltman 1972"
+    ],
+    "steps_present": [
+     9,
+     10,
+     11
+    ],
+    "in_final": false,
+    "absorbed": true
+   }
+  },
+  {
+   "uid": "HEP:m_nc",
+   "branch": "HEP",
+   "native_id": "m_nc",
+   "label": "Neutral-current vertex (g/cosθ_{W}) Z_{μ} J^{μ}_{NC}",
+   "layer": "M",
+   "sublayer": "M.fund",
+   "native_layer": "model",
+   "era": "quantum",
+   "t": 9,
+   "concept": null,
+   "extra": {
+    "kind": "fund",
+    "sub": "J^{μ}_{NC} = Σ f̄γ^{μ}(T^{3}P_{L} − Q sin^{2}θ_{W})f; predicted 1961–67",
+    "years": "1961–67",
+    "desc": "The gauge group contains a neutral generator besides the photon; the Z couples to every fermion with strength fixed by T^{3}, Q and one new parameter sin^{2}θ_{W}. Observed by Gargamelle (1973), ten years after the prediction, and measured precisely at LEP/SLC.",
+    "refs": [
+     "Glashow 1961",
+     "Weinberg 1967",
+     "Hasert et al. 1973",
+     "LEP EWWG 2006"
+    ],
+    "steps_present": [
+     9,
+     10,
+     11
+    ],
+    "in_final": false,
+    "absorbed": true
+   }
+  },
+  {
+   "uid": "HEP:m_gs",
+   "branch": "HEP",
+   "native_id": "m_gs",
+   "label": "Gauge self-interactions ⊃ WWγ, WWZ, WWWW, WWZZ",
+   "layer": "M",
+   "sublayer": "M.fund",
+   "native_layer": "model",
+   "era": "quantum",
+   "t": 9,
+   "concept": null,
+   "extra": {
+    "kind": "fund",
+    "sub": "−¼W^{a}_{μν}W^{aμν} (non-abelian); W(2)∧γ(1), W(2)∧Z(1), W(4)",
+    "years": "1954 / 1961",
+    "desc": "The field strength of a non-abelian gauge field contains cubic and quartic terms (Yang & Mills 1954). In SU(2)_{L}×U(1)_{Y} they fix the trilinear WWγ and WWZ couplings, tested through e^{+}e^{−} → W^{+}W^{−} at LEP2 (1996–2000).",
+    "refs": [
+     "Yang & Mills 1954",
+     "Glashow 1961",
+     "LEP2 EWWG 2013"
+    ],
+    "steps_present": [
+     9,
+     10,
+     11
+    ],
+    "in_final": false,
+    "absorbed": true
+   }
+  },
+  {
+   "uid": "HEP:m_hg",
+   "branch": "HEP",
+   "native_id": "m_hg",
+   "label": "Higgs–gauge |D_{μ}Φ|^{2} → M_{W} = gv/2, M_{Z} = M_{W}/cosθ_{W}",
+   "layer": "M",
+   "sublayer": "M.fund",
+   "native_layer": "model",
+   "era": "quantum",
+   "t": 10,
+   "concept": null,
+   "extra": {
+    "kind": "fund",
+    "sub": "HWW, HZZ; v = (√2 G_{F})^{−1/2} = 246 GeV; H(1)∧W(2), H(1)∧Z(2)",
+    "years": "1964–67",
+    "desc": "A scalar doublet with vacuum value v breaks SU(2)_{L}×U(1)_{Y} → U(1)_{em}; three components become the longitudinal W^{±}, Z. The gauge-boson masses and the HWW, HZZ couplings follow from the same term, so the W and Z mass edges of Step 9 are now derived here (Englert & Brout 1964; Higgs 1964; Guralnik, Hagen & Kibble 1964; Weinberg 1967).",
+    "refs": [
+     "Englert & Brout 1964",
+     "Higgs 1964",
+     "Guralnik, Hagen & Kibble 1964",
+     "Weinberg 1967"
+    ],
+    "steps_present": [
+     10,
+     11
+    ],
+    "in_final": false,
+    "absorbed": true
+   }
+  },
+  {
+   "uid": "HEP:m_yuk",
+   "branch": "HEP",
+   "native_id": "m_yuk",
+   "label": "Yukawa couplings −y_{f} Φ f̄_{L}f_{R} + h.c. → m_{f} = y_{f}v/√2",
+   "layer": "M",
+   "sublayer": "M.fund",
+   "native_layer": "model",
+   "era": "quantum",
+   "t": 10,
+   "concept": null,
+   "extra": {
+    "kind": "fund",
+    "sub": "H(1)∧f(2); one y_{f} per massive fermion",
+    "years": "1967",
+    "desc": "Gauge symmetry forbids direct masses for chiral fermions; the Yukawa term gives m_{f} = y_{f}v/√2 and an Hf̄f vertex proportional to m_{f}. The y_{f} are free parameters: the mass edges are calibrations, while the pattern of H → ττ, bb̄ rates relative to the gauge channels is a prediction.",
+    "refs": [
+     "Weinberg 1967"
+    ],
+    "steps_present": [
+     10,
+     11
+    ],
+    "in_final": false,
+    "absorbed": true
+   }
+  },
+  {
+   "uid": "HEP:m_pot",
+   "branch": "HEP",
+   "native_id": "m_pot",
+   "label": "Higgs potential V = −μ^{2}Φ^{†}Φ + λ(Φ^{†}Φ)^{2} → m_{H}^{2} = 2λv^{2}",
+   "layer": "M",
+   "sublayer": "M.fund",
+   "native_layer": "model",
+   "era": "quantum",
+   "t": 10,
+   "concept": null,
+   "extra": {
+    "kind": "fund",
+    "sub": "self-coupling HHH = 3m_{H}^{2}/v; H(3)",
+    "years": "1964",
+    "desc": "The potential fixes v^{2} = μ^{2}/λ and the physical scalar mass m_{H}^{2} = 2λv^{2}. The measured m_{H} fixes λ ≈ 0.13 (calibration); the trilinear coupling λ_{HHH} is then predicted but not yet measured, only bounded by di-Higgs searches.",
+    "refs": [
+     "Higgs 1964",
+     "ATLAS 2012",
+     "CMS 2012"
+    ],
+    "steps_present": [
+     10,
+     11
+    ],
+    "in_final": false,
+    "absorbed": true
+   }
+  },
+  {
+   "uid": "HEP:m_numass",
+   "branch": "HEP",
+   "native_id": "m_numass",
+   "label": "Candidate: ν mass term (LΦ)(LΦ)/Λ or ν_{R} Yukawa",
+   "layer": "M",
+   "sublayer": "M.cand",
+   "native_layer": "model",
+   "era": "quantum",
+   "t": 11,
+   "concept": null,
+   "extra": {
+    "kind": "cand",
+    "sub": "Weinberg 1979 / seesaw; not established; ν(2)∧H(2)",
+    "years": "1977–79",
+    "desc": "Two repairs are available in the literature. (i) The dimension-5 operator (LΦ)(LΦ)/Λ uses only existing sectors and gives Majorana masses m_{ν} ~ v^{2}/Λ (Weinberg 1979). (ii) New right-handed sectors ν_{R} with Dirac Yukawa couplings, possibly with Majorana masses M_{R} (seesaw: Minkowski 1977; Gell-Mann, Ramond & Slansky 1979; Yanagida 1979; Mohapatra & Senjanović 1980). Current data do not decide between them (Dirac vs Majorana nature untested).",
+    "refs": [
+     "Weinberg 1979b",
+     "Minkowski 1977",
+     "Mohapatra & Senjanović 1980"
+    ],
+    "steps_present": [
+     11
+    ],
+    "in_final": false,
+    "absorbed": true
+   }
+  },
+  {
+   "uid": "HEP:c_gf",
+   "branch": "HEP",
+   "native_id": "c_gf",
+   "label": "Gauge–fermion term Σ f̄ iγ^{μ}D_{μ} f ⊃ EM, CC, NC vertices",
+   "layer": "M",
+   "sublayer": "M.cluster",
+   "native_layer": "model",
+   "era": "quantum",
+   "t": 12,
+   "concept": "standard_model",
+   "extra": {
+    "kind": "cluster",
+    "sub": "D_{μ} = ∂_{μ} − igT^{a}W^{a}_{μ} − ig′YB_{μ}; e = g sinθ_{W}",
+    "years": "1961–67",
+    "desc": "One term of the SM Lagrangian, written with the covariant derivative of SU(2)_{L}×U(1)_{Y}. Expanding D_{μ} gives exactly three vertex types: the electromagnetic vertex (Step 5), the charged current (Step 9) and the neutral current (Step 9). The three effective nodes of Steps 6–8 sit inside this cluster because the charged-current member reproduces them at q^{2} ≪ M_{W}^{2}; the matching condition G_{F}/√2 = g^{2}/8M_{W}^{2} is the lineage edge.",
+    "refs": [
+     "Glashow 1961",
+     "Weinberg 1967",
+     "Salam 1968"
+    ],
+    "steps_present": [
+     12
+    ],
+    "in_final": true,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:c_gg",
+   "branch": "HEP",
+   "native_id": "c_gg",
+   "label": "Gauge kinetic term −¼W^{a}_{μν}W^{aμν} − ¼B_{μν}B^{μν}",
+   "layer": "M",
+   "sublayer": "M.cluster",
+   "native_layer": "model",
+   "era": "quantum",
+   "t": 12,
+   "concept": "standard_model",
+   "extra": {
+    "kind": "cluster",
+    "sub": "non-abelian part ⊃ WWγ, WWZ, WWWW, WWZZ, WWγγ, WWZγ",
+    "years": "1954 / 1961",
+    "desc": "The Yang–Mills field strength contains the cubic and quartic self-couplings of the W and Z. No effective node was ever written for these vertices; they were predicted and then tested (LEP2).",
+    "refs": [
+     "Yang & Mills 1954",
+     "LEP2 EWWG 2013"
+    ],
+    "steps_present": [
+     12
+    ],
+    "in_final": true,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:c_hg",
+   "branch": "HEP",
+   "native_id": "c_hg",
+   "label": "Higgs–gauge term |D_{μ}Φ|^{2}",
+   "layer": "M",
+   "sublayer": "M.cluster",
+   "native_layer": "model",
+   "era": "quantum",
+   "t": 12,
+   "concept": "standard_model",
+   "extra": {
+    "kind": "cluster",
+    "sub": "→ M_{W}, M_{Z}; HWW, HZZ, HHWW, HHZZ",
+    "years": "1964–67",
+    "desc": "The gauge-covariant kinetic term of the scalar doublet. With ⟨Φ⟩ = v/√2 it produces the W and Z masses and the Higgs–gauge vertices.",
+    "refs": [
+     "Englert & Brout 1964",
+     "Higgs 1964",
+     "Guralnik, Hagen & Kibble 1964"
+    ],
+    "steps_present": [
+     12
+    ],
+    "in_final": true,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:c_yuk",
+   "branch": "HEP",
+   "native_id": "c_yuk",
+   "label": "Yukawa term −y_{f} f̄_{L}Φ f_{R} + h.c.",
+   "layer": "M",
+   "sublayer": "M.cluster",
+   "native_layer": "model",
+   "era": "quantum",
+   "t": 12,
+   "concept": "standard_model",
+   "extra": {
+    "kind": "cluster",
+    "sub": "→ m_{f} = y_{f}v/√2; H f̄ f vertex ∝ m_{f}/v",
+    "years": "1967",
+    "desc": "The only SM term that distinguishes the fermion generations; its couplings are inputs (calibration edges).",
+    "refs": [
+     "Weinberg 1967"
+    ],
+    "steps_present": [
+     12
+    ],
+    "in_final": true,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:c_pot",
+   "branch": "HEP",
+   "native_id": "c_pot",
+   "label": "Higgs potential −V(Φ), V = −μ^{2}Φ^{†}Φ + λ(Φ^{†}Φ)^{2}",
+   "layer": "M",
+   "sublayer": "M.cluster",
+   "native_layer": "model",
+   "era": "quantum",
+   "t": 12,
+   "concept": "standard_model",
+   "extra": {
+    "kind": "cluster",
+    "sub": "→ v^{2} = μ^{2}/λ, m_{H}^{2} = 2λv^{2}; HHH, HHHH",
+    "years": "1964",
+    "desc": "Fixes the vacuum value and the Higgs mass; the self-couplings it predicts are the least tested part of the model.",
+    "refs": [
+     "Higgs 1964"
+    ],
+    "steps_present": [
+     12
+    ],
+    "in_final": true,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:c_bsm",
+   "branch": "HEP",
+   "native_id": "c_bsm",
+   "label": "Beyond the SM: candidate ν-mass term",
+   "layer": "M",
+   "sublayer": "M.cluster",
+   "native_layer": "model",
+   "era": "quantum",
+   "t": 12,
+   "concept": null,
+   "extra": {
+    "kind": "cluster",
+    "dashed": true,
+    "sub": "not established; the only cluster with no confirmed member",
+    "years": "1977–",
+    "desc": "Holds the candidate repairs for the neutrino-oscillation observable. It is drawn dashed because none of its members is established.",
+    "refs": [
+     "Weinberg 1979b",
+     "Minkowski 1977",
+     "Mohapatra & Senjanović 1980"
+    ],
+    "steps_present": [
+     12
+    ],
+    "in_final": true,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:o_x",
+   "branch": "HEP",
+   "native_id": "o_x",
+   "label": "Position x̂",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 1,
+   "concept": "position",
+   "extra": {
+    "sub": "spectrum ℝ; probability |ψ(x)|^{2}",
+    "years": "1926",
+    "steps_present": [
+     1
+    ],
+    "in_final": false,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:o_p",
+   "branch": "HEP",
+   "native_id": "o_p",
+   "label": "Momentum p̂",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 1,
+   "concept": "momentum",
+   "extra": {
+    "sub": "spectrum ℝ; de Broglie p = ħk",
+    "years": "1926",
+    "steps_present": [
+     1,
+     2,
+     3
+    ],
+    "in_final": false,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:o_E",
+   "branch": "HEP",
+   "native_id": "o_E",
+   "label": "Energy levels (spectrum of Ĥ)",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 1,
+   "concept": "hydrogen_levels",
+   "extra": {
+    "sub": "hydrogen E_{n} = −13.6 eV/n^{2}; Balmer lines",
+    "years": "1926",
+    "driver": "A",
+    "desc": "The discrete spectra observed since Balmer (1885) are the eigenvalues of Ĥ; Schrödinger (1926) derived the hydrogen levels. Dirac (1928) adds the fine structure. Observed first, explained later: anomaly-driven.",
+    "steps_present": [
+     1,
+     2,
+     3
+    ],
+    "in_final": false,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:o_L",
+   "branch": "HEP",
+   "native_id": "o_L",
+   "label": "Orbital angular momentum L̂^{2}, L̂_{z}",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 1,
+   "concept": "orbital_angular_momentum",
+   "extra": {
+    "sub": "l(l+1)ħ^{2}, m_{l}ħ; Zeeman splitting",
+    "years": "1926",
+    "steps_present": [
+     1,
+     2
+    ],
+    "in_final": false,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:o_S",
+   "branch": "HEP",
+   "native_id": "o_S",
+   "label": "Spin Ŝ_{z} = ±ħ/2",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 1,
+   "concept": "electron_spin",
+   "extra": {
+    "sub": "Stern–Gerlach 1922; Uhlenbeck & Goudsmit 1925",
+    "years": "1925–27",
+    "driver": "A",
+    "desc": "Spin was observed (Stern–Gerlach 1922) and postulated (Uhlenbeck & Goudsmit 1925) before Pauli (1927) and Dirac (1928) gave it a place in the formalism: anomaly-driven.",
+    "steps_present": [
+     1,
+     2,
+     3
+    ],
+    "in_final": false,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:o_m",
+   "branch": "HEP",
+   "native_id": "o_m",
+   "label": "Mass m (Casimir P^{μ}P_{μ} = m^{2})",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 2,
+   "concept": "mass",
+   "extra": {
+    "sub": "invariant label of the UIR",
+    "years": "1939",
+    "driver": "P",
+    "desc": "In the Poincaré-covariant theory mass is the eigenvalue of the Casimir operator P^{2}; it labels the representation rather than being a dynamical variable.",
+    "steps_present": [
+     2,
+     3,
+     4
+    ],
+    "in_final": false,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:o_s",
+   "branch": "HEP",
+   "native_id": "o_s",
+   "label": "Spin s / helicity h (Casimir W^{μ}W_{μ})",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 2,
+   "concept": null,
+   "extra": {
+    "sub": "W^{2} = −m^{2}s(s+1); h = J·p̂ for m = 0",
+    "years": "1939",
+    "driver": "P",
+    "desc": "The Pauli–Lubański Casimir gives spin for m > 0; for m = 0 the invariant is the helicity. Both are representation labels.",
+    "steps_present": [
+     2,
+     3,
+     4
+    ],
+    "in_final": false,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:o_prod",
+   "branch": "HEP",
+   "native_id": "o_prod",
+   "label": "Particle production and decay",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 3,
+   "concept": "particle_decay",
+   "extra": {
+    "sub": "γ emission/absorption; β decay; e^{+}e^{−} pair creation",
+    "years": "1917–34",
+    "driver": "A",
+    "desc": "(i) Emission and absorption of light, Einstein A and B coefficients (1917). (ii) β decay with a continuous electron spectrum (Chadwick 1914; Ellis & Wooster 1927); the electron is not a nuclear constituent. (iii) e^{+}e^{−} pairs created by γ rays (Anderson 1933; Blackett & Occhialini 1933). In each case the final state has a different number of particles than the initial one, which no node acting within H_{1} can produce.",
+    "refs": [
+     "Einstein 1917",
+     "Chadwick 1914",
+     "Ellis & Wooster 1927",
+     "Anderson 1933",
+     "Blackett & Occhialini 1933"
+    ],
+    "steps_present": [
+     3
+    ],
+    "in_final": false,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:o_G",
+   "branch": "HEP",
+   "native_id": "o_G",
+   "label": "Decay width Γ (lifetime τ = ħ/Γ)",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 4,
+   "concept": null,
+   "extra": {
+    "sub": "Γ = 2π|⟨f|H_{int}|i⟩|^{2}ρ(E) · Γ-type family",
+    "years": "1927–",
+    "driver": "A",
+    "desc": "The generic transition-rate observable. Dirac (1927) derived the rate formula later called Fermi's golden rule. Without an interaction term the rate is zero, so this family stays unexplained until Step 5.",
+    "refs": [
+     "Dirac 1927"
+    ],
+    "steps_present": [
+     4
+    ],
+    "in_final": false,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:o_sig",
+   "branch": "HEP",
+   "native_id": "o_sig",
+   "label": "Cross section σ, dσ/dΩ",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 4,
+   "concept": "cross_section",
+   "extra": {
+    "sub": "σ ∝ |⟨f|S|i⟩|^{2}/flux · σ-type family",
+    "years": "1937–",
+    "driver": "A",
+    "desc": "The generic scattering observable, defined through S-matrix elements (Wheeler 1937; Heisenberg 1943; Dyson 1949). S = 1 for the free field.",
+    "refs": [
+     "Wheeler 1937",
+     "Heisenberg 1943",
+     "Dyson 1949"
+    ],
+    "steps_present": [
+     4
+    ],
+    "in_final": false,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:o_compton",
+   "branch": "HEP",
+   "native_id": "o_compton",
+   "label": "Compton scattering dσ/dΩ",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 5,
+   "concept": "compton",
+   "extra": {
+    "sub": "Klein–Nishina 1929 · σ-type · O(α^{2})",
+    "years": "1923 / 1929",
+    "driver": "A",
+    "desc": "Compton (1923) measured the wavelength shift and intensity; the Klein–Nishina formula (1929), the first QED cross section from the Dirac equation, reproduces the angular distribution and the high-energy fall-off.",
+    "refs": [
+     "Klein & Nishina 1929"
+    ],
+    "steps_present": [
+     5,
+     6,
+     7,
+     8
+    ],
+    "in_final": false,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:o_pair",
+   "branch": "HEP",
+   "native_id": "o_pair",
+   "label": "e^{+}e^{−} pair production σ(γ → e^{+}e^{−})",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 5,
+   "concept": null,
+   "extra": {
+    "sub": "Bethe–Heitler 1934 · σ-type",
+    "years": "1932–34",
+    "driver": "P",
+    "desc": "Dirac's hole theory (1930–31) implied an anti-electron; Anderson (1933) and Blackett & Occhialini (1933) observed it. The Bethe–Heitler cross section (1934) in the field of a nucleus follows from the QED vertex at order α^{3}.",
+    "refs": [
+     "Dirac 1931",
+     "Bethe & Heitler 1934"
+    ],
+    "steps_present": [
+     5
+    ],
+    "in_final": false,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:o_ae",
+   "branch": "HEP",
+   "native_id": "o_ae",
+   "label": "Electron anomaly a_{e} = (g−2)/2",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 5,
+   "concept": "anomalous_moment",
+   "extra": {
+    "sub": "measured 0.00119(5) (1948); α/2π = 0.00116",
+    "years": "1947–48",
+    "driver": "A",
+    "desc": "Kusch & Foley (1948) found g = 2(1.00119 ± 0.00005). Schwinger (1948) computed the one-loop value α/2π. Today a_{e} is known to ~10^{−13} and agrees with the five-loop QED calculation (PDG).",
+    "refs": [
+     "Kusch & Foley 1948",
+     "Schwinger 1948"
+    ],
+    "steps_present": [
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "in_final": true,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:o_lamb",
+   "branch": "HEP",
+   "native_id": "o_lamb",
+   "label": "Lamb shift 2S_{1/2} − 2P_{1/2}",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 5,
+   "concept": "lamb_shift",
+   "extra": {
+    "sub": "≈1000 MHz measured (1947); Bethe 1047 MHz",
+    "years": "1947",
+    "driver": "A",
+    "desc": "Lamb & Retherford (1947) measured a splitting of about 1000 MHz that the Dirac equation sets to zero; Bethe (1947) obtained ≈1040 MHz from the electron self-energy with a nonrelativistic cut-off. The modern value is 1057.8 MHz.",
+    "refs": [
+     "Lamb & Retherford 1947",
+     "Bethe 1947"
+    ],
+    "steps_present": [
+     5
+    ],
+    "in_final": false,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:o_alpha",
+   "branch": "HEP",
+   "native_id": "o_alpha",
+   "label": "Fine-structure constant α ≈ 1/137.036",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 5,
+   "concept": "fine_structure_constant",
+   "extra": {
+    "sub": "fixes the vertex coupling e · parameter",
+    "years": "1916–",
+    "driver": "F",
+    "desc": "The coupling in the QED vertex is not predicted; α is measured (today most precisely from a_{e} and atom-recoil experiments) and fixes e. Calibration edge.",
+    "steps_present": [
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     12
+    ],
+    "in_final": true,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:o_beta",
+   "branch": "HEP",
+   "native_id": "o_beta",
+   "label": "β-decay rate and spectrum shape",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 5,
+   "concept": null,
+   "extra": {
+    "sub": "continuous e spectrum; Kurie plot 1936 · Γ-type",
+    "years": "1914 / 1934",
+    "driver": "A",
+    "desc": "Chadwick (1914) found the β spectrum continuous; Ellis & Wooster (1927) showed the energy is really missing. Fermi's node gives the rate and the shape (Kurie et al. 1936) from phase space × |M|^{2}.",
+    "refs": [
+     "Chadwick 1914",
+     "Ellis & Wooster 1927",
+     "Kurie et al. 1936"
+    ],
+    "steps_present": [
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "in_final": true,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:o_ntau",
+   "branch": "HEP",
+   "native_id": "o_ntau",
+   "label": "Neutron lifetime τ_{n} ≈ 878 s",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 6,
+   "concept": null,
+   "extra": {
+    "sub": "first measured by Robson 1951 · Γ-type",
+    "years": "1951",
+    "driver": "P",
+    "desc": "Free-neutron decay n → p e ν̄ was expected once m_{n} > m_{p} + m_{e} was established (Chadwick & Goldhaber 1935) and first measured by Robson (1951). Current value 878.4 ± 0.5 s (PDG 2024).",
+    "refs": [
+     "Chadwick & Goldhaber 1935",
+     "Robson 1951"
+    ],
+    "steps_present": [
+     6,
+     7,
+     8
+    ],
+    "in_final": false,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:o_GF",
+   "branch": "HEP",
+   "native_id": "o_GF",
+   "label": "Fermi constant G_{F} = 1.1664×10^{−5} GeV^{−2}",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 6,
+   "concept": null,
+   "extra": {
+    "sub": "fixed by τ_{μ} (and 0^{+}→0^{+} β decays) · parameter",
+    "years": "1934–",
+    "driver": "F",
+    "desc": "The strength of the contact term is an input. From Step 9 on it is a derived combination g^{2}/(4√2 M_{W}^{2}), but still fixed by measurement (τ_{μ}).",
+    "steps_present": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "in_final": true,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:o_mutau",
+   "branch": "HEP",
+   "native_id": "o_mutau",
+   "label": "Muon lifetime τ_{μ} = 2.197 μs",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 7,
+   "concept": null,
+   "extra": {
+    "sub": "τ_{μ}^{−1} = G_{F}^{2}m_{μ}^{5}/192π^{3} · Γ-type",
+    "years": "1940–",
+    "driver": "A",
+    "desc": "The muon itself was unexpected (1937). Its lifetime, ~2.2 μs, is reproduced by the contact node with the β-decay value of G_{F}: the universality signal.",
+    "steps_present": [
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "in_final": true,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:o_michel",
+   "branch": "HEP",
+   "native_id": "o_michel",
+   "label": "Michel spectrum, ρ = ¾",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 7,
+   "concept": null,
+   "extra": {
+    "sub": "shape of e spectrum in μ decay",
+    "years": "1950",
+    "driver": "P",
+    "desc": "Michel (1950) parametrized the electron spectrum of μ decay by ρ; the measured ρ = 0.7518 ± 0.0026 (PDG) agrees with the V−A value ¾.",
+    "refs": [
+     "Michel 1950"
+    ],
+    "steps_present": [
+     7,
+     8
+    ],
+    "in_final": false,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:o_twonu",
+   "branch": "HEP",
+   "native_id": "o_twonu",
+   "label": "ν_{μ} ≠ ν_{e}",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 7,
+   "concept": null,
+   "extra": {
+    "sub": "ν beam from π → μν gives μ, not e (Danby et al. 1962)",
+    "years": "1962",
+    "driver": "P",
+    "desc": "Pontecorvo (1959) and Schwartz (1960) proposed the test; Danby et al. (1962) found that neutrinos from pion decay produce muons but no electrons. The observable is about the state layer: the ν sector is two sectors with separate currents (lepton-family conservation).",
+    "refs": [
+     "Danby et al. 1962"
+    ],
+    "steps_present": [
+     7,
+     8
+    ],
+    "in_final": false,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:o_wu",
+   "branch": "HEP",
+   "native_id": "o_wu",
+   "label": "Parity-violating asymmetries (^{60}Co; μ decay)",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 8,
+   "concept": null,
+   "extra": {
+    "sub": "Wu et al. 1957; Garwin, Lederman & Weinrich 1957",
+    "years": "1957",
+    "driver": "P",
+    "desc": "Lee & Yang (1956) noted parity was untested in weak processes and proposed experiments. Wu et al. (1957) found the e^{−} emission of polarized ^{60}Co anti-correlated with the nuclear spin; Garwin et al. (1957) found the μ-decay asymmetry. A parity-conserving node cannot produce a pseudoscalar correlation ⟨J⟩·p_{e}.",
+    "refs": [
+     "Lee & Yang 1956",
+     "Wu et al. 1957",
+     "Garwin et al. 1957"
+    ],
+    "steps_present": [
+     8,
+     9,
+     12
+    ],
+    "in_final": true,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:o_hel",
+   "branch": "HEP",
+   "native_id": "o_hel",
+   "label": "Neutrino helicity h(ν) = −1",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 8,
+   "concept": null,
+   "extra": {
+    "sub": "Goldhaber, Grodzins & Sunyar 1958",
+    "years": "1958",
+    "driver": "P",
+    "desc": "Measured through the circular polarization of the γ following K capture in ^{152}Eu. The result −1 is the V−A prediction (left-handed neutrino).",
+    "refs": [
+     "Goldhaber et al. 1958"
+    ],
+    "steps_present": [
+     8
+    ],
+    "in_final": false,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:o_nc",
+   "branch": "HEP",
+   "native_id": "o_nc",
+   "label": "Neutral-current events, R_{ν} = σ(NC)/σ(CC)",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 9,
+   "concept": null,
+   "extra": {
+    "sub": "Gargamelle 1973 · σ-type",
+    "years": "1973",
+    "driver": "P",
+    "desc": "Hasert et al. (1973) observed ν_{μ}N → ν_{μ}X events (no outgoing muon) and one ν̄_{μ}e → ν̄_{μ}e event in the Gargamelle bubble chamber. The NC/CC ratios fix sin^{2}θ_{W}.",
+    "refs": [
+     "Hasert et al. 1973"
+    ],
+    "steps_present": [
+     9,
+     10,
+     12
+    ],
+    "in_final": true,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:o_mw",
+   "branch": "HEP",
+   "native_id": "o_mw",
+   "label": "M_{W} = 80.37 GeV",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 9,
+   "concept": null,
+   "extra": {
+    "sub": "UA1/UA2 1983; tree level (πα/√2G_{F})^{1/2}/sinθ_{W}",
+    "years": "1983–",
+    "driver": "P",
+    "desc": "Predicted from G_{F}, α and sin^{2}θ_{W}: M_{W}^{2} = πα/(√2 G_{F} sin^{2}θ_{W}) at tree level (≈78 GeV), ≈80.4 GeV with radiative corrections. Observed at the SPS in 1983. PDG 2024 average 80.369 ± 0.013 GeV (CDF 2022 value excluded from the average).",
+    "refs": [
+     "Arnison et al. 1983",
+     "Banner et al. 1983"
+    ],
+    "steps_present": [
+     9,
+     10,
+     11,
+     12
+    ],
+    "in_final": true,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:o_mz",
+   "branch": "HEP",
+   "native_id": "o_mz",
+   "label": "M_{Z} = 91.19 GeV",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 9,
+   "concept": null,
+   "extra": {
+    "sub": "UA1/UA2 1983; LEP; M_{Z} = M_{W}/cosθ_{W}",
+    "years": "1983–",
+    "driver": "P",
+    "desc": "Tree-level relation M_{Z} = M_{W}/cos θ_{W}; observed in 1983 (UA1, UA2) and measured to 2 MeV at LEP.",
+    "refs": [
+     "Arnison et al. 1983b",
+     "LEP EWWG 2006"
+    ],
+    "steps_present": [
+     9,
+     10,
+     11,
+     12
+    ],
+    "in_final": true,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:o_sw",
+   "branch": "HEP",
+   "native_id": "o_sw",
+   "label": "Weak mixing angle sin^{2}θ_{W} ≈ 0.23",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 9,
+   "concept": null,
+   "extra": {
+    "sub": "parameter · fixed by NC data, then M_{W}/M_{Z}",
+    "years": "1973–",
+    "driver": "F",
+    "desc": "The one new parameter of the neutral current. Calibration edge: measured, not predicted.",
+    "steps_present": [
+     9
+    ],
+    "in_final": false,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:o_nnu",
+   "branch": "HEP",
+   "native_id": "o_nnu",
+   "label": "Z width → N_{ν} = 2.984 ± 0.008",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 9,
+   "concept": null,
+   "extra": {
+    "sub": "LEP 1989–2006; invisible width Γ_{inv}",
+    "years": "1989–2006",
+    "driver": "P",
+    "desc": "The Z line shape gives the invisible width, i.e. the number of light neutrino sectors coupling to the Z: 2.9840 ± 0.0082 (LEP EWWG 2006). A model-layer prediction about the number of state-layer sectors.",
+    "refs": [
+     "LEP EWWG 2006"
+    ],
+    "steps_present": [
+     9,
+     10,
+     11,
+     12
+    ],
+    "in_final": true,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:o_tgc",
+   "branch": "HEP",
+   "native_id": "o_tgc",
+   "label": "σ(e^{+}e^{−} → W^{+}W^{−}) and triple-gauge couplings",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 9,
+   "concept": null,
+   "extra": {
+    "sub": "LEP2 1996–2000 · σ-type",
+    "years": "1996–2000",
+    "driver": "P",
+    "desc": "The cross section involves ν exchange and the WWγ, WWZ vertices; the gauge cancellation between them is required for unitarity and was confirmed at LEP2.",
+    "refs": [
+     "LEP2 EWWG 2013"
+    ],
+    "steps_present": [
+     9,
+     12
+    ],
+    "in_final": true,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:o_mh",
+   "branch": "HEP",
+   "native_id": "o_mh",
+   "label": "Higgs mass m_{H} = 125.2 GeV",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 10,
+   "concept": null,
+   "extra": {
+    "sub": "ATLAS/CMS 2012; value fixes λ · parameter",
+    "years": "2012",
+    "driver": "P",
+    "desc": "Existence predicted in 1964; discovered 2012. The value is an input that fixes λ = m_{H}^{2}/2v^{2} ≈ 0.13 (PDG 2024: 125.20 ± 0.11 GeV).",
+    "refs": [
+     "ATLAS 2012",
+     "CMS 2012"
+    ],
+    "steps_present": [
+     10,
+     11,
+     12
+    ],
+    "in_final": true,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:o_hbr",
+   "branch": "HEP",
+   "native_id": "o_hbr",
+   "label": "Higgs rates σ×BR: γγ, ZZ^{*}, WW^{*}, ττ, bb̄",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 10,
+   "concept": null,
+   "extra": {
+    "sub": "signal strengths μ ≈ 1 · Γ/σ-type",
+    "years": "2012–",
+    "driver": "P",
+    "desc": "Production (gluon fusion, vector-boson fusion, VH) and decay rates relative to the SM expectation; all measured signal strengths are consistent with 1 within uncertainties (PDG 2024 review).",
+    "refs": [
+     "ATLAS 2012",
+     "CMS 2012"
+    ],
+    "steps_present": [
+     10,
+     11,
+     12
+    ],
+    "in_final": true,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:o_mf",
+   "branch": "HEP",
+   "native_id": "o_mf",
+   "label": "Fermion masses m_{e}, m_{μ}, m_{u}, m_{d}",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 10,
+   "concept": null,
+   "extra": {
+    "sub": "parameters · fix the Yukawa couplings y_{f}",
+    "years": "—",
+    "driver": "F",
+    "desc": "The SM explains the mechanism of fermion mass but not the values: each mass fixes one Yukawa coupling. Calibration edges.",
+    "steps_present": [
+     10,
+     11,
+     12
+    ],
+    "in_final": true,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:o_lam",
+   "branch": "HEP",
+   "native_id": "o_lam",
+   "label": "Higgs self-coupling λ_{HHH}",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 10,
+   "concept": null,
+   "extra": {
+    "sub": "predicted = 3m_{H}^{2}/v; not yet measured (bounded)",
+    "years": "open",
+    "driver": "P",
+    "untested": true,
+    "desc": "Di-Higgs production has not been observed; current limits constrain λ_{HHH}/λ_{SM} to roughly a window of order unity around the SM value (ATLAS/CMS, Run 2). A prediction awaiting its observable.",
+    "steps_present": [
+     10,
+     11,
+     12
+    ],
+    "in_final": true,
+    "absorbed": false
+   }
+  },
+  {
+   "uid": "HEP:o_osc",
+   "branch": "HEP",
+   "native_id": "o_osc",
+   "label": "ν flavour oscillation: Δm^{2}_{21}, Δm^{2}_{31} ≠ 0",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 11,
+   "concept": null,
+   "extra": {
+    "sub": "Super-K 1998; SNO 2002; KamLAND 2003",
+    "years": "1998–",
+    "driver": "A",
+    "desc": "Atmospheric ν_{μ} disappearance (Super-Kamiokande 1998), solar ν flavour change (SNO 2002) and reactor ν̄_{e} disappearance (KamLAND 2003) require non-degenerate neutrino masses. In the graph as built the ν sectors are massless (no right-handed state), so no Yukawa node reaches them: in-degree zero from the model layer.",
+    "refs": [
+     "Fukuda et al. 1998",
+     "Ahmad et al. 2002",
+     "Eguchi et al. 2003"
+    ],
+    "steps_present": [
+     11,
+     12
+    ],
+    "in_final": true,
+    "absorbed": false
+   }
+  }
+ ],
+ "routes": [
+  {
+   "uid": "HEP:sm:e1:s_nue",
+   "branch": "HEP",
+   "native_id": "sm/e1",
+   "inputs": [
+    "HEP:s_nue"
+   ],
+   "target": "HEP:m_field",
+   "logic": "single",
+   "kind": "enters",
+   "kind_native": "s2m",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "one field per UIR",
+    "generic": true,
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:e1:s_e",
+   "branch": "HEP",
+   "native_id": "sm/e1",
+   "inputs": [
+    "HEP:s_e"
+   ],
+   "target": "HEP:m_field",
+   "logic": "single",
+   "kind": "enters",
+   "kind_native": "s2m",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "one field per UIR",
+    "generic": true,
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:e1:s_num",
+   "branch": "HEP",
+   "native_id": "sm/e1",
+   "inputs": [
+    "HEP:s_num"
+   ],
+   "target": "HEP:m_field",
+   "logic": "single",
+   "kind": "enters",
+   "kind_native": "s2m",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "one field per UIR",
+    "generic": true,
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:e1:s_mu",
+   "branch": "HEP",
+   "native_id": "sm/e1",
+   "inputs": [
+    "HEP:s_mu"
+   ],
+   "target": "HEP:m_field",
+   "logic": "single",
+   "kind": "enters",
+   "kind_native": "s2m",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "one field per UIR",
+    "generic": true,
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:e1:s_u",
+   "branch": "HEP",
+   "native_id": "sm/e1",
+   "inputs": [
+    "HEP:s_u"
+   ],
+   "target": "HEP:m_field",
+   "logic": "single",
+   "kind": "enters",
+   "kind_native": "s2m",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "one field per UIR",
+    "generic": true,
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:e1:s_d",
+   "branch": "HEP",
+   "native_id": "sm/e1",
+   "inputs": [
+    "HEP:s_d"
+   ],
+   "target": "HEP:m_field",
+   "logic": "single",
+   "kind": "enters",
+   "kind_native": "s2m",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "one field per UIR",
+    "generic": true,
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:e1:s_g",
+   "branch": "HEP",
+   "native_id": "sm/e1",
+   "inputs": [
+    "HEP:s_g"
+   ],
+   "target": "HEP:m_field",
+   "logic": "single",
+   "kind": "enters",
+   "kind_native": "s2m",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "one field per UIR",
+    "generic": true,
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:e1:s_W",
+   "branch": "HEP",
+   "native_id": "sm/e1",
+   "inputs": [
+    "HEP:s_W"
+   ],
+   "target": "HEP:m_field",
+   "logic": "single",
+   "kind": "enters",
+   "kind_native": "s2m",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "one field per UIR",
+    "generic": true,
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:e1:s_Z",
+   "branch": "HEP",
+   "native_id": "sm/e1",
+   "inputs": [
+    "HEP:s_Z"
+   ],
+   "target": "HEP:m_field",
+   "logic": "single",
+   "kind": "enters",
+   "kind_native": "s2m",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "one field per UIR",
+    "generic": true,
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:e1:s_H",
+   "branch": "HEP",
+   "native_id": "sm/e1",
+   "inputs": [
+    "HEP:s_H"
+   ],
+   "target": "HEP:m_field",
+   "logic": "single",
+   "kind": "enters",
+   "kind_native": "s2m",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "one field per UIR",
+    "generic": true,
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:e2:s_nue",
+   "branch": "HEP",
+   "native_id": "sm/e2",
+   "inputs": [
+    "HEP:s_nue"
+   ],
+   "target": "HEP:m_U",
+   "logic": "single",
+   "kind": "enters",
+   "kind_native": "s2m",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "U(Λ, a) on F",
+    "generic": true,
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:e2:s_e",
+   "branch": "HEP",
+   "native_id": "sm/e2",
+   "inputs": [
+    "HEP:s_e"
+   ],
+   "target": "HEP:m_U",
+   "logic": "single",
+   "kind": "enters",
+   "kind_native": "s2m",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "U(Λ, a) on F",
+    "generic": true,
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:e2:s_num",
+   "branch": "HEP",
+   "native_id": "sm/e2",
+   "inputs": [
+    "HEP:s_num"
+   ],
+   "target": "HEP:m_U",
+   "logic": "single",
+   "kind": "enters",
+   "kind_native": "s2m",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "U(Λ, a) on F",
+    "generic": true,
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:e2:s_mu",
+   "branch": "HEP",
+   "native_id": "sm/e2",
+   "inputs": [
+    "HEP:s_mu"
+   ],
+   "target": "HEP:m_U",
+   "logic": "single",
+   "kind": "enters",
+   "kind_native": "s2m",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "U(Λ, a) on F",
+    "generic": true,
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:e2:s_u",
+   "branch": "HEP",
+   "native_id": "sm/e2",
+   "inputs": [
+    "HEP:s_u"
+   ],
+   "target": "HEP:m_U",
+   "logic": "single",
+   "kind": "enters",
+   "kind_native": "s2m",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "U(Λ, a) on F",
+    "generic": true,
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:e2:s_d",
+   "branch": "HEP",
+   "native_id": "sm/e2",
+   "inputs": [
+    "HEP:s_d"
+   ],
+   "target": "HEP:m_U",
+   "logic": "single",
+   "kind": "enters",
+   "kind_native": "s2m",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "U(Λ, a) on F",
+    "generic": true,
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:e2:s_g",
+   "branch": "HEP",
+   "native_id": "sm/e2",
+   "inputs": [
+    "HEP:s_g"
+   ],
+   "target": "HEP:m_U",
+   "logic": "single",
+   "kind": "enters",
+   "kind_native": "s2m",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "U(Λ, a) on F",
+    "generic": true,
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:e2:s_W",
+   "branch": "HEP",
+   "native_id": "sm/e2",
+   "inputs": [
+    "HEP:s_W"
+   ],
+   "target": "HEP:m_U",
+   "logic": "single",
+   "kind": "enters",
+   "kind_native": "s2m",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "U(Λ, a) on F",
+    "generic": true,
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:e2:s_Z",
+   "branch": "HEP",
+   "native_id": "sm/e2",
+   "inputs": [
+    "HEP:s_Z"
+   ],
+   "target": "HEP:m_U",
+   "logic": "single",
+   "kind": "enters",
+   "kind_native": "s2m",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "U(Λ, a) on F",
+    "generic": true,
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:e2:s_H",
+   "branch": "HEP",
+   "native_id": "sm/e2",
+   "inputs": [
+    "HEP:s_H"
+   ],
+   "target": "HEP:m_U",
+   "logic": "single",
+   "kind": "enters",
+   "kind_native": "s2m",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "U(Λ, a) on F",
+    "generic": true,
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:e3:s_nue",
+   "branch": "HEP",
+   "native_id": "sm/e3",
+   "inputs": [
+    "HEP:s_nue"
+   ],
+   "target": "HEP:m_A",
+   "logic": "single",
+   "kind": "enters",
+   "kind_native": "s2m",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "|i⟩, |f⟩ ∈ F",
+    "generic": true,
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:e3:s_e",
+   "branch": "HEP",
+   "native_id": "sm/e3",
+   "inputs": [
+    "HEP:s_e"
+   ],
+   "target": "HEP:m_A",
+   "logic": "single",
+   "kind": "enters",
+   "kind_native": "s2m",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "|i⟩, |f⟩ ∈ F",
+    "generic": true,
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:e3:s_num",
+   "branch": "HEP",
+   "native_id": "sm/e3",
+   "inputs": [
+    "HEP:s_num"
+   ],
+   "target": "HEP:m_A",
+   "logic": "single",
+   "kind": "enters",
+   "kind_native": "s2m",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "|i⟩, |f⟩ ∈ F",
+    "generic": true,
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:e3:s_mu",
+   "branch": "HEP",
+   "native_id": "sm/e3",
+   "inputs": [
+    "HEP:s_mu"
+   ],
+   "target": "HEP:m_A",
+   "logic": "single",
+   "kind": "enters",
+   "kind_native": "s2m",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "|i⟩, |f⟩ ∈ F",
+    "generic": true,
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:e3:s_u",
+   "branch": "HEP",
+   "native_id": "sm/e3",
+   "inputs": [
+    "HEP:s_u"
+   ],
+   "target": "HEP:m_A",
+   "logic": "single",
+   "kind": "enters",
+   "kind_native": "s2m",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "|i⟩, |f⟩ ∈ F",
+    "generic": true,
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:e3:s_d",
+   "branch": "HEP",
+   "native_id": "sm/e3",
+   "inputs": [
+    "HEP:s_d"
+   ],
+   "target": "HEP:m_A",
+   "logic": "single",
+   "kind": "enters",
+   "kind_native": "s2m",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "|i⟩, |f⟩ ∈ F",
+    "generic": true,
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:e3:s_g",
+   "branch": "HEP",
+   "native_id": "sm/e3",
+   "inputs": [
+    "HEP:s_g"
+   ],
+   "target": "HEP:m_A",
+   "logic": "single",
+   "kind": "enters",
+   "kind_native": "s2m",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "|i⟩, |f⟩ ∈ F",
+    "generic": true,
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:e3:s_W",
+   "branch": "HEP",
+   "native_id": "sm/e3",
+   "inputs": [
+    "HEP:s_W"
+   ],
+   "target": "HEP:m_A",
+   "logic": "single",
+   "kind": "enters",
+   "kind_native": "s2m",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "|i⟩, |f⟩ ∈ F",
+    "generic": true,
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:e3:s_Z",
+   "branch": "HEP",
+   "native_id": "sm/e3",
+   "inputs": [
+    "HEP:s_Z"
+   ],
+   "target": "HEP:m_A",
+   "logic": "single",
+   "kind": "enters",
+   "kind_native": "s2m",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "|i⟩, |f⟩ ∈ F",
+    "generic": true,
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:e3:s_H",
+   "branch": "HEP",
+   "native_id": "sm/e3",
+   "inputs": [
+    "HEP:s_H"
+   ],
+   "target": "HEP:m_A",
+   "logic": "single",
+   "kind": "enters",
+   "kind_native": "s2m",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "|i⟩, |f⟩ ∈ F",
+    "generic": true,
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:e4:s_nue",
+   "branch": "HEP",
+   "native_id": "sm/e4",
+   "inputs": [
+    "HEP:m_field"
+   ],
+   "target": "HEP:s_nue",
+   "logic": "single",
+   "kind": "backedge",
+   "kind_native": "m2s",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "ladders |N⟩",
+    "generic": true,
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:e4:s_e",
+   "branch": "HEP",
+   "native_id": "sm/e4",
+   "inputs": [
+    "HEP:m_field"
+   ],
+   "target": "HEP:s_e",
+   "logic": "single",
+   "kind": "backedge",
+   "kind_native": "m2s",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "ladders |N⟩",
+    "generic": true,
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:e4:s_num",
+   "branch": "HEP",
+   "native_id": "sm/e4",
+   "inputs": [
+    "HEP:m_field"
+   ],
+   "target": "HEP:s_num",
+   "logic": "single",
+   "kind": "backedge",
+   "kind_native": "m2s",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "ladders |N⟩",
+    "generic": true,
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:e4:s_mu",
+   "branch": "HEP",
+   "native_id": "sm/e4",
+   "inputs": [
+    "HEP:m_field"
+   ],
+   "target": "HEP:s_mu",
+   "logic": "single",
+   "kind": "backedge",
+   "kind_native": "m2s",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "ladders |N⟩",
+    "generic": true,
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:e4:s_u",
+   "branch": "HEP",
+   "native_id": "sm/e4",
+   "inputs": [
+    "HEP:m_field"
+   ],
+   "target": "HEP:s_u",
+   "logic": "single",
+   "kind": "backedge",
+   "kind_native": "m2s",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "ladders |N⟩",
+    "generic": true,
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:e4:s_d",
+   "branch": "HEP",
+   "native_id": "sm/e4",
+   "inputs": [
+    "HEP:m_field"
+   ],
+   "target": "HEP:s_d",
+   "logic": "single",
+   "kind": "backedge",
+   "kind_native": "m2s",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "ladders |N⟩",
+    "generic": true,
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:e4:s_g",
+   "branch": "HEP",
+   "native_id": "sm/e4",
+   "inputs": [
+    "HEP:m_field"
+   ],
+   "target": "HEP:s_g",
+   "logic": "single",
+   "kind": "backedge",
+   "kind_native": "m2s",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "ladders |N⟩",
+    "generic": true,
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:e4:s_W",
+   "branch": "HEP",
+   "native_id": "sm/e4",
+   "inputs": [
+    "HEP:m_field"
+   ],
+   "target": "HEP:s_W",
+   "logic": "single",
+   "kind": "backedge",
+   "kind_native": "m2s",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "ladders |N⟩",
+    "generic": true,
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:e4:s_Z",
+   "branch": "HEP",
+   "native_id": "sm/e4",
+   "inputs": [
+    "HEP:m_field"
+   ],
+   "target": "HEP:s_Z",
+   "logic": "single",
+   "kind": "backedge",
+   "kind_native": "m2s",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "ladders |N⟩",
+    "generic": true,
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:e4:s_H",
+   "branch": "HEP",
+   "native_id": "sm/e4",
+   "inputs": [
+    "HEP:m_field"
+   ],
+   "target": "HEP:s_H",
+   "logic": "single",
+   "kind": "backedge",
+   "kind_native": "m2s",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "ladders |N⟩",
+    "generic": true,
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:e5:s_nue",
+   "branch": "HEP",
+   "native_id": "sm/e5",
+   "inputs": [
+    "HEP:m_U"
+   ],
+   "target": "HEP:s_nue",
+   "logic": "single",
+   "kind": "backedge",
+   "kind_native": "m2s",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "U(Λ, a) restricted to each sector",
+    "generic": true,
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:e5:s_e",
+   "branch": "HEP",
+   "native_id": "sm/e5",
+   "inputs": [
+    "HEP:m_U"
+   ],
+   "target": "HEP:s_e",
+   "logic": "single",
+   "kind": "backedge",
+   "kind_native": "m2s",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "U(Λ, a) restricted to each sector",
+    "generic": true,
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:e5:s_num",
+   "branch": "HEP",
+   "native_id": "sm/e5",
+   "inputs": [
+    "HEP:m_U"
+   ],
+   "target": "HEP:s_num",
+   "logic": "single",
+   "kind": "backedge",
+   "kind_native": "m2s",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "U(Λ, a) restricted to each sector",
+    "generic": true,
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:e5:s_mu",
+   "branch": "HEP",
+   "native_id": "sm/e5",
+   "inputs": [
+    "HEP:m_U"
+   ],
+   "target": "HEP:s_mu",
+   "logic": "single",
+   "kind": "backedge",
+   "kind_native": "m2s",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "U(Λ, a) restricted to each sector",
+    "generic": true,
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:e5:s_u",
+   "branch": "HEP",
+   "native_id": "sm/e5",
+   "inputs": [
+    "HEP:m_U"
+   ],
+   "target": "HEP:s_u",
+   "logic": "single",
+   "kind": "backedge",
+   "kind_native": "m2s",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "U(Λ, a) restricted to each sector",
+    "generic": true,
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:e5:s_d",
+   "branch": "HEP",
+   "native_id": "sm/e5",
+   "inputs": [
+    "HEP:m_U"
+   ],
+   "target": "HEP:s_d",
+   "logic": "single",
+   "kind": "backedge",
+   "kind_native": "m2s",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "U(Λ, a) restricted to each sector",
+    "generic": true,
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:e5:s_g",
+   "branch": "HEP",
+   "native_id": "sm/e5",
+   "inputs": [
+    "HEP:m_U"
+   ],
+   "target": "HEP:s_g",
+   "logic": "single",
+   "kind": "backedge",
+   "kind_native": "m2s",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "U(Λ, a) restricted to each sector",
+    "generic": true,
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:e5:s_W",
+   "branch": "HEP",
+   "native_id": "sm/e5",
+   "inputs": [
+    "HEP:m_U"
+   ],
+   "target": "HEP:s_W",
+   "logic": "single",
+   "kind": "backedge",
+   "kind_native": "m2s",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "U(Λ, a) restricted to each sector",
+    "generic": true,
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:e5:s_Z",
+   "branch": "HEP",
+   "native_id": "sm/e5",
+   "inputs": [
+    "HEP:m_U"
+   ],
+   "target": "HEP:s_Z",
+   "logic": "single",
+   "kind": "backedge",
+   "kind_native": "m2s",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "U(Λ, a) restricted to each sector",
+    "generic": true,
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:e5:s_H",
+   "branch": "HEP",
+   "native_id": "sm/e5",
+   "inputs": [
+    "HEP:m_U"
+   ],
+   "target": "HEP:s_H",
+   "logic": "single",
+   "kind": "backedge",
+   "kind_native": "m2s",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "U(Λ, a) restricted to each sector",
+    "generic": true,
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:e6",
+   "branch": "HEP",
+   "native_id": "sm/e6",
+   "inputs": [
+    "HEP:c_gf"
+   ],
+   "target": "HEP:o_ae",
+   "logic": "single",
+   "kind": "predicts",
+   "kind_native": "m2o/pred",
+   "status": "pred",
+   "polarity": "possibility",
+   "t": 12,
+   "extra": {
+    "rel": "EM vertex: a_{e} = α/2π + …",
+    "step": "sm",
+    "weak": false
+   }
+  },
+  {
+   "uid": "HEP:sm:e7",
+   "branch": "HEP",
+   "native_id": "sm/e7",
+   "inputs": [
+    "HEP:c_gf"
+   ],
+   "target": "HEP:o_alpha",
+   "logic": "single",
+   "kind": "calibrates",
+   "kind_native": "m2o/fit",
+   "status": "fit",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "α fixes e = g sinθ_{W}",
+    "step": "sm",
+    "weak": false
+   }
+  },
+  {
+   "uid": "HEP:sm:e8",
+   "branch": "HEP",
+   "native_id": "sm/e8",
+   "inputs": [
+    "HEP:c_gf"
+   ],
+   "target": "HEP:o_beta",
+   "logic": "single",
+   "kind": "predicts",
+   "kind_native": "m2o/pred",
+   "status": "pred",
+   "polarity": "possibility",
+   "t": 12,
+   "extra": {
+    "rel": "CC vertex, q^{2} ≪ M_{W}^{2}",
+    "step": "sm",
+    "weak": false
+   }
+  },
+  {
+   "uid": "HEP:sm:e9",
+   "branch": "HEP",
+   "native_id": "sm/e9",
+   "inputs": [
+    "HEP:c_gf"
+   ],
+   "target": "HEP:o_mutau",
+   "logic": "single",
+   "kind": "predicts",
+   "kind_native": "m2o/pred",
+   "status": "pred",
+   "polarity": "possibility",
+   "t": 12,
+   "extra": {
+    "rel": "CC vertex, q^{2} ≪ M_{W}^{2}",
+    "step": "sm",
+    "weak": false
+   }
+  },
+  {
+   "uid": "HEP:sm:e10",
+   "branch": "HEP",
+   "native_id": "sm/e10",
+   "inputs": [
+    "HEP:c_gf"
+   ],
+   "target": "HEP:o_wu",
+   "logic": "single",
+   "kind": "predicts",
+   "kind_native": "m2o/pred",
+   "status": "pred",
+   "polarity": "possibility",
+   "t": 12,
+   "extra": {
+    "rel": "left-handed couplings",
+    "step": "sm",
+    "weak": false
+   }
+  },
+  {
+   "uid": "HEP:sm:e11",
+   "branch": "HEP",
+   "native_id": "sm/e11",
+   "inputs": [
+    "HEP:c_gf"
+   ],
+   "target": "HEP:o_nc",
+   "logic": "single",
+   "kind": "predicts",
+   "kind_native": "m2o/pred",
+   "status": "pred",
+   "polarity": "possibility",
+   "t": 12,
+   "extra": {
+    "rel": "NC vertex",
+    "step": "sm",
+    "weak": false
+   }
+  },
+  {
+   "uid": "HEP:sm:e12",
+   "branch": "HEP",
+   "native_id": "sm/e12",
+   "inputs": [
+    "HEP:c_gf"
+   ],
+   "target": "HEP:o_nnu",
+   "logic": "single",
+   "kind": "predicts",
+   "kind_native": "m2o/pred",
+   "status": "pred",
+   "polarity": "possibility",
+   "t": 12,
+   "extra": {
+    "rel": "NC vertex: Γ_{inv} = N_{ν}Γ(Z → νν̄)",
+    "step": "sm",
+    "weak": false
+   }
+  },
+  {
+   "uid": "HEP:sm:e13",
+   "branch": "HEP",
+   "native_id": "sm/e13",
+   "inputs": [
+    "HEP:c_gf"
+   ],
+   "target": "HEP:o_GF",
+   "logic": "single",
+   "kind": "calibrates",
+   "kind_native": "m2o/fit",
+   "status": "fit",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "G_{F} = g^{2}/(4√2 M_{W}^{2}) fixed by τ_{μ}",
+    "step": "sm",
+    "weak": false
+   }
+  },
+  {
+   "uid": "HEP:sm:e14",
+   "branch": "HEP",
+   "native_id": "sm/e14",
+   "inputs": [
+    "HEP:c_gg"
+   ],
+   "target": "HEP:o_tgc",
+   "logic": "single",
+   "kind": "predicts",
+   "kind_native": "m2o/pred",
+   "status": "pred",
+   "polarity": "possibility",
+   "t": 12,
+   "extra": {
+    "rel": "WWγ, WWZ vertices in e^{+}e^{−} → W^{+}W^{−}",
+    "step": "sm",
+    "weak": false
+   }
+  },
+  {
+   "uid": "HEP:sm:e15",
+   "branch": "HEP",
+   "native_id": "sm/e15",
+   "inputs": [
+    "HEP:c_hg"
+   ],
+   "target": "HEP:o_mw",
+   "logic": "single",
+   "kind": "predicts",
+   "kind_native": "m2o/pred",
+   "status": "pred",
+   "polarity": "possibility",
+   "t": 12,
+   "extra": {
+    "rel": "M_{W} = gv/2",
+    "step": "sm",
+    "weak": false
+   }
+  },
+  {
+   "uid": "HEP:sm:e16",
+   "branch": "HEP",
+   "native_id": "sm/e16",
+   "inputs": [
+    "HEP:c_hg"
+   ],
+   "target": "HEP:o_mz",
+   "logic": "single",
+   "kind": "predicts",
+   "kind_native": "m2o/pred",
+   "status": "pred",
+   "polarity": "possibility",
+   "t": 12,
+   "extra": {
+    "rel": "M_{Z} = M_{W}/cosθ_{W}",
+    "step": "sm",
+    "weak": false
+   }
+  },
+  {
+   "uid": "HEP:sm:e17",
+   "branch": "HEP",
+   "native_id": "sm/e17",
+   "inputs": [
+    "HEP:c_hg"
+   ],
+   "target": "HEP:o_hbr",
+   "logic": "single",
+   "kind": "predicts",
+   "kind_native": "m2o/pred",
+   "status": "pred",
+   "polarity": "possibility",
+   "t": 12,
+   "extra": {
+    "rel": "H → WW^{*}, ZZ^{*}; H → γγ via W loop",
+    "step": "sm",
+    "weak": false
+   }
+  },
+  {
+   "uid": "HEP:sm:e18",
+   "branch": "HEP",
+   "native_id": "sm/e18",
+   "inputs": [
+    "HEP:c_yuk"
+   ],
+   "target": "HEP:o_mf",
+   "logic": "single",
+   "kind": "calibrates",
+   "kind_native": "m2o/fit",
+   "status": "fit",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "m_{f} = y_{f}v/√2",
+    "step": "sm",
+    "weak": false
+   }
+  },
+  {
+   "uid": "HEP:sm:e19",
+   "branch": "HEP",
+   "native_id": "sm/e19",
+   "inputs": [
+    "HEP:c_yuk"
+   ],
+   "target": "HEP:o_hbr",
+   "logic": "single",
+   "kind": "predicts",
+   "kind_native": "m2o/pred",
+   "status": "pred",
+   "polarity": "possibility",
+   "t": 12,
+   "extra": {
+    "rel": "H → ττ, bb̄; gluon fusion via top loop",
+    "step": "sm",
+    "weak": false
+   }
+  },
+  {
+   "uid": "HEP:sm:e20",
+   "branch": "HEP",
+   "native_id": "sm/e20",
+   "inputs": [
+    "HEP:c_pot"
+   ],
+   "target": "HEP:o_mh",
+   "logic": "single",
+   "kind": "calibrates",
+   "kind_native": "m2o/fit",
+   "status": "fit",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "m_{H} fixes λ",
+    "step": "sm",
+    "weak": false
+   }
+  },
+  {
+   "uid": "HEP:sm:e21",
+   "branch": "HEP",
+   "native_id": "sm/e21",
+   "inputs": [
+    "HEP:c_pot"
+   ],
+   "target": "HEP:o_lam",
+   "logic": "single",
+   "kind": "predicts",
+   "kind_native": "m2o/pred",
+   "status": "pred",
+   "polarity": "possibility",
+   "t": 12,
+   "extra": {
+    "rel": "λ_{HHH} = 3m_{H}^{2}/v (untested)",
+    "step": "sm",
+    "weak": false
+   }
+  },
+  {
+   "uid": "HEP:sm:e22",
+   "branch": "HEP",
+   "native_id": "sm/e22",
+   "inputs": [
+    "HEP:c_bsm"
+   ],
+   "target": "HEP:o_osc",
+   "logic": "single",
+   "kind": "candidate",
+   "kind_native": "m2o/cand",
+   "status": "cand",
+   "polarity": "open",
+   "t": 12,
+   "extra": {
+    "rel": "candidate: m_{ν} from (LΦ)(LΦ)/Λ or y_{ν}v/√2",
+    "step": "sm",
+    "weak": false
+   }
+  },
+  {
+   "uid": "HEP:sm:and1",
+   "branch": "HEP",
+   "native_id": "sm/and1",
+   "inputs": [
+    "HEP:s_e",
+    "HEP:s_mu",
+    "HEP:s_u",
+    "HEP:s_d",
+    "HEP:s_g"
+   ],
+   "target": "HEP:c_gf",
+   "logic": "AND",
+   "kind": "enters",
+   "kind_native": "and_route",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "label": "f(2)∧γ(1)",
+    "rel": "electromagnetic vertex",
+    "legs": [
+     {
+      "group": "chg",
+      "members": [
+       "s_e",
+       "s_mu",
+       "s_u",
+       "s_d"
+      ],
+      "n": 2,
+      "label": "f(2)"
+     },
+     {
+      "sector": "s_g",
+      "n": 1
+     }
+    ],
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:and2",
+   "branch": "HEP",
+   "native_id": "sm/and2",
+   "inputs": [
+    "HEP:s_nue",
+    "HEP:s_e",
+    "HEP:s_W"
+   ],
+   "target": "HEP:c_gf",
+   "logic": "AND",
+   "kind": "enters",
+   "kind_native": "and_route",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "label": "ν_{e}(1)∧e(1)∧W(1)",
+    "rel": "charged current, first generation leptons",
+    "legs": [
+     {
+      "sector": "s_nue",
+      "n": 1
+     },
+     {
+      "sector": "s_e",
+      "n": 1
+     },
+     {
+      "sector": "s_W",
+      "n": 1
+     }
+    ],
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:and3",
+   "branch": "HEP",
+   "native_id": "sm/and3",
+   "inputs": [
+    "HEP:s_num",
+    "HEP:s_mu",
+    "HEP:s_W"
+   ],
+   "target": "HEP:c_gf",
+   "logic": "AND",
+   "kind": "enters",
+   "kind_native": "and_route",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "label": "ν_{μ}(1)∧μ(1)∧W(1)",
+    "rel": "charged current, second generation leptons",
+    "legs": [
+     {
+      "sector": "s_num",
+      "n": 1
+     },
+     {
+      "sector": "s_mu",
+      "n": 1
+     },
+     {
+      "sector": "s_W",
+      "n": 1
+     }
+    ],
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:and4",
+   "branch": "HEP",
+   "native_id": "sm/and4",
+   "inputs": [
+    "HEP:s_u",
+    "HEP:s_d",
+    "HEP:s_W"
+   ],
+   "target": "HEP:c_gf",
+   "logic": "AND",
+   "kind": "enters",
+   "kind_native": "and_route",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "label": "u(1)∧d(1)∧W(1)",
+    "rel": "charged current, quarks (× cosθ_{C})",
+    "legs": [
+     {
+      "sector": "s_u",
+      "n": 1
+     },
+     {
+      "sector": "s_d",
+      "n": 1
+     },
+     {
+      "sector": "s_W",
+      "n": 1
+     }
+    ],
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:and5",
+   "branch": "HEP",
+   "native_id": "sm/and5",
+   "inputs": [
+    "HEP:s_nue",
+    "HEP:s_e",
+    "HEP:s_num",
+    "HEP:s_mu",
+    "HEP:s_u",
+    "HEP:s_d",
+    "HEP:s_Z"
+   ],
+   "target": "HEP:c_gf",
+   "logic": "AND",
+   "kind": "enters",
+   "kind_native": "and_route",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "label": "f(2)∧Z(1)",
+    "rel": "neutral current, every fermion sector",
+    "legs": [
+     {
+      "group": "fer",
+      "members": [
+       "s_nue",
+       "s_e",
+       "s_num",
+       "s_mu",
+       "s_u",
+       "s_d"
+      ],
+      "n": 2,
+      "label": "f(2)"
+     },
+     {
+      "sector": "s_Z",
+      "n": 1
+     }
+    ],
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:and6",
+   "branch": "HEP",
+   "native_id": "sm/and6",
+   "inputs": [
+    "HEP:s_W",
+    "HEP:s_g"
+   ],
+   "target": "HEP:c_gg",
+   "logic": "AND",
+   "kind": "enters",
+   "kind_native": "and_route",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "label": "W(2)∧γ(1)",
+    "rel": "WWγ",
+    "legs": [
+     {
+      "sector": "s_W",
+      "n": 2
+     },
+     {
+      "sector": "s_g",
+      "n": 1
+     }
+    ],
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:and7",
+   "branch": "HEP",
+   "native_id": "sm/and7",
+   "inputs": [
+    "HEP:s_W",
+    "HEP:s_Z"
+   ],
+   "target": "HEP:c_gg",
+   "logic": "AND",
+   "kind": "enters",
+   "kind_native": "and_route",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "label": "W(2)∧Z(1); W(4)",
+    "rel": "WWZ and quartic vertices",
+    "legs": [
+     {
+      "sector": "s_W",
+      "n": 2
+     },
+     {
+      "sector": "s_Z",
+      "n": 1
+     }
+    ],
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:and8",
+   "branch": "HEP",
+   "native_id": "sm/and8",
+   "inputs": [
+    "HEP:s_H",
+    "HEP:s_W"
+   ],
+   "target": "HEP:c_hg",
+   "logic": "AND",
+   "kind": "enters",
+   "kind_native": "and_route",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "label": "H(1)∧W(2)",
+    "rel": "HWW",
+    "legs": [
+     {
+      "sector": "s_H",
+      "n": 1
+     },
+     {
+      "sector": "s_W",
+      "n": 2
+     }
+    ],
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:and9",
+   "branch": "HEP",
+   "native_id": "sm/and9",
+   "inputs": [
+    "HEP:s_H",
+    "HEP:s_Z"
+   ],
+   "target": "HEP:c_hg",
+   "logic": "AND",
+   "kind": "enters",
+   "kind_native": "and_route",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "label": "H(1)∧Z(2)",
+    "rel": "HZZ",
+    "legs": [
+     {
+      "sector": "s_H",
+      "n": 1
+     },
+     {
+      "sector": "s_Z",
+      "n": 2
+     }
+    ],
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:and10",
+   "branch": "HEP",
+   "native_id": "sm/and10",
+   "inputs": [
+    "HEP:s_H",
+    "HEP:s_e",
+    "HEP:s_mu",
+    "HEP:s_u",
+    "HEP:s_d"
+   ],
+   "target": "HEP:c_yuk",
+   "logic": "AND",
+   "kind": "enters",
+   "kind_native": "and_route",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "label": "H(1)∧f(2)",
+    "rel": "Yukawa vertex ∝ m_{f}/v",
+    "legs": [
+     {
+      "sector": "s_H",
+      "n": 1
+     },
+     {
+      "group": "chg",
+      "members": [
+       "s_e",
+       "s_mu",
+       "s_u",
+       "s_d"
+      ],
+      "n": 2,
+      "label": "f(2)"
+     }
+    ],
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:and11",
+   "branch": "HEP",
+   "native_id": "sm/and11",
+   "inputs": [
+    "HEP:s_H"
+   ],
+   "target": "HEP:c_pot",
+   "logic": "AND",
+   "kind": "enters",
+   "kind_native": "and_route",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "label": "H(3)",
+    "rel": "HHH",
+    "legs": [
+     {
+      "sector": "s_H",
+      "n": 3
+     }
+    ],
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:and12",
+   "branch": "HEP",
+   "native_id": "sm/and12",
+   "inputs": [
+    "HEP:s_nue",
+    "HEP:s_num",
+    "HEP:s_H"
+   ],
+   "target": "HEP:c_bsm",
+   "logic": "AND",
+   "kind": "candidate",
+   "kind_native": "and_route",
+   "status": "candidate",
+   "polarity": "open",
+   "t": 12,
+   "extra": {
+    "label": "ν(2)∧H(2)",
+    "rel": "Weinberg operator (candidate)",
+    "legs": [
+     {
+      "group": "nus",
+      "members": [
+       "s_nue",
+       "s_num"
+      ],
+      "n": 2,
+      "label": "ν(2)"
+     },
+     {
+      "sector": "s_H",
+      "n": 2
+     }
+    ],
+    "step": "sm"
+   }
+  },
+  {
+   "uid": "HEP:sm:lineage:c_gf:1",
+   "branch": "HEP",
+   "native_id": "sm/lineage/c_gf/1",
+   "inputs": [
+    "HEP:m_fermi"
+   ],
+   "target": "HEP:m_va",
+   "logic": "single",
+   "kind": "lineage",
+   "kind_native": "cluster_lineage",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "Fermi node rewritten with V−A currents (1958)",
+    "cluster": "c_gf"
+   }
+  },
+  {
+   "uid": "HEP:sm:lineage:c_gf:2",
+   "branch": "HEP",
+   "native_id": "sm/lineage/c_gf/2",
+   "inputs": [
+    "HEP:m_mu"
+   ],
+   "target": "HEP:m_va",
+   "logic": "single",
+   "kind": "lineage",
+   "kind_native": "cluster_lineage",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "μ-decay node rewritten with V−A currents (1958)",
+    "cluster": "c_gf"
+   }
+  },
+  {
+   "uid": "HEP:sm:lineage:c_gf:3",
+   "branch": "HEP",
+   "native_id": "sm/lineage/c_gf/3",
+   "inputs": [
+    "HEP:m_va"
+   ],
+   "target": "HEP:m_cc",
+   "logic": "single",
+   "kind": "lineage",
+   "kind_native": "cluster_lineage",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "rel": "low-energy limit of W exchange: G_{F}/√2 = g^{2}/8M_{W}^{2}",
+    "cluster": "c_gf"
+   }
+  },
+  {
+   "uid": "HEP:sm:member:c_gf:m_fermi",
+   "branch": "HEP",
+   "native_id": "sm/member/c_gf/m_fermi",
+   "inputs": [
+    "HEP:m_fermi"
+   ],
+   "target": "HEP:c_gf",
+   "logic": "single",
+   "kind": "subset",
+   "kind_native": "cluster_member",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "cluster": "c_gf"
+   }
+  },
+  {
+   "uid": "HEP:sm:member:c_gf:m_mu",
+   "branch": "HEP",
+   "native_id": "sm/member/c_gf/m_mu",
+   "inputs": [
+    "HEP:m_mu"
+   ],
+   "target": "HEP:c_gf",
+   "logic": "single",
+   "kind": "subset",
+   "kind_native": "cluster_member",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "cluster": "c_gf"
+   }
+  },
+  {
+   "uid": "HEP:sm:member:c_gf:m_va",
+   "branch": "HEP",
+   "native_id": "sm/member/c_gf/m_va",
+   "inputs": [
+    "HEP:m_va"
+   ],
+   "target": "HEP:c_gf",
+   "logic": "single",
+   "kind": "subset",
+   "kind_native": "cluster_member",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "cluster": "c_gf"
+   }
+  },
+  {
+   "uid": "HEP:sm:member:c_gf:m_qed",
+   "branch": "HEP",
+   "native_id": "sm/member/c_gf/m_qed",
+   "inputs": [
+    "HEP:m_qed"
+   ],
+   "target": "HEP:c_gf",
+   "logic": "single",
+   "kind": "subset",
+   "kind_native": "cluster_member",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "cluster": "c_gf"
+   }
+  },
+  {
+   "uid": "HEP:sm:member:c_gf:m_cc",
+   "branch": "HEP",
+   "native_id": "sm/member/c_gf/m_cc",
+   "inputs": [
+    "HEP:m_cc"
+   ],
+   "target": "HEP:c_gf",
+   "logic": "single",
+   "kind": "subset",
+   "kind_native": "cluster_member",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "cluster": "c_gf"
+   }
+  },
+  {
+   "uid": "HEP:sm:member:c_gf:m_nc",
+   "branch": "HEP",
+   "native_id": "sm/member/c_gf/m_nc",
+   "inputs": [
+    "HEP:m_nc"
+   ],
+   "target": "HEP:c_gf",
+   "logic": "single",
+   "kind": "subset",
+   "kind_native": "cluster_member",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "cluster": "c_gf"
+   }
+  },
+  {
+   "uid": "HEP:sm:member:c_gg:m_gs",
+   "branch": "HEP",
+   "native_id": "sm/member/c_gg/m_gs",
+   "inputs": [
+    "HEP:m_gs"
+   ],
+   "target": "HEP:c_gg",
+   "logic": "single",
+   "kind": "subset",
+   "kind_native": "cluster_member",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "cluster": "c_gg"
+   }
+  },
+  {
+   "uid": "HEP:sm:member:c_hg:m_hg",
+   "branch": "HEP",
+   "native_id": "sm/member/c_hg/m_hg",
+   "inputs": [
+    "HEP:m_hg"
+   ],
+   "target": "HEP:c_hg",
+   "logic": "single",
+   "kind": "subset",
+   "kind_native": "cluster_member",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "cluster": "c_hg"
+   }
+  },
+  {
+   "uid": "HEP:sm:member:c_yuk:m_yuk",
+   "branch": "HEP",
+   "native_id": "sm/member/c_yuk/m_yuk",
+   "inputs": [
+    "HEP:m_yuk"
+   ],
+   "target": "HEP:c_yuk",
+   "logic": "single",
+   "kind": "subset",
+   "kind_native": "cluster_member",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "cluster": "c_yuk"
+   }
+  },
+  {
+   "uid": "HEP:sm:member:c_pot:m_pot",
+   "branch": "HEP",
+   "native_id": "sm/member/c_pot/m_pot",
+   "inputs": [
+    "HEP:m_pot"
+   ],
+   "target": "HEP:c_pot",
+   "logic": "single",
+   "kind": "subset",
+   "kind_native": "cluster_member",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "cluster": "c_pot"
+   }
+  },
+  {
+   "uid": "HEP:sm:member:c_bsm:m_numass",
+   "branch": "HEP",
+   "native_id": "sm/member/c_bsm/m_numass",
+   "inputs": [
+    "HEP:m_numass"
+   ],
+   "target": "HEP:c_bsm",
+   "logic": "single",
+   "kind": "subset",
+   "kind_native": "cluster_member",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "cluster": "c_bsm"
+   }
+  },
+  {
+   "uid": "HEP:fam:o_compton:o_sig",
+   "branch": "HEP",
+   "native_id": "fam/o_compton/o_sig",
+   "inputs": [
+    "HEP:o_compton"
+   ],
+   "target": "HEP:o_sig",
+   "logic": "single",
+   "kind": "subset",
+   "kind_native": "observable_family",
+   "status": "established",
+   "polarity": "structural",
+   "t": 5,
+   "extra": {
+    "family": "σ-type"
+   }
+  },
+  {
+   "uid": "HEP:fam:o_pair:o_sig",
+   "branch": "HEP",
+   "native_id": "fam/o_pair/o_sig",
+   "inputs": [
+    "HEP:o_pair"
+   ],
+   "target": "HEP:o_sig",
+   "logic": "single",
+   "kind": "subset",
+   "kind_native": "observable_family",
+   "status": "established",
+   "polarity": "structural",
+   "t": 5,
+   "extra": {
+    "family": "σ-type"
+   }
+  },
+  {
+   "uid": "HEP:fam:o_nc:o_sig",
+   "branch": "HEP",
+   "native_id": "fam/o_nc/o_sig",
+   "inputs": [
+    "HEP:o_nc"
+   ],
+   "target": "HEP:o_sig",
+   "logic": "single",
+   "kind": "subset",
+   "kind_native": "observable_family",
+   "status": "established",
+   "polarity": "structural",
+   "t": 9,
+   "extra": {
+    "family": "σ-type"
+   }
+  },
+  {
+   "uid": "HEP:fam:o_tgc:o_sig",
+   "branch": "HEP",
+   "native_id": "fam/o_tgc/o_sig",
+   "inputs": [
+    "HEP:o_tgc"
+   ],
+   "target": "HEP:o_sig",
+   "logic": "single",
+   "kind": "subset",
+   "kind_native": "observable_family",
+   "status": "established",
+   "polarity": "structural",
+   "t": 9,
+   "extra": {
+    "family": "σ-type"
+   }
+  },
+  {
+   "uid": "HEP:fam:o_hbr:o_sig",
+   "branch": "HEP",
+   "native_id": "fam/o_hbr/o_sig",
+   "inputs": [
+    "HEP:o_hbr"
+   ],
+   "target": "HEP:o_sig",
+   "logic": "single",
+   "kind": "subset",
+   "kind_native": "observable_family",
+   "status": "established",
+   "polarity": "structural",
+   "t": 10,
+   "extra": {
+    "family": "σ-type"
+   }
+  },
+  {
+   "uid": "HEP:fam:o_beta:o_G",
+   "branch": "HEP",
+   "native_id": "fam/o_beta/o_G",
+   "inputs": [
+    "HEP:o_beta"
+   ],
+   "target": "HEP:o_G",
+   "logic": "single",
+   "kind": "subset",
+   "kind_native": "observable_family",
+   "status": "established",
+   "polarity": "structural",
+   "t": 5,
+   "extra": {
+    "family": "Γ-type"
+   }
+  },
+  {
+   "uid": "HEP:fam:o_ntau:o_G",
+   "branch": "HEP",
+   "native_id": "fam/o_ntau/o_G",
+   "inputs": [
+    "HEP:o_ntau"
+   ],
+   "target": "HEP:o_G",
+   "logic": "single",
+   "kind": "subset",
+   "kind_native": "observable_family",
+   "status": "established",
+   "polarity": "structural",
+   "t": 6,
+   "extra": {
+    "family": "Γ-type"
+   }
+  },
+  {
+   "uid": "HEP:fam:o_mutau:o_G",
+   "branch": "HEP",
+   "native_id": "fam/o_mutau/o_G",
+   "inputs": [
+    "HEP:o_mutau"
+   ],
+   "target": "HEP:o_G",
+   "logic": "single",
+   "kind": "subset",
+   "kind_native": "observable_family",
+   "status": "established",
+   "polarity": "structural",
+   "t": 7,
+   "extra": {
+    "family": "Γ-type"
+   }
+  },
+  {
+   "uid": "HEP:fam:o_sig:o_prod",
+   "branch": "HEP",
+   "native_id": "fam/o_sig/o_prod",
+   "inputs": [
+    "HEP:o_sig"
+   ],
+   "target": "HEP:o_prod",
+   "logic": "single",
+   "kind": "subset",
+   "kind_native": "observable_family",
+   "status": "established",
+   "polarity": "structural",
+   "t": 4,
+   "extra": {
+    "family": "rewrite of particle production (Step 4)"
+   }
+  },
+  {
+   "uid": "HEP:fam:o_G:o_prod",
+   "branch": "HEP",
+   "native_id": "fam/o_G/o_prod",
+   "inputs": [
+    "HEP:o_G"
+   ],
+   "target": "HEP:o_prod",
+   "logic": "single",
+   "kind": "subset",
+   "kind_native": "observable_family",
+   "status": "established",
+   "polarity": "structural",
+   "t": 4,
+   "extra": {
+    "family": "rewrite of particle production (Step 4)"
+   }
+  }
+ ]
+}

@@ -1,0 +1,8285 @@
+{
+ "EM": {
+  "filtration": {
+   "routes": 122,
+   "forward_links": 0,
+   "violations": [],
+   "time_points": 65,
+   "t_min": 2,
+   "t_max": 77
+  },
+  "growth": [
+   {
+    "t": 2,
+    "S": 1,
+    "M": 2,
+    "O": 3,
+    "routes": 3,
+    "AND": 1,
+    "failed": 0,
+    "classical": 6,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 5,
+    "S": 1,
+    "M": 3,
+    "O": 4,
+    "routes": 3,
+    "AND": 1,
+    "failed": 0,
+    "classical": 8,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 7,
+    "S": 1,
+    "M": 4,
+    "O": 4,
+    "routes": 3,
+    "AND": 1,
+    "failed": 0,
+    "classical": 9,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 8,
+    "S": 2,
+    "M": 5,
+    "O": 4,
+    "routes": 5,
+    "AND": 2,
+    "failed": 0,
+    "classical": 11,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 9,
+    "S": 2,
+    "M": 6,
+    "O": 4,
+    "routes": 5,
+    "AND": 2,
+    "failed": 0,
+    "classical": 12,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 10,
+    "S": 3,
+    "M": 7,
+    "O": 4,
+    "routes": 7,
+    "AND": 4,
+    "failed": 0,
+    "classical": 14,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 11,
+    "S": 5,
+    "M": 8,
+    "O": 4,
+    "routes": 8,
+    "AND": 5,
+    "failed": 0,
+    "classical": 17,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 12,
+    "S": 5,
+    "M": 10,
+    "O": 5,
+    "routes": 9,
+    "AND": 6,
+    "failed": 0,
+    "classical": 20,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 13,
+    "S": 6,
+    "M": 12,
+    "O": 7,
+    "routes": 18,
+    "AND": 15,
+    "failed": 0,
+    "classical": 25,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 14,
+    "S": 6,
+    "M": 12,
+    "O": 9,
+    "routes": 19,
+    "AND": 16,
+    "failed": 0,
+    "classical": 27,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 15,
+    "S": 7,
+    "M": 13,
+    "O": 11,
+    "routes": 22,
+    "AND": 19,
+    "failed": 0,
+    "classical": 31,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 16,
+    "S": 7,
+    "M": 14,
+    "O": 11,
+    "routes": 25,
+    "AND": 22,
+    "failed": 0,
+    "classical": 32,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 18,
+    "S": 7,
+    "M": 16,
+    "O": 12,
+    "routes": 25,
+    "AND": 22,
+    "failed": 0,
+    "classical": 35,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 19,
+    "S": 8,
+    "M": 17,
+    "O": 12,
+    "routes": 29,
+    "AND": 26,
+    "failed": 0,
+    "classical": 37,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 20,
+    "S": 8,
+    "M": 18,
+    "O": 14,
+    "routes": 31,
+    "AND": 28,
+    "failed": 0,
+    "classical": 40,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 23,
+    "S": 9,
+    "M": 18,
+    "O": 14,
+    "routes": 33,
+    "AND": 30,
+    "failed": 0,
+    "classical": 41,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 24,
+    "S": 9,
+    "M": 18,
+    "O": 15,
+    "routes": 34,
+    "AND": 31,
+    "failed": 0,
+    "classical": 42,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 25,
+    "S": 9,
+    "M": 18,
+    "O": 16,
+    "routes": 34,
+    "AND": 31,
+    "failed": 0,
+    "classical": 43,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 27,
+    "S": 9,
+    "M": 19,
+    "O": 16,
+    "routes": 36,
+    "AND": 33,
+    "failed": 0,
+    "classical": 44,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 28,
+    "S": 10,
+    "M": 19,
+    "O": 16,
+    "routes": 39,
+    "AND": 36,
+    "failed": 0,
+    "classical": 45,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 29,
+    "S": 10,
+    "M": 20,
+    "O": 17,
+    "routes": 41,
+    "AND": 38,
+    "failed": 0,
+    "classical": 47,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 30,
+    "S": 10,
+    "M": 21,
+    "O": 17,
+    "routes": 41,
+    "AND": 38,
+    "failed": 0,
+    "classical": 48,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 31,
+    "S": 11,
+    "M": 23,
+    "O": 17,
+    "routes": 46,
+    "AND": 43,
+    "failed": 0,
+    "classical": 51,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 32,
+    "S": 11,
+    "M": 24,
+    "O": 17,
+    "routes": 47,
+    "AND": 44,
+    "failed": 0,
+    "classical": 52,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 33,
+    "S": 11,
+    "M": 25,
+    "O": 18,
+    "routes": 48,
+    "AND": 45,
+    "failed": 0,
+    "classical": 54,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 35,
+    "S": 12,
+    "M": 26,
+    "O": 19,
+    "routes": 50,
+    "AND": 47,
+    "failed": 0,
+    "classical": 57,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 36,
+    "S": 12,
+    "M": 26,
+    "O": 20,
+    "routes": 51,
+    "AND": 48,
+    "failed": 0,
+    "classical": 58,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 37,
+    "S": 12,
+    "M": 26,
+    "O": 20,
+    "routes": 52,
+    "AND": 49,
+    "failed": 0,
+    "classical": 58,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 38,
+    "S": 12,
+    "M": 26,
+    "O": 20,
+    "routes": 53,
+    "AND": 50,
+    "failed": 0,
+    "classical": 58,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 39,
+    "S": 12,
+    "M": 26,
+    "O": 21,
+    "routes": 55,
+    "AND": 52,
+    "failed": 0,
+    "classical": 59,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 40,
+    "S": 12,
+    "M": 27,
+    "O": 21,
+    "routes": 55,
+    "AND": 52,
+    "failed": 0,
+    "classical": 60,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 42,
+    "S": 15,
+    "M": 27,
+    "O": 23,
+    "routes": 61,
+    "AND": 58,
+    "failed": 0,
+    "classical": 65,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 43,
+    "S": 15,
+    "M": 28,
+    "O": 23,
+    "routes": 62,
+    "AND": 59,
+    "failed": 0,
+    "classical": 66,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 44,
+    "S": 17,
+    "M": 30,
+    "O": 24,
+    "routes": 66,
+    "AND": 63,
+    "failed": 0,
+    "classical": 71,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 45,
+    "S": 17,
+    "M": 31,
+    "O": 25,
+    "routes": 67,
+    "AND": 64,
+    "failed": 0,
+    "classical": 73,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 46,
+    "S": 17,
+    "M": 31,
+    "O": 25,
+    "routes": 68,
+    "AND": 65,
+    "failed": 0,
+    "classical": 73,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 47,
+    "S": 17,
+    "M": 34,
+    "O": 25,
+    "routes": 72,
+    "AND": 69,
+    "failed": 0,
+    "classical": 76,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 48,
+    "S": 18,
+    "M": 35,
+    "O": 25,
+    "routes": 74,
+    "AND": 71,
+    "failed": 0,
+    "classical": 78,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 49,
+    "S": 18,
+    "M": 35,
+    "O": 26,
+    "routes": 75,
+    "AND": 72,
+    "failed": 0,
+    "classical": 79,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 50,
+    "S": 18,
+    "M": 36,
+    "O": 27,
+    "routes": 76,
+    "AND": 73,
+    "failed": 1,
+    "classical": 80,
+    "relativistic": 0,
+    "quantum": 1
+   },
+   {
+    "t": 51,
+    "S": 18,
+    "M": 37,
+    "O": 28,
+    "routes": 77,
+    "AND": 74,
+    "failed": 1,
+    "classical": 80,
+    "relativistic": 0,
+    "quantum": 3
+   },
+   {
+    "t": 52,
+    "S": 18,
+    "M": 37,
+    "O": 30,
+    "routes": 80,
+    "AND": 77,
+    "failed": 2,
+    "classical": 80,
+    "relativistic": 0,
+    "quantum": 5
+   },
+   {
+    "t": 53,
+    "S": 19,
+    "M": 37,
+    "O": 31,
+    "routes": 83,
+    "AND": 80,
+    "failed": 3,
+    "classical": 80,
+    "relativistic": 0,
+    "quantum": 7
+   },
+   {
+    "t": 55,
+    "S": 19,
+    "M": 39,
+    "O": 31,
+    "routes": 85,
+    "AND": 82,
+    "failed": 3,
+    "classical": 80,
+    "relativistic": 0,
+    "quantum": 9
+   },
+   {
+    "t": 56,
+    "S": 20,
+    "M": 40,
+    "O": 31,
+    "routes": 87,
+    "AND": 84,
+    "failed": 3,
+    "classical": 80,
+    "relativistic": 0,
+    "quantum": 11
+   },
+   {
+    "t": 57,
+    "S": 20,
+    "M": 41,
+    "O": 32,
+    "routes": 89,
+    "AND": 86,
+    "failed": 3,
+    "classical": 80,
+    "relativistic": 0,
+    "quantum": 13
+   },
+   {
+    "t": 58,
+    "S": 20,
+    "M": 42,
+    "O": 32,
+    "routes": 90,
+    "AND": 87,
+    "failed": 3,
+    "classical": 80,
+    "relativistic": 0,
+    "quantum": 14
+   },
+   {
+    "t": 59,
+    "S": 20,
+    "M": 42,
+    "O": 33,
+    "routes": 91,
+    "AND": 88,
+    "failed": 3,
+    "classical": 80,
+    "relativistic": 0,
+    "quantum": 15
+   },
+   {
+    "t": 60,
+    "S": 20,
+    "M": 42,
+    "O": 34,
+    "routes": 92,
+    "AND": 89,
+    "failed": 3,
+    "classical": 80,
+    "relativistic": 0,
+    "quantum": 16
+   },
+   {
+    "t": 61,
+    "S": 20,
+    "M": 44,
+    "O": 34,
+    "routes": 93,
+    "AND": 90,
+    "failed": 3,
+    "classical": 80,
+    "relativistic": 0,
+    "quantum": 18
+   },
+   {
+    "t": 62,
+    "S": 21,
+    "M": 44,
+    "O": 35,
+    "routes": 96,
+    "AND": 93,
+    "failed": 3,
+    "classical": 80,
+    "relativistic": 0,
+    "quantum": 20
+   },
+   {
+    "t": 63,
+    "S": 21,
+    "M": 44,
+    "O": 36,
+    "routes": 97,
+    "AND": 94,
+    "failed": 3,
+    "classical": 80,
+    "relativistic": 0,
+    "quantum": 21
+   },
+   {
+    "t": 64,
+    "S": 21,
+    "M": 45,
+    "O": 36,
+    "routes": 99,
+    "AND": 96,
+    "failed": 3,
+    "classical": 80,
+    "relativistic": 0,
+    "quantum": 22
+   },
+   {
+    "t": 65,
+    "S": 22,
+    "M": 45,
+    "O": 37,
+    "routes": 101,
+    "AND": 98,
+    "failed": 3,
+    "classical": 80,
+    "relativistic": 0,
+    "quantum": 24
+   },
+   {
+    "t": 66,
+    "S": 23,
+    "M": 45,
+    "O": 38,
+    "routes": 104,
+    "AND": 101,
+    "failed": 3,
+    "classical": 80,
+    "relativistic": 0,
+    "quantum": 26
+   },
+   {
+    "t": 67,
+    "S": 24,
+    "M": 45,
+    "O": 38,
+    "routes": 105,
+    "AND": 102,
+    "failed": 3,
+    "classical": 80,
+    "relativistic": 0,
+    "quantum": 27
+   },
+   {
+    "t": 68,
+    "S": 24,
+    "M": 46,
+    "O": 39,
+    "routes": 106,
+    "AND": 103,
+    "failed": 3,
+    "classical": 80,
+    "relativistic": 0,
+    "quantum": 29
+   },
+   {
+    "t": 70,
+    "S": 24,
+    "M": 46,
+    "O": 41,
+    "routes": 109,
+    "AND": 105,
+    "failed": 6,
+    "classical": 80,
+    "relativistic": 0,
+    "quantum": 31
+   },
+   {
+    "t": 71,
+    "S": 24,
+    "M": 47,
+    "O": 41,
+    "routes": 109,
+    "AND": 105,
+    "failed": 6,
+    "classical": 80,
+    "relativistic": 0,
+    "quantum": 32
+   },
+   {
+    "t": 72,
+    "S": 24,
+    "M": 49,
+    "O": 41,
+    "routes": 112,
+    "AND": 108,
+    "failed": 6,
+    "classical": 80,
+    "relativistic": 0,
+    "quantum": 34
+   },
+   {
+    "t": 73,
+    "S": 25,
+    "M": 49,
+    "O": 42,
+    "routes": 116,
+    "AND": 112,
+    "failed": 6,
+    "classical": 80,
+    "relativistic": 0,
+    "quantum": 36
+   },
+   {
+    "t": 74,
+    "S": 25,
+    "M": 49,
+    "O": 43,
+    "routes": 117,
+    "AND": 113,
+    "failed": 6,
+    "classical": 80,
+    "relativistic": 0,
+    "quantum": 37
+   },
+   {
+    "t": 75,
+    "S": 25,
+    "M": 50,
+    "O": 43,
+    "routes": 118,
+    "AND": 114,
+    "failed": 6,
+    "classical": 80,
+    "relativistic": 0,
+    "quantum": 38
+   },
+   {
+    "t": 76,
+    "S": 25,
+    "M": 52,
+    "O": 43,
+    "routes": 121,
+    "AND": 117,
+    "failed": 6,
+    "classical": 80,
+    "relativistic": 0,
+    "quantum": 40
+   },
+   {
+    "t": 77,
+    "S": 25,
+    "M": 52,
+    "O": 43,
+    "routes": 122,
+    "AND": 118,
+    "failed": 6,
+    "classical": 80,
+    "relativistic": 0,
+    "quantum": 40
+   }
+  ],
+  "failed": {
+   "n_failed": 6,
+   "n_resolved": 6,
+   "max_distance": 3,
+   "mean_distance": 1.6666666666666667,
+   "rows": [
+    {
+     "failed": "g_RJ",
+     "target": "bbspec",
+     "t_failed": 50,
+     "title_failed": "Rayleigh–Jeans law (classical)",
+     "resolved_by": "g_planckbb",
+     "t_resolved": 51,
+     "distance": 1,
+     "resolver_kind": "quantization",
+     "earlier": null,
+     "t_earlier": null,
+     "earlier_kind": null,
+     "title_resolver": "Planck's law"
+    },
+    {
+     "failed": "g_photowave",
+     "target": "photoel",
+     "t_failed": 52,
+     "title_failed": "Classical wave prediction",
+     "resolved_by": "g_photoel",
+     "t_resolved": 52,
+     "distance": 0,
+     "resolver_kind": "quantization",
+     "earlier": null,
+     "t_earlier": null,
+     "earlier_kind": null,
+     "title_resolver": "Einstein's photoelectric equation"
+    },
+    {
+     "failed": "g_collapse",
+     "target": "spectra",
+     "t_failed": 53,
+     "title_failed": "Classical atom (Larmor)",
+     "resolved_by": "g_bohrlines",
+     "t_resolved": 53,
+     "distance": 0,
+     "resolver_kind": "quantum",
+     "earlier": null,
+     "t_earlier": null,
+     "earlier_kind": null,
+     "title_resolver": "Bohr's frequency rule"
+    },
+    {
+     "failed": "g_diverge",
+     "target": "lamb",
+     "t_failed": 70,
+     "title_failed": "Naive perturbation theory",
+     "resolved_by": "g_lamb",
+     "t_resolved": 73,
+     "distance": 3,
+     "resolver_kind": "quantum",
+     "earlier": null,
+     "t_earlier": null,
+     "earlier_kind": null,
+     "title_resolver": "Renormalized Lamb shift"
+    },
+    {
+     "failed": "g_lambdirac",
+     "target": "lamb",
+     "t_failed": 70,
+     "title_failed": "Dirac's prediction",
+     "resolved_by": "g_lamb",
+     "t_resolved": 73,
+     "distance": 3,
+     "resolver_kind": "quantum",
+     "earlier": null,
+     "t_earlier": null,
+     "earlier_kind": null,
+     "title_resolver": "Renormalized Lamb shift"
+    },
+    {
+     "failed": "g_ammdirac",
+     "target": "amm",
+     "t_failed": 70,
+     "title_failed": "Dirac's prediction",
+     "resolved_by": "g_amm",
+     "t_resolved": 73,
+     "distance": 3,
+     "resolver_kind": "quantum",
+     "earlier": null,
+     "t_earlier": null,
+     "earlier_kind": null,
+     "title_resolver": "Schwinger's correction"
+    }
+   ]
+  },
+  "depth": {
+   "nodes": 120,
+   "edges_2section": 296,
+   "acyclic": false,
+   "n_nontrivial_sccs": 1,
+   "largest_scc": 29,
+   "nodes_in_cycles": 29,
+   "cycles_sample": [
+    [
+     "F",
+     "traj",
+     "v",
+     "B"
+    ]
+   ],
+   "longest_chain_condensed": 11,
+   "degree_by_layer": {
+    "S": {
+     "mean_in": 3.92,
+     "mean_out": 4.12
+    },
+    "M": {
+     "mean_in": 0.7307692307692307,
+     "mean_out": 2.7884615384615383
+    },
+    "O": {
+     "mean_in": 3.7209302325581395,
+     "mean_out": 1.1162790697674418
+    }
+   },
+   "top_out_hubs": [
+    [
+     "pot",
+     "S",
+     9
+    ],
+    [
+     "traj",
+     "S",
+     8
+    ],
+    [
+     "hilb",
+     "S",
+     8
+    ],
+    [
+     "q",
+     "O",
+     7
+    ],
+    [
+     "rho",
+     "S",
+     7
+    ],
+    [
+     "EB",
+     "S",
+     7
+    ],
+    [
+     "lorentz",
+     "M",
+     7
+    ],
+    [
+     "hbar",
+     "O",
+     7
+    ]
+   ],
+   "top_in_hubs": [
+    [
+     "F",
+     "O",
+     15
+    ],
+    [
+     "EB",
+     "S",
+     11
+    ],
+    [
+     "spectra",
+     "O",
+     10
+    ],
+    [
+     "traj",
+     "S",
+     9
+    ],
+    [
+     "Efield",
+     "S",
+     9
+    ],
+    [
+     "pot",
+     "S",
+     9
+    ],
+    [
+     "lamb",
+     "O",
+     8
+    ],
+    [
+     "phi",
+     "S",
+     7
+    ]
+   ]
+  },
+  "agenda": {
+   "primitive_nodes": {
+    "S": [
+     "bc",
+     "pts"
+    ],
+    "M": [
+     "action",
+     "addq",
+     "bil",
+     "born",
+     "bs",
+     "clifford",
+     "conn",
+     "coul",
+     "cross",
+     "curl",
+     "ddt",
+     "delta",
+     "div",
+     "equip",
+     "ext",
+     "faraday",
+     "fourier",
+     "gauge",
+     "gfix",
+     "grad",
+     "hodge",
+     "lap",
+     "legendre",
+     "line",
+     "lorentz",
+     "noether",
+     "ohm",
+     "pb",
+     "pert",
+     "planck",
+     "poinc",
+     "poynt",
+     "renorm",
+     "schro",
+     "stress",
+     "sup",
+     "sym",
+     "vec",
+     "wave",
+     "wedge"
+    ],
+    "O": [
+     "hbar"
+    ]
+   },
+   "n_primitive": {
+    "S": 2,
+    "M": 40,
+    "O": 1
+   },
+   "failed_routes": [
+    "g_RJ",
+    "g_photowave",
+    "g_collapse",
+    "g_diverge",
+    "g_lambdirac",
+    "g_ammdirac"
+   ],
+   "or_targets": [
+    "B",
+    "Bfield",
+    "E",
+    "EB",
+    "Efield",
+    "F",
+    "Fmn",
+    "P",
+    "PhiB",
+    "PhiE",
+    "U",
+    "amm",
+    "bbspec",
+    "cont",
+    "dV",
+    "emf",
+    "feyn",
+    "inv",
+    "lamb",
+    "maxwell",
+    "phi",
+    "photoel",
+    "photon",
+    "pot",
+    "r",
+    "rho",
+    "spectra",
+    "traj"
+   ]
+  }
+ },
+ "UP": {
+  "filtration": {
+   "routes": 516,
+   "forward_links": 0,
+   "violations": [],
+   "time_points": 469,
+   "t_min": 2,
+   "t_max": 619
+  },
+  "growth": [
+   {
+    "t": 2,
+    "S": 0,
+    "M": 1,
+    "O": 0,
+    "routes": 0,
+    "AND": 0,
+    "failed": 0,
+    "classical": 1,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 3,
+    "S": 0,
+    "M": 2,
+    "O": 0,
+    "routes": 0,
+    "AND": 0,
+    "failed": 0,
+    "classical": 2,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 4,
+    "S": 0,
+    "M": 2,
+    "O": 3,
+    "routes": 1,
+    "AND": 1,
+    "failed": 0,
+    "classical": 5,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 5,
+    "S": 0,
+    "M": 3,
+    "O": 3,
+    "routes": 2,
+    "AND": 1,
+    "failed": 0,
+    "classical": 6,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 6,
+    "S": 0,
+    "M": 4,
+    "O": 3,
+    "routes": 3,
+    "AND": 1,
+    "failed": 0,
+    "classical": 7,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 7,
+    "S": 0,
+    "M": 5,
+    "O": 3,
+    "routes": 4,
+    "AND": 2,
+    "failed": 0,
+    "classical": 8,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 8,
+    "S": 0,
+    "M": 5,
+    "O": 5,
+    "routes": 6,
+    "AND": 2,
+    "failed": 0,
+    "classical": 10,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 9,
+    "S": 0,
+    "M": 6,
+    "O": 5,
+    "routes": 7,
+    "AND": 2,
+    "failed": 0,
+    "classical": 11,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 10,
+    "S": 0,
+    "M": 7,
+    "O": 5,
+    "routes": 8,
+    "AND": 2,
+    "failed": 0,
+    "classical": 12,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 13,
+    "S": 0,
+    "M": 9,
+    "O": 5,
+    "routes": 8,
+    "AND": 2,
+    "failed": 0,
+    "classical": 14,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 14,
+    "S": 0,
+    "M": 10,
+    "O": 5,
+    "routes": 9,
+    "AND": 2,
+    "failed": 0,
+    "classical": 15,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 15,
+    "S": 0,
+    "M": 11,
+    "O": 5,
+    "routes": 10,
+    "AND": 3,
+    "failed": 0,
+    "classical": 16,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 16,
+    "S": 0,
+    "M": 12,
+    "O": 5,
+    "routes": 11,
+    "AND": 4,
+    "failed": 0,
+    "classical": 17,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 17,
+    "S": 0,
+    "M": 13,
+    "O": 5,
+    "routes": 12,
+    "AND": 4,
+    "failed": 0,
+    "classical": 18,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 19,
+    "S": 0,
+    "M": 14,
+    "O": 5,
+    "routes": 13,
+    "AND": 4,
+    "failed": 0,
+    "classical": 19,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 20,
+    "S": 0,
+    "M": 15,
+    "O": 5,
+    "routes": 14,
+    "AND": 4,
+    "failed": 0,
+    "classical": 20,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 22,
+    "S": 0,
+    "M": 16,
+    "O": 6,
+    "routes": 16,
+    "AND": 6,
+    "failed": 0,
+    "classical": 22,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 23,
+    "S": 1,
+    "M": 16,
+    "O": 7,
+    "routes": 18,
+    "AND": 7,
+    "failed": 0,
+    "classical": 24,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 24,
+    "S": 1,
+    "M": 16,
+    "O": 8,
+    "routes": 19,
+    "AND": 7,
+    "failed": 0,
+    "classical": 25,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 25,
+    "S": 1,
+    "M": 16,
+    "O": 10,
+    "routes": 21,
+    "AND": 8,
+    "failed": 0,
+    "classical": 27,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 26,
+    "S": 1,
+    "M": 17,
+    "O": 11,
+    "routes": 22,
+    "AND": 9,
+    "failed": 0,
+    "classical": 29,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 27,
+    "S": 1,
+    "M": 17,
+    "O": 13,
+    "routes": 24,
+    "AND": 10,
+    "failed": 0,
+    "classical": 31,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 28,
+    "S": 1,
+    "M": 17,
+    "O": 14,
+    "routes": 25,
+    "AND": 11,
+    "failed": 0,
+    "classical": 32,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 29,
+    "S": 1,
+    "M": 17,
+    "O": 15,
+    "routes": 26,
+    "AND": 12,
+    "failed": 0,
+    "classical": 33,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 30,
+    "S": 1,
+    "M": 18,
+    "O": 15,
+    "routes": 27,
+    "AND": 13,
+    "failed": 0,
+    "classical": 34,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 32,
+    "S": 1,
+    "M": 19,
+    "O": 16,
+    "routes": 28,
+    "AND": 14,
+    "failed": 0,
+    "classical": 36,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 34,
+    "S": 1,
+    "M": 20,
+    "O": 16,
+    "routes": 29,
+    "AND": 15,
+    "failed": 0,
+    "classical": 37,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 35,
+    "S": 1,
+    "M": 20,
+    "O": 16,
+    "routes": 30,
+    "AND": 16,
+    "failed": 0,
+    "classical": 37,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 37,
+    "S": 2,
+    "M": 20,
+    "O": 17,
+    "routes": 32,
+    "AND": 18,
+    "failed": 0,
+    "classical": 39,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 38,
+    "S": 2,
+    "M": 20,
+    "O": 18,
+    "routes": 33,
+    "AND": 18,
+    "failed": 0,
+    "classical": 40,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 39,
+    "S": 2,
+    "M": 20,
+    "O": 19,
+    "routes": 35,
+    "AND": 20,
+    "failed": 0,
+    "classical": 41,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 40,
+    "S": 2,
+    "M": 20,
+    "O": 20,
+    "routes": 37,
+    "AND": 22,
+    "failed": 0,
+    "classical": 42,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 42,
+    "S": 2,
+    "M": 21,
+    "O": 20,
+    "routes": 39,
+    "AND": 23,
+    "failed": 0,
+    "classical": 43,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 43,
+    "S": 2,
+    "M": 21,
+    "O": 22,
+    "routes": 41,
+    "AND": 24,
+    "failed": 0,
+    "classical": 45,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 45,
+    "S": 3,
+    "M": 21,
+    "O": 22,
+    "routes": 42,
+    "AND": 25,
+    "failed": 0,
+    "classical": 46,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 46,
+    "S": 3,
+    "M": 21,
+    "O": 23,
+    "routes": 43,
+    "AND": 26,
+    "failed": 0,
+    "classical": 47,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 47,
+    "S": 3,
+    "M": 21,
+    "O": 24,
+    "routes": 45,
+    "AND": 28,
+    "failed": 0,
+    "classical": 48,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 48,
+    "S": 3,
+    "M": 21,
+    "O": 25,
+    "routes": 47,
+    "AND": 30,
+    "failed": 0,
+    "classical": 49,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 49,
+    "S": 3,
+    "M": 22,
+    "O": 25,
+    "routes": 48,
+    "AND": 31,
+    "failed": 0,
+    "classical": 50,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 50,
+    "S": 3,
+    "M": 22,
+    "O": 26,
+    "routes": 49,
+    "AND": 32,
+    "failed": 0,
+    "classical": 51,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 52,
+    "S": 3,
+    "M": 22,
+    "O": 27,
+    "routes": 49,
+    "AND": 32,
+    "failed": 0,
+    "classical": 52,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 53,
+    "S": 3,
+    "M": 23,
+    "O": 27,
+    "routes": 50,
+    "AND": 33,
+    "failed": 0,
+    "classical": 53,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 54,
+    "S": 3,
+    "M": 23,
+    "O": 28,
+    "routes": 51,
+    "AND": 34,
+    "failed": 0,
+    "classical": 54,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 55,
+    "S": 3,
+    "M": 24,
+    "O": 28,
+    "routes": 51,
+    "AND": 34,
+    "failed": 0,
+    "classical": 55,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 56,
+    "S": 3,
+    "M": 25,
+    "O": 28,
+    "routes": 52,
+    "AND": 35,
+    "failed": 0,
+    "classical": 56,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 57,
+    "S": 3,
+    "M": 26,
+    "O": 28,
+    "routes": 53,
+    "AND": 36,
+    "failed": 0,
+    "classical": 57,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 58,
+    "S": 3,
+    "M": 26,
+    "O": 28,
+    "routes": 54,
+    "AND": 37,
+    "failed": 0,
+    "classical": 57,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 59,
+    "S": 3,
+    "M": 26,
+    "O": 29,
+    "routes": 55,
+    "AND": 38,
+    "failed": 0,
+    "classical": 58,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 61,
+    "S": 3,
+    "M": 27,
+    "O": 29,
+    "routes": 55,
+    "AND": 38,
+    "failed": 0,
+    "classical": 59,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 63,
+    "S": 3,
+    "M": 27,
+    "O": 30,
+    "routes": 56,
+    "AND": 39,
+    "failed": 0,
+    "classical": 60,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 64,
+    "S": 3,
+    "M": 27,
+    "O": 31,
+    "routes": 57,
+    "AND": 40,
+    "failed": 0,
+    "classical": 61,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 65,
+    "S": 3,
+    "M": 28,
+    "O": 31,
+    "routes": 58,
+    "AND": 40,
+    "failed": 0,
+    "classical": 62,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 69,
+    "S": 3,
+    "M": 29,
+    "O": 31,
+    "routes": 59,
+    "AND": 40,
+    "failed": 0,
+    "classical": 63,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 70,
+    "S": 3,
+    "M": 29,
+    "O": 32,
+    "routes": 60,
+    "AND": 41,
+    "failed": 0,
+    "classical": 64,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 71,
+    "S": 3,
+    "M": 29,
+    "O": 33,
+    "routes": 61,
+    "AND": 42,
+    "failed": 0,
+    "classical": 65,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 72,
+    "S": 3,
+    "M": 29,
+    "O": 34,
+    "routes": 62,
+    "AND": 43,
+    "failed": 0,
+    "classical": 66,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 73,
+    "S": 3,
+    "M": 30,
+    "O": 34,
+    "routes": 63,
+    "AND": 44,
+    "failed": 0,
+    "classical": 67,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 74,
+    "S": 3,
+    "M": 31,
+    "O": 34,
+    "routes": 64,
+    "AND": 45,
+    "failed": 0,
+    "classical": 68,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 75,
+    "S": 3,
+    "M": 31,
+    "O": 35,
+    "routes": 65,
+    "AND": 46,
+    "failed": 0,
+    "classical": 69,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 76,
+    "S": 3,
+    "M": 31,
+    "O": 36,
+    "routes": 66,
+    "AND": 46,
+    "failed": 0,
+    "classical": 70,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 77,
+    "S": 3,
+    "M": 31,
+    "O": 37,
+    "routes": 67,
+    "AND": 47,
+    "failed": 0,
+    "classical": 71,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 79,
+    "S": 3,
+    "M": 31,
+    "O": 38,
+    "routes": 68,
+    "AND": 48,
+    "failed": 0,
+    "classical": 72,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 81,
+    "S": 3,
+    "M": 31,
+    "O": 39,
+    "routes": 69,
+    "AND": 49,
+    "failed": 0,
+    "classical": 73,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 83,
+    "S": 3,
+    "M": 31,
+    "O": 40,
+    "routes": 70,
+    "AND": 50,
+    "failed": 0,
+    "classical": 74,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 84,
+    "S": 3,
+    "M": 32,
+    "O": 40,
+    "routes": 71,
+    "AND": 51,
+    "failed": 0,
+    "classical": 75,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 86,
+    "S": 3,
+    "M": 32,
+    "O": 41,
+    "routes": 72,
+    "AND": 52,
+    "failed": 0,
+    "classical": 76,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 87,
+    "S": 3,
+    "M": 32,
+    "O": 41,
+    "routes": 73,
+    "AND": 53,
+    "failed": 0,
+    "classical": 76,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 89,
+    "S": 3,
+    "M": 32,
+    "O": 42,
+    "routes": 74,
+    "AND": 53,
+    "failed": 0,
+    "classical": 77,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 90,
+    "S": 3,
+    "M": 32,
+    "O": 43,
+    "routes": 75,
+    "AND": 54,
+    "failed": 0,
+    "classical": 78,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 91,
+    "S": 3,
+    "M": 32,
+    "O": 44,
+    "routes": 76,
+    "AND": 55,
+    "failed": 0,
+    "classical": 79,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 92,
+    "S": 3,
+    "M": 33,
+    "O": 44,
+    "routes": 77,
+    "AND": 55,
+    "failed": 0,
+    "classical": 80,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 93,
+    "S": 3,
+    "M": 33,
+    "O": 44,
+    "routes": 78,
+    "AND": 56,
+    "failed": 0,
+    "classical": 80,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 94,
+    "S": 3,
+    "M": 33,
+    "O": 45,
+    "routes": 79,
+    "AND": 57,
+    "failed": 0,
+    "classical": 81,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 95,
+    "S": 3,
+    "M": 33,
+    "O": 46,
+    "routes": 80,
+    "AND": 58,
+    "failed": 0,
+    "classical": 82,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 96,
+    "S": 3,
+    "M": 34,
+    "O": 46,
+    "routes": 81,
+    "AND": 59,
+    "failed": 0,
+    "classical": 83,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 98,
+    "S": 3,
+    "M": 35,
+    "O": 46,
+    "routes": 82,
+    "AND": 60,
+    "failed": 0,
+    "classical": 84,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 99,
+    "S": 4,
+    "M": 35,
+    "O": 46,
+    "routes": 83,
+    "AND": 61,
+    "failed": 0,
+    "classical": 85,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 102,
+    "S": 4,
+    "M": 35,
+    "O": 47,
+    "routes": 84,
+    "AND": 62,
+    "failed": 0,
+    "classical": 86,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 103,
+    "S": 4,
+    "M": 35,
+    "O": 47,
+    "routes": 86,
+    "AND": 64,
+    "failed": 0,
+    "classical": 86,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 104,
+    "S": 4,
+    "M": 35,
+    "O": 48,
+    "routes": 87,
+    "AND": 65,
+    "failed": 0,
+    "classical": 87,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 105,
+    "S": 4,
+    "M": 36,
+    "O": 48,
+    "routes": 88,
+    "AND": 66,
+    "failed": 0,
+    "classical": 88,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 106,
+    "S": 5,
+    "M": 36,
+    "O": 48,
+    "routes": 89,
+    "AND": 67,
+    "failed": 0,
+    "classical": 89,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 107,
+    "S": 5,
+    "M": 37,
+    "O": 48,
+    "routes": 90,
+    "AND": 68,
+    "failed": 0,
+    "classical": 90,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 109,
+    "S": 5,
+    "M": 38,
+    "O": 48,
+    "routes": 91,
+    "AND": 69,
+    "failed": 0,
+    "classical": 91,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 112,
+    "S": 5,
+    "M": 38,
+    "O": 49,
+    "routes": 92,
+    "AND": 70,
+    "failed": 0,
+    "classical": 92,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 113,
+    "S": 5,
+    "M": 39,
+    "O": 49,
+    "routes": 93,
+    "AND": 71,
+    "failed": 0,
+    "classical": 93,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 114,
+    "S": 5,
+    "M": 39,
+    "O": 50,
+    "routes": 95,
+    "AND": 73,
+    "failed": 0,
+    "classical": 94,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 115,
+    "S": 5,
+    "M": 40,
+    "O": 50,
+    "routes": 96,
+    "AND": 74,
+    "failed": 0,
+    "classical": 95,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 117,
+    "S": 6,
+    "M": 40,
+    "O": 50,
+    "routes": 97,
+    "AND": 75,
+    "failed": 0,
+    "classical": 96,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 118,
+    "S": 6,
+    "M": 40,
+    "O": 51,
+    "routes": 98,
+    "AND": 75,
+    "failed": 0,
+    "classical": 97,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 119,
+    "S": 6,
+    "M": 40,
+    "O": 52,
+    "routes": 101,
+    "AND": 77,
+    "failed": 0,
+    "classical": 98,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 120,
+    "S": 6,
+    "M": 40,
+    "O": 53,
+    "routes": 103,
+    "AND": 78,
+    "failed": 0,
+    "classical": 99,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 121,
+    "S": 6,
+    "M": 41,
+    "O": 53,
+    "routes": 104,
+    "AND": 79,
+    "failed": 0,
+    "classical": 100,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 122,
+    "S": 6,
+    "M": 41,
+    "O": 53,
+    "routes": 105,
+    "AND": 79,
+    "failed": 0,
+    "classical": 100,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 123,
+    "S": 6,
+    "M": 41,
+    "O": 54,
+    "routes": 106,
+    "AND": 80,
+    "failed": 0,
+    "classical": 101,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 124,
+    "S": 6,
+    "M": 41,
+    "O": 55,
+    "routes": 108,
+    "AND": 82,
+    "failed": 0,
+    "classical": 102,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 126,
+    "S": 6,
+    "M": 41,
+    "O": 55,
+    "routes": 109,
+    "AND": 83,
+    "failed": 0,
+    "classical": 102,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 127,
+    "S": 6,
+    "M": 42,
+    "O": 55,
+    "routes": 110,
+    "AND": 84,
+    "failed": 0,
+    "classical": 103,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 128,
+    "S": 6,
+    "M": 42,
+    "O": 56,
+    "routes": 112,
+    "AND": 86,
+    "failed": 0,
+    "classical": 104,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 129,
+    "S": 6,
+    "M": 42,
+    "O": 57,
+    "routes": 113,
+    "AND": 87,
+    "failed": 0,
+    "classical": 105,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 131,
+    "S": 6,
+    "M": 43,
+    "O": 57,
+    "routes": 114,
+    "AND": 88,
+    "failed": 0,
+    "classical": 106,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 133,
+    "S": 6,
+    "M": 43,
+    "O": 58,
+    "routes": 115,
+    "AND": 89,
+    "failed": 0,
+    "classical": 107,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 134,
+    "S": 6,
+    "M": 43,
+    "O": 58,
+    "routes": 116,
+    "AND": 90,
+    "failed": 0,
+    "classical": 107,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 135,
+    "S": 6,
+    "M": 43,
+    "O": 58,
+    "routes": 117,
+    "AND": 91,
+    "failed": 0,
+    "classical": 107,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 138,
+    "S": 6,
+    "M": 44,
+    "O": 58,
+    "routes": 118,
+    "AND": 92,
+    "failed": 0,
+    "classical": 108,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 140,
+    "S": 6,
+    "M": 44,
+    "O": 59,
+    "routes": 119,
+    "AND": 93,
+    "failed": 0,
+    "classical": 109,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 141,
+    "S": 6,
+    "M": 44,
+    "O": 59,
+    "routes": 120,
+    "AND": 94,
+    "failed": 0,
+    "classical": 109,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 142,
+    "S": 6,
+    "M": 45,
+    "O": 59,
+    "routes": 121,
+    "AND": 95,
+    "failed": 0,
+    "classical": 110,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 143,
+    "S": 6,
+    "M": 46,
+    "O": 59,
+    "routes": 122,
+    "AND": 96,
+    "failed": 0,
+    "classical": 111,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 145,
+    "S": 6,
+    "M": 46,
+    "O": 60,
+    "routes": 123,
+    "AND": 97,
+    "failed": 0,
+    "classical": 112,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 148,
+    "S": 7,
+    "M": 46,
+    "O": 60,
+    "routes": 123,
+    "AND": 97,
+    "failed": 0,
+    "classical": 113,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 149,
+    "S": 7,
+    "M": 47,
+    "O": 60,
+    "routes": 125,
+    "AND": 99,
+    "failed": 0,
+    "classical": 114,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 150,
+    "S": 7,
+    "M": 47,
+    "O": 61,
+    "routes": 126,
+    "AND": 100,
+    "failed": 0,
+    "classical": 115,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 152,
+    "S": 7,
+    "M": 47,
+    "O": 62,
+    "routes": 127,
+    "AND": 101,
+    "failed": 0,
+    "classical": 116,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 153,
+    "S": 7,
+    "M": 48,
+    "O": 63,
+    "routes": 129,
+    "AND": 102,
+    "failed": 0,
+    "classical": 118,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 154,
+    "S": 7,
+    "M": 48,
+    "O": 64,
+    "routes": 130,
+    "AND": 102,
+    "failed": 0,
+    "classical": 119,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 155,
+    "S": 7,
+    "M": 48,
+    "O": 67,
+    "routes": 133,
+    "AND": 104,
+    "failed": 0,
+    "classical": 122,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 156,
+    "S": 7,
+    "M": 49,
+    "O": 67,
+    "routes": 134,
+    "AND": 105,
+    "failed": 0,
+    "classical": 123,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 160,
+    "S": 7,
+    "M": 50,
+    "O": 68,
+    "routes": 135,
+    "AND": 106,
+    "failed": 0,
+    "classical": 125,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 162,
+    "S": 7,
+    "M": 50,
+    "O": 69,
+    "routes": 137,
+    "AND": 107,
+    "failed": 0,
+    "classical": 126,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 163,
+    "S": 7,
+    "M": 50,
+    "O": 70,
+    "routes": 138,
+    "AND": 108,
+    "failed": 0,
+    "classical": 127,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 165,
+    "S": 7,
+    "M": 50,
+    "O": 71,
+    "routes": 139,
+    "AND": 109,
+    "failed": 0,
+    "classical": 128,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 166,
+    "S": 7,
+    "M": 50,
+    "O": 71,
+    "routes": 140,
+    "AND": 109,
+    "failed": 0,
+    "classical": 128,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 167,
+    "S": 7,
+    "M": 50,
+    "O": 72,
+    "routes": 141,
+    "AND": 110,
+    "failed": 0,
+    "classical": 129,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 168,
+    "S": 8,
+    "M": 50,
+    "O": 72,
+    "routes": 142,
+    "AND": 111,
+    "failed": 0,
+    "classical": 130,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 169,
+    "S": 8,
+    "M": 50,
+    "O": 73,
+    "routes": 143,
+    "AND": 112,
+    "failed": 0,
+    "classical": 131,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 170,
+    "S": 8,
+    "M": 50,
+    "O": 74,
+    "routes": 144,
+    "AND": 112,
+    "failed": 0,
+    "classical": 132,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 171,
+    "S": 8,
+    "M": 51,
+    "O": 74,
+    "routes": 145,
+    "AND": 113,
+    "failed": 0,
+    "classical": 133,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 172,
+    "S": 9,
+    "M": 51,
+    "O": 74,
+    "routes": 146,
+    "AND": 114,
+    "failed": 0,
+    "classical": 134,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 173,
+    "S": 9,
+    "M": 52,
+    "O": 74,
+    "routes": 147,
+    "AND": 115,
+    "failed": 0,
+    "classical": 135,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 174,
+    "S": 9,
+    "M": 53,
+    "O": 74,
+    "routes": 148,
+    "AND": 116,
+    "failed": 0,
+    "classical": 136,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 175,
+    "S": 9,
+    "M": 53,
+    "O": 75,
+    "routes": 149,
+    "AND": 116,
+    "failed": 0,
+    "classical": 137,
+    "relativistic": 0,
+    "quantum": 0
+   },
+   {
+    "t": 177,
+    "S": 9,
+    "M": 54,
+    "O": 76,
+    "routes": 149,
+    "AND": 116,
+    "failed": 0,
+    "classical": 138,
+    "relativistic": 1,
+    "quantum": 0
+   },
+   {
+    "t": 178,
+    "S": 9,
+    "M": 55,
+    "O": 76,
+    "routes": 151,
+    "AND": 117,
+    "failed": 0,
+    "classical": 138,
+    "relativistic": 2,
+    "quantum": 0
+   },
+   {
+    "t": 179,
+    "S": 10,
+    "M": 55,
+    "O": 77,
+    "routes": 153,
+    "AND": 119,
+    "failed": 0,
+    "classical": 138,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 182,
+    "S": 11,
+    "M": 55,
+    "O": 77,
+    "routes": 154,
+    "AND": 120,
+    "failed": 0,
+    "classical": 139,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 183,
+    "S": 11,
+    "M": 55,
+    "O": 79,
+    "routes": 156,
+    "AND": 121,
+    "failed": 0,
+    "classical": 141,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 184,
+    "S": 11,
+    "M": 55,
+    "O": 80,
+    "routes": 157,
+    "AND": 121,
+    "failed": 0,
+    "classical": 142,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 185,
+    "S": 11,
+    "M": 56,
+    "O": 80,
+    "routes": 158,
+    "AND": 122,
+    "failed": 0,
+    "classical": 143,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 186,
+    "S": 11,
+    "M": 57,
+    "O": 80,
+    "routes": 159,
+    "AND": 122,
+    "failed": 0,
+    "classical": 144,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 187,
+    "S": 11,
+    "M": 57,
+    "O": 81,
+    "routes": 159,
+    "AND": 122,
+    "failed": 0,
+    "classical": 145,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 188,
+    "S": 11,
+    "M": 58,
+    "O": 81,
+    "routes": 161,
+    "AND": 124,
+    "failed": 0,
+    "classical": 146,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 189,
+    "S": 11,
+    "M": 59,
+    "O": 82,
+    "routes": 163,
+    "AND": 125,
+    "failed": 0,
+    "classical": 148,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 190,
+    "S": 12,
+    "M": 59,
+    "O": 83,
+    "routes": 165,
+    "AND": 126,
+    "failed": 0,
+    "classical": 150,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 191,
+    "S": 12,
+    "M": 60,
+    "O": 83,
+    "routes": 166,
+    "AND": 127,
+    "failed": 0,
+    "classical": 151,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 192,
+    "S": 12,
+    "M": 61,
+    "O": 83,
+    "routes": 167,
+    "AND": 128,
+    "failed": 0,
+    "classical": 152,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 194,
+    "S": 12,
+    "M": 62,
+    "O": 83,
+    "routes": 168,
+    "AND": 129,
+    "failed": 0,
+    "classical": 153,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 195,
+    "S": 12,
+    "M": 62,
+    "O": 84,
+    "routes": 169,
+    "AND": 130,
+    "failed": 0,
+    "classical": 154,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 197,
+    "S": 12,
+    "M": 62,
+    "O": 86,
+    "routes": 171,
+    "AND": 130,
+    "failed": 0,
+    "classical": 156,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 198,
+    "S": 12,
+    "M": 63,
+    "O": 86,
+    "routes": 172,
+    "AND": 131,
+    "failed": 0,
+    "classical": 157,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 199,
+    "S": 13,
+    "M": 63,
+    "O": 86,
+    "routes": 173,
+    "AND": 131,
+    "failed": 0,
+    "classical": 158,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 200,
+    "S": 13,
+    "M": 63,
+    "O": 87,
+    "routes": 176,
+    "AND": 132,
+    "failed": 0,
+    "classical": 159,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 201,
+    "S": 13,
+    "M": 63,
+    "O": 88,
+    "routes": 177,
+    "AND": 133,
+    "failed": 0,
+    "classical": 160,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 202,
+    "S": 13,
+    "M": 63,
+    "O": 88,
+    "routes": 178,
+    "AND": 134,
+    "failed": 0,
+    "classical": 160,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 203,
+    "S": 13,
+    "M": 63,
+    "O": 88,
+    "routes": 179,
+    "AND": 135,
+    "failed": 0,
+    "classical": 160,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 204,
+    "S": 13,
+    "M": 64,
+    "O": 88,
+    "routes": 180,
+    "AND": 136,
+    "failed": 0,
+    "classical": 161,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 205,
+    "S": 13,
+    "M": 65,
+    "O": 88,
+    "routes": 181,
+    "AND": 137,
+    "failed": 0,
+    "classical": 162,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 206,
+    "S": 13,
+    "M": 66,
+    "O": 88,
+    "routes": 182,
+    "AND": 138,
+    "failed": 0,
+    "classical": 163,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 207,
+    "S": 13,
+    "M": 67,
+    "O": 88,
+    "routes": 183,
+    "AND": 139,
+    "failed": 0,
+    "classical": 164,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 209,
+    "S": 13,
+    "M": 68,
+    "O": 88,
+    "routes": 184,
+    "AND": 139,
+    "failed": 0,
+    "classical": 165,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 211,
+    "S": 14,
+    "M": 68,
+    "O": 88,
+    "routes": 185,
+    "AND": 140,
+    "failed": 0,
+    "classical": 166,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 212,
+    "S": 14,
+    "M": 68,
+    "O": 90,
+    "routes": 187,
+    "AND": 141,
+    "failed": 0,
+    "classical": 168,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 213,
+    "S": 15,
+    "M": 68,
+    "O": 90,
+    "routes": 188,
+    "AND": 142,
+    "failed": 0,
+    "classical": 169,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 214,
+    "S": 15,
+    "M": 68,
+    "O": 91,
+    "routes": 189,
+    "AND": 142,
+    "failed": 0,
+    "classical": 170,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 215,
+    "S": 15,
+    "M": 69,
+    "O": 91,
+    "routes": 190,
+    "AND": 143,
+    "failed": 0,
+    "classical": 171,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 216,
+    "S": 15,
+    "M": 69,
+    "O": 91,
+    "routes": 192,
+    "AND": 145,
+    "failed": 0,
+    "classical": 171,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 217,
+    "S": 15,
+    "M": 69,
+    "O": 91,
+    "routes": 193,
+    "AND": 146,
+    "failed": 0,
+    "classical": 171,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 218,
+    "S": 15,
+    "M": 69,
+    "O": 92,
+    "routes": 194,
+    "AND": 147,
+    "failed": 0,
+    "classical": 172,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 219,
+    "S": 15,
+    "M": 69,
+    "O": 93,
+    "routes": 195,
+    "AND": 147,
+    "failed": 0,
+    "classical": 173,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 220,
+    "S": 15,
+    "M": 70,
+    "O": 93,
+    "routes": 196,
+    "AND": 147,
+    "failed": 0,
+    "classical": 174,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 221,
+    "S": 16,
+    "M": 70,
+    "O": 93,
+    "routes": 196,
+    "AND": 147,
+    "failed": 0,
+    "classical": 175,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 222,
+    "S": 16,
+    "M": 71,
+    "O": 93,
+    "routes": 198,
+    "AND": 148,
+    "failed": 0,
+    "classical": 176,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 223,
+    "S": 17,
+    "M": 71,
+    "O": 93,
+    "routes": 199,
+    "AND": 149,
+    "failed": 0,
+    "classical": 177,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 224,
+    "S": 18,
+    "M": 71,
+    "O": 93,
+    "routes": 201,
+    "AND": 150,
+    "failed": 0,
+    "classical": 178,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 226,
+    "S": 19,
+    "M": 71,
+    "O": 93,
+    "routes": 202,
+    "AND": 151,
+    "failed": 0,
+    "classical": 179,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 227,
+    "S": 19,
+    "M": 71,
+    "O": 94,
+    "routes": 203,
+    "AND": 152,
+    "failed": 0,
+    "classical": 180,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 228,
+    "S": 19,
+    "M": 71,
+    "O": 94,
+    "routes": 204,
+    "AND": 153,
+    "failed": 0,
+    "classical": 180,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 229,
+    "S": 19,
+    "M": 71,
+    "O": 95,
+    "routes": 205,
+    "AND": 153,
+    "failed": 0,
+    "classical": 181,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 230,
+    "S": 19,
+    "M": 71,
+    "O": 95,
+    "routes": 206,
+    "AND": 154,
+    "failed": 0,
+    "classical": 181,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 232,
+    "S": 20,
+    "M": 71,
+    "O": 95,
+    "routes": 207,
+    "AND": 155,
+    "failed": 0,
+    "classical": 182,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 235,
+    "S": 20,
+    "M": 71,
+    "O": 96,
+    "routes": 208,
+    "AND": 156,
+    "failed": 0,
+    "classical": 183,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 236,
+    "S": 20,
+    "M": 71,
+    "O": 97,
+    "routes": 209,
+    "AND": 157,
+    "failed": 0,
+    "classical": 184,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 238,
+    "S": 21,
+    "M": 71,
+    "O": 97,
+    "routes": 210,
+    "AND": 158,
+    "failed": 0,
+    "classical": 185,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 240,
+    "S": 22,
+    "M": 71,
+    "O": 98,
+    "routes": 211,
+    "AND": 158,
+    "failed": 0,
+    "classical": 187,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 241,
+    "S": 22,
+    "M": 72,
+    "O": 98,
+    "routes": 212,
+    "AND": 159,
+    "failed": 0,
+    "classical": 188,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 242,
+    "S": 22,
+    "M": 73,
+    "O": 98,
+    "routes": 213,
+    "AND": 159,
+    "failed": 0,
+    "classical": 189,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 244,
+    "S": 22,
+    "M": 74,
+    "O": 98,
+    "routes": 214,
+    "AND": 160,
+    "failed": 0,
+    "classical": 190,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 246,
+    "S": 22,
+    "M": 74,
+    "O": 99,
+    "routes": 215,
+    "AND": 161,
+    "failed": 0,
+    "classical": 191,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 247,
+    "S": 22,
+    "M": 74,
+    "O": 100,
+    "routes": 217,
+    "AND": 162,
+    "failed": 0,
+    "classical": 192,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 248,
+    "S": 22,
+    "M": 74,
+    "O": 101,
+    "routes": 218,
+    "AND": 163,
+    "failed": 0,
+    "classical": 193,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 249,
+    "S": 22,
+    "M": 75,
+    "O": 101,
+    "routes": 219,
+    "AND": 164,
+    "failed": 0,
+    "classical": 194,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 251,
+    "S": 23,
+    "M": 75,
+    "O": 101,
+    "routes": 220,
+    "AND": 165,
+    "failed": 0,
+    "classical": 195,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 253,
+    "S": 23,
+    "M": 75,
+    "O": 102,
+    "routes": 221,
+    "AND": 166,
+    "failed": 0,
+    "classical": 196,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 254,
+    "S": 23,
+    "M": 76,
+    "O": 102,
+    "routes": 222,
+    "AND": 167,
+    "failed": 0,
+    "classical": 197,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 256,
+    "S": 23,
+    "M": 77,
+    "O": 102,
+    "routes": 223,
+    "AND": 168,
+    "failed": 0,
+    "classical": 198,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 257,
+    "S": 23,
+    "M": 78,
+    "O": 102,
+    "routes": 224,
+    "AND": 169,
+    "failed": 0,
+    "classical": 199,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 259,
+    "S": 23,
+    "M": 79,
+    "O": 102,
+    "routes": 224,
+    "AND": 169,
+    "failed": 0,
+    "classical": 200,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 260,
+    "S": 23,
+    "M": 79,
+    "O": 105,
+    "routes": 226,
+    "AND": 171,
+    "failed": 0,
+    "classical": 203,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 261,
+    "S": 23,
+    "M": 80,
+    "O": 105,
+    "routes": 227,
+    "AND": 171,
+    "failed": 0,
+    "classical": 204,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 262,
+    "S": 24,
+    "M": 80,
+    "O": 105,
+    "routes": 228,
+    "AND": 172,
+    "failed": 0,
+    "classical": 205,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 263,
+    "S": 24,
+    "M": 81,
+    "O": 105,
+    "routes": 229,
+    "AND": 173,
+    "failed": 0,
+    "classical": 206,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 264,
+    "S": 24,
+    "M": 81,
+    "O": 107,
+    "routes": 232,
+    "AND": 176,
+    "failed": 0,
+    "classical": 208,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 265,
+    "S": 24,
+    "M": 82,
+    "O": 107,
+    "routes": 233,
+    "AND": 177,
+    "failed": 0,
+    "classical": 209,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 266,
+    "S": 24,
+    "M": 82,
+    "O": 108,
+    "routes": 234,
+    "AND": 178,
+    "failed": 0,
+    "classical": 210,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 267,
+    "S": 24,
+    "M": 82,
+    "O": 109,
+    "routes": 234,
+    "AND": 178,
+    "failed": 0,
+    "classical": 211,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 268,
+    "S": 24,
+    "M": 83,
+    "O": 109,
+    "routes": 236,
+    "AND": 180,
+    "failed": 0,
+    "classical": 212,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 270,
+    "S": 24,
+    "M": 83,
+    "O": 109,
+    "routes": 237,
+    "AND": 180,
+    "failed": 1,
+    "classical": 212,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 271,
+    "S": 25,
+    "M": 83,
+    "O": 109,
+    "routes": 238,
+    "AND": 181,
+    "failed": 1,
+    "classical": 213,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 272,
+    "S": 25,
+    "M": 83,
+    "O": 110,
+    "routes": 240,
+    "AND": 181,
+    "failed": 1,
+    "classical": 214,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 274,
+    "S": 26,
+    "M": 83,
+    "O": 110,
+    "routes": 241,
+    "AND": 182,
+    "failed": 1,
+    "classical": 215,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 275,
+    "S": 26,
+    "M": 84,
+    "O": 110,
+    "routes": 242,
+    "AND": 183,
+    "failed": 1,
+    "classical": 216,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 276,
+    "S": 27,
+    "M": 84,
+    "O": 110,
+    "routes": 243,
+    "AND": 184,
+    "failed": 1,
+    "classical": 217,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 277,
+    "S": 27,
+    "M": 84,
+    "O": 111,
+    "routes": 244,
+    "AND": 185,
+    "failed": 1,
+    "classical": 218,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 279,
+    "S": 27,
+    "M": 85,
+    "O": 111,
+    "routes": 245,
+    "AND": 186,
+    "failed": 1,
+    "classical": 219,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 281,
+    "S": 28,
+    "M": 85,
+    "O": 111,
+    "routes": 246,
+    "AND": 187,
+    "failed": 1,
+    "classical": 220,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 283,
+    "S": 28,
+    "M": 85,
+    "O": 112,
+    "routes": 247,
+    "AND": 188,
+    "failed": 1,
+    "classical": 221,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 285,
+    "S": 28,
+    "M": 86,
+    "O": 112,
+    "routes": 248,
+    "AND": 189,
+    "failed": 1,
+    "classical": 222,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 286,
+    "S": 28,
+    "M": 86,
+    "O": 112,
+    "routes": 249,
+    "AND": 190,
+    "failed": 1,
+    "classical": 222,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 288,
+    "S": 29,
+    "M": 86,
+    "O": 112,
+    "routes": 250,
+    "AND": 190,
+    "failed": 1,
+    "classical": 223,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 289,
+    "S": 29,
+    "M": 87,
+    "O": 112,
+    "routes": 251,
+    "AND": 191,
+    "failed": 1,
+    "classical": 224,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 290,
+    "S": 29,
+    "M": 88,
+    "O": 112,
+    "routes": 252,
+    "AND": 192,
+    "failed": 1,
+    "classical": 225,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 291,
+    "S": 29,
+    "M": 88,
+    "O": 113,
+    "routes": 253,
+    "AND": 192,
+    "failed": 1,
+    "classical": 226,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 292,
+    "S": 29,
+    "M": 89,
+    "O": 113,
+    "routes": 254,
+    "AND": 192,
+    "failed": 1,
+    "classical": 227,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 293,
+    "S": 29,
+    "M": 89,
+    "O": 114,
+    "routes": 255,
+    "AND": 192,
+    "failed": 1,
+    "classical": 228,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 294,
+    "S": 29,
+    "M": 90,
+    "O": 114,
+    "routes": 255,
+    "AND": 192,
+    "failed": 1,
+    "classical": 229,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 295,
+    "S": 29,
+    "M": 90,
+    "O": 114,
+    "routes": 256,
+    "AND": 193,
+    "failed": 1,
+    "classical": 229,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 296,
+    "S": 30,
+    "M": 90,
+    "O": 114,
+    "routes": 257,
+    "AND": 194,
+    "failed": 1,
+    "classical": 230,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 297,
+    "S": 30,
+    "M": 91,
+    "O": 114,
+    "routes": 259,
+    "AND": 195,
+    "failed": 1,
+    "classical": 231,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 298,
+    "S": 30,
+    "M": 91,
+    "O": 114,
+    "routes": 260,
+    "AND": 195,
+    "failed": 1,
+    "classical": 231,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 299,
+    "S": 30,
+    "M": 91,
+    "O": 115,
+    "routes": 261,
+    "AND": 196,
+    "failed": 1,
+    "classical": 232,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 300,
+    "S": 30,
+    "M": 92,
+    "O": 115,
+    "routes": 262,
+    "AND": 197,
+    "failed": 1,
+    "classical": 233,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 302,
+    "S": 30,
+    "M": 92,
+    "O": 115,
+    "routes": 263,
+    "AND": 198,
+    "failed": 1,
+    "classical": 233,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 304,
+    "S": 30,
+    "M": 93,
+    "O": 115,
+    "routes": 264,
+    "AND": 198,
+    "failed": 1,
+    "classical": 234,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 307,
+    "S": 30,
+    "M": 93,
+    "O": 116,
+    "routes": 264,
+    "AND": 198,
+    "failed": 1,
+    "classical": 235,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 308,
+    "S": 30,
+    "M": 94,
+    "O": 116,
+    "routes": 265,
+    "AND": 198,
+    "failed": 1,
+    "classical": 236,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 309,
+    "S": 31,
+    "M": 94,
+    "O": 116,
+    "routes": 266,
+    "AND": 198,
+    "failed": 1,
+    "classical": 237,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 310,
+    "S": 32,
+    "M": 94,
+    "O": 116,
+    "routes": 267,
+    "AND": 198,
+    "failed": 1,
+    "classical": 238,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 311,
+    "S": 33,
+    "M": 94,
+    "O": 116,
+    "routes": 268,
+    "AND": 198,
+    "failed": 1,
+    "classical": 239,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 313,
+    "S": 33,
+    "M": 95,
+    "O": 117,
+    "routes": 269,
+    "AND": 199,
+    "failed": 1,
+    "classical": 241,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 314,
+    "S": 33,
+    "M": 95,
+    "O": 117,
+    "routes": 270,
+    "AND": 199,
+    "failed": 1,
+    "classical": 241,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 315,
+    "S": 33,
+    "M": 96,
+    "O": 117,
+    "routes": 271,
+    "AND": 200,
+    "failed": 1,
+    "classical": 242,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 316,
+    "S": 34,
+    "M": 96,
+    "O": 117,
+    "routes": 272,
+    "AND": 201,
+    "failed": 1,
+    "classical": 243,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 317,
+    "S": 35,
+    "M": 96,
+    "O": 117,
+    "routes": 273,
+    "AND": 202,
+    "failed": 1,
+    "classical": 244,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 318,
+    "S": 35,
+    "M": 96,
+    "O": 118,
+    "routes": 275,
+    "AND": 203,
+    "failed": 1,
+    "classical": 245,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 319,
+    "S": 36,
+    "M": 96,
+    "O": 118,
+    "routes": 276,
+    "AND": 204,
+    "failed": 1,
+    "classical": 246,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 320,
+    "S": 36,
+    "M": 96,
+    "O": 118,
+    "routes": 277,
+    "AND": 205,
+    "failed": 1,
+    "classical": 246,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 321,
+    "S": 36,
+    "M": 97,
+    "O": 118,
+    "routes": 278,
+    "AND": 205,
+    "failed": 1,
+    "classical": 247,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 323,
+    "S": 36,
+    "M": 97,
+    "O": 119,
+    "routes": 279,
+    "AND": 206,
+    "failed": 1,
+    "classical": 248,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 324,
+    "S": 36,
+    "M": 97,
+    "O": 119,
+    "routes": 280,
+    "AND": 207,
+    "failed": 1,
+    "classical": 248,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 326,
+    "S": 36,
+    "M": 97,
+    "O": 120,
+    "routes": 281,
+    "AND": 208,
+    "failed": 1,
+    "classical": 249,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 328,
+    "S": 36,
+    "M": 98,
+    "O": 120,
+    "routes": 282,
+    "AND": 209,
+    "failed": 1,
+    "classical": 250,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 330,
+    "S": 36,
+    "M": 99,
+    "O": 120,
+    "routes": 283,
+    "AND": 209,
+    "failed": 1,
+    "classical": 251,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 331,
+    "S": 36,
+    "M": 99,
+    "O": 120,
+    "routes": 284,
+    "AND": 210,
+    "failed": 1,
+    "classical": 251,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 332,
+    "S": 37,
+    "M": 99,
+    "O": 120,
+    "routes": 285,
+    "AND": 211,
+    "failed": 1,
+    "classical": 252,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 335,
+    "S": 37,
+    "M": 99,
+    "O": 121,
+    "routes": 286,
+    "AND": 212,
+    "failed": 1,
+    "classical": 253,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 337,
+    "S": 38,
+    "M": 99,
+    "O": 121,
+    "routes": 287,
+    "AND": 213,
+    "failed": 1,
+    "classical": 254,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 338,
+    "S": 38,
+    "M": 99,
+    "O": 121,
+    "routes": 288,
+    "AND": 214,
+    "failed": 1,
+    "classical": 254,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 339,
+    "S": 38,
+    "M": 99,
+    "O": 122,
+    "routes": 289,
+    "AND": 214,
+    "failed": 1,
+    "classical": 255,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 340,
+    "S": 38,
+    "M": 99,
+    "O": 122,
+    "routes": 290,
+    "AND": 215,
+    "failed": 1,
+    "classical": 255,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 342,
+    "S": 38,
+    "M": 100,
+    "O": 122,
+    "routes": 291,
+    "AND": 216,
+    "failed": 1,
+    "classical": 256,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 343,
+    "S": 38,
+    "M": 100,
+    "O": 122,
+    "routes": 292,
+    "AND": 217,
+    "failed": 1,
+    "classical": 256,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 344,
+    "S": 38,
+    "M": 101,
+    "O": 122,
+    "routes": 293,
+    "AND": 218,
+    "failed": 1,
+    "classical": 257,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 348,
+    "S": 39,
+    "M": 101,
+    "O": 122,
+    "routes": 294,
+    "AND": 218,
+    "failed": 1,
+    "classical": 258,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 349,
+    "S": 39,
+    "M": 101,
+    "O": 123,
+    "routes": 295,
+    "AND": 219,
+    "failed": 1,
+    "classical": 259,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 350,
+    "S": 39,
+    "M": 101,
+    "O": 123,
+    "routes": 296,
+    "AND": 220,
+    "failed": 1,
+    "classical": 259,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 352,
+    "S": 39,
+    "M": 102,
+    "O": 123,
+    "routes": 297,
+    "AND": 221,
+    "failed": 1,
+    "classical": 260,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 354,
+    "S": 39,
+    "M": 102,
+    "O": 124,
+    "routes": 298,
+    "AND": 222,
+    "failed": 1,
+    "classical": 261,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 355,
+    "S": 39,
+    "M": 102,
+    "O": 125,
+    "routes": 299,
+    "AND": 223,
+    "failed": 1,
+    "classical": 262,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 356,
+    "S": 39,
+    "M": 102,
+    "O": 126,
+    "routes": 300,
+    "AND": 224,
+    "failed": 1,
+    "classical": 263,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 358,
+    "S": 39,
+    "M": 103,
+    "O": 126,
+    "routes": 301,
+    "AND": 225,
+    "failed": 1,
+    "classical": 264,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 359,
+    "S": 39,
+    "M": 103,
+    "O": 126,
+    "routes": 302,
+    "AND": 225,
+    "failed": 1,
+    "classical": 264,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 360,
+    "S": 39,
+    "M": 103,
+    "O": 127,
+    "routes": 303,
+    "AND": 226,
+    "failed": 1,
+    "classical": 265,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 362,
+    "S": 39,
+    "M": 103,
+    "O": 128,
+    "routes": 304,
+    "AND": 227,
+    "failed": 1,
+    "classical": 266,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 363,
+    "S": 40,
+    "M": 103,
+    "O": 128,
+    "routes": 305,
+    "AND": 228,
+    "failed": 1,
+    "classical": 267,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 364,
+    "S": 40,
+    "M": 103,
+    "O": 129,
+    "routes": 306,
+    "AND": 229,
+    "failed": 1,
+    "classical": 268,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 365,
+    "S": 41,
+    "M": 103,
+    "O": 129,
+    "routes": 307,
+    "AND": 230,
+    "failed": 1,
+    "classical": 269,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 366,
+    "S": 41,
+    "M": 103,
+    "O": 130,
+    "routes": 308,
+    "AND": 231,
+    "failed": 1,
+    "classical": 270,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 367,
+    "S": 41,
+    "M": 103,
+    "O": 131,
+    "routes": 310,
+    "AND": 232,
+    "failed": 1,
+    "classical": 271,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 368,
+    "S": 41,
+    "M": 104,
+    "O": 131,
+    "routes": 311,
+    "AND": 233,
+    "failed": 1,
+    "classical": 272,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 369,
+    "S": 41,
+    "M": 104,
+    "O": 131,
+    "routes": 312,
+    "AND": 234,
+    "failed": 1,
+    "classical": 272,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 370,
+    "S": 41,
+    "M": 104,
+    "O": 132,
+    "routes": 313,
+    "AND": 235,
+    "failed": 1,
+    "classical": 273,
+    "relativistic": 4,
+    "quantum": 0
+   },
+   {
+    "t": 372,
+    "S": 42,
+    "M": 104,
+    "O": 132,
+    "routes": 314,
+    "AND": 236,
+    "failed": 1,
+    "classical": 273,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 375,
+    "S": 42,
+    "M": 104,
+    "O": 133,
+    "routes": 315,
+    "AND": 237,
+    "failed": 1,
+    "classical": 274,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 376,
+    "S": 42,
+    "M": 104,
+    "O": 134,
+    "routes": 316,
+    "AND": 238,
+    "failed": 1,
+    "classical": 275,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 377,
+    "S": 42,
+    "M": 105,
+    "O": 134,
+    "routes": 317,
+    "AND": 239,
+    "failed": 1,
+    "classical": 276,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 379,
+    "S": 42,
+    "M": 106,
+    "O": 134,
+    "routes": 318,
+    "AND": 240,
+    "failed": 1,
+    "classical": 277,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 382,
+    "S": 42,
+    "M": 107,
+    "O": 134,
+    "routes": 319,
+    "AND": 241,
+    "failed": 1,
+    "classical": 278,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 384,
+    "S": 42,
+    "M": 108,
+    "O": 134,
+    "routes": 320,
+    "AND": 242,
+    "failed": 1,
+    "classical": 279,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 388,
+    "S": 43,
+    "M": 108,
+    "O": 134,
+    "routes": 321,
+    "AND": 242,
+    "failed": 1,
+    "classical": 280,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 390,
+    "S": 43,
+    "M": 109,
+    "O": 134,
+    "routes": 321,
+    "AND": 242,
+    "failed": 1,
+    "classical": 281,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 391,
+    "S": 44,
+    "M": 109,
+    "O": 134,
+    "routes": 323,
+    "AND": 243,
+    "failed": 1,
+    "classical": 282,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 392,
+    "S": 44,
+    "M": 109,
+    "O": 135,
+    "routes": 325,
+    "AND": 244,
+    "failed": 1,
+    "classical": 283,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 393,
+    "S": 45,
+    "M": 109,
+    "O": 135,
+    "routes": 326,
+    "AND": 245,
+    "failed": 1,
+    "classical": 284,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 395,
+    "S": 45,
+    "M": 109,
+    "O": 135,
+    "routes": 327,
+    "AND": 246,
+    "failed": 1,
+    "classical": 284,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 396,
+    "S": 45,
+    "M": 109,
+    "O": 136,
+    "routes": 328,
+    "AND": 247,
+    "failed": 1,
+    "classical": 285,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 397,
+    "S": 45,
+    "M": 109,
+    "O": 136,
+    "routes": 330,
+    "AND": 249,
+    "failed": 1,
+    "classical": 285,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 399,
+    "S": 45,
+    "M": 109,
+    "O": 137,
+    "routes": 331,
+    "AND": 250,
+    "failed": 1,
+    "classical": 286,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 400,
+    "S": 45,
+    "M": 110,
+    "O": 137,
+    "routes": 332,
+    "AND": 251,
+    "failed": 1,
+    "classical": 287,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 403,
+    "S": 45,
+    "M": 111,
+    "O": 138,
+    "routes": 333,
+    "AND": 252,
+    "failed": 1,
+    "classical": 289,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 404,
+    "S": 45,
+    "M": 111,
+    "O": 139,
+    "routes": 334,
+    "AND": 253,
+    "failed": 1,
+    "classical": 290,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 405,
+    "S": 45,
+    "M": 111,
+    "O": 140,
+    "routes": 335,
+    "AND": 254,
+    "failed": 1,
+    "classical": 291,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 408,
+    "S": 45,
+    "M": 112,
+    "O": 140,
+    "routes": 336,
+    "AND": 255,
+    "failed": 1,
+    "classical": 292,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 410,
+    "S": 46,
+    "M": 112,
+    "O": 140,
+    "routes": 337,
+    "AND": 256,
+    "failed": 1,
+    "classical": 293,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 411,
+    "S": 46,
+    "M": 113,
+    "O": 140,
+    "routes": 338,
+    "AND": 257,
+    "failed": 1,
+    "classical": 294,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 414,
+    "S": 46,
+    "M": 113,
+    "O": 141,
+    "routes": 339,
+    "AND": 258,
+    "failed": 1,
+    "classical": 295,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 415,
+    "S": 46,
+    "M": 114,
+    "O": 141,
+    "routes": 340,
+    "AND": 259,
+    "failed": 1,
+    "classical": 296,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 416,
+    "S": 46,
+    "M": 115,
+    "O": 141,
+    "routes": 341,
+    "AND": 260,
+    "failed": 1,
+    "classical": 297,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 417,
+    "S": 46,
+    "M": 115,
+    "O": 142,
+    "routes": 342,
+    "AND": 261,
+    "failed": 1,
+    "classical": 298,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 418,
+    "S": 46,
+    "M": 115,
+    "O": 142,
+    "routes": 343,
+    "AND": 262,
+    "failed": 1,
+    "classical": 298,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 419,
+    "S": 47,
+    "M": 115,
+    "O": 142,
+    "routes": 344,
+    "AND": 263,
+    "failed": 1,
+    "classical": 299,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 420,
+    "S": 47,
+    "M": 115,
+    "O": 143,
+    "routes": 345,
+    "AND": 264,
+    "failed": 1,
+    "classical": 300,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 422,
+    "S": 47,
+    "M": 116,
+    "O": 143,
+    "routes": 346,
+    "AND": 265,
+    "failed": 1,
+    "classical": 301,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 426,
+    "S": 47,
+    "M": 116,
+    "O": 144,
+    "routes": 347,
+    "AND": 266,
+    "failed": 1,
+    "classical": 302,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 427,
+    "S": 47,
+    "M": 116,
+    "O": 145,
+    "routes": 348,
+    "AND": 267,
+    "failed": 1,
+    "classical": 303,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 428,
+    "S": 47,
+    "M": 116,
+    "O": 145,
+    "routes": 349,
+    "AND": 267,
+    "failed": 1,
+    "classical": 303,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 429,
+    "S": 47,
+    "M": 116,
+    "O": 146,
+    "routes": 350,
+    "AND": 268,
+    "failed": 1,
+    "classical": 304,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 430,
+    "S": 47,
+    "M": 116,
+    "O": 147,
+    "routes": 351,
+    "AND": 269,
+    "failed": 1,
+    "classical": 305,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 431,
+    "S": 47,
+    "M": 117,
+    "O": 147,
+    "routes": 352,
+    "AND": 270,
+    "failed": 1,
+    "classical": 306,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 432,
+    "S": 47,
+    "M": 118,
+    "O": 147,
+    "routes": 353,
+    "AND": 271,
+    "failed": 1,
+    "classical": 307,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 433,
+    "S": 47,
+    "M": 118,
+    "O": 147,
+    "routes": 354,
+    "AND": 271,
+    "failed": 1,
+    "classical": 307,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 434,
+    "S": 47,
+    "M": 119,
+    "O": 147,
+    "routes": 355,
+    "AND": 272,
+    "failed": 1,
+    "classical": 308,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 435,
+    "S": 47,
+    "M": 119,
+    "O": 147,
+    "routes": 356,
+    "AND": 272,
+    "failed": 1,
+    "classical": 308,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 437,
+    "S": 48,
+    "M": 119,
+    "O": 147,
+    "routes": 357,
+    "AND": 272,
+    "failed": 1,
+    "classical": 309,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 438,
+    "S": 48,
+    "M": 120,
+    "O": 147,
+    "routes": 358,
+    "AND": 273,
+    "failed": 1,
+    "classical": 310,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 439,
+    "S": 48,
+    "M": 120,
+    "O": 148,
+    "routes": 359,
+    "AND": 274,
+    "failed": 1,
+    "classical": 311,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 440,
+    "S": 48,
+    "M": 120,
+    "O": 149,
+    "routes": 360,
+    "AND": 274,
+    "failed": 1,
+    "classical": 312,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 441,
+    "S": 48,
+    "M": 120,
+    "O": 150,
+    "routes": 361,
+    "AND": 275,
+    "failed": 1,
+    "classical": 313,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 442,
+    "S": 48,
+    "M": 120,
+    "O": 151,
+    "routes": 362,
+    "AND": 276,
+    "failed": 1,
+    "classical": 314,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 444,
+    "S": 48,
+    "M": 120,
+    "O": 152,
+    "routes": 363,
+    "AND": 277,
+    "failed": 1,
+    "classical": 315,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 445,
+    "S": 48,
+    "M": 121,
+    "O": 152,
+    "routes": 364,
+    "AND": 278,
+    "failed": 1,
+    "classical": 316,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 446,
+    "S": 48,
+    "M": 121,
+    "O": 152,
+    "routes": 365,
+    "AND": 278,
+    "failed": 1,
+    "classical": 316,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 447,
+    "S": 48,
+    "M": 122,
+    "O": 152,
+    "routes": 366,
+    "AND": 279,
+    "failed": 1,
+    "classical": 317,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 450,
+    "S": 48,
+    "M": 123,
+    "O": 153,
+    "routes": 367,
+    "AND": 280,
+    "failed": 1,
+    "classical": 319,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 451,
+    "S": 48,
+    "M": 123,
+    "O": 153,
+    "routes": 368,
+    "AND": 281,
+    "failed": 1,
+    "classical": 319,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 452,
+    "S": 49,
+    "M": 123,
+    "O": 153,
+    "routes": 369,
+    "AND": 282,
+    "failed": 1,
+    "classical": 320,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 453,
+    "S": 50,
+    "M": 123,
+    "O": 153,
+    "routes": 370,
+    "AND": 283,
+    "failed": 1,
+    "classical": 321,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 454,
+    "S": 50,
+    "M": 123,
+    "O": 153,
+    "routes": 371,
+    "AND": 284,
+    "failed": 1,
+    "classical": 321,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 455,
+    "S": 50,
+    "M": 123,
+    "O": 154,
+    "routes": 372,
+    "AND": 285,
+    "failed": 1,
+    "classical": 322,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 456,
+    "S": 50,
+    "M": 123,
+    "O": 154,
+    "routes": 373,
+    "AND": 285,
+    "failed": 1,
+    "classical": 322,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 457,
+    "S": 50,
+    "M": 123,
+    "O": 155,
+    "routes": 374,
+    "AND": 286,
+    "failed": 1,
+    "classical": 323,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 458,
+    "S": 51,
+    "M": 123,
+    "O": 155,
+    "routes": 375,
+    "AND": 287,
+    "failed": 1,
+    "classical": 324,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 461,
+    "S": 51,
+    "M": 123,
+    "O": 156,
+    "routes": 376,
+    "AND": 288,
+    "failed": 1,
+    "classical": 325,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 462,
+    "S": 51,
+    "M": 124,
+    "O": 156,
+    "routes": 377,
+    "AND": 289,
+    "failed": 1,
+    "classical": 326,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 463,
+    "S": 51,
+    "M": 125,
+    "O": 156,
+    "routes": 378,
+    "AND": 289,
+    "failed": 1,
+    "classical": 327,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 464,
+    "S": 51,
+    "M": 126,
+    "O": 156,
+    "routes": 379,
+    "AND": 290,
+    "failed": 1,
+    "classical": 328,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 465,
+    "S": 51,
+    "M": 126,
+    "O": 157,
+    "routes": 380,
+    "AND": 290,
+    "failed": 1,
+    "classical": 329,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 466,
+    "S": 51,
+    "M": 127,
+    "O": 157,
+    "routes": 381,
+    "AND": 291,
+    "failed": 1,
+    "classical": 330,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 467,
+    "S": 51,
+    "M": 128,
+    "O": 157,
+    "routes": 382,
+    "AND": 292,
+    "failed": 1,
+    "classical": 331,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 468,
+    "S": 51,
+    "M": 128,
+    "O": 157,
+    "routes": 384,
+    "AND": 293,
+    "failed": 1,
+    "classical": 331,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 469,
+    "S": 52,
+    "M": 128,
+    "O": 157,
+    "routes": 385,
+    "AND": 293,
+    "failed": 1,
+    "classical": 332,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 470,
+    "S": 52,
+    "M": 129,
+    "O": 157,
+    "routes": 386,
+    "AND": 294,
+    "failed": 1,
+    "classical": 333,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 471,
+    "S": 52,
+    "M": 129,
+    "O": 158,
+    "routes": 387,
+    "AND": 295,
+    "failed": 1,
+    "classical": 334,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 473,
+    "S": 53,
+    "M": 129,
+    "O": 158,
+    "routes": 388,
+    "AND": 296,
+    "failed": 1,
+    "classical": 335,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 474,
+    "S": 53,
+    "M": 130,
+    "O": 158,
+    "routes": 389,
+    "AND": 297,
+    "failed": 1,
+    "classical": 336,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 475,
+    "S": 53,
+    "M": 130,
+    "O": 159,
+    "routes": 390,
+    "AND": 298,
+    "failed": 1,
+    "classical": 337,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 476,
+    "S": 53,
+    "M": 131,
+    "O": 159,
+    "routes": 391,
+    "AND": 298,
+    "failed": 1,
+    "classical": 338,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 477,
+    "S": 53,
+    "M": 132,
+    "O": 159,
+    "routes": 392,
+    "AND": 299,
+    "failed": 1,
+    "classical": 339,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 478,
+    "S": 53,
+    "M": 133,
+    "O": 159,
+    "routes": 393,
+    "AND": 299,
+    "failed": 1,
+    "classical": 340,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 480,
+    "S": 53,
+    "M": 134,
+    "O": 159,
+    "routes": 393,
+    "AND": 299,
+    "failed": 1,
+    "classical": 341,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 481,
+    "S": 53,
+    "M": 134,
+    "O": 160,
+    "routes": 395,
+    "AND": 300,
+    "failed": 1,
+    "classical": 342,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 483,
+    "S": 53,
+    "M": 134,
+    "O": 161,
+    "routes": 396,
+    "AND": 301,
+    "failed": 1,
+    "classical": 343,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 484,
+    "S": 53,
+    "M": 135,
+    "O": 161,
+    "routes": 397,
+    "AND": 302,
+    "failed": 1,
+    "classical": 344,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 487,
+    "S": 54,
+    "M": 135,
+    "O": 161,
+    "routes": 398,
+    "AND": 302,
+    "failed": 1,
+    "classical": 345,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 488,
+    "S": 55,
+    "M": 135,
+    "O": 161,
+    "routes": 399,
+    "AND": 303,
+    "failed": 1,
+    "classical": 346,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 490,
+    "S": 56,
+    "M": 135,
+    "O": 161,
+    "routes": 400,
+    "AND": 304,
+    "failed": 1,
+    "classical": 347,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 491,
+    "S": 57,
+    "M": 135,
+    "O": 161,
+    "routes": 401,
+    "AND": 305,
+    "failed": 1,
+    "classical": 348,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 492,
+    "S": 57,
+    "M": 136,
+    "O": 161,
+    "routes": 402,
+    "AND": 306,
+    "failed": 1,
+    "classical": 349,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 494,
+    "S": 58,
+    "M": 136,
+    "O": 161,
+    "routes": 403,
+    "AND": 307,
+    "failed": 1,
+    "classical": 350,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 495,
+    "S": 58,
+    "M": 136,
+    "O": 162,
+    "routes": 404,
+    "AND": 308,
+    "failed": 1,
+    "classical": 351,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 496,
+    "S": 59,
+    "M": 136,
+    "O": 162,
+    "routes": 405,
+    "AND": 309,
+    "failed": 1,
+    "classical": 352,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 497,
+    "S": 59,
+    "M": 137,
+    "O": 162,
+    "routes": 406,
+    "AND": 309,
+    "failed": 1,
+    "classical": 353,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 498,
+    "S": 59,
+    "M": 137,
+    "O": 163,
+    "routes": 407,
+    "AND": 309,
+    "failed": 1,
+    "classical": 354,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 499,
+    "S": 59,
+    "M": 138,
+    "O": 163,
+    "routes": 408,
+    "AND": 310,
+    "failed": 1,
+    "classical": 355,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 500,
+    "S": 59,
+    "M": 139,
+    "O": 163,
+    "routes": 409,
+    "AND": 311,
+    "failed": 1,
+    "classical": 356,
+    "relativistic": 4,
+    "quantum": 1
+   },
+   {
+    "t": 502,
+    "S": 59,
+    "M": 140,
+    "O": 163,
+    "routes": 409,
+    "AND": 311,
+    "failed": 1,
+    "classical": 356,
+    "relativistic": 5,
+    "quantum": 1
+   },
+   {
+    "t": 503,
+    "S": 59,
+    "M": 141,
+    "O": 163,
+    "routes": 410,
+    "AND": 312,
+    "failed": 1,
+    "classical": 356,
+    "relativistic": 6,
+    "quantum": 1
+   },
+   {
+    "t": 504,
+    "S": 59,
+    "M": 141,
+    "O": 164,
+    "routes": 411,
+    "AND": 313,
+    "failed": 1,
+    "classical": 357,
+    "relativistic": 6,
+    "quantum": 1
+   },
+   {
+    "t": 505,
+    "S": 59,
+    "M": 141,
+    "O": 164,
+    "routes": 412,
+    "AND": 314,
+    "failed": 2,
+    "classical": 357,
+    "relativistic": 6,
+    "quantum": 1
+   },
+   {
+    "t": 506,
+    "S": 59,
+    "M": 142,
+    "O": 164,
+    "routes": 414,
+    "AND": 316,
+    "failed": 2,
+    "classical": 357,
+    "relativistic": 7,
+    "quantum": 1
+   },
+   {
+    "t": 507,
+    "S": 59,
+    "M": 143,
+    "O": 164,
+    "routes": 415,
+    "AND": 317,
+    "failed": 2,
+    "classical": 357,
+    "relativistic": 8,
+    "quantum": 1
+   },
+   {
+    "t": 508,
+    "S": 59,
+    "M": 143,
+    "O": 165,
+    "routes": 415,
+    "AND": 317,
+    "failed": 2,
+    "classical": 357,
+    "relativistic": 9,
+    "quantum": 1
+   },
+   {
+    "t": 509,
+    "S": 59,
+    "M": 143,
+    "O": 166,
+    "routes": 416,
+    "AND": 318,
+    "failed": 2,
+    "classical": 357,
+    "relativistic": 10,
+    "quantum": 1
+   },
+   {
+    "t": 510,
+    "S": 59,
+    "M": 143,
+    "O": 166,
+    "routes": 418,
+    "AND": 319,
+    "failed": 2,
+    "classical": 357,
+    "relativistic": 10,
+    "quantum": 1
+   },
+   {
+    "t": 511,
+    "S": 59,
+    "M": 143,
+    "O": 167,
+    "routes": 419,
+    "AND": 320,
+    "failed": 2,
+    "classical": 357,
+    "relativistic": 11,
+    "quantum": 1
+   },
+   {
+    "t": 512,
+    "S": 59,
+    "M": 144,
+    "O": 167,
+    "routes": 421,
+    "AND": 321,
+    "failed": 2,
+    "classical": 357,
+    "relativistic": 12,
+    "quantum": 1
+   },
+   {
+    "t": 513,
+    "S": 60,
+    "M": 144,
+    "O": 167,
+    "routes": 422,
+    "AND": 322,
+    "failed": 2,
+    "classical": 357,
+    "relativistic": 13,
+    "quantum": 1
+   },
+   {
+    "t": 514,
+    "S": 60,
+    "M": 145,
+    "O": 167,
+    "routes": 423,
+    "AND": 323,
+    "failed": 2,
+    "classical": 357,
+    "relativistic": 14,
+    "quantum": 1
+   },
+   {
+    "t": 515,
+    "S": 60,
+    "M": 145,
+    "O": 168,
+    "routes": 424,
+    "AND": 324,
+    "failed": 2,
+    "classical": 357,
+    "relativistic": 15,
+    "quantum": 1
+   },
+   {
+    "t": 516,
+    "S": 60,
+    "M": 145,
+    "O": 169,
+    "routes": 426,
+    "AND": 325,
+    "failed": 2,
+    "classical": 357,
+    "relativistic": 16,
+    "quantum": 1
+   },
+   {
+    "t": 517,
+    "S": 60,
+    "M": 145,
+    "O": 170,
+    "routes": 428,
+    "AND": 326,
+    "failed": 2,
+    "classical": 357,
+    "relativistic": 17,
+    "quantum": 1
+   },
+   {
+    "t": 518,
+    "S": 60,
+    "M": 145,
+    "O": 171,
+    "routes": 429,
+    "AND": 327,
+    "failed": 2,
+    "classical": 357,
+    "relativistic": 18,
+    "quantum": 1
+   },
+   {
+    "t": 520,
+    "S": 61,
+    "M": 145,
+    "O": 171,
+    "routes": 430,
+    "AND": 328,
+    "failed": 2,
+    "classical": 358,
+    "relativistic": 18,
+    "quantum": 1
+   },
+   {
+    "t": 521,
+    "S": 61,
+    "M": 145,
+    "O": 171,
+    "routes": 432,
+    "AND": 329,
+    "failed": 3,
+    "classical": 358,
+    "relativistic": 18,
+    "quantum": 1
+   },
+   {
+    "t": 522,
+    "S": 61,
+    "M": 146,
+    "O": 172,
+    "routes": 433,
+    "AND": 330,
+    "failed": 3,
+    "classical": 358,
+    "relativistic": 18,
+    "quantum": 3
+   },
+   {
+    "t": 523,
+    "S": 61,
+    "M": 146,
+    "O": 172,
+    "routes": 435,
+    "AND": 332,
+    "failed": 3,
+    "classical": 358,
+    "relativistic": 18,
+    "quantum": 3
+   },
+   {
+    "t": 524,
+    "S": 61,
+    "M": 146,
+    "O": 174,
+    "routes": 437,
+    "AND": 334,
+    "failed": 3,
+    "classical": 360,
+    "relativistic": 18,
+    "quantum": 3
+   },
+   {
+    "t": 525,
+    "S": 61,
+    "M": 146,
+    "O": 174,
+    "routes": 438,
+    "AND": 335,
+    "failed": 4,
+    "classical": 360,
+    "relativistic": 18,
+    "quantum": 3
+   },
+   {
+    "t": 526,
+    "S": 62,
+    "M": 146,
+    "O": 174,
+    "routes": 440,
+    "AND": 336,
+    "failed": 4,
+    "classical": 360,
+    "relativistic": 18,
+    "quantum": 4
+   },
+   {
+    "t": 527,
+    "S": 62,
+    "M": 146,
+    "O": 175,
+    "routes": 443,
+    "AND": 339,
+    "failed": 4,
+    "classical": 361,
+    "relativistic": 18,
+    "quantum": 4
+   },
+   {
+    "t": 528,
+    "S": 62,
+    "M": 146,
+    "O": 176,
+    "routes": 444,
+    "AND": 340,
+    "failed": 4,
+    "classical": 362,
+    "relativistic": 18,
+    "quantum": 4
+   },
+   {
+    "t": 529,
+    "S": 62,
+    "M": 146,
+    "O": 177,
+    "routes": 445,
+    "AND": 341,
+    "failed": 4,
+    "classical": 363,
+    "relativistic": 18,
+    "quantum": 4
+   },
+   {
+    "t": 530,
+    "S": 63,
+    "M": 146,
+    "O": 177,
+    "routes": 446,
+    "AND": 342,
+    "failed": 4,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 4
+   },
+   {
+    "t": 531,
+    "S": 63,
+    "M": 146,
+    "O": 177,
+    "routes": 447,
+    "AND": 343,
+    "failed": 5,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 4
+   },
+   {
+    "t": 532,
+    "S": 63,
+    "M": 147,
+    "O": 177,
+    "routes": 448,
+    "AND": 344,
+    "failed": 5,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 5
+   },
+   {
+    "t": 533,
+    "S": 64,
+    "M": 147,
+    "O": 177,
+    "routes": 449,
+    "AND": 345,
+    "failed": 5,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 6
+   },
+   {
+    "t": 534,
+    "S": 64,
+    "M": 147,
+    "O": 177,
+    "routes": 450,
+    "AND": 346,
+    "failed": 5,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 6
+   },
+   {
+    "t": 535,
+    "S": 64,
+    "M": 148,
+    "O": 177,
+    "routes": 451,
+    "AND": 347,
+    "failed": 5,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 7
+   },
+   {
+    "t": 536,
+    "S": 64,
+    "M": 148,
+    "O": 177,
+    "routes": 452,
+    "AND": 348,
+    "failed": 5,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 7
+   },
+   {
+    "t": 537,
+    "S": 64,
+    "M": 148,
+    "O": 178,
+    "routes": 453,
+    "AND": 349,
+    "failed": 5,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 8
+   },
+   {
+    "t": 538,
+    "S": 64,
+    "M": 149,
+    "O": 178,
+    "routes": 454,
+    "AND": 350,
+    "failed": 5,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 9
+   },
+   {
+    "t": 539,
+    "S": 64,
+    "M": 150,
+    "O": 178,
+    "routes": 455,
+    "AND": 351,
+    "failed": 5,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 10
+   },
+   {
+    "t": 542,
+    "S": 65,
+    "M": 150,
+    "O": 178,
+    "routes": 456,
+    "AND": 352,
+    "failed": 5,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 11
+   },
+   {
+    "t": 543,
+    "S": 65,
+    "M": 151,
+    "O": 178,
+    "routes": 456,
+    "AND": 352,
+    "failed": 5,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 12
+   },
+   {
+    "t": 544,
+    "S": 65,
+    "M": 152,
+    "O": 178,
+    "routes": 457,
+    "AND": 353,
+    "failed": 5,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 13
+   },
+   {
+    "t": 545,
+    "S": 65,
+    "M": 153,
+    "O": 179,
+    "routes": 458,
+    "AND": 354,
+    "failed": 5,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 15
+   },
+   {
+    "t": 546,
+    "S": 66,
+    "M": 153,
+    "O": 179,
+    "routes": 460,
+    "AND": 355,
+    "failed": 5,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 16
+   },
+   {
+    "t": 547,
+    "S": 66,
+    "M": 154,
+    "O": 179,
+    "routes": 461,
+    "AND": 356,
+    "failed": 5,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 17
+   },
+   {
+    "t": 548,
+    "S": 66,
+    "M": 155,
+    "O": 179,
+    "routes": 462,
+    "AND": 357,
+    "failed": 5,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 18
+   },
+   {
+    "t": 549,
+    "S": 66,
+    "M": 156,
+    "O": 179,
+    "routes": 463,
+    "AND": 357,
+    "failed": 5,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 19
+   },
+   {
+    "t": 550,
+    "S": 67,
+    "M": 156,
+    "O": 179,
+    "routes": 464,
+    "AND": 358,
+    "failed": 5,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 20
+   },
+   {
+    "t": 551,
+    "S": 68,
+    "M": 156,
+    "O": 179,
+    "routes": 466,
+    "AND": 360,
+    "failed": 5,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 21
+   },
+   {
+    "t": 552,
+    "S": 69,
+    "M": 156,
+    "O": 179,
+    "routes": 467,
+    "AND": 361,
+    "failed": 5,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 22
+   },
+   {
+    "t": 553,
+    "S": 69,
+    "M": 156,
+    "O": 179,
+    "routes": 468,
+    "AND": 362,
+    "failed": 5,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 22
+   },
+   {
+    "t": 554,
+    "S": 69,
+    "M": 156,
+    "O": 180,
+    "routes": 469,
+    "AND": 363,
+    "failed": 5,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 23
+   },
+   {
+    "t": 555,
+    "S": 69,
+    "M": 156,
+    "O": 180,
+    "routes": 470,
+    "AND": 363,
+    "failed": 6,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 23
+   },
+   {
+    "t": 558,
+    "S": 70,
+    "M": 156,
+    "O": 180,
+    "routes": 472,
+    "AND": 364,
+    "failed": 6,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 24
+   },
+   {
+    "t": 559,
+    "S": 70,
+    "M": 156,
+    "O": 181,
+    "routes": 473,
+    "AND": 365,
+    "failed": 6,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 25
+   },
+   {
+    "t": 560,
+    "S": 70,
+    "M": 156,
+    "O": 182,
+    "routes": 474,
+    "AND": 366,
+    "failed": 6,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 26
+   },
+   {
+    "t": 561,
+    "S": 70,
+    "M": 156,
+    "O": 183,
+    "routes": 475,
+    "AND": 367,
+    "failed": 6,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 27
+   },
+   {
+    "t": 562,
+    "S": 70,
+    "M": 156,
+    "O": 184,
+    "routes": 476,
+    "AND": 368,
+    "failed": 6,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 28
+   },
+   {
+    "t": 563,
+    "S": 70,
+    "M": 157,
+    "O": 184,
+    "routes": 477,
+    "AND": 369,
+    "failed": 6,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 29
+   },
+   {
+    "t": 564,
+    "S": 70,
+    "M": 158,
+    "O": 184,
+    "routes": 477,
+    "AND": 369,
+    "failed": 6,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 30
+   },
+   {
+    "t": 565,
+    "S": 71,
+    "M": 158,
+    "O": 184,
+    "routes": 478,
+    "AND": 370,
+    "failed": 6,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 31
+   },
+   {
+    "t": 566,
+    "S": 71,
+    "M": 159,
+    "O": 184,
+    "routes": 479,
+    "AND": 371,
+    "failed": 6,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 32
+   },
+   {
+    "t": 567,
+    "S": 71,
+    "M": 159,
+    "O": 185,
+    "routes": 480,
+    "AND": 372,
+    "failed": 6,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 33
+   },
+   {
+    "t": 568,
+    "S": 71,
+    "M": 160,
+    "O": 185,
+    "routes": 481,
+    "AND": 373,
+    "failed": 6,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 34
+   },
+   {
+    "t": 571,
+    "S": 71,
+    "M": 161,
+    "O": 185,
+    "routes": 482,
+    "AND": 374,
+    "failed": 6,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 35
+   },
+   {
+    "t": 574,
+    "S": 72,
+    "M": 161,
+    "O": 185,
+    "routes": 483,
+    "AND": 375,
+    "failed": 6,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 36
+   },
+   {
+    "t": 575,
+    "S": 72,
+    "M": 161,
+    "O": 185,
+    "routes": 484,
+    "AND": 376,
+    "failed": 6,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 36
+   },
+   {
+    "t": 576,
+    "S": 73,
+    "M": 161,
+    "O": 185,
+    "routes": 485,
+    "AND": 377,
+    "failed": 6,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 37
+   },
+   {
+    "t": 578,
+    "S": 74,
+    "M": 161,
+    "O": 185,
+    "routes": 486,
+    "AND": 378,
+    "failed": 6,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 38
+   },
+   {
+    "t": 580,
+    "S": 75,
+    "M": 161,
+    "O": 185,
+    "routes": 487,
+    "AND": 379,
+    "failed": 6,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 39
+   },
+   {
+    "t": 581,
+    "S": 75,
+    "M": 161,
+    "O": 185,
+    "routes": 489,
+    "AND": 379,
+    "failed": 6,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 39
+   },
+   {
+    "t": 582,
+    "S": 76,
+    "M": 161,
+    "O": 185,
+    "routes": 490,
+    "AND": 380,
+    "failed": 6,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 40
+   },
+   {
+    "t": 583,
+    "S": 76,
+    "M": 161,
+    "O": 185,
+    "routes": 491,
+    "AND": 380,
+    "failed": 6,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 40
+   },
+   {
+    "t": 584,
+    "S": 77,
+    "M": 161,
+    "O": 185,
+    "routes": 492,
+    "AND": 381,
+    "failed": 6,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 41
+   },
+   {
+    "t": 585,
+    "S": 77,
+    "M": 162,
+    "O": 185,
+    "routes": 493,
+    "AND": 381,
+    "failed": 6,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 42
+   },
+   {
+    "t": 586,
+    "S": 77,
+    "M": 162,
+    "O": 186,
+    "routes": 494,
+    "AND": 382,
+    "failed": 6,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 43
+   },
+   {
+    "t": 587,
+    "S": 77,
+    "M": 163,
+    "O": 186,
+    "routes": 496,
+    "AND": 383,
+    "failed": 6,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 44
+   },
+   {
+    "t": 589,
+    "S": 78,
+    "M": 163,
+    "O": 186,
+    "routes": 497,
+    "AND": 384,
+    "failed": 6,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 45
+   },
+   {
+    "t": 590,
+    "S": 78,
+    "M": 164,
+    "O": 186,
+    "routes": 498,
+    "AND": 385,
+    "failed": 6,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 46
+   },
+   {
+    "t": 592,
+    "S": 78,
+    "M": 164,
+    "O": 187,
+    "routes": 499,
+    "AND": 386,
+    "failed": 6,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 47
+   },
+   {
+    "t": 593,
+    "S": 78,
+    "M": 165,
+    "O": 187,
+    "routes": 500,
+    "AND": 387,
+    "failed": 6,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 48
+   },
+   {
+    "t": 594,
+    "S": 78,
+    "M": 166,
+    "O": 187,
+    "routes": 501,
+    "AND": 387,
+    "failed": 6,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 49
+   },
+   {
+    "t": 596,
+    "S": 79,
+    "M": 166,
+    "O": 187,
+    "routes": 502,
+    "AND": 388,
+    "failed": 6,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 50
+   },
+   {
+    "t": 597,
+    "S": 79,
+    "M": 166,
+    "O": 187,
+    "routes": 503,
+    "AND": 388,
+    "failed": 6,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 50
+   },
+   {
+    "t": 599,
+    "S": 80,
+    "M": 166,
+    "O": 187,
+    "routes": 503,
+    "AND": 388,
+    "failed": 6,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 51
+   },
+   {
+    "t": 600,
+    "S": 80,
+    "M": 167,
+    "O": 187,
+    "routes": 505,
+    "AND": 390,
+    "failed": 6,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 52
+   },
+   {
+    "t": 602,
+    "S": 81,
+    "M": 167,
+    "O": 187,
+    "routes": 506,
+    "AND": 391,
+    "failed": 6,
+    "classical": 364,
+    "relativistic": 18,
+    "quantum": 53
+   },
+   {
+    "t": 605,
+    "S": 81,
+    "M": 167,
+    "O": 188,
+    "routes": 507,
+    "AND": 392,
+    "failed": 6,
+    "classical": 365,
+    "relativistic": 18,
+    "quantum": 53
+   },
+   {
+    "t": 608,
+    "S": 81,
+    "M": 168,
+    "O": 188,
+    "routes": 508,
+    "AND": 393,
+    "failed": 6,
+    "classical": 365,
+    "relativistic": 18,
+    "quantum": 54
+   },
+   {
+    "t": 609,
+    "S": 82,
+    "M": 168,
+    "O": 188,
+    "routes": 509,
+    "AND": 394,
+    "failed": 6,
+    "classical": 365,
+    "relativistic": 18,
+    "quantum": 55
+   },
+   {
+    "t": 610,
+    "S": 82,
+    "M": 169,
+    "O": 188,
+    "routes": 510,
+    "AND": 395,
+    "failed": 6,
+    "classical": 365,
+    "relativistic": 18,
+    "quantum": 56
+   },
+   {
+    "t": 611,
+    "S": 82,
+    "M": 170,
+    "O": 188,
+    "routes": 511,
+    "AND": 396,
+    "failed": 6,
+    "classical": 365,
+    "relativistic": 18,
+    "quantum": 57
+   },
+   {
+    "t": 613,
+    "S": 82,
+    "M": 171,
+    "O": 188,
+    "routes": 512,
+    "AND": 397,
+    "failed": 6,
+    "classical": 365,
+    "relativistic": 18,
+    "quantum": 58
+   },
+   {
+    "t": 615,
+    "S": 82,
+    "M": 171,
+    "O": 189,
+    "routes": 513,
+    "AND": 398,
+    "failed": 6,
+    "classical": 365,
+    "relativistic": 19,
+    "quantum": 58
+   },
+   {
+    "t": 616,
+    "S": 82,
+    "M": 172,
+    "O": 189,
+    "routes": 514,
+    "AND": 399,
+    "failed": 6,
+    "classical": 365,
+    "relativistic": 20,
+    "quantum": 58
+   },
+   {
+    "t": 618,
+    "S": 82,
+    "M": 172,
+    "O": 190,
+    "routes": 515,
+    "AND": 400,
+    "failed": 6,
+    "classical": 365,
+    "relativistic": 21,
+    "quantum": 58
+   },
+   {
+    "t": 619,
+    "S": 82,
+    "M": 172,
+    "O": 191,
+    "routes": 516,
+    "AND": 401,
+    "failed": 6,
+    "classical": 365,
+    "relativistic": 22,
+    "quantum": 58
+   }
+  ],
+  "failed": {
+   "n_failed": 6,
+   "n_resolved": 4,
+   "max_distance": 305,
+   "mean_distance": 78.0,
+   "rows": [
+    {
+     "failed": "r237",
+     "target": "CV",
+     "t_failed": 270,
+     "title_failed": "Equipartition fails at low temperature",
+     "resolved_by": "r484",
+     "t_resolved": 575,
+     "distance": 305,
+     "resolver_kind": "to_classical",
+     "earlier": "r236",
+     "t_earlier": 268,
+     "earlier_kind": "classical",
+     "title_resolver": "Frozen degrees of freedom explained"
+    },
+    {
+     "failed": "r412",
+     "target": "mmnull",
+     "t_failed": 505,
+     "title_failed": "Ether prediction fails",
+     "resolved_by": null,
+     "t_resolved": null,
+     "distance": null,
+     "resolver_kind": null,
+     "earlier": "r411",
+     "t_earlier": 504,
+     "earlier_kind": "classical"
+    },
+    {
+     "failed": "r432",
+     "target": "bbrad",
+     "t_failed": 521,
+     "title_failed": "Ultraviolet catastrophe",
+     "resolved_by": "r434",
+     "t_resolved": 523,
+     "distance": 2,
+     "resolver_kind": "to_classical",
+     "earlier": "r430",
+     "t_earlier": 520,
+     "earlier_kind": "classical",
+     "title_resolver": "Planck's radiation law"
+    },
+    {
+     "failed": "r438",
+     "target": "Kmax",
+     "t_failed": 525,
+     "title_failed": "Classical prediction fails",
+     "resolved_by": "r442",
+     "t_resolved": 527,
+     "distance": 2,
+     "resolver_kind": "to_classical",
+     "earlier": "r436",
+     "t_earlier": 524,
+     "earlier_kind": "classical",
+     "title_resolver": "Einstein's equation"
+    },
+    {
+     "failed": "r447",
+     "target": "Hspec",
+     "t_failed": 531,
+     "title_failed": "Planetary atom fails",
+     "resolved_by": "r450",
+     "t_resolved": 534,
+     "distance": 3,
+     "resolver_kind": "to_classical",
+     "earlier": "r445",
+     "t_earlier": 529,
+     "earlier_kind": "classical",
+     "title_resolver": "Spectrum explained"
+    },
+    {
+     "failed": "r470",
+     "target": "Ttun",
+     "t_failed": 555,
+     "title_failed": "Classical barrier is impenetrable",
+     "resolved_by": null,
+     "t_resolved": null,
+     "distance": null,
+     "resolver_kind": null,
+     "earlier": "r469",
+     "t_earlier": 554,
+     "earlier_kind": "quantum"
+    }
+   ]
+  },
+  "depth": {
+   "nodes": 445,
+   "edges_2section": 1129,
+   "acyclic": false,
+   "n_nontrivial_sccs": 2,
+   "largest_scc": 123,
+   "nodes_in_cycles": 125,
+   "cycles_sample": [
+    [
+     "Kmax",
+     "phiw"
+    ],
+    [
+     "wet",
+     "Krel",
+     "K"
+    ]
+   ],
+   "longest_chain_condensed": 24,
+   "degree_by_layer": {
+    "S": {
+     "mean_in": 2.8292682926829267,
+     "mean_out": 2.6097560975609757
+    },
+    "M": {
+     "mean_in": 2.261627906976744,
+     "mean_out": 2.3488372093023258
+    },
+    "O": {
+     "mean_in": 2.6596858638743455,
+     "mean_out": 2.675392670157068
+    }
+   },
+   "top_out_hubs": [
+    [
+     "n2",
+     "M",
+     21
+    ],
+    [
+     "m",
+     "O",
+     19
+    ],
+    [
+     "ddt",
+     "M",
+     16
+    ],
+    [
+     "integ",
+     "M",
+     16
+    ],
+    [
+     "curr",
+     "O",
+     15
+    ],
+    [
+     "temp",
+     "O",
+     13
+    ],
+    [
+     "coul",
+     "M",
+     13
+    ],
+    [
+     "q",
+     "O",
+     12
+    ]
+   ],
+   "top_in_hubs": [
+    [
+     "F",
+     "O",
+     16
+    ],
+    [
+     "avec",
+     "O",
+     10
+    ],
+    [
+     "Efield",
+     "S",
+     10
+    ],
+    [
+     "vwave",
+     "O",
+     8
+    ],
+    [
+     "Bfield",
+     "S",
+     8
+    ],
+    [
+     "rt",
+     "S",
+     7
+    ],
+    [
+     "P",
+     "O",
+     7
+    ],
+    [
+     "tau",
+     "O",
+     7
+    ]
+   ]
+  },
+  "agenda": {
+   "primitive_nodes": {
+    "S": [],
+    "M": [
+     "born",
+     "bs",
+     "corresp",
+     "ddt",
+     "equiv",
+     "faraday",
+     "hooke",
+     "integ",
+     "lorentzF",
+     "n1",
+     "n3",
+     "omag",
+     "pauli",
+     "scal",
+     "strong",
+     "third",
+     "vec",
+     "zeroth"
+    ],
+    "O": [
+     "G",
+     "L",
+     "NA",
+     "eps0",
+     "hbar",
+     "kB",
+     "m",
+     "mu0",
+     "q",
+     "t"
+    ]
+   },
+   "n_primitive": {
+    "S": 0,
+    "M": 18,
+    "O": 10
+   },
+   "failed_routes": [
+    "r237",
+    "r412",
+    "r432",
+    "r438",
+    "r447",
+    "r470"
+   ],
+   "or_targets": [
+    "Bfield",
+    "CV",
+    "Cap",
+    "Efield",
+    "Emech",
+    "F",
+    "Hspec",
+    "I",
+    "Iint",
+    "K",
+    "Kmax",
+    "Krot",
+    "Lang",
+    "Lind",
+    "P",
+    "Rres",
+    "S",
+    "Tper",
+    "Ttun",
+    "U",
+    "Ugrav",
+    "Vfield",
+    "ac",
+    "acres",
+    "angvel",
+    "at",
+    "avec",
+    "bbrad",
+    "bohr",
+    "bohrlev",
+    "cond",
+    "curr",
+    "decay",
+    "doping",
+    "dtm",
+    "eff",
+    "emf",
+    "emfmot",
+    "fc",
+    "forced",
+    "galrel",
+    "heat",
+    "insul",
+    "kappa",
+    "kin",
+    "lc",
+    "mmnull",
+    "nuclide",
+    "omega",
+    "p",
+    "photon",
+    "rcm",
+    "reflect",
+    "rlc",
+    "rt",
+    "sbl",
+    "shm",
+    "slaw",
+    "snell",
+    "speed",
+    "supercond",
+    "tau",
+    "temp",
+    "tscale",
+    "uncert",
+    "vrms",
+    "vsound",
+    "vvec",
+    "vwave",
+    "waveeq",
+    "wet",
+    "xt"
+   ]
+  },
+  "chapters": [
+   {
+    "vol": 1,
+    "ch": 1,
+    "title": "Units and Measurement",
+    "unit": "Mechanics",
+    "new_nodes": 12,
+    "routes": 8,
+    "carried_in": 0,
+    "carried_in_by_layer": {
+     "S": 0,
+     "M": 0,
+     "O": 0
+    }
+   },
+   {
+    "vol": 1,
+    "ch": 2,
+    "title": "Vectors",
+    "unit": "Mechanics",
+    "new_nodes": 8,
+    "routes": 6,
+    "carried_in": 0,
+    "carried_in_by_layer": {
+     "S": 0,
+     "M": 0,
+     "O": 0
+    }
+   },
+   {
+    "vol": 1,
+    "ch": 3,
+    "title": "Motion Along a Straight Line",
+    "unit": "Mechanics",
+    "new_nodes": 17,
+    "routes": 16,
+    "carried_in": 3,
+    "carried_in_by_layer": {
+     "S": 0,
+     "M": 1,
+     "O": 2
+    }
+   },
+   {
+    "vol": 1,
+    "ch": 4,
+    "title": "Motion in Two and Three Dimensions",
+    "unit": "Mechanics",
+    "new_nodes": 14,
+    "routes": 19,
+    "carried_in": 12,
+    "carried_in_by_layer": {
+     "S": 1,
+     "M": 6,
+     "O": 5
+    }
+   },
+   {
+    "vol": 1,
+    "ch": 5,
+    "title": "Newton's Laws of Motion",
+    "unit": "Mechanics",
+    "new_nodes": 11,
+    "routes": 9,
+    "carried_in": 8,
+    "carried_in_by_layer": {
+     "S": 1,
+     "M": 4,
+     "O": 3
+    }
+   },
+   {
+    "vol": 1,
+    "ch": 6,
+    "title": "Applications of Newton's Laws",
+    "unit": "Mechanics",
+    "new_nodes": 9,
+    "routes": 9,
+    "carried_in": 11,
+    "carried_in_by_layer": {
+     "S": 0,
+     "M": 4,
+     "O": 7
+    }
+   },
+   {
+    "vol": 1,
+    "ch": 7,
+    "title": "Work and Kinetic Energy",
+    "unit": "Mechanics",
+    "new_nodes": 5,
+    "routes": 6,
+    "carried_in": 10,
+    "carried_in_by_layer": {
+     "S": 0,
+     "M": 4,
+     "O": 6
+    }
+   },
+   {
+    "vol": 1,
+    "ch": 8,
+    "title": "Potential Energy and Conservation of Energy",
+    "unit": "Mechanics",
+    "new_nodes": 9,
+    "routes": 10,
+    "carried_in": 6,
+    "carried_in_by_layer": {
+     "S": 0,
+     "M": 2,
+     "O": 4
+    }
+   },
+   {
+    "vol": 1,
+    "ch": 9,
+    "title": "Linear Momentum and Collisions",
+    "unit": "Mechanics",
+    "new_nodes": 10,
+    "routes": 13,
+    "carried_in": 12,
+    "carried_in_by_layer": {
+     "S": 1,
+     "M": 5,
+     "O": 6
+    }
+   },
+   {
+    "vol": 1,
+    "ch": 10,
+    "title": "Fixed-Axis Rotation",
+    "unit": "Mechanics",
+    "new_nodes": 12,
+    "routes": 21,
+    "carried_in": 21,
+    "carried_in_by_layer": {
+     "S": 2,
+     "M": 6,
+     "O": 13
+    }
+   },
+   {
+    "vol": 1,
+    "ch": 11,
+    "title": "Angular Momentum",
+    "unit": "Mechanics",
+    "new_nodes": 5,
+    "routes": 6,
+    "carried_in": 12,
+    "carried_in_by_layer": {
+     "S": 1,
+     "M": 3,
+     "O": 8
+    }
+   },
+   {
+    "vol": 1,
+    "ch": 12,
+    "title": "Static Equilibrium and Elasticity",
+    "unit": "Mechanics",
+    "new_nodes": 11,
+    "routes": 11,
+    "carried_in": 9,
+    "carried_in_by_layer": {
+     "S": 1,
+     "M": 3,
+     "O": 5
+    }
+   },
+   {
+    "vol": 1,
+    "ch": 13,
+    "title": "Gravitation",
+    "unit": "Mechanics",
+    "new_nodes": 19,
+    "routes": 19,
+    "carried_in": 16,
+    "carried_in_by_layer": {
+     "S": 1,
+     "M": 5,
+     "O": 10
+    }
+   },
+   {
+    "vol": 1,
+    "ch": 14,
+    "title": "Fluid Mechanics",
+    "unit": "Mechanics",
+    "new_nodes": 16,
+    "routes": 16,
+    "carried_in": 10,
+    "carried_in_by_layer": {
+     "S": 0,
+     "M": 2,
+     "O": 8
+    }
+   },
+   {
+    "vol": 1,
+    "ch": 15,
+    "title": "Oscillations",
+    "unit": "Waves and Acoustics",
+    "new_nodes": 11,
+    "routes": 15,
+    "carried_in": 17,
+    "carried_in_by_layer": {
+     "S": 2,
+     "M": 3,
+     "O": 12
+    }
+   },
+   {
+    "vol": 1,
+    "ch": 16,
+    "title": "Waves",
+    "unit": "Waves and Acoustics",
+    "new_nodes": 13,
+    "routes": 17,
+    "carried_in": 13,
+    "carried_in_by_layer": {
+     "S": 2,
+     "M": 3,
+     "O": 8
+    }
+   },
+   {
+    "vol": 1,
+    "ch": 17,
+    "title": "Sound",
+    "unit": "Waves and Acoustics",
+    "new_nodes": 7,
+    "routes": 9,
+    "carried_in": 11,
+    "carried_in_by_layer": {
+     "S": 2,
+     "M": 3,
+     "O": 6
+    }
+   },
+   {
+    "vol": 2,
+    "ch": 1,
+    "title": "Temperature and Heat",
+    "unit": "Thermodynamics",
+    "new_nodes": 14,
+    "routes": 14,
+    "carried_in": 10,
+    "carried_in_by_layer": {
+     "S": 2,
+     "M": 2,
+     "O": 6
+    }
+   },
+   {
+    "vol": 2,
+    "ch": 2,
+    "title": "The Kinetic Theory of Gases",
+    "unit": "Thermodynamics",
+    "new_nodes": 15,
+    "routes": 16,
+    "carried_in": 8,
+    "carried_in_by_layer": {
+     "S": 1,
+     "M": 1,
+     "O": 6
+    }
+   },
+   {
+    "vol": 2,
+    "ch": 3,
+    "title": "The First Law of Thermodynamics",
+    "unit": "Thermodynamics",
+    "new_nodes": 8,
+    "routes": 9,
+    "carried_in": 12,
+    "carried_in_by_layer": {
+     "S": 3,
+     "M": 3,
+     "O": 6
+    }
+   },
+   {
+    "vol": 2,
+    "ch": 4,
+    "title": "The Second Law of Thermodynamics",
+    "unit": "Thermodynamics",
+    "new_nodes": 12,
+    "routes": 15,
+    "carried_in": 7,
+    "carried_in_by_layer": {
+     "S": 1,
+     "M": 4,
+     "O": 2
+    }
+   },
+   {
+    "vol": 2,
+    "ch": 5,
+    "title": "Electric Charges and Fields",
+    "unit": "Electricity and Magnetism",
+    "new_nodes": 14,
+    "routes": 16,
+    "carried_in": 7,
+    "carried_in_by_layer": {
+     "S": 0,
+     "M": 4,
+     "O": 3
+    }
+   },
+   {
+    "vol": 2,
+    "ch": 6,
+    "title": "Gauss's Law",
+    "unit": "Electricity and Magnetism",
+    "new_nodes": 4,
+    "routes": 5,
+    "carried_in": 7,
+    "carried_in_by_layer": {
+     "S": 2,
+     "M": 4,
+     "O": 1
+    }
+   },
+   {
+    "vol": 2,
+    "ch": 7,
+    "title": "Electric Potential",
+    "unit": "Electricity and Magnetism",
+    "new_nodes": 5,
+    "routes": 8,
+    "carried_in": 11,
+    "carried_in_by_layer": {
+     "S": 2,
+     "M": 6,
+     "O": 3
+    }
+   },
+   {
+    "vol": 2,
+    "ch": 8,
+    "title": "Capacitance",
+    "unit": "Electricity and Magnetism",
+    "new_nodes": 8,
+    "routes": 10,
+    "carried_in": 10,
+    "carried_in_by_layer": {
+     "S": 3,
+     "M": 2,
+     "O": 5
+    }
+   },
+   {
+    "vol": 2,
+    "ch": 9,
+    "title": "Current and Resistance",
+    "unit": "Electricity and Magnetism",
+    "new_nodes": 9,
+    "routes": 11,
+    "carried_in": 7,
+    "carried_in_by_layer": {
+     "S": 1,
+     "M": 1,
+     "O": 5
+    }
+   },
+   {
+    "vol": 2,
+    "ch": 10,
+    "title": "Direct-Current Circuits",
+    "unit": "Electricity and Magnetism",
+    "new_nodes": 6,
+    "routes": 6,
+    "carried_in": 9,
+    "carried_in_by_layer": {
+     "S": 2,
+     "M": 2,
+     "O": 5
+    }
+   },
+   {
+    "vol": 2,
+    "ch": 11,
+    "title": "Magnetic Forces and Fields",
+    "unit": "Electricity and Magnetism",
+    "new_nodes": 8,
+    "routes": 12,
+    "carried_in": 13,
+    "carried_in_by_layer": {
+     "S": 1,
+     "M": 2,
+     "O": 10
+    }
+   },
+   {
+    "vol": 2,
+    "ch": 12,
+    "title": "Sources of Magnetic Fields",
+    "unit": "Electricity and Magnetism",
+    "new_nodes": 7,
+    "routes": 6,
+    "carried_in": 8,
+    "carried_in_by_layer": {
+     "S": 2,
+     "M": 4,
+     "O": 2
+    }
+   },
+   {
+    "vol": 2,
+    "ch": 13,
+    "title": "Electromagnetic Induction",
+    "unit": "Electricity and Magnetism",
+    "new_nodes": 7,
+    "routes": 8,
+    "carried_in": 12,
+    "carried_in_by_layer": {
+     "S": 3,
+     "M": 5,
+     "O": 4
+    }
+   },
+   {
+    "vol": 2,
+    "ch": 14,
+    "title": "Inductance",
+    "unit": "Electricity and Magnetism",
+    "new_nodes": 7,
+    "routes": 10,
+    "carried_in": 12,
+    "carried_in_by_layer": {
+     "S": 1,
+     "M": 5,
+     "O": 6
+    }
+   },
+   {
+    "vol": 2,
+    "ch": 15,
+    "title": "Alternating-Current Circuits",
+    "unit": "Electricity and Magnetism",
+    "new_nodes": 9,
+    "routes": 10,
+    "carried_in": 11,
+    "carried_in_by_layer": {
+     "S": 1,
+     "M": 5,
+     "O": 5
+    }
+   },
+   {
+    "vol": 2,
+    "ch": 16,
+    "title": "Electromagnetic Waves",
+    "unit": "Electricity and Magnetism",
+    "new_nodes": 7,
+    "routes": 9,
+    "carried_in": 17,
+    "carried_in_by_layer": {
+     "S": 2,
+     "M": 6,
+     "O": 9
+    }
+   },
+   {
+    "vol": 3,
+    "ch": 1,
+    "title": "The Nature of Light",
+    "unit": "Optics",
+    "new_nodes": 10,
+    "routes": 12,
+    "carried_in": 7,
+    "carried_in_by_layer": {
+     "S": 2,
+     "M": 1,
+     "O": 4
+    }
+   },
+   {
+    "vol": 3,
+    "ch": 2,
+    "title": "Geometric Optics and Image Formation",
+    "unit": "Optics",
+    "new_nodes": 10,
+    "routes": 10,
+    "carried_in": 3,
+    "carried_in_by_layer": {
+     "S": 0,
+     "M": 3,
+     "O": 0
+    }
+   },
+   {
+    "vol": 3,
+    "ch": 3,
+    "title": "Interference",
+    "unit": "Optics",
+    "new_nodes": 5,
+    "routes": 5,
+    "carried_in": 7,
+    "carried_in_by_layer": {
+     "S": 2,
+     "M": 4,
+     "O": 1
+    }
+   },
+   {
+    "vol": 3,
+    "ch": 4,
+    "title": "Diffraction",
+    "unit": "Optics",
+    "new_nodes": 7,
+    "routes": 7,
+    "carried_in": 8,
+    "carried_in_by_layer": {
+     "S": 5,
+     "M": 3,
+     "O": 0
+    }
+   },
+   {
+    "vol": 3,
+    "ch": 5,
+    "title": "Relativity",
+    "unit": "Modern Physics",
+    "new_nodes": 15,
+    "routes": 20,
+    "carried_in": 14,
+    "carried_in_by_layer": {
+     "S": 0,
+     "M": 8,
+     "O": 6
+    }
+   },
+   {
+    "vol": 3,
+    "ch": 6,
+    "title": "Photons and Matter Waves",
+    "unit": "Modern Physics",
+    "new_nodes": 16,
+    "routes": 26,
+    "carried_in": 26,
+    "carried_in_by_layer": {
+     "S": 5,
+     "M": 7,
+     "O": 14
+    }
+   },
+   {
+    "vol": 3,
+    "ch": 7,
+    "title": "Quantum Mechanics",
+    "unit": "Modern Physics",
+    "new_nodes": 13,
+    "routes": 15,
+    "carried_in": 13,
+    "carried_in_by_layer": {
+     "S": 5,
+     "M": 6,
+     "O": 2
+    }
+   },
+   {
+    "vol": 3,
+    "ch": 8,
+    "title": "Atomic Structure",
+    "unit": "Modern Physics",
+    "new_nodes": 11,
+    "routes": 11,
+    "carried_in": 12,
+    "carried_in_by_layer": {
+     "S": 4,
+     "M": 3,
+     "O": 5
+    }
+   },
+   {
+    "vol": 3,
+    "ch": 9,
+    "title": "Condensed Matter Physics",
+    "unit": "Modern Physics",
+    "new_nodes": 10,
+    "routes": 15,
+    "carried_in": 17,
+    "carried_in_by_layer": {
+     "S": 6,
+     "M": 3,
+     "O": 8
+    }
+   },
+   {
+    "vol": 3,
+    "ch": 10,
+    "title": "Nuclear Physics",
+    "unit": "Modern Physics",
+    "new_nodes": 10,
+    "routes": 11,
+    "carried_in": 10,
+    "carried_in_by_layer": {
+     "S": 4,
+     "M": 3,
+     "O": 3
+    }
+   },
+   {
+    "vol": 3,
+    "ch": 11,
+    "title": "Particle Physics and Cosmology",
+    "unit": "Modern Physics",
+    "new_nodes": 9,
+    "routes": 9,
+    "carried_in": 15,
+    "carried_in_by_layer": {
+     "S": 4,
+     "M": 7,
+     "O": 4
+    }
+   }
+  ]
+ },
+ "LG": {
+  "filtration": {
+   "routes": 28,
+   "forward_links": 0,
+   "violations": [],
+   "time_points": 1,
+   "t_min": 6.1,
+   "t_max": 6.1
+  },
+  "growth": [
+   {
+    "t": 6.1,
+    "S": 5,
+    "M": 14,
+    "O": 13,
+    "routes": 28,
+    "AND": 23,
+    "failed": 0,
+    "classical": 32,
+    "relativistic": 0,
+    "quantum": 0
+   }
+  ],
+  "failed": {
+   "n_failed": 0,
+   "n_resolved": 0,
+   "max_distance": null,
+   "mean_distance": null,
+   "rows": []
+  },
+  "depth": {
+   "nodes": 32,
+   "edges_2section": 68,
+   "acyclic": true,
+   "n_nontrivial_sccs": 0,
+   "largest_scc": 0,
+   "nodes_in_cycles": 0,
+   "cycles_sample": [],
+   "longest_chain": 8,
+   "longest_chain_nodes": [
+    "Fa",
+    "x",
+    "sR",
+    "Sin",
+    "uE",
+    "uB",
+    "uR",
+    "U",
+    "Rgo"
+   ],
+   "degree_by_layer": {
+    "S": {
+     "mean_in": 2.6,
+     "mean_out": 3.2
+    },
+    "M": {
+     "mean_in": 0.8571428571428571,
+     "mean_out": 2.642857142857143
+    },
+    "O": {
+     "mean_in": 3.3076923076923075,
+     "mean_out": 1.1538461538461537
+    }
+   },
+   "top_out_hubs": [
+    [
+     "Ef",
+     "M",
+     7
+    ],
+    [
+     "Am",
+     "M",
+     6
+    ],
+    [
+     "sR",
+     "S",
+     6
+    ],
+    [
+     "Do",
+     "M",
+     5
+    ],
+    [
+     "Fa",
+     "M",
+     5
+    ],
+    [
+     "Sk",
+     "M",
+     4
+    ],
+    [
+     "uE",
+     "O",
+     4
+    ],
+    [
+     "x",
+     "S",
+     4
+    ]
+   ],
+   "top_in_hubs": [
+    [
+     "Rlo",
+     "O",
+     5
+    ],
+    [
+     "Sout",
+     "O",
+     4
+    ],
+    [
+     "uR",
+     "O",
+     4
+    ],
+    [
+     "mo",
+     "S",
+     4
+    ],
+    [
+     "Rgo",
+     "O",
+     4
+    ],
+    [
+     "Rls",
+     "O",
+     4
+    ],
+    [
+     "Sin",
+     "O",
+     3
+    ],
+    [
+     "uE",
+     "O",
+     3
+    ]
+   ]
+  },
+  "agenda": {
+   "primitive_nodes": {
+    "S": [],
+    "M": [
+     "Am",
+     "Dd",
+     "Do",
+     "Ef",
+     "Fa",
+     "Lf",
+     "Pr",
+     "Rs",
+     "Sk"
+    ],
+    "O": []
+   },
+   "n_primitive": {
+    "S": 0,
+    "M": 9,
+    "O": 0
+   },
+   "failed_routes": [],
+   "or_targets": [
+    "Sout",
+    "U",
+    "uB",
+    "uE",
+    "uM"
+   ]
+  }
+ },
+ "order_EM_vs_UP": {
+  "n": 41,
+  "kendall_tau_b": 0.8572546471835566,
+  "spearman_rho": 0.9135914796965169,
+  "concordant": 741,
+  "discordant": 51,
+  "pairs": [
+   {
+    "concept": "force",
+    "label": "Force (on a body / on a charge)",
+    "t_EM": 2,
+    "t_UP": 52
+   },
+   {
+    "concept": "position",
+    "label": "Position",
+    "t_EM": 2,
+    "t_UP": 37
+   },
+   {
+    "concept": "velocity",
+    "label": "Velocity",
+    "t_EM": 2,
+    "t_UP": 26
+   },
+   {
+    "concept": "time_derivative",
+    "label": "Time derivative",
+    "t_EM": 2,
+    "t_UP": 26
+   },
+   {
+    "concept": "vector_addition",
+    "label": "Vector addition",
+    "t_EM": 2,
+    "t_UP": 14
+   },
+   {
+    "concept": "cross_product",
+    "label": "Cross (vector) product",
+    "t_EM": 18,
+    "t_UP": 20
+   },
+   {
+    "concept": "electric_charge",
+    "label": "Electric charge",
+    "t_EM": 5,
+    "t_UP": 307
+   },
+   {
+    "concept": "charge_conservation",
+    "label": "Conservation of charge",
+    "t_EM": 5,
+    "t_UP": 308
+   },
+   {
+    "concept": "coulomb_law",
+    "label": "Coulomb's law",
+    "t_EM": 7,
+    "t_UP": 313
+   },
+   {
+    "concept": "point_charges",
+    "label": "Point-charge configuration",
+    "t_EM": 8,
+    "t_UP": 316
+   },
+   {
+    "concept": "superposition",
+    "label": "Superposition of sources",
+    "t_EM": 8,
+    "t_UP": 315
+   },
+   {
+    "concept": "charge_density",
+    "label": "Continuous charge distribution",
+    "t_EM": 10,
+    "t_UP": 319
+   },
+   {
+    "concept": "electric_field",
+    "label": "Electric field (state)",
+    "t_EM": 13,
+    "t_UP": 317
+   },
+   {
+    "concept": "electric_flux",
+    "label": "Electric flux",
+    "t_EM": 12,
+    "t_UP": 326
+   },
+   {
+    "concept": "electrostatic_energy",
+    "label": "Electrostatic (electric potential) energy",
+    "t_EM": 13,
+    "t_UP": 335
+   },
+   {
+    "concept": "electric_potential",
+    "label": "Electric potential (state)",
+    "t_EM": 11,
+    "t_UP": 337
+   },
+   {
+    "concept": "capacitance",
+    "label": "Capacitance",
+    "t_EM": 14,
+    "t_UP": 349
+   },
+   {
+    "concept": "current",
+    "label": "Electric current",
+    "t_EM": 15,
+    "t_UP": 362
+   },
+   {
+    "concept": "current_density",
+    "label": "Current density (state)",
+    "t_EM": 15,
+    "t_UP": 365
+   },
+   {
+    "concept": "resistance",
+    "label": "Resistance",
+    "t_EM": 15,
+    "t_UP": 367
+   },
+   {
+    "concept": "ohm_law",
+    "label": "Ohm's law",
+    "t_EM": 15,
+    "t_UP": 368
+   },
+   {
+    "concept": "magnetic_field",
+    "label": "Magnetic field (state)",
+    "t_EM": 19,
+    "t_UP": 391
+   },
+   {
+    "concept": "magnetic_field_value",
+    "label": "Magnetic field value",
+    "t_EM": 18,
+    "t_UP": 392
+   },
+   {
+    "concept": "biot_savart",
+    "label": "Biot-Savart law",
+    "t_EM": 18,
+    "t_UP": 403
+   },
+   {
+    "concept": "emf",
+    "label": "Electromotive force",
+    "t_EM": 20,
+    "t_UP": 375
+   },
+   {
+    "concept": "magnetic_flux",
+    "label": "Magnetic flux",
+    "t_EM": 20,
+    "t_UP": 414
+   },
+   {
+    "concept": "faraday_law",
+    "label": "Faraday's law",
+    "t_EM": 20,
+    "t_UP": 415
+   },
+   {
+    "concept": "maxwell_equations",
+    "label": "Maxwell's equations",
+    "t_EM": 27,
+    "t_UP": 450
+   },
+   {
+    "concept": "em_field_state",
+    "label": "Electromagnetic field state (E, B)",
+    "t_EM": 28,
+    "t_UP": 452
+   },
+   {
+    "concept": "speed_of_light",
+    "label": "Speed of light",
+    "t_EM": 25,
+    "t_UP": 177
+   },
+   {
+    "concept": "poynting_vector",
+    "label": "Poynting vector",
+    "t_EM": 33,
+    "t_UP": 455
+   },
+   {
+    "concept": "lorentz_transformation",
+    "label": "Lorentz transformation / group",
+    "t_EM": 40,
+    "t_UP": 512
+   },
+   {
+    "concept": "planck_constant",
+    "label": "Planck's constant",
+    "t_EM": 51,
+    "t_UP": 522
+   },
+   {
+    "concept": "blackbody",
+    "label": "Blackbody radiation / spectrum",
+    "t_EM": 50,
+    "t_UP": 520
+   },
+   {
+    "concept": "planck_relation",
+    "label": "Planck's relation / hypothesis",
+    "t_EM": 51,
+    "t_UP": 522
+   },
+   {
+    "concept": "photon",
+    "label": "Photon",
+    "t_EM": 52,
+    "t_UP": 526
+   },
+   {
+    "concept": "spectral_lines",
+    "label": "Spectral lines (hydrogen)",
+    "t_EM": 53,
+    "t_UP": 529
+   },
+   {
+    "concept": "bohr_model",
+    "label": "Bohr model / orbits",
+    "t_EM": 53,
+    "t_UP": 532
+   },
+   {
+    "concept": "schrodinger_evolution",
+    "label": "Schrodinger equation / unitary evolution",
+    "t_EM": 56,
+    "t_UP": 548
+   },
+   {
+    "concept": "hilbert_state",
+    "label": "Hilbert-space state / wave function",
+    "t_EM": 56,
+    "t_UP": 542
+   },
+   {
+    "concept": "outcome_statistics",
+    "label": "Outcome statistics / expectation values",
+    "t_EM": 57,
+    "t_UP": 545
+   }
+  ],
+  "inversions_sample": [
+   [
+    "force",
+    "cross_product"
+   ],
+   [
+    "position",
+    "cross_product"
+   ],
+   [
+    "velocity",
+    "cross_product"
+   ],
+   [
+    "time_derivative",
+    "cross_product"
+   ],
+   [
+    "cross_product",
+    "electric_charge"
+   ],
+   [
+    "cross_product",
+    "charge_conservation"
+   ],
+   [
+    "cross_product",
+    "coulomb_law"
+   ],
+   [
+    "cross_product",
+    "point_charges"
+   ],
+   [
+    "cross_product",
+    "superposition"
+   ],
+   [
+    "cross_product",
+    "charge_density"
+   ],
+   [
+    "cross_product",
+    "electric_field"
+   ],
+   [
+    "cross_product",
+    "electric_flux"
+   ],
+   [
+    "cross_product",
+    "electrostatic_energy"
+   ],
+   [
+    "cross_product",
+    "electric_potential"
+   ],
+   [
+    "cross_product",
+    "capacitance"
+   ],
+   [
+    "cross_product",
+    "current"
+   ],
+   [
+    "cross_product",
+    "current_density"
+   ],
+   [
+    "cross_product",
+    "resistance"
+   ],
+   [
+    "cross_product",
+    "ohm_law"
+   ],
+   [
+    "electric_charge",
+    "speed_of_light"
+   ],
+   [
+    "charge_conservation",
+    "speed_of_light"
+   ],
+   [
+    "coulomb_law",
+    "speed_of_light"
+   ],
+   [
+    "point_charges",
+    "speed_of_light"
+   ],
+   [
+    "superposition",
+    "speed_of_light"
+   ],
+   [
+    "charge_density",
+    "electric_field"
+   ],
+   [
+    "charge_density",
+    "speed_of_light"
+   ],
+   [
+    "electric_field",
+    "electric_flux"
+   ],
+   [
+    "electric_field",
+    "electric_potential"
+   ],
+   [
+    "electric_field",
+    "speed_of_light"
+   ],
+   [
+    "electric_flux",
+    "electric_potential"
+   ],
+   [
+    "electric_flux",
+    "speed_of_light"
+   ],
+   [
+    "electrostatic_energy",
+    "electric_potential"
+   ],
+   [
+    "electrostatic_energy",
+    "speed_of_light"
+   ],
+   [
+    "electric_potential",
+    "speed_of_light"
+   ],
+   [
+    "capacitance",
+    "speed_of_light"
+   ],
+   [
+    "current",
+    "speed_of_light"
+   ],
+   [
+    "current_density",
+    "speed_of_light"
+   ],
+   [
+    "resistance",
+    "speed_of_light"
+   ],
+   [
+    "ohm_law",
+    "speed_of_light"
+   ],
+   [
+    "magnetic_field",
+    "magnetic_field_value"
+   ]
+  ],
+  "n_inversions": 51
+ }
+}

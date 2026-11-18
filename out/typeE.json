@@ -1,0 +1,942 @@
+{
+ "GPT": {
+  "witness_census": {
+   "witnesses": 17,
+   "states": 14,
+   "processes": 13,
+   "cells": 3094,
+   "settled": 469,
+   "uncharted": 2625,
+   "verdicts": {
+    "fires": 18,
+    "hidden": 7,
+    "blind": 444,
+    "uncharted": 2625
+   },
+   "per_witness": {
+    "w-bell": {
+     "settled": 31,
+     "cells": 182,
+     "fires": 3,
+     "hidden": 0,
+     "blind": 28,
+     "uncharted": 151
+    },
+    "w-steer": {
+     "settled": 27,
+     "cells": 182,
+     "fires": 1,
+     "hidden": 0,
+     "blind": 26,
+     "uncharted": 155
+    },
+    "w-incomp": {
+     "settled": 0,
+     "cells": 182,
+     "fires": 0,
+     "hidden": 0,
+     "blind": 0,
+     "uncharted": 182
+    },
+    "w-entw": {
+     "settled": 29,
+     "cells": 182,
+     "fires": 2,
+     "hidden": 1,
+     "blind": 26,
+     "uncharted": 153
+    },
+    "w-ncineq": {
+     "settled": 33,
+     "cells": 182,
+     "fires": 3,
+     "hidden": 1,
+     "blind": 29,
+     "uncharted": 149
+    },
+    "w-sic": {
+     "settled": 30,
+     "cells": 182,
+     "fires": 2,
+     "hidden": 0,
+     "blind": 28,
+     "uncharted": 152
+    },
+    "w-kcbs": {
+     "settled": 41,
+     "cells": 182,
+     "fires": 1,
+     "hidden": 0,
+     "blind": 40,
+     "uncharted": 141
+    },
+    "w-wig": {
+     "settled": 39,
+     "cells": 182,
+     "fires": 0,
+     "hidden": 0,
+     "blind": 39,
+     "uncharted": 143
+    },
+    "w-kd": {
+     "settled": 40,
+     "cells": 182,
+     "fires": 1,
+     "hidden": 1,
+     "blind": 38,
+     "uncharted": 142
+    },
+    "w-weakval": {
+     "settled": 16,
+     "cells": 182,
+     "fires": 1,
+     "hidden": 1,
+     "blind": 14,
+     "uncharted": 166
+    },
+    "w-workq": {
+     "settled": 40,
+     "cells": 182,
+     "fires": 1,
+     "hidden": 1,
+     "blind": 38,
+     "uncharted": 142
+    },
+    "w-magicw": {
+     "settled": 51,
+     "cells": 182,
+     "fires": 2,
+     "hidden": 0,
+     "blind": 49,
+     "uncharted": 131
+    },
+    "w-cohw": {
+     "settled": 52,
+     "cells": 182,
+     "fires": 0,
+     "hidden": 2,
+     "blind": 50,
+     "uncharted": 130
+    },
+    "w-discw": {
+     "settled": 27,
+     "cells": 182,
+     "fires": 1,
+     "hidden": 0,
+     "blind": 26,
+     "uncharted": 155
+    },
+    "w-clone": {
+     "settled": 13,
+     "cells": 182,
+     "fires": 0,
+     "hidden": 0,
+     "blind": 13,
+     "uncharted": 169
+    },
+    "w-vis": {
+     "settled": 0,
+     "cells": 182,
+     "fires": 0,
+     "hidden": 0,
+     "blind": 0,
+     "uncharted": 182
+    },
+    "w-sorkin": {
+     "settled": 0,
+     "cells": 182,
+     "fires": 0,
+     "hidden": 0,
+     "blind": 0,
+     "uncharted": 182
+    }
+   }
+  },
+  "pair_census": {
+   "nodes": 92,
+   "pairs": 4186,
+   "connected_pairs": 137,
+   "unconnected_pairs": 4049,
+   "edges": 156,
+   "polarity": {
+    "no_go": 45,
+    "possibility": 53,
+    "open": 10,
+    "structural": 48
+   },
+   "by_native_layer_pair": {
+    "axiom|axiom": {
+     "pairs": 91,
+     "connected": 2
+    },
+    "axiom|effect": {
+     "pairs": 182,
+     "connected": 6
+    },
+    "axiom|model": {
+     "pairs": 154,
+     "connected": 14
+    },
+    "axiom|process": {
+     "pairs": 182,
+     "connected": 0
+    },
+    "axiom|state": {
+     "pairs": 196,
+     "connected": 3
+    },
+    "axiom|task": {
+     "pairs": 140,
+     "connected": 2
+    },
+    "axiom|witness": {
+     "pairs": 238,
+     "connected": 0
+    },
+    "effect|effect": {
+     "pairs": 78,
+     "connected": 12
+    },
+    "effect|model": {
+     "pairs": 143,
+     "connected": 13
+    },
+    "effect|process": {
+     "pairs": 169,
+     "connected": 6
+    },
+    "effect|state": {
+     "pairs": 182,
+     "connected": 15
+    },
+    "effect|task": {
+     "pairs": 130,
+     "connected": 8
+    },
+    "effect|witness": {
+     "pairs": 221,
+     "connected": 13
+    },
+    "model|model": {
+     "pairs": 55,
+     "connected": 1
+    },
+    "model|process": {
+     "pairs": 143,
+     "connected": 0
+    },
+    "model|state": {
+     "pairs": 154,
+     "connected": 6
+    },
+    "model|task": {
+     "pairs": 110,
+     "connected": 0
+    },
+    "model|witness": {
+     "pairs": 187,
+     "connected": 0
+    },
+    "process|process": {
+     "pairs": 78,
+     "connected": 2
+    },
+    "process|state": {
+     "pairs": 182,
+     "connected": 7
+    },
+    "process|task": {
+     "pairs": 130,
+     "connected": 1
+    },
+    "process|witness": {
+     "pairs": 221,
+     "connected": 0
+    },
+    "state|state": {
+     "pairs": 91,
+     "connected": 13
+    },
+    "state|task": {
+     "pairs": 140,
+     "connected": 8
+    },
+    "state|witness": {
+     "pairs": 238,
+     "connected": 5
+    },
+    "task|task": {
+     "pairs": 45,
+     "connected": 0
+    },
+    "task|witness": {
+     "pairs": 170,
+     "connected": 0
+    },
+    "witness|witness": {
+     "pairs": 136,
+     "connected": 0
+    }
+   }
+  },
+  "agenda": {
+   "open_edges": [
+    "B8",
+    "I1",
+    "I2",
+    "I3",
+    "I4",
+    "I5",
+    "I6",
+    "I7",
+    "I8",
+    "I9"
+   ],
+   "partial_edges": [
+    "R6",
+    "A11",
+    "B2",
+    "B5",
+    "B7",
+    "B15",
+    "B16",
+    "C9",
+    "D4",
+    "E2",
+    "I10"
+   ],
+   "recorded_gaps": 23
+  }
+ },
+ "QRT": {
+  "conversion_census": {
+   "theories": [
+    "pur",
+    "ath",
+    "asy",
+    "coh",
+    "ima",
+    "mag",
+    "nga",
+    "ent",
+    "ste",
+    "nlo",
+    "ctx",
+    "inc",
+    "dis"
+   ],
+   "cells": 156,
+   "charted_conversion_group": 14,
+   "charted_state_to_state": 21,
+   "cross_theory_any": 30,
+   "uncharted_conversion": 142,
+   "matrix": {
+    "pur": {
+     "pur": "",
+     "ath": "x",
+     "asy": "",
+     "coh": "C",
+     "ima": "",
+     "mag": "",
+     "nga": "",
+     "ent": "",
+     "ste": "",
+     "nlo": "",
+     "ctx": "",
+     "inc": "",
+     "dis": ""
+    },
+    "ath": {
+     "pur": "x",
+     "ath": "",
+     "asy": "",
+     "coh": "s",
+     "ima": "",
+     "mag": "C",
+     "nga": "",
+     "ent": "",
+     "ste": "",
+     "nlo": "",
+     "ctx": "",
+     "inc": "",
+     "dis": ""
+    },
+    "asy": {
+     "pur": "",
+     "ath": "C",
+     "asy": "",
+     "coh": "s",
+     "ima": "",
+     "mag": "",
+     "nga": "",
+     "ent": "",
+     "ste": "",
+     "nlo": "",
+     "ctx": "",
+     "inc": "",
+     "dis": ""
+    },
+    "coh": {
+     "pur": "",
+     "ath": "C",
+     "asy": "x",
+     "coh": "",
+     "ima": "s",
+     "mag": "C",
+     "nga": "",
+     "ent": "C",
+     "ste": "",
+     "nlo": "",
+     "ctx": "",
+     "inc": "",
+     "dis": ""
+    },
+    "ima": {
+     "pur": "",
+     "ath": "",
+     "asy": "",
+     "coh": "x",
+     "ima": "",
+     "mag": "",
+     "nga": "",
+     "ent": "",
+     "ste": "",
+     "nlo": "",
+     "ctx": "",
+     "inc": "",
+     "dis": ""
+    },
+    "mag": {
+     "pur": "",
+     "ath": "",
+     "asy": "",
+     "coh": "",
+     "ima": "",
+     "mag": "",
+     "nga": "",
+     "ent": "s",
+     "ste": "",
+     "nlo": "",
+     "ctx": "C",
+     "inc": "",
+     "dis": ""
+    },
+    "nga": {
+     "pur": "",
+     "ath": "",
+     "asy": "",
+     "coh": "",
+     "ima": "",
+     "mag": "s",
+     "nga": "",
+     "ent": "",
+     "ste": "",
+     "nlo": "",
+     "ctx": "C",
+     "inc": "",
+     "dis": ""
+    },
+    "ent": {
+     "pur": "",
+     "ath": "C",
+     "asy": "",
+     "coh": "C",
+     "ima": "",
+     "mag": "s",
+     "nga": "",
+     "ent": "",
+     "ste": "C",
+     "nlo": "C",
+     "ctx": "",
+     "inc": "",
+     "dis": ""
+    },
+    "ste": {
+     "pur": "",
+     "ath": "",
+     "asy": "",
+     "coh": "",
+     "ima": "",
+     "mag": "",
+     "nga": "",
+     "ent": "x",
+     "ste": "",
+     "nlo": "s",
+     "ctx": "",
+     "inc": "s",
+     "dis": ""
+    },
+    "nlo": {
+     "pur": "",
+     "ath": "",
+     "asy": "",
+     "coh": "",
+     "ima": "",
+     "mag": "",
+     "nga": "",
+     "ent": "",
+     "ste": "x",
+     "nlo": "",
+     "ctx": "s",
+     "inc": "",
+     "dis": ""
+    },
+    "ctx": {
+     "pur": "",
+     "ath": "",
+     "asy": "",
+     "coh": "",
+     "ima": "",
+     "mag": "",
+     "nga": "",
+     "ent": "",
+     "ste": "",
+     "nlo": "x",
+     "ctx": "",
+     "inc": "",
+     "dis": ""
+    },
+    "inc": {
+     "pur": "",
+     "ath": "",
+     "asy": "",
+     "coh": "",
+     "ima": "",
+     "mag": "",
+     "nga": "",
+     "ent": "",
+     "ste": "C",
+     "nlo": "",
+     "ctx": "",
+     "inc": "",
+     "dis": ""
+    },
+    "dis": {
+     "pur": "",
+     "ath": "",
+     "asy": "",
+     "coh": "",
+     "ima": "",
+     "mag": "",
+     "nga": "",
+     "ent": "C",
+     "ste": "",
+     "nlo": "",
+     "ctx": "",
+     "inc": "",
+     "dis": ""
+    }
+   },
+   "charted_cells": [
+    [
+     "asy",
+     "ath"
+    ],
+    [
+     "ath",
+     "mag"
+    ],
+    [
+     "coh",
+     "ath"
+    ],
+    [
+     "coh",
+     "ent"
+    ],
+    [
+     "coh",
+     "mag"
+    ],
+    [
+     "dis",
+     "ent"
+    ],
+    [
+     "ent",
+     "ath"
+    ],
+    [
+     "ent",
+     "coh"
+    ],
+    [
+     "ent",
+     "nlo"
+    ],
+    [
+     "ent",
+     "ste"
+    ],
+    [
+     "inc",
+     "ste"
+    ],
+    [
+     "mag",
+     "ctx"
+    ],
+    [
+     "nga",
+     "ctx"
+    ],
+    [
+     "pur",
+     "coh"
+    ]
+   ],
+   "via": {
+    "coh->ent": "bipartite incoherent operations (system + incoherent ancilla)",
+    "ent->coh": "LQICC (local quantum-incoherent ops + classical communication)",
+    "pur->coh": "unitaries (free in the purity theory)",
+    "coh->ath": "thermal operations",
+    "asy->ath": "thermal/covariant operations, unlimited work allowed",
+    "dis->ent": "local CNOT/measurement interaction with ancillas, then entanglement distillation (pU-dis)",
+    "ent->nlo": "local incompatible measurements (single copy); tensoring + local measurements (superactivation)",
+    "ent->ste": "incompatible measurements on the untrusted wing",
+    "mag->ctx": "stabilizer measurements on the magic state",
+    "nga->ctx": null,
+    "coh->mag": null,
+    "ent->ath": "thermal processing of correlated systems",
+    "inc->ste": "applying the incompatible set to one wing of a full-Schmidt-rank entangled state",
+    "ath->mag": "thermal operations (energy-preserving unitaries with Gibbs ancillas); qubit analysis"
+   }
+  },
+  "pair_census": {
+   "nodes": 116,
+   "pairs": 6670,
+   "connected_pairs": 83,
+   "unconnected_pairs": 6587,
+   "edges": 86,
+   "polarity": {
+    "no_go": 13,
+    "possibility": 39,
+    "open": 0,
+    "structural": 34
+   },
+   "by_native_layer_pair": {
+    "model/framework|model/framework": {
+     "pairs": 15,
+     "connected": 0
+    },
+    "model/framework|model/model": {
+     "pairs": 78,
+     "connected": 4
+    },
+    "model/framework|process_cptp/framework": {
+     "pairs": 18,
+     "connected": 1
+    },
+    "model/framework|process_cptp/free_ops": {
+     "pairs": 78,
+     "connected": 0
+    },
+    "model/framework|process_cptp/no_ops": {
+     "pairs": 24,
+     "connected": 1
+    },
+    "model/framework|process_cptp/use_ops": {
+     "pairs": 78,
+     "connected": 0
+    },
+    "model/framework|state/dist": {
+     "pairs": 54,
+     "connected": 0
+    },
+    "model/framework|state/free_state": {
+     "pairs": 78,
+     "connected": 1
+    },
+    "model/framework|state/resource_state": {
+     "pairs": 78,
+     "connected": 0
+    },
+    "model/framework|witness/detector": {
+     "pairs": 78,
+     "connected": 0
+    },
+    "model/framework|witness/framework": {
+     "pairs": 18,
+     "connected": 2
+    },
+    "model/framework|witness/quantifier": {
+     "pairs": 78,
+     "connected": 0
+    },
+    "model/model|model/model": {
+     "pairs": 78,
+     "connected": 6
+    },
+    "model/model|process_cptp/framework": {
+     "pairs": 39,
+     "connected": 0
+    },
+    "model/model|process_cptp/free_ops": {
+     "pairs": 169,
+     "connected": 0
+    },
+    "model/model|process_cptp/no_ops": {
+     "pairs": 52,
+     "connected": 0
+    },
+    "model/model|process_cptp/use_ops": {
+     "pairs": 169,
+     "connected": 0
+    },
+    "model/model|state/dist": {
+     "pairs": 117,
+     "connected": 0
+    },
+    "model/model|state/free_state": {
+     "pairs": 169,
+     "connected": 0
+    },
+    "model/model|state/resource_state": {
+     "pairs": 169,
+     "connected": 0
+    },
+    "model/model|witness/detector": {
+     "pairs": 169,
+     "connected": 0
+    },
+    "model/model|witness/framework": {
+     "pairs": 39,
+     "connected": 0
+    },
+    "model/model|witness/quantifier": {
+     "pairs": 169,
+     "connected": 0
+    },
+    "process_cptp/framework|process_cptp/framework": {
+     "pairs": 3,
+     "connected": 0
+    },
+    "process_cptp/framework|process_cptp/free_ops": {
+     "pairs": 39,
+     "connected": 1
+    },
+    "process_cptp/framework|process_cptp/no_ops": {
+     "pairs": 12,
+     "connected": 1
+    },
+    "process_cptp/framework|process_cptp/use_ops": {
+     "pairs": 39,
+     "connected": 1
+    },
+    "process_cptp/framework|state/dist": {
+     "pairs": 27,
+     "connected": 0
+    },
+    "process_cptp/framework|state/free_state": {
+     "pairs": 39,
+     "connected": 0
+    },
+    "process_cptp/framework|state/resource_state": {
+     "pairs": 39,
+     "connected": 0
+    },
+    "process_cptp/framework|witness/detector": {
+     "pairs": 39,
+     "connected": 0
+    },
+    "process_cptp/framework|witness/framework": {
+     "pairs": 9,
+     "connected": 0
+    },
+    "process_cptp/framework|witness/quantifier": {
+     "pairs": 39,
+     "connected": 0
+    },
+    "process_cptp/free_ops|process_cptp/free_ops": {
+     "pairs": 78,
+     "connected": 7
+    },
+    "process_cptp/free_ops|process_cptp/no_ops": {
+     "pairs": 52,
+     "connected": 0
+    },
+    "process_cptp/free_ops|process_cptp/use_ops": {
+     "pairs": 169,
+     "connected": 0
+    },
+    "process_cptp/free_ops|state/dist": {
+     "pairs": 117,
+     "connected": 0
+    },
+    "process_cptp/free_ops|state/free_state": {
+     "pairs": 169,
+     "connected": 0
+    },
+    "process_cptp/free_ops|state/resource_state": {
+     "pairs": 169,
+     "connected": 0
+    },
+    "process_cptp/free_ops|witness/detector": {
+     "pairs": 169,
+     "connected": 0
+    },
+    "process_cptp/free_ops|witness/framework": {
+     "pairs": 39,
+     "connected": 0
+    },
+    "process_cptp/free_ops|witness/quantifier": {
+     "pairs": 169,
+     "connected": 0
+    },
+    "process_cptp/no_ops|process_cptp/no_ops": {
+     "pairs": 6,
+     "connected": 0
+    },
+    "process_cptp/no_ops|process_cptp/use_ops": {
+     "pairs": 52,
+     "connected": 0
+    },
+    "process_cptp/no_ops|state/dist": {
+     "pairs": 36,
+     "connected": 0
+    },
+    "process_cptp/no_ops|state/free_state": {
+     "pairs": 52,
+     "connected": 0
+    },
+    "process_cptp/no_ops|state/resource_state": {
+     "pairs": 52,
+     "connected": 3
+    },
+    "process_cptp/no_ops|witness/detector": {
+     "pairs": 52,
+     "connected": 0
+    },
+    "process_cptp/no_ops|witness/framework": {
+     "pairs": 12,
+     "connected": 0
+    },
+    "process_cptp/no_ops|witness/quantifier": {
+     "pairs": 52,
+     "connected": 1
+    },
+    "process_cptp/use_ops|process_cptp/use_ops": {
+     "pairs": 78,
+     "connected": 0
+    },
+    "process_cptp/use_ops|state/dist": {
+     "pairs": 117,
+     "connected": 0
+    },
+    "process_cptp/use_ops|state/free_state": {
+     "pairs": 169,
+     "connected": 0
+    },
+    "process_cptp/use_ops|state/resource_state": {
+     "pairs": 169,
+     "connected": 10
+    },
+    "process_cptp/use_ops|witness/detector": {
+     "pairs": 169,
+     "connected": 0
+    },
+    "process_cptp/use_ops|witness/framework": {
+     "pairs": 39,
+     "connected": 0
+    },
+    "process_cptp/use_ops|witness/quantifier": {
+     "pairs": 169,
+     "connected": 0
+    },
+    "state/dist|state/dist": {
+     "pairs": 36,
+     "connected": 0
+    },
+    "state/dist|state/free_state": {
+     "pairs": 117,
+     "connected": 5
+    },
+    "state/dist|state/resource_state": {
+     "pairs": 117,
+     "connected": 7
+    },
+    "state/dist|witness/detector": {
+     "pairs": 117,
+     "connected": 0
+    },
+    "state/dist|witness/framework": {
+     "pairs": 27,
+     "connected": 0
+    },
+    "state/dist|witness/quantifier": {
+     "pairs": 117,
+     "connected": 0
+    },
+    "state/free_state|state/free_state": {
+     "pairs": 78,
+     "connected": 8
+    },
+    "state/free_state|state/resource_state": {
+     "pairs": 169,
+     "connected": 0
+    },
+    "state/free_state|witness/detector": {
+     "pairs": 169,
+     "connected": 0
+    },
+    "state/free_state|witness/framework": {
+     "pairs": 39,
+     "connected": 0
+    },
+    "state/free_state|witness/quantifier": {
+     "pairs": 169,
+     "connected": 0
+    },
+    "state/resource_state|state/resource_state": {
+     "pairs": 78,
+     "connected": 11
+    },
+    "state/resource_state|witness/detector": {
+     "pairs": 169,
+     "connected": 8
+    },
+    "state/resource_state|witness/framework": {
+     "pairs": 39,
+     "connected": 0
+    },
+    "state/resource_state|witness/quantifier": {
+     "pairs": 169,
+     "connected": 3
+    },
+    "witness/detector|witness/detector": {
+     "pairs": 78,
+     "connected": 0
+    },
+    "witness/detector|witness/framework": {
+     "pairs": 39,
+     "connected": 0
+    },
+    "witness/detector|witness/quantifier": {
+     "pairs": 169,
+     "connected": 1
+    },
+    "witness/framework|witness/framework": {
+     "pairs": 3,
+     "connected": 1
+    },
+    "witness/framework|witness/quantifier": {
+     "pairs": 39,
+     "connected": 0
+    },
+    "witness/quantifier|witness/quantifier": {
+     "pairs": 78,
+     "connected": 0
+    }
+   }
+  },
+  "agenda": {
+   "open_edges": [],
+   "partial_edges": [
+    "C12",
+    "C17",
+    "P7"
+   ],
+   "recorded_gaps": 10
+  }
+ }
+}

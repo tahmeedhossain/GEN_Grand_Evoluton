@@ -1,0 +1,27 @@
+\begin{longtable}{@{}p{1.7cm}p{2.2cm}p{2.3cm}p{3.0cm}p{5.4cm}@{}}\toprule
+Operation & layer & $\Delta$ nodes & $\Delta$ routes & meaning \\\midrule\endhead
+\texttt{ADD} & S|M|O & +1 & +k (k = routes attached on arrival) & a new node appears \\
+\texttt{REWRITE} & S|M|O & 0 & 0 or re-attached & a node keeps its identity and changes its content \\
+\texttt{PARTITION} & S & +(k-1) & +k back-edges & a state node is replaced by the k irreducible components of a symmetry representation (R1) \\
+\texttt{EXTEND} & S & 0 (ladders are internal) & +1 back-edge per sector & each irreducible block becomes a Fock ladder (R3) \\
+\texttt{SPLIT} & S & +1 & routes re-attached & a sector splits in two after an observable distinguishes them (R8) \\
+\texttt{REPLACE} & S & 0 & routes re-attached & k sectors are replaced by k others after an observable shows compositeness (R8) \\
+\texttt{MERGE} & M & -(k-1) & routes = union & k model nodes that share a calibration become one (R6) \\
+\texttt{ABSORB} & M & -1 eff, +1 fund, +sectors & +1 leg per route; +lineage & an effective node becomes the low-energy limit of a fundamental one (R7) \\
+\texttt{CLUSTER} & M & +1 cluster per term & routes re-attached to clusters; +member/lineage edges & fundamental nodes grouped by Lagrangian term (R10) \\
+\texttt{LINEAGE} & M->M & 0 & +1 & an absorption trace recorded inside a cluster \\
+\texttt{ROUTE} & S->M & 0 & +1 AND route & legs = (sector, n) pairs of the fields of a term (R4) \\
+\texttt{PREDICT} & M->O & 0 & +1 & a model node reaches an observable (status pred) \\
+\texttt{CALIBRATE} & M->O & 0 & +1 (status fit) & an observable fixes a parameter (R9) \\
+\texttt{FLAG} & O & 0 & 0 & an observable has in-degree 0 from the model layer (R2 precondition) \\
+\texttt{SIGNAL} & M & 0 & 0 & two model nodes share a calibration edge (R6 precondition) \\
+\texttt{BACK} & M->S & 0 & +1 & a model node acts on the state layer \\
+\texttt{DERIVE} & M∧S->S|O (type D) & 0 or +1 & +1 AND route & a reading-indexed route combines model and state nodes (readers) \\
+\texttt{FAIL} & route & 0 & 0 (route marked failed) & a prediction route fails; a later route to the same target resolves it \\
+\texttt{COMPOSE} & S & +1 (tensor sector) & +routes & a new independent sector is adjoined by tensor product (Rule II of the inference engine) \\
+\texttt{REDUCE} & M|S & -(k-1) & 0 & parameters tied by symmetry, representation reduced by the commutant (Rule III of the inference engine) \\
+\texttt{CONTRACT} & M & -1 & S->O direct edges replace 2-paths & a fixed model node is suppressed: an H-graph becomes an E-graph (Prop. contraction) \\
+\texttt{LIFT} & M & +1 & 2-paths replace S->O edges & inverse of CONTRACT \\
+\texttt{CENSUS} & layer pair & 0 & 0 & enumerate the cells (pairs) of a layer pair with no recorded edge \\
+\texttt{CLOSE} & edge & 0 & +1 & settle a cell by composition, elementary proof, counterexample or literature fill \\
+\bottomrule\end{longtable}

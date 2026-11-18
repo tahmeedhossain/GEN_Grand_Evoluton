@@ -1,0 +1,738 @@
+{
+ "version": "v6.1",
+ "name": "Local and global, corrected",
+ "source_file": "corrected/v6.1_local-global.html",
+ "date": "2026-10-23",
+ "derived_from": "v6.0",
+ "sha256": "c1b24712c7c78b5fb253f410cfdec7f51bf638202cc3ee7f80040204777f236e",
+ "regions": [
+  "A",
+  "B",
+  "C"
+ ],
+ "step": 0.04,
+ "properties": [
+  {
+   "id": "Dd",
+   "name": "Curl inside a region (D_in)",
+   "description": "Diagonal part of D: couples E_R and B_R of the same region. Gives the local E ⇄ B conversion Π_R.",
+   "default_on": true
+  },
+  {
+   "id": "Do",
+   "name": "Curl across a boundary (D_out)",
+   "description": "Shift part of D: couples B_R to E_R+1. Gives the boundary fluxes S.",
+   "default_on": true
+  },
+  {
+   "id": "Lf",
+   "name": "Lorentz force on charges (g)",
+   "description": "J̇ = gE and the matching −gJ in Ampère–Maxwell. Gives the local E ⇄ M conversion J·E.",
+   "default_on": true
+  },
+  {
+   "id": "Sk",
+   "name": "Skew pairing: Aᵀ = −A",
+   "description": "Ampère–Maxwell uses +Dᵀ where Faraday uses −D, and the current term mirrors the force. Off: Ampère–Maxwell and the current term flip sign.",
+   "default_on": true
+  },
+  {
+   "id": "Rs",
+   "name": "Resistance (γ)",
+   "description": "Turns J·E into heat. Off by default.",
+   "default_on": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "Dd",
+   "type": "model",
+   "symbol": "D_in",
+   "label": "curl inside a region",
+   "title": null,
+   "property": "diagonal part of D",
+   "switch": "Dd"
+  },
+  {
+   "id": "Do",
+   "type": "model",
+   "symbol": "D_out",
+   "label": "curl across a boundary",
+   "title": null,
+   "property": "shift part of D",
+   "switch": "Do"
+  },
+  {
+   "id": "Fa",
+   "type": "model",
+   "symbol": "Ḃ = −D E",
+   "label": "Faraday's law",
+   "title": null,
+   "property": null,
+   "switch": null
+  },
+  {
+   "id": "Am",
+   "type": "model",
+   "symbol": "Ė = Dᵀ B − gJ",
+   "label": "Ampère–Maxwell",
+   "title": null,
+   "property": null,
+   "switch": null
+  },
+  {
+   "id": "Lf",
+   "type": "model",
+   "symbol": "J̇ = g E",
+   "label": "Lorentz force on charges",
+   "title": null,
+   "property": null,
+   "switch": "Lf"
+  },
+  {
+   "id": "Sk",
+   "type": "model",
+   "symbol": "Aᵀ = −A",
+   "label": "skew pairing",
+   "title": null,
+   "property": "Ampère mirrors Faraday",
+   "switch": "Sk"
+  },
+  {
+   "id": "Sp",
+   "type": "model",
+   "symbol": "±iω",
+   "label": "imaginary spectrum",
+   "title": null,
+   "property": "follows from Aᵀ = −A",
+   "switch": null
+  },
+  {
+   "id": "Ef",
+   "type": "model",
+   "symbol": "U = ½|x|²",
+   "label": "energy form",
+   "title": null,
+   "property": "positive; sums over regions",
+   "switch": null
+  },
+  {
+   "id": "Pr",
+   "type": "model",
+   "symbol": "P_R",
+   "label": "restrict to one region",
+   "title": null,
+   "property": "does not commute with D_out",
+   "switch": null
+  },
+  {
+   "id": "Rs",
+   "type": "model",
+   "symbol": "−γJ",
+   "label": "resistance (optional)",
+   "title": null,
+   "property": "J·E → heat",
+   "switch": "Rs"
+  },
+  {
+   "id": "Sin",
+   "type": "observable",
+   "symbol": "S_in",
+   "label": "flux from C",
+   "title": null,
+   "property": null,
+   "switch": null
+  },
+  {
+   "id": "uE",
+   "type": "observable",
+   "symbol": "u_E,A",
+   "label": "electric energy",
+   "title": null,
+   "property": null,
+   "switch": null
+  },
+  {
+   "id": "uB",
+   "type": "observable",
+   "symbol": "u_B,A",
+   "label": "magnetic energy",
+   "title": null,
+   "property": null,
+   "switch": null
+  },
+  {
+   "id": "Sout",
+   "type": "observable",
+   "symbol": "S_out",
+   "label": "flux to B",
+   "title": null,
+   "property": null,
+   "switch": null
+  },
+  {
+   "id": "uM",
+   "type": "observable",
+   "symbol": "u_M,A",
+   "label": "matter energy",
+   "title": null,
+   "property": null,
+   "switch": null
+  },
+  {
+   "id": "uR",
+   "type": "observable",
+   "symbol": "u_A",
+   "label": "region total",
+   "title": null,
+   "property": null,
+   "switch": null
+  },
+  {
+   "id": "U",
+   "type": "observable",
+   "symbol": "U",
+   "label": "total energy",
+   "title": null,
+   "property": null,
+   "switch": null
+  },
+  {
+   "id": "Hq",
+   "type": "observable",
+   "symbol": "Q_heat",
+   "label": "heat (if γ > 0)",
+   "title": null,
+   "property": null,
+   "switch": null
+  },
+  {
+   "id": "Ek",
+   "type": "observable",
+   "symbol": "E_k",
+   "label": "energy in mode k",
+   "title": null,
+   "property": null,
+   "switch": null
+  },
+  {
+   "id": "sR",
+   "type": "state",
+   "symbol": "s_A",
+   "label": "local state of R",
+   "title": null,
+   "property": null,
+   "switch": null
+  },
+  {
+   "id": "sN",
+   "type": "state",
+   "symbol": "s_C, B",
+   "label": "neighbour states",
+   "title": null,
+   "property": null,
+   "switch": null
+  },
+  {
+   "id": "x",
+   "type": "state",
+   "symbol": "x",
+   "label": "global state (9 amplitudes)",
+   "title": null,
+   "property": null,
+   "switch": null
+  },
+  {
+   "id": "mo",
+   "type": "state",
+   "symbol": "φ_k",
+   "label": "rotation planes of A",
+   "title": null,
+   "property": null,
+   "switch": null
+  },
+  {
+   "id": "rt",
+   "type": "state",
+   "symbol": "(r,θ)_k",
+   "label": "global state in mode coordinates",
+   "title": null,
+   "property": null,
+   "switch": null
+  },
+  {
+   "id": "Rlo",
+   "type": "result",
+   "symbol": null,
+   "label": null,
+   "title": "Local observables of A cycle; u_A is not conserved",
+   "property": null,
+   "switch": null
+  },
+  {
+   "id": "Rgo",
+   "type": "result",
+   "symbol": null,
+   "label": null,
+   "title": "Global observable U is conserved",
+   "property": null,
+   "switch": null
+  },
+  {
+   "id": "Rls",
+   "type": "result",
+   "symbol": null,
+   "label": null,
+   "title": "Local state s_A wanders: |s| varies, path not closed",
+   "property": null,
+   "switch": null
+  },
+  {
+   "id": "Rgs",
+   "type": "result",
+   "symbol": null,
+   "label": null,
+   "title": "Global state rotates at fixed radii",
+   "property": null,
+   "switch": null
+  },
+  {
+   "id": "fSin",
+   "type": "flow rule",
+   "symbol": null,
+   "label": null,
+   "title": null,
+   "property": null,
+   "switch": null
+  },
+  {
+   "id": "fPi",
+   "type": "flow rule",
+   "symbol": null,
+   "label": null,
+   "title": null,
+   "property": null,
+   "switch": null
+  },
+  {
+   "id": "fSout",
+   "type": "flow rule",
+   "symbol": null,
+   "label": null,
+   "title": null,
+   "property": null,
+   "switch": null
+  },
+  {
+   "id": "fJE",
+   "type": "flow rule",
+   "symbol": null,
+   "label": null,
+   "title": null,
+   "property": null,
+   "switch": null
+  }
+ ],
+ "routes": [
+  {
+   "id": "r_x",
+   "inputs": [
+    "Fa",
+    "Am",
+    "Lf"
+   ],
+   "targets": [
+    "x"
+   ]
+  },
+  {
+   "id": "r_sR",
+   "inputs": [
+    "x",
+    "Pr"
+   ],
+   "targets": [
+    "sR"
+   ]
+  },
+  {
+   "id": "r_sN",
+   "inputs": [
+    "x",
+    "Pr"
+   ],
+   "targets": [
+    "sN"
+   ]
+  },
+  {
+   "id": "r_pool",
+   "inputs": [
+    "sR",
+    "Ef"
+   ],
+   "targets": [
+    "uE",
+    "uB",
+    "uM"
+   ]
+  },
+  {
+   "id": "r_uR",
+   "inputs": [
+    "uE",
+    "uB",
+    "uM",
+    "Ef"
+   ],
+   "targets": [
+    "uR"
+   ]
+  },
+  {
+   "id": "r_Sin",
+   "inputs": [
+    "sR",
+    "sN",
+    "Do"
+   ],
+   "targets": [
+    "Sin"
+   ]
+  },
+  {
+   "id": "r_Sout",
+   "inputs": [
+    "sR",
+    "sN",
+    "Do"
+   ],
+   "targets": [
+    "Sout"
+   ]
+  },
+  {
+   "id": "f_Pi",
+   "inputs": [
+    "Dd",
+    "Fa",
+    "Am"
+   ],
+   "targets": [
+    "fPi"
+   ]
+  },
+  {
+   "id": "f_JE",
+   "inputs": [
+    "Lf",
+    "Am"
+   ],
+   "targets": [
+    "fJE"
+   ]
+  },
+  {
+   "id": "f_Sin",
+   "inputs": [
+    "Do",
+    "Fa",
+    "Am"
+   ],
+   "targets": [
+    "fSin"
+   ]
+  },
+  {
+   "id": "f_Sout",
+   "inputs": [
+    "Do",
+    "Fa",
+    "Am"
+   ],
+   "targets": [
+    "fSout"
+   ]
+  },
+  {
+   "id": "r_Sp",
+   "inputs": [
+    "Sk"
+   ],
+   "targets": [
+    "Sp"
+   ]
+  },
+  {
+   "id": "r_U1",
+   "inputs": [
+    "uR",
+    "Ef"
+   ],
+   "targets": [
+    "U"
+   ]
+  },
+  {
+   "id": "r_U2",
+   "inputs": [
+    "x",
+    "Ef"
+   ],
+   "targets": [
+    "U"
+   ]
+  },
+  {
+   "id": "r_H",
+   "inputs": [
+    "Rs",
+    "uM"
+   ],
+   "targets": [
+    "Hq"
+   ]
+  },
+  {
+   "id": "r_mo",
+   "inputs": [
+    "Fa",
+    "Am",
+    "Lf",
+    "Sk"
+   ],
+   "targets": [
+    "mo"
+   ]
+  },
+  {
+   "id": "r_rt",
+   "inputs": [
+    "x",
+    "mo"
+   ],
+   "targets": [
+    "rt"
+   ]
+  },
+  {
+   "id": "r_Ek",
+   "inputs": [
+    "rt",
+    "Ef"
+   ],
+   "targets": [
+    "Ek"
+   ]
+  },
+  {
+   "id": "r_lo",
+   "inputs": [
+    "uE",
+    "uB",
+    "uM",
+    "uR",
+    "Sp"
+   ],
+   "targets": [
+    "Rlo"
+   ]
+  },
+  {
+   "id": "r_go",
+   "inputs": [
+    "U",
+    "Hq",
+    "Sk",
+    "Ef"
+   ],
+   "targets": [
+    "Rgo"
+   ]
+  },
+  {
+   "id": "r_ls",
+   "inputs": [
+    "sR",
+    "sN",
+    "Pr",
+    "Do"
+   ],
+   "targets": [
+    "Rls"
+   ]
+  },
+  {
+   "id": "r_gs",
+   "inputs": [
+    "rt",
+    "Sp",
+    "Sk"
+   ],
+   "targets": [
+    "Rgs"
+   ]
+  }
+ ],
+ "flows": [
+  {
+   "id": "fSin",
+   "from": "Sin",
+   "to": "uE",
+   "kind": "transport",
+   "label": "S_in"
+  },
+  {
+   "id": "fPi",
+   "from": "uE",
+   "to": "uB",
+   "kind": "conversion",
+   "label": "Π"
+  },
+  {
+   "id": "fSout",
+   "from": "uB",
+   "to": "Sout",
+   "kind": "transport",
+   "label": "S_out"
+  },
+  {
+   "id": "fJE",
+   "from": "uE",
+   "to": "uM",
+   "kind": "conversion",
+   "label": "J·E"
+  }
+ ],
+ "extra_ancestry": {
+  "Rlo": [
+   "fPi",
+   "fJE",
+   "fSin",
+   "fSout",
+   "Sin",
+   "Sout"
+  ]
+ },
+ "results": [
+  {
+   "id": "Rlo",
+   "button": "Local observables cycle",
+   "title": "Local observables of A cycle; u_A is not conserved",
+   "ancestors": [
+    "Am",
+    "Dd",
+    "Do",
+    "Ef",
+    "Fa",
+    "Lf",
+    "Pr",
+    "Sin",
+    "Sk",
+    "Sout",
+    "Sp",
+    "fJE",
+    "fPi",
+    "fSin",
+    "fSout",
+    "sN",
+    "sR",
+    "uB",
+    "uE",
+    "uM",
+    "uR",
+    "x"
+   ],
+   "routes": [
+    "f_JE",
+    "f_Pi",
+    "f_Sin",
+    "f_Sout",
+    "r_Sin",
+    "r_Sout",
+    "r_Sp",
+    "r_lo",
+    "r_pool",
+    "r_sN",
+    "r_sR",
+    "r_uR",
+    "r_x"
+   ]
+  },
+  {
+   "id": "Rgo",
+   "button": "Global observable conserved",
+   "title": "Global observable U is conserved",
+   "ancestors": [
+    "Am",
+    "Ef",
+    "Fa",
+    "Hq",
+    "Lf",
+    "Pr",
+    "Rs",
+    "Sk",
+    "U",
+    "sR",
+    "uB",
+    "uE",
+    "uM",
+    "uR",
+    "x"
+   ],
+   "routes": [
+    "r_H",
+    "r_U1",
+    "r_U2",
+    "r_go",
+    "r_pool",
+    "r_sR",
+    "r_uR",
+    "r_x"
+   ]
+  },
+  {
+   "id": "Rls",
+   "button": "Local state wanders",
+   "title": "Local state s_A wanders: |s| varies, path not closed",
+   "ancestors": [
+    "Am",
+    "Do",
+    "Fa",
+    "Lf",
+    "Pr",
+    "sN",
+    "sR",
+    "x"
+   ],
+   "routes": [
+    "r_ls",
+    "r_sN",
+    "r_sR",
+    "r_x"
+   ]
+  },
+  {
+   "id": "Rgs",
+   "button": "Global state rotates",
+   "title": "Global state rotates at fixed radii",
+   "ancestors": [
+    "Am",
+    "Fa",
+    "Lf",
+    "Sk",
+    "Sp",
+    "mo",
+    "rt",
+    "x"
+   ],
+   "routes": [
+    "r_Sp",
+    "r_gs",
+    "r_mo",
+    "r_rt",
+    "r_x"
+   ]
+  }
+ ]
+}
