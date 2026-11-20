@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<html lang="en" data-gen-version="tierless-evolution"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Evolutionary Epistemic Network</title>
 <style>
 :root{--s:#2a6f97;--m:#c05c2a;--o:#3f7d4e;--em:#6a3d9a;--hep:#b15928;--gpt:#d62728;--qrt:#1f78b4;--bg:#fafaf8;--ink:#1e1e1e;--line:#d8d8d2;--rail:#ffffff;--chip:#ffffff;--mute:#666666;--btn:#f4f4f0;--btnon:#1e1e1e;--btnon-fg:#ffffff;--th:#f1f1ec;--link:#2a6f97;--sel:#e0a800;--future:#cfcfca;--now:#c0392b;--glue:#9a9a94;--lane:#f1f1ec}
@@ -261,4 +261,5 @@ function render(){ nav(); ctl(); ({timeline:renderTimeline, snapshot:renderSnaps
 let rt = null; window.addEventListener('resize', () => { if(state.view==='timeline'){ clearTimeout(rt); rt = setTimeout(render, 150); } });
 render();
 </script>
+<script src="assets/versions.js"></script>
 </body></html>

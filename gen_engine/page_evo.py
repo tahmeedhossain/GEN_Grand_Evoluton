@@ -311,7 +311,7 @@ def build():
             "dating_rules": net["dating_rules"], "counts": {**net["counts"], "project_nodes": N["gptProjectNodes"] + N["qrtProjectNodes"]}, "te_rules": te, "philosophy": phil}
     payload = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
     body = HEAD + "\n" + BODY.replace("__DATA__", payload)
-    standalone = '<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">\n' + body.replace('<meta name="claude:viewport-fit-sides" content="cover">\n', "") + "\n</body></html>\n"
+    standalone = '<!doctype html>\n<html lang="en" data-gen-version="tierless-evolution"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">\n' + body.replace('<meta name="claude:viewport-fit-sides" content="cover">\n', "") + "\n<script src=\"assets/versions.js\"></script>\n</body></html>\n"
     # the standalone head must contain the title/style; move the body part after </head><body>
     standalone = standalone.replace("</style>\n<header>", "</style></head><body>\n<header>", 1)
     with open(os.path.join(HERE, "gen_evolution_explorer.html"), "w", encoding="utf-8") as f:

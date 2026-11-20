@@ -167,10 +167,13 @@ def main():
             ex.pop(k, None)
     data = json.dumps(atlas, ensure_ascii=False).replace("</", "<\\/")
     html = TEMPLATE.replace("__DATA__", data)
+    # page of the repository: version attribute and the Version button of the site (assets/versions.js)
+    page_html = html.replace('<html lang="en">', '<html lang="en" data-gen-version="tierless-merged">', 1).replace(
+        "</body></html>", '<script src="assets/versions.js"></script></body></html>', 1)
     out = os.path.join(HERE, "gen_grand_explorer.html")
     with open(out, "w", encoding="utf-8") as f:
-        f.write(html)
-    print("wrote", out, len(html) // 1024, "kB")
+        f.write(page_html)
+    print("wrote", out, len(page_html) // 1024, "kB")
     # artifact form: no document skeleton (the host adds it); title and viewport meta first
     body_start = html.index("<style>")
     body_end = html.index("</body>")

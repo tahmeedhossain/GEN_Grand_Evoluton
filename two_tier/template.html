@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en" data-gen-version="two-tier">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Two-Tier Epistemic Network</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Condensed:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* layout: header, view tabs; each view is one main column beside a sticky detail rail.
+     The evolution view stacks: time controls, the method strip (two tiers x eight phases + two cross-tier steps),
+     then the network as two tier bands x three layer columns. Layer hue is the only categorical colour;
+     branch is a lane, tier is a band, membership is a line or a dot inside a cluster box. */
+  --surface:#fcfcfb; --panel:#ffffff; --wash:#f1f0ec; --ink:#0b0b0b; --ink2:#52514e; --mute:#7d7c77; --line:#dad9d3;
+  --S:#2a78d6; --M:#eb6834; --O:#1baf7a; --good:#0ca30c; --crit:#d03b3b; --warn:#b97a00;
+  --h0:#f1f0ec; --h1:#d3d2cc; --h2:#a9a8a1; --h3:#6f6e69; --h4:#2c2c2a;
+  --font-display:"IBM Plex Sans Condensed","Arial Narrow",system-ui,sans-serif;
+  --font-body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI","Noto Sans Math","DejaVu Sans",sans-serif;
+  --font-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,"DejaVu Sans Mono",monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){ color-scheme:dark;
+    --surface:#1a1a19; --panel:#232322; --wash:#2b2b29; --ink:#f0efec; --ink2:#c3c2b7; --mute:#94938b; --line:#3d3d39;
+    --S:#3987e5; --M:#d95926; --O:#199e70; --good:#0ca30c; --crit:#e66767; --warn:#fab219;
+    --h0:#2b2b29; --h1:#4a4a46; --h2:#75746e; --h3:#a8a79f; --h4:#eeede9; }
+}
+:root[data-theme="dark"]{ color-scheme:dark;
+  --surface:#1a1a19; --panel:#232322; --wash:#2b2b29; --ink:#f0efec; --ink2:#c3c2b7; --mute:#94938b; --line:#3d3d39;
+  --S:#3987e5; --M:#d95926; --O:#199e70; --good:#0ca30c; --crit:#e66767; --warn:#fab219;
+  --h0:#2b2b29; --h1:#4a4a46; --h2:#75746e; --h3:#a8a79f; --h4:#eeede9; }
+*{box-sizing:border-box}
+html{font-size:15px}
+body{margin:0;background:var(--surface);color:var(--ink);font-family:var(--font-body);line-height:1.45}
+button,select,input{font:inherit;color:inherit}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.wrap{max-width:1680px;margin:0 auto;padding:0 18px 48px}
+header.top{display:flex;flex-wrap:wrap;gap:6px 20px;align-items:baseline;padding:16px 0 8px}
+header.top h1{font-family:var(--font-display);font-weight:600;font-size:1.6rem;line-height:1.15;margin:0;text-wrap:balance}
+header.top p{margin:0;color:var(--ink2);font-size:.9rem;max-width:95ch}
+nav.tabs{display:flex;flex-wrap:wrap;gap:4px;border-bottom:1px solid var(--line);margin-bottom:14px}
+nav.tabs a{padding:7px 12px;text-decoration:none;color:var(--ink2);border:1px solid transparent;border-bottom:none;border-radius:6px 6px 0 0;font-weight:500;margin-bottom:-1px}
+nav.tabs a[aria-current="page"]{color:var(--ink);background:var(--panel);border-color:var(--line)}
+.grid{display:grid;grid-template-columns:minmax(0,1fr) 372px;gap:16px;align-items:start}
+@media (max-width:1150px){.grid{grid-template-columns:minmax(0,1fr)}}
+.rail{position:sticky;top:10px;max-height:calc(100vh - 20px);overflow:auto;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px 14px;font-size:.88rem}
+@media (max-width:1150px){.rail{position:static;max-height:none}}
+.stack{display:flex;flex-direction:column;gap:14px;min-width:0}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px 14px;min-width:0}
+h2{font-family:var(--font-display);font-weight:600;font-size:1.15rem;margin:0 0 6px;text-wrap:balance}
+h3{font-family:var(--font-display);font-weight:600;font-size:.98rem;margin:10px 0 4px}
+p{margin:0 0 8px;max-width:78ch}
+.muted{color:var(--ink2)} .small{font-size:.84rem} .mono{font-family:var(--font-mono);font-size:.82em}
+.scroll-x{overflow-x:auto}
+table{border-collapse:collapse;font-size:.86rem}
+th,td{text-align:left;vertical-align:top;padding:4px 8px;border-bottom:1px solid var(--line)}
+th{font-weight:600;color:var(--ink2);font-size:.76rem;letter-spacing:.03em;text-transform:uppercase}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+.tag{display:inline-block;border:1px solid var(--line);border-radius:4px;padding:0 5px;font-size:.74rem;color:var(--ink2);margin:0 3px 3px 0;white-space:nowrap}
+.tag.S{border-color:var(--S)} .tag.M{border-color:var(--M)} .tag.O{border-color:var(--O)}
+.sw{display:inline-block;width:10px;height:10px;border-radius:2px;vertical-align:-1px;margin-right:4px}
+.sw.S{background:var(--S)} .sw.M{background:var(--M)} .sw.O{background:var(--O)}
+.linkbtn{background:none;border:none;padding:0;cursor:pointer;text-decoration:underline;text-decoration-color:var(--mute);text-underline-offset:2px;text-align:left}
+.linkbtn:hover{text-decoration-color:var(--ink)}
+.bt{display:inline-block;font-family:var(--font-mono);font-size:.7em;color:var(--mute);margin-left:4px}
+/* ---------- time controls */
+.ctl{display:flex;flex-wrap:wrap;gap:8px 10px;align-items:center}
+.ctl button,.ctl select{border:1px solid var(--line);background:var(--panel);border-radius:6px;padding:4px 10px;cursor:pointer}
+.ctl select{max-width:100%;min-width:0;text-overflow:ellipsis}
+.ctl button[aria-pressed="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.ctl .year{font-family:var(--font-display);font-size:1.7rem;font-weight:600;font-variant-numeric:tabular-nums;min-width:4.2ch}
+.ctl input[type=range]{flex:1 1 260px;min-width:160px;accent-color:var(--ink)}
+.ctl label{display:inline-flex;gap:5px;align-items:center;font-size:.84rem;color:var(--ink2)}
+.heat{display:grid;grid-template-columns:86px minmax(0,1fr);gap:2px 8px;align-items:center;margin-top:8px;font-size:.72rem;color:var(--ink2)}
+.heat .row{display:flex;height:9px;cursor:pointer}
+.heat .row i{flex:1 1 0;min-width:0}
+.q0{background:var(--h0)} .q1{background:var(--h1)} .q2{background:var(--h2)} .q3{background:var(--h3)} .q4{background:var(--h4)}
+.heat .row i.cur{outline:1.5px solid var(--ink);outline-offset:0;position:relative;z-index:1}
+.heat .axis{display:flex;justify-content:space-between;align-items:center;gap:10px;font-variant-numeric:tabular-nums}
+.heat .axis .lg{display:inline-flex;flex-wrap:wrap;gap:2px 12px;align-items:center}
+.heat .axis .lg i{display:inline-block;width:10px;height:9px;margin-right:3px;vertical-align:-1px}
+.stop{margin-top:8px;border-left:3px solid var(--ink);padding:2px 0 2px 10px;font-size:.88rem}
+.stop b{font-family:var(--font-display);font-size:1rem}
+.stop ul{margin:2px 0 0;padding-left:16px;color:var(--ink2)}
+/* ---------- method strip */
+.seq{display:grid;grid-template-columns:78px repeat(8,minmax(60px,1fr)) repeat(2,minmax(72px,1.15fr));gap:3px;font-size:.74rem;min-width:860px}
+.seq .xn{grid-column:2 / span 8;align-self:center;text-align:right;color:var(--mute);padding-right:8px}
+.seq .hd{color:var(--ink2);text-transform:uppercase;letter-spacing:.04em;font-size:.68rem;align-self:end;padding:0 2px}
+.seq .tl{align-self:center;font-weight:600;font-size:.76rem;line-height:1.2}
+.cell{border:1px solid var(--line);border-radius:5px;background:var(--panel);padding:3px 5px;text-align:left;cursor:pointer;min-height:44px;display:flex;flex-direction:column;justify-content:space-between}
+.cell .t{color:var(--ink2);line-height:1.15}
+.cell .n{display:flex;justify-content:space-between;align-items:baseline;font-variant-numeric:tabular-nums}
+.cell .n b{font-size:1.02rem;font-family:var(--font-display)}
+.cell .n span{color:var(--mute)}
+.cell.on{border-color:var(--ink);box-shadow:inset 0 -3px 0 var(--ink)}
+.cell.on .t{color:var(--ink)}
+.cell.zero .n b{color:var(--mute);font-weight:500}
+.cell.sel{outline:2px solid var(--ink);outline-offset:1px}
+.cell.x{grid-row:span 1;background:var(--wash)}
+/* ---------- network map */
+.tools{margin:8px 0}
+.findbox{position:relative;flex:1 1 210px;min-width:170px;max-width:300px}
+.findbox input{width:100%;border:1px solid var(--line);background:var(--panel);border-radius:6px;padding:5px 9px}
+.found{display:none;position:absolute;z-index:15;left:0;top:100%;margin-top:3px;min-width:100%;width:max-content;max-width:min(460px,86vw);background:var(--panel);border:1px solid var(--line);border-radius:6px;box-shadow:0 6px 18px rgba(0,0,0,.16);max-height:330px;overflow:auto}
+.found.open{display:block}
+.ctl .found button{display:block;width:100%;text-align:left;border:none;border-bottom:1px solid var(--line);border-radius:0;background:none;padding:5px 9px;font-size:.84rem;cursor:pointer;white-space:normal}
+.ctl .found button:hover,.ctl .found button:focus-visible{background:var(--wash)}
+.zl{font-variant-numeric:tabular-nums;font-size:.82rem;color:var(--ink2);min-width:4ch;text-align:center}
+.kept{display:flex;flex-wrap:wrap;gap:4px 6px;align-items:center;margin:0 0 8px}
+.keptchip{cursor:default}
+.keptchip .x{border:none;background:none;cursor:pointer;padding:0 2px;color:var(--ink2);font-size:1rem;line-height:1}
+.hint{color:var(--ink2);font-size:.8rem;margin:8px 0 0;max-width:none}
+.maphost{border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--panel);margin-bottom:8px}
+svg.net{display:block;width:100%;height:auto;touch-action:pan-y;user-select:none;-webkit-user-select:none;color:var(--ink);font-family:var(--font-body)}
+svg.net.grab{cursor:grabbing}
+svg.net text{font-size:var(--fs,11px);dominant-baseline:central;fill:var(--ink)}
+svg.net .band{fill:none;stroke:var(--line);vector-effect:non-scaling-stroke}
+svg.net text.bt2{font-size:var(--fh,13px);font-weight:600;cursor:pointer}
+svg.net text.ch{font-size:var(--fh,12px);fill:var(--ink2);cursor:pointer}
+svg.net text.ll{font-family:var(--font-mono);fill:var(--mute);cursor:pointer;font-size:calc(var(--fs,11px)*.86)}
+svg.net text.bt2:hover,svg.net text.ch:hover,svg.net text.ll:hover{text-decoration:underline}
+svg.net .lsep{stroke:var(--line);stroke-dasharray:1 3;vector-effect:non-scaling-stroke}
+svg.net rect.sw.S,svg.net .nm.S .nk{fill:var(--S)} svg.net rect.sw.M,svg.net .nm.M .nk{fill:var(--M)} svg.net rect.sw.O,svg.net .nm.O .nk{fill:var(--O)}
+svg.net .nh{fill:transparent;cursor:pointer}
+svg.net .nm{cursor:pointer}
+svg.net .nm .no{fill:none;stroke:none;vector-effect:non-scaling-stroke;pointer-events:none}
+svg.net .nm.pod .no{stroke-width:1.2px}
+svg.net .nm.pod.S .no{stroke:var(--S)} svg.net .nm.pod.M .no{stroke:var(--M)} svg.net .nm.pod.O .no{stroke:var(--O)}
+svg.net .nm.hov .no{fill:var(--wash)}
+svg.net .nm.new .no,svg.net .nm.pod.new .no{stroke:var(--ink);stroke-width:1.7px}
+svg.net .nm.rel .no,svg.net .nm.pod.rel .no{stroke:var(--ink);stroke-width:1.3px;stroke-dasharray:3 2}
+svg.net .nm.pin .no,svg.net .nm.pod.pin .no{stroke:var(--ink);stroke-width:1.7px;stroke-dasharray:7 2}
+svg.net .nm.sel .no,svg.net .nm.pod.sel .no{stroke:var(--ink);stroke-width:2.6px;stroke-dasharray:none;fill:var(--wash)}
+svg.net .nm.gone{opacity:.36}
+svg.net.dimmed .nm:not(.sel):not(.rel):not(.pin){opacity:.4}
+svg.net.nolabel .nl{display:none}
+svg.net .nl .nx{fill:var(--mute)}
+svg.net .md{fill:var(--ink);stroke:var(--ink);stroke-width:.8px;vector-effect:non-scaling-stroke}
+svg.net .md.dv{fill:var(--panel)} svg.net .md.ct{fill:url(#half)} svg.net .md.ud{fill:none;stroke-dasharray:1 1.6}
+svg.net #half .h1{stop-color:var(--ink)} svg.net #half .h2{stop-color:var(--panel)}
+svg.net .edge{cursor:pointer}
+svg.net .edge .ln{fill:none;stroke:var(--ink);stroke-width:.9px;opacity:.24;vector-effect:non-scaling-stroke}
+svg.net .edge .hit{fill:none;stroke:transparent;stroke-width:11px;vector-effect:non-scaling-stroke;pointer-events:stroke}
+svg.net .edge.cut .ln{stroke-dasharray:5 3} svg.net .edge.aggregate .ln{stroke-dasharray:1.5 3;stroke-linecap:round} svg.net .edge.test .ln{stroke-dasharray:7 2 1.5 2}
+svg.net .edge.criterion .ln{stroke-dasharray:9 3} svg.net .edge.subset .ln{stroke-dasharray:3 2} svg.net .edge.der .ln{stroke-dasharray:2 4}
+svg.net .edge.a.now .ln{opacity:.5}
+svg.net.dimmed .edge:not(.sel):not(.foc) .ln{opacity:.13}
+svg.net.dimmed .edge:not(.sel):not(.foc) .hd{opacity:.4}
+svg.net .edge.foc .ln{opacity:.85;stroke-width:1.5px}
+svg.net .edge .ed,svg.net .edge .ah{fill:var(--ink);opacity:.45}
+svg.net .edge .hd{fill:var(--ink);stroke:var(--panel);stroke-width:1.4px;vector-effect:non-scaling-stroke;opacity:.8}
+svg.net .edge.r .hd{fill:var(--panel);stroke:var(--ink)}
+svg.net .edge:hover .ln,svg.net .edge.sel .ln{opacity:1;stroke-width:2.4px}
+svg.net .edge:hover .hd,svg.net .edge.sel .hd,svg.net .edge:hover .ed,svg.net .edge.sel .ed,svg.net .edge:hover .ah,svg.net .edge.sel .ah{opacity:1}
+svg.net .edge.sel .hd{stroke:var(--ink);stroke-width:2.6px}
+.legend{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:.76rem;color:var(--ink2);align-items:center}
+.legend svg{vertical-align:middle;color:var(--ink)}
+.legend .pm i{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--ink);margin-right:3px}
+.legend .pm i.dv{background:transparent;border:1px solid var(--ink)}
+.legend .pm i.ct{background:linear-gradient(90deg,var(--ink) 50%,transparent 50%);border:1px solid var(--ink)}
+.legend .pm i.ud{background:transparent;border:1px dotted var(--ink2)}
+#tip{position:fixed;z-index:20;pointer-events:none;background:var(--ink);color:var(--surface);padding:4px 8px;border-radius:5px;font-size:.78rem;max-width:320px;display:none;line-height:1.3}
+#tip span{opacity:.75}
+/* ---------- rail */
+.rail h2{font-size:1.05rem;margin-bottom:2px}
+.kv{display:grid;grid-template-columns:86px minmax(0,1fr);gap:3px 8px;margin:6px 0}
+.kv dt{color:var(--ink2)} .kv dd{margin:0;overflow-wrap:anywhere}
+.stmt{border-left:3px solid var(--line);padding:3px 8px;margin:6px 0;overflow-wrap:anywhere}
+ul.items{list-style:none;margin:4px 0;padding:0}
+ul.items li{padding:3px 0;border-bottom:1px dotted var(--line);overflow-wrap:anywhere}
+ul.items li .mono{color:var(--ink2)}
+details{margin:6px 0} summary{cursor:pointer;color:var(--ink2)}
+.rail h3{font-size:.76rem;text-transform:uppercase;letter-spacing:.05em;color:var(--ink2);font-family:var(--font-body);margin:12px 0 4px}
+.sent{font-weight:500;margin:4px 0 6px;overflow-wrap:anywhere}
+.card2{border:1px solid var(--line);border-radius:6px;padding:6px 8px;margin:6px 0;background:var(--surface);overflow-wrap:anywhere}
+.card2 .hd2{display:flex;flex-wrap:wrap;gap:2px 8px;align-items:baseline;font-size:.8rem;color:var(--ink2)}
+.card2 h3{margin-top:8px}
+ul.refs{margin:4px 0;padding-left:16px;font-size:.84rem} ul.refs li{margin:2px 0;overflow-wrap:anywhere}
+ol.steps{margin:4px 0;padding-left:18px} ol.steps li{margin:6px 0}
+dl.kv.data{grid-template-columns:minmax(84px,40%) minmax(0,1fr);font-size:.82rem;margin:4px 0}
+dl.kv.data dl.kv.data{margin:0}
+/* ---------- clusters */
+.split{display:grid;grid-template-columns:300px minmax(0,1fr);gap:14px;align-items:start}
+@media (max-width:860px){.split{grid-template-columns:minmax(0,1fr)}}
+.clist{position:relative;max-height:560px;overflow:auto;border:1px solid var(--line);border-radius:6px}
+.clist button{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px;width:100%;text-align:left;background:none;border:none;border-bottom:1px solid var(--line);padding:5px 8px;cursor:pointer;font-size:.84rem}
+.clist button.sel{background:var(--wash)}
+.clist button .c{color:var(--ink2);font-variant-numeric:tabular-nums;font-size:.76rem;white-space:nowrap}
+.clist .gh{padding:4px 8px;font-size:.7rem;text-transform:uppercase;letter-spacing:.05em;color:var(--ink2);background:var(--wash);border-bottom:1px solid var(--line);position:sticky;top:0}
+.eye{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}
+.eye .grp{border:1.5px solid var(--line);border-radius:6px;padding:5px 7px;min-width:150px;max-width:100%}
+.eye .grp h4{margin:0 0 4px;font-size:.7rem;text-transform:uppercase;letter-spacing:.05em;color:var(--ink2);font-weight:600}
+.chip{display:inline-flex;align-items:center;gap:4px;border:1px solid var(--line);border-radius:4px;padding:1px 6px;margin:0 3px 3px 0;font-size:.78rem;background:var(--surface);cursor:pointer}
+.chip.dv{border-style:dashed} .chip.ct{border-style:dotted}
+.chip .sw{margin-right:0}
+table.inc{font-size:.72rem} table.inc th,table.inc td{padding:2px 3px;text-align:center;border:1px solid var(--line)}
+table.inc th.rot{height:92px;vertical-align:bottom;white-space:nowrap;text-transform:none;letter-spacing:0;font-weight:500}
+table.inc th.rot div{writing-mode:vertical-rl;transform:rotate(180deg);text-align:left}
+table.inc td.rl,table.inc th.rl{text-align:left;white-space:nowrap}
+table.inc td.na{background:repeating-linear-gradient(45deg,transparent 0 3px,var(--line) 3px 4px)}
+table.inc td{cursor:default;font-family:var(--font-mono)}
+table.inc td.rl{font-family:var(--font-body)}
+.ok{color:var(--good);font-weight:600} .no{color:var(--crit);font-weight:600}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px}
+.card{border:1px solid var(--line);border-radius:8px;padding:8px 10px;background:var(--panel)}
+.card b{display:block;font-family:var(--font-display);font-size:1.45rem;font-weight:600;line-height:1.15;font-variant-numeric:tabular-nums}
+.card span{color:var(--ink2);font-size:.8rem}
+figure{margin:0} figcaption{color:var(--ink2);font-size:.82rem;margin-top:4px;max-width:90ch}
+svg.pipe{width:100%;min-width:900px;max-width:1180px;height:auto;color:var(--ink)}
+svg.pipe text{font-family:var(--font-body)}
+.err{color:var(--crit);padding:20px}
+
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Two-tier epistemic network</h1>
+    <p id="lede">The six released concept graphs of the Great Epistemic Network read as one network. System-specific nodes sit in the lower tier, generic ones in the upper tier. Select any node or line for its statement, its references and the data of its checks.</p>
+  </header>
+  <nav class="tabs" id="tabs" aria-label="Views"></nav>
+  <main id="view"><p class="muted">Loading the network…</p></main>
+</div>
+<div id="tip" role="tooltip"></div>
+<script>/*__EMBED__*/</script>
+<script>
+(function(){
+"use strict";
+var VIEWS=[["evolution","Evolution"],["pipeline","Combined pipeline"],["clusters","Clusters"],["checks","Checks"],["method","Method"]];
+var LAYER={S:"State",M:"Model",O:"Observable"}, TIER={A:"generic tier",C:"system-specific tier"};
+var LANES={A:[["GPT","GPT"],["QRT","QRT"]],C:[["EM","EM"],["HEP","HEP"]]};
+var POD_SUB={"S.cluster":1,"S.free":1,"S.resource":1,"S.uir":1,"S.group":1,"S.family":1,"M.cluster":1,"O.effect":1};
+var MEM={member:1,cut:1,aggregate:1,lineage:1},RESTATE={member:1,subset:1,equal:1,test:1,hosts:1,cut:1};
+var META,NODES,ROUTES,ABST,N={},AB={},RT={},inR={},outR={},intoA={},fromA={},BT={},stageOf={},YEARS=[],cum={};
+var st={view:"evolution",year:2026,playing:false,sel:null,derived:true,gone:true,emode:"x",pins:[],timer:null,cl:null};
+var ev={};   // evolution view handles
+
+function esc(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");}
+function rich(s){return esc(s).replace(/\^\{([^}]*)\}/g,"<sup>$1</sup>").replace(/_\{([^}]*)\}/g,"<sub>$1</sub>");}
+function plain(s){return String(s==null?"":s).replace(/[\^_]\{([^}]*)\}/g,"$1");}
+function el(tag,attrs,kids){var e=document.createElement(tag);if(attrs){for(var k in attrs){var v=attrs[k];if(v==null||v===false)continue;
+  if(k==="class")e.className=v;else if(k==="text")e.textContent=v;else if(k==="html")e.innerHTML=v;else if(k==="on"){for(var t in v)e.addEventListener(t,v[t]);}else e.setAttribute(k,v===true?"":v);}}
+  (kids||[]).forEach(function(c){if(c==null||c===false)return;e.appendChild(typeof c==="string"?document.createTextNode(c):c);});return e;}
+function svg(tag,attrs){var e=document.createElementNS("http://www.w3.org/2000/svg",tag);for(var k in attrs)e.setAttribute(k,attrs[k]);return e;}
+function lab(u){return N[u]?plain(N[u].l):u;}
+function nodeBtn(u){var n=N[u];if(!n)return el("span",{class:"mono",text:u});
+  return el("button",{class:"linkbtn",type:"button",title:u+" · "+BT[n.b],html:"<span class='sw "+n.L+"'></span>"+rich(n.l)+"<span class='bt'>"+esc(n.b)+"</span>",on:{click:function(){select({t:"node",id:u});}}});}
+function stageName(id){var s=stageOf[id];if(!s)return id;return s.title+" ("+(s.tier==="X"?"across tiers":TIER[s.tier])+")";}
+function edgeBtn(e){return el("button",{class:"linkbtn mono",type:"button",text:e.id,on:{click:function(){select({t:"abst",id:e.id});}}});}
+function tag(t,c){return el("span",{class:"tag"+(c?" "+c:""),text:t});}
+function isPod(u){var n=N[u];if(!n)return false;if(POD_SUB[n.s])return true;return (intoA[u]||[]).some(function(e){return MEM[e.rel];});}
+function laneOf(n){return n.t+"|"+n.L+"|"+n.b;}
+function yr(y){return y==null?"undated":String(y);}
+
+/* ------------------------------------------------------------------ load */
+function load(){if(window.__GEN__)return Promise.resolve(window.__GEN__);
+  return Promise.all(["meta.json","nodes.json","routes.json","abst.json"].map(function(f){return fetch(f).then(function(r){if(!r.ok)throw new Error(f+": HTTP "+r.status);return r.json();});}))
+   .then(function(a){return {meta:a[0],nodes:a[1],routes:a[2],abst:a[3]};});}
+function start(d){META=d.meta;NODES=d.nodes;ROUTES=d.routes;ABST=d.abst;
+  NODES.forEach(function(n){N[n.u]=n;});
+  ROUTES.forEach(function(r){(inR[r.o]=inR[r.o]||[]).push(r);r.i.forEach(function(u){(outR[u]=outR[u]||[]).push(r);});});
+  ABST.forEach(function(e){(intoA[e.d]=intoA[e.d]||[]).push(e);e.s.forEach(function(u){(fromA[u]=fromA[u]||[]).push(e);});});
+  META.branches.forEach(function(b){BT[b.id]=b.title;});
+  META.stages.forEach(function(s){stageOf[s.id]=s;});
+  YEARS=Object.keys(META.timeline).map(Number).sort(function(a,b){return a-b;});
+  var run={};YEARS.forEach(function(y){var t=META.timeline[y];for(var k in t)run[k]=(run[k]||0)+t[k];cum[y]=Object.assign({},run);});
+  var nav=document.getElementById("tabs");VIEWS.forEach(function(v){nav.appendChild(el("a",{href:"#"+v[0],text:v[1],"data-v":v[0]}));});
+  NODES.forEach(function(n){n._pl=plain(n.l);n._lc=n._pl.toLowerCase();});
+  ROUTES.forEach(function(r){RT[r.u]=r;r._x=r.i.some(function(u){return N[u].t!==N[r.o].t;});});
+  ABST.forEach(function(e){AB[e.id]=e;e._x=e.s.some(function(u){return N[u].t!==N[e.d].t;});});
+  window.addEventListener("hashchange",route);
+  window.addEventListener("resize",function(){if(st.view==="evolution"&&ev.svg&&ev.svg.isConnected)setView(ev.V.x,ev.V.y,ev.V.w);});
+  document.addEventListener("click",function(e){var f=document.getElementById("found");if(f&&!(e.target.closest&&e.target.closest(".findbox")))f.classList.remove("open");});
+  route();}
+function route(){var h=(location.hash||"").replace("#","");if(!VIEWS.some(function(v){return v[0]===h;}))h="evolution";
+  st.view=h;stopPlay();tipHide();
+  Array.prototype.forEach.call(document.querySelectorAll("#tabs a"),function(a){if(a.getAttribute("data-v")===h)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current");});
+  var view=document.getElementById("view");view.innerHTML="";
+  var grid=el("div",{class:"grid"}),main=el("div",{class:"stack"}),rail=el("aside",{class:"rail",id:"rail","aria-live":"polite"});
+  grid.appendChild(main);grid.appendChild(rail);view.appendChild(grid);
+  ({evolution:viewEvolution,pipeline:viewPipeline,clusters:viewClusters,checks:viewChecks,method:viewMethod})[h](main);
+  renderRail();}
+function select(s){st.sel=(st.sel&&s&&st.sel.t===s.t&&st.sel.id===s.id)?null:s;renderRail();if(st.view==="evolution")paintSel();
+  if(st.view==="clusters"&&s&&s.t==="node"&&ev.clusterPick)ev.clusterPick(s.id,true);}
+
+/* ------------------------------------------------------------------ tooltip */
+var REL_WORD={member:"is a member of",cut:"is cut by",excluded:"is not in",subset:"is a subset of",equal:"equals",complement:"is the complement of",disjoint:"is disjoint from",
+  aggregate:"is summed into",criterion:"supplies the criterion of",test:"tests membership in",lineage:"was rewritten as or absorbed into",hosts:"hosts",reify:"is reified as",refines:"refines"};
+function tipShow(html,x,y){var tip=document.getElementById("tip");tip.innerHTML=html;tip.style.display="block";
+  var w=tip.offsetWidth,h=tip.offsetHeight;tip.style.left=Math.max(6,Math.min(window.innerWidth-w-6,x+12))+"px";tip.style.top=(y+18+h>window.innerHeight?Math.max(6,y-h-10):y+18)+"px";}
+function tipHide(){document.getElementById("tip").style.display="none";}
+function nodeTip(n){var c=isPod(n.u)?classInfo(n.u):null;
+  return "<b>"+rich(n.l)+"</b><br><span>"+esc(BT[n.b])+"</span><br><span>"+esc(LAYER[n.L]+" layer · "+n.s+" · "+yr(n.y)+(n.ry?" · removed "+n.ry:""))+
+    (c?esc(" · cluster with "+c.stated+" stated"+(c.derived?" and "+c.derived+" derived":"")+" members"):"")+"</span>";}
+function edgeTip(key){var id=key.slice(2);
+  if(key.charAt(0)==="a"){var e=AB[id];return "<b>"+esc(e.s.map(lab).join(" + ")+" "+(REL_WORD[e.rel]||e.rel)+" "+lab(e.d))+"</b><br><span>"+esc("cluster edge "+e.id+" · "+e.rel+(e.og==="closure"?", derived":"")+" · "+e.st+" · "+yr(e.y))+"</span><br><span>select for the statement and its sources</span>";}
+  var r=RT[id];return "<b>"+esc(r.i.map(lab).join(" ∧ ")+" → "+lab(r.o))+"</b><br><span>"+esc("route "+r.u+" · "+r.k+" · "+(r.st||"")+" · "+yr(r.y))+"</span><br><span>select for the statement and its sources</span>";}
+
+/* ------------------------------------------------------------------ evolution view */
+var MAP={CW:164,CH:21,LL:30,GAP:30,PAD:14,BH:30,HH:20,BG:124,LG:8,COLS:{S:2,M:4,O:3}};
+function viewEvolution(main){
+  var y0=YEARS[0],y1=YEARS[YEARS.length-1],nb=META.numbers.nodes_by_branch;
+  /* time controls */
+  var play=el("button",{type:"button","aria-pressed":"false",text:"Play",on:{click:function(){st.playing?stopPlay():startPlay();}}});
+  var prev=el("button",{type:"button","aria-label":"Previous year with events",text:"◀",on:{click:function(){stepYear(-1);}}});
+  var next=el("button",{type:"button","aria-label":"Next year with events",text:"▶",on:{click:function(){stepYear(1);}}});
+  var range=el("input",{type:"range",id:"yr",min:y0,max:y1,step:1,value:st.year,"aria-label":"Year",on:{input:function(){setYear(+this.value);}}});
+  var yv=el("span",{class:"year",text:String(st.year)});
+  var stops=el("select",{id:"stopsel","aria-label":"Jump to a marked year",on:{change:function(){if(this.value)setYear(+this.value);}}},
+    [el("option",{value:"",text:"Jump to a marked year"})].concat(META.stops.map(function(s){return el("option",{value:s.year,text:s.year+"  "+s.title});})));
+  var ctl=el("div",{class:"ctl"},[play,prev,next,yv,range,stops]);
+  /* heat strip */
+  var rowAll=el("div",{class:"row",role:"img","aria-label":"Events per year"}),rowX=el("div",{class:"row",role:"img","aria-label":"Cluster and descend events per year"});
+  function q(v){return v===0?"q0":v<3?"q1":v<8?"q2":v<20?"q3":"q4";}
+  ev.heat=[];for(var y=y0;y<=y1;y++){var t=META.timeline[y]||{},tot=0,x=0;for(var k in t){tot+=t[k];if(/\.(abstract|instantiate)$/.test(k))x+=t[k];}
+    var a=el("i",{class:q(tot),title:y+": "+tot+" events"}),b=el("i",{class:q(x),title:y+": "+x+" cluster and descend events"});
+    (function(yy){a.addEventListener("click",function(){setYear(yy);});b.addEventListener("click",function(){setYear(yy);});})(y);
+    rowAll.appendChild(a);rowX.appendChild(b);ev.heat.push([a,b]);}
+  var lgd=el("span",{class:"lg"});
+  lgd.innerHTML="<span>events in a year:</span><span><i class='q0'></i>0</span><span><i class='q1'></i>1–2</span><span><i class='q2'></i>3–7</span><span><i class='q3'></i>8–19</span><span><i class='q4'></i>20 or more</span>";
+  var heat=el("div",{class:"heat"},[el("span",{text:"all events"}),rowAll,el("span",{text:"cluster, descend"}),rowX,el("span"),
+    el("div",{class:"axis"},[el("span",{text:String(y0)}),lgd,el("span",{text:String(y1)})])]);
+  var stop=el("div",{class:"stop",id:"stop"});
+  main.appendChild(el("div",{class:"panel"},[ctl,heat,stop]));
+  /* method strip: three rows (generic tier, across tiers, system-specific tier) x ten phases */
+  var seq=el("div",{class:"seq"});ev.cells={};
+  var P8=META.phases.slice(0,8);
+  seq.appendChild(el("div",{class:"hd",text:"phase"}));P8.forEach(function(p){seq.appendChild(el("div",{class:"hd",text:p}));});
+  seq.appendChild(el("div",{class:"hd",text:"cluster"}));seq.appendChild(el("div",{class:"hd",text:"descend"}));
+  function cell(id,extra){var s=stageOf[id];var c=el("button",{class:"cell"+(extra||""),type:"button",title:s.what,on:{click:function(){select({t:"stage",id:id});}}},
+     [el("span",{class:"t",text:s.title}),el("span",{class:"n"},[el("b",{text:"0"}),el("span",{text:"0"})])]);ev.cells[id]=c;return c;}
+  function row(T,label){seq.appendChild(el("div",{class:"tl",text:label}));
+    if(T==="X")seq.appendChild(el("div",{class:"xn",text:"abstraction edges with one end in each tier"}));
+    else P8.forEach(function(p){seq.appendChild(cell(T+"."+p));});
+    seq.appendChild(cell(T+".abstract",T==="X"?" x":""));seq.appendChild(cell(T+".instantiate",T==="X"?" x":""));}
+  row("A","Generic tier");row("X","Across tiers");row("C","System-specific tier");
+  main.appendChild(el("div",{class:"panel"},[el("h2",{text:"The cycle in the selected year"}),
+    el("p",{class:"muted small",text:"Each box is a stage: a phase in a tier. The large number counts the events of the selected year, the small one all events up to it. Both tiers run the same ten phases, the eight of the history graphs followed by cluster and descend. The middle row holds the cluster and descend events that join the two tiers. Select a box to list its events; every listed edge opens its statement."}),
+    el("div",{class:"scroll-x"},[seq])]));
+  /* network map */
+  var find=el("input",{type:"search",id:"find",placeholder:"Find a node by name",autocomplete:"off","aria-label":"Find a node by name"});
+  var found=el("div",{class:"found",id:"found",role:"listbox"});
+  find.addEventListener("input",function(){var qq=this.value.trim().toLowerCase();found.innerHTML="";if(qq.length<2){found.classList.remove("open");return;}
+    var hits=NODES.filter(function(n){return n._lc.indexOf(qq)>=0||n.u.toLowerCase().indexOf(qq)>=0;})
+      .sort(function(a,b){return ((a.y==null)-(b.y==null))||(a._lc.indexOf(qq)-b._lc.indexOf(qq))||(a._lc.length-b._lc.length);}).slice(0,14);
+    if(!hits.length)found.appendChild(el("div",{class:"muted small",style:"padding:6px 8px",text:"No node matches."}));
+    hits.forEach(function(n){found.appendChild(el("button",{type:"button",role:"option",html:"<span class='sw "+n.L+"'></span>"+rich(n.l)+"<span class='bt'>"+esc(n.b)+"</span><span class='muted'> · "+esc(n.s)+" · "+esc(n.y==null?"no year, not on the map":String(n.y))+"</span>",
+      on:{click:function(){found.classList.remove("open");find.value="";goNode(n.u);}}}));});
+    found.classList.add("open");});
+  find.addEventListener("keydown",function(e){if(e.key==="Escape")found.classList.remove("open");else if(e.key==="Enter"){var b=found.querySelector("button");if(b)b.click();}});
+  function zb(label,aria,fn){return el("button",{type:"button","aria-label":aria,text:label,on:{click:fn}});}
+  var zl=el("span",{class:"zl",id:"zl",text:"100%"});
+  var emode=el("select",{id:"emode","aria-label":"Lines shown on the map",on:{change:function(){st.emode=this.value;paintSel();}}},
+    [["x","Lines: between the tiers"],["all","Lines: all cluster edges"],["sel","Lines: selected nodes only"]].map(function(o){return el("option",{value:o[0],text:o[1],selected:st.emode===o[0]?true:null});}));
+  function chk(id,label,key){var i=el("input",{type:"checkbox",id:id,checked:st[key]?true:null,on:{change:function(){st[key]=this.checked;tick();}}});ev[id]=i;return el("label",null,[i,label]);}
+  var tools=el("div",{class:"ctl tools"},[el("div",{class:"findbox"},[find,found]),
+    zb("−","Zoom out",function(){zoomBy(1/1.5);}),zl,zb("+","Zoom in",function(){zoomBy(1.5);}),
+    zb("Whole network","Show the whole network",function(){zoomTo({x:0,y:0,w:ev.L.W,h:ev.L.H},0);}),
+    zb("Generic tier","Zoom to the generic tier",function(){zoomRegion("band:A");}),
+    zb("System-specific tier","Zoom to the system-specific tier",function(){zoomRegion("band:C");}),
+    emode,chk("c-der","derived members","derived"),chk("c-gone","removed nodes","gone")]);
+  var kept=el("div",{class:"kept",id:"kept"});
+  var host=el("div",{class:"maphost"});
+  buildMap(host);
+  var lg=el("div",{class:"legend"});
+  lg.innerHTML="<span><span class='sw S'></span>state</span><span><span class='sw M'></span>model</span><span><span class='sw O'></span>observable</span>"+
+   "<span>outlined = cluster node; dots at its right end are its members:</span><span class='pm'><i></i>stated</span><span class='pm'><i class='ct'></i>cut</span><span class='pm'><i class='dv'></i>derived</span><span class='pm'><i class='ud'></i>no year</span>"+
+   "<span><svg width='40' height='10'><path d='M1 5H30' stroke='currentColor'/><circle cx='17' cy='5' r='3.6' fill='currentColor'/></svg> cluster edge</span>"+
+   "<span><svg width='40' height='10'><path d='M1 5H30' stroke='currentColor'/><path d='M17 1L21 5L17 9L13 5Z' fill='none' stroke='currentColor' stroke-width='1.3'/><path d='M30 2L36 5L30 8Z' fill='currentColor'/></svg> route</span>"+
+   "<span><svg width='30' height='8'><path d='M1 4H29' stroke='currentColor' stroke-dasharray='5 3'/></svg> cut</span><span><svg width='30' height='8'><path d='M1 4H29' stroke='currentColor' stroke-dasharray='7 2 1.5 2'/></svg> test</span>"+
+   "<span><svg width='30' height='8'><path d='M1 4H29' stroke='currentColor' stroke-dasharray='3 2'/></svg> subset</span><span><svg width='30' height='8'><path d='M1 4H29' stroke='currentColor' stroke-dasharray='9 3'/></svg> criterion</span>"+
+   "<span>heavy outline = new in the selected year</span>";
+  main.appendChild(el("div",{class:"panel"},[el("h2",{text:"The network up to the selected year"}),
+    el("p",{class:"muted small",text:"Nodes are placed by tier, layer and network, in order of their year. Lines that cross the middle strip join the two tiers; heavier lines are the cluster edges of the selected year. Select a node, a line or the mark on a line: the panel on the right loads the statement, its references and the data of its checks. The textbook reader ("+nb.UP+" nodes) and the lattice model ("+nb.LG+" nodes) have no year and are not on the map; they appear as members in the Clusters view."}),
+    tools,kept,host,lg,
+    el("p",{class:"hint",text:"Drag to move the view. Zoom with the buttons, a double click, or Ctrl + wheel (pinch on a touch screen). Shift + click keeps a node selected so that several can be compared; lines among kept nodes stay drawn."})]));
+  ev.range=range;ev.yv=yv;ev.play=play;ev.stop=stop;ev.stops=stops;
+  renderKept();setView(0,0,ev.L.W);tick();}
+function startPlay(){st.playing=true;ev.play.textContent="Pause";ev.play.setAttribute("aria-pressed","true");
+  if(st.year>=YEARS[YEARS.length-1])st.year=YEARS[0]-1;
+  st.timer=setInterval(function(){var nx=YEARS.filter(function(y){return y>st.year;})[0];if(nx==null){stopPlay();return;}setYear(nx,true);},650);}
+function stopPlay(){st.playing=false;if(st.timer){clearInterval(st.timer);st.timer=null;}if(ev.play&&ev.play.isConnected){ev.play.textContent="Play";ev.play.setAttribute("aria-pressed","false");}}
+function stepYear(d){var c=YEARS.filter(function(y){return d>0?y>st.year:y<st.year;});if(!c.length)return;setYear(d>0?c[0]:c[c.length-1]);}
+function setYear(y,keep){if(!keep)stopPlay();st.year=y;tick();}
+function tick(){if(st.view!=="evolution"||!ev.svg)return;var y=st.year;
+  ev.range.value=y;ev.yv.textContent=String(y);
+  for(var u in ev.nm){var n=N[u],gone=n.ry!=null&&n.ry<=y,hide=n.y>y||(gone&&!st.gone),d=hide?"none":"";
+    if(ev.nm[u].style.display!==d){ev.nm[u].style.display=d;ev.nh[u].style.display=d;}
+    ev.nm[u].classList.toggle("gone",gone);ev.nm[u].classList.toggle("new",n.y===y);}
+  ev.dots.forEach(function(d){var a=d[1],off=(a.og==="closure"&&!st.derived)||(a.y!=null&&a.y>y)||(a.y==null&&a.og==="closure"&&y<2026);d[0].style.display=off?"none":"";});
+  var t=META.timeline[y]||{},last=null;YEARS.forEach(function(v){if(v<=y)last=v;});var c=last==null?{}:cum[last];
+  for(var id in ev.cells){var b=ev.cells[id],v=t[id]||0;b.querySelector("b").textContent=String(v);b.querySelector(".n span").textContent=String(c[id]||0);
+    b.classList.toggle("on",v>0);b.classList.toggle("zero",v===0);}
+  ev.heat.forEach(function(h,i){var on=(YEARS[0]+i)===y;h[0].classList.toggle("cur",on);h[1].classList.toggle("cur",on);});
+  var s=META.stops.filter(function(x){return x.year===y;})[0];ev.stops.value=s?String(y):"";
+  var tot=0;for(var k in t)tot+=t[k];
+  ev.stop.innerHTML="";
+  if(s){ev.stop.appendChild(el("b",{text:s.title}));ev.stop.appendChild(el("div",{class:"muted",text:s.nodes+" nodes, "+s.routes+" routes and "+s.abst+" abstraction edges carry this year."}));
+    ev.stop.appendChild(el("ul",null,s.items.map(function(i){return el("li",{html:rich(i)});})));}
+  else ev.stop.appendChild(el("div",{class:"muted",text:tot?tot+" events carry the year "+y+". Select a stage above to list them.":"No event carries the year "+y+"."}));
+  paintSel();}
+function related(){var s=st.sel,R={};if(!s)return R;
+  if(s.t==="node"){(intoA[s.id]||[]).forEach(function(e){e.s.forEach(function(u){R[u]=1;});});(fromA[s.id]||[]).forEach(function(e){R[e.d]=1;e.s.forEach(function(u){R[u]=1;});});
+    (inR[s.id]||[]).forEach(function(r){r.i.forEach(function(u){R[u]=1;});});(outR[s.id]||[]).forEach(function(r){R[r.o]=1;r.i.forEach(function(u){R[u]=1;});});delete R[s.id];}
+  else if(s.t==="abst"){var e=AB[s.id];if(e){R[e.d]=1;e.s.forEach(function(u){R[u]=1;});e.fr.forEach(function(u){R[u]=1;});}}
+  else if(s.t==="route"){var r=RT[s.id];if(r){R[r.o]=1;r.i.forEach(function(u){R[u]=1;});}}
+  else if(s.t==="stage"){NODES.forEach(function(n){if(n.sg===s.id&&n.y===st.year)R[n.u]=1;});}
+  return R;}
+function paintSel(){if(st.view!=="evolution"||!ev.svg)return;var R=related(),s=st.sel,P={};st.pins.forEach(function(u){P[u]=1;});
+  ev.svg.classList.toggle("dimmed",!!(s&&s.t!=="stage"));
+  for(var u in ev.nm){var c=ev.nm[u].classList;c.toggle("sel",!!(s&&s.t==="node"&&s.id===u));c.toggle("rel",!!R[u]);c.toggle("pin",!!P[u]);}
+  for(var id in ev.cells)ev.cells[id].classList.toggle("sel",!!(s&&s.t==="stage"&&s.id===id));
+  drawWires();}
+
+/* ---- kept nodes and search */
+function renderKept(){var k=document.getElementById("kept");if(!k)return;k.innerHTML="";if(!st.pins.length){k.style.display="none";return;}k.style.display="";
+  k.appendChild(el("span",{class:"muted small",text:"Kept:"}));
+  st.pins.forEach(function(u){var n=N[u];k.appendChild(el("span",{class:"chip keptchip"},[
+    el("button",{class:"linkbtn",type:"button",html:"<span class='sw "+n.L+"'></span>"+rich(n.l)+"<span class='bt'>"+esc(n.b)+"</span>",on:{click:function(){goNode(u);}}}),
+    el("button",{type:"button",class:"x","aria-label":"Release "+plain(n.l),text:"×",on:{click:function(){togglePin(u);}}})]));});
+  k.appendChild(el("button",{type:"button",class:"linkbtn small",text:"Release all",on:{click:function(){st.pins=[];renderKept();paintSel();renderRail();}}}));}
+function togglePin(u){var i=st.pins.indexOf(u);if(i>=0)st.pins.splice(i,1);else st.pins.push(u);renderKept();paintSel();renderRail();}
+function goNode(u){var n=N[u];if(!n)return;
+  if(st.view!=="evolution"){st.sel={t:"node",id:u};renderRail();if(st.view==="clusters"&&ev.clusterPick)ev.clusterPick(u,true);return;}
+  if(n.y!=null&&n.y>st.year){stopPlay();st.year=n.y;}
+  if(n.ry!=null&&n.ry<=st.year&&!st.gone){st.gone=true;if(ev["c-gone"])ev["c-gone"].checked=true;}
+  st.sel={t:"node",id:u};renderRail();tick();
+  var p=ev.L.pos[u];if(p)zoomTo({x:p.x,y:p.y,w:MAP.CW,h:MAP.CH},ev.L.W/7);}
+
+/* ---- map: layout, nodes, view */
+function buildLayout(){var m=MAP,L={pos:{},bands:{},cols:{},lanes:[]},x=m.PAD;
+  ["S","M","O"].forEach(function(l){var w=m.LL+m.COLS[l]*m.CW;L.cols[l]={x:x,w:w};x+=w+m.GAP;});
+  L.W=x-m.GAP+m.PAD;
+  var byLane={};NODES.forEach(function(n){if(n.y==null)return;(byLane[laneOf(n)]=byLane[laneOf(n)]||[]).push(n);});
+  var y=m.PAD;
+  ["A","C"].forEach(function(T){var top=y,inner=0;
+    ["S","M","O"].forEach(function(l){var cy=top+m.BH+m.HH,c=L.cols[l];
+      LANES[T].forEach(function(ln){var arr=(byLane[T+"|"+l+"|"+ln[0]]||[]).slice().sort(function(a,b){return a.y-b.y||(isPod(b.u)-isPod(a.u))||a._lc.localeCompare(b._lc);});
+        if(!arr.length)return;var per=m.COLS[l],rows=Math.ceil(arr.length/per);
+        L.lanes.push({T:T,l:l,code:ln[1],x:c.x,y:cy,w:c.w,h:rows*m.CH});
+        arr.forEach(function(n,i){L.pos[n.u]={x:c.x+m.LL+(i%per)*m.CW,y:cy+Math.floor(i/per)*m.CH};});
+        cy+=rows*m.CH+m.LG;});
+      inner=Math.max(inner,cy-top);});
+    L.bands[T]={y:top,h:inner+m.PAD-m.LG};y=top+L.bands[T].h+m.BG;});
+  L.H=y-m.BG+m.PAD;L.gap={y0:L.bands.A.y+L.bands.A.h,y1:L.bands.C.y};
+  return L;}
+function buildMap(host){var m=MAP,L=ev.L=buildLayout();
+  var s=svg("svg",{"class":"net",viewBox:"0 0 "+L.W+" "+L.H,tabindex:"0",role:"group","aria-label":"Map of the network. The search field picks a node by name; plus and minus zoom, the arrow keys move the view, zero shows the whole network."});
+  s.style.aspectRatio=L.W+" / "+L.H;
+  var defs=svg("defs",{}),gr=svg("linearGradient",{id:"half"});gr.appendChild(svg("stop",{offset:"50%","class":"h1"}));gr.appendChild(svg("stop",{offset:"50%","class":"h2"}));defs.appendChild(gr);s.appendChild(defs);
+  var gB=svg("g",{"class":"back"}),gC=svg("g",{"class":"cells"}),gW=svg("g",{"class":"wires"}),gM=svg("g",{"class":"marks"});
+  function txt(cls,x,y,t,zoom){var e=svg("text",{"class":cls,x:x,y:y});if(zoom)e.setAttribute("data-zoom",zoom);e.textContent=t;gB.appendChild(e);return e;}
+  [["A","Generic tier: classes, effects, axioms"],["C","System-specific tier: named systems, their laws and observables"]].forEach(function(T){var b=L.bands[T[0]];
+    gB.appendChild(svg("rect",{"class":"band",x:m.PAD/2,y:b.y,width:L.W-m.PAD,height:b.h,rx:8}));
+    txt("bt2",m.PAD+2,b.y+m.BH*0.56,T[1],"band:"+T[0]);
+    ["S","M","O"].forEach(function(l){var c=L.cols[l];gB.appendChild(svg("rect",{"class":"sw "+l,x:c.x+1,y:b.y+m.BH+m.HH*0.5-5,width:10,height:10,rx:2}));
+      txt("ch",c.x+16,b.y+m.BH+m.HH*0.5,LAYER[l]+" layer","col:"+T[0]+":"+l);});});
+  L.lanes.forEach(function(ln,i){gB.appendChild(svg("line",{"class":"lsep",x1:ln.x,x2:ln.x+ln.w,y1:ln.y-m.LG/2,y2:ln.y-m.LG/2}));txt("ll",ln.x+1,ln.y+m.CH/2,ln.code,"lane:"+i);});
+  ev.nh={};ev.nm={};ev.nl={};ev.dots=[];
+  NODES.forEach(function(n){var p=L.pos[n.u];if(!p)return;var pod=isPod(n.u),cy=p.y+m.CH/2;
+    var h=svg("rect",{"class":"nh",x:p.x,y:p.y,width:m.CW,height:m.CH,"data-u":n.u});gC.appendChild(h);
+    var g=svg("g",{"class":"nm "+n.L+(pod?" pod":""),"data-u":n.u});
+    g.appendChild(svg("rect",{"class":"no",x:p.x+1.5,y:p.y+1.5,width:m.CW-3,height:m.CH-3,rx:3.5}));
+    g.appendChild(svg("rect",{"class":"nk",x:p.x+5.5,y:cy-4.5,width:9,height:9,rx:2}));
+    var t=svg("text",{"class":"nl",x:p.x+19,y:cy});g.appendChild(t);
+    var used=0;
+    if(pod){var mem=(intoA[n.u]||[]).filter(function(a){return MEM[a.rel];}),show=mem.slice(0,7);
+      show.forEach(function(a,i){var cls=a.og==="closure"?"dv":a.rel==="cut"?"ct":a.y==null?"ud":"";
+        var d=svg("circle",{"class":"md "+cls,cx:p.x+m.CW-7-i*6.2,cy:cy,r:2.3});g.appendChild(d);ev.dots.push([d,a]);});
+      used=show.length?show.length*6.2+5:0;}
+    n._lw=m.CW-19-4-used;ev.nh[n.u]=h;ev.nm[n.u]=g;ev.nl[n.u]=t;gM.appendChild(g);});
+  s.appendChild(gB);s.appendChild(gC);s.appendChild(gW);s.appendChild(gM);host.appendChild(s);
+  ev.svg=s;ev.gW=gW;ev.k=0;ev.V={x:0,y:0,w:L.W,h:L.H};ev.hpts=[];
+  /* selection, hover */
+  s.addEventListener("click",function(e){if(ev.dragged){ev.dragged=false;return;}var t=e.target;
+    var w=t.closest("[data-e]");if(w){var key=w.getAttribute("data-e");select({t:key.charAt(0)==="a"?"abst":"route",id:key.slice(2)});return;}
+    var nn=t.closest("[data-u]");if(nn){var u=nn.getAttribute("data-u");if(e.shiftKey)togglePin(u);else select({t:"node",id:u});return;}
+    var z=t.closest("[data-zoom]");if(z)zoomRegion(z.getAttribute("data-zoom"));});
+  s.addEventListener("dblclick",function(e){e.preventDefault();zoomAt(e.clientX,e.clientY,e.shiftKey?1/1.8:1.8);});
+  s.addEventListener("mousemove",function(e){if(ev.drag&&ev.drag.moved){tipHide();return;}var t=e.target,w=t.closest("[data-e]"),nn=w?null:t.closest("[data-u]");
+    if(ev.hov&&(!nn||nn.getAttribute("data-u")!==ev.hov)){if(ev.nm[ev.hov])ev.nm[ev.hov].classList.remove("hov");ev.hov=null;}
+    if(w)tipShow(edgeTip(w.getAttribute("data-e")),e.clientX,e.clientY);
+    else if(nn){var u=nn.getAttribute("data-u");ev.hov=u;ev.nm[u].classList.add("hov");tipShow(nodeTip(N[u]),e.clientX,e.clientY);}
+    else tipHide();});
+  s.addEventListener("mouseleave",function(){tipHide();if(ev.hov&&ev.nm[ev.hov])ev.nm[ev.hov].classList.remove("hov");ev.hov=null;});
+  /* moving and zooming */
+  var ptrs={};ev.drag=null;
+  s.addEventListener("pointerdown",function(e){if(e.pointerType==="mouse"&&e.button!==0)return;ptrs[e.pointerId]={x:e.clientX,y:e.clientY};var ids=Object.keys(ptrs);
+    if(ids.length===1){ev.drag={id:e.pointerId,x:e.clientX,y:e.clientY,vx:ev.V.x,vy:ev.V.y,moved:false};ev.dragged=false;}
+    else if(ids.length===2){var a=ptrs[ids[0]],b=ptrs[ids[1]];ev.drag={pinch:true,moved:true,d:Math.hypot(a.x-b.x,a.y-b.y)||1,cx:(a.x+b.x)/2,cy:(a.y+b.y)/2,V:{x:ev.V.x,y:ev.V.y,w:ev.V.w,h:ev.V.h}};ev.dragged=true;}});
+  s.addEventListener("pointermove",function(e){if(!ptrs[e.pointerId])return;ptrs[e.pointerId]={x:e.clientX,y:e.clientY};var dg=ev.drag;if(!dg)return;
+    if(dg.pinch){var ids=Object.keys(ptrs);if(ids.length<2)return;var a=ptrs[ids[0]],b=ptrs[ids[1]],d=Math.hypot(a.x-b.x,a.y-b.y);if(d<8)return;
+      var r=s.getBoundingClientRect(),V=dg.V,w=Math.max(L.W/9,Math.min(L.W,V.w*dg.d/d)),hh=w*L.H/L.W,ux=V.x+(dg.cx-r.left)/r.width*V.w,uy=V.y+(dg.cy-r.top)/r.height*V.h,mx=(a.x+b.x)/2,my=(a.y+b.y)/2;
+      setView(ux-(mx-r.left)/r.width*w,uy-(my-r.top)/r.height*hh,w);return;}
+    if(dg.id!==e.pointerId)return;var dx=e.clientX-dg.x,dy=e.clientY-dg.y;
+    if(!dg.moved){if(Math.abs(dx)+Math.abs(dy)<5)return;dg.moved=true;ev.dragged=true;try{s.setPointerCapture(e.pointerId);}catch(_){ }s.classList.add("grab");}
+    setView(dg.vx-dx/ev.k,dg.vy-dy/ev.k,ev.V.w);});
+  function up(e){delete ptrs[e.pointerId];if(ev.drag&&(ev.drag.pinch||ev.drag.id===e.pointerId)){ev.drag=null;s.classList.remove("grab");}}
+  s.addEventListener("pointerup",up);s.addEventListener("pointercancel",up);
+  s.addEventListener("wheel",function(e){if(!(e.ctrlKey||e.metaKey))return;e.preventDefault();zoomAt(e.clientX,e.clientY,Math.exp(-e.deltaY*(e.deltaMode===1?0.05:0.0022)));},{passive:false});
+  s.addEventListener("keydown",function(e){var V=ev.V,k=e.key;
+    if(k==="+"||k==="="){zoomBy(1.5);}else if(k==="-"||k==="_"){zoomBy(1/1.5);}else if(k==="0"){zoomTo({x:0,y:0,w:L.W,h:L.H},0);}
+    else if(k==="ArrowLeft"){setView(V.x-V.w*0.15,V.y,V.w);}else if(k==="ArrowRight"){setView(V.x+V.w*0.15,V.y,V.w);}
+    else if(k==="ArrowUp"){setView(V.x,V.y-V.h*0.15,V.w);}else if(k==="ArrowDown"){setView(V.x,V.y+V.h*0.15,V.w);}else return;e.preventDefault();});
+  setView(0,0,L.W);}
+function setView(x,y,w){var L=ev.L;w=Math.max(L.W/9,Math.min(L.W,w));var h=w*L.H/L.W;x=Math.max(0,Math.min(L.W-w,x));y=Math.max(0,Math.min(L.H-h,y));
+  ev.V={x:x,y:y,w:w,h:h};ev.svg.setAttribute("viewBox",x.toFixed(2)+" "+y.toFixed(2)+" "+w.toFixed(2)+" "+h.toFixed(2));
+  var cw=ev.svg.clientWidth||ev.svg.getBoundingClientRect().width||1000,k=cw/w;
+  if(Math.abs(k-ev.k)>1e-4*k){ev.k=k;relabel();if(!ev.raf)ev.raf=requestAnimationFrame(function(){ev.raf=0;drawWires();});}
+  var zl=document.getElementById("zl");if(zl)zl.textContent=Math.round(100*L.W/w)+"%";}
+function zoomAt(cx,cy,f){var r=ev.svg.getBoundingClientRect(),V=ev.V,L=ev.L,fx=(cx-r.left)/r.width,fy=(cy-r.top)/r.height,ux=V.x+fx*V.w,uy=V.y+fy*V.h,
+  w=Math.max(L.W/9,Math.min(L.W,V.w/f)),h=w*L.H/L.W;setView(ux-fx*w,uy-fy*h,w);}
+function zoomBy(f){var r=ev.svg.getBoundingClientRect(),top=Math.max(r.top,0),bot=Math.min(r.bottom,window.innerHeight);zoomAt(r.left+r.width/2,bot>top?(top+bot)/2:r.top+r.height/2,f);}
+function zoomTo(box,pad){var L=ev.L,p=pad==null?16:pad,w=Math.max(box.w+2*p,(box.h+2*p)*L.W/L.H);w=Math.max(L.W/9,Math.min(L.W,w));var h=w*L.H/L.W,
+  x=box.x+box.w/2-w/2,y=box.y+box.h/2-h/2,V0=ev.V,t0=null,still=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if(ev.anim)cancelAnimationFrame(ev.anim);if(still){setView(x,y,w);return;}
+  function step(ts){if(t0==null)t0=ts;var u=Math.min(1,(ts-t0)/240),e=u<.5?2*u*u:1-Math.pow(-2*u+2,2)/2;setView(V0.x+(x-V0.x)*e,V0.y+(y-V0.y)*e,V0.w+(w-V0.w)*e);ev.anim=u<1?requestAnimationFrame(step):0;}
+  ev.anim=requestAnimationFrame(step);}
+function zoomRegion(code){var L=ev.L,m=MAP,p=code.split(":"),b;
+  if(p[0]==="band"){b=L.bands[p[1]];zoomTo({x:0,y:b.y,w:L.W,h:b.h},10);}
+  else if(p[0]==="col"){b=L.bands[p[1]];var c=L.cols[p[2]];zoomTo({x:c.x,y:b.y,w:c.w,h:b.h},10);}
+  else if(p[0]==="lane"){var ln=L.lanes[+p[1]];zoomTo({x:ln.x,y:ln.y,w:ln.w,h:ln.h},18);}}
+function relabel(){var m=MAP,k=ev.k,fs=Math.min(11.5,m.CH*k*0.8),cw=fs*0.57;
+  ev.svg.style.setProperty("--fs",(fs/k).toFixed(3)+"px");ev.svg.style.setProperty("--fh",(Math.max(9.5,Math.min(13,fs+1.5))/k).toFixed(3)+"px");
+  ev.svg.classList.toggle("nolabel",fs<6.4);
+  for(var u in ev.nl){var n=N[u],t=ev.nl[u],max=Math.floor(n._lw*k/cw),lb=n._pl,extra="",key;
+    if(lb.length>max)lb=max>3?lb.slice(0,max-1)+"…":"";else{var x="  "+n.y+" · "+n.s;if(lb.length+x.length<=max)extra=x;}
+    key=lb+"|"+extra;if(t._k===key)continue;t._k=key;t.textContent=lb;if(extra){var ts=svg("tspan",{"class":"nx"});ts.textContent=extra;t.appendChild(ts);}}}
+
+/* ---- map: lines */
+function visNode(u){var n=N[u];if(!n||!ev.L.pos[u]||n.y==null||n.y>st.year)return false;return !(n.ry!=null&&n.ry<=st.year&&!st.gone);}
+function legPath(a,b){var m=MAP,pa=ev.L.pos[a],pb=ev.L.pos[b],x1=pa.x+m.CW/2,x2=pb.x+m.CW/2,y1,y2,c1,c2;
+  if(Math.abs(pa.y-pb.y)<m.CH){y1=pa.y+2;y2=pb.y+2;c1=c2=y1-Math.min(48,14+Math.abs(x2-x1)*0.07);}
+  else if(pa.y<pb.y){y1=pa.y+m.CH-1.5;y2=pb.y+1.5;c1=c2=(y1+y2)/2;}
+  else{y1=pa.y+1.5;y2=pb.y+m.CH-1.5;c1=c2=(y1+y2)/2;}
+  return [x1,y1,x1,c1,x2,c2,x2,y2];}
+function bez(P,t){var u=1-t;return [u*u*u*P[0]+3*u*u*t*P[2]+3*u*t*t*P[4]+t*t*t*P[6],u*u*u*P[1]+3*u*u*t*P[3]+3*u*t*t*P[5]+t*t*t*P[7]];}
+function handlePoint(P){var g=ev.L.gap,k=ev.k,c=[],cross=(P[1]<=g.y0&&P[7]>=g.y1)||(P[7]<=g.y0&&P[1]>=g.y1);
+  if(cross){var inc=P[7]>P[1];[0.5,0.3,0.7,0.16,0.84].forEach(function(fr){var Y=g.y0+(g.y1-g.y0)*fr,lo=0,hi=1;
+    for(var i=0;i<24;i++){var t=(lo+hi)/2;if((bez(P,t)[1]<Y)===inc)lo=t;else hi=t;}c.push(bez(P,(lo+hi)/2));});}
+  else[0.5,0.36,0.64,0.24,0.76].forEach(function(t){c.push(bez(P,t));});
+  var best=c[0],bd=-1;
+  for(var i=0;i<c.length;i++){var dmin=1e9;for(var j=0;j<ev.hpts.length;j++){var qq=ev.hpts[j],d=Math.hypot((c[i][0]-qq[0])*k,(c[i][1]-qq[1])*k);if(d<dmin)dmin=d;}
+    if(dmin>=11){best=c[i];break;}if(dmin>bd){bd=dmin;best=c[i];}}
+  ev.hpts.push(best);return best;}
+function drawEdge(kind,id,legs,cls){var k=ev.k,g=svg("g",{"class":"edge "+cls,"data-e":kind+":"+id}),first=null,gp=ev.L.gap;
+  function f(v){return v.toFixed(1);}
+  legs.forEach(function(l){if(l[0]===l[1]||!visNode(l[0])||!visNode(l[1]))return;var P=legPath(l[0],l[1]),cross=(P[1]<=gp.y0&&P[7]>=gp.y1)||(P[7]<=gp.y0&&P[1]>=gp.y1);
+    if(!first||(cross&&!first.cross))first={P:P,cross:cross};
+    var d="M"+f(P[0])+" "+f(P[1])+"C"+f(P[2])+" "+f(P[3])+","+f(P[4])+" "+f(P[5])+","+f(P[6])+" "+f(P[7]);
+    g.appendChild(svg("path",{"class":"ln",d:d}));g.appendChild(svg("path",{"class":"hit",d:d}));
+    if(kind==="r"){var dir=P[7]>=P[5]?1:-1,a=4.6/k;g.appendChild(svg("path",{"class":"ah",d:"M"+f(P[6]-a*0.72)+" "+f(P[7]-dir*a*1.5)+"L"+f(P[6])+" "+f(P[7])+"L"+f(P[6]+a*0.72)+" "+f(P[7]-dir*a*1.5)+"Z"}));}
+    else g.appendChild(svg("circle",{"class":"ed",cx:f(P[6]),cy:f(P[7]),r:(2.3/k).toFixed(2)}));});
+  if(!first)return false;
+  var h=handlePoint(first.P),r=4.3/k;
+  if(kind==="r")g.appendChild(svg("path",{"class":"hd",d:"M"+f(h[0])+" "+(h[1]-r*1.15).toFixed(2)+"L"+(h[0]+r*1.15).toFixed(2)+" "+f(h[1])+"L"+f(h[0])+" "+(h[1]+r*1.15).toFixed(2)+"L"+(h[0]-r*1.15).toFixed(2)+" "+f(h[1])+"Z"}));
+  else g.appendChild(svg("circle",{"class":"hd",cx:f(h[0]),cy:f(h[1]),r:r.toFixed(2)}));
+  ev.gW.appendChild(g);return true;}
+function drawWires(){var gW=ev.gW;if(!gW||!gW.isConnected||!ev.k)return;while(gW.firstChild)gW.removeChild(gW.firstChild);ev.hpts=[];
+  var y=st.year,s=st.sel,done={},mode=st.emode,F={},later=[];st.pins.forEach(function(u){F[u]=1;});if(s&&s.t==="node")F[s.id]=1;
+  function A(e,extra){var key="a:"+e.id;if(done[key]||e.y==null||e.y>y)return;var isSel=s&&s.t==="abst"&&s.id===e.id;
+    if(e.og==="closure"&&!st.derived&&!isSel)return;
+    if(isSel&&extra!==" sel"){if(later.indexOf(e)<0)later.push(e);return;}
+    if(drawEdge("a",e.id,e.s.map(function(u){return [u,e.d];}),"a "+e.rel+(e.og==="closure"?" der":"")+(e.y===y?" now":"")+(extra||"")))done[key]=1;}
+  function R(r,extra){var key="r:"+r.u;if(done[key]||r.y==null||r.y>y)return;if(r.ry!=null&&r.ry<=y&&!st.gone)return;var isSel=s&&s.t==="route"&&s.id===r.u;
+    if(isSel&&extra!==" sel"){if(later.indexOf(r)<0)later.push(r);return;}
+    if(drawEdge("r",r.u,r.i.map(function(u){return [u,r.o];}),"r"+(r.y===y?" now":"")+(extra||"")))done[key]=1;}
+  if(mode!=="sel"){
+    ABST.forEach(function(e){if(e.og==="closure")return;
+      if(mode==="all"||e._x)A(e);else if(e.y===y&&e.rel!=="complement"&&e.rel!=="equal"&&e.rel!=="disjoint")A(e);});
+    ROUTES.forEach(function(r){if(r._x)R(r);});}
+  Object.keys(F).forEach(function(u){var sel=!!(s&&s.t==="node"&&s.id===u);
+    (intoA[u]||[]).concat(fromA[u]||[]).forEach(function(e){if(sel||(F[e.d]&&e.s.some(function(x){return F[x];})))A(e," foc");});
+    (inR[u]||[]).concat(outR[u]||[]).forEach(function(r){if(sel||(F[r.o]&&r.i.some(function(x){return F[x];})))R(r," foc");});});
+  if(s&&s.t==="abst"&&AB[s.id]&&later.indexOf(AB[s.id])<0)later.push(AB[s.id]);
+  if(s&&s.t==="route"&&RT[s.id]&&later.indexOf(RT[s.id])<0)later.push(RT[s.id]);
+  later.forEach(function(o){if(o.id!=null)A(o," sel");else R(o," sel");});}
+
+/* ------------------------------------------------------------------ rail */
+/* Statements, references and check data are in detail.json; it is fetched the first time something is selected. */
+var D={r:{},a:{},n:{},s:{}},detailP=null;
+function loadDetail(){if(!detailP){
+    var src=(window.__GEN__&&window.__GEN__.detail)?Promise.resolve(window.__GEN__.detail):fetch("detail.json").then(function(r){if(!r.ok)throw new Error("detail.json: HTTP "+r.status);return r.json();});
+    detailP=src.then(function(arr){arr.forEach(function(x){(D[x.k]=D[x.k]||{})[x.u||x.id||x.key]=x;});return D;});
+    detailP.catch(function(){detailP=null;});}
+  return detailP;}
+function lazy(rail,fn){var box=el("div",{class:"lazy"},[el("p",{class:"muted small",text:"Loading the statement and its sources…"})]),tok=st.sel;rail.appendChild(box);
+  loadDetail().then(function(DD){if(st.sel!==tok||!box.isConnected)return;box.innerHTML="";fn(box,DD);})
+    .catch(function(err){if(!box.isConnected)return;box.innerHTML="";box.appendChild(el("p",{class:"no",text:"The statement and its sources could not be loaded ("+err.message+"). Reload the page to try again."}));});
+  return box;}
+function refList(refs){var ul=el("ul",{class:"refs"});refs.forEach(function(r){ul.appendChild(el("li",{text:r}));});return ul;}
+function fmtNum(x){return Number.isInteger(x)?String(x):String(+x.toPrecision(5));}
+function dataView(o){if(o==null)return document.createTextNode("");
+  if(typeof o==="boolean")return document.createTextNode(o?"holds":"fails");
+  if(typeof o!=="object")return document.createTextNode(typeof o==="number"?fmtNum(o):String(o));
+  if(Array.isArray(o))return document.createTextNode(o.length?o.map(function(x){return x!==null&&typeof x==="object"?JSON.stringify(x):typeof x==="number"?fmtNum(x):String(x);}).join(", "):"none");
+  var dl=el("dl",{class:"kv data"});Object.keys(o).forEach(function(k){dl.appendChild(el("dt",{text:k}));var dd=el("dd");dd.appendChild(dataView(o[k]));dl.appendChild(dd);});return dl;}
+function routeBtn(r){return el("button",{class:"linkbtn mono",type:"button",text:r.u,on:{click:function(){select({t:"route",id:r.u});}}});}
+function edgeSentence(e){var p=el("div",{class:"sent"});e.s.forEach(function(u,i){if(i)p.appendChild(document.createTextNode(" + "));p.appendChild(nodeBtn(u));});
+  p.appendChild(document.createTextNode(" "+(REL_WORD[e.rel]||e.rel)+" "));p.appendChild(nodeBtn(e.d));return p;}
+function routeSentence(r){var p=el("div",{class:"sent"});r.i.forEach(function(u,i){if(i)p.appendChild(document.createTextNode(" ∧ "));p.appendChild(nodeBtn(u));});
+  p.appendChild(document.createTextNode(" → "));p.appendChild(nodeBtn(r.o));return p;}
+var YEAR_RULE={GPT:"earliest year among the references of the edge; without a dated source, the latest year of its ends",QRT:"earliest year among the references of the edge; without a dated source, the latest year of its ends",
+  HEP:"the later of the start year of its step and the years of its ends",EM:"the later of the year of its paragraph and the years of its inputs and target"};
+var NODE_YEAR_RULE={GPT:"earliest year among its dated edges",QRT:"earliest of its reference years and its dated edges",HEP:"first year in the years field of the node",EM:"year of the paragraph of the reader that introduces it"};
+function kvRow(dl,k,v){if(v==null||v===""||(Array.isArray(v)&&!v.length))return;dl.appendChild(el("dt",{text:k}));dl.appendChild(typeof v==="string"?el("dd",{text:v}):el("dd",null,[v]));}
+function stepBlock(box,S){box.appendChild(el("h3",{text:"Step "+S.n+" of the Standard Model history"}));
+  box.appendChild(el("div",{class:"sent",text:S.title+" ("+S.years+")"+(S.driver?" · "+S.driver:"")}));
+  if(S.text)box.appendChild(el("details",null,[el("summary",{text:"Text of the step"}),el("div",{class:"stmt",html:rich(S.text)})]));
+  if(S.refs&&S.refs.length)box.appendChild(el("details",null,[el("summary",{text:"References of the step ("+S.refs.length+")"}),refList(S.refs)]));}
+function routeBody(box,r,DD){var d=DD.r[r.u]||{},s=d.s||r.x;
+  box.appendChild(el("div",{class:"stmt",html:(d.title?"<b>"+esc(d.title)+".</b> ":"")+(s?rich(s):"<span class='muted'>No statement is recorded for this route.</span>")}));
+  var dl=el("dl",{class:"kv"});
+  kvRow(dl,"Condition",d.cond);kvRow(dl,"Via",d.via);
+  kvRow(dl,"Status",[r.st,r.gr?"grade "+r.gr:null].filter(Boolean).join(" · "));
+  kvRow(dl,"Where",d.where);kvRow(dl,"Scope",d.scope);kvRow(dl,"Method",d.method);
+  if(d.tags)kvRow(dl,"Kind in the book",d.tags.join(", "));
+  kvRow(dl,"Source",d.src);
+  kvRow(dl,"Year",r.y==null?"none (book or version order)":r.y+(YEAR_RULE[r.b]?" · "+YEAR_RULE[r.b]:"")+(d.yp?" ("+d.yp+")":""));
+  if(dl.firstChild)box.appendChild(dl);
+  if(d.summary){box.appendChild(el("h3",{text:"Check"}));box.appendChild(el("div",{class:"stmt",text:d.summary}));}
+  if(d.note)box.appendChild(el("p",{class:"muted small",text:d.note}));
+  if(d.certs)box.appendChild(el("p",{class:"muted small",text:"Certificates: "+d.certs.join(", ")}));
+  if(d.data){box.appendChild(el("h3",{text:"Data of the check"}));box.appendChild(dataView(d.data));}
+  if(d.uses&&d.uses.length){box.appendChild(el("h3",{text:"Uses"}));var ul=el("ul",{class:"items"});
+    d.uses.forEach(function(u){if(RT[u])ul.appendChild(el("li",null,[routeBtn(RT[u]),el("span",{html:" "+rich(RT[u].x)})]));});box.appendChild(ul);}
+  if(d.step&&DD.s[d.step])stepBlock(box,DD.s[d.step]);
+  if(d.refs&&d.refs.length){box.appendChild(el("h3",{text:"References"}));box.appendChild(refList(d.refs));}}
+function routeCard(r,DD){var c=el("div",{class:"card2"});
+  c.appendChild(el("div",{class:"hd2"},[routeBtn(r),el("span",{text:[r.k,r.st,r.gr?"grade "+r.gr:null,yr(r.y)].filter(Boolean).join(" · ")})]));
+  c.appendChild(routeSentence(r));routeBody(c,r,DD);return c;}
+
+function renderRail(){var rail=document.getElementById("rail");if(!rail)return;rail.innerHTML="";rail.scrollTop=0;var s=st.sel;
+  if(!s){rail.appendChild(el("h2",{text:"Detail"}));rail.appendChild(el("p",{class:"muted",text:"Nothing selected. Select a node, a line or the mark on a line, a stage of the cycle or a row of a table. A line opens its statement, its references and the data of its checks."}));
+    var n=META.numbers;rail.appendChild(el("dl",{class:"kv"},[el("dt",{text:"Nodes"}),el("dd",{text:n.nodes+" ("+n.nodes_dated+" with a year)"}),el("dt",{text:"Routes"}),el("dd",{text:n.routes+" ("+n.routes_dated+" with a year)"}),
+      el("dt",{text:"Abstraction"}),el("dd",{text:n.abst+" edges: "+n.abst_stated+" stated, "+n.closure.derived+" derived by closure"}),el("dt",{text:"Clusters"}),el("dd",{text:n.classes+" state classes after glue, "+n.effects+" effects"}),
+      el("dt",{text:"Built"}),el("dd",{text:META.generated})]));return;}
+  if(s.t==="node")return railNode(rail,s.id);if(s.t==="abst")return railAbst(rail,s.id);if(s.t==="route")return railRoute(rail,s.id);if(s.t==="stage")return railStage(rail,s.id);}
+function relLine(e,side){var li=el("li");li.appendChild(edgeBtn(e));li.appendChild(document.createTextNode(" "+e.rel+(e.og==="closure"?" (derived) ":" ")));
+  (side==="src"?e.s:[e.d]).forEach(function(u,i){if(i)li.appendChild(document.createTextNode(" + "));li.appendChild(nodeBtn(u));});
+  li.appendChild(el("span",{class:"muted",text:"  "+e.st+(e.y!=null?", "+e.y:"")}));return li;}
+function group(rail,title,arr,side,open){if(!arr.length)return;var d=el("details",open?{open:true}:null,[el("summary",{text:title+" ("+arr.length+")"})]);
+  var ul=el("ul",{class:"items"});arr.slice(0,80).forEach(function(e){ul.appendChild(relLine(e,side));});d.appendChild(ul);rail.appendChild(d);}
+function railNode(rail,u){var n=N[u];rail.appendChild(el("div",{class:"mono muted",text:u}));rail.appendChild(el("h2",{html:rich(n.l)}));
+  rail.appendChild(el("div",null,[tag(LAYER[n.L]+" · "+n.s,n.L),tag(TIER[n.t]),tag(yr(n.y)+(n.ry?", removed "+n.ry:"")),tag(n.st)]));
+  rail.appendChild(el("div",{class:"muted small",text:BT[n.b]}));
+  if(st.view==="evolution"&&n.y!=null){var kept=st.pins.indexOf(u)>=0;
+    rail.appendChild(el("div",{class:"ctl",style:"margin:6px 0"},[el("button",{type:"button","aria-pressed":kept?"true":"false",text:kept?"Release":"Keep selected",on:{click:function(){togglePin(u);}}}),
+      el("button",{type:"button",text:"Show on the map",on:{click:function(){goNode(u);}}})]));}
+  var def=el("div",{class:"stmt",html:n.d?rich(n.d):""});if(!n.d)def.style.display="none";rail.appendChild(def);
+  lazy(rail,function(box,DD){var d=DD.n[u]||{};
+    if(d.df){def.innerHTML=rich(d.df);def.style.display="";}
+    var dl=el("dl",{class:"kv"});
+    kvRow(dl,"Theory",d.theory?d.theory+(d.family?" · "+d.family:""):null);kvRow(dl,"Role",d.role);kvRow(dl,"Kind",d.kind);
+    kvRow(dl,"Symbol",d.symbol);kvRow(dl,"Structure",d.math);kvRow(dl,"Properties",d.props);kvRow(dl,"Class",d.uir);kvRow(dl,"Content",d.sub);
+    kvRow(dl,"Years",d.years);kvRow(dl,"Status",d.status);kvRow(dl,"Recorded in",d.net);
+    if(d.glue)kvRow(dl,"Glued to",d.glue.join(", "));
+    kvRow(dl,"Source",d.src);
+    kvRow(dl,"Year",n.y==null?"none (book or version order)":n.y+(NODE_YEAR_RULE[n.b]?" · "+NODE_YEAR_RULE[n.b]:"")+" ("+n.yp+")");
+    if(dl.firstChild)box.appendChild(dl);
+    function reqs(title,arr){if(!arr||!arr.length)return;box.appendChild(el("h3",{text:title}));var ul=el("ul",{class:"items"});arr.forEach(function(x){ul.appendChild(el("li",null,[nodeBtn(x[0]),el("span",{class:"muted",text:" "+x[1]})]));});box.appendChild(ul);}
+    reqs("The witness requires",d.req);reqs("The witness is blind to",d.blind);
+    if(d.refs&&d.refs.length){box.appendChild(el("h3",{text:"References"}));box.appendChild(refList(d.refs));}});
+  var into=intoA[u]||[],from=fromA[u]||[];
+  rail.appendChild(el("h3",{text:"Edges of this node"}));
+  group(rail,"Criterion: what defines it",into.filter(function(e){return e.rel==="criterion";}),"src",true);
+  group(rail,"Test: what decides membership",into.filter(function(e){return e.rel==="test";}),"src",true);
+  group(rail,"Clusters these nodes",into.filter(function(e){return MEM[e.rel]&&e.og!=="closure";}),"src",true);
+  group(rail,"Derived members",into.filter(function(e){return e.rel==="member"&&e.og==="closure";}),"src",false);
+  group(rail,"Excluded",into.filter(function(e){return e.rel==="excluded";}),"src",false);
+  group(rail,"Is in the cluster",from.filter(function(e){return MEM[e.rel]&&e.og!=="closure";}),"dst",true);
+  group(rail,"Is in, derived",from.filter(function(e){return e.rel==="member"&&e.og==="closure";}),"dst",false);
+  group(rail,"Is not in",from.filter(function(e){return e.rel==="excluded";}),"dst",false);
+  var other=into.concat(from).filter(function(e){return !MEM[e.rel]&&["criterion","test","excluded"].indexOf(e.rel)<0||(e.rel==="criterion"||e.rel==="test")&&e.s.indexOf(u)>=0;});
+  if(other.length){var dd=el("details",null,[el("summary",{text:"Other abstraction edges ("+other.length+")"})]),ul=el("ul",{class:"items"});
+    other.forEach(function(e){var li=el("li");li.appendChild(edgeBtn(e));li.appendChild(document.createTextNode(" "+e.rel+" "));var o=e.s.indexOf(u)>=0?[e.d]:e.s;o.forEach(function(x,i){if(i)li.appendChild(document.createTextNode(" + "));li.appendChild(nodeBtn(x));});ul.appendChild(li);});dd.appendChild(ul);rail.appendChild(dd);}
+  function routes(title,arr){if(!arr.length)return;var d2=el("details",null,[el("summary",{text:title+" ("+arr.length+")"})]),ul2=el("ul",{class:"items"});
+    arr.slice(0,60).forEach(function(r){ul2.appendChild(el("li",null,[routeBtn(r),el("span",{class:"muted",text:" "+r.k+", "+yr(r.y)+" "}),el("span",{html:rich(r.x)})]));});
+    d2.appendChild(ul2);rail.appendChild(d2);}
+  routes("Routes into it",inR[u]||[]);routes("Routes out of it",outR[u]||[]);
+  if(!into.length&&!from.length&&!(inR[u]||[]).length&&!(outR[u]||[]).length)rail.appendChild(el("p",{class:"muted small",text:"This node has no edge."}));}
+var CRIT_WORD={sym:"invariance under a group action",sub:"membership in a subtheory",par:"factorisation over a partition",con:"a constraint or an axiom list","con+sym":"a constraint and an invariance",def:"deficit against a reference model, decided by a witness",fam:"same process family or physical system",agg:"aggregation: sum, direct sum or moment",lin:"model lineage",str:"substitution in a route",none:"none of the four types"};
+function railAbst(rail,id){var e=AB[id];rail.appendChild(el("div",{class:"mono muted",text:e.id+" · cluster edge ("+e.rel+(e.og==="closure"?", derived":"")+")"}));
+  rail.appendChild(edgeSentence(e));
+  rail.appendChild(el("div",null,[tag(e.st),tag(yr(e.y)),tag(e.og),tag(stageName(e.sg)+(e.ru?" · "+e.ru:""))]));
+  if(st.view==="evolution"&&e.y!=null&&e.y>st.year)rail.appendChild(el("p",{class:"muted small",text:"This edge enters in "+e.y+"; it is not drawn at the selected year."}));
+  if(e.nt&&e.og!=="closure")rail.appendChild(el("div",{class:"stmt",text:e.nt}));
+  var dl=el("dl",{class:"kv"});
+  if(e.crit)kvRow(dl,"Criterion",CRIT_WORD[e.crit]||e.crit);
+  if(e.fr.length){var fr=el("span");e.fr.forEach(function(u,i){if(i)fr.appendChild(document.createTextNode(", "));fr.appendChild(nodeBtn(u));});kvRow(dl,"Frame",fr);}
+  kvRow(dl,"Recorded as",e.pv);rail.appendChild(dl);
+  lazy(rail,function(box,DD){var d=DD.a[id]||{},any=false;
+    if(d.via){any=true;box.appendChild(el("h3",{text:"Derivation by rule R20"}));var ol=el("ol",{class:"steps"});
+      d.via.forEach(function(x){var li=el("li");
+        if(AB[x]){li.appendChild(edgeSentence(AB[x]));li.appendChild(edgeBtn(AB[x]));li.appendChild(el("span",{class:"muted small",text:"  "+AB[x].st+(AB[x].nt?": "+AB[x].nt:"")}));}
+        else if(RT[x])li.appendChild(routeCard(RT[x],DD));
+        else li.appendChild(document.createTextNode(x));
+        META.inclusions.forEach(function(i){if(i.source!==x)return;var p=el("div",{class:"muted small"});p.appendChild(document.createTextNode("used as: "));p.appendChild(nodeBtn(i.sub));p.appendChild(document.createTextNode(" ⊆ "));p.appendChild(nodeBtn(i.sup));
+          if(i.frame)p.appendChild(document.createTextNode(" ("+i.frame+")"));li.appendChild(p);});
+        ol.appendChild(li);});box.appendChild(ol);}
+    if(d.links&&d.links.length){any=true;var imp=[],thm=[];d.links.forEach(function(u){var r=RT[u];if(!r)return;((r.gr==="import"||r.st==="imported")?imp:thm).push(r);});
+      if(thm.length){box.appendChild(el("h3",{text:thm.length>1?"Rests on these routes":"Rests on this route"}));thm.forEach(function(r){box.appendChild(routeCard(r,DD));});}
+      if(imp.length){box.appendChild(el("h3",{text:"Imported data"}));imp.forEach(function(r){box.appendChild(routeCard(r,DD));});}}
+    if(d.kern){any=true;box.appendChild(el("h3",{text:"Computed on explicit two-qubit states"}));var tb=el("tbody");
+      d.kern.forEach(function(k){tb.appendChild(el("tr",null,[el("td",{text:k.obj}),el("td",{text:(k.free?"in ":"not in ")+k.set}),el("td",{class:"muted",text:k.grade+": "+k.detail})]));});
+      box.appendChild(el("div",{class:"scroll-x"},[el("table",null,[el("thead",null,[el("tr",null,[el("th",{text:"State"}),el("th",{text:"Result"}),el("th",{text:"How"})])]),tb])]));
+      box.appendChild(el("p",{class:"muted small",text:"From the kernel table of the Checks view (frame and tolerances are stated there)."}));}
+    if(d.concept){any=true;var c=d.concept;box.appendChild(el("h3",{text:"Shared concept of Part I"}));box.appendChild(el("div",{class:"sent",text:c.label}));
+      if(c.note)box.appendChild(el("div",{class:"stmt",text:c.note}));
+      if(c.members){var p2=el("p",{class:"small"});c.members.forEach(function(m,i){if(i)p2.appendChild(document.createTextNode(", "));p2.appendChild(nodeBtn(m));});box.appendChild(p2);}}
+    if(d.step&&DD.s[d.step]){any=true;stepBlock(box,DD.s[d.step]);}
+    if(!any)box.appendChild(el("p",{class:"muted small",text:"No route or reference is attached to this edge: it rests on the definitions of its two nodes. Select either node for its definition and references."}));});}
+function railRoute(rail,id){var r=RT[id];rail.appendChild(el("div",{class:"mono muted",text:r.u+" · route ("+r.k+")"}));
+  rail.appendChild(routeSentence(r));
+  rail.appendChild(el("div",null,[tag(r.st||"no status"),r.gr?tag("grade "+r.gr):null,tag(yr(r.y)+(r.ry?", removed "+r.ry:"")),tag(stageName(r.sg)+(r.ru?" · "+r.ru:""))]));
+  if(st.view==="evolution"&&r.y!=null&&r.y>st.year)rail.appendChild(el("p",{class:"muted small",text:"This route enters in "+r.y+"; it is not drawn at the selected year."}));
+  if(r.ph!==r.p8)rail.appendChild(el("p",{class:"muted small",text:"Part II phase: "+r.p8+". It is counted under the phase cluster here because a cluster edge restates it."}));
+  lazy(rail,function(box,DD){routeBody(box,r,DD);
+    var users=ABST.filter(function(e){var d=DD.a[e.id];return e.rt===r.u||(d&&d.links&&d.links.indexOf(r.u)>=0);});
+    if(users.length){box.appendChild(el("h3",{text:"Cluster edges that rest on it"}));var ul=el("ul",{class:"items"});users.slice(0,40).forEach(function(e){var li=relLine(e,"src");li.appendChild(document.createTextNode(" → "));li.appendChild(nodeBtn(e.d));ul.appendChild(li);});box.appendChild(ul);}});}
+function railStage(rail,id){var s=stageOf[id],y=st.year;rail.appendChild(el("div",{class:"mono muted",text:id+" · stage"}));rail.appendChild(el("h2",{text:stageName(id)}));rail.appendChild(el("p",{text:s.what}));
+  var rl=el("ul",{class:"items"});s.rules.forEach(function(r){var R=META.rules.filter(function(x){return x.id===r;})[0];rl.appendChild(el("li",null,[el("b",{text:r+" "+R.name+". "}),R.text]));});rail.appendChild(rl);
+  var b=el("table"),tb=el("tbody");b.appendChild(el("thead",null,[el("tr",null,[el("th",{text:"Branch"}),el("th",{class:"num",text:"All years"})])]));
+  Object.keys(META.branch_stage).forEach(function(k){var v=META.branch_stage[k][id];if(v)tb.appendChild(el("tr",null,[el("td",{text:k}),el("td",{class:"num",text:String(v)})]));});b.appendChild(tb);rail.appendChild(b);
+  if(st.view!=="evolution")return;
+  var ns=NODES.filter(function(n){return n.sg===id&&n.y===y;}),rs=ROUTES.filter(function(r){return r.sg===id&&r.y===y;}),as=ABST.filter(function(e){return e.sg===id&&e.y===y&&!(e.rt&&RESTATE[e.rel]);});
+  rail.appendChild(el("h3",{text:"Events of "+y}));
+  if(!ns.length&&!rs.length&&!as.length)rail.appendChild(el("p",{class:"muted",text:"None."}));
+  if(ns.length){var ul=el("ul",{class:"items"});ns.slice(0,60).forEach(function(n){ul.appendChild(el("li",null,[nodeBtn(n.u),el("span",{class:"muted",text:"  "+n.s})]));});rail.appendChild(el("div",{class:"muted small",text:ns.length+" nodes"}));rail.appendChild(ul);}
+  if(rs.length){var u2=el("ul",{class:"items"});rs.slice(0,60).forEach(function(r){u2.appendChild(el("li",null,[routeBtn(r),el("span",{class:"muted",text:" "+r.k+" → "}),nodeBtn(r.o)]));});rail.appendChild(el("div",{class:"muted small",text:rs.length+" routes"}));rail.appendChild(u2);}
+  if(as.length){var u3=el("ul",{class:"items"});as.slice(0,80).forEach(function(e){u3.appendChild(relLine(e,"src"));u3.lastChild.appendChild(document.createTextNode(" → "));u3.lastChild.appendChild(nodeBtn(e.d));});rail.appendChild(el("div",{class:"muted small",text:as.length+" abstraction edges"+(as.length>80?" (first 80)":"")}));rail.appendChild(u3);}}
+
+/* ------------------------------------------------------------------ pipeline view */
+function viewPipeline(main){var n=META.numbers,P10=META.phases,tot={},und=META.undated_stage||{};
+  for(var b in META.branch_stage)for(var k in META.branch_stage[b])tot[k]=(tot[k]||0)+META.branch_stage[b][k];
+  var W=1100,H=336,X0=16,PIT=107,BW=95,BH=50,YA=48,YX=150,YC=252;
+  var s=svg("svg",{viewBox:"0 0 "+W+" "+H,"class":"pipe",role:"img","aria-label":"Each tier runs ten phases in a cycle. Cluster events run upward and descend events downward between the system-specific tier and the generic tier."});
+  var defs=svg("defs",{}),mk=svg("marker",{id:"ah",viewBox:"0 0 8 8",refX:"7",refY:"4",markerWidth:"7",markerHeight:"7",orient:"auto-start-reverse"});mk.appendChild(svg("path",{d:"M0 0L8 4L0 8Z",fill:"currentColor"}));defs.appendChild(mk);s.appendChild(defs);
+  function text(x,y,t,o){var e=svg("text",Object.assign({x:x,y:y,"font-size":"12",fill:"currentColor"},o||{}));e.textContent=t;s.appendChild(e);return e;}
+  function cx(i){return X0+i*PIT+BW/2;}
+  function box(id,i,y){var x=X0+i*PIT,g=svg("g",{style:"cursor:pointer",tabindex:"0",role:"button","aria-label":stageName(id)+", "+(tot[id]||0)+" events"});
+    g.appendChild(svg("rect",{x:x,y:y,width:BW,height:BH,rx:6,fill:"none",stroke:"currentColor","stroke-width":tot[id]?1.3:.7,"stroke-opacity":tot[id]?1:.5}));
+    var t1=svg("text",{x:x+8,y:y+20,"font-size":"12",fill:"currentColor","font-weight":"600"});t1.textContent=stageOf[id].title;g.appendChild(t1);
+    var t2=svg("text",{x:x+8,y:y+38,"font-size":"11.5",fill:"currentColor","fill-opacity":".72"});t2.textContent=(tot[id]||0)+" events";g.appendChild(t2);
+    g.addEventListener("click",function(){select({t:"stage",id:id});});g.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();select({t:"stage",id:id});}});s.appendChild(g);}
+  function arrow(d,o){s.appendChild(svg("path",Object.assign({d:d,stroke:"currentColor",fill:"none","marker-end":"url(#ah)"},o||{})));}
+  function track(T,y){P10.forEach(function(p,i){box(T+"."+p,i,y);if(i<9)arrow("M"+(X0+i*PIT+BW+1)+" "+(y+BH/2)+"H"+(X0+(i+1)*PIT-2));});}
+  track("A",YA);track("C",YC);box("X.abstract",8,YX);box("X.instantiate",9,YX);
+  var dash={"stroke-dasharray":"3 3","stroke-opacity":".6"};
+  arrow("M"+cx(9)+" "+YA+" V30 H"+cx(0)+" V"+(YA-3),dash);
+  arrow("M"+cx(9)+" "+(YC+BH)+" V"+(YC+BH+18)+" H"+cx(0)+" V"+(YC+BH+3),dash);
+  var thick={"stroke-width":"2"};
+  arrow("M"+cx(8)+" "+YC+" V"+(YX+BH+3),thick);arrow("M"+cx(8)+" "+YX+" V"+(YA+BH+3),thick);
+  arrow("M"+cx(9)+" "+(YA+BH)+" V"+(YX-3),thick);arrow("M"+cx(9)+" "+(YX+BH)+" V"+(YC-3),thick);
+  text(X0,16,"Generic tier: classes, effects, axioms",{"font-weight":"600","font-size":"13"});
+  text(X0,YX+22,"Across tiers",{"font-weight":"600","font-size":"13"});
+  text(X0,YX+40,"abstraction edges with one end in a named system and the other in a generic node",{"font-size":"11.5","fill-opacity":".72"});
+  text(X0,YC-12,"System-specific tier: named systems, their laws and observables",{"font-weight":"600","font-size":"13"});
+  main.appendChild(el("div",{class:"panel"},[el("h2",{text:"One cycle on two tiers"}),
+    el("p",{text:"The reader, history and effect pipelines are one cycle run at two levels of generality. In the lower tier the objects are states and observables of a named system. A cluster phase turns sets of them into nodes: inside the system (symmetry classes, sectors, families) or across the tiers, where a named state or observable becomes a member of a generic class or effect. In the upper tier the same phases recur with other content: the census of unconnected pairs is the deficit, a conjectured edge is the hypothesis, a proof or a counterexample is the test, an equivalence is the reduction. Descent carries an inclusion between clusters to a member as a derived membership or, with a witness and data, as an observed one."}),
+    el("figure",null,[el("div",{class:"scroll-x"},[s]),el("figcaption",{text:"Counts are events with a year: "+n.nodes_dated+" nodes, "+n.routes_dated+" routes and "+n.events_extra_abst+" abstraction edges that do not restate a route, "+n.events_total+" in all. Dashed arrows close the cycle of a tier. Select a box for its rules and its counts by branch."})])]));
+  /* stage x branch */
+  var br=Object.keys(META.branch_stage),tb=el("tbody");
+  META.stages.forEach(function(sg){var tr=el("tr",{style:"cursor:pointer",on:{click:function(){select({t:"stage",id:sg.id});}}},[el("td",{text:sg.tier==="X"?"across":sg.tier}),el("td",null,[el("b",{text:sg.title})," ",el("span",{class:"muted",text:sg.what})]),el("td",{class:"mono",text:sg.rules.join(" ")})]);
+    br.forEach(function(b){tr.appendChild(el("td",{class:"num",text:String(META.branch_stage[b][sg.id]||"")}));});
+    tr.appendChild(el("td",{class:"num",text:String(tot[sg.id]||0)}));tr.appendChild(el("td",{class:"num",text:String(und[sg.id]||"")}));tb.appendChild(tr);});
+  main.appendChild(el("div",{class:"panel"},[el("h2",{text:"Stages, rules and where they fire"}),el("div",{class:"scroll-x"},[el("table",null,[el("thead",null,[el("tr",null,[el("th",{text:"Tier"}),el("th",{text:"Stage"}),el("th",{text:"Rules"})].concat(br.map(function(b){return el("th",{class:"num",text:b});})).concat([el("th",{class:"num",text:"All"}),el("th",{class:"num",text:"No year"})]))]),tb])]),
+    el("p",{class:"muted small",style:"margin-top:6px",text:"Applied to the dated nodes and routes, the eight-phase table of Part II gives "+n.events8_total+" events. Here the cluster nodes and the "+n.abst_restating_route+" routes that are edges of a cluster move to the phase cluster, and "+n.events_extra_abst+" abstraction edges that restate no route are added, for "+n.events_total+" events. The column No year counts the "+n.abst_undated+" abstraction edges with an end in the textbook reader or the lattice model; they are not on the time axis."})]));
+  /* rules */
+  var rb=el("tbody");META.rules.forEach(function(r){rb.appendChild(el("tr",null,[el("td",{class:"mono",text:r.id}),el("td",null,[el("b",{text:r.name})]),el("td",{text:r.tier}),el("td",{text:r.layer}),el("td",{text:r.origin}),el("td",{text:r.text})]));});
+  main.appendChild(el("div",{class:"panel"},[el("h2",{text:"Rules"}),el("p",{class:"muted small",text:"R1 to R16 are the rules of the released graphs and of the grand network. R17 to R21 are added here."}),
+    el("div",{class:"scroll-x"},[el("table",null,[el("thead",null,[el("tr",null,["Id","Name","Tier","Layer","Origin","Statement"].map(function(h){return el("th",{text:h});}))]),rb])])]));
+  var ob=el("tbody");META.operations.forEach(function(o){ob.appendChild(el("tr",null,[el("td",{class:"mono",text:o.id}),el("td",{class:"mono",text:o.sig}),el("td",{text:o.counts}),el("td",{text:o.text})]));});
+  main.appendChild(el("div",{class:"panel"},[el("h2",{text:"Operations added"}),el("div",{class:"scroll-x"},[el("table",null,[el("thead",null,[el("tr",null,["Operation","Signature","Change of counts","Meaning"].map(function(h){return el("th",{text:h});}))]),ob])])]));}
+
+/* ------------------------------------------------------------------ clusters view */
+function glueOf(u){var seen={},q=[u];seen[u]=1;   // nodes joined to u by glue equalities (edges x.eq*)
+  while(q.length){var x=q.pop();(intoA[x]||[]).concat(fromA[x]||[]).forEach(function(e){if(e.rel!=="equal"||e.id.indexOf("x.eq")!==0)return;
+    [e.d].concat(e.s).forEach(function(v){if(!seen[v]&&N[v]&&N[v].s!=="S.dist"){seen[v]=1;q.push(v);}});});}
+  return Object.keys(seen);}
+var CI={};
+function classInfo(u){if(CI[u])return CI[u];var G=glueOf(u),inG={},into=[],around=[],ids={};G.forEach(function(x){inG[x]=1;});
+  G.forEach(function(x){(intoA[x]||[]).forEach(function(e){if(!ids[e.id]){ids[e.id]=1;into.push(e);}});});
+  G.forEach(function(x){(fromA[x]||[]).forEach(function(e){if(!ids[e.id]){ids[e.id]=1;around.push(e);}});});
+  var compl=[];into.concat(around).forEach(function(e){if(e.rel!=="complement")return;var o=inG[e.d]?e.s[0]:e.d;if(!inG[o]&&compl.indexOf(o)<0)compl.push(o);});
+  var testC=[],tid={};compl.forEach(function(o){glueOf(o).forEach(function(x){(intoA[x]||[]).forEach(function(e){if(e.rel==="test"&&!tid[e.id]){tid[e.id]=1;testC.push(e);}});});});
+  var eqDist=[];into.concat(around).forEach(function(e){if(e.rel!=="equal")return;[e.d].concat(e.s).forEach(function(v){if(!inG[v]&&N[v]&&N[v].s==="S.dist")eqDist.push({e:e,u:v});});});
+  var viaReify=[];into.forEach(function(e){if(e.rel!=="reify")return;e.s.forEach(function(o){(intoA[o]||[]).forEach(function(m){if(m.rel==="member"||m.rel==="cut")viaReify.push(m);});});});
+  /* members per class: a stated membership on one node of the class and its derived twin on another count once */
+  var seen={},mem=[];function key(e){return e.s.join("+");}
+  into.forEach(function(e){if(MEM[e.rel]&&e.og!=="closure"){mem.push(e);seen[key(e)]=1;}});
+  eqDist.forEach(function(x){seen[x.u]=1;});
+  viaReify=viaReify.filter(function(e){if(seen[key(e)])return false;seen[key(e)]=1;return true;});
+  var nStated=mem.length+eqDist.length+viaReify.length,nDer=0;
+  into.forEach(function(e){if(MEM[e.rel]&&e.og==="closure"&&!seen[key(e)]){seen[key(e)]=1;mem.push(e);nDer++;}});
+  var exSeen={},ex=into.filter(function(e){if(e.rel!=="excluded"||exSeen[key(e)])return false;exSeen[key(e)]=1;return true;});
+  return CI[u]={G:G,inG:inG,into:into,around:around,compl:compl,crit:into.filter(function(e){return e.rel==="criterion";}),test:into.filter(function(e){return e.rel==="test";}),testC:testC,
+    mem:mem,eqDist:eqDist,viaReify:viaReify,ex:ex,stated:nStated,derived:nDer};}
+function viewClusters(main){var pods=NODES.filter(function(n){return isPod(n.u);});
+  var filt=el("select",{id:"cfilt","aria-label":"Filter clusters",on:{change:function(){fill();}}},[["all","All cluster nodes"],["A","Generic tier"],["C","System-specific tier"],["cross","With a member from the other tier"],["empty","Without a member"]].map(function(o){return el("option",{value:o[0],text:o[1]});}));
+  var list=el("div",{class:"clist"}),detail=el("div",{class:"stack"});
+  function fill(){list.innerHTML="";var f=filt.value;
+    ["S","O","M"].forEach(function(L){var arr=pods.filter(function(n){if(n.L!==L)return false;var I=classInfo(n.u);
+        if(f==="A"||f==="C")return n.t===f;if(f==="empty")return I.stated+I.derived===0;
+        if(f==="cross")return I.mem.some(function(e){return e.s.some(function(x){return N[x].t!==n.t;});});return true;})
+        .sort(function(a,b){return (a.t<b.t?-1:a.t>b.t?1:0)||a.b.localeCompare(b.b)||a.l.localeCompare(b.l);});
+      if(!arr.length)return;list.appendChild(el("div",{class:"gh",text:LAYER[L]+" layer · "+arr.length}));
+      arr.forEach(function(n){var I=classInfo(n.u);var b=el("button",{type:"button","data-c":n.u,class:st.cl===n.u?"sel":null,on:{click:function(){pick(n.u);}}},[el("span",{html:"<span class='sw "+n.L+"'></span>"+rich(n.l)+"<span class='bt'>"+esc(n.b)+"</span>"}),el("span",{class:"c",text:I.stated+(I.derived?" + "+I.derived:"")})]);list.appendChild(b);});});}
+  function pick(u,silent){st.cl=u;var cur=null;Array.prototype.forEach.call(list.querySelectorAll("button"),function(b){var on=b.getAttribute("data-c")===u;b.classList.toggle("sel",on);if(on)cur=b;});
+    if(silent&&cur)list.scrollTop=Math.max(0,cur.offsetTop-list.clientHeight/2+cur.offsetHeight/2);
+    show(u);if(!silent){st.sel={t:"node",id:u};renderRail();}}
+  ev.clusterPick=function(u,silent){if(isPod(u))pick(u,silent);};
+  function show(u){detail.innerHTML="";var n=N[u],I=classInfo(u);
+    var head=el("div",{class:"panel"},[el("div",{class:"mono muted",text:u}),el("h2",{html:rich(n.l)}),el("div",null,[tag(LAYER[n.L]+" · "+n.s,n.L),tag(TIER[n.t]),tag(yr(n.y))]),el("div",{class:"muted small",text:BT[n.b]}),n.d?el("div",{class:"stmt",html:rich(n.d)}):null]);
+    var legs=el("dl",{class:"kv"});
+    function dd(k){legs.appendChild(el("dt",{text:k}));var d=el("dd");legs.appendChild(d);return d;}
+    function sep(d,i,t){if(i)d.appendChild(document.createTextNode(t));}
+    function edgeList(d,arr){arr.forEach(function(e,i){sep(d,i,"; ");e.s.forEach(function(x,j){sep(d,j," + ");d.appendChild(nodeBtn(x));});d.appendChild(document.createTextNode(" "));d.appendChild(edgeBtn(e));});}
+    if(I.G.length>1){var d0=dd("Same class");I.G.forEach(function(x,i){sep(d0,i," = ");d0.appendChild(nodeBtn(x));});}
+    var d1=dd("Criterion");if(I.crit.length)edgeList(d1,I.crit);else d1.appendChild(el("span",{class:"no",text:n.s==="O.effect"?"no no-go edge from a model or an axiom":"no criterion edge from the model layer"}));
+    var d2=dd("Test");if(I.test.length)edgeList(d2,I.test);else if(I.testC.length){d2.appendChild(document.createTextNode("through the complement: "));edgeList(d2,I.testC);}else d2.appendChild(el("span",{class:"no",text:"no test edge"}));
+    if(I.compl.length){var d3=dd("Complement");I.compl.forEach(function(o,i){sep(d3,i,", ");d3.appendChild(nodeBtn(o));});}
+    var rel=I.into.concat(I.around).filter(function(e){return ["subset","reify","disjoint","hosts","equal","refines"].indexOf(e.rel)>=0&&!(e.rel==="equal"&&e.id.indexOf("x.eq")===0);});
+    if(rel.length){var d4=dd("Related");rel.forEach(function(e,i){sep(d4,i,"; ");var out=!I.inG[e.d];
+      var w={subset:out?"subset of":"contains",reify:out?"reified as":"reifies",disjoint:"disjoint from",hosts:out?"hosts":"hosted by",equal:"equal to",refines:out?"refines":"refined by"}[e.rel];
+      d4.appendChild(document.createTextNode(w+" "));(out?[e.d]:e.s).forEach(function(x,j){sep(d4,j," + ");d4.appendChild(nodeBtn(x));});d4.appendChild(document.createTextNode(" "));d4.appendChild(edgeBtn(e));});}
+    head.appendChild(legs);detail.appendChild(head);
+    var eye=el("div",{class:"eye"}),by={},order=[];
+    function put(key,title,chip){if(!by[key]){by[key]={title:title,chips:[]};order.push(key);}by[key].chips.push(chip);}
+    function chip(e,cls,names){var c=el("button",{class:"chip"+cls,type:"button",title:e.rel+", "+e.st+": "+(e.nt||e.pv),on:{click:function(){select({t:"abst",id:e.id});}}});
+      c.innerHTML=names.map(function(x){return "<span class='sw "+N[x].L+"'></span>"+rich(N[x].l);}).join(" + ");return c;}
+    I.mem.slice().sort(function(a,c){return (a.og==="closure")-(c.og==="closure");}).forEach(function(e){var m=N[e.s[0]];put(m.b,m.b+" · "+TIER[m.t],chip(e,e.og==="closure"?" dv":e.rel==="cut"?" ct":"",e.s));});
+    I.eqDist.forEach(function(x){var m=N[x.u];put(m.b,m.b+" · "+TIER[m.t],chip(x.e,"",[x.u]));});
+    I.viaReify.forEach(function(e){put("~reify","members of the effect it reifies",chip(e,e.rel==="cut"?" ct":"",e.s));});
+    order.sort().forEach(function(k){var g=el("div",{class:"grp"},[el("h4",{text:by[k].title})]);by[k].chips.forEach(function(c){g.appendChild(c);});eye.appendChild(g);});
+    detail.appendChild(el("div",{class:"panel"},[el("h2",{text:"What it clusters"}),el("p",{class:"muted small",text:order.length?"Solid border: stated member. Dotted: cut, only part of the node is in the cluster. Dashed: derived by closure. Select a chip for the criterion and the source.":"No member is recorded in any of the six graphs."}),eye]));
+    if(I.ex.length){var ul=el("ul",{class:"items"});I.ex.forEach(function(e){ul.appendChild(relLine(e,"src"));});detail.appendChild(el("div",{class:"panel"},[el("details",null,[el("summary",{text:"Recorded as not in this cluster ("+I.ex.length+")"}),ul])]));}}
+  main.appendChild(el("div",{class:"panel"},[el("h2",{text:"A cluster node and the nodes it clusters"}),
+    el("p",{text:"Every node that has members, or that is a class by its sublayer, is listed. The count is stated members, then members derived by closure. Nodes that the glue of Part I identifies are read as one class."}),
+    el("div",{class:"ctl",style:"margin-bottom:8px"},[filt]),el("div",{class:"split"},[list,detail])]));
+  fill();pick(st.cl&&isPod(st.cl)?st.cl:"GPT:s-ent",true);
+  /* incidence table */
+  var C=META.census,cls=META.classes,sym={"in":"●","in*":"○","out":"×","out*":"·","cut":"◐"},tb=el("tbody");
+  var hr=el("tr",null,[el("th",{class:"rl",text:"Atom \\ class"})].concat(cls.map(function(c){return el("th",{class:"rot",title:c.nodes.join(" = ")},[el("div",{text:plain(N[c.id].l)})]);})));
+  C.atoms.forEach(function(a){var tr=el("tr",null,[el("td",{class:"rl"},[nodeBtn(a)])]);cls.forEach(function(c){var v=C.cells[a+"|"+c.id];
+    tr.appendChild(el("td",{class:v==="na"?"na":null,title:plain(N[a].l)+" / "+plain(N[c.id].l)+": "+({"in":"stated member","in*":"derived member","out":"stated non-member","out*":"derived non-member","cut":"the cluster cuts the node","na":"not an object of this kind"}[v]||"not recorded"),text:sym[v]||""}));});tb.appendChild(tr);});
+  main.appendChild(el("div",{class:"panel"},[el("h2",{text:"Incidence of atoms and state classes"}),
+    el("p",{text:"Rows are the nodes that carry at least one membership fact; columns are the "+cls.length+" state classes after glue. Of "+C.applicable+" applicable cells, "+C.known+" are settled: "+C.stated+" stated, "+C.derived+" derived by closure, "+C.cut+" cuts. An empty cell is an open item."}),
+    el("p",{class:"muted small",text:"● stated member · ○ derived member · × stated non-member · · derived non-member · ◐ cut · hatched: the node is not an object of the kind the class is defined on"}),
+    el("div",{class:"scroll-x"},[el("table",{class:"inc"},[el("thead",null,[hr]),tb])])]));}
+
+/* ------------------------------------------------------------------ checks view */
+function viewChecks(main){var n=META.numbers,K=META.context;
+  function card(v,t){return el("div",{class:"card"},[el("b",{text:String(v)}),el("span",{text:t})]);}
+  main.appendChild(el("div",{class:"cards"},[card(n.abst_stated,"abstraction edges stated"),card(n.closure.derived,"facts derived by closure"),card(n.closure.conflicts,"conflicts in the closure"),
+    card(n.kernel.crosscheck.agree+" / "+n.kernel.crosscheck.compared,"comparisons with the kernel that agree"),card(n.classes_three_leg+" / "+n.classes,"state classes with all three legs"),card(n.effects_three_leg+" / "+n.effects,"effects with all three legs")]));
+  /* direction */
+  var fb=el("tbody");Object.keys(n.flow).forEach(function(k){fb.appendChild(el("tr",null,[el("td",{text:k.split(" ")[0]}),el("td",{text:k.split(" ")[1]}),el("td",{class:"num",text:String(n.flow[k])})]));});
+  main.appendChild(el("div",{class:"panel"},[el("h2",{text:"Direction of the stated membership edges"}),
+    el("p",{text:"No stated membership edge runs from the generic tier to the system-specific tier. "+((n.flow["C→A member"]||0)+(n.flow["C→A cut"]||0))+" run upward across the tiers, the rest stay inside a tier. Of the other abstraction edges, "+n.carrier_inclusions+" run downward as inclusions of a generic cluster in the quantum state space of the readers, the carrier that the cluster divides."}),
+    el("div",{class:"scroll-x"},[el("table",null,[el("thead",null,[el("tr",null,[el("th",{text:"Tiers"}),el("th",{text:"Kind"}),el("th",{class:"num",text:"Edges"})])]),fb])])]));
+  /* three legs */
+  function mark(ok,t){return el("span",{class:ok?"ok":"no",text:(ok?"yes":"no")+(t?" · "+t:"")});}
+  var cb=el("tbody");META.classes.forEach(function(c){var L=c.legs;cb.appendChild(el("tr",null,[el("td",null,[nodeBtn(c.id),c.nodes.length>1?el("span",{class:"muted mono",text:" = "+c.nodes.slice(1).map(function(x){return x.split(":")[1];}).join(", ")}):null]),
+    el("td",null,[mark(L.criterion.length>0)]),el("td",null,[mark(c.has_test,L.test.length?"":L.test_complement.length?"through the complement":"")]),
+    el("td",null,[mark(c.has_member,(L.stated+L.via_reify)+" stated, "+L.derived+" derived")]),el("td",{class:"num",text:String(L.stated_C+L.derived_C)})]));});
+  main.appendChild(el("div",{class:"panel"},[el("h2",{text:"Three legs of a state class"}),
+    el("p",{text:"A class is well formed when it has a criterion edge from the model layer, a test edge from the observable layer and at least one member. "+n.classes_three_leg+" of "+n.classes+" classes have all three; "+n.classes_with_stated_member+" have a stated member and "+n.classes_with_C_member+" have a member from the system-specific tier, stated or derived."}),
+    el("div",{class:"scroll-x"},[el("table",null,[el("thead",null,[el("tr",null,[el("th",{text:"Class"}),el("th",{text:"Criterion"}),el("th",{text:"Test"}),el("th",{text:"Member"}),el("th",{class:"num",text:"From tier C"})])]),cb])])]));
+  var eb=el("tbody");META.effects.forEach(function(e){eb.appendChild(el("tr",null,[el("td",null,[nodeBtn(e.id)]),el("td",null,[mark(e.reference.length>0,e.reference.length?e.reference.length+" no-go edges":"")]),el("td",null,[mark(e.test.length>0)]),el("td",null,[mark(e.members.length>0,e.members.length?e.members.length+" ("+e.members_C+" from tier C)":"")])]));});
+  main.appendChild(el("div",{class:"panel"},[el("h2",{text:"Three legs of an effect"}),
+    el("p",{text:"For an effect the criterion is a no-go edge from a model or an axiom: the network names something that cannot produce the effect. "+n.effects_with_reference+" of "+n.effects+" effects have one, all "+n.effects_with_test+" have a witness, "+n.effects_with_member+" have a recorded observable as a member."}),
+    el("div",{class:"scroll-x"},[el("table",null,[el("thead",null,[el("tr",null,[el("th",{text:"Effect"}),el("th",{text:"Reference model"}),el("th",{text:"Witness"}),el("th",{text:"Member"})])]),eb])])]));
+  /* closure */
+  var ib=el("tbody");META.inclusions.forEach(function(i){ib.appendChild(el("tr",null,[el("td",null,[nodeBtn(i.sub)]),el("td",{text:"⊆"}),el("td",null,[nodeBtn(i.sup)]),el("td",{class:"mono",text:i.source}),el("td",{text:(i.frame_tag?"["+i.frame_tag+"] ":"")+i.frame})]));});
+  main.appendChild(el("div",{class:"panel"},[el("h2",{text:"Closure of the memberships"}),
+    el("p",{text:n.closure.stated+" stated facts on "+n.closure.atoms+" atoms, "+n.closure.inclusions+" inclusions, "+n.closure.disjoint+" disjointness edges, the complement pairs and the glue give "+n.closure.derived+" derived facts: "+n.closure.derived_in+" memberships and "+n.closure.derived_out+" exclusions. No derived fact contradicts a stated one."}),
+    el("p",{class:"muted small",text:"Frame tags: E, the coherence basis of the atom is the eigenbasis of a nondegenerate Hamiltonian; P, the atom is bipartite and its coherence basis is a local product basis. An inclusion with a tag is used only for atoms that carry it."}),
+    el("div",{class:"scroll-x"},[el("table",null,[el("thead",null,[el("tr",null,[el("th",{text:"Subset"}),el("th"),el("th",{text:"Superset"}),el("th",{text:"Source"}),el("th",{text:"Frame"})])]),ib])])]));
+  /* kernel */
+  var kh=el("tr",null,[el("th",{text:"Object"})].concat(K.attrs.map(function(a){return el("th",{title:a.node,text:a.id});})).concat([el("th",{text:"Node"})]));
+  var kb=el("tbody");K.objects.forEach(function(o){var tr=el("tr",null,[el("td",{text:o.label+(o.round?" (added)":"")})]);
+    K.attrs.forEach(function(a){var c=o.cells[a.id];tr.appendChild(el("td",{title:a.label+": "+c.detail,class:"mono",text:(c.val===true?"F":c.val===false?"R":"?")+({computed:"",derived:"′","import":"*",unknown:""})[c.grade]}));});
+    tr.appendChild(el("td",null,[o.node?nodeBtn(o.node):null]));kb.appendChild(tr);});
+  var lb=el("tbody");[0,1].forEach(function(r){K.levels.forEach(function(L,j){var c=K.counts[r][j];lb.appendChild(el("tr",null,[el("td",{text:r?"with two added objects":"named objects"}),el("td",{class:"num",text:String(K.n_objects[r])}),el("td",{text:L}),el("td",{class:"num",text:String(c.recorded||0)}),el("td",{class:"num",text:String(c.transitive||0)}),el("td",{class:"num",text:String(c.refuted||0)}),el("td",{class:"num",text:String(c.candidate||0)}),el("td",{class:"mono",text:K.candidates[r][j].join("  ")})]));});});
+  var sb=el("tbody");K.strict.forEach(function(s){sb.appendChild(el("tr",null,[el("td",{class:"mono",text:s.a+" ⇏ "+s.b}),el("td",{text:s.source}),el("td",null,[mark(s.witnessed,s.only_by_import?"by an imported threshold":"computed")]),el("td",{class:"mono",text:s.by.join(", ")})]));});
+  main.appendChild(el("div",{class:"panel"},[el("h2",{text:"Kernel: ten free sets on explicit two-qubit states"}),
+    el("p",{text:"The upper network should be recoverable from concrete states. "+K.objects.length+" two-qubit density matrices are tested against executable definitions of ten free sets (F free, R resource; ′ derived from a computed cell by SS16 or SS17, * imported threshold). Frame: H = (ωA/2) Z⊗1 + (ωB/2) 1⊗Z with ωA = "+K.frame.wA+", ωB = "+K.frame.wB+", β = "+K.frame.beta+"; the stabilizer polytope is spanned by the "+K.n_stab+" two-qubit stabilizer states."}),
+    el("div",{class:"scroll-x"},[el("table",null,[el("thead",null,[kh]),kb])]),
+    el("h3",{text:"Implications of the table against the released inclusions"}),
+    el("p",{text:"For each ordered pair of free sets, free in a ⇒ free in b holds on the table unless an object refutes it. No released inclusion is refuted. The candidates are the implications that hold and that the released edges do not yield."}),
+    el("div",{class:"scroll-x"},[el("table",null,[el("thead",null,[el("tr",null,["Objects","","Edges used","Recorded","Transitive","Refuted","Candidates",""].map(function(h,i){return el("th",{class:i===1||i>2&&i<7?"num":null,text:h});}))]),lb])]),
+    el("p",{class:"muted small",style:"margin-top:6px",text:"With the resource-theory edges alone the discord column is unconnected. The glue with the nonclassicality network supplies dis ⇒ ent (edge S7), and proposition R1 of that network supplies asy ⇒ dis. The one implication that is false, mag ⇒ ima, survives the named objects and falls to the added state |+i>|0>."}),
+    el("h3",{text:"Released strictness claims"}),
+    el("div",{class:"scroll-x"},[el("table",null,[el("thead",null,[el("tr",null,[el("th",{text:"Claim"}),el("th",{text:"Source"}),el("th",{text:"Witnessed"}),el("th",{text:"By"})])]),sb])]),
+    el("p",{class:"muted small",style:"margin-top:6px",text:"Cross-check: "+K.crosscheck.facts+" membership facts of the closure, stated or derived, concern a state realised in the table. Each is compared with every object that realises it ("+K.crosscheck.compared+" comparisons; the Werner states are realised by two objects): "+K.crosscheck.agree+" agree with the computed cell, "+K.crosscheck.disagree.length+" disagree."})]));
+  /* proposals */
+  var pb=el("tbody");META.proposals.forEach(function(p){pb.appendChild(el("tr",null,[el("td",{class:"mono",text:p.id}),el("td",{text:p.net}),el("td",{text:p.kind}),el("td",{text:p.text}),el("td",{class:"muted",text:p.evidence})]));});
+  main.appendChild(el("div",{class:"panel"},[el("h2",{text:"Proposed changes to the released graphs"}),el("p",{class:"muted small",text:"None of these is applied to the released graphs."}),
+    el("div",{class:"scroll-x"},[el("table",null,[el("thead",null,[el("tr",null,["Id","Graph","Kind","Proposal","Evidence"].map(function(h){return el("th",{text:h});}))]),pb])])]));}
+
+/* ------------------------------------------------------------------ method view */
+function viewMethod(main){
+  META.method.forEach(function(sec){main.appendChild(el("div",{class:"panel"},[el("h2",{text:sec[0]})].concat(sec[1].map(function(p){return el("p",{text:p});}))));});
+  var sb=el("tbody");META.branches.forEach(function(b){sb.appendChild(el("tr",null,[el("td",{class:"mono",text:b.id}),el("td",{text:b.title}),el("td",{text:b.tier}),el("td",{class:"num",text:String(META.numbers.nodes_by_branch[b.id]||0)}),el("td",{class:"num",text:String(META.numbers.routes_by_branch[b.id]||0)}),el("td",{text:b.dated?"yes":"no"})]));});
+  main.appendChild(el("div",{class:"panel"},[el("h2",{text:"Sources"}),el("div",{class:"scroll-x"},[el("table",null,[el("thead",null,[el("tr",null,[el("th",{text:"Branch"}),el("th",{text:"Graph"}),el("th",{text:"Tier"}),el("th",{class:"num",text:"Nodes"}),el("th",{class:"num",text:"Routes"}),el("th",{text:"Years"})])]),sb])]),
+    el("p",{class:"muted small",style:"margin-top:6px",text:"Repository commits: "+Object.keys(META.sources.repos).map(function(k){return k+" "+META.sources.repos[k];}).join(", ")+"."})]));
+  var rb=el("tbody");META.references.forEach(function(r){rb.appendChild(el("tr",null,[el("td",{text:r[0]}),el("td",{text:r[1]}),el("td",{class:"muted",text:r[2]})]));});
+  main.appendChild(el("div",{class:"panel"},[el("h2",{text:"References used for the method"}),el("div",{class:"scroll-x"},[el("table",null,[el("thead",null,[el("tr",null,[el("th",{text:"Topic"}),el("th",{text:"Reference"}),el("th",{text:"Use here"})])]),rb])])]));}
+
+load().then(start).catch(function(err){var v=document.getElementById("view");v.innerHTML="";v.appendChild(el("p",{class:"err",text:"The network data could not be loaded ("+err.message+"). Open standalone.html from the bundle instead."}));});
+})();
+</script>
+<script src="assets/versions.js"></script>
+</body>
+</html>

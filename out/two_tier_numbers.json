@@ -1,0 +1,380 @@
+{
+ "generated": "2026-11-20",
+ "nodes": 886,
+ "routes": 1122,
+ "abst": 446,
+ "nodes_by_branch": {
+  "EM": 120,
+  "HEP": 81,
+  "GPT": 92,
+  "QRT": 116,
+  "UP": 445,
+  "LG": 32
+ },
+ "routes_by_branch": {
+  "EM": 122,
+  "HEP": 214,
+  "GPT": 156,
+  "QRT": 86,
+  "UP": 516,
+  "LG": 28
+ },
+ "nodes_by_tier_layer": {
+  "C.O": 281,
+  "C.S": 138,
+  "C.M": 259,
+  "A.M": 90,
+  "A.S": 49,
+  "A.O": 69
+ },
+ "nodes_dated": 409,
+ "routes_dated": 578,
+ "abst_by_rel": {
+  "criterion": 38,
+  "complement": 18,
+  "subset": 29,
+  "member": 171,
+  "cut": 8,
+  "equal": 14,
+  "refines": 18,
+  "test": 29,
+  "hosts": 4,
+  "disjoint": 2,
+  "lineage": 4,
+  "aggregate": 10,
+  "reify": 5,
+  "excluded": 96
+ },
+ "abst_by_origin": {
+  "native (theory band)": 39,
+  "native": 204,
+  "native (read from a released statement)": 22,
+  "curated 2026-11-18": 28,
+  "closure": 153
+ },
+ "abst_by_rule": {
+  "R17": 195,
+  "None": 20,
+  "R18": 48,
+  "R1": 9,
+  "R10": 16,
+  "REIFY": 5,
+  "R20": 153
+ },
+ "abst_stated": 293,
+ "abst_restating_route": 79,
+ "closure": {
+  "stated": 40,
+  "derived": 153,
+  "derived_in": 57,
+  "derived_out": 96,
+  "conflicts": 0,
+  "atoms": 17,
+  "inclusions": 15,
+  "disjoint": 2
+ },
+ "classes": 28,
+ "classes_three_leg": 20,
+ "classes_no_criterion": [
+  "GPT:s-bound",
+  "GPT:s-gauss"
+ ],
+ "classes_no_test": [
+  "GPT:s-bound",
+  "GPT:s-gauss",
+  "QRT:sF-pur",
+  "QRT:sR-pur"
+ ],
+ "classes_no_member": [
+  "QRT:sF-ctx",
+  "QRT:sF-dis",
+  "QRT:sF-inc",
+  "QRT:sR-ctx"
+ ],
+ "abst_undated": 91,
+ "classes_with_C_member": 10,
+ "classes_with_stated_member": 23,
+ "classes_with_stated_C_member": 6,
+ "effects": 13,
+ "effects_with_reference": 6,
+ "effects_with_test": 13,
+ "effects_with_member": 2,
+ "effects_three_leg": 1,
+ "census": {
+  "atoms": 18,
+  "classes": 28,
+  "applicable": 274,
+  "known": 129,
+  "stated": 40,
+  "derived": 81,
+  "cut": 8
+ },
+ "flow": {
+  "A→A cut": 4,
+  "A→A member": 30,
+  "C→A cut": 4,
+  "C→A member": 14,
+  "C→C aggregate": 10,
+  "C→C member": 70
+ },
+ "flow_pairs": {
+  "A→A cut": 4,
+  "A→A member": 30,
+  "C→A cut": 4,
+  "C→A member": 15,
+  "C→C aggregate": 10,
+  "C→C member": 70
+ },
+ "flow_branch": {
+  "EM→GPT": 1,
+  "EM→HEP": 2,
+  "HEP→EM": 2,
+  "HEP→GPT": 3,
+  "HEP→HEP": 53,
+  "HEP→UP": 10,
+  "LG→EM": 7,
+  "LG→LG": 6,
+  "QRT→QRT": 34,
+  "UP→GPT": 13,
+  "UP→QRT": 1
+ },
+ "carrier_inclusions": 14,
+ "events": {
+  "A.abstract": 264,
+  "A.deficit": 10,
+  "A.falsify": 58,
+  "A.hypothesize": 101,
+  "A.instantiate": 100,
+  "A.observe": 16,
+  "A.predict": 73,
+  "A.reduce": 24,
+  "A.restructure": 11,
+  "C.abstract": 87,
+  "C.calibrate": 12,
+  "C.falsify": 6,
+  "C.hypothesize": 77,
+  "C.observe": 77,
+  "C.predict": 160,
+  "C.reduce": 4,
+  "C.restructure": 162,
+  "X.abstract": 21
+ },
+ "events_extra_abst": 276,
+ "events_total": 1263,
+ "events8": {
+  "observe": 181,
+  "restructure": 237,
+  "hypothesize": 184,
+  "predict": 239,
+  "falsify": 64,
+  "reduce": 60,
+  "calibrate": 12,
+  "deficit": 10
+ },
+ "events8_total": 987,
+ "crit_types": {
+  "con": 7,
+  "sym": 36,
+  "sub": 9,
+  "par": 10,
+  "none": 2,
+  "def": 16,
+  "str": 12,
+  "lin": 11,
+  "fam": 23,
+  "agg": 12
+ },
+ "firsts": {
+  "R10": {
+   "year": 1926,
+   "edge": "h.lin001",
+   "src": [
+    "HEP:m_L"
+   ],
+   "dst": "HEP:m_U"
+  },
+  "refines": {
+   "year": 1926,
+   "edge": "x.ref003",
+   "src": [
+    "EM:dirac"
+   ],
+   "dst": "HEP:m_L"
+  },
+  "R18": {
+   "year": 1927,
+   "edge": "h.fam006",
+   "src": [
+    "HEP:o_beta"
+   ],
+   "dst": "HEP:o_G"
+  },
+  "R17": {
+   "year": 1927,
+   "edge": "x.fam003",
+   "src": [
+    "HEP:s_g"
+   ],
+   "dst": "EM:fock"
+  },
+  "R1": {
+   "year": 1939,
+   "edge": "h.part001",
+   "src": [
+    "HEP:u_vac"
+   ],
+   "dst": "HEP:H1"
+  },
+  "REIFY": {
+   "year": 2007,
+   "edge": "x.rei002",
+   "src": [
+    "GPT:e-steer"
+   ],
+   "dst": "QRT:sR-ste"
+  },
+  "first C→A membership": {
+   "year": 2026,
+   "edge": "c.cut003",
+   "src": [
+    "HEP:s_g"
+   ],
+   "dst": "GPT:s-gauss"
+  },
+  "R20": {
+   "year": 2026,
+   "edge": "k.001",
+   "src": [
+    "QRT:d-bell"
+   ],
+   "dst": "GPT:s-coh"
+  }
+ },
+ "kernel": {
+  "objects": 15,
+  "attrs": 10,
+  "stabilizer_states": 60,
+  "rounds": [
+   {
+    "round": 0,
+    "n_objects": 13,
+    "levels": [
+     {
+      "level": "QRT",
+      "counts": {
+       "refuted": 56,
+       "recorded": 14,
+       "candidate": 8,
+       "transitive": 12
+      },
+      "contradictions": 0,
+      "candidates": [
+       "pur⇒dis",
+       "ath⇒dis",
+       "asy⇒dis",
+       "coh⇒dis",
+       "mag⇒ima",
+       "dis⇒ent",
+       "dis⇒ste",
+       "dis⇒nlo"
+      ]
+     },
+     {
+      "level": "QRT+GPT",
+      "counts": {
+       "refuted": 56,
+       "recorded": 15,
+       "candidate": 5,
+       "transitive": 14
+      },
+      "contradictions": 0,
+      "candidates": [
+       "pur⇒dis",
+       "ath⇒dis",
+       "asy⇒dis",
+       "coh⇒dis",
+       "mag⇒ima"
+      ]
+     },
+     {
+      "level": "QRT+GPT+R1",
+      "counts": {
+       "refuted": 56,
+       "recorded": 16,
+       "transitive": 17,
+       "candidate": 1
+      },
+      "contradictions": 0,
+      "candidates": [
+       "mag⇒ima"
+      ]
+     }
+    ],
+    "strict": 9,
+    "strict_witnessed": 9,
+    "strict_import_only": 2
+   },
+   {
+    "round": 1,
+    "n_objects": 15,
+    "levels": [
+     {
+      "level": "QRT",
+      "counts": {
+       "refuted": 57,
+       "recorded": 14,
+       "candidate": 7,
+       "transitive": 12
+      },
+      "contradictions": 0,
+      "candidates": [
+       "pur⇒dis",
+       "ath⇒dis",
+       "asy⇒dis",
+       "coh⇒dis",
+       "dis⇒ent",
+       "dis⇒ste",
+       "dis⇒nlo"
+      ]
+     },
+     {
+      "level": "QRT+GPT",
+      "counts": {
+       "refuted": 57,
+       "recorded": 15,
+       "candidate": 4,
+       "transitive": 14
+      },
+      "contradictions": 0,
+      "candidates": [
+       "pur⇒dis",
+       "ath⇒dis",
+       "asy⇒dis",
+       "coh⇒dis"
+      ]
+     },
+     {
+      "level": "QRT+GPT+R1",
+      "counts": {
+       "refuted": 57,
+       "recorded": 16,
+       "transitive": 17
+      },
+      "contradictions": 0,
+      "candidates": []
+     }
+    ],
+    "strict": 9,
+    "strict_witnessed": 9,
+    "strict_import_only": 2
+   }
+  ],
+  "crosscheck": {
+   "facts": 112,
+   "compared": 125,
+   "agree": 125,
+   "unknown": 0,
+   "disagree": 0
+  }
+ }
+}
