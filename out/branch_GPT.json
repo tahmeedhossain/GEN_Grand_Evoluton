@@ -1,0 +1,4865 @@
+{
+ "branch": {
+  "id": "GPT",
+  "title": "Nonclassicality Network II - layered structure",
+  "btype": "E",
+  "source": "tahmeedhossain/GEN_GPT_Level, data/network_v2.6.json",
+  "version": "2.6",
+  "time_axis": "release version (1.0, 2.0, 2.3, 2.4, 2.6)",
+  "native_layers": [
+   "axiom",
+   "model",
+   "state",
+   "process",
+   "witness",
+   "effect",
+   "task"
+  ],
+  "layer_map": {
+   "axiom": "M",
+   "model": "M",
+   "state": "S",
+   "process": "M",
+   "witness": "O",
+   "effect": "O",
+   "task": "O"
+  },
+  "notes": "Seven native layers folded into three: axiom/model/process -> M; state -> S; witness/effect/task -> O."
+ },
+ "nodes": [
+  {
+   "uid": "GPT:ax-symplectic",
+   "branch": "GPT",
+   "native_id": "ax-symplectic",
+   "label": "Symplectic / Poisson structure",
+   "layer": "M",
+   "sublayer": "M.axiom",
+   "native_layer": "axiom",
+   "era": "quantum",
+   "t": 2.0,
+   "concept": "poisson_structure",
+   "extra": {
+    "def": "Classical kinematics: phase space (M, omega), observables = real functions, Poisson bracket {f,g}, Liouville flow. The common substrate of every model in the genesis column."
+   }
+  },
+  {
+   "uid": "GPT:ax-epirestrict",
+   "branch": "GPT",
+   "native_id": "ax-epirestrict",
+   "label": "Epistemic restriction",
+   "layer": "M",
+   "sublayer": "M.axiom",
+   "native_layer": "axiom",
+   "era": "quantum",
+   "t": 2.0,
+   "concept": null,
+   "extra": {
+    "def": "Classical statistical theory restricted to knowledge-balanced (uncertainty-saturating) distributions; cell area set by hbar. Generates the whole noncontextual-but-nonclassical shell."
+   }
+  },
+  {
+   "uid": "GPT:ax-moyal",
+   "branch": "GPT",
+   "native_id": "ax-moyal",
+   "label": "Poisson-to-commutator lift (Moyal)",
+   "layer": "M",
+   "sublayer": "M.axiom",
+   "native_layer": "axiom",
+   "era": "quantum",
+   "t": 2.0,
+   "concept": "poisson_to_commutator",
+   "extra": {
+    "def": "Deformation of the observable algebra: star product; Moyal bracket = Poisson bracket + sum of hbar^2k higher-derivative terms; [f,g]_star = i hbar {f,g}_Moyal. Groenewold - van Hove: no exact Poisson-to-commutator morphism beyond quadratics."
+   }
+  },
+  {
+   "uid": "GPT:ax-complex",
+   "branch": "GPT",
+   "native_id": "ax-complex",
+   "label": "Complex structure (i)",
+   "layer": "M",
+   "sublayer": "M.axiom",
+   "native_layer": "axiom",
+   "era": "quantum",
+   "t": 2.0,
+   "concept": null,
+   "extra": {
+    "def": "Amplitudes in C: i[A,B] is again an observable, so observables form a Lie algebra and coincide with generators (Stone). Carries local tomography and imaginarity."
+   }
+  },
+  {
+   "uid": "GPT:ax-hbar",
+   "branch": "GPT",
+   "native_id": "ax-hbar",
+   "label": "hbar as deformation scale",
+   "layer": "M",
+   "sublayer": "M.axiom",
+   "native_layer": "axiom",
+   "era": "quantum",
+   "t": 2.0,
+   "concept": "planck_constant",
+   "extra": {
+    "def": "Sets the epistemic cell area and the deformation parameter of the Moyal lift; hbar to 0 contracts Moyal to Poisson, quantum to classical simplex."
+   }
+  },
+  {
+   "uid": "GPT:ax-nosig",
+   "branch": "GPT",
+   "native_id": "ax-nosig",
+   "label": "No-signalling",
+   "layer": "M",
+   "sublayer": "M.axiom",
+   "native_layer": "axiom",
+   "era": "quantum",
+   "t": 1.0,
+   "concept": null,
+   "extra": {
+    "def": "Marginal statistics of one party independent of the other party's setting."
+   }
+  },
+  {
+   "uid": "GPT:ax-loctom",
+   "branch": "GPT",
+   "native_id": "ax-loctom",
+   "label": "Local tomography",
+   "layer": "M",
+   "sublayer": "M.axiom",
+   "native_layer": "axiom",
+   "era": "quantum",
+   "t": 1.0,
+   "concept": null,
+   "extra": {
+    "def": "Composite states determined by local measurement statistics."
+   }
+  },
+  {
+   "uid": "GPT:ax-purif",
+   "branch": "GPT",
+   "native_id": "ax-purif",
+   "label": "Purification",
+   "layer": "M",
+   "sublayer": "M.axiom",
+   "native_layer": "axiom",
+   "era": "quantum",
+   "t": 1.0,
+   "concept": null,
+   "extra": {
+    "def": "Every mixed state is the marginal of a pure state, unique up to local reversible transformations (Chiribella-D'Ariano-Perinotti)."
+   }
+  },
+  {
+   "uid": "GPT:ax-norestrict",
+   "branch": "GPT",
+   "native_id": "ax-norestrict",
+   "label": "No-restriction hypothesis",
+   "layer": "M",
+   "sublayer": "M.axiom",
+   "native_layer": "axiom",
+   "era": "quantum",
+   "t": 1.0,
+   "concept": null,
+   "extra": {
+    "def": "All mathematically well-defined effects (dual cone) are physical measurements."
+   }
+  },
+  {
+   "uid": "GPT:ax-ic",
+   "branch": "GPT",
+   "native_id": "ax-ic",
+   "label": "Information causality",
+   "layer": "M",
+   "sublayer": "M.axiom",
+   "native_layer": "axiom",
+   "era": "quantum",
+   "t": 1.0,
+   "concept": null,
+   "extra": {
+    "def": "m classical bits assisted by correlations transmit at most m bits of accessible information."
+   }
+  },
+  {
+   "uid": "GPT:ax-ml",
+   "branch": "GPT",
+   "native_id": "ax-ml",
+   "label": "Macroscopic locality",
+   "layer": "M",
+   "sublayer": "M.axiom",
+   "native_layer": "axiom",
+   "era": "quantum",
+   "t": 1.0,
+   "concept": null,
+   "extra": {
+    "def": "Coarse-grained correlations of many-particle experiments are classical."
+   }
+  },
+  {
+   "uid": "GPT:ax-lo",
+   "branch": "GPT",
+   "native_id": "ax-lo",
+   "label": "Local orthogonality / exclusivity",
+   "layer": "M",
+   "sublayer": "M.axiom",
+   "native_layer": "axiom",
+   "era": "quantum",
+   "t": 1.0,
+   "concept": null,
+   "extra": {
+    "def": "Sum of probabilities of pairwise exclusive events is at most 1 (Specker / E-principle)."
+   }
+  },
+  {
+   "uid": "GPT:ax-sorkin",
+   "branch": "GPT",
+   "native_id": "ax-sorkin",
+   "label": "No higher-order interference",
+   "layer": "M",
+   "sublayer": "M.axiom",
+   "native_layer": "axiom",
+   "era": "quantum",
+   "t": 1.0,
+   "concept": null,
+   "extra": {
+    "def": "Sorkin hierarchy truncates at second order (pairwise slit interference only)."
+   }
+  },
+  {
+   "uid": "GPT:ax-decoh",
+   "branch": "GPT",
+   "native_id": "ax-decoh",
+   "label": "Decoherence to classical",
+   "layer": "M",
+   "sublayer": "M.axiom",
+   "native_layer": "axiom",
+   "era": "quantum",
+   "t": 1.0,
+   "concept": null,
+   "extra": {
+    "def": "The theory contains a decoherence map onto a classical (simplicial) subtheory."
+   }
+  },
+  {
+   "uid": "GPT:m-classical",
+   "branch": "GPT",
+   "native_id": "m-classical",
+   "label": "Classical probability (simplex)",
+   "layer": "M",
+   "sublayer": "M.model",
+   "native_layer": "model",
+   "era": "quantum",
+   "t": 1.0,
+   "concept": null,
+   "extra": {
+    "def": "State space a simplex; effect cone its dual; the unique noncontextual, local, positive, broadcastable theory."
+   }
+  },
+  {
+   "uid": "GPT:m-quantum",
+   "branch": "GPT",
+   "native_id": "m-quantum",
+   "label": "Quantum theory (complex)",
+   "layer": "M",
+   "sublayer": "M.model",
+   "native_layer": "model",
+   "era": "quantum",
+   "t": 1.0,
+   "concept": null,
+   "extra": {
+    "def": "Density operators on complex Hilbert space; all POVMs; CP dynamics."
+   }
+  },
+  {
+   "uid": "GPT:m-realqm",
+   "branch": "GPT",
+   "native_id": "m-realqm",
+   "label": "Real-amplitude QM",
+   "layer": "M",
+   "sublayer": "M.model",
+   "native_layer": "model",
+   "era": "quantum",
+   "t": 1.0,
+   "concept": null,
+   "extra": {
+    "def": "Quantum theory over real Hilbert spaces with real tensor composites. Drops ax-complex; violates local tomography; falsified in network Bell tests."
+   }
+  },
+  {
+   "uid": "GPT:m-boxworld",
+   "branch": "GPT",
+   "native_id": "m-boxworld",
+   "label": "Boxworld (GNST)",
+   "layer": "M",
+   "sublayer": "M.model",
+   "native_layer": "model",
+   "era": "quantum",
+   "t": 1.0,
+   "concept": null,
+   "extra": {
+    "def": "Maximal no-signalling theory under no-restriction: square state spaces, PR boxes, trivial reversible dynamics."
+   }
+  },
+  {
+   "uid": "GPT:m-spekkens",
+   "branch": "GPT",
+   "native_id": "m-spekkens",
+   "label": "Spekkens toy / epistricted theories",
+   "layer": "M",
+   "sublayer": "M.model",
+   "native_layer": "model",
+   "era": "quantum",
+   "t": 1.0,
+   "concept": null,
+   "extra": {
+    "def": "Classical ontic states + knowledge-balance restriction (epistricted cluster, discrete case). Nonsimplicial but simplex-embeddable: nonclassical yet noncontextual."
+   }
+  },
+  {
+   "uid": "GPT:m-stab-odd",
+   "branch": "GPT",
+   "native_id": "m-stab-odd",
+   "label": "Odd-d stabilizer subtheory",
+   "layer": "M",
+   "sublayer": "M.model",
+   "native_layer": "model",
+   "era": "quantum",
+   "t": 1.0,
+   "concept": "stabilizer_subtheory",
+   "extra": {
+    "def": "Stabilizer states / Clifford / Pauli measurements, odd local dimension. Epistricted-cluster member: equals discrete epistricted mechanics (Gross Wigner)."
+   }
+  },
+  {
+   "uid": "GPT:m-stab-even",
+   "branch": "GPT",
+   "native_id": "m-stab-even",
+   "label": "Qubit (even-d) stabilizer subtheory",
+   "layer": "M",
+   "sublayer": "M.model",
+   "native_layer": "model",
+   "era": "quantum",
+   "t": 1.0,
+   "concept": "stabilizer_subtheory",
+   "extra": {
+    "def": "Stabilizer states / Clifford / Pauli on qubits. The anomaly: NOT epistricted - state-independently contextual (Mermin square)."
+   }
+  },
+  {
+   "uid": "GPT:m-gaussian",
+   "branch": "GPT",
+   "native_id": "m-gaussian",
+   "label": "Gaussian quantum mechanics",
+   "layer": "M",
+   "sublayer": "M.model",
+   "native_layer": "model",
+   "era": "quantum",
+   "t": 1.0,
+   "concept": "gaussian_subtheory",
+   "extra": {
+    "def": "Gaussian states, Gaussian unitaries, quadrature measurements. Epistricted-cluster member: equals epistricted Liouville mechanics (Bartlett-Rudolph-Spekkens)."
+   }
+  },
+  {
+   "uid": "GPT:m-sepqt",
+   "branch": "GPT",
+   "native_id": "m-sepqt",
+   "label": "Separable quantum theory (min-tensor QM)",
+   "layer": "M",
+   "sublayer": "M.model",
+   "native_layer": "model",
+   "era": "quantum",
+   "t": 1.0,
+   "concept": null,
+   "extra": {
+    "def": "Single systems fully quantum; composite cone = separable cone. Axiom: minimal tensor product; purification fails by construction."
+   }
+  },
+  {
+   "uid": "GPT:m-aq",
+   "branch": "GPT",
+   "native_id": "m-aq",
+   "label": "Almost-quantum correlation set",
+   "layer": "M",
+   "sublayer": "M.model",
+   "native_layer": "model",
+   "era": "quantum",
+   "t": 1.0,
+   "concept": null,
+   "extra": {
+    "def": "Correlation set Q(1+AB), slightly larger than quantum, satisfying most device-independent principles; incompatible with no-restriction."
+   }
+  },
+  {
+   "uid": "GPT:m-psiepi",
+   "branch": "GPT",
+   "native_id": "m-psiepi",
+   "label": "psi-epistemic ontological models",
+   "layer": "M",
+   "sublayer": "M.model",
+   "native_layer": "model",
+   "era": "quantum",
+   "t": 2.0,
+   "concept": null,
+   "extra": {
+    "def": "Ontological models in which distinct pure states have overlapping ontic distributions (Harrigan-Spekkens classification)."
+   }
+  },
+  {
+   "uid": "GPT:s-sep",
+   "branch": "GPT",
+   "native_id": "s-sep",
+   "label": "Separable states",
+   "layer": "S",
+   "sublayer": "S.cluster",
+   "native_layer": "state",
+   "era": "quantum",
+   "t": 2.0,
+   "concept": "separable_states",
+   "extra": {
+    "def": "Convex mixtures of product states. LHV/LHS models exist by construction for all local measurements."
+   }
+  },
+  {
+   "uid": "GPT:s-ent",
+   "branch": "GPT",
+   "native_id": "s-ent",
+   "label": "Entangled states",
+   "layer": "S",
+   "sublayer": "S.cluster",
+   "native_layer": "state",
+   "era": "quantum",
+   "t": 1.0,
+   "concept": "entangled_states",
+   "extra": {
+    "def": "States outside the separable cone of a composite."
+   }
+  },
+  {
+   "uid": "GPT:s-bound",
+   "branch": "GPT",
+   "native_id": "s-bound",
+   "label": "Bound (PPT) entangled states",
+   "layer": "S",
+   "sublayer": "S.cluster",
+   "native_layer": "state",
+   "era": "quantum",
+   "t": 1.0,
+   "concept": "bound_entangled",
+   "extra": {
+    "def": "Entangled but undistillable; positive partial transpose."
+   }
+  },
+  {
+   "uid": "GPT:s-coh",
+   "branch": "GPT",
+   "native_id": "s-coh",
+   "label": "Basis-coherent states",
+   "layer": "S",
+   "sublayer": "S.cluster",
+   "native_layer": "state",
+   "era": "quantum",
+   "t": 1.0,
+   "concept": "coherent_states",
+   "extra": {
+    "def": "Off-diagonal terms w.r.t. a NAMED basis or fragment. Basis-relative by the spectral theorem (every rho is diagonal in its own eigenbasis), so every claim must name the basis. GPT counterpart: superposition / strong incompatibility."
+   }
+  },
+  {
+   "uid": "GPT:s-cohE",
+   "branch": "GPT",
+   "native_id": "s-cohE",
+   "label": "Energy-coherent (non-TTS) states",
+   "layer": "S",
+   "sublayer": "S.cluster",
+   "native_layer": "state",
+   "era": "quantum",
+   "t": 2.0,
+   "concept": "asymmetric_states",
+   "extra": {
+    "def": "[rho, H] != 0: coherence across energy eigenspaces = asymmetry under time translations (unspeakable coherence)."
+   }
+  },
+  {
+   "uid": "GPT:s-tts",
+   "branch": "GPT",
+   "native_id": "s-tts",
+   "label": "TTS / energy-diagonal states",
+   "layer": "S",
+   "sublayer": "S.cluster",
+   "native_layer": "state",
+   "era": "quantum",
+   "t": 2.0,
+   "concept": "symmetric_states",
+   "extra": {
+    "def": "[rho, H] = 0: time-translation symmetric states; block-diagonal in energy."
+   }
+  },
+  {
+   "uid": "GPT:s-thermal",
+   "branch": "GPT",
+   "native_id": "s-thermal",
+   "label": "Thermal (Gibbs) states",
+   "layer": "S",
+   "sublayer": "S.cluster",
+   "native_layer": "state",
+   "era": "quantum",
+   "t": 2.0,
+   "concept": "gibbs_state",
+   "extra": {
+    "def": "gamma = exp(-beta H)/Z; TTS, passive, full rank."
+   }
+  },
+  {
+   "uid": "GPT:s-athermal",
+   "branch": "GPT",
+   "native_id": "s-athermal",
+   "label": "Athermal states",
+   "layer": "S",
+   "sublayer": "S.cluster",
+   "native_layer": "state",
+   "era": "quantum",
+   "t": 1.0,
+   "concept": "athermal_states",
+   "extra": {
+    "def": "Deviation from the Gibbs state; the free-energy resource of thermal operations (can be TTS: diagonal non-thermal populations)."
+   }
+  },
+  {
+   "uid": "GPT:s-gauss",
+   "branch": "GPT",
+   "native_id": "s-gauss",
+   "label": "Gaussian states",
+   "layer": "S",
+   "sublayer": "S.cluster",
+   "native_layer": "state",
+   "era": "quantum",
+   "t": 2.0,
+   "concept": null,
+   "extra": {
+    "def": "Gaussian Wigner function: coherent, squeezed, thermal states of quadratic Hamiltonians."
+   }
+  },
+  {
+   "uid": "GPT:s-wneg",
+   "branch": "GPT",
+   "native_id": "s-wneg",
+   "label": "Wigner-negative states",
+   "layer": "S",
+   "sublayer": "S.cluster",
+   "native_layer": "state",
+   "era": "quantum",
+   "t": 1.0,
+   "concept": "wigner_negative",
+   "extra": {
+    "def": "Negativity of the (discrete or CV) Wigner function."
+   }
+  },
+  {
+   "uid": "GPT:s-stab",
+   "branch": "GPT",
+   "native_id": "s-stab",
+   "label": "Stabilizer states",
+   "layer": "S",
+   "sublayer": "S.cluster",
+   "native_layer": "state",
+   "era": "quantum",
+   "t": 2.0,
+   "concept": "stabilizer_states",
+   "extra": {
+    "def": "Joint eigenstates (and mixtures) of Weyl/Pauli stabilizer groups; odd d: nonnegative Gross-Wigner function."
+   }
+  },
+  {
+   "uid": "GPT:s-magic",
+   "branch": "GPT",
+   "native_id": "s-magic",
+   "label": "Magic (non-stabilizer) states",
+   "layer": "S",
+   "sublayer": "S.cluster",
+   "native_layer": "state",
+   "era": "quantum",
+   "t": 1.0,
+   "concept": "magic_states",
+   "extra": {
+    "def": "States outside the stabilizer polytope; the injection resource for universal QC."
+   }
+  },
+  {
+   "uid": "GPT:s-discord",
+   "branch": "GPT",
+   "native_id": "s-discord",
+   "label": "Discordant states",
+   "layer": "S",
+   "sublayer": "S.cluster",
+   "native_layer": "state",
+   "era": "quantum",
+   "t": 1.0,
+   "concept": "discordant_states",
+   "extra": {
+    "def": "Nonclassical correlations beyond entanglement (nonzero quantum discord)."
+   }
+  },
+  {
+   "uid": "GPT:s-zerodisc",
+   "branch": "GPT",
+   "native_id": "s-zerodisc",
+   "label": "Zero-discord (classical-classical) states",
+   "layer": "S",
+   "sublayer": "S.cluster",
+   "native_layer": "state",
+   "era": "quantum",
+   "t": 2.0,
+   "concept": "zero_discord",
+   "extra": {
+    "def": "Diagonal in a product basis; locally broadcastable; a strict subset of separable states."
+   }
+  },
+  {
+   "uid": "GPT:p-unitary",
+   "branch": "GPT",
+   "native_id": "p-unitary",
+   "label": "Unitary / reversible dynamics",
+   "layer": "M",
+   "sublayer": "M.process",
+   "native_layer": "process",
+   "era": "quantum",
+   "t": 2.0,
+   "concept": "schrodinger_evolution",
+   "extra": {
+    "def": "U = exp(-iHt); via the complex structure, generators are observables (Stone / Noether link)."
+   }
+  },
+  {
+   "uid": "GPT:p-clifford",
+   "branch": "GPT",
+   "native_id": "p-clifford",
+   "label": "Clifford operations",
+   "layer": "M",
+   "sublayer": "M.process",
+   "native_layer": "process",
+   "era": "quantum",
+   "t": 2.0,
+   "concept": "stabilizer_operations",
+   "extra": {
+    "def": "Normalizer of the Weyl/Pauli group; the free operations of stabilizer computation."
+   }
+  },
+  {
+   "uid": "GPT:p-gaussU",
+   "branch": "GPT",
+   "native_id": "p-gaussU",
+   "label": "Gaussian operations",
+   "layer": "M",
+   "sublayer": "M.process",
+   "native_layer": "process",
+   "era": "quantum",
+   "t": 2.0,
+   "concept": "gaussian_operations",
+   "extra": {
+    "def": "Quadratic-Hamiltonian unitaries, Gaussian channels and homodyne measurements. Exactly the regime where Moyal = Poisson."
+   }
+  },
+  {
+   "uid": "GPT:p-nongauss",
+   "branch": "GPT",
+   "native_id": "p-nongauss",
+   "label": "Non-Gaussian operations",
+   "layer": "M",
+   "sublayer": "M.process",
+   "native_layer": "process",
+   "era": "quantum",
+   "t": 2.0,
+   "concept": null,
+   "extra": {
+    "def": "Cubic-or-higher generators; photon counting / parity measurements. Needed for CV universality and for generating Wigner negativity."
+   }
+  },
+  {
+   "uid": "GPT:p-cov",
+   "branch": "GPT",
+   "native_id": "p-cov",
+   "label": "Covariant (TTS) processes",
+   "layer": "M",
+   "sublayer": "M.process",
+   "native_layer": "process",
+   "era": "quantum",
+   "t": 2.0,
+   "concept": "covariant_operations",
+   "extra": {
+    "def": "Channels commuting with time translation: T(U_t rho U_t*) = U_t T(rho) U_t*. Cannot create asymmetry/energy coherence."
+   }
+  },
+  {
+   "uid": "GPT:p-thermalops",
+   "branch": "GPT",
+   "native_id": "p-thermalops",
+   "label": "Thermal operations",
+   "layer": "M",
+   "sublayer": "M.process",
+   "native_layer": "process",
+   "era": "quantum",
+   "t": 2.0,
+   "concept": "thermal_operations",
+   "extra": {
+    "def": "Energy-preserving unitaries with Gibbs ancillas; a subset of covariant and Gibbs-preserving maps."
+   }
+  },
+  {
+   "uid": "GPT:p-incoh",
+   "branch": "GPT",
+   "native_id": "p-incoh",
+   "label": "Incoherent / dephasing-covariant ops",
+   "layer": "M",
+   "sublayer": "M.process",
+   "native_layer": "process",
+   "era": "quantum",
+   "t": 2.0,
+   "concept": "incoherent_operations",
+   "extra": {
+    "def": "Free operations of coherence resource theories: cannot create basis coherence."
+   }
+  },
+  {
+   "uid": "GPT:p-locc",
+   "branch": "GPT",
+   "native_id": "p-locc",
+   "label": "LOCC / non-entangling ops",
+   "layer": "M",
+   "sublayer": "M.process",
+   "native_layer": "process",
+   "era": "quantum",
+   "t": 2.0,
+   "concept": "locc",
+   "extra": {
+    "def": "Local operations + classical communication; free operations of entanglement theory: cannot create entanglement."
+   }
+  },
+  {
+   "uid": "GPT:p-filter",
+   "branch": "GPT",
+   "native_id": "p-filter",
+   "label": "Local filters (SLOCC postselection)",
+   "layer": "M",
+   "sublayer": "M.process",
+   "native_layer": "process",
+   "era": "quantum",
+   "t": 2.0,
+   "concept": null,
+   "extra": {
+    "def": "Probabilistic local maps; activate hidden nonlocality of LHV-modelable entangled states."
+   }
+  },
+  {
+   "uid": "GPT:p-projE",
+   "branch": "GPT",
+   "native_id": "p-projE",
+   "label": "Projective energy measurement (TPM)",
+   "layer": "M",
+   "sublayer": "M.process",
+   "native_layer": "process",
+   "era": "quantum",
+   "t": 2.0,
+   "concept": null,
+   "extra": {
+    "def": "Two-point projective scheme; the first measurement dephases all input energy coherence."
+   }
+  },
+  {
+   "uid": "GPT:p-weak",
+   "branch": "GPT",
+   "native_id": "p-weak",
+   "label": "Weak / direct measurements + postselection",
+   "layer": "M",
+   "sublayer": "M.process",
+   "native_layer": "process",
+   "era": "quantum",
+   "t": 2.0,
+   "concept": null,
+   "extra": {
+    "def": "Minimally invasive sequential probing; reads Kirkwood-Dirac values and weak values."
+   }
+  },
+  {
+   "uid": "GPT:p-pauli",
+   "branch": "GPT",
+   "native_id": "p-pauli",
+   "label": "Sharp KS / Pauli measurement sets",
+   "layer": "M",
+   "sublayer": "M.process",
+   "native_layer": "process",
+   "era": "quantum",
+   "t": 2.0,
+   "concept": null,
+   "extra": {
+    "def": "Fixed compatibility structures of sharp measurements: Pauli contexts (Mermin square), KS ray sets (KCBS, Yu-Oh)."
+   }
+  },
+  {
+   "uid": "GPT:p-incompset",
+   "branch": "GPT",
+   "native_id": "p-incompset",
+   "label": "Incompatible measurement sets",
+   "layer": "M",
+   "sublayer": "M.process",
+   "native_layer": "process",
+   "era": "quantum",
+   "t": 2.0,
+   "concept": null,
+   "extra": {
+    "def": "No joint POVM reproducing all marginals; necessary resource on each wing for steering and Bell tests."
+   }
+  },
+  {
+   "uid": "GPT:w-bell",
+   "branch": "GPT",
+   "native_id": "w-bell",
+   "label": "Bell / CHSH functional",
+   "layer": "O",
+   "sublayer": "O.witness",
+   "native_layer": "witness",
+   "era": "quantum",
+   "t": 2.0,
+   "concept": "bell_witness",
+   "extra": {
+    "def": "B = <A1B1>+<A1B2>+<A2B1>-<A2B2>. One functional, stratified thresholds: >2 Bell violation, 2*sqrt(2) Tsirelson (quantum max), 4 PR box. The recorded exception to strict 1-1 witness-effect pairing."
+   }
+  },
+  {
+   "uid": "GPT:w-steer",
+   "branch": "GPT",
+   "native_id": "w-steer",
+   "label": "Steering inequality / LHS test",
+   "layer": "O",
+   "sublayer": "O.witness",
+   "native_layer": "witness",
+   "era": "quantum",
+   "t": 2.0,
+   "concept": "steering_witness",
+   "extra": {
+    "def": "Semidefinite membership test for local-hidden-state models of an assemblage {sigma_a|x}; violation of a steering inequality certifies steering."
+   }
+  },
+  {
+   "uid": "GPT:w-incomp",
+   "branch": "GPT",
+   "native_id": "w-incomp",
+   "label": "Joint-measurability SDP",
+   "layer": "O",
+   "sublayer": "O.witness",
+   "native_layer": "witness",
+   "era": "quantum",
+   "t": 2.0,
+   "concept": "incompatibility_witness",
+   "extra": {
+    "def": "SDP deciding whether a measurement set has a parent POVM; incompatibility robustness quantifies the margin."
+   }
+  },
+  {
+   "uid": "GPT:w-entw",
+   "branch": "GPT",
+   "native_id": "w-entw",
+   "label": "Entanglement witness operator",
+   "layer": "O",
+   "sublayer": "O.witness",
+   "native_layer": "witness",
+   "era": "quantum",
+   "t": 2.0,
+   "concept": "entanglement_witness",
+   "extra": {
+    "def": "Hermitian W with Tr(W sigma) >= 0 for all separable sigma, Tr(W rho) < 0 for some entangled rho; complete by Hahn-Banach, but no efficient universal witness (separability NP-hard)."
+   }
+  },
+  {
+   "uid": "GPT:w-ncineq",
+   "branch": "GPT",
+   "native_id": "w-ncineq",
+   "label": "Noncontextuality inequalities / simplex-embedding LP",
+   "layer": "O",
+   "sublayer": "O.witness",
+   "native_layer": "witness",
+   "era": "quantum",
+   "t": 2.0,
+   "concept": "noncontextuality_witness",
+   "extra": {
+    "def": "Generalized-noncontextuality inequalities; the complete test is a linear program deciding simplex embeddability of the accessible GPT fragment."
+   }
+  },
+  {
+   "uid": "GPT:w-sic",
+   "branch": "GPT",
+   "native_id": "w-sic",
+   "label": "State-independent KS sets",
+   "layer": "O",
+   "sublayer": "O.witness",
+   "native_layer": "witness",
+   "era": "quantum",
+   "t": 2.0,
+   "concept": null,
+   "extra": {
+    "def": "Peres-Mermin square (2 qubits, 9 Paulis), Yu-Oh 13 rays (qutrit): the noncontextual bound is violated by EVERY state - maximally mixed and thermal included."
+   }
+  },
+  {
+   "uid": "GPT:w-kcbs",
+   "branch": "GPT",
+   "native_id": "w-kcbs",
+   "label": "KCBS pentagon functional",
+   "layer": "O",
+   "sublayer": "O.witness",
+   "native_layer": "witness",
+   "era": "quantum",
+   "t": 2.0,
+   "concept": null,
+   "extra": {
+    "def": "State-dependent KS functional: sum of 5 exclusive-projector probabilities <= 2 for NCHV; qutrit states reach sqrt(5) (Lovasz theta)."
+   }
+  },
+  {
+   "uid": "GPT:w-wig",
+   "branch": "GPT",
+   "native_id": "w-wig",
+   "label": "Displaced-parity (Wigner) estimator",
+   "layer": "O",
+   "sublayer": "O.witness",
+   "native_layer": "witness",
+   "era": "quantum",
+   "t": 2.0,
+   "concept": "wigner_witness",
+   "extra": {
+    "def": "W(alpha) = (2/pi) Tr[rho D(alpha) Pi D(alpha)*] (CV); phase-point operators A_u (odd d). Measures the Wigner function point by point."
+   }
+  },
+  {
+   "uid": "GPT:w-kd",
+   "branch": "GPT",
+   "native_id": "w-kd",
+   "label": "Kirkwood-Dirac distribution scheme",
+   "layer": "O",
+   "sublayer": "O.witness",
+   "native_layer": "witness",
+   "era": "quantum",
+   "t": 2.0,
+   "concept": null,
+   "extra": {
+    "def": "Q(a,b) = Tr(Pi_a Pi_b rho), measured by weak-then-strong (direct) measurement; negativity or imaginarity is the nonclassicality flag."
+   }
+  },
+  {
+   "uid": "GPT:w-weakval",
+   "branch": "GPT",
+   "native_id": "w-weakval",
+   "label": "Anomalous weak-value protocol",
+   "layer": "O",
+   "sublayer": "O.witness",
+   "native_layer": "witness",
+   "era": "quantum",
+   "t": 2.0,
+   "concept": null,
+   "extra": {
+    "def": "A_w = <phi|A|psi>/<phi|psi> with postselection; anomalous when outside the spectrum of A; a conditioned KD expectation."
+   }
+  },
+  {
+   "uid": "GPT:w-workq",
+   "branch": "GPT",
+   "native_id": "w-workq",
+   "label": "Work-quasiprobability protocol",
+   "layer": "O",
+   "sublayer": "O.witness",
+   "native_layer": "witness",
+   "era": "quantum",
+   "t": 2.0,
+   "concept": null,
+   "extra": {
+    "def": "Weak-TPM interpolations / Margenau-Hill (real-KD) work distributions; negativity certifies contextuality of the work process."
+   }
+  },
+  {
+   "uid": "GPT:w-magicw",
+   "branch": "GPT",
+   "native_id": "w-magicw",
+   "label": "Stabilizer / magic witnesses",
+   "layer": "O",
+   "sublayer": "O.witness",
+   "native_layer": "witness",
+   "era": "quantum",
+   "t": 2.0,
+   "concept": "magic_witness",
+   "extra": {
+    "def": "Robustness of magic, mana (log-negativity of the Gross-Wigner function, odd d), stabilizer fidelity and extent."
+   }
+  },
+  {
+   "uid": "GPT:w-cohw",
+   "branch": "GPT",
+   "native_id": "w-cohw",
+   "label": "Coherence monotones / event-graph tests",
+   "layer": "O",
+   "sublayer": "O.witness",
+   "native_layer": "witness",
+   "era": "quantum",
+   "t": 2.0,
+   "concept": "coherence_monotones",
+   "extra": {
+    "def": "l1 and relative-entropy coherence monotones; interference visibility; event-graph (C_G) inequalities for basis-independent set coherence."
+   }
+  },
+  {
+   "uid": "GPT:w-discw",
+   "branch": "GPT",
+   "native_id": "w-discw",
+   "label": "Local-broadcasting test",
+   "layer": "O",
+   "sublayer": "O.witness",
+   "native_layer": "witness",
+   "era": "quantum",
+   "t": 2.0,
+   "concept": "discord_witness",
+   "extra": {
+    "def": "rho_AB is locally broadcastable iff it has zero discord; operational failure of local broadcasting witnesses discord."
+   }
+  },
+  {
+   "uid": "GPT:w-clone",
+   "branch": "GPT",
+   "native_id": "w-clone",
+   "label": "Cloning-fidelity bound",
+   "layer": "O",
+   "sublayer": "O.witness",
+   "native_layer": "witness",
+   "era": "quantum",
+   "t": 2.0,
+   "concept": null,
+   "extra": {
+    "def": "Universal qubit cloner fidelity <= 5/6; the certified impossibility of exceeding it is the operational witness of no-broadcasting."
+   }
+  },
+  {
+   "uid": "GPT:w-vis",
+   "branch": "GPT",
+   "native_id": "w-vis",
+   "label": "Fringe visibility",
+   "layer": "O",
+   "sublayer": "O.witness",
+   "native_layer": "witness",
+   "era": "quantum",
+   "t": 2.0,
+   "concept": null,
+   "extra": {
+    "def": "Two-path visibility V with duality V^2 + D^2 <= 1. Caveat recorded as D3: visibility alone does NOT certify nonclassicality (epistricted theories reproduce it)."
+   }
+  },
+  {
+   "uid": "GPT:w-sorkin",
+   "branch": "GPT",
+   "native_id": "w-sorkin",
+   "label": "Sorkin I3 estimator",
+   "layer": "O",
+   "sublayer": "O.witness",
+   "native_layer": "witness",
+   "era": "quantum",
+   "t": 2.0,
+   "concept": null,
+   "extra": {
+    "def": "I3 = P123 - P12 - P13 - P23 + P1 + P2 + P3. Identically zero in quantum theory: a null test that fires only in beyond-quantum (density-cube) theories."
+   }
+  },
+  {
+   "uid": "GPT:e-bell",
+   "branch": "GPT",
+   "native_id": "e-bell",
+   "label": "Bell inequality violation",
+   "layer": "O",
+   "sublayer": "O.effect",
+   "native_layer": "effect",
+   "era": "quantum",
+   "t": 1.0,
+   "concept": "bell_nonlocality",
+   "extra": {
+    "def": "No local-hidden-variable model for space-like separated statistics."
+   }
+  },
+  {
+   "uid": "GPT:e-steer",
+   "branch": "GPT",
+   "native_id": "e-steer",
+   "label": "EPR steering",
+   "layer": "O",
+   "sublayer": "O.effect",
+   "native_layer": "effect",
+   "era": "quantum",
+   "t": 1.0,
+   "concept": "epr_steering",
+   "extra": {
+    "def": "No local-hidden-state model for an assemblage."
+   }
+  },
+  {
+   "uid": "GPT:e-incomp",
+   "branch": "GPT",
+   "native_id": "e-incomp",
+   "label": "Measurement incompatibility",
+   "layer": "O",
+   "sublayer": "O.effect",
+   "native_layer": "effect",
+   "era": "quantum",
+   "t": 1.0,
+   "concept": "measurement_incompatibility",
+   "extra": {
+    "def": "No joint measurement reproducing the marginals."
+   }
+  },
+  {
+   "uid": "GPT:e-ks",
+   "branch": "GPT",
+   "native_id": "e-ks",
+   "label": "KS contextuality (state-independent)",
+   "layer": "O",
+   "sublayer": "O.effect",
+   "native_layer": "effect",
+   "era": "quantum",
+   "t": 1.0,
+   "concept": "ks_contextuality",
+   "extra": {
+    "def": "No outcome-deterministic noncontextual value assignment to sharp measurements."
+   }
+  },
+  {
+   "uid": "GPT:e-ksdep",
+   "branch": "GPT",
+   "native_id": "e-ksdep",
+   "label": "State-dependent KS contextuality",
+   "layer": "O",
+   "sublayer": "O.effect",
+   "native_layer": "effect",
+   "era": "quantum",
+   "t": 1.0,
+   "concept": "ks_contextuality",
+   "extra": {
+    "def": "Violation of a KS-type noncontextuality inequality by a specific state (e.g. KCBS)."
+   }
+  },
+  {
+   "uid": "GPT:e-ctx",
+   "branch": "GPT",
+   "native_id": "e-ctx",
+   "label": "Generalized (Spekkens) contextuality",
+   "layer": "O",
+   "sublayer": "O.effect",
+   "native_layer": "effect",
+   "era": "quantum",
+   "t": 1.0,
+   "concept": null,
+   "extra": {
+    "def": "No generalized-noncontextual ontological model; GPT form: failure of simplex embeddability."
+   }
+  },
+  {
+   "uid": "GPT:e-nobc",
+   "branch": "GPT",
+   "native_id": "e-nobc",
+   "label": "No-cloning / no-broadcasting",
+   "layer": "O",
+   "sublayer": "O.effect",
+   "native_layer": "effect",
+   "era": "quantum",
+   "t": 1.0,
+   "concept": null,
+   "extra": {
+    "def": "Impossibility of a map broadcasting all states."
+   }
+  },
+  {
+   "uid": "GPT:e-interf2",
+   "branch": "GPT",
+   "native_id": "e-interf2",
+   "label": "Second-order interference",
+   "layer": "O",
+   "sublayer": "O.effect",
+   "native_layer": "effect",
+   "era": "quantum",
+   "t": 1.0,
+   "concept": "interference",
+   "extra": {
+    "def": "Two-path interference phenomenology (fringes, Elitzur-Vaidman, delayed choice)."
+   }
+  },
+  {
+   "uid": "GPT:e-interf3",
+   "branch": "GPT",
+   "native_id": "e-interf3",
+   "label": "Higher-order interference",
+   "layer": "O",
+   "sublayer": "O.effect",
+   "native_layer": "effect",
+   "era": "quantum",
+   "t": 1.0,
+   "concept": null,
+   "extra": {
+    "def": "Nonzero Sorkin third-or-higher-order interference terms."
+   }
+  },
+  {
+   "uid": "GPT:e-weak",
+   "branch": "GPT",
+   "native_id": "e-weak",
+   "label": "Anomalous weak values",
+   "layer": "O",
+   "sublayer": "O.effect",
+   "native_layer": "effect",
+   "era": "quantum",
+   "t": 1.0,
+   "concept": null,
+   "extra": {
+    "def": "Weak values outside the eigenvalue range."
+   }
+  },
+  {
+   "uid": "GPT:e-kd",
+   "branch": "GPT",
+   "native_id": "e-kd",
+   "label": "Kirkwood-Dirac nonpositivity",
+   "layer": "O",
+   "sublayer": "O.effect",
+   "native_layer": "effect",
+   "era": "quantum",
+   "t": 1.0,
+   "concept": null,
+   "extra": {
+    "def": "Negativity or imaginarity of the KD quasiprobability of an experiment."
+   }
+  },
+  {
+   "uid": "GPT:e-heat",
+   "branch": "GPT",
+   "native_id": "e-heat",
+   "label": "Anomalous work / heat flows",
+   "layer": "O",
+   "sublayer": "O.effect",
+   "native_layer": "effect",
+   "era": "quantum",
+   "t": 1.0,
+   "concept": null,
+   "extra": {
+    "def": "Work or heat statistics impossible for noncontextual / classically correlated processes."
+   }
+  },
+  {
+   "uid": "GPT:e-pr",
+   "branch": "GPT",
+   "native_id": "e-pr",
+   "label": "Superquantum (PR) correlations",
+   "layer": "O",
+   "sublayer": "O.effect",
+   "native_layer": "effect",
+   "era": "quantum",
+   "t": 1.0,
+   "concept": null,
+   "extra": {
+    "def": "No-signalling correlations beyond the Tsirelson bound."
+   }
+  },
+  {
+   "uid": "GPT:t-di",
+   "branch": "GPT",
+   "native_id": "t-di",
+   "label": "DI randomness & QKD",
+   "layer": "O",
+   "sublayer": "O.task",
+   "native_layer": "task",
+   "era": "quantum",
+   "t": 1.0,
+   "concept": "di_tasks",
+   "extra": {
+    "def": "Device-independent certification from Bell violation."
+   }
+  },
+  {
+   "uid": "GPT:t-1sdi",
+   "branch": "GPT",
+   "native_id": "t-1sdi",
+   "label": "One-sided DI QKD",
+   "layer": "O",
+   "sublayer": "O.task",
+   "native_layer": "task",
+   "era": "quantum",
+   "t": 1.0,
+   "concept": "one_sided_di",
+   "extra": {
+    "def": "Security from steering with one untrusted party."
+   }
+  },
+  {
+   "uid": "GPT:t-bb84",
+   "branch": "GPT",
+   "native_id": "t-bb84",
+   "label": "BB84 key distribution",
+   "layer": "O",
+   "sublayer": "O.task",
+   "native_layer": "task",
+   "era": "quantum",
+   "t": 1.0,
+   "concept": null,
+   "extra": {
+    "def": "Prepare-measure key distribution."
+   }
+  },
+  {
+   "uid": "GPT:t-pom",
+   "branch": "GPT",
+   "native_id": "t-pom",
+   "label": "Parity-oblivious multiplexing / RAC",
+   "layer": "O",
+   "sublayer": "O.task",
+   "native_layer": "task",
+   "era": "quantum",
+   "t": 1.0,
+   "concept": "pom_rac",
+   "extra": {
+    "def": "Communication games bounded by preparation noncontextuality."
+   }
+  },
+  {
+   "uid": "GPT:t-mbqc",
+   "branch": "GPT",
+   "native_id": "t-mbqc",
+   "label": "Universal QC (state injection / MBQC)",
+   "layer": "O",
+   "sublayer": "O.task",
+   "native_layer": "task",
+   "era": "quantum",
+   "t": 1.0,
+   "concept": "state_injection",
+   "extra": {
+    "def": "Promoting free (stabilizer / Clifford) operations to universality."
+   }
+  },
+  {
+   "uid": "GPT:t-disc",
+   "branch": "GPT",
+   "native_id": "t-disc",
+   "label": "State-discrimination advantage",
+   "layer": "O",
+   "sublayer": "O.task",
+   "native_layer": "task",
+   "era": "quantum",
+   "t": 1.0,
+   "concept": "discrimination",
+   "extra": {
+    "def": "Minimum-error discrimination beyond noncontextual bounds."
+   }
+  },
+  {
+   "uid": "GPT:t-metro",
+   "branch": "GPT",
+   "native_id": "t-metro",
+   "label": "Postselected metrology",
+   "layer": "O",
+   "sublayer": "O.task",
+   "native_layer": "task",
+   "era": "quantum",
+   "t": 1.0,
+   "concept": "metrology",
+   "extra": {
+    "def": "Fisher-information advantages from quasiprobability negativity."
+   }
+  },
+  {
+   "uid": "GPT:t-witness",
+   "branch": "GPT",
+   "native_id": "t-witness",
+   "label": "Entanglement witnessing / separability",
+   "layer": "O",
+   "sublayer": "O.task",
+   "native_layer": "task",
+   "era": "quantum",
+   "t": 1.0,
+   "concept": null,
+   "extra": {
+    "def": "Detecting entanglement; complexity of deciding separability."
+   }
+  },
+  {
+   "uid": "GPT:t-undecide",
+   "branch": "GPT",
+   "native_id": "t-undecide",
+   "label": "Deciding the quantum set",
+   "layer": "O",
+   "sublayer": "O.task",
+   "native_layer": "task",
+   "era": "quantum",
+   "t": 1.0,
+   "concept": null,
+   "extra": {
+    "def": "Complexity/decidability of membership in quantum correlations."
+   }
+  },
+  {
+   "uid": "GPT:t-secondlaws",
+   "branch": "GPT",
+   "native_id": "t-secondlaws",
+   "label": "Second laws / work extraction",
+   "layer": "O",
+   "sublayer": "O.task",
+   "native_layer": "task",
+   "era": "quantum",
+   "t": 1.0,
+   "concept": "second_law",
+   "extra": {
+    "def": "State conversion under thermal operations; work from coherence and correlations."
+   }
+  }
+ ],
+ "routes": [
+  {
+   "uid": "GPT:GN1",
+   "branch": "GPT",
+   "native_id": "GN1",
+   "inputs": [
+    "GPT:ax-symplectic"
+   ],
+   "target": "GPT:m-classical",
+   "logic": "single",
+   "kind": "generates",
+   "kind_native": "generates",
+   "status": "theorem",
+   "polarity": "structural",
+   "t": 2.0,
+   "extra": {
+    "statement": "Classical statistical mechanics: unrestricted probability distributions over phase space form the simplex theory; Liouville flow gives the reversible dynamics.",
+    "refs": [
+     "standard; see Spekkens, arXiv:1409.5041, Sec. 2"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:GN2a",
+   "branch": "GPT",
+   "native_id": "GN2a",
+   "inputs": [
+    "GPT:ax-epirestrict"
+   ],
+   "target": "GPT:m-spekkens",
+   "logic": "single",
+   "kind": "generates",
+   "kind_native": "generates",
+   "status": "theorem",
+   "polarity": "structural",
+   "t": 2.0,
+   "extra": {
+    "statement": "Classical ontology + knowledge-balance restriction generates the toy theory (discrete epistricted mechanics).",
+    "refs": [
+     "Spekkens, PRA 75, 032110 (2007)",
+     "Spekkens, Quasi-quantization, arXiv:1409.5041 (2016)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:GN2b",
+   "branch": "GPT",
+   "native_id": "GN2b",
+   "inputs": [
+    "GPT:ax-epirestrict"
+   ],
+   "target": "GPT:m-gaussian",
+   "logic": "single",
+   "kind": "generates",
+   "kind_native": "generates",
+   "status": "theorem",
+   "polarity": "structural",
+   "t": 2.0,
+   "extra": {
+    "statement": "Epistricted Liouville mechanics with the uncertainty-saturating Gaussian restriction reproduces Gaussian quantum mechanics exactly (states, dynamics, quadrature statistics).",
+    "refs": [
+     "Bartlett, Rudolph, Spekkens, PRA 86, 012103 (2012)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:GN2c",
+   "branch": "GPT",
+   "native_id": "GN2c",
+   "inputs": [
+    "GPT:ax-epirestrict"
+   ],
+   "target": "GPT:m-stab-odd",
+   "logic": "single",
+   "kind": "generates",
+   "kind_native": "generates",
+   "status": "theorem",
+   "polarity": "structural",
+   "t": 2.0,
+   "extra": {
+    "statement": "Epistricted Z_d mechanics (discrete symplectic phase space + knowledge balance) reproduces the odd-d stabilizer subtheory; equivalently Gross's nonnegative Wigner representation, which is its UNIQUE noncontextual model.",
+    "refs": [
+     "Spekkens, arXiv:1409.5041",
+     "Gross, J. Math. Phys. 47, 122107 (2006)",
+     "Catani, Browne, NJP 19, 073035 (2017)",
+     "Schmid, Du, Selby, Pusey, PRL 129, 120403 (2022)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:GN3",
+   "branch": "GPT",
+   "native_id": "GN3",
+   "inputs": [
+    "GPT:ax-epirestrict"
+   ],
+   "target": "GPT:m-stab-even",
+   "logic": "single",
+   "kind": "not_implies",
+   "kind_native": "not_implies",
+   "status": "counterexample",
+   "polarity": "no_go",
+   "t": 2.0,
+   "extra": {
+    "statement": "The even-d anomaly: NO epistemic restriction of a classical theory reproduces the qubit stabilizer subtheory - it has no nonnegative diagram-preserving representation and is state-independently contextual (Mermin square).",
+    "refs": [
+     "Schmid, Du, Selby, Pusey, PRL 129, 120403 (2022)",
+     "Spekkens, arXiv:1409.5041 (qubit case noted)",
+     "Mermin, PRL 65, 3373 (1990)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:GN4",
+   "branch": "GPT",
+   "native_id": "GN4",
+   "inputs": [
+    "GPT:ax-moyal"
+   ],
+   "target": "GPT:m-quantum",
+   "logic": "single",
+   "kind": "generates",
+   "kind_native": "generates",
+   "status": "theorem",
+   "polarity": "structural",
+   "t": 2.0,
+   "extra": {
+    "statement": "Full quantum mechanics is the deformation of the Poisson algebra: [f,g]_star = i hbar {f,g}_Moyal, with {f,g}_M = {f,g}_Poisson + O(hbar^2). Groenewold - van Hove: no exact Lie morphism Poisson to commutator exists beyond quadratics, so the lift is necessarily a deformation, not an embedding.",
+    "refs": [
+     "Groenewold, Physica 12, 405 (1946)",
+     "Moyal, Proc. Camb. Phil. Soc. 45, 99 (1949)",
+     "Bayen, Flato, Fronsdal, Lichnerowicz, Sternheimer, Ann. Phys. 111, 61 & 111 (1978)",
+     "Kontsevich, Lett. Math. Phys. 66, 157 (2003)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:GN5",
+   "branch": "GPT",
+   "native_id": "GN5",
+   "inputs": [
+    "GPT:ax-moyal"
+   ],
+   "target": "GPT:s-wneg",
+   "logic": "single",
+   "kind": "generates",
+   "kind_native": "generates",
+   "status": "derived",
+   "polarity": "structural",
+   "t": 2.0,
+   "extra": {
+    "statement": "ASSEMBLED COROLLARY (this work): the beyond-Poisson terms of the Moyal bracket (order hbar^2, nonzero only for non-quadratic Hamiltonians) are exactly the generators of Wigner negativity. Quadratic flows keep Moyal = Poisson, generate Gaussian unitaries, and preserve Wigner positivity; pure Wigner-positive states are exactly Gaussian (Hudson); CV universality and negativity generation require cubic-or-higher generators. Via the CV equivalence (C2), these same terms are what generate contextuality. SCOPE (C8): proved as NECESSITY - quadratic generators keep Moyal = Poisson and preserve Wigner positivity, so creating negativity from a Wigner-positive state needs degree >= 3; not every non-quadratic H creates negativity from every state (a function of the number operator leaves the vacuum invariant).",
+    "refs": [
+     "Groenewold 1946",
+     "Hudson, Rep. Math. Phys. 6, 249 (1974)",
+     "Lloyd, Braunstein, PRL 82, 1784 (1999)",
+     "Takagi, Zhuang, PRA 97, 062337 (2018)",
+     "Booth, Chabaud, Emeriau, PRL 129, 230401 (2022)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:GN6",
+   "branch": "GPT",
+   "native_id": "GN6",
+   "inputs": [
+    "GPT:ax-complex"
+   ],
+   "target": "GPT:ax-loctom",
+   "logic": "single",
+   "kind": "generates",
+   "kind_native": "generates",
+   "status": "theorem",
+   "polarity": "structural",
+   "t": 2.0,
+   "extra": {
+    "statement": "The complex field is the division-ring choice for which quantum theory is locally tomographic; real-amplitude QM violates local tomography (composite real systems are not fixed by local statistics).",
+    "refs": [
+     "Araki, Commun. Math. Phys. 75, 1 (1980)",
+     "Wootters, in Complexity, Entropy and the Physics of Information (1990)",
+     "Hardy, Wootters, Found. Phys. 42, 454 (2012)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:GN7",
+   "branch": "GPT",
+   "native_id": "GN7",
+   "inputs": [
+    "GPT:ax-complex"
+   ],
+   "target": "GPT:m-quantum",
+   "logic": "single",
+   "kind": "generates",
+   "kind_native": "generates",
+   "status": "theorem",
+   "polarity": "structural",
+   "t": 2.0,
+   "extra": {
+    "statement": "i makes i[A,B] Hermitian: observables close as a Lie algebra and coincide with the generators of dynamics (Stone's theorem) - the quantum Noether link. In real QM the generator of a one-parameter unitary group is not an observable without superselection workarounds (Stueckelberg).",
+    "refs": [
+     "Stone, Ann. Math. 33, 643 (1932)",
+     "Stueckelberg, Helv. Phys. Acta 33, 727 (1960)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:GN9",
+   "branch": "GPT",
+   "native_id": "GN9",
+   "inputs": [
+    "GPT:ax-hbar"
+   ],
+   "target": "GPT:ax-epirestrict",
+   "logic": "single",
+   "kind": "generates",
+   "kind_native": "generates",
+   "status": "theorem",
+   "polarity": "structural",
+   "t": 2.0,
+   "extra": {
+    "statement": "hbar sets the epistemic cell: the uncertainty-saturating restriction of epistricted Liouville mechanics is defined by covariance matrices obeying the hbar/2 bound - the classical uncertainty principle that generates Gaussian QM.",
+    "refs": [
+     "Bartlett, Rudolph, Spekkens, PRA 86, 012103 (2012)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:GN10",
+   "branch": "GPT",
+   "native_id": "GN10",
+   "inputs": [
+    "GPT:ax-hbar"
+   ],
+   "target": "GPT:m-classical",
+   "logic": "single",
+   "kind": "generates",
+   "kind_native": "generates",
+   "status": "theorem",
+   "polarity": "structural",
+   "t": 2.0,
+   "extra": {
+    "statement": "hbar to 0 is the contraction: Moyal bracket to Poisson bracket, star product to pointwise product, negativity scale to zero - the simplex (classical) limit of the deformation.",
+    "refs": [
+     "Bayen et al., Ann. Phys. 111 (1978)",
+     "standard deformation-quantization limit"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:E12",
+   "branch": "GPT",
+   "native_id": "E12",
+   "inputs": [
+    "GPT:ax-nosig"
+   ],
+   "target": "GPT:m-boxworld",
+   "logic": "single",
+   "kind": "generates",
+   "kind_native": "generates",
+   "status": "theorem",
+   "polarity": "structural",
+   "t": 2.0,
+   "extra": {
+    "statement": "Boxworld is the maximal theory consistent with no-signalling under the no-restriction hypothesis: square state spaces whose extremal bipartite states are PR boxes.",
+    "refs": [
+     "Barrett, PRA 75, 032304 (2007)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:E13",
+   "branch": "GPT",
+   "native_id": "E13",
+   "inputs": [
+    "GPT:m-sepqt"
+   ],
+   "target": "GPT:ax-purif",
+   "logic": "single",
+   "kind": "forbids",
+   "kind_native": "forbids",
+   "status": "theorem",
+   "polarity": "no_go",
+   "t": 2.0,
+   "extra": {
+    "statement": "Separable quantum theory is defined by the minimal-tensor-product composition axiom; purification fails in it by construction (any purification of a mixed separable marginal would be entangled).",
+    "refs": [
+     "Janotta, Hinrichsen, J. Phys. A 47, 323001 (2014) (min/max tensor products)",
+     "cf. P3, catalog"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:MH1",
+   "branch": "GPT",
+   "native_id": "MH1",
+   "inputs": [
+    "GPT:m-quantum"
+   ],
+   "target": "GPT:s-ent",
+   "logic": "single",
+   "kind": "hosts",
+   "kind_native": "hosts",
+   "status": "theorem",
+   "polarity": "structural",
+   "t": 2.3,
+   "extra": {
+    "statement": "Complex quantum theory HOSTS entangled states: for d_A, d_B >= 2 the PSD cone strictly exceeds the separable cone (Bell states), and under purification (E6) every mixed state is the marginal of an entangled pure state. First hop of the generative chain m-quantum -> s-ent -> e-bell: continue via B2 (every pure entangled state violates some Bell inequality) with the process-side input B7 (incompatible local measurements necessary), minding B3 (mixed Werner states are Bell-blind until filtered, B5/K12).",
+    "refs": [
+     "Horodecki x4, RMP 81, 865 (2009)",
+     "Gisin, Phys. Lett. A 154, 201 (1991)",
+     "Chiribella, D'Ariano, Perinotti, PRA 81, 062348 (2010)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:MH2",
+   "branch": "GPT",
+   "native_id": "MH2",
+   "inputs": [
+    "GPT:m-gaussian"
+   ],
+   "target": "GPT:s-ent",
+   "logic": "single",
+   "kind": "hosts",
+   "kind_native": "hosts",
+   "status": "theorem",
+   "polarity": "structural",
+   "t": 2.3,
+   "extra": {
+    "statement": "Gaussian QM hosts entangled states (two-mode squeezed vacuum): steerable with quadratures (F2), Bell-blind under Gaussian measurements (K5), unlocked by non-Gaussian measurements (K6). Hosting a state cluster does not decide which witnesses fire - the process/witness clusters do.",
+    "refs": [
+     "Wiseman, Jones, Doherty, PRL 98, 140402 (2007)",
+     "Banaszek, Wodkiewicz, PRA 58, 4345 (1998)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:MH3",
+   "branch": "GPT",
+   "native_id": "MH3",
+   "inputs": [
+    "GPT:m-stab-odd"
+   ],
+   "target": "GPT:s-ent",
+   "logic": "single",
+   "kind": "hosts",
+   "kind_native": "hosts",
+   "status": "theorem",
+   "polarity": "structural",
+   "t": 2.3,
+   "extra": {
+    "statement": "The odd-d stabilizer subtheory hosts genuinely entangled states (maximally entangled stabilizer states) while remaining noncontextual, with a LOCAL nonnegative model (Gross Wigner on the product phase space). Entanglement without contextuality: the counterexample blocking the reading of 'entangled' as 'contextual'.",
+    "refs": [
+     "Gross, J. Math. Phys. 47, 122107 (2006)",
+     "Schmid, Du, Selby, Pusey, PRL 129, 120403 (2022)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:MH4",
+   "branch": "GPT",
+   "native_id": "MH4",
+   "inputs": [
+    "GPT:m-boxworld"
+   ],
+   "target": "GPT:s-ent",
+   "logic": "single",
+   "kind": "hosts",
+   "kind_native": "hosts",
+   "status": "theorem",
+   "polarity": "structural",
+   "t": 2.3,
+   "extra": {
+    "statement": "Boxworld hosts entangled states: PR boxes are entangled elements of the maximal tensor product of square state spaces, giving maximal CHSH violation despite trivial reversible dynamics (E7).",
+    "refs": [
+     "Barrett, PRA 75, 032304 (2007)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:R1",
+   "branch": "GPT",
+   "native_id": "R1",
+   "inputs": [
+    "GPT:s-tts"
+   ],
+   "target": "GPT:s-discord",
+   "logic": "single",
+   "kind": "forbids",
+   "kind_native": "forbids",
+   "status": "derived",
+   "polarity": "no_go",
+   "t": 2.4,
+   "extra": {
+    "statement": "PROPOSITION R1 (this work, possibly folklore - proof in catalog): for a noninteracting bipartite Hamiltonian H = H_A + H_B whose TOTAL spectrum is nondegenerate (all sums E_i^A + E_j^B distinct), every TTS state ([rho,H]=0) is diagonal in the product energy eigenbasis, hence classical-classical: zero discord, therefore separable (S7 reversed), unsteerable (B1b) and Bell-local. Entangled or discordant TTS states exist exactly when the total spectrum is degenerate, and all their quantum correlations live inside degeneracy blocks - two equal-gap qubits host the TTS Bell state (|01>+|10>)/sqrt(2) in the {01,10} block. Consistency check: the Micadei et al. arrow-of-time reversal uses exactly such a degenerate-block coherence term. Refines SG1 into a classification: degeneracy is the sole habitat of time-translation-symmetric quantum correlations. SCOPE (C10): TTS states are block diagonal, so coherences and ENTANGLEMENT live inside degeneracy blocks; DISCORD does not - with H_A proportional to 1 and H_B nondegenerate, (1/2)(|0><0| x |0><0| + |+><+| x |1><1|) is TTS, its block components are product states, and it is discordant on A.",
+    "refs": [
+     "derived (catalog v2, R1)",
+     "Micadei et al., Nat. Commun. 10, 2456 (2019)",
+     "composition: S2 + S7 + B1b"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:R2",
+   "branch": "GPT",
+   "native_id": "R2",
+   "inputs": [
+    "GPT:p-cov"
+   ],
+   "target": "GPT:e-incomp",
+   "logic": "single",
+   "kind": "forbids",
+   "kind_native": "forbids",
+   "status": "derived",
+   "polarity": "no_go",
+   "t": 2.4,
+   "extra": {
+    "statement": "LEMMA R2 (this work): for nondegenerate H, any two TTS sharp observables are functions of H and hence commute, and every TTS POVM (all effects commuting with H) is a classical post-processing of the energy measurement; so the TTS measurement cluster contains NO incompatibility. Via Fine (B7) and the steering map (B6) this already erases Bell and steering, and commutativity of the fragment gives a one-line alternative proof of the N1 blindness column. Reading: time-translation symmetry of the probe set collapses the entire effect layer to classical stochastics; every nonclassical effect requires leaving the symmetric cluster. SCOPE (C7): the clause on the N1 blindness column holds under the tomographically complete convention; under the accessible-fragment convention commutativity alone does not exclude contextuality (combined paper, Example 1).",
+    "refs": [
+     "derived (catalog v2, R2)",
+     "Fine, PRL 48, 291 (1982)",
+     "cf. N1"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:R3",
+   "branch": "GPT",
+   "native_id": "R3",
+   "inputs": [
+    "GPT:s-ent"
+   ],
+   "target": "GPT:e-ctx",
+   "logic": "single",
+   "kind": "implies",
+   "kind_native": "implies",
+   "status": "derived",
+   "polarity": "possibility",
+   "t": 2.4,
+   "extra": {
+    "statement": "COMPOSED COROLLARY R3 = A8 o B3 (this work; inference checked against PG Theorem 1 wording, not stated by them explicitly): Plavala-Guhne Theorem 1 says a P&M noncontextual model for the steered states together with ALL measurements forces separability; contrapositive: every entangled state - including Werner-region states with LHV models for all single-copy measurements (Werner; Barrett) - yields a CONTEXTUAL sequential scenario. Hence Bell-local yet contextual composite scenarios exist: generalized contextuality is a strictly finer detector of composite nonclassicality than Bell violation. Scope note resolving the apparent clash with MH3: the contextual fragment contains ALL measurements on the steered side; restricted fragments (stabilizer measurements only) can stay noncontextual.",
+    "refs": [
+     "Plavala, Guhne, PRL 132, 100201 (2024), Thm. 1",
+     "Werner, PRA 40, 4277 (1989)",
+     "Barrett, PRA 65, 042302 (2002)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:R4a",
+   "branch": "GPT",
+   "native_id": "R4a",
+   "inputs": [
+    "GPT:s-magic"
+   ],
+   "target": "GPT:s-discord",
+   "logic": "single",
+   "kind": "not_implies",
+   "kind_native": "not_implies",
+   "status": "counterexample",
+   "polarity": "no_go",
+   "t": 2.4,
+   "extra": {
+    "statement": "Magic without discord: |T> tensor |0> is a pure product state - zero discord, zero entanglement, zero correlations of any kind - yet magic. Single-system negativity resources entail no correlation resource.",
+    "refs": [
+     "elementary; T state: Bravyi, Kitaev, PRA 71, 022316 (2005)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:R4b",
+   "branch": "GPT",
+   "native_id": "R4b",
+   "inputs": [
+    "GPT:s-discord"
+   ],
+   "target": "GPT:s-magic",
+   "logic": "single",
+   "kind": "not_implies",
+   "kind_native": "not_implies",
+   "status": "counterexample",
+   "polarity": "no_go",
+   "t": 2.4,
+   "extra": {
+    "statement": "Discord without magic: rho = (1/2)(|0><0| x |0><0| + |+><+| x |+><+|) is a mixture of stabilizer products (inside the stabilizer polytope, non-magic) but discordant on both sides. Proof: if [rho, A x I] = 0 then [P0,A] x P0 = -[P+,A] x P+; P0, P+ are linearly independent operators, so both commutators vanish, so A commutes with P0 and P+, which generate the full qubit algebra, so A is proportional to I - no nontrivial local commuting observable, hence not classical on either side. With R4a: magic and discord are logically independent clusters; no unconditional edge can ever connect them (formerly uncharted, now closed both ways).",
+    "refs": [
+     "derived (catalog v2, R4)",
+     "discord: Ollivier, Zurek, PRL 88, 017901 (2001); Henderson, Vedral, J. Phys. A 34, 6899 (2001)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:R5",
+   "branch": "GPT",
+   "native_id": "R5",
+   "inputs": [
+    "GPT:s-coh"
+   ],
+   "target": "GPT:e-kd",
+   "logic": "single",
+   "kind": "necessary",
+   "kind_native": "necessary",
+   "status": "theorem",
+   "polarity": "possibility",
+   "t": 2.4,
+   "extra": {
+    "statement": "KD-Hudson structure (literature fill for a formerly uncharted cell): pure KD-classical states are characterized by support-uncertainty / complete-incompatibility conditions (De Bievre); noncommutation alone is NOT sufficient for KD nonpositivity (Arvidsson-Shukur, Drori, Yunger Halpern); for DFT-related bases a pure state is KD-classical iff n_A(psi) n_B(psi) = d (Xu, proving De Bievre's conjecture). The KD analogue of the Hudson boundary S6.",
+    "refs": [
+     "De Bievre, PRL 127, 190404 (2021) [citation confirmed via arXiv:2210.02876]",
+     "Arvidsson-Shukur, Drori, Yunger Halpern, J. Phys. A 54, 284001 (2021)",
+     "Xu, Phys. Lett. A 129529 (2024); arXiv:2210.02876 (DFT case: n_A n_B = d)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:R6",
+   "branch": "GPT",
+   "native_id": "R6",
+   "inputs": [
+    "GPT:ax-epirestrict"
+   ],
+   "target": "GPT:e-interf3",
+   "logic": "single",
+   "kind": "forbids",
+   "kind_native": "forbids",
+   "status": "partial",
+   "polarity": "no_go",
+   "t": 2.4,
+   "extra": {
+    "statement": "Sorkin truncation in the epistricted shell (this work): Gaussian QM and the odd-d stabilizer subtheory are literal subtheories of quantum theory, so they inherit I3 = 0 identically. The discrete toy(-field) theory is NOT a quantum subtheory (it fails to reproduce GHZ-type stabilizer statistics), so nothing fixes its Sorkin order - new sub-gap SG4: define its three-path interferometer and compute I3. SCOPE (C11): I3 = 0 holds in Sorkin's setting (one system, orthogonal path subspaces, blocking = projection, fixed final effect); a Gaussian three-mode experiment with blocking by loss, coherent inputs and homodyne detection has a generically nonzero third difference. In odd prime dimension the epistricted theories coincide operationally with the stabilizer subtheory, so the open Sorkin-order question SG4 concerns the BINARY toy theory.",
+    "refs": [
+     "inheritance: Bartlett, Rudolph, Spekkens, PRA 86, 012103 (2012); Gross, JMP 47, 122107 (2006)",
+     "toy vs qubit-stabilizer divergence: Spekkens, PRA 75, 032110 (2007); Catani, Browne, NJP 19, 073035 (2017)",
+     "Sorkin, Mod. Phys. Lett. A 9, 3119 (1994)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:A1",
+   "branch": "GPT",
+   "native_id": "A1",
+   "inputs": [
+    "GPT:e-incomp"
+   ],
+   "target": "GPT:m-classical",
+   "logic": "single",
+   "kind": "excludes",
+   "kind_native": "excludes",
+   "status": "theorem",
+   "polarity": "no_go",
+   "t": 1.0,
+   "extra": {
+    "statement": "Incompatible measurements exist iff the state space is not a simplex: all measurements of a GPT are compatible iff the theory is classical.",
+    "refs": [
+     "Plavala, PRA 94, 042108 (2016)",
+     "Kuramochi, arXiv:1912.00563 (infinite-dim.)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:A2",
+   "branch": "GPT",
+   "native_id": "A2",
+   "inputs": [
+    "GPT:e-nobc"
+   ],
+   "target": "GPT:m-classical",
+   "logic": "single",
+   "kind": "excludes",
+   "kind_native": "excludes",
+   "status": "theorem",
+   "polarity": "no_go",
+   "t": 1.0,
+   "extra": {
+    "statement": "Generalized no-broadcasting: a GPT admits universal broadcasting iff it is classical; every nonclassical GPT has no-cloning.",
+    "refs": [
+     "Barnum, Barrett, Leifer, Wilce, PRL 99, 240501 (2007)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:A3",
+   "branch": "GPT",
+   "native_id": "A3",
+   "inputs": [
+    "GPT:m-classical"
+   ],
+   "target": "GPT:s-ent",
+   "logic": "single",
+   "kind": "excludes",
+   "kind_native": "excludes",
+   "status": "theorem",
+   "polarity": "no_go",
+   "t": 1.0,
+   "extra": {
+    "statement": "Entangleability of cones - read the polarity: classical ⇔ NO entanglement. Setup: min⊗ = convex hull of product states (separable only); max⊗ = all states positive on every product effect; any consistent composite cone sits between them, and 'entangled' means outside min⊗. THEOREM: min⊗ = max⊗ iff at least one factor is classical (simplicial). Easy direction: a classical factor makes every composite state separable (expand in the simplex basis: w = sum_i e_i ⊗ w_i with w_i = (e_i* ⊗ id)(w) in the other cone), so entanglement with a classical system is impossible - correlation yes, entanglement never. Hard direction (Barker's conjecture, open ~40 years, proved 2021): if BOTH factors are nonclassical, min⊗ ≠ max⊗, so some consistent composite contains entangled states or entangled effects. 'CAN be entangled', not 'must': postulating the minimal tensor product (m-sepqt) remains consistent - actual entanglement is forced only by composition axioms such as purification (E6) or decoherence-to-classical (E10).",
+    "refs": [
+     "Aubrun, Lami, Palazuelos, Plavala, Geom. Funct. Anal. 31, 181 (2021); arXiv:1911.09663"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:A4",
+   "branch": "GPT",
+   "native_id": "A4",
+   "inputs": [
+    "GPT:s-coh"
+   ],
+   "target": "GPT:s-ent",
+   "logic": "single",
+   "kind": "equiv",
+   "kind_native": "equiv",
+   "status": "theorem",
+   "polarity": "structural",
+   "t": 1.0,
+   "extra": {
+    "statement": "For any two GPTs: (i) each is nonclassical, (ii) each has strong incompatibility ('superposition'), (iii) the pair is entangleable (entangled states or entangled measurements) - all equivalent. Superposition also suffices to run BB84.",
+    "refs": [
+     "Aubrun, Lami, Palazuelos, Plavala, PRL 128, 160402 (2022); arXiv:2109.04446"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:A5",
+   "branch": "GPT",
+   "native_id": "A5",
+   "inputs": [
+    "GPT:e-ctx"
+   ],
+   "target": "GPT:m-classical",
+   "logic": "single",
+   "kind": "forbids",
+   "kind_native": "forbids",
+   "status": "theorem",
+   "polarity": "no_go",
+   "t": 1.0,
+   "extra": {
+    "statement": "A prepare-measure GPT fragment admits a generalized-noncontextual ontological model iff it is simplex-embeddable (state space embeds in a simplex, effects in its dual).",
+    "refs": [
+     "Schmid, Selby, Wolfe, Kunjwal, Spekkens, PRX Quantum 2, 010331 (2021)",
+     "Shahandeh, PRX Quantum 2, 010330 (2021)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:A6",
+   "branch": "GPT",
+   "native_id": "A6",
+   "inputs": [
+    "GPT:e-ctx"
+   ],
+   "target": "GPT:e-kd",
+   "logic": "single",
+   "kind": "equiv",
+   "kind_native": "equiv",
+   "status": "theorem",
+   "polarity": "structural",
+   "t": 1.0,
+   "extra": {
+    "statement": "Generalized noncontextuality is equivalent to the existence of a nonnegative quasiprobability representation; contextuality = negativity in every such representation.",
+    "refs": [
+     "Spekkens, PRL 101, 020401 (2008)",
+     "Schmid, Selby, Pusey, Spekkens, arXiv:2005.07161"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:A7",
+   "branch": "GPT",
+   "native_id": "A7",
+   "inputs": [
+    "GPT:e-ctx"
+   ],
+   "target": "GPT:s-ent",
+   "logic": "single",
+   "kind": "implies",
+   "kind_native": "implies",
+   "status": "derived",
+   "polarity": "possibility",
+   "t": 1.0,
+   "extra": {
+    "statement": "DERIVED COROLLARY (P1): a contextual (tomographically complete) fragment forces a nonsimplicial cone (A5), hence by entangleability of cones (A3) every beyond-minimal composite with another nonclassical system supports entangled states. Converse fails: Spekkens' toy theory is nonsimplicial (entangleable) yet noncontextual. STATUS NOTE (combined paper): a one-step composition of two published theorems; not found stated explicitly (search 2026-11-01) but elementary enough to be folklore - a composed corollary, not a new result.",
+    "refs": [
+     "Derived from PRX Quantum 2, 010331 (2021) + GAFA 31, 181 (2021); escape route: m-sepqt"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:A8",
+   "branch": "GPT",
+   "native_id": "A8",
+   "inputs": [
+    "GPT:s-ent"
+   ],
+   "target": "GPT:e-ctx",
+   "logic": "single",
+   "kind": "necessary",
+   "kind_native": "necessary",
+   "status": "theorem",
+   "polarity": "possibility",
+   "t": 1.0,
+   "extra": {
+    "statement": "Contextuality is a precondition for entanglement: entanglement in a nonlocal scenario can arise only if the sequential scenario obtained by remote state preparation exhibits preparation-and-measurement contextuality; robust absence of entanglement implies absence of contextuality. Noncontextuality inequalities map to entanglement witnesses and vice versa.",
+    "refs": [
+     "Plavala, Guhne, PRL 132, 100201 (2024); arXiv:2209.09942"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:A9",
+   "branch": "GPT",
+   "native_id": "A9",
+   "inputs": [
+    "GPT:e-nobc"
+   ],
+   "target": "GPT:e-ctx",
+   "logic": "single",
+   "kind": "equiv",
+   "kind_native": "equiv",
+   "status": "theorem",
+   "polarity": "structural",
+   "t": 1.0,
+   "extra": {
+    "statement": "No-broadcasting characterizes operational contextuality (broadcastability of a fragment corresponds to the existence of a noncontextual model).",
+    "refs": [
+     "Jokinen, Weilenmann, Plavala, Pellonpaa, Kiukas, Uola, PRL 133, 240201 (2024); arXiv:2406.07305"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:A10",
+   "branch": "GPT",
+   "native_id": "A10",
+   "inputs": [
+    "GPT:e-incomp"
+   ],
+   "target": "GPT:e-ctx",
+   "logic": "single",
+   "kind": "not_implies",
+   "kind_native": "not_implies",
+   "status": "counterexample",
+   "polarity": "no_go",
+   "t": 1.0,
+   "extra": {
+    "statement": "Incompatibility is neither necessary nor sufficient for generalized contextuality: epistricted theories have incompatible measurements yet are noncontextual, and every quantum contextuality proof can be converted to one using only compatible measurements (even a single CV projective measurement suffices).",
+    "refs": [
+     "Selby, Schmid, Wolfe, Sainz, Kunjwal, Spekkens, PRL 130, 230201 (2023); arXiv:2106.09045",
+     "Plavala, arXiv:2601.14067"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:A11",
+   "branch": "GPT",
+   "native_id": "A11",
+   "inputs": [
+    "GPT:e-incomp"
+   ],
+   "target": "GPT:e-ctx",
+   "logic": "single",
+   "kind": "equiv",
+   "kind_native": "equiv",
+   "status": "partial",
+   "polarity": "structural",
+   "t": 1.0,
+   "extra": {
+    "statement": "Conditional equivalence: when ALL quantum states are available as preparations, measurement incompatibility (equivalently steerability) is necessary and sufficient for operational contextuality.",
+    "refs": [
+     "Tavakoli, Uola, Phys. Rev. Research 2, 013011 (2020)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:B1",
+   "branch": "GPT",
+   "native_id": "B1",
+   "inputs": [
+    "GPT:e-bell"
+   ],
+   "target": "GPT:e-steer",
+   "logic": "single",
+   "kind": "implies",
+   "kind_native": "implies",
+   "status": "theorem",
+   "polarity": "possibility",
+   "t": 1.0,
+   "extra": {
+    "statement": "Strict hierarchy: Bell nonlocality implies steerability implies entanglement, with strict inclusions at each level (Werner states witness strictness).",
+    "refs": [
+     "Wiseman, Jones, Doherty, PRL 98, 140402 (2007)",
+     "Quintino et al., PRA 92, 032107 (2015)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:B1b",
+   "branch": "GPT",
+   "native_id": "B1b",
+   "inputs": [
+    "GPT:e-steer"
+   ],
+   "target": "GPT:s-ent",
+   "logic": "single",
+   "kind": "implies",
+   "kind_native": "implies",
+   "status": "theorem",
+   "polarity": "possibility",
+   "t": 1.0,
+   "extra": {
+    "statement": "Steering implies entanglement (LHS models exist for all separable states); inclusion strict.",
+    "refs": [
+     "Wiseman, Jones, Doherty, PRL 98, 140402 (2007)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:B2",
+   "branch": "GPT",
+   "native_id": "B2",
+   "inputs": [
+    "GPT:s-ent"
+   ],
+   "target": "GPT:e-bell",
+   "logic": "single",
+   "kind": "implies",
+   "kind_native": "implies",
+   "status": "partial",
+   "polarity": "possibility",
+   "t": 1.0,
+   "extra": {
+    "statement": "Gisin's theorem: every PURE bipartite (and multipartite) entangled state violates some Bell inequality. Fails for mixed states.",
+    "refs": [
+     "Gisin, Phys. Lett. A 154, 201 (1991)",
+     "Popescu, Rohrlich, Phys. Lett. A 166, 293 (1992)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:B3",
+   "branch": "GPT",
+   "native_id": "B3",
+   "inputs": [
+    "GPT:s-ent"
+   ],
+   "target": "GPT:e-bell",
+   "logic": "single",
+   "kind": "not_implies",
+   "kind_native": "not_implies",
+   "status": "counterexample",
+   "polarity": "no_go",
+   "t": 1.0,
+   "extra": {
+    "statement": "Werner states: entangled mixed states admitting local hidden variable models for all projective measurements, and even for all POVMs.",
+    "refs": [
+     "Werner, PRA 40, 4277 (1989)",
+     "Barrett, PRA 65, 042302 (2002)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:B4",
+   "branch": "GPT",
+   "native_id": "B4",
+   "inputs": [
+    "GPT:s-ent"
+   ],
+   "target": "GPT:e-bell",
+   "logic": "single",
+   "kind": "implies",
+   "kind_native": "implies",
+   "status": "theorem",
+   "polarity": "possibility",
+   "t": 1.0,
+   "extra": {
+    "statement": "In the measurement-device-independent (semiquantum game) scenario every entangled state outperforms separable ones: 'all entangled states are nonlocal' with quantum inputs.",
+    "refs": [
+     "Buscemi, PRL 108, 200401 (2012)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:B5",
+   "branch": "GPT",
+   "native_id": "B5",
+   "inputs": [
+    "GPT:s-ent"
+   ],
+   "target": "GPT:e-bell",
+   "logic": "single",
+   "kind": "implies",
+   "kind_native": "implies",
+   "status": "partial",
+   "polarity": "possibility",
+   "t": 1.0,
+   "extra": {
+    "statement": "Activation: local filtering reveals hidden nonlocality (even genuinely, for states with LHV models for the filtered statistics), and nonlocality can be superactivated by taking many copies.",
+    "refs": [
+     "Popescu, PRL 74, 2619 (1995)",
+     "Hirsch, Quintino, Bowles, Brunner, PRL 111, 160402 (2013)",
+     "Palazuelos, PRL 109, 190401 (2012)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:B6",
+   "branch": "GPT",
+   "native_id": "B6",
+   "inputs": [
+    "GPT:e-incomp"
+   ],
+   "target": "GPT:e-steer",
+   "logic": "single",
+   "kind": "equiv",
+   "kind_native": "equiv",
+   "status": "theorem",
+   "polarity": "structural",
+   "t": 1.0,
+   "extra": {
+    "statement": "One-to-one map: a measurement assemblage is steerable iff the steering party's measurements are incompatible (quantum theory); joint measurability implies an LHS model and vice versa.",
+    "refs": [
+     "Quintino, Vertesi, Brunner, PRL 113, 160402 (2014)",
+     "Uola, Moroder, Guhne, PRL 113, 160403 (2014)",
+     "Uola, Budroni, Guhne, Pellonpaa, PRL 115, 230402 (2015)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:B7",
+   "branch": "GPT",
+   "native_id": "B7",
+   "inputs": [
+    "GPT:e-incomp"
+   ],
+   "target": "GPT:e-bell",
+   "logic": "single",
+   "kind": "necessary",
+   "kind_native": "necessary",
+   "status": "partial",
+   "polarity": "possibility",
+   "t": 1.0,
+   "extra": {
+    "statement": "Compatible measurements never violate any Bell inequality (Fine); any incompatible PAIR of dichotomic measurements violates CHSH with a suitable state and partner; but general incompatible SETS need not enable any Bell violation.",
+    "refs": [
+     "Fine, PRL 48, 291 (1982)",
+     "Wolf, Perez-Garcia, Fernandez, PRL 103, 230402 (2009)",
+     "Bene, Vertesi, NJP 20, 013021 (2018)",
+     "Hirsch, Quintino, Brunner, PRA 97, 012129 (2018)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:B8",
+   "branch": "GPT",
+   "native_id": "B8",
+   "inputs": [
+    "GPT:s-bound"
+   ],
+   "target": "GPT:t-witness",
+   "logic": "single",
+   "kind": "open",
+   "kind_native": "open",
+   "status": "open",
+   "polarity": "open",
+   "t": 1.0,
+   "extra": {
+    "statement": "OPEN (since 1998): do NPT bound entangled states exist (is PPT necessary for undistillability)? PPT implies undistillable is a theorem.",
+    "refs": [
+     "Horodecki, Horodecki, Horodecki, PRL 80, 5239 (1998)",
+     "DiVincenzo et al., PRA 61, 062312 (2000)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:B9",
+   "branch": "GPT",
+   "native_id": "B9",
+   "inputs": [
+    "GPT:s-bound"
+   ],
+   "target": "GPT:e-bell",
+   "logic": "single",
+   "kind": "implies",
+   "kind_native": "implies",
+   "status": "counterexample",
+   "polarity": "possibility",
+   "t": 1.0,
+   "extra": {
+    "statement": "Peres conjecture is FALSE: there exist PPT (bound) entangled states violating a Bell inequality; bound entanglement can also be steerable.",
+    "refs": [
+     "Vertesi, Brunner, Nat. Commun. 5, 5297 (2014)",
+     "Moroder, Gittsovich, Huber, Guhne, PRL 113, 050404 (2014)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:B10",
+   "branch": "GPT",
+   "native_id": "B10",
+   "inputs": [
+    "GPT:s-ent"
+   ],
+   "target": "GPT:t-witness",
+   "logic": "single",
+   "kind": "witness",
+   "kind_native": "witness",
+   "status": "theorem",
+   "polarity": "possibility",
+   "t": 1.0,
+   "extra": {
+    "statement": "A state is entangled iff some entanglement witness detects it (Hahn-Banach); yet deciding separability is NP-hard, so no efficient universal witness exists.",
+    "refs": [
+     "Horodecki x3, Phys. Lett. A 223, 1 (1996)",
+     "Terhal, Phys. Lett. A 271, 319 (2000)",
+     "Gurvits, Proc. STOC 2003, 10"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:B11",
+   "branch": "GPT",
+   "native_id": "B11",
+   "inputs": [
+    "GPT:e-bell"
+   ],
+   "target": "GPT:t-undecide",
+   "logic": "single",
+   "kind": "witness",
+   "kind_native": "witness",
+   "status": "theorem",
+   "polarity": "possibility",
+   "t": 1.0,
+   "extra": {
+    "statement": "The quantum correlation set is not closed, and approximating the quantum value of a nonlocal game is undecidable (MIP* = RE); Tsirelson's problem and Connes' embedding conjecture resolved in the negative.",
+    "refs": [
+     "Slofstra, Forum Math. Pi 7, e1 (2019)",
+     "Ji, Natarajan, Vidick, Wright, Yuen, arXiv:2001.04383; CACM 64(11), 131 (2021)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:B12",
+   "branch": "GPT",
+   "native_id": "B12",
+   "inputs": [
+    "GPT:e-bell"
+   ],
+   "target": "GPT:t-di",
+   "logic": "single",
+   "kind": "enables",
+   "kind_native": "enables",
+   "status": "theorem",
+   "polarity": "possibility",
+   "t": 1.0,
+   "extra": {
+    "statement": "Bell violation certifies randomness expansion and device-independent QKD.",
+    "refs": [
+     "Pironio et al., Nature 464, 1021 (2010)",
+     "Acin et al., PRL 98, 230501 (2007)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:B13",
+   "branch": "GPT",
+   "native_id": "B13",
+   "inputs": [
+    "GPT:e-steer"
+   ],
+   "target": "GPT:t-1sdi",
+   "logic": "single",
+   "kind": "enables",
+   "kind_native": "enables",
+   "status": "theorem",
+   "polarity": "possibility",
+   "t": 1.0,
+   "extra": {
+    "statement": "Steering certifies one-sided device-independent QKD.",
+    "refs": [
+     "Branciard, Cavalcanti, Walborn, Scarani, Wiseman, PRA 85, 010301(R) (2012)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:B14",
+   "branch": "GPT",
+   "native_id": "B14",
+   "inputs": [
+    "GPT:s-ent"
+   ],
+   "target": "GPT:e-ks",
+   "logic": "single",
+   "kind": "necessary",
+   "kind_native": "necessary",
+   "status": "theorem",
+   "polarity": "possibility",
+   "t": 1.0,
+   "extra": {
+    "statement": "For multiqubit systems, every logical KS proof requires entangled measurements and every statistical KS proof requires an entangled state; not every entangled state yields one.",
+    "refs": [
+     "Wright, Kunjwal, Quantum 7, 900 (2023)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:B15",
+   "branch": "GPT",
+   "native_id": "B15",
+   "inputs": [
+    "GPT:e-ks"
+   ],
+   "target": "GPT:e-bell",
+   "logic": "single",
+   "kind": "equiv",
+   "kind_native": "equiv",
+   "status": "partial",
+   "polarity": "structural",
+   "t": 1.0,
+   "extra": {
+    "statement": "Structural bridges: invertible map between Bell-nonlocality and contextuality scenarios; contextuality can be converted into nonlocality; graph-theoretic (CSW) bounds unify both.",
+    "refs": [
+     "Wright, Farkas, PRL 131, 220202 (2023)",
+     "Cabello, PRL 127, 070401 (2021)",
+     "Cabello, Severini, Winter, PRL 112, 040401 (2014)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:B16",
+   "branch": "GPT",
+   "native_id": "B16",
+   "inputs": [
+    "GPT:e-ks"
+   ],
+   "target": "GPT:e-bell",
+   "logic": "single",
+   "kind": "forbids",
+   "kind_native": "forbids",
+   "status": "partial",
+   "polarity": "no_go",
+   "t": 1.0,
+   "extra": {
+    "statement": "Monogamy between contextuality and nonlocality: in combined scenarios the two resources trade off (no-disturbance monogamy).",
+    "refs": [
+     "Kurzynski, Cabello, Kaszlikowski, PRL 112, 100401 (2014)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:C1",
+   "branch": "GPT",
+   "native_id": "C1",
+   "inputs": [
+    "GPT:s-wneg"
+   ],
+   "target": "GPT:e-ksdep",
+   "logic": "single",
+   "kind": "equiv",
+   "kind_native": "equiv",
+   "status": "theorem",
+   "polarity": "structural",
+   "t": 1.0,
+   "extra": {
+    "statement": "Odd prime dimension: a qudit state enables violation of a noncontextuality inequality with stabilizer measurements iff its discrete Wigner function is negative ('contextuality supplies the magic').",
+    "refs": [
+     "Howard, Wallman, Veitch, Emerson, Nature 510, 351 (2014)",
+     "Delfosse et al. (rebits), PRX 5, 021003 (2015)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:C2",
+   "branch": "GPT",
+   "native_id": "C2",
+   "inputs": [
+    "GPT:s-wneg"
+   ],
+   "target": "GPT:e-ctx",
+   "logic": "single",
+   "kind": "equiv",
+   "kind_native": "equiv",
+   "status": "theorem",
+   "polarity": "structural",
+   "t": 1.0,
+   "extra": {
+    "statement": "Continuous variables: contextuality and Wigner negativity are equivalent with respect to CV Pauli (quadrature-displacement) measurements - CV analogue of Howard et al.",
+    "refs": [
+     "Booth, Chabaud, Emeriau, PRL 129, 230401 (2022)",
+     "arXiv:2112.14788 (homodyne version)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:C3",
+   "branch": "GPT",
+   "native_id": "C3",
+   "inputs": [
+    "GPT:s-wneg"
+   ],
+   "target": "GPT:t-mbqc",
+   "logic": "single",
+   "kind": "necessary",
+   "kind_native": "necessary",
+   "status": "theorem",
+   "polarity": "possibility",
+   "t": 1.0,
+   "extra": {
+    "statement": "Nonnegative Wigner functions (odd d; CV) admit efficient classical simulation of the circuit, so Wigner negativity is necessary for quantum speedup in these settings.",
+    "refs": [
+     "Veitch, Ferrie, Gross, Emerson, NJP 14, 113011 (2012)",
+     "Mari, Eisert, PRL 109, 230503 (2012)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:C4",
+   "branch": "GPT",
+   "native_id": "C4",
+   "inputs": [
+    "GPT:s-magic"
+   ],
+   "target": "GPT:t-mbqc",
+   "logic": "single",
+   "kind": "necessary",
+   "kind_native": "necessary",
+   "status": "theorem",
+   "polarity": "possibility",
+   "t": 1.0,
+   "extra": {
+    "statement": "Magic states are the resource promoting fault-tolerant stabilizer operations to universality; quantified by the resource theory of stabilizer computation.",
+    "refs": [
+     "Bravyi, Kitaev, PRA 71, 022316 (2005)",
+     "Veitch, Mousavian, Gottesman, Emerson, NJP 16, 013009 (2014)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:C5",
+   "branch": "GPT",
+   "native_id": "C5",
+   "inputs": [
+    "GPT:m-stab-odd"
+   ],
+   "target": "GPT:e-ctx",
+   "logic": "single",
+   "kind": "forbids",
+   "kind_native": "forbids",
+   "status": "theorem",
+   "polarity": "no_go",
+   "t": 1.0,
+   "extra": {
+    "statement": "The odd-d stabilizer subtheory has a UNIQUE nonnegative diagram-preserving quasiprobability representation - Gross's Wigner function, equivalent to Spekkens' epistricted toy theory - hence it is noncontextual, with a singled-out classical model.",
+    "refs": [
+     "Schmid, Du, Selby, Pusey, PRL 129, 120403 (2022)",
+     "Gross, J. Math. Phys. 47, 122107 (2006)",
+     "Catani, Browne, NJP 19, 073035 (2017)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:C6",
+   "branch": "GPT",
+   "native_id": "C6",
+   "inputs": [
+    "GPT:m-stab-even"
+   ],
+   "target": "GPT:e-ctx",
+   "logic": "single",
+   "kind": "implies",
+   "kind_native": "implies",
+   "status": "theorem",
+   "polarity": "possibility",
+   "t": 1.0,
+   "extra": {
+    "statement": "In all even dimensions no nonnegative diagram-preserving quasiprobability representation of the stabilizer subtheory exists: the qubit stabilizer subtheory is generalized-contextual (and state-independently KS-contextual via the Mermin square).",
+    "refs": [
+     "Schmid, Du, Selby, Pusey, PRL 129, 120403 (2022)",
+     "Mermin, PRL 65, 3373 (1990)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:C7",
+   "branch": "GPT",
+   "native_id": "C7",
+   "inputs": [
+    "GPT:e-ctx"
+   ],
+   "target": "GPT:t-mbqc",
+   "logic": "single",
+   "kind": "necessary",
+   "kind_native": "necessary",
+   "status": "theorem",
+   "polarity": "possibility",
+   "t": 1.0,
+   "extra": {
+    "statement": "Generalized contextuality is a necessary resource for universal quantum computation in the state-injection model (odd d via uniqueness of the Gross representation; qubits via even-d contextuality); KS-contextuality similarly powers MBQC and shallow-circuit advantage.",
+    "refs": [
+     "Schmid, Du, Selby, Pusey, PRL 129, 120403 (2022)",
+     "Howard et al., Nature 510, 351 (2014)",
+     "Raussendorf, PRA 88, 022322 (2013)",
+     "Anders, Browne, PRL 102, 050502 (2009)",
+     "Bravyi, Gosset, Konig, Science 362, 308 (2018)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:C8",
+   "branch": "GPT",
+   "native_id": "C8",
+   "inputs": [
+    "GPT:s-wneg"
+   ],
+   "target": "GPT:t-mbqc",
+   "logic": "single",
+   "kind": "not_implies",
+   "kind_native": "not_implies",
+   "status": "counterexample",
+   "polarity": "no_go",
+   "t": 1.0,
+   "extra": {
+    "statement": "CAVEAT: a nonnegative probabilistic hidden-variable model (Bayesian updates on a finite state space) covers universal quantum computation with magic states for qubits and all qudit dimensions. It is not diagram-preserving, so it evades the noncontextuality no-gos - negativity is representation-relative; generalized contextuality is the invariant statement.",
+    "refs": [
+     "Zurel, Okay, Raussendorf, PRL 125, 260404 (2020)",
+     "Zurel, Okay, Raussendorf, Heimendahl, Quantum 8, 1323 (2024)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:C9",
+   "branch": "GPT",
+   "native_id": "C9",
+   "inputs": [
+    "GPT:e-kd"
+   ],
+   "target": "GPT:e-ctx",
+   "logic": "single",
+   "kind": "implies",
+   "kind_native": "implies",
+   "status": "partial",
+   "polarity": "possibility",
+   "t": 1.0,
+   "extra": {
+    "statement": "KD nonpositivity of suitable experiments implies negativity of every quasiprobability representation, hence contextuality; anomalous weak values are its operational face. Caution: not every KD-negative assignment certifies contextuality once general KD representations are allowed.",
+    "refs": [
+     "Arvidsson-Shukur et al. (KD review), NJP 2024; arXiv:2403.18899",
+     "Schmid, Baldijao, Ying, Wagner, Selby, arXiv:2405.04573"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:C10",
+   "branch": "GPT",
+   "native_id": "C10",
+   "inputs": [
+    "GPT:e-weak"
+   ],
+   "target": "GPT:e-ctx",
+   "logic": "single",
+   "kind": "implies",
+   "kind_native": "implies",
+   "status": "theorem",
+   "polarity": "possibility",
+   "t": 1.0,
+   "extra": {
+    "statement": "Anomalous weak values are proofs of generalized contextuality.",
+    "refs": [
+     "Pusey, PRL 113, 200401 (2014)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:C11",
+   "branch": "GPT",
+   "native_id": "C11",
+   "inputs": [
+    "GPT:e-kd"
+   ],
+   "target": "GPT:t-metro",
+   "logic": "single",
+   "kind": "enables",
+   "kind_native": "enables",
+   "status": "theorem",
+   "polarity": "possibility",
+   "t": 1.0,
+   "extra": {
+    "statement": "KD negativity underlies anomalous postselected Fisher information (metrology beyond classical limits); recently argued necessary for quantum-computational advantage.",
+    "refs": [
+     "Arvidsson-Shukur et al., Nat. Commun. 11, 3775 (2020)",
+     "arXiv:2506.08092"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:C12",
+   "branch": "GPT",
+   "native_id": "C12",
+   "inputs": [
+    "GPT:e-ctx"
+   ],
+   "target": "GPT:t-pom",
+   "logic": "single",
+   "kind": "enables",
+   "kind_native": "enables",
+   "status": "theorem",
+   "polarity": "possibility",
+   "t": 1.0,
+   "extra": {
+    "statement": "Preparation contextuality powers parity-oblivious multiplexing (the optimal quantum advantage is a preparation-noncontextuality violation).",
+    "refs": [
+     "Spekkens, Buzacott, Keehn, Toner, Pryde, PRL 102, 010401 (2009)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:C13",
+   "branch": "GPT",
+   "native_id": "C13",
+   "inputs": [
+    "GPT:e-ctx"
+   ],
+   "target": "GPT:t-disc",
+   "logic": "single",
+   "kind": "enables",
+   "kind_native": "enables",
+   "status": "theorem",
+   "polarity": "possibility",
+   "t": 1.0,
+   "extra": {
+    "statement": "Contextual advantage for minimum-error state discrimination.",
+    "refs": [
+     "Schmid, Spekkens, PRX 8, 011015 (2018)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:C14",
+   "branch": "GPT",
+   "native_id": "C14",
+   "inputs": [
+    "GPT:e-ks"
+   ],
+   "target": "GPT:e-ksdep",
+   "logic": "single",
+   "kind": "implies",
+   "kind_native": "implies",
+   "status": "theorem",
+   "polarity": "possibility",
+   "t": 1.0,
+   "extra": {
+    "statement": "Every KS proof converts to a state-dependent noncontextuality inequality violated by every state (statistical form); state-dependent KS contextuality exists from d=3 (KCBS) and requires a non-chordal compatibility graph.",
+    "refs": [
+     "Klyachko, Can, Binicioglu, Shumovsky, PRL 101, 020403 (2008)",
+     "Kunjwal, Spekkens, PRL 115, 110403 (2015)",
+     "Xu, Cabello, PRA 99, 020103(R) (2019)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:D1",
+   "branch": "GPT",
+   "native_id": "D1",
+   "inputs": [
+    "GPT:s-coh"
+   ],
+   "target": "GPT:s-ent",
+   "logic": "single",
+   "kind": "implies",
+   "kind_native": "implies",
+   "status": "theorem",
+   "polarity": "possibility",
+   "t": 1.0,
+   "extra": {
+    "statement": "Within quantum theory, coherence converts faithfully to entanglement by incoherent operations plus an incoherent ancilla (entanglement generated is bounded by input coherence); coherence likewise activates discord.",
+    "refs": [
+     "Streltsov, Singh, Dhar, Bera, Adesso, PRL 115, 020403 (2015)",
+     "Ma, Yadin, Girolami, Vedral, Gu, PRL 116, 160407 (2016)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:D2",
+   "branch": "GPT",
+   "native_id": "D2",
+   "inputs": [
+    "GPT:s-coh"
+   ],
+   "target": "GPT:e-ctx",
+   "logic": "single",
+   "kind": "necessary",
+   "kind_native": "necessary",
+   "status": "derived",
+   "polarity": "possibility",
+   "t": 1.0,
+   "extra": {
+    "statement": "PROPOSITION P2: a prepare-measure fragment whose states and effects are all diagonal in one basis is simplex-embeddable, hence noncontextual; so every contextuality proof needs basis-independent coherence of the state set. Quantitative witnesses exist in interferometric scenarios (event-graph / MZI inequalities). SCOPE (C7, combined paper 2026-11-01): holds when operational equivalence is judged against all of quantum theory (tomographically complete convention); diagonal STATES suffice, effects may be arbitrary. Under the accessible-fragment convention it fails: four diagonal states with the commuting effects P1+P2 and P1+P3 form a preparation-contextual fragment (combined paper, Example 1).",
+    "refs": [
+     "Wagner, Camillini, Galvao, Quantum 8, 1240 (2024)",
+     "Plavala, arXiv:2601.14067 (set coherence <-> contextuality confirmation)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:D3",
+   "branch": "GPT",
+   "native_id": "D3",
+   "inputs": [
+    "GPT:s-coh"
+   ],
+   "target": "GPT:e-ctx",
+   "logic": "single",
+   "kind": "not_implies",
+   "kind_native": "not_implies",
+   "status": "counterexample",
+   "polarity": "no_go",
+   "t": 1.0,
+   "extra": {
+    "statement": "Coherence does NOT suffice for contextuality: epistricted theories (Spekkens toy, Gaussian, odd-d stabilizer) display superposition-like structure and full two-path interference phenomenology (double slit, Elitzur-Vaidman, delayed choice, quantum eraser) while remaining noncontextual. Only specific further aspects of interference are genuinely nonclassical.",
+    "refs": [
+     "Spekkens, PRA 75, 032110 (2007)",
+     "Catani, Leifer, Schmid, Spekkens, Quantum 7, 1119 (2023)",
+     "Catani, Leifer, Scala, Schmid, Spekkens, PRA 2023 (genuinely nonclassical interference)",
+     "Catani et al., PRL 2022 (uncertainty relations)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:D4",
+   "branch": "GPT",
+   "native_id": "D4",
+   "inputs": [
+    "GPT:s-coh"
+   ],
+   "target": "GPT:e-ctx",
+   "logic": "single",
+   "kind": "implies",
+   "kind_native": "implies",
+   "status": "partial",
+   "polarity": "possibility",
+   "t": 1.0,
+   "extra": {
+    "statement": "No coherence threshold: contextuality proofs exist with maximal robustness to dephasing, i.e. arbitrarily small (vanishing) coherence still witnesses contextuality - coherence is necessary but its magnitude is not the resource.",
+    "refs": [
+     "Rossi, Schmid, Selby, Sainz, PRA 2023; arXiv:2212.06856"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:D6",
+   "branch": "GPT",
+   "native_id": "D6",
+   "inputs": [
+    "GPT:m-realqm"
+   ],
+   "target": "GPT:e-bell",
+   "logic": "single",
+   "kind": "forbids",
+   "kind_native": "forbids",
+   "status": "theorem",
+   "polarity": "no_go",
+   "t": 1.0,
+   "extra": {
+    "statement": "Real-amplitude quantum theory (with real tensor composites) reproduces single-site statistics but fails in quantum networks: a three-party entanglement-swapping Bell test separates complex from real QM, and experiments violate the real-QM bound. Imaginarity is a genuine resource.",
+    "refs": [
+     "Renou et al., Nature 600, 625 (2021)",
+     "Li et al., PRL 128, 040402 (2022)",
+     "Chen et al., PRL 128, 040403 (2022)",
+     "Wu et al., PRL 126, 090401 (2021)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:E1",
+   "branch": "GPT",
+   "native_id": "E1",
+   "inputs": [
+    "GPT:ax-nosig"
+   ],
+   "target": "GPT:e-pr",
+   "logic": "single",
+   "kind": "not_implies",
+   "kind_native": "not_implies",
+   "status": "theorem",
+   "polarity": "no_go",
+   "t": 1.0,
+   "extra": {
+    "statement": "No-signalling alone does not forbid superquantum correlations: PR boxes reach CHSH = 4.",
+    "refs": [
+     "Popescu, Rohrlich, Found. Phys. 24, 379 (1994)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:E2",
+   "branch": "GPT",
+   "native_id": "E2",
+   "inputs": [
+    "GPT:ax-ic"
+   ],
+   "target": "GPT:e-pr",
+   "logic": "single",
+   "kind": "forbids",
+   "kind_native": "forbids",
+   "status": "partial",
+   "polarity": "no_go",
+   "t": 1.0,
+   "extra": {
+    "statement": "Information causality implies the Tsirelson bound (CHSH <= 2 sqrt 2); whether it carves out exactly the quantum set is OPEN.",
+    "refs": [
+     "Pawlowski, Paterek, Kaszlikowski, Scarani, Winter, Zukowski, Nature 461, 1101 (2009)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:E3",
+   "branch": "GPT",
+   "native_id": "E3",
+   "inputs": [
+    "GPT:ax-ml"
+   ],
+   "target": "GPT:e-pr",
+   "logic": "single",
+   "kind": "forbids",
+   "kind_native": "forbids",
+   "status": "theorem",
+   "polarity": "no_go",
+   "t": 1.0,
+   "extra": {
+    "statement": "Macroscopic locality bounds correlations to the (strictly larger than quantum) NPA level Q1.",
+    "refs": [
+     "Navascues, Wunderlich, Proc. R. Soc. A 466, 881 (2010)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:E4",
+   "branch": "GPT",
+   "native_id": "E4",
+   "inputs": [
+    "GPT:ax-lo"
+   ],
+   "target": "GPT:e-pr",
+   "logic": "single",
+   "kind": "forbids",
+   "kind_native": "forbids",
+   "status": "theorem",
+   "polarity": "no_go",
+   "t": 1.0,
+   "extra": {
+    "statement": "Local orthogonality / exclusivity rules out PR boxes and reproduces the quantum (Lovasz-theta) bound of the KCBS contextuality inequality.",
+    "refs": [
+     "Fritz, Sainz, Augusiak, Brask, Chaves, Leverrier, Acin, Nat. Commun. 4, 2263 (2013)",
+     "Cabello, PRL 110, 060402 (2013)",
+     "Cabello, Severini, Winter, PRL 112, 040401 (2014)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:E5",
+   "branch": "GPT",
+   "native_id": "E5",
+   "inputs": [
+    "GPT:m-aq"
+   ],
+   "target": "GPT:ax-norestrict",
+   "logic": "single",
+   "kind": "forbids",
+   "kind_native": "forbids",
+   "status": "theorem",
+   "polarity": "no_go",
+   "t": 1.0,
+   "extra": {
+    "statement": "Almost-quantum correlations satisfy the main device-independent principles yet strictly exceed quantum; NO GPT satisfying the no-restriction hypothesis reproduces them - a restriction on measurements is forced.",
+    "refs": [
+     "Navascues, Guryanova, Hoban, Acin, Nat. Commun. 6, 6288 (2015)",
+     "Sainz, Guryanova, Acin, Navascues, PRL 120, 200402 (2018)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:E6",
+   "branch": "GPT",
+   "native_id": "E6",
+   "inputs": [
+    "GPT:ax-purif"
+   ],
+   "target": "GPT:s-ent",
+   "logic": "single",
+   "kind": "implies",
+   "kind_native": "implies",
+   "status": "theorem",
+   "polarity": "possibility",
+   "t": 1.0,
+   "extra": {
+    "statement": "Purification forces entanglement (purifications of mixed states are entangled) and yields no-cloning, steering of ensembles, probabilistic teleportation, reversible dilation and no-information-without-disturbance; with five further informational axioms (causality, perfect distinguishability, ideal compression, local tomography, atomicity of composition) it singles out quantum theory.",
+    "refs": [
+     "Chiribella, D'Ariano, Perinotti, PRA 81, 062348 (2010)",
+     "Chiribella, D'Ariano, Perinotti, PRA 84, 012311 (2011)",
+     "Masanes, Muller, NJP 13, 063001 (2011)",
+     "Hardy, quant-ph/0101012"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:E7",
+   "branch": "GPT",
+   "native_id": "E7",
+   "inputs": [
+    "GPT:m-boxworld"
+   ],
+   "target": "GPT:e-pr",
+   "logic": "single",
+   "kind": "implies",
+   "kind_native": "implies",
+   "status": "theorem",
+   "polarity": "possibility",
+   "t": 1.0,
+   "extra": {
+    "statement": "Boxworld attains maximal no-signalling nonlocality (PR boxes) but all its reversible dynamics are trivial (local operations + permutations): no entanglement swapping, no dynamics-based teleportation.",
+    "refs": [
+     "Barrett, PRA 75, 032304 (2007)",
+     "Gross, Muller, Colbeck, Dahlsten, PRL 104, 080402 (2010)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:E8",
+   "branch": "GPT",
+   "native_id": "E8",
+   "inputs": [
+    "GPT:m-quantum"
+   ],
+   "target": "GPT:e-pr",
+   "logic": "single",
+   "kind": "forbids",
+   "kind_native": "forbids",
+   "status": "theorem",
+   "polarity": "no_go",
+   "t": 1.0,
+   "extra": {
+    "statement": "CEILING, not source: locally quantum systems + no-signalling composition force all bipartite correlations into the quantum set, so superquantum (PR) correlations are excluded and the Tsirelson bound emerges from local structure alone. The GENERATIVE route to Bell violation is the chain m-quantum -hosts-> s-ent (MH1) -> e-bell (B2: pure entangled states, with incompatible measurements per B7); this edge only caps that chain from above.",
+    "refs": [
+     "Barnum, Beigi, Boixo, Elliott, Wehner, PRL 104, 140401 (2010)",
+     "Tsirelson, Lett. Math. Phys. 4, 93 (1980)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:E9",
+   "branch": "GPT",
+   "native_id": "E9",
+   "inputs": [
+    "GPT:ax-sorkin"
+   ],
+   "target": "GPT:e-interf3",
+   "logic": "single",
+   "kind": "forbids",
+   "kind_native": "forbids",
+   "status": "theorem",
+   "polarity": "no_go",
+   "t": 1.0,
+   "extra": {
+    "statement": "Quantum theory has exactly second-order interference (Sorkin hierarchy truncates); experiments bound third-order terms; higher-order interference is excluded by purity principles in GPTs, while 'density cube' theories realize it.",
+    "refs": [
+     "Sorkin, Mod. Phys. Lett. A 9, 3119 (1994)",
+     "Sinha et al., Science 329, 418 (2010)",
+     "Barnum, Muller, Ududec, NJP 16, 123029 (2014)",
+     "Dakic, Paterek, Brukner, NJP 16, 023028 (2014)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:E10",
+   "branch": "GPT",
+   "native_id": "E10",
+   "inputs": [
+    "GPT:ax-decoh"
+   ],
+   "target": "GPT:s-ent",
+   "logic": "single",
+   "kind": "implies",
+   "kind_native": "implies",
+   "status": "theorem",
+   "polarity": "possibility",
+   "t": 1.0,
+   "extra": {
+    "statement": "Any nonclassical GPT containing a decoherence mechanism onto classical theory must contain entangled states: entanglement is necessary for emergent classicality.",
+    "refs": [
+     "Richens, Selby, Al-Safi, PRL 119, 080503 (2017)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:E11",
+   "branch": "GPT",
+   "native_id": "E11",
+   "inputs": [
+    "GPT:m-psiepi"
+   ],
+   "target": "GPT:m-quantum",
+   "logic": "single",
+   "kind": "forbids",
+   "kind_native": "forbids",
+   "status": "theorem",
+   "polarity": "no_go",
+   "t": 1.0,
+   "extra": {
+    "statement": "PBR: preparation-independent psi-epistemic models contradict quantum statistics; maximally psi-epistemic models fail for d>=3 independently of preparation independence; psi-epistemic models without these assumptions do exist.",
+    "refs": [
+     "Pusey, Barrett, Rudolph, Nat. Phys. 8, 475 (2012)",
+     "Barrett, Cavalcanti, Lal, Maroney, PRL 112, 250403 (2014)",
+     "Leifer, Maroney, PRL 110, 120401 (2013)",
+     "Lewis, Jennings, Barrett, Rudolph, PRL 109, 150404 (2012)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:F1",
+   "branch": "GPT",
+   "native_id": "F1",
+   "inputs": [
+    "GPT:m-spekkens"
+   ],
+   "target": "GPT:e-bell",
+   "logic": "single",
+   "kind": "forbids",
+   "kind_native": "forbids",
+   "status": "theorem",
+   "polarity": "no_go",
+   "t": 1.0,
+   "extra": {
+    "statement": "Spekkens' toy theory reproduces incompatibility, no-cloning, interference, teleportation and dense-coding analogues AND ensemble steering - yet is local, noncontextual and nonnegative: steering phenomenology alone does not certify contextuality or nonlocality.",
+    "refs": [
+     "Spekkens, PRA 75, 032110 (2007)",
+     "Kar, Ghosh, Choudhary, Banik, Mathematics 4, 52 (2016)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:F2",
+   "branch": "GPT",
+   "native_id": "F2",
+   "inputs": [
+    "GPT:m-gaussian"
+   ],
+   "target": "GPT:e-steer",
+   "logic": "single",
+   "kind": "implies",
+   "kind_native": "implies",
+   "status": "theorem",
+   "polarity": "possibility",
+   "t": 1.0,
+   "extra": {
+    "statement": "Gaussian QM: two-mode squeezed states are EPR-steerable with quadrature measurements, yet the positive Wigner function provides an LHV model for all Gaussian measurements (no Bell violation without non-Gaussian measurements), and the whole subtheory embeds in an epistricted classical theory (noncontextual).",
+    "refs": [
+     "Wiseman, Jones, Doherty, PRL 98, 140402 (2007)",
+     "Banaszek, Wodkiewicz, PRA 58, 4345 (1998)",
+     "Bartlett, Rudolph, Spekkens, PRA 86, 012103 (2012)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:F3",
+   "branch": "GPT",
+   "native_id": "F3",
+   "inputs": [
+    "GPT:m-sepqt"
+   ],
+   "target": "GPT:s-wneg",
+   "logic": "single",
+   "kind": "implies",
+   "kind_native": "implies",
+   "status": "derived",
+   "polarity": "possibility",
+   "t": 1.0,
+   "extra": {
+    "statement": "OBSERVATION P3: separable quantum theory (quantum marginals, minimal tensor product) retains Wigner negativity, magic and generalized contextuality of single systems while possessing NO entangled states, NO steering and NO Bell violation; purification fails. The unique escape from P1, pinning the burden of forcing entanglement on the composition axiom.",
+    "refs": [
+     "Janotta, Hinrichsen, J. Phys. A 47, 323001 (2014)",
+     "cf. Aubrun et al., PRL 128, 160402 (2022)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:F4",
+   "branch": "GPT",
+   "native_id": "F4",
+   "inputs": [
+    "GPT:m-boxworld"
+   ],
+   "target": "GPT:ax-ic",
+   "logic": "single",
+   "kind": "forbids",
+   "kind_native": "forbids",
+   "status": "theorem",
+   "polarity": "no_go",
+   "t": 1.0,
+   "extra": {
+    "statement": "Boxworld violates information causality, macroscopic locality and local orthogonality (PR boxes trivialize communication complexity).",
+    "refs": [
+     "Pawlowski et al., Nature 461, 1101 (2009)",
+     "van Dam, arXiv:quant-ph/0501159"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:F5",
+   "branch": "GPT",
+   "native_id": "F5",
+   "inputs": [
+    "GPT:m-realqm"
+   ],
+   "target": "GPT:ax-loctom",
+   "logic": "single",
+   "kind": "forbids",
+   "kind_native": "forbids",
+   "status": "theorem",
+   "polarity": "no_go",
+   "t": 1.0,
+   "extra": {
+    "statement": "Real-amplitude QM violates local tomography (composite real systems are not determined by local statistics).",
+    "refs": [
+     "Araki, Commun. Math. Phys. 75, 1 (1980)",
+     "Wootters, in 'Complexity, Entropy and the Physics of Information' (1990)",
+     "Renou et al., Nature 600, 625 (2021)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:G1",
+   "branch": "GPT",
+   "native_id": "G1",
+   "inputs": [
+    "GPT:s-athermal"
+   ],
+   "target": "GPT:t-secondlaws",
+   "logic": "single",
+   "kind": "necessary",
+   "kind_native": "necessary",
+   "status": "theorem",
+   "polarity": "possibility",
+   "t": 1.0,
+   "extra": {
+    "statement": "Second laws: under thermal operations, state conversion of (block-)diagonal states is governed by the full family of alpha-Renyi free energies, not the single free energy.",
+    "refs": [
+     "Brandao, Horodecki, Oppenheim, Renes, Spekkens, PNAS 112, 3275 (2015)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:G2",
+   "branch": "GPT",
+   "native_id": "G2",
+   "inputs": [
+    "GPT:s-cohE"
+   ],
+   "target": "GPT:t-secondlaws",
+   "logic": "single",
+   "kind": "implies",
+   "kind_native": "implies",
+   "status": "theorem",
+   "polarity": "possibility",
+   "t": 1.0,
+   "extra": {
+    "statement": "Energy coherence is an independent thermodynamic resource: time-translation covariance of thermal operations forbids coherence creation and forces asymmetry monotones to decay - constraints beyond all free-energy second laws.",
+    "refs": [
+     "Lostaglio, Jennings, Rudolph, Nat. Commun. 6, 6383 (2015)",
+     "Lostaglio, Korzekwa, Jennings, Rudolph, PRX 5, 021001 (2015)",
+     "Cwiklinski, Studzinski, Horodecki, Oppenheim, PRL 115, 210403 (2015)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:G3",
+   "branch": "GPT",
+   "native_id": "G3",
+   "inputs": [
+    "GPT:s-cohE"
+   ],
+   "target": "GPT:t-secondlaws",
+   "logic": "single",
+   "kind": "not_implies",
+   "kind_native": "not_implies",
+   "status": "theorem",
+   "polarity": "no_go",
+   "t": 1.0,
+   "extra": {
+    "statement": "Work-locking: the coherent part of the free energy of an individual system is not extractable as work without a phase reference (it unlocks collectively or with an ancillary reference).",
+    "refs": [
+     "Korzekwa, Lostaglio, Oppenheim, Jennings, NJP 18, 023045 (2016)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:G4",
+   "branch": "GPT",
+   "native_id": "G4",
+   "inputs": [
+    "GPT:e-heat"
+   ],
+   "target": "GPT:e-ctx",
+   "logic": "single",
+   "kind": "witness",
+   "kind_native": "witness",
+   "status": "theorem",
+   "polarity": "possibility",
+   "t": 1.0,
+   "extra": {
+    "statement": "Any fluctuation theorem reproducing the two-point-measurement statistics on classical states either admits a work quasiprobability or fails on contextual protocols; negativity of the work quasiprobability is a direct signature of contextuality. Noncontextual bounds exist on average work and heat; anomalous heat flow witnesses contextuality.",
+    "refs": [
+     "Lostaglio, PRL 120, 040602 (2018)",
+     "Perarnau-Llobet et al., PRL 118, 070601 (2017)",
+     "Arvidsson-Shukur et al., NJP 2024; arXiv:2403.18899",
+     "Contextuality in anomalous heat flow, arXiv:2406.09715 (2024)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:G5",
+   "branch": "GPT",
+   "native_id": "G5",
+   "inputs": [
+    "GPT:s-discord"
+   ],
+   "target": "GPT:e-heat",
+   "logic": "single",
+   "kind": "implies",
+   "kind_native": "implies",
+   "status": "theorem",
+   "polarity": "possibility",
+   "t": 1.0,
+   "extra": {
+    "statement": "Initial quantum correlations can reverse the thermodynamic arrow (heat flows from cold to hot), observed experimentally with NMR spins; KD work distributions reconstructed interferometrically.",
+    "refs": [
+     "Micadei et al., Nat. Commun. 10, 2456 (2019)",
+     "Hernandez-Gomez et al., npj Quantum Inf. 10 (2024)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:G6",
+   "branch": "GPT",
+   "native_id": "G6",
+   "inputs": [
+    "GPT:ax-purif"
+   ],
+   "target": "GPT:t-secondlaws",
+   "logic": "single",
+   "kind": "implies",
+   "kind_native": "implies",
+   "status": "theorem",
+   "polarity": "possibility",
+   "t": 1.0,
+   "extra": {
+    "statement": "GPT thermodynamics: in sharp theories with purification, the three microcanonical resource theories (RaRe / noisy / unital) are well-posed, state conversion is majorization-governed, and purity resources are DUAL to pure-state entanglement resources - the entanglement-thermodynamics duality generalizes beyond quantum theory.",
+    "refs": [
+     "Chiribella, Scandolo, NJP 17, 103027 (2015)",
+     "Chiribella, Scandolo, NJP 19, 123043 (2017)",
+     "Chiribella, Scandolo, arXiv:1608.04459"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:G7",
+   "branch": "GPT",
+   "native_id": "G7",
+   "inputs": [
+    "GPT:s-discord"
+   ],
+   "target": "GPT:e-nobc",
+   "logic": "single",
+   "kind": "equiv",
+   "kind_native": "equiv",
+   "status": "theorem",
+   "polarity": "structural",
+   "t": 1.0,
+   "extra": {
+    "statement": "A bipartite state is locally broadcastable iff it has zero discord (classically correlated): no-local-broadcasting characterizes quantum correlations beyond entanglement.",
+    "refs": [
+     "Piani, Horodecki, Horodecki, PRL 100, 090502 (2008)",
+     "Ferraro et al., PRA 81, 052318 (2010) (discordant states are generic)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:H1",
+   "branch": "GPT",
+   "native_id": "H1",
+   "inputs": [
+    "GPT:s-coh"
+   ],
+   "target": "GPT:t-bb84",
+   "logic": "single",
+   "kind": "enables",
+   "kind_native": "enables",
+   "status": "theorem",
+   "polarity": "possibility",
+   "t": 1.0,
+   "extra": {
+    "statement": "GPT-level: strong incompatibility ('superposition') in each local theory suffices to run the BB84 key-distribution protocol - key distribution survives even if quantum theory is replaced.",
+    "refs": [
+     "Aubrun, Lami, Palazuelos, Plavala, PRL 128, 160402 (2022)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:H2",
+   "branch": "GPT",
+   "native_id": "H2",
+   "inputs": [
+    "GPT:e-incomp"
+   ],
+   "target": "GPT:t-pom",
+   "logic": "single",
+   "kind": "enables",
+   "kind_native": "enables",
+   "status": "theorem",
+   "polarity": "possibility",
+   "t": 1.0,
+   "extra": {
+    "statement": "Measurement incompatibility is the exact resource for quantum advantage in random access codes.",
+    "refs": [
+     "Carmeli, Heinosaari, Toigo, arXiv:1911.04360 (2020)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:H3",
+   "branch": "GPT",
+   "native_id": "H3",
+   "inputs": [
+    "GPT:e-ctx"
+   ],
+   "target": "GPT:t-pom",
+   "logic": "single",
+   "kind": "enables",
+   "kind_native": "enables",
+   "status": "theorem",
+   "polarity": "possibility",
+   "t": 1.0,
+   "extra": {
+    "statement": "Contextuality quantifies one-shot classical communication advantage with entanglement assistance.",
+    "refs": [
+     "Kunjwal, Quantum 6, 839 (2022)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:I1",
+   "branch": "GPT",
+   "native_id": "I1",
+   "inputs": [
+    "GPT:ax-ic"
+   ],
+   "target": "GPT:m-quantum",
+   "logic": "single",
+   "kind": "open",
+   "kind_native": "open",
+   "status": "open",
+   "polarity": "open",
+   "t": 1.0,
+   "extra": {
+    "statement": "OPEN: no known set of device-independent principles (IC, ML, LO, NANLC...) singles out the quantum correlation set; the almost-quantum set satisfies them (IC unresolved) and obstructs the program; its own GPT status requires violating no-restriction.",
+    "refs": [
+     "Navascues et al., Nat. Commun. 6, 6288 (2015)",
+     "Sainz et al., PRL 120, 200402 (2018)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:I2",
+   "branch": "GPT",
+   "native_id": "I2",
+   "inputs": [
+    "GPT:s-coh"
+   ],
+   "target": "GPT:e-ctx",
+   "logic": "single",
+   "kind": "open",
+   "kind_native": "open",
+   "status": "open",
+   "polarity": "open",
+   "t": 1.0,
+   "extra": {
+    "statement": "GAP G2: no quantitative resource translation coherence -> contextuality is known. Wanted: minimal extra structure under which a coherence monotone lower-bounds a contextuality robustness. Partial: event-graph witnesses; uncertainty-relation nonclassicality; genuinely nonclassical interference aspects.",
+    "refs": [
+     "Wagner, Camillini, Galvao, Quantum 8, 1240 (2024)",
+     "Catani et al., PRL 2022",
+     "Catani et al., PRA 2023"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:I3",
+   "branch": "GPT",
+   "native_id": "I3",
+   "inputs": [
+    "GPT:s-magic"
+   ],
+   "target": "GPT:e-ctx",
+   "logic": "single",
+   "kind": "open",
+   "kind_native": "open",
+   "status": "open",
+   "polarity": "open",
+   "t": 1.0,
+   "extra": {
+    "statement": "GAP G3 (even dimensions): no clean iff between qubit magic and a contextuality/negativity measure; state-independent Pauli contextuality and the Zurel-Okay-Raussendorf model obstruct naive formulations. Known: generalized contextuality is necessary for qubit state injection; Lambda-polytope cost functions partially quantify it.",
+    "refs": [
+     "Schmid, Du, Selby, Pusey, PRL 129, 120403 (2022)",
+     "Raussendorf, Browne, Delfosse, Okay, Bermejo-Vega, PRA 95, 052334 (2017)",
+     "Zurel, Okay, Raussendorf, PRL 125, 260404 (2020)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:I4",
+   "branch": "GPT",
+   "native_id": "I4",
+   "inputs": [
+    "GPT:e-steer"
+   ],
+   "target": "GPT:m-classical",
+   "logic": "single",
+   "kind": "open",
+   "kind_native": "open",
+   "status": "open",
+   "polarity": "open",
+   "t": 1.0,
+   "extra": {
+    "statement": "GAP G1: no GPT-level characterization of which composites exhibit steering (the steering analogue of entangleability of cones). Conjecture (this work): every beyond-min composite of nonclassical tomographically-complete GPTs with at least one pure entangled state is steerable.",
+    "refs": [
+     "Chiribella, D'Ariano, Perinotti, PRA 81, 062348 (2010)",
+     "Banik, J. Math. Phys. 56, 052101 (2015)",
+     "Jencova, Plavala, PRA 98, 012133 (2018)",
+     "Plavala et al., Incompatibility in restricted operational theories (2024)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:I5",
+   "branch": "GPT",
+   "native_id": "I5",
+   "inputs": [
+    "GPT:e-heat"
+   ],
+   "target": "GPT:e-ctx",
+   "logic": "single",
+   "kind": "open",
+   "kind_native": "open",
+   "status": "open",
+   "polarity": "open",
+   "t": 1.0,
+   "extra": {
+    "statement": "GAP G4: is every contextual process detectable by SOME thermodynamic anomaly (work/heat/entropy-production statistics)? Wanted: completeness theorem for thermodynamic contextuality witnesses within thermal operations.",
+    "refs": [
+     "Lostaglio, PRL 120, 040602 (2018)",
+     "arXiv:2403.18899",
+     "arXiv:2406.09715"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:I6",
+   "branch": "GPT",
+   "native_id": "I6",
+   "inputs": [
+    "GPT:e-interf3"
+   ],
+   "target": "GPT:e-ctx",
+   "logic": "single",
+   "kind": "open",
+   "kind_native": "open",
+   "status": "open",
+   "polarity": "open",
+   "t": 1.0,
+   "extra": {
+    "statement": "GAP G5: relation between higher-order (Sorkin) interference and contextuality/negativity measures is uncharted; the contextuality status of density-cube theories is unknown.",
+    "refs": [
+     "Dakic, Paterek, Brukner, NJP 16, 023028 (2014)",
+     "Barnum, Muller, Ududec, NJP 16, 123029 (2014)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:I7",
+   "branch": "GPT",
+   "native_id": "I7",
+   "inputs": [
+    "GPT:ax-sorkin"
+   ],
+   "target": "GPT:t-secondlaws",
+   "logic": "single",
+   "kind": "open",
+   "kind_native": "open",
+   "status": "open",
+   "polarity": "open",
+   "t": 1.0,
+   "extra": {
+    "statement": "GAP G6: which thermodynamic requirements (well-posed microcanonics, second laws, Landauer) FORCE purification-like axioms? Partial results for sharp theories with purification and for spectrality+strong symmetry; the converse direction is open.",
+    "refs": [
+     "Chiribella, Scandolo, NJP 19, 123043 (2017)",
+     "Krumm, Barnum, Barrett, Muller, NJP 19, 043025 (2017)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:I8",
+   "branch": "GPT",
+   "native_id": "I8",
+   "inputs": [
+    "GPT:e-ctx"
+   ],
+   "target": "GPT:e-bell",
+   "logic": "single",
+   "kind": "open",
+   "kind_native": "open",
+   "status": "open",
+   "polarity": "open",
+   "t": 1.0,
+   "extra": {
+    "statement": "GAP G7: a general monogamy/trade-off theory between single-system contextuality and composite nonlocality is missing; the Wright-Farkas scenario map suggests a unified resource calculus is possible.",
+    "refs": [
+     "Kurzynski, Cabello, Kaszlikowski, PRL 112, 100401 (2014)",
+     "Wright, Farkas, PRL 131, 220202 (2023)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:I9",
+   "branch": "GPT",
+   "native_id": "I9",
+   "inputs": [
+    "GPT:s-bound"
+   ],
+   "target": "GPT:t-secondlaws",
+   "logic": "single",
+   "kind": "open",
+   "kind_native": "open",
+   "status": "open",
+   "polarity": "open",
+   "t": 1.0,
+   "extra": {
+    "statement": "GAP G8b: thermodynamic signature of bound entanglement (work-extraction gap between bound and separable states under LOCC-thermal constraints) is not characterized.",
+    "refs": [
+     "cf. Oppenheim, Horodecki x3, PRL 89, 180402 (2002)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:I10",
+   "branch": "GPT",
+   "native_id": "I10",
+   "inputs": [
+    "GPT:m-quantum"
+   ],
+   "target": "GPT:e-ctx",
+   "logic": "single",
+   "kind": "witness",
+   "kind_native": "witness",
+   "status": "partial",
+   "polarity": "possibility",
+   "t": 1.0,
+   "extra": {
+    "statement": "Witness infrastructure: failures of noncontextuality are testable by linear programming on accessible GPT fragments, robustly to noise, without incompatibility, without ideal detectors, and (with care) without exact tomographic completeness - 'shadows and subsystems' close the tomographic-incompleteness loophole.",
+    "refs": [
+     "Selby, Wolfe, Schmid, Sainz, Rossi, arXiv:2204.11905",
+     "Selby et al., arXiv:2112.04521",
+     "Mazurek et al., Nat. Commun. 7, ncomms11780 (2016)",
+     "arXiv:2409.13024 (2024)",
+     "Muller, Garner, PRX 13, 041001 (2023)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:S1",
+   "branch": "GPT",
+   "native_id": "S1",
+   "inputs": [
+    "GPT:s-ent"
+   ],
+   "target": "GPT:s-coh",
+   "logic": "single",
+   "kind": "implies",
+   "kind_native": "implies",
+   "status": "theorem",
+   "polarity": "possibility",
+   "t": 2.0,
+   "extra": {
+    "statement": "Entangled implies coherent in EVERY product basis: if rho is diagonal in some product basis then rho = sum p_ij |a_i b_j><a_i b_j|, which is separable. (Coherence is basis-relative; this fixes the correct version of 'entangled states also have coherence'.)",
+    "refs": [
+     "elementary; context: Streltsov, Adesso, Plenio, RMP 89, 041003 (2017)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:S2",
+   "branch": "GPT",
+   "native_id": "S2",
+   "inputs": [
+    "GPT:s-ent"
+   ],
+   "target": "GPT:s-discord",
+   "logic": "single",
+   "kind": "implies",
+   "kind_native": "implies",
+   "status": "theorem",
+   "polarity": "possibility",
+   "t": 2.0,
+   "extra": {
+    "statement": "Entangled implies discordant: zero-discord (classical-classical) states are separable, so every entangled state has nonzero discord on both sides.",
+    "refs": [
+     "Ollivier, Zurek, PRL 88, 017901 (2001)",
+     "Henderson, Vedral, J. Phys. A 34, 6899 (2001)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:S3",
+   "branch": "GPT",
+   "native_id": "S3",
+   "inputs": [
+    "GPT:s-thermal"
+   ],
+   "target": "GPT:s-tts",
+   "logic": "single",
+   "kind": "subset",
+   "kind_native": "subset",
+   "status": "definition",
+   "polarity": "structural",
+   "t": 2.0,
+   "extra": {
+    "statement": "Gibbs states commute with H: thermal is a strict subcluster of TTS/energy-diagonal (TTS also contains diagonal athermal states).",
+    "refs": [
+     "definitional"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:S4",
+   "branch": "GPT",
+   "native_id": "S4",
+   "inputs": [
+    "GPT:s-cohE"
+   ],
+   "target": "GPT:s-coh",
+   "logic": "single",
+   "kind": "subset",
+   "kind_native": "subset",
+   "status": "theorem",
+   "polarity": "structural",
+   "t": 2.0,
+   "extra": {
+    "statement": "Energy coherence is basis coherence w.r.t. the energy eigenbasis, and equals asymmetry under the time-translation group (unspeakable coherence); asymmetry monotones, not functions of diagonal populations, quantify it.",
+    "refs": [
+     "Marvian, Spekkens, Nat. Commun. 5, 3821 (2014)",
+     "Marvian, Spekkens, PRA 94, 052324 (2016)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:S5",
+   "branch": "GPT",
+   "native_id": "S5",
+   "inputs": [
+    "GPT:s-wneg"
+   ],
+   "target": "GPT:s-magic",
+   "logic": "single",
+   "kind": "implies",
+   "kind_native": "implies",
+   "status": "theorem",
+   "polarity": "possibility",
+   "t": 2.0,
+   "extra": {
+    "statement": "Odd d: Wigner-negative implies non-stabilizer (stabilizer states have nonnegative Gross-Wigner). Converse FAILS: bound magic states are Wigner-positive yet non-stabilizer (the Wigner polytope strictly contains the stabilizer polytope).",
+    "refs": [
+     "Gross, J. Math. Phys. 47, 122107 (2006)",
+     "Veitch, Ferrie, Gross, Emerson, NJP 14, 113011 (2012)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:S6",
+   "branch": "GPT",
+   "native_id": "S6",
+   "inputs": [
+    "GPT:s-gauss"
+   ],
+   "target": "GPT:s-wneg",
+   "logic": "single",
+   "kind": "forbids",
+   "kind_native": "forbids",
+   "status": "theorem",
+   "polarity": "no_go",
+   "t": 2.0,
+   "extra": {
+    "statement": "Hudson's theorem: a PURE state has nonnegative Wigner function iff it is Gaussian; so pure non-Gaussian implies Wigner-negative. Mixed non-Gaussian Wigner-positive states exist, so the clusters differ only on mixtures.",
+    "refs": [
+     "Hudson, Rep. Math. Phys. 6, 249 (1974)",
+     "Soto, Claverie, J. Math. Phys. 24, 97 (1983)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:S7",
+   "branch": "GPT",
+   "native_id": "S7",
+   "inputs": [
+    "GPT:s-zerodisc"
+   ],
+   "target": "GPT:s-sep",
+   "logic": "single",
+   "kind": "subset",
+   "kind_native": "subset",
+   "status": "theorem",
+   "polarity": "structural",
+   "t": 2.0,
+   "extra": {
+    "statement": "Classical-classical (zero-discord) states are diagonal in a product basis, hence separable; the inclusion is strict (generic separable states are discordant).",
+    "refs": [
+     "Ferraro et al., PRA 81, 052318 (2010)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:S8",
+   "branch": "GPT",
+   "native_id": "S8",
+   "inputs": [
+    "GPT:s-thermal"
+   ],
+   "target": "GPT:s-cohE",
+   "logic": "single",
+   "kind": "forbids",
+   "kind_native": "forbids",
+   "status": "definition",
+   "polarity": "no_go",
+   "t": 2.0,
+   "extra": {
+    "statement": "Thermal states carry zero energy coherence ([gamma, H] = 0): the state-side resource for thermodynamic contextuality witnesses is absent by definition.",
+    "refs": [
+     "definitional"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:S9",
+   "branch": "GPT",
+   "native_id": "S9",
+   "inputs": [
+    "GPT:s-stab"
+   ],
+   "target": "GPT:s-wneg",
+   "logic": "single",
+   "kind": "forbids",
+   "kind_native": "forbids",
+   "status": "theorem",
+   "polarity": "no_go",
+   "t": 2.0,
+   "extra": {
+    "statement": "Odd-d stabilizer states (and their convex hull) have nonnegative discrete Wigner function: the negativity witness is blind on this whole cluster.",
+    "refs": [
+     "Gross, J. Math. Phys. 47, 122107 (2006)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:S10",
+   "branch": "GPT",
+   "native_id": "S10",
+   "inputs": [
+    "GPT:s-bound"
+   ],
+   "target": "GPT:s-ent",
+   "logic": "single",
+   "kind": "subset",
+   "kind_native": "subset",
+   "status": "definition",
+   "polarity": "structural",
+   "t": 2.0,
+   "extra": {
+    "statement": "Bound (PPT) entangled states are a subcluster of entangled states on which the PPT test is blind and distillation fails.",
+    "refs": [
+     "Horodecki, Horodecki, Horodecki, PRL 80, 5239 (1998)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:P1",
+   "branch": "GPT",
+   "native_id": "P1",
+   "inputs": [
+    "GPT:p-thermalops"
+   ],
+   "target": "GPT:p-cov",
+   "logic": "single",
+   "kind": "subset",
+   "kind_native": "subset",
+   "status": "theorem",
+   "polarity": "structural",
+   "t": 2.0,
+   "extra": {
+    "statement": "Thermal operations are time-translation covariant (and Gibbs-preserving): TO is a strict subset of the covariant channels.",
+    "refs": [
+     "Lostaglio, Jennings, Rudolph, Nat. Commun. 6, 6383 (2015)",
+     "Lostaglio, Rep. Prog. Phys. 82, 114001 (2019)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:P2",
+   "branch": "GPT",
+   "native_id": "P2",
+   "inputs": [
+    "GPT:p-cov"
+   ],
+   "target": "GPT:s-cohE",
+   "logic": "single",
+   "kind": "forbids",
+   "kind_native": "forbids",
+   "status": "theorem",
+   "polarity": "no_go",
+   "t": 2.0,
+   "extra": {
+    "statement": "Covariant (TTS) processes cannot create energy coherence/asymmetry: asymmetry monotones are non-increasing. The process cluster can only hide, never generate, the state-side resource.",
+    "refs": [
+     "Marvian, Spekkens, Nat. Commun. 5, 3821 (2014)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:P3",
+   "branch": "GPT",
+   "native_id": "P3",
+   "inputs": [
+    "GPT:p-locc"
+   ],
+   "target": "GPT:s-ent",
+   "logic": "single",
+   "kind": "forbids",
+   "kind_native": "forbids",
+   "status": "theorem",
+   "polarity": "no_go",
+   "t": 2.0,
+   "extra": {
+    "statement": "LOCC / non-entangling operations cannot create entanglement; entanglement monotones are non-increasing under them.",
+    "refs": [
+     "Horodecki x4, RMP 81, 865 (2009)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:P4",
+   "branch": "GPT",
+   "native_id": "P4",
+   "inputs": [
+    "GPT:p-incoh"
+   ],
+   "target": "GPT:s-coh",
+   "logic": "single",
+   "kind": "forbids",
+   "kind_native": "forbids",
+   "status": "theorem",
+   "polarity": "no_go",
+   "t": 2.0,
+   "extra": {
+    "statement": "Incoherent (and dephasing-covariant) operations cannot create basis coherence; coherence monotones are non-increasing.",
+    "refs": [
+     "Baumgratz, Cramer, Plenio, PRL 113, 140401 (2014)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:P5",
+   "branch": "GPT",
+   "native_id": "P5",
+   "inputs": [
+    "GPT:p-clifford"
+   ],
+   "target": "GPT:p-unitary",
+   "logic": "single",
+   "kind": "subset",
+   "kind_native": "subset",
+   "status": "definition",
+   "polarity": "structural",
+   "t": 2.0,
+   "extra": {
+    "statement": "Clifford unitaries and Gaussian unitaries are subgroups of the unitary dynamics; both are the free reversible operations of their resource theories.",
+    "refs": [
+     "definitional"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:P6",
+   "branch": "GPT",
+   "native_id": "P6",
+   "inputs": [
+    "GPT:p-clifford"
+   ],
+   "target": "GPT:t-mbqc",
+   "logic": "single",
+   "kind": "forbids",
+   "kind_native": "forbids",
+   "status": "theorem",
+   "polarity": "no_go",
+   "t": 2.0,
+   "extra": {
+    "statement": "Stabilizer circuits (Clifford + Pauli measurements on stabilizer inputs) are efficiently classically simulable: the free process cluster alone cannot produce quantum-computational advantage; universality requires injecting the magic cluster.",
+    "refs": [
+     "Gottesman, quant-ph/9807006",
+     "Aaronson, Gottesman, PRA 70, 052328 (2004)",
+     "Veitch et al., NJP 14, 113011 (2012) (odd d)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:P7",
+   "branch": "GPT",
+   "native_id": "P7",
+   "inputs": [
+    "GPT:p-filter"
+   ],
+   "target": "GPT:e-bell",
+   "logic": "single",
+   "kind": "enables",
+   "kind_native": "enables",
+   "status": "theorem",
+   "polarity": "possibility",
+   "t": 2.0,
+   "extra": {
+    "statement": "Local filters activate hidden nonlocality: states with LHV models for unfiltered measurements violate CHSH after SLOCC postselection.",
+    "refs": [
+     "Popescu, PRL 74, 2619 (1995)",
+     "Gisin, Phys. Lett. A 210, 151 (1996)",
+     "Hirsch et al., PRL 111, 160402 (2013)",
+     "Hirsch, Quintino, Bowles, Brunner, PRL 111, 160402 (2013): states with LHV models for ALL POVMs (single copy) whose filtered versions violate CHSH ('genuine hidden nonlocality')"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:P8",
+   "branch": "GPT",
+   "native_id": "P8",
+   "inputs": [
+    "GPT:p-projE"
+   ],
+   "target": "GPT:e-kd",
+   "logic": "single",
+   "kind": "hides",
+   "kind_native": "hides",
+   "status": "theorem",
+   "polarity": "no_go",
+   "t": 2.0,
+   "extra": {
+    "statement": "The TPM scheme's first projective energy measurement dephases all input energy coherence: TPM statistics coincide with those of the dephased state, so KD/work negativity and any coherence signal are erased before readout. This is the no-go forcing quasiprobabilities or protocol changes for coherent work statistics.",
+    "refs": [
+     "Perarnau-Llobet, Baumer, Hovhannisyan, Huber, Acin, PRL 118, 070601 (2017)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:P9",
+   "branch": "GPT",
+   "native_id": "P9",
+   "inputs": [
+    "GPT:p-weak"
+   ],
+   "target": "GPT:e-kd",
+   "logic": "single",
+   "kind": "enables",
+   "kind_native": "enables",
+   "status": "theorem",
+   "polarity": "possibility",
+   "t": 2.0,
+   "extra": {
+    "statement": "Weak (and direct) measurement sequences read out KD distributions and weak values without destroying the probed coherence: the process cluster that reveals what TPM hides.",
+    "refs": [
+     "Aharonov, Albert, Vaidman, PRL 60, 1351 (1988)",
+     "Lundeen et al., Nature 474, 188 (2011)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:P10",
+   "branch": "GPT",
+   "native_id": "P10",
+   "inputs": [
+    "GPT:p-gaussU"
+   ],
+   "target": "GPT:s-wneg",
+   "logic": "single",
+   "kind": "forbids",
+   "kind_native": "forbids",
+   "status": "theorem",
+   "polarity": "no_go",
+   "t": 2.0,
+   "extra": {
+    "statement": "Gaussian operations preserve Wigner positivity: negativity cannot be generated inside the Gaussian process cluster (it is the free cluster of non-Gaussianity resource theories).",
+    "refs": [
+     "Takagi, Zhuang, PRA 97, 062337 (2018)",
+     "Albarelli, Genoni, Serafini, Ferraro, PRA 98, 052350 (2018)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:P11",
+   "branch": "GPT",
+   "native_id": "P11",
+   "inputs": [
+    "GPT:p-nongauss"
+   ],
+   "target": "GPT:s-wneg",
+   "logic": "single",
+   "kind": "enables",
+   "kind_native": "enables",
+   "status": "theorem",
+   "polarity": "possibility",
+   "t": 2.0,
+   "extra": {
+    "statement": "Non-Gaussian operations (cubic-or-higher generators, photon counting) generate Wigner negativity and are required for CV universality - the process-side face of the Moyal lift (GN5).",
+    "refs": [
+     "Lloyd, Braunstein, PRL 82, 1784 (1999)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:N1",
+   "branch": "GPT",
+   "native_id": "N1",
+   "inputs": [
+    "GPT:p-cov"
+   ],
+   "target": "GPT:e-ctx",
+   "logic": "single",
+   "kind": "forbids",
+   "kind_native": "forbids",
+   "status": "derived",
+   "polarity": "no_go",
+   "t": 2.0,
+   "extra": {
+    "statement": "PROPOSITION N1 (this work; proof in catalog): for nondegenerate H, any fragment whose transformations are covariant and whose effects are TTS ([E,H]=0) has statistics invariant under pre-dephasing of the input - Tr(E T(rho)) = Tr(E T(D(rho))) - so it factors through the commutative energy-diagonal subtheory and is simplex-embeddable: noncontextual, KD-positive, coherence-blind for EVERY input state, coherent ones included. TTS processes do not lack contextuality; they HIDE it. Special case: TPM fluctuation theorems are noncontextual (Lostaglio). Caveat: for degenerate H the fragment retains full quantum blocks and can stay contextual (H proportional to identity makes every process covariant). CONVERSE (U1, round 4): the restriction to nondegenerate H is sharp - for any H the covariant/TTS fragment sees only D(rho) and is operationally the direct sum of quantum theories on the eigenspaces of H with a classical label; it admits a noncontextual model iff every eigenspace is one-dimensional. Scope (C7): the noncontextuality claim holds under the tomographically complete convention for operational equivalence, or with ALL TTS effects in the fragment.",
+    "refs": [
+     "derived (catalog v2, N1)",
+     "special case: Lostaglio, PRL 120, 040602 (2018)",
+     "adjacent: arXiv:2605.09558 (contextuality dissipating under decoherence)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:N2",
+   "branch": "GPT",
+   "native_id": "N2",
+   "inputs": [
+    "GPT:s-thermal"
+   ],
+   "target": "GPT:e-ks",
+   "logic": "single",
+   "kind": "implies",
+   "kind_native": "implies",
+   "status": "theorem",
+   "polarity": "possibility",
+   "t": 2.0,
+   "extra": {
+    "statement": "PROPOSITION N2 (assembled): every state - thermal and maximally mixed included - violates state-independent contextuality inequalities (Peres-Mermin via Cabello's inequality; Yu-Oh 13 rays for the qutrit). So no state cluster is blind for contextuality: the contextual resource can sit entirely on the measurement side. Corollary of N1: any such SI witness set necessarily contains non-TTS measurements when H is nondegenerate. This makes precise the intuition 'TTS/thermal states may correspond to contextuality, while TTS processes hide it'.",
+    "refs": [
+     "Cabello, PRL 101, 210401 (2008)",
+     "Yu, Oh, PRL 108, 030402 (2012)",
+     "Mermin, PRL 65, 3373 (1990); Peres, J. Phys. A 24, L175 (1991)",
+     "corollary: N1"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:W1",
+   "branch": "GPT",
+   "native_id": "W1",
+   "inputs": [
+    "GPT:w-bell"
+   ],
+   "target": "GPT:e-bell",
+   "logic": "single",
+   "kind": "pairs",
+   "kind_native": "pairs",
+   "status": "definition",
+   "polarity": "structural",
+   "t": 2.0,
+   "extra": {
+    "statement": "CHSH functional detects Bell nonlocality at threshold 2; the SAME functional detects the quantum boundary at 2*sqrt(2) (Tsirelson) and PR correlations at 4 - witness-effect pairing is 1-1 up to threshold stratification.",
+    "refs": [
+     "Clauser, Horne, Shimony, Holt, PRL 23, 880 (1969)",
+     "Tsirelson, Lett. Math. Phys. 4, 93 (1980)",
+     "Popescu, Rohrlich, Found. Phys. 24, 379 (1994)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:W1b",
+   "branch": "GPT",
+   "native_id": "W1b",
+   "inputs": [
+    "GPT:w-bell"
+   ],
+   "target": "GPT:e-pr",
+   "logic": "single",
+   "kind": "pairs",
+   "kind_native": "pairs",
+   "status": "definition",
+   "polarity": "structural",
+   "t": 2.0,
+   "extra": {
+    "statement": "PR correlations are detected by the same CHSH functional at its algebraic maximum 4: the recorded exception to strict 1-1 pairing (threshold stratification).",
+    "refs": [
+     "Popescu, Rohrlich, Found. Phys. 24, 379 (1994)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:W2",
+   "branch": "GPT",
+   "native_id": "W2",
+   "inputs": [
+    "GPT:w-steer"
+   ],
+   "target": "GPT:e-steer",
+   "logic": "single",
+   "kind": "pairs",
+   "kind_native": "pairs",
+   "status": "definition",
+   "polarity": "structural",
+   "t": 2.0,
+   "extra": {
+    "statement": "Steering inequalities / the LHS-membership SDP detect steering; for finite assemblages the test is complete.",
+    "refs": [
+     "Cavalcanti, Skrzypczyk, Rep. Prog. Phys. 80, 024001 (2017)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:W3",
+   "branch": "GPT",
+   "native_id": "W3",
+   "inputs": [
+    "GPT:w-incomp"
+   ],
+   "target": "GPT:e-incomp",
+   "logic": "single",
+   "kind": "pairs",
+   "kind_native": "pairs",
+   "status": "definition",
+   "polarity": "structural",
+   "t": 2.0,
+   "extra": {
+    "statement": "The joint-measurability SDP decides incompatibility of any finite measurement set; incompatibility robustness quantifies it.",
+    "refs": [
+     "Designolle, Farkas, Kaniewski, NJP 21, 113053 (2019)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:W4",
+   "branch": "GPT",
+   "native_id": "W4",
+   "inputs": [
+    "GPT:w-entw"
+   ],
+   "target": "GPT:s-ent",
+   "logic": "single",
+   "kind": "pairs",
+   "kind_native": "pairs",
+   "status": "definition",
+   "polarity": "structural",
+   "t": 2.0,
+   "extra": {
+    "statement": "Entanglement witnesses detect the entangled cluster; complete by Hahn-Banach but not efficiently (separability NP-hard; the PPT test is blind exactly on the bound cluster).",
+    "refs": [
+     "Horodecki x3, Phys. Lett. A 223, 1 (1996)",
+     "Terhal, Phys. Lett. A 271, 319 (2000)",
+     "Gurvits, STOC 2003"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:W5",
+   "branch": "GPT",
+   "native_id": "W5",
+   "inputs": [
+    "GPT:w-ncineq"
+   ],
+   "target": "GPT:e-ctx",
+   "logic": "single",
+   "kind": "pairs",
+   "kind_native": "pairs",
+   "status": "definition",
+   "polarity": "structural",
+   "t": 2.0,
+   "extra": {
+    "statement": "Noncontextuality inequalities / the simplex-embedding LP detect generalized contextuality of an accessible fragment; the LP form is complete for finite fragments.",
+    "refs": [
+     "Schmid, Selby, Wolfe, Kunjwal, Spekkens, PRX Quantum 2, 010331 (2021)",
+     "Selby, Wolfe, Schmid, Sainz, Rossi, arXiv:2204.11905"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:W6",
+   "branch": "GPT",
+   "native_id": "W6",
+   "inputs": [
+    "GPT:w-sic"
+   ],
+   "target": "GPT:e-ks",
+   "logic": "single",
+   "kind": "pairs",
+   "kind_native": "pairs",
+   "status": "definition",
+   "polarity": "structural",
+   "t": 2.0,
+   "extra": {
+    "statement": "State-independent KS operator sets detect state-independent contextuality: the NC bound is violated by every state of the system.",
+    "refs": [
+     "Cabello, PRL 101, 210401 (2008)",
+     "Yu, Oh, PRL 108, 030402 (2012)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:W7",
+   "branch": "GPT",
+   "native_id": "W7",
+   "inputs": [
+    "GPT:w-kcbs"
+   ],
+   "target": "GPT:e-ksdep",
+   "logic": "single",
+   "kind": "pairs",
+   "kind_native": "pairs",
+   "status": "definition",
+   "polarity": "structural",
+   "t": 2.0,
+   "extra": {
+    "statement": "The KCBS pentagon (and CSW graph generalizations) detect state-dependent KS contextuality; the maximally mixed state does not violate it.",
+    "refs": [
+     "Klyachko, Can, Binicioglu, Shumovsky, PRL 101, 020403 (2008)",
+     "Cabello, Severini, Winter, PRL 112, 040401 (2014)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:W8",
+   "branch": "GPT",
+   "native_id": "W8",
+   "inputs": [
+    "GPT:w-wig"
+   ],
+   "target": "GPT:s-wneg",
+   "logic": "single",
+   "kind": "pairs",
+   "kind_native": "pairs",
+   "status": "definition",
+   "polarity": "structural",
+   "t": 2.0,
+   "extra": {
+    "statement": "The displaced-parity estimator measures W(alpha) directly (CV); phase-point operators do the same in odd d: the canonical negativity witness.",
+    "refs": [
+     "Royer, PRA 15, 449 (1977)",
+     "Banaszek, Wodkiewicz, PRA 58, 4345 (1998)",
+     "Gross, J. Math. Phys. 47, 122107 (2006)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:W9",
+   "branch": "GPT",
+   "native_id": "W9",
+   "inputs": [
+    "GPT:w-kd"
+   ],
+   "target": "GPT:e-kd",
+   "logic": "single",
+   "kind": "pairs",
+   "kind_native": "pairs",
+   "status": "definition",
+   "polarity": "structural",
+   "t": 2.0,
+   "extra": {
+    "statement": "Weak-then-strong (direct) measurement reconstructs the KD distribution; its negativity/imaginarity is the detected effect. Imaginary parts exist only because of the complex structure (ax-complex).",
+    "refs": [
+     "Kirkwood, Phys. Rev. 44, 31 (1933)",
+     "Dirac, Rev. Mod. Phys. 17, 195 (1945)",
+     "Lundeen et al., Nature 474, 188 (2011)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:W10",
+   "branch": "GPT",
+   "native_id": "W10",
+   "inputs": [
+    "GPT:w-weakval"
+   ],
+   "target": "GPT:e-weak",
+   "logic": "single",
+   "kind": "pairs",
+   "kind_native": "pairs",
+   "status": "definition",
+   "polarity": "structural",
+   "t": 2.0,
+   "extra": {
+    "statement": "The postselected weak-measurement protocol detects anomalous weak values; each anomaly is a proof of contextuality (C10).",
+    "refs": [
+     "Aharonov, Albert, Vaidman, PRL 60, 1351 (1988)",
+     "Pusey, PRL 113, 200401 (2014)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:W11",
+   "branch": "GPT",
+   "native_id": "W11",
+   "inputs": [
+    "GPT:w-workq"
+   ],
+   "target": "GPT:e-heat",
+   "logic": "single",
+   "kind": "pairs",
+   "kind_native": "pairs",
+   "status": "definition",
+   "polarity": "structural",
+   "t": 2.0,
+   "extra": {
+    "statement": "Work-quasiprobability protocols detect anomalous work/heat statistics; negativity of the work quasiprobability certifies contextuality of the protocol (G4).",
+    "refs": [
+     "Allahverdyan, PRE 90, 032137 (2014)",
+     "Lostaglio, PRL 120, 040602 (2018)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:W12",
+   "branch": "GPT",
+   "native_id": "W12",
+   "inputs": [
+    "GPT:w-magicw"
+   ],
+   "target": "GPT:s-magic",
+   "logic": "single",
+   "kind": "pairs",
+   "kind_native": "pairs",
+   "status": "definition",
+   "polarity": "structural",
+   "t": 2.0,
+   "extra": {
+    "statement": "Magic monotones (robustness, mana, stabilizer extent) witness non-stabilizerness; mana is blind on the Wigner-positive bound-magic subcluster, robustness is not.",
+    "refs": [
+     "Veitch, Mousavian, Gottesman, Emerson, NJP 16, 013009 (2014)",
+     "Howard, Campbell, PRL 118, 090501 (2017)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:W13",
+   "branch": "GPT",
+   "native_id": "W13",
+   "inputs": [
+    "GPT:w-cohw"
+   ],
+   "target": "GPT:s-coh",
+   "logic": "single",
+   "kind": "pairs",
+   "kind_native": "pairs",
+   "status": "definition",
+   "polarity": "structural",
+   "t": 2.0,
+   "extra": {
+    "statement": "Coherence monotones and event-graph inequalities witness (set) coherence; visibility-based versions witness it in interferometric fragments.",
+    "refs": [
+     "Baumgratz, Cramer, Plenio, PRL 113, 140401 (2014)",
+     "Wagner, Camillini, Galvao, Quantum 8, 1240 (2024)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:W14",
+   "branch": "GPT",
+   "native_id": "W14",
+   "inputs": [
+    "GPT:w-discw"
+   ],
+   "target": "GPT:s-discord",
+   "logic": "single",
+   "kind": "pairs",
+   "kind_native": "pairs",
+   "status": "definition",
+   "polarity": "structural",
+   "t": 2.0,
+   "extra": {
+    "statement": "The local-broadcasting test detects discord: local broadcastability holds iff discord vanishes.",
+    "refs": [
+     "Piani, Horodecki, Horodecki, PRL 100, 090502 (2008)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:W15",
+   "branch": "GPT",
+   "native_id": "W15",
+   "inputs": [
+    "GPT:w-clone"
+   ],
+   "target": "GPT:e-nobc",
+   "logic": "single",
+   "kind": "pairs",
+   "kind_native": "pairs",
+   "status": "definition",
+   "polarity": "structural",
+   "t": 2.0,
+   "extra": {
+    "statement": "Cloning-fidelity bounds operationalize no-broadcasting: the certified impossibility of universal cloning above 5/6 (qubits) is the witness; commuting families remain broadcastable.",
+    "refs": [
+     "Buzek, Hillery, PRA 54, 1844 (1996)",
+     "Gisin, Massar, PRL 79, 2153 (1997)",
+     "Barnum et al., PRL 76, 2818 (1996)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:W16",
+   "branch": "GPT",
+   "native_id": "W16",
+   "inputs": [
+    "GPT:w-vis"
+   ],
+   "target": "GPT:e-interf2",
+   "logic": "single",
+   "kind": "pairs",
+   "kind_native": "pairs",
+   "status": "definition",
+   "polarity": "structural",
+   "t": 2.0,
+   "extra": {
+    "statement": "Fringe visibility detects two-path interference, with the duality bound V^2 + D^2 <= 1. Caveat D3: this witness does NOT separate quantum from epistricted-classical - it detects the phenomenology, not nonclassicality.",
+    "refs": [
+     "Greenberger, Yasin, Phys. Lett. A 128, 391 (1988)",
+     "Englert, PRL 77, 2154 (1996)",
+     "Catani et al., Quantum 7, 1119 (2023)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:W17",
+   "branch": "GPT",
+   "native_id": "W17",
+   "inputs": [
+    "GPT:w-sorkin"
+   ],
+   "target": "GPT:e-interf3",
+   "logic": "single",
+   "kind": "pairs",
+   "kind_native": "pairs",
+   "status": "definition",
+   "polarity": "structural",
+   "t": 2.0,
+   "extra": {
+    "statement": "The Sorkin I3 estimator detects higher-order interference; in quantum theory it is identically zero, so experimentally it is a null test bounding deviations (and the witness that would falsify ax-sorkin).",
+    "refs": [
+     "Sorkin, Mod. Phys. Lett. A 9, 3119 (1994)",
+     "Sinha et al., Science 329, 418 (2010)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:U1",
+   "branch": "GPT",
+   "native_id": "U1",
+   "inputs": [
+    "GPT:p-cov"
+   ],
+   "target": "GPT:e-ctx",
+   "logic": "single",
+   "kind": "implies",
+   "kind_native": "implies",
+   "status": "derived",
+   "polarity": "possibility",
+   "t": 2.6,
+   "extra": {
+    "statement": "THEOREM U1 (combined paper, round 4; closes SG1): for ANY finite-dimensional H, the fragment of all preparations, covariant transformations T and TTS effects E has statistics Tr(E T(rho)) = Tr(E T(D(rho))) (the N1 identity needs no nondegeneracy), so it is operationally the direct sum over eigenspaces H_k of quantum theory on H_k, with a classical label k. Hence it admits a generalized-noncontextual model iff every eigenspace is one-dimensional (N1). If some eigenspace has dimension >= 2 the fragment is preparation-contextual already with T = id: six pure states at 60-degree spacing on a great circle of a two-dimensional subspace of the eigenspace, and the three TTS projective measurements formed by their antipodal pairs (completed by the projector onto the complement), violate P(a != c) <= P(a != b) + P(b != c) for the three binary variables that a preparation-noncontextual model must assign (quantum: 3/4 <= 1/4 + 1/4). What survives time-translation symmetry is exactly the contextuality of quantum theory on the largest degenerate eigenspace, and nothing across eigenspaces. Literature search 2026-11-01: no prior statement found (the ingredients - the dephasing identity and the six-state preparation-contextuality proof - are standard).",
+    "refs": [
+     "derived (combined paper, Sec. 8, round 4)",
+     "six-state proof: Spekkens, PRA 71, 052108 (2005); Mazurek, Pusey, Kunjwal, Resch, Spekkens, Nat. Commun. 7, 11780 (2016)",
+     "sharpens N1"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:U2",
+   "branch": "GPT",
+   "native_id": "U2",
+   "inputs": [
+    "GPT:p-filter"
+   ],
+   "target": "GPT:e-ctx",
+   "logic": "single",
+   "kind": "not_implies",
+   "kind_native": "not_implies",
+   "status": "derived",
+   "polarity": "no_go",
+   "t": 2.6,
+   "extra": {
+    "statement": "THEOREM U2 (combined paper, round 4; closes SG5 at the level of models): local filters cannot create or destroy the generalized contextuality of a prepare-measure scenario that contains ALL measurements. Precisely: for a convex set S of states and an invertible operator A, the scenario (S, all POVMs) admits a preparation-and-measurement noncontextual model iff ({A s A*/Tr(A s A*) : s in S}, all POVMs) does; the model transforms by mu'(lambda) = mu(lambda) xi_{A*A}(lambda)/Tr(A*A s) and xi'_M = xi_{A*MA}/xi_{A*A}. Consequently the contextuality of the remote-preparation scenario Lambda_A(rho_AB) with all measurements (A8/R3) is invariant under invertible local filters on either party, whereas Bell nonlocality is not (P7; Hirsch et al. 2013: states local for all POVMs become CHSH-violating after invertible filters). For those states the remote-preparation scenario is contextual before and after filtering (A8): the hidden nonlocality is visible as contextuality without any filter. Filters CAN change which fixed witness detects the contextuality and by how much (Kumari and Patra 2025, PORAC witness) - that is the only form of 'hidden contextuality activation' that remains possible (SG7). Literature search 2026-11-01: invariance statement not found.",
+    "refs": [
+     "derived (combined paper, Sec. 8, round 4)",
+     "Hirsch, Quintino, Bowles, Brunner, PRL 111, 160402 (2013)",
+     "Kumari, Patra, arXiv:2504.18045 (witness-level activation)",
+     "Plavala, Guhne, PRL 132, 100201 (2024), Thm. 1"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:U3",
+   "branch": "GPT",
+   "native_id": "U3",
+   "inputs": [
+    "GPT:m-stab-odd"
+   ],
+   "target": "GPT:e-steer",
+   "logic": "single",
+   "kind": "implies",
+   "kind_native": "implies",
+   "status": "derived",
+   "polarity": "possibility",
+   "t": 2.6,
+   "extra": {
+    "statement": "PROPOSITION U3 (combined paper, round 4): the odd-dimensional stabilizer subtheory exhibits EPR steering with respect to quantum local hidden states, although it is noncontextual (C5). Witness: the maximally entangled stabilizer state |Phi_d> = d^{-1/2} sum_j |jj>, Alice's Z and X (Fourier) measurements, Bob's projectors onto the Z and X eigenstates; the functional S = sum_a Tr[sigma_{a|Z} |a><a|] + sum_b Tr[sigma_{b|X} |x_{-b}><x_{-b}|] equals 2, while every assemblage with a local-hidden-state model (hidden states arbitrary quantum states) has S <= 1 + 1/sqrt(d) (largest eigenvalue of the sum of two projectors with overlap 1/sqrt(d)). All objects used are stabilizer objects. Hence steering is present in a discrete-variable noncontextual quantum subtheory, the DV companion of F2 (Gaussian QM), and P4(a) holds with a DV example. The nonnegative Gross representation is itself a local-hidden-state model whose hidden states are phase-space points, not quantum states: the steering of the subtheory is relative to the class of hidden states allowed. Literature search 2026-11-01: not found in this form (the two-basis steering of maximally entangled states is standard).",
+    "refs": [
+     "derived (combined paper, Sec. 8, round 4)",
+     "Gross, J. Math. Phys. 47, 122107 (2006)",
+     "Schmid, Du, Selby, Pusey, PRL 129, 120403 (2022)",
+     "Wiseman, Jones, Doherty, PRL 98, 140402 (2007)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:U4",
+   "branch": "GPT",
+   "native_id": "U4",
+   "inputs": [
+    "GPT:s-tts"
+   ],
+   "target": "GPT:s-magic",
+   "logic": "single",
+   "kind": "forbids",
+   "kind_native": "forbids",
+   "status": "derived",
+   "polarity": "no_go",
+   "t": 2.6,
+   "extra": {
+    "statement": "PROPOSITION U4 (combined paper, round 4): the TTS cluster contains no magic state iff H is nondegenerate and every eigenvector of H is a stabilizer state. (Nondegenerate H: TTS states are mixtures of the eigenprojectors; if all eigenvectors are stabilizer states these lie in STAB, and if one eigenvector is not, its projector is a TTS magic state. Degenerate H: an eigenspace of dimension >= 2 contains a continuum of pure states and only finitely many stabilizer states, so it contains TTS magic states.) Literature search 2026-11-01: not found.",
+    "refs": [
+     "derived (combined paper, Sec. 8, round 4)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:U5",
+   "branch": "GPT",
+   "native_id": "U5",
+   "inputs": [
+    "GPT:p-cov"
+   ],
+   "target": "GPT:s-magic",
+   "logic": "single",
+   "kind": "hides",
+   "kind_native": "hides",
+   "status": "derived",
+   "polarity": "no_go",
+   "t": 2.6,
+   "extra": {
+    "statement": "PROPOSITION U5 (combined paper, round 4): for H nondegenerate with a stabilizer eigenbasis, covariant transformations with TTS effects see only D(rho), which lies in STAB for every rho (U4); so no magic witness built from TTS effects and covariant pre-processing can certify the magic of any state, even though covariant dynamics creates magic: for H = Z on one qubit, exp(-i H pi/8) is the T gate, covariant, and maps the stabilizer state |+> to a magic state. Covariant processes create magic that covariant probes cannot see. For thermal operations (a subclass) the quantitative conditions for magic generation from stabilizer inputs are in de Oliveira Junior et al. 2025 (U5b). Literature search 2026-11-01: blindness statement not found.",
+    "refs": [
+     "derived (combined paper, Sec. 8, round 4)",
+     "N1 identity",
+     "T gate: Bravyi, Kitaev, PRA 71, 022316 (2005)"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:U5b",
+   "branch": "GPT",
+   "native_id": "U5b",
+   "inputs": [
+    "GPT:p-thermalops"
+   ],
+   "target": "GPT:s-magic",
+   "logic": "single",
+   "kind": "implies",
+   "kind_native": "implies",
+   "status": "theorem",
+   "polarity": "possibility",
+   "t": 2.6,
+   "extra": {
+    "statement": "LITERATURE FILL (round 4): thermal operations can generate nonstabiliserness from a stabiliser input. For a qubit prepared in a stabiliser state and coupled to a heat bath, de Oliveira Junior et al. give a necessary and sufficient condition (a witness M(rho) > 1), an analytic characterisation of the reachable nonstabiliser states with quantitative bounds on their nonstabiliserness, the Hamiltonians that maximise generation, and the critical temperatures at which it emerges; for energy-diagonal inputs, if H is aligned with a pure stabiliser direction no magic state is generated (consistent with U4; for a coherent stabiliser input no such statement holds, since exp(-iZ pi/8), itself a thermal operation, creates magic: U5(ii)). The Gibbs-state statement QP5 of the resource network lies within this question, because complete thermalisation is a thermal operation: the Gibbs state of H = -(omega/2) n.sigma with n = (1,1,1)/sqrt(3) has Bloch vector tanh(beta omega/2) n and is a magic state iff tanh(beta omega/2) > 1/sqrt(3) (elementary; not found in explicit form in the cited preprint).",
+    "refs": [
+     "de Oliveira Junior, Macedo, Czartowski, Brask, Chaves, Trading athermality for nonstabiliserness, arXiv:2511.13839 (2025) [verified: arXiv record checked 2026-11-01; journal version not checked]"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:U6",
+   "branch": "GPT",
+   "native_id": "U6",
+   "inputs": [
+    "GPT:s-zerodisc"
+   ],
+   "target": "GPT:e-ctx",
+   "logic": "single",
+   "kind": "forbids",
+   "kind_native": "forbids",
+   "status": "theorem",
+   "polarity": "no_go",
+   "t": 2.6,
+   "extra": {
+    "statement": "LITERATURE FILL with direct proof (round 4): if rho_AB is classical on the steered side A, rho = sum_i p_i |i><i| x tau_i with orthonormal |i>, then every remotely preparable state Tr_B[(1 x E_B) rho] is diagonal in {|i>}, so the remote-preparation scenario with all measurements has, under the tomographically complete convention for operational equivalence, an EXACT preparation-and-measurement noncontextual model (the model of P2/D2); in particular for all classical-classical states. This is the case of Plavala-Guhne Theorem 2 in which the B-side operators of the decomposition lie in the span of Lambda_B(rho); it is exact, whereas their Theorem 3 for general separable states is only robust, and their Eq. (4) is a separable state whose scenario is contextual.",
+    "refs": [
+     "Plavala, Guhne, PRL 132, 100201 (2024), Thm. 2",
+     "direct proof: combined paper, Sec. 8, round 4"
+    ]
+   }
+  },
+  {
+   "uid": "GPT:U7",
+   "branch": "GPT",
+   "native_id": "U7",
+   "inputs": [
+    "GPT:s-discord"
+   ],
+   "target": "GPT:e-ctx",
+   "logic": "single",
+   "kind": "not_implies",
+   "kind_native": "not_implies",
+   "status": "counterexample",
+   "polarity": "no_go",
+   "t": 2.6,
+   "extra": {
+    "statement": "PROPOSITION U7 (combined paper, round 4): among separable states (tomographically complete convention), contextuality of the remote-preparation scenario (all measurements) is a property of the steered side's nonclassicality, not of the correlations: it REQUIRES discord on the steered side (contrapositive of U6) but discord on the steered side does not suffice. Counterexample: rho = (1/2)(|0><0| x |0><0| + |+><+| x |1><1|) is discordant on A, and Lambda_A(rho) is the segment between |0><0| and |+><+|, whose scenario with all measurements is simplex-embeddable (every state of the segment is a unique mixture of the endpoints; the map e -> (e(psi_0), e(psi_+)) embeds the effects), hence noncontextual. Sufficiency can hold: Plavala-Guhne's separable state (1/4) sum over {0,1,+,-} of |k><k| x |k'><k'| has Lambda_A = conv{0,1,+,-}, which is preparation-contextual with all measurements (encode 00,11,01,10 as 0,1,+,-: parity-oblivious; measuring (Z+-X)/sqrt2 succeeds with cos^2(pi/8) > 3/4, the preparation-noncontextual bound of the 2-bit parity-oblivious multiplexing game). Literature search 2026-11-01: the characterization not found; new gap SG6.",
+    "refs": [
+     "derived (combined paper, Sec. 8, round 4)",
+     "Plavala, Guhne, PRL 132, 100201 (2024), Eq. (4)",
+     "Spekkens, Buzacott, Keehn, Toner, Pryde, PRL 102, 010401 (2009)"
+    ]
+   }
+  }
+ ]
+}

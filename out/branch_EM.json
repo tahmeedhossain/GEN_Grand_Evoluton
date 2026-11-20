@@ -1,0 +1,5406 @@
+{
+ "branch": {
+  "id": "EM",
+  "title": "From Maxwell to QED: a history in a growing network",
+  "btype": "D",
+  "source": "tahmeedhossain/GEN_epistemic_evolution, data/v3.1_maxwell_to_qed_network.json",
+  "version": "v3.1",
+  "time_axis": "paragraph (0..77) of the 23-section reader",
+  "native_layers": [
+   "observable",
+   "model",
+   "state"
+  ],
+  "layer_map": {
+   "observable": "O",
+   "model": "M",
+   "state": "S"
+  },
+  "notes": "Routes are AND/single; kind classical/quantization/quantum/classical_limit/failed."
+ },
+ "nodes": [
+  {
+   "uid": "EM:F",
+   "branch": "EM",
+   "native_id": "F",
+   "label": "Force on a charge",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "classical",
+   "t": 2,
+   "concept": "force",
+   "extra": {
+    "symbol": "F",
+    "derived": false,
+    "description": "Measured from a body's acceleration (F = ma) or by balancing it against a known force. Every force law in the story predicts it, so more and more alternative routes lead here.",
+    "math_structure": null,
+    "properties": null,
+    "section": 1
+   }
+  },
+  {
+   "uid": "EM:r",
+   "branch": "EM",
+   "native_id": "r",
+   "label": "Position",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "classical",
+   "t": 2,
+   "concept": "position",
+   "extra": {
+    "symbol": "x",
+    "derived": false,
+    "description": "Where a body sits in Euclidean 3-space, measured with rulers. Separations r = x − x′ enter every force law. A primitive geometric observable.",
+    "math_structure": null,
+    "properties": null,
+    "section": 1
+   }
+  },
+  {
+   "uid": "EM:v",
+   "branch": "EM",
+   "native_id": "v",
+   "label": "Velocity",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "classical",
+   "t": 2,
+   "concept": "velocity",
+   "extra": {
+    "symbol": "v",
+    "derived": true,
+    "description": "v = dx/dt from successive position measurements. It becomes essential once magnetic forces turn out to depend on motion.",
+    "math_structure": null,
+    "properties": null,
+    "section": 1
+   }
+  },
+  {
+   "uid": "EM:traj",
+   "branch": "EM",
+   "native_id": "traj",
+   "label": "Particle state of motion",
+   "layer": "S",
+   "sublayer": "S.point",
+   "native_layer": "state",
+   "era": "classical",
+   "t": 2,
+   "concept": null,
+   "extra": {
+    "symbol": "(x,v)",
+    "derived": false,
+    "description": "Position and velocity together: Newton's description of a body's state.",
+    "math_structure": "Point of the tangent bundle Tℝ³; over time, a curve x(t).",
+    "properties": null,
+    "section": 1
+   }
+  },
+  {
+   "uid": "EM:vec",
+   "branch": "EM",
+   "native_id": "vec",
+   "label": "Vector addition",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "classical",
+   "t": 2,
+   "concept": "vector_addition",
+   "extra": {
+    "symbol": "+",
+    "derived": false,
+    "description": "How forces and fields combine. Because order and grouping do not matter, the total force from any number of sources is well defined.",
+    "math_structure": null,
+    "properties": [
+     "commutative",
+     "associative",
+     "identity 0",
+     "inverses",
+     "abelian group"
+    ],
+    "section": 1
+   }
+  },
+  {
+   "uid": "EM:ddt",
+   "branch": "EM",
+   "native_id": "ddt",
+   "label": "Time derivative",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "classical",
+   "t": 2,
+   "concept": "time_derivative",
+   "extra": {
+    "symbol": "∂ₜ",
+    "derived": false,
+    "description": "Generates time evolution. Its commuting with spatial derivatives is used when the curl equations are combined into wave equations.",
+    "math_structure": null,
+    "properties": [
+     "linear",
+     "commutes with ∇ for smooth fields",
+     "Leibniz rule"
+    ],
+    "section": 1
+   }
+  },
+  {
+   "uid": "EM:q",
+   "branch": "EM",
+   "native_id": "q",
+   "label": "Electric charge",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "classical",
+   "t": 5,
+   "concept": "electric_charge",
+   "extra": {
+    "symbol": "q",
+    "derived": false,
+    "description": "A signed scalar property of bodies, inferred from the forces they exert on one another. Experimentally additive and conserved, and (Millikan) quantized in units of e.",
+    "math_structure": null,
+    "properties": null,
+    "section": 2
+   }
+  },
+  {
+   "uid": "EM:addq",
+   "branch": "EM",
+   "native_id": "addq",
+   "label": "Additivity and conservation of charge",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "classical",
+   "t": 5,
+   "concept": "charge_conservation",
+   "extra": {
+    "symbol": "Σq",
+    "derived": false,
+    "description": "Franklin's principle: charges add with sign, and electrification only moves charge from one body to another. A global statement that the continuity equation later makes local.",
+    "math_structure": null,
+    "properties": [
+     "signed quantity",
+     "additive (group ℝ under +)",
+     "conserved in isolated systems"
+    ],
+    "section": 2
+   }
+  },
+  {
+   "uid": "EM:coul",
+   "branch": "EM",
+   "native_id": "coul",
+   "label": "Coulomb law",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "classical",
+   "t": 7,
+   "concept": "coulomb_law",
+   "extra": {
+    "symbol": "1/r²",
+    "derived": false,
+    "description": "k q₁q₂ r̂/r² with k = 1/4πε₀. Exchange symmetry gives Newton's third law; the inverse-square form is exactly what makes Gauss's law hold.",
+    "math_structure": null,
+    "properties": [
+     "inverse-square",
+     "central",
+     "exchange-symmetric",
+     "rotation-invariant",
+     "homogeneous of degree −2"
+    ],
+    "section": 3
+   }
+  },
+  {
+   "uid": "EM:pts",
+   "branch": "EM",
+   "native_id": "pts",
+   "label": "Point-charge configuration",
+   "layer": "S",
+   "sublayer": "S.point",
+   "native_layer": "state",
+   "era": "classical",
+   "t": 8,
+   "concept": "point_charges",
+   "extra": {
+    "symbol": "{xᵢ}",
+    "derived": false,
+    "description": "The simplest state of an electrostatic system: which charges there are and where they sit.",
+    "math_structure": "A point in ℝ³ᴺ with a charge label qᵢ on each of N points.",
+    "properties": null,
+    "section": 3
+   }
+  },
+  {
+   "uid": "EM:sup",
+   "branch": "EM",
+   "native_id": "sup",
+   "label": "Superposition",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "classical",
+   "t": 8,
+   "concept": "superposition",
+   "extra": {
+    "symbol": "Σ",
+    "derived": false,
+    "description": "The map from sources to forces and fields is linear: contributions from separate sources simply add. Exact in vacuum Maxwell theory.",
+    "math_structure": null,
+    "properties": [
+     "additive",
+     "homogeneous",
+     "linear operator"
+    ],
+    "section": 3
+   }
+  },
+  {
+   "uid": "EM:lap",
+   "branch": "EM",
+   "native_id": "lap",
+   "label": "Poisson's equation",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "classical",
+   "t": 9,
+   "concept": null,
+   "extra": {
+    "symbol": "∇²",
+    "derived": false,
+    "description": "∇²φ = −ρ/ε₀. Linearity means solutions superpose; uniqueness means sources plus boundary data fully determine the state.",
+    "math_structure": null,
+    "properties": [
+     "linear",
+     "elliptic",
+     "self-adjoint",
+     "Green's function −1/4π|x − x′|",
+     "unique with boundary data"
+    ],
+    "section": 4
+   }
+  },
+  {
+   "uid": "EM:rho",
+   "branch": "EM",
+   "native_id": "rho",
+   "label": "Charge density",
+   "layer": "S",
+   "sublayer": "S.field",
+   "native_layer": "state",
+   "era": "classical",
+   "t": 10,
+   "concept": "charge_density",
+   "extra": {
+    "symbol": "ρ",
+    "derived": false,
+    "description": "Charge per unit volume. Smooth densities and point charges (via δ functions) are elements of the same space.",
+    "math_structure": "Scalar distribution (signed measure) on ℝ³.",
+    "properties": null,
+    "section": 4
+   }
+  },
+  {
+   "uid": "EM:delta",
+   "branch": "EM",
+   "native_id": "delta",
+   "label": "Delta function",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "classical",
+   "t": 10,
+   "concept": null,
+   "extra": {
+    "symbol": "δ",
+    "derived": false,
+    "description": "Lets point charges and smooth densities live in one space: ρ = Σ qᵢ δ³(x − xᵢ). Introduced by Dirac (1927) and made rigorous by Schwartz (1945).",
+    "math_structure": null,
+    "properties": [
+     "linear functional",
+     "∫δ(x − a) f = f(a)",
+     "support at a point"
+    ],
+    "section": 4
+   }
+  },
+  {
+   "uid": "EM:phi",
+   "branch": "EM",
+   "native_id": "phi",
+   "label": "Potential up to a constant",
+   "layer": "S",
+   "sublayer": "S.field",
+   "native_layer": "state",
+   "era": "classical",
+   "t": 11,
+   "concept": "electric_potential",
+   "extra": {
+    "symbol": "[φ]",
+    "derived": false,
+    "description": "The electrostatic state written as one scalar function, with its built-in redundancy made explicit.",
+    "math_structure": "Element of the quotient C^∞(ℝ³)/ℝ: an equivalence class of functions differing by constants.",
+    "properties": null,
+    "section": 4
+   }
+  },
+  {
+   "uid": "EM:bc",
+   "branch": "EM",
+   "native_id": "bc",
+   "label": "Boundary values",
+   "layer": "S",
+   "sublayer": "S.point",
+   "native_layer": "state",
+   "era": "classical",
+   "t": 11,
+   "concept": null,
+   "extra": {
+    "symbol": "∂Ω",
+    "derived": false,
+    "description": "The part of the state fixed by conductors and the outside world. Needed to make Poisson's problem well posed.",
+    "math_structure": "Values φ|∂Ω (Dirichlet) or ∂φ/∂n (Neumann) on boundary surfaces.",
+    "properties": null,
+    "section": 4
+   }
+  },
+  {
+   "uid": "EM:grad",
+   "branch": "EM",
+   "native_id": "grad",
+   "label": "Gradient",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "classical",
+   "t": 11,
+   "concept": null,
+   "extra": {
+    "symbol": "∇",
+    "derived": false,
+    "description": "Because ∇ kills constants, φ and φ + c give the same force. This is the first redundancy (gauge freedom) in the description of the state.",
+    "math_structure": null,
+    "properties": [
+     "linear",
+     "kernel = constants",
+     "∇×∇f = 0"
+    ],
+    "section": 4
+   }
+  },
+  {
+   "uid": "EM:div",
+   "branch": "EM",
+   "native_id": "div",
+   "label": "Divergence theorem",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "classical",
+   "t": 12,
+   "concept": null,
+   "extra": {
+    "symbol": "∇·",
+    "derived": false,
+    "description": "Converts local statements about sources into statements about flux through surfaces, and back. Also used for any flux integral.",
+    "math_structure": null,
+    "properties": [
+     "linear",
+     "∫∇·F dV = ∮F·dA",
+     "∇·(r̂/r²) = 4πδ³"
+    ],
+    "section": 4
+   }
+  },
+  {
+   "uid": "EM:PhiE",
+   "branch": "EM",
+   "native_id": "PhiE",
+   "label": "Electric flux",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "classical",
+   "t": 12,
+   "concept": "electric_flux",
+   "extra": {
+    "symbol": "ΦE",
+    "derived": true,
+    "description": "Φ_E = ∮E·dA through a closed surface. Gauss's law says it equals Q_enc/ε₀ however the enclosed charges are arranged.",
+    "math_structure": null,
+    "properties": null,
+    "section": 4
+   }
+  },
+  {
+   "uid": "EM:sym",
+   "branch": "EM",
+   "native_id": "sym",
+   "label": "Symmetry arguments",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "classical",
+   "t": 12,
+   "concept": null,
+   "extra": {
+    "symbol": "G",
+    "derived": false,
+    "description": "If a source distribution is unchanged by rotations, translations or reflections, the field it produces must transform the same way. With Gauss's or Ampère's law this fixes fields without integrating.",
+    "math_structure": null,
+    "properties": [
+     "group action on space",
+     "equivariance",
+     "invariance"
+    ],
+    "section": 4
+   }
+  },
+  {
+   "uid": "EM:E",
+   "branch": "EM",
+   "native_id": "E",
+   "label": "Electric field value",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "classical",
+   "t": 13,
+   "concept": null,
+   "extra": {
+    "symbol": "E",
+    "derived": true,
+    "description": "Operationally E = lim F/q for a small test charge at rest: a derived observable built from force and charge measurements.",
+    "math_structure": null,
+    "properties": null,
+    "section": 4
+   }
+  },
+  {
+   "uid": "EM:Efield",
+   "branch": "EM",
+   "native_id": "Efield",
+   "label": "Electric field",
+   "layer": "S",
+   "sublayer": "S.field",
+   "native_layer": "state",
+   "era": "classical",
+   "t": 13,
+   "concept": "electric_field",
+   "extra": {
+    "symbol": "E(·)",
+    "derived": false,
+    "description": "The whole field as one object, a function on space. A calculating device for Green and Gauss; a physical state for Faraday and Maxwell.",
+    "math_structure": "Vector field ℝ³ → ℝ³ (curl-free in statics).",
+    "properties": null,
+    "section": 4
+   }
+  },
+  {
+   "uid": "EM:line",
+   "branch": "EM",
+   "native_id": "line",
+   "label": "Line integrals",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "classical",
+   "t": 13,
+   "concept": null,
+   "extra": {
+    "symbol": "∫dl",
+    "derived": false,
+    "description": "Integrals along curves. Path independence holds for curl-free fields on regions without holes; the exception returns with holonomy in the final section.",
+    "math_structure": null,
+    "properties": [
+     "additive over joined paths",
+     "sign flips on reversal",
+     "path-independent ⇔ curl-free (simply connected)"
+    ],
+    "section": 4
+   }
+  },
+  {
+   "uid": "EM:U",
+   "branch": "EM",
+   "native_id": "U",
+   "label": "Electrostatic energy",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "classical",
+   "t": 13,
+   "concept": "electrostatic_energy",
+   "extra": {
+    "symbol": "U",
+    "derived": true,
+    "description": "Work needed to assemble a configuration from charges far apart. Measured through work done or heat released on discharge.",
+    "math_structure": null,
+    "properties": null,
+    "section": 4
+   }
+  },
+  {
+   "uid": "EM:bil",
+   "branch": "EM",
+   "native_id": "bil",
+   "label": "Quadratic energy form",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "classical",
+   "t": 13,
+   "concept": null,
+   "extra": {
+    "symbol": "½⟨,⟩",
+    "derived": false,
+    "description": "U(E₁ + E₂) = U(E₁) + U(E₂) + a cross term. The cross term is why energies do not simply add even though fields do.",
+    "math_structure": null,
+    "properties": [
+     "symmetric bilinear",
+     "positive definite",
+     "not additive in fields"
+    ],
+    "section": 4
+   }
+  },
+  {
+   "uid": "EM:dV",
+   "branch": "EM",
+   "native_id": "dV",
+   "label": "Voltage",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "classical",
+   "t": 14,
+   "concept": null,
+   "extra": {
+    "symbol": "ΔV",
+    "derived": true,
+    "description": "Volta's tension, a potential difference φ(b) − φ(a): what a voltmeter reads. Invariant under φ → φ + const, which is why it is measurable while φ itself is not.",
+    "math_structure": null,
+    "properties": null,
+    "section": 5
+   }
+  },
+  {
+   "uid": "EM:C",
+   "branch": "EM",
+   "native_id": "C",
+   "label": "Capacitance",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "classical",
+   "t": 14,
+   "concept": "capacitance",
+   "extra": {
+    "symbol": "C",
+    "derived": true,
+    "description": "C = Q/ΔV for a conductor or pair of conductors. Depends only on geometry (and the medium) because electrostatics is linear.",
+    "math_structure": null,
+    "properties": null,
+    "section": 5
+   }
+  },
+  {
+   "uid": "EM:I",
+   "branch": "EM",
+   "native_id": "I",
+   "label": "Current",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "classical",
+   "t": 15,
+   "concept": "current",
+   "extra": {
+    "symbol": "I",
+    "derived": true,
+    "description": "I = dQ/dt through a surface, read by an ammeter. Equal to the flux of the current density.",
+    "math_structure": null,
+    "properties": null,
+    "section": 5
+   }
+  },
+  {
+   "uid": "EM:J",
+   "branch": "EM",
+   "native_id": "J",
+   "label": "Current density",
+   "layer": "S",
+   "sublayer": "S.field",
+   "native_layer": "state",
+   "era": "classical",
+   "t": 15,
+   "concept": "current_density",
+   "extra": {
+    "symbol": "J",
+    "derived": false,
+    "description": "Charge flux per unit area. Together with ρ it specifies all the sources of the field.",
+    "math_structure": "Vector field J(x, t); in steady flow ∇·J = 0.",
+    "properties": null,
+    "section": 5
+   }
+  },
+  {
+   "uid": "EM:R",
+   "branch": "EM",
+   "native_id": "R",
+   "label": "Resistance",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "classical",
+   "t": 15,
+   "concept": "resistance",
+   "extra": {
+    "symbol": "R",
+    "derived": true,
+    "description": "R = ΔV/I for a conductor. Ohm found it independent of the current for a given wire at fixed temperature.",
+    "math_structure": null,
+    "properties": null,
+    "section": 5
+   }
+  },
+  {
+   "uid": "EM:ohm",
+   "branch": "EM",
+   "native_id": "ohm",
+   "label": "Ohm's law",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "classical",
+   "t": 15,
+   "concept": "ohm_law",
+   "extra": {
+    "symbol": "σ",
+    "derived": false,
+    "description": "J = σE inside a conductor, or ΔV = IR for a whole wire. Unlike Maxwell's equations it describes a material, valid for many conductors at moderate fields.",
+    "math_structure": null,
+    "properties": [
+     "linear constitutive relation",
+     "material-dependent",
+     "not a fundamental law"
+    ],
+    "section": 5
+   }
+  },
+  {
+   "uid": "EM:cont",
+   "branch": "EM",
+   "native_id": "cont",
+   "label": "Continuity equation",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "classical",
+   "t": 16,
+   "concept": null,
+   "extra": {
+    "symbol": "∂ₜρ",
+    "derived": false,
+    "description": "Charge cannot vanish in one place and reappear in another: change inside a volume equals flux through its boundary. Later developments derive it rather than assume it.",
+    "math_structure": null,
+    "properties": [
+     "local conservation",
+     "∂ρ/∂t + ∇·J = 0"
+    ],
+    "section": 5
+   }
+  },
+  {
+   "uid": "EM:B",
+   "branch": "EM",
+   "native_id": "B",
+   "label": "Magnetic field value",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "classical",
+   "t": 18,
+   "concept": "magnetic_field_value",
+   "extra": {
+    "symbol": "B",
+    "derived": true,
+    "description": "The magnetic action at a point, read with a compass or a probe coil, or inferred from the velocity-dependent force on a moving charge.",
+    "math_structure": null,
+    "properties": null,
+    "section": 6
+   }
+  },
+  {
+   "uid": "EM:bs",
+   "branch": "EM",
+   "native_id": "bs",
+   "label": "Biot–Savart law",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "classical",
+   "t": 18,
+   "concept": "biot_savart",
+   "extra": {
+    "symbol": "BS",
+    "derived": false,
+    "description": "Field of a current element, (μ₀/4π) I dl × r̂/r². The magnetic counterpart of the Coulomb law.",
+    "math_structure": null,
+    "properties": [
+     "linear in current",
+     "inverse-square",
+     "⟂ to dl and r̂"
+    ],
+    "section": 6
+   }
+  },
+  {
+   "uid": "EM:cross",
+   "branch": "EM",
+   "native_id": "cross",
+   "label": "Cross product",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "classical",
+   "t": 18,
+   "concept": "cross_product",
+   "extra": {
+    "symbol": "×",
+    "derived": false,
+    "description": "a×b = −b×a, and a×(b×c) ≠ (a×b)×c. Its dependence on handedness makes B a pseudovector, and since v×B ⟂ v, magnetic forces do no work.",
+    "math_structure": null,
+    "properties": [
+     "bilinear",
+     "anticommutative",
+     "non-associative",
+     "Jacobi identity",
+     "orientation-dependent"
+    ],
+    "section": 6
+   }
+  },
+  {
+   "uid": "EM:curl",
+   "branch": "EM",
+   "native_id": "curl",
+   "label": "Curl and Stokes' theorem",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "classical",
+   "t": 19,
+   "concept": null,
+   "extra": {
+    "symbol": "∇×",
+    "derived": false,
+    "description": "Measures circulation. The identity div∘curl = 0 is what later forces the displacement current.",
+    "math_structure": null,
+    "properties": [
+     "linear",
+     "∇·(∇×F) = 0",
+     "∮F·dl = ∫(∇×F)·dA"
+    ],
+    "section": 6
+   }
+  },
+  {
+   "uid": "EM:Bfield",
+   "branch": "EM",
+   "native_id": "Bfield",
+   "label": "Magnetic field",
+   "layer": "S",
+   "sublayer": "S.field",
+   "native_layer": "state",
+   "era": "classical",
+   "t": 19,
+   "concept": "magnetic_field",
+   "extra": {
+    "symbol": "B(·)",
+    "derived": false,
+    "description": "The magnetic field as a single object on space.",
+    "math_structure": "Divergence-free pseudovector field on ℝ³.",
+    "properties": null,
+    "section": 6
+   }
+  },
+  {
+   "uid": "EM:emf",
+   "branch": "EM",
+   "native_id": "emf",
+   "label": "Electromotive force",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "classical",
+   "t": 20,
+   "concept": "emf",
+   "extra": {
+    "symbol": "ℰ",
+    "derived": true,
+    "description": "ℰ = ∮(E + v×B)·dl around a circuit, measured as the voltage across a small gap in the loop.",
+    "math_structure": null,
+    "properties": null,
+    "section": 7
+   }
+  },
+  {
+   "uid": "EM:PhiB",
+   "branch": "EM",
+   "native_id": "PhiB",
+   "label": "Magnetic flux",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "classical",
+   "t": 20,
+   "concept": "magnetic_flux",
+   "extra": {
+    "symbol": "ΦB",
+    "derived": true,
+    "description": "Φ_B = ∫B·dA through a surface bounded by a loop: Faraday's count of lines of force threading a circuit.",
+    "math_structure": null,
+    "properties": null,
+    "section": 7
+   }
+  },
+  {
+   "uid": "EM:faraday",
+   "branch": "EM",
+   "native_id": "faraday",
+   "label": "Faraday's law",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "classical",
+   "t": 20,
+   "concept": "faraday_law",
+   "extra": {
+    "symbol": "−Φ̇",
+    "derived": false,
+    "description": "A changing magnetic flux induces a circulating electric field; the minus sign makes induced currents oppose the change.",
+    "math_structure": null,
+    "properties": [
+     "linear",
+     "∇×E = −∂B/∂t",
+     "Lenz sign"
+    ],
+    "section": 7
+   }
+  },
+  {
+   "uid": "EM:A",
+   "branch": "EM",
+   "native_id": "A",
+   "label": "Vector potential",
+   "layer": "S",
+   "sublayer": "S.field",
+   "native_layer": "state",
+   "era": "classical",
+   "t": 23,
+   "concept": null,
+   "extra": {
+    "symbol": "A",
+    "derived": false,
+    "description": "Neumann's and Thomson's potential, Maxwell's electromagnetic momentum. Useful for calculation; not observable by itself.",
+    "math_structure": "Vector field A(x, t) whose curl is B: one representative of a gauge class.",
+    "properties": null,
+    "section": 8
+   }
+  },
+  {
+   "uid": "EM:consts",
+   "branch": "EM",
+   "native_id": "consts",
+   "label": "Couplings ε₀ and μ₀",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "classical",
+   "t": 24,
+   "concept": null,
+   "extra": {
+    "symbol": "ε₀μ₀",
+    "derived": false,
+    "description": "Fix the strength of electric forces between charges and magnetic forces between currents. 1/√(ε₀μ₀) is the speed Weber and Kohlrausch found as a ratio of units. (In the 2019 SI they are fixed through the measured fine-structure constant.)",
+    "math_structure": null,
+    "properties": null,
+    "section": 8
+   }
+  },
+  {
+   "uid": "EM:c",
+   "branch": "EM",
+   "native_id": "c",
+   "label": "Speed of light",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "classical",
+   "t": 25,
+   "concept": "speed_of_light",
+   "extra": {
+    "symbol": "c",
+    "derived": false,
+    "description": "Measured astronomically (Rømer 1676, Bradley 1729) and on Earth by Fizeau (1849). After Maxwell it is also predicted from ε₀ and μ₀. Only the prediction is drawn as a route; the measurements are not.",
+    "math_structure": null,
+    "properties": null,
+    "section": 8
+   }
+  },
+  {
+   "uid": "EM:maxwell",
+   "branch": "EM",
+   "native_id": "maxwell",
+   "label": "Maxwell's equations",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "classical",
+   "t": 27,
+   "concept": "maxwell_equations",
+   "extra": {
+    "symbol": "Mx",
+    "derived": false,
+    "description": "The complete field law. Gauss's two laws constrain each moment; Faraday's and the Ampère–Maxwell law evolve it.",
+    "math_structure": null,
+    "properties": [
+     "linear",
+     "first-order hyperbolic",
+     "2 constraints + 2 evolution equations",
+     "constraints preserved iff continuity holds"
+    ],
+    "section": 9
+   }
+  },
+  {
+   "uid": "EM:EB",
+   "branch": "EM",
+   "native_id": "EB",
+   "label": "Dynamical field state",
+   "layer": "S",
+   "sublayer": "S.field",
+   "native_layer": "state",
+   "era": "classical",
+   "t": 28,
+   "concept": "em_field_state",
+   "extra": {
+    "symbol": "(E,B)",
+    "derived": false,
+    "description": "Electric and magnetic fields as one state that evolves in time.",
+    "math_structure": "Pair of vector fields with ∇·E = ρ/ε₀ and ∇·B = 0 at one time: Cauchy data.",
+    "properties": null,
+    "section": 9
+   }
+  },
+  {
+   "uid": "EM:u",
+   "branch": "EM",
+   "native_id": "u",
+   "label": "Field energy density",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "classical",
+   "t": 29,
+   "concept": null,
+   "extra": {
+    "symbol": "u",
+    "derived": true,
+    "description": "u = ½(ε₀|E|² + |B|²/μ₀). Integrates to the total energy stored in the field.",
+    "math_structure": null,
+    "properties": null,
+    "section": 9
+   }
+  },
+  {
+   "uid": "EM:stress",
+   "branch": "EM",
+   "native_id": "stress",
+   "label": "Maxwell stress tensor",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "classical",
+   "t": 29,
+   "concept": null,
+   "extra": {
+    "symbol": "σᵢⱼ",
+    "derived": false,
+    "description": "Expresses the force on charges inside a volume as a surface integral over the field around them.",
+    "math_structure": null,
+    "properties": [
+     "symmetric rank-2 tensor",
+     "quadratic in fields",
+     "momentum balance"
+    ],
+    "section": 9
+   }
+  },
+  {
+   "uid": "EM:wave",
+   "branch": "EM",
+   "native_id": "wave",
+   "label": "Wave operator",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "classical",
+   "t": 30,
+   "concept": null,
+   "extra": {
+    "symbol": "□",
+    "derived": false,
+    "description": "□ = c⁻²∂²/∂t² − ∇². Choosing the retarded Green's function means influences travel at c from the past.",
+    "math_structure": null,
+    "properties": [
+     "linear",
+     "hyperbolic",
+     "Lorentz-invariant",
+     "retarded and advanced Green's functions"
+    ],
+    "section": 10
+   }
+  },
+  {
+   "uid": "EM:gfix",
+   "branch": "EM",
+   "native_id": "gfix",
+   "label": "Gauge fixing",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "classical",
+   "t": 31,
+   "concept": null,
+   "extra": {
+    "symbol": "∂·A",
+    "derived": false,
+    "description": "A rule that picks one pair (φ, A) from each class, chosen to simplify the equations.",
+    "math_structure": null,
+    "properties": [
+     "selects one representative",
+     "Coulomb ∇·A = 0",
+     "Lorenz ∇·A + c⁻²∂ₜφ = 0",
+     "residual freedom remains"
+    ],
+    "section": 10
+   }
+  },
+  {
+   "uid": "EM:gauge",
+   "branch": "EM",
+   "native_id": "gauge",
+   "label": "Gauge transformations",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "classical",
+   "t": 31,
+   "concept": null,
+   "extra": {
+    "symbol": "χ",
+    "derived": false,
+    "description": "(φ, A) → (φ − ∂χ/∂t, A + ∇χ). Two transformations compose in either order to χ₁ + χ₂: the group is commutative.",
+    "math_structure": null,
+    "properties": [
+     "abelian group U(1)",
+     "commutative composition",
+     "associative",
+     "leave E and B invariant"
+    ],
+    "section": 10
+   }
+  },
+  {
+   "uid": "EM:pot",
+   "branch": "EM",
+   "native_id": "pot",
+   "label": "Gauge class of potentials",
+   "layer": "S",
+   "sublayer": "S.field",
+   "native_layer": "state",
+   "era": "classical",
+   "t": 31,
+   "concept": null,
+   "extra": {
+    "symbol": "[φ,A]",
+    "derived": false,
+    "description": "The physical state in the potential description. Everything observable is a function of these classes.",
+    "math_structure": "Orbit of the gauge group in the space of pairs (φ, A): a point of a quotient space.",
+    "properties": null,
+    "section": 10
+   }
+  },
+  {
+   "uid": "EM:poinc",
+   "branch": "EM",
+   "native_id": "poinc",
+   "label": "Poincaré lemma",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "classical",
+   "t": 32,
+   "concept": null,
+   "extra": {
+    "symbol": "P",
+    "derived": false,
+    "description": "∇·B = 0 ⇒ B = ∇×A, and ∇×(E + ∂A/∂t) = 0 ⇒ E + ∂A/∂t = −∇φ. It can fail on regions with holes, which is where holonomy lives.",
+    "math_structure": null,
+    "properties": [
+     "closed ⇒ exact",
+     "holds on contractible regions",
+     "topology-dependent"
+    ],
+    "section": 10
+   }
+  },
+  {
+   "uid": "EM:poynt",
+   "branch": "EM",
+   "native_id": "poynt",
+   "label": "Poynting's theorem",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "classical",
+   "t": 33,
+   "concept": "poynting_theorem",
+   "extra": {
+    "symbol": "∇·S",
+    "derived": false,
+    "description": "∂u/∂t + ∇·S = −J·E: field energy changes by flowing away or by doing work on charges.",
+    "math_structure": null,
+    "properties": [
+     "local conservation law",
+     "quadratic in fields"
+    ],
+    "section": 11
+   }
+  },
+  {
+   "uid": "EM:S",
+   "branch": "EM",
+   "native_id": "S",
+   "label": "Poynting vector",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "classical",
+   "t": 33,
+   "concept": "poynting_vector",
+   "extra": {
+    "symbol": "S",
+    "derived": true,
+    "description": "S = E×B/μ₀, the energy flux in W/m². Its time average is the intensity a detector measures.",
+    "math_structure": null,
+    "properties": null,
+    "section": 11
+   }
+  },
+  {
+   "uid": "EM:wavedat",
+   "branch": "EM",
+   "native_id": "wavedat",
+   "label": "Wave data",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "classical",
+   "t": 35,
+   "concept": null,
+   "extra": {
+    "symbol": "λ,ω",
+    "derived": true,
+    "description": "Wavelength, frequency and polarization, measured with standing waves, interferometers and polarizers. In vacuum ω = c|k| and k ⟂ E ⟂ B.",
+    "math_structure": null,
+    "properties": null,
+    "section": 11
+   }
+  },
+  {
+   "uid": "EM:vac",
+   "branch": "EM",
+   "native_id": "vac",
+   "label": "Radiation modes",
+   "layer": "S",
+   "sublayer": "S.field",
+   "native_layer": "state",
+   "era": "classical",
+   "t": 35,
+   "concept": null,
+   "extra": {
+    "symbol": "ak",
+    "derived": false,
+    "description": "The source-free field described by its modes rather than by its values at points.",
+    "math_structure": "Amplitudes a(k, λ) for wave vectors k and two transverse polarizations λ.",
+    "properties": null,
+    "section": 11
+   }
+  },
+  {
+   "uid": "EM:fourier",
+   "branch": "EM",
+   "native_id": "fourier",
+   "label": "Fourier decomposition",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "classical",
+   "t": 35,
+   "concept": null,
+   "extra": {
+    "symbol": "ℱ",
+    "derived": false,
+    "description": "Writes any field as a superposition of plane waves e^{i(k·x − ωt)}, in which the field equations become algebraic.",
+    "math_structure": null,
+    "properties": [
+     "linear isomorphism",
+     "unitary (Parseval)",
+     "diagonalizes ∇ and □"
+    ],
+    "section": 11
+   }
+  },
+  {
+   "uid": "EM:g",
+   "branch": "EM",
+   "native_id": "g",
+   "label": "Field momentum density",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "classical",
+   "t": 36,
+   "concept": null,
+   "extra": {
+    "symbol": "g",
+    "derived": true,
+    "description": "g = S/c². Observed as radiation pressure on mirrors and absorbers.",
+    "math_structure": null,
+    "properties": null,
+    "section": 11
+   }
+  },
+  {
+   "uid": "EM:P",
+   "branch": "EM",
+   "native_id": "P",
+   "label": "Radiated power",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "classical",
+   "t": 39,
+   "concept": null,
+   "extra": {
+    "symbol": "P",
+    "derived": true,
+    "description": "Energy per unit time leaving an accelerating charge through a distant sphere.",
+    "math_structure": null,
+    "properties": null,
+    "section": 12
+   }
+  },
+  {
+   "uid": "EM:lorentz",
+   "branch": "EM",
+   "native_id": "lorentz",
+   "label": "Lorentz group",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "classical",
+   "t": 40,
+   "concept": "lorentz_transformation",
+   "extra": {
+    "symbol": "Λ",
+    "derived": false,
+    "description": "Two non-parallel boosts compose to a boost plus a rotation (the Wigner rotation). Under boosts, E and B mix.",
+    "math_structure": null,
+    "properties": [
+     "associative",
+     "non-commutative",
+     "preserves the Minkowski metric"
+    ],
+    "section": 13
+   }
+  },
+  {
+   "uid": "EM:Amu",
+   "branch": "EM",
+   "native_id": "Amu",
+   "label": "Four-potential",
+   "layer": "S",
+   "sublayer": "S.field",
+   "native_layer": "state",
+   "era": "classical",
+   "t": 42,
+   "concept": null,
+   "extra": {
+    "symbol": "Aμ",
+    "derived": false,
+    "description": "Scalar and vector potentials as a single spacetime object.",
+    "math_structure": "1-form A on Minkowski spacetime with components (φ/c, A).",
+    "properties": null,
+    "section": 13
+   }
+  },
+  {
+   "uid": "EM:jmu",
+   "branch": "EM",
+   "native_id": "jmu",
+   "label": "Four-current",
+   "layer": "S",
+   "sublayer": "S.field",
+   "native_layer": "state",
+   "era": "classical",
+   "t": 42,
+   "concept": null,
+   "extra": {
+    "symbol": "J^μ",
+    "derived": false,
+    "description": "Charge and current density as a single spacetime object.",
+    "math_structure": "Vector field on spacetime (cρ, J), equivalently the 3-form ⋆J.",
+    "properties": null,
+    "section": 13
+   }
+  },
+  {
+   "uid": "EM:Fmn",
+   "branch": "EM",
+   "native_id": "Fmn",
+   "label": "Field tensor",
+   "layer": "S",
+   "sublayer": "S.field",
+   "native_layer": "state",
+   "era": "classical",
+   "t": 42,
+   "concept": null,
+   "extra": {
+    "symbol": "Fμν",
+    "derived": false,
+    "description": "Electric and magnetic fields as one observer-independent object.",
+    "math_structure": "Antisymmetric rank-2 tensor (2-form) on spacetime; F₀ᵢ ∝ Eᵢ/c, Fᵢⱼ ∝ εᵢⱼₖBₖ.",
+    "properties": null,
+    "section": 13
+   }
+  },
+  {
+   "uid": "EM:inv",
+   "branch": "EM",
+   "native_id": "inv",
+   "label": "Lorentz invariants",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "classical",
+   "t": 42,
+   "concept": null,
+   "extra": {
+    "symbol": "E·B",
+    "derived": true,
+    "description": "E·B and |E|² − c²|B|² take the same value for every inertial observer. If E ⟂ B and |E| < c|B|, some frame sees a purely magnetic field.",
+    "math_structure": null,
+    "properties": null,
+    "section": 13
+   }
+  },
+  {
+   "uid": "EM:T",
+   "branch": "EM",
+   "native_id": "T",
+   "label": "Energy–momentum tensor",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "classical",
+   "t": 42,
+   "concept": null,
+   "extra": {
+    "symbol": "Tμν",
+    "derived": true,
+    "description": "One symmetric tensor whose components, for a given observer, are the energy density, Poynting flux, momentum density and Maxwell stress.",
+    "math_structure": null,
+    "properties": null,
+    "section": 13
+   }
+  },
+  {
+   "uid": "EM:action",
+   "branch": "EM",
+   "native_id": "action",
+   "label": "Action principle",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "classical",
+   "t": 43,
+   "concept": "lagrangian",
+   "extra": {
+    "symbol": "δS",
+    "derived": false,
+    "description": "Under a gauge change L shifts by q dχ/dt, a total time derivative, so the equations of motion are unchanged.",
+    "math_structure": null,
+    "properties": [
+     "variational",
+     "Euler–Lagrange equations",
+     "L defined up to a total derivative"
+    ],
+    "section": 14
+   }
+  },
+  {
+   "uid": "EM:legendre",
+   "branch": "EM",
+   "native_id": "legendre",
+   "label": "Legendre transform",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "classical",
+   "t": 44,
+   "concept": null,
+   "extra": {
+    "symbol": "L→H",
+    "derived": false,
+    "description": "Moves from the velocity description to the momentum description: p = ∂L/∂v, H = p·v − L.",
+    "math_structure": null,
+    "properties": [
+     "involutive",
+     "requires convexity",
+     "velocities ↦ momenta"
+    ],
+    "section": 14
+   }
+  },
+  {
+   "uid": "EM:phase",
+   "branch": "EM",
+   "native_id": "phase",
+   "label": "Particle phase space",
+   "layer": "S",
+   "sublayer": "S.point",
+   "native_layer": "state",
+   "era": "classical",
+   "t": 44,
+   "concept": null,
+   "extra": {
+    "symbol": "(x,p)",
+    "derived": false,
+    "description": "The Hamiltonian state of a charge. Using kinetic momenta as coordinates instead puts the magnetic field into the symplectic form.",
+    "math_structure": "Cotangent bundle T*ℝ³ with symplectic form ω = dp∧dx.",
+    "properties": null,
+    "section": 14
+   }
+  },
+  {
+   "uid": "EM:pkin",
+   "branch": "EM",
+   "native_id": "pkin",
+   "label": "Kinetic momentum",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "classical",
+   "t": 44,
+   "concept": null,
+   "extra": {
+    "symbol": "mv",
+    "derived": true,
+    "description": "π = mv = p − qA. Gauge-invariant and measurable, for example from the curvature of a particle track. The canonical momentum p is not.",
+    "math_structure": null,
+    "properties": null,
+    "section": 14
+   }
+  },
+  {
+   "uid": "EM:pb",
+   "branch": "EM",
+   "native_id": "pb",
+   "label": "Poisson bracket",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "classical",
+   "t": 44,
+   "concept": "poisson_structure",
+   "extra": {
+    "symbol": "{,}",
+    "derived": false,
+    "description": "dF/dt = {F, H}. In a magnetic field the kinetic momenta do not commute: a classical non-commutativity that becomes Landau levels in quantum mechanics.",
+    "math_structure": null,
+    "properties": [
+     "bilinear",
+     "antisymmetric",
+     "Jacobi identity (Lie algebra)",
+     "Leibniz rule",
+     "{πᵢ, πⱼ} = q εᵢⱼₖBₖ"
+    ],
+    "section": 14
+   }
+  },
+  {
+   "uid": "EM:fphase",
+   "branch": "EM",
+   "native_id": "fphase",
+   "label": "Field phase space",
+   "layer": "S",
+   "sublayer": "S.field",
+   "native_layer": "state",
+   "era": "classical",
+   "t": 44,
+   "concept": null,
+   "extra": {
+    "symbol": "(A,Π)",
+    "derived": false,
+    "description": "The field as a constrained Hamiltonian system. Gauss's law generates the gauge transformations.",
+    "math_structure": "Canonical pairs (A, Π = −ε₀E) with Gauss's law as a constraint, reduced by gauge orbits.",
+    "properties": null,
+    "section": 14
+   }
+  },
+  {
+   "uid": "EM:noether",
+   "branch": "EM",
+   "native_id": "noether",
+   "label": "Noether's theorem",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "classical",
+   "t": 45,
+   "concept": null,
+   "extra": {
+    "symbol": "N",
+    "derived": false,
+    "description": "Every continuous symmetry of the action yields a conservation law.",
+    "math_structure": null,
+    "properties": [
+     "continuous symmetry ↔ conserved current"
+    ],
+    "section": 14
+   }
+  },
+  {
+   "uid": "EM:cons",
+   "branch": "EM",
+   "native_id": "cons",
+   "label": "Conserved totals",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "classical",
+   "t": 45,
+   "concept": null,
+   "extra": {
+    "symbol": "E,P,L",
+    "derived": true,
+    "description": "Total energy, momentum and angular momentum of matter plus field. Conservation holds only when the field's contributions are included.",
+    "math_structure": null,
+    "properties": null,
+    "section": 14
+   }
+  },
+  {
+   "uid": "EM:ext",
+   "branch": "EM",
+   "native_id": "ext",
+   "label": "Exterior derivative",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "classical",
+   "t": 47,
+   "concept": null,
+   "extra": {
+    "symbol": "d",
+    "derived": false,
+    "description": "Unifies grad, curl and div. d² = 0 contains both curl∘grad = 0 and div∘curl = 0.",
+    "math_structure": null,
+    "properties": [
+     "linear",
+     "d∘d = 0",
+     "graded Leibniz rule",
+     "metric-free"
+    ],
+    "section": 15
+   }
+  },
+  {
+   "uid": "EM:wedge",
+   "branch": "EM",
+   "native_id": "wedge",
+   "label": "Wedge product",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "classical",
+   "t": 47,
+   "concept": null,
+   "extra": {
+    "symbol": "∧",
+    "derived": false,
+    "description": "α∧β = (−1)^{pq} β∧α: 1-forms anticommute, 2-forms commute. F∧F is a 4-form proportional to E·B.",
+    "math_structure": null,
+    "properties": [
+     "associative",
+     "graded-commutative",
+     "bilinear"
+    ],
+    "section": 15
+   }
+  },
+  {
+   "uid": "EM:hodge",
+   "branch": "EM",
+   "native_id": "hodge",
+   "label": "Hodge star",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "classical",
+   "t": 47,
+   "concept": null,
+   "extra": {
+    "symbol": "⋆",
+    "derived": false,
+    "description": "Carries all metric (and constitutive) information. In form language it is the only place c and spacetime geometry enter Maxwell's equations.",
+    "math_structure": null,
+    "properties": [
+     "linear",
+     "metric-dependent",
+     "⋆⋆ = ±1"
+    ],
+    "section": 15
+   }
+  },
+  {
+   "uid": "EM:bundle",
+   "branch": "EM",
+   "native_id": "bundle",
+   "label": "U(1) bundle",
+   "layer": "S",
+   "sublayer": "S.field",
+   "native_layer": "state",
+   "era": "classical",
+   "t": 48,
+   "concept": null,
+   "extra": {
+    "symbol": "P→M",
+    "derived": false,
+    "description": "The global geometric state. It can carry information, such as holonomy around holes, that no single local potential captures.",
+    "math_structure": "Principal U(1)-bundle over spacetime with a connection 1-form; potentials are its local expressions.",
+    "properties": null,
+    "section": 15
+   }
+  },
+  {
+   "uid": "EM:conn",
+   "branch": "EM",
+   "native_id": "conn",
+   "label": "U(1) connection",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "classical",
+   "t": 48,
+   "concept": null,
+   "extra": {
+    "symbol": "∇A",
+    "derived": false,
+    "description": "In a non-abelian (Yang–Mills) theory the curvature is dA + A∧A. Electromagnetism's commutative group keeps it linear.",
+    "math_structure": null,
+    "properties": [
+     "abelian structure group",
+     "curvature F = dA (no A∧A)",
+     "gauge = bundle automorphism",
+     "defines holonomy"
+    ],
+    "section": 15
+   }
+  },
+  {
+   "uid": "EM:hol",
+   "branch": "EM",
+   "native_id": "hol",
+   "label": "Holonomy",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "classical",
+   "t": 49,
+   "concept": null,
+   "extra": {
+    "symbol": "∮A",
+    "derived": true,
+    "description": "∮A·dl around a closed loop: gauge-invariant and equal to the enclosed flux. Around a solenoid it is non-zero on loops where B = 0. With ħ, the phase exp(iq∮A·dl/ħ) is the Aharonov–Bohm phase.",
+    "math_structure": null,
+    "properties": null,
+    "section": 15
+   }
+  },
+  {
+   "uid": "EM:bbspec",
+   "branch": "EM",
+   "native_id": "bbspec",
+   "label": "Blackbody spectrum",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 50,
+   "concept": "blackbody",
+   "extra": {
+    "symbol": "uν",
+    "derived": false,
+    "description": "Energy density of cavity radiation per unit frequency at temperature T, measured with bolometers around 1900. It has a peak and falls at high frequency, which classical physics cannot reproduce.",
+    "math_structure": null,
+    "properties": null,
+    "section": 16
+   }
+  },
+  {
+   "uid": "EM:equip",
+   "branch": "EM",
+   "native_id": "equip",
+   "label": "Equipartition theorem",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "classical",
+   "t": 50,
+   "concept": null,
+   "extra": {
+    "symbol": "½kT",
+    "derived": false,
+    "description": "Classical statistical mechanics gives every oscillator mean energy kT. Applied to infinitely many radiation modes, it gives infinite energy.",
+    "math_structure": null,
+    "properties": [
+     "½kT per quadratic degree of freedom",
+     "classical statistical mechanics",
+     "fails when kT ≪ hν"
+    ],
+    "section": 16
+   }
+  },
+  {
+   "uid": "EM:planck",
+   "branch": "EM",
+   "native_id": "planck",
+   "label": "Planck relation",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "quantum",
+   "t": 51,
+   "concept": "planck_relation",
+   "extra": {
+    "symbol": "E=hν",
+    "derived": false,
+    "description": "The first quantum rule. It ties a frequency, a wave property, to an energy, a particle property.",
+    "math_structure": null,
+    "properties": [
+     "energy exchanged in steps hν",
+     "links particle energy to wave frequency",
+     "p = h/λ for light"
+    ],
+    "section": 16
+   }
+  },
+  {
+   "uid": "EM:hbar",
+   "branch": "EM",
+   "native_id": "hbar",
+   "label": "Planck's constant",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 51,
+   "concept": "planck_constant",
+   "extra": {
+    "symbol": "ħ",
+    "derived": false,
+    "description": "h ≈ 6.626 × 10⁻³⁴ J s, with ħ = h/2π. The quantum of action; classical physics is the regime where actions are large compared with ħ. Exact by definition in the 2019 SI.",
+    "math_structure": null,
+    "properties": null,
+    "section": 16
+   }
+  },
+  {
+   "uid": "EM:photoel",
+   "branch": "EM",
+   "native_id": "photoel",
+   "label": "Photoelectric effect",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 52,
+   "concept": null,
+   "extra": {
+    "symbol": "Kmax",
+    "derived": true,
+    "description": "Maximum kinetic energy of electrons ejected by light. It rises linearly with frequency above a threshold and does not depend on intensity.",
+    "math_structure": null,
+    "properties": null,
+    "section": 16
+   }
+  },
+  {
+   "uid": "EM:photon",
+   "branch": "EM",
+   "native_id": "photon",
+   "label": "Photon",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 52,
+   "concept": "photon",
+   "extra": {
+    "symbol": "γ",
+    "derived": false,
+    "description": "A quantum of the electromagnetic field, with energy ħω and momentum ħk. Detected one at a time by photomultipliers and in Compton scattering.",
+    "math_structure": null,
+    "properties": null,
+    "section": 16
+   }
+  },
+  {
+   "uid": "EM:spectra",
+   "branch": "EM",
+   "native_id": "spectra",
+   "label": "Spectral lines",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 53,
+   "concept": "spectral_lines",
+   "extra": {
+    "symbol": "λₙₘ",
+    "derived": false,
+    "description": "Sharp wavelengths emitted or absorbed by atoms. Hydrogen's lines fit 1/λ = R(1/m² − 1/n²).",
+    "math_structure": null,
+    "properties": null,
+    "section": 16
+   }
+  },
+  {
+   "uid": "EM:bohr",
+   "branch": "EM",
+   "native_id": "bohr",
+   "label": "Bohr orbits",
+   "layer": "S",
+   "sublayer": "S.hilbert",
+   "native_layer": "state",
+   "era": "quantum",
+   "t": 53,
+   "concept": "bohr_model",
+   "extra": {
+    "symbol": "n",
+    "derived": false,
+    "description": "The old quantum theory's hybrid state: classical orbits with quantum selection rules. Superseded by quantum mechanics but historically the bridge.",
+    "math_structure": "Discrete set of classical orbits labelled by n, with angular momentum nħ.",
+    "properties": null,
+    "section": 16
+   }
+  },
+  {
+   "uid": "EM:comm",
+   "branch": "EM",
+   "native_id": "comm",
+   "label": "Canonical commutator",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "quantum",
+   "t": 55,
+   "concept": "poisson_to_commutator",
+   "extra": {
+    "symbol": "[,]",
+    "derived": false,
+    "description": "Shares every algebraic property of the Poisson bracket, which is why Dirac could map one to the other. Its non-zero value iħ is the quantum.",
+    "math_structure": null,
+    "properties": [
+     "bilinear",
+     "antisymmetric",
+     "Jacobi identity",
+     "[x̂, p̂] = iħ",
+     "non-commutative"
+    ],
+    "section": 17
+   }
+  },
+  {
+   "uid": "EM:ops",
+   "branch": "EM",
+   "native_id": "ops",
+   "label": "Operator algebra",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "quantum",
+   "t": 55,
+   "concept": "observable_postulate",
+   "extra": {
+    "symbol": "Â",
+    "derived": false,
+    "description": "Observables become operators on states. Position and momentum no longer commute, so they cannot both be sharp: Heisenberg's uncertainty relation.",
+    "math_structure": null,
+    "properties": [
+     "associative",
+     "non-commutative",
+     "observables are self-adjoint",
+     "eigenvalues = possible outcomes"
+    ],
+    "section": 17
+   }
+  },
+  {
+   "uid": "EM:schro",
+   "branch": "EM",
+   "native_id": "schro",
+   "label": "Schrödinger equation",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "quantum",
+   "t": 56,
+   "concept": "schrodinger_evolution",
+   "extra": {
+    "symbol": "iħ∂ₜ",
+    "derived": false,
+    "description": "iħ ∂ψ/∂t = Ĥψ. Linearity means quantum states superpose, the quantum descendant of the superposition principle of Part I.",
+    "math_structure": null,
+    "properties": [
+     "linear",
+     "unitary evolution",
+     "first order in time"
+    ],
+    "section": 17
+   }
+  },
+  {
+   "uid": "EM:hilb",
+   "branch": "EM",
+   "native_id": "hilb",
+   "label": "Hilbert-space state",
+   "layer": "S",
+   "sublayer": "S.hilbert",
+   "native_layer": "state",
+   "era": "quantum",
+   "t": 56,
+   "concept": "hilbert_state",
+   "extra": {
+    "symbol": "|ψ⟩",
+    "derived": false,
+    "description": "Replaces the point in phase space. It assigns amplitudes, not definite values, to every observable.",
+    "math_structure": "Unit ray in a complex Hilbert space (a vector up to an overall phase).",
+    "properties": null,
+    "section": 17
+   }
+  },
+  {
+   "uid": "EM:born",
+   "branch": "EM",
+   "native_id": "born",
+   "label": "Born rule",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "quantum",
+   "t": 57,
+   "concept": "observable_postulate",
+   "extra": {
+    "symbol": "|⟨⟩|²",
+    "derived": false,
+    "description": "Connects the abstract state to what detectors record: frequencies of outcomes over many runs.",
+    "math_structure": null,
+    "properties": [
+     "probability = |amplitude|²",
+     "non-negative, sums to 1"
+    ],
+    "section": 17
+   }
+  },
+  {
+   "uid": "EM:expect",
+   "branch": "EM",
+   "native_id": "expect",
+   "label": "Outcome statistics",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 57,
+   "concept": "outcome_statistics",
+   "extra": {
+    "symbol": "⟨Â⟩",
+    "derived": true,
+    "description": "Probabilities and averages of measurement results over many identically prepared systems.",
+    "math_structure": null,
+    "properties": null,
+    "section": 17
+   }
+  },
+  {
+   "uid": "EM:mincoup",
+   "branch": "EM",
+   "native_id": "mincoup",
+   "label": "Minimal coupling",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "quantum",
+   "t": 58,
+   "concept": null,
+   "extra": {
+    "symbol": "p−qA",
+    "derived": false,
+    "description": "The quantum version of the classical kinetic momentum. It makes the potentials, not only the fields, act on charged quantum particles.",
+    "math_structure": null,
+    "properties": [
+     "p̂ → −iħ∇ − qA",
+     "gauge change = local phase change",
+     "covariant derivative"
+    ],
+    "section": 18
+   }
+  },
+  {
+   "uid": "EM:landau",
+   "branch": "EM",
+   "native_id": "landau",
+   "label": "Landau levels",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 59,
+   "concept": null,
+   "extra": {
+    "symbol": "ħωc",
+    "derived": true,
+    "description": "Discrete energies of a charge in a uniform magnetic field, seen in cyclotron resonance and the quantum Hall effect.",
+    "math_structure": null,
+    "properties": null,
+    "section": 18
+   }
+  },
+  {
+   "uid": "EM:abphase",
+   "branch": "EM",
+   "native_id": "abphase",
+   "label": "Aharonov–Bohm shift",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 60,
+   "concept": null,
+   "extra": {
+    "symbol": "Δθ",
+    "derived": true,
+    "description": "Shift of an interference pattern by qΦ_B/ħ for electrons passing around a region of magnetic flux they never enter.",
+    "math_structure": null,
+    "properties": null,
+    "section": 18
+   }
+  },
+  {
+   "uid": "EM:clifford",
+   "branch": "EM",
+   "native_id": "clifford",
+   "label": "Clifford algebra",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "quantum",
+   "t": 61,
+   "concept": null,
+   "extra": {
+    "symbol": "γ^μ",
+    "derived": false,
+    "description": "The algebra needed to take a square root of p² − m²c². Its anticommutation, not commutation, is what produces spin ½.",
+    "math_structure": null,
+    "properties": [
+     "{γ^μ, γ^ν} = 2η^μν",
+     "anticommuting generators",
+     "associative"
+    ],
+    "section": 19
+   }
+  },
+  {
+   "uid": "EM:dirac",
+   "branch": "EM",
+   "native_id": "dirac",
+   "label": "Dirac equation",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "quantum",
+   "t": 61,
+   "concept": null,
+   "extra": {
+    "symbol": "iγ·D",
+    "derived": false,
+    "description": "The relativistic wave equation of the electron, the matter half of QED.",
+    "math_structure": null,
+    "properties": [
+     "linear",
+     "first order",
+     "Lorentz-covariant",
+     "minimal coupling built in"
+    ],
+    "section": 19
+   }
+  },
+  {
+   "uid": "EM:spinor",
+   "branch": "EM",
+   "native_id": "spinor",
+   "label": "Dirac spinor",
+   "layer": "S",
+   "sublayer": "S.hilbert",
+   "native_layer": "state",
+   "era": "quantum",
+   "t": 62,
+   "concept": null,
+   "extra": {
+    "symbol": "ψ",
+    "derived": false,
+    "description": "A spinor changes sign under a full 360° rotation, something no classical vector field does.",
+    "math_structure": "4-component field transforming under SL(2,ℂ), the double cover of the Lorentz group.",
+    "properties": null,
+    "section": 19
+   }
+  },
+  {
+   "uid": "EM:gfac",
+   "branch": "EM",
+   "native_id": "gfac",
+   "label": "Electron g-factor",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 62,
+   "concept": null,
+   "extra": {
+    "symbol": "g",
+    "derived": true,
+    "description": "Ratio of the electron's magnetic moment to its spin in natural units. Dirac predicted exactly 2.",
+    "math_structure": null,
+    "properties": null,
+    "section": 19
+   }
+  },
+  {
+   "uid": "EM:positron",
+   "branch": "EM",
+   "native_id": "positron",
+   "label": "Positron",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 63,
+   "concept": null,
+   "extra": {
+    "symbol": "e⁺",
+    "derived": false,
+    "description": "The electron's antiparticle, same mass, opposite charge. Electron–positron pairs are created and annihilated.",
+    "math_structure": null,
+    "properties": null,
+    "section": 19
+   }
+  },
+  {
+   "uid": "EM:ladder",
+   "branch": "EM",
+   "native_id": "ladder",
+   "label": "Creation and annihilation operators",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "quantum",
+   "t": 64,
+   "concept": "creation_annihilation",
+   "extra": {
+    "symbol": "a,a†",
+    "derived": false,
+    "description": "Quantizing each field mode as an oscillator. Commutators give bosons (photons); anticommutators give fermions (electrons).",
+    "math_structure": null,
+    "properties": [
+     "[a, a†] = 1 for photons",
+     "{b, b†} = 1 for electrons",
+     "raise or lower quanta by one"
+    ],
+    "section": 20
+   }
+  },
+  {
+   "uid": "EM:fock",
+   "branch": "EM",
+   "native_id": "fock",
+   "label": "Fock space",
+   "layer": "S",
+   "sublayer": "S.hilbert",
+   "native_layer": "state",
+   "era": "quantum",
+   "t": 65,
+   "concept": null,
+   "extra": {
+    "symbol": "|nk⟩",
+    "derived": false,
+    "description": "The state space of a quantum field, in which particle number can change.",
+    "math_structure": "Direct sum of n-particle Hilbert spaces, n = 0, 1, 2, …; basis labelled by occupation numbers.",
+    "properties": null,
+    "section": 20
+   }
+  },
+  {
+   "uid": "EM:Aop",
+   "branch": "EM",
+   "native_id": "Aop",
+   "label": "Field operator",
+   "layer": "S",
+   "sublayer": "S.hilbert",
+   "native_layer": "state",
+   "era": "quantum",
+   "t": 66,
+   "concept": null,
+   "extra": {
+    "symbol": "Â(x)",
+    "derived": false,
+    "description": "The quantized electromagnetic potential. Its expectation values in coherent states are classical fields.",
+    "math_structure": "Operator-valued distribution on Fock space (Coulomb gauge: transverse components only).",
+    "properties": null,
+    "section": 20
+   }
+  },
+  {
+   "uid": "EM:spont",
+   "branch": "EM",
+   "native_id": "spont",
+   "label": "Spontaneous emission rate",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 65,
+   "concept": null,
+   "extra": {
+    "symbol": "A₂₁",
+    "derived": true,
+    "description": "Rate at which an excited atom emits a photon with no field present, set by vacuum fluctuations.",
+    "math_structure": null,
+    "properties": null,
+    "section": 20
+   }
+  },
+  {
+   "uid": "EM:casimir",
+   "branch": "EM",
+   "native_id": "casimir",
+   "label": "Casimir force",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 66,
+   "concept": null,
+   "extra": {
+    "symbol": "FC",
+    "derived": true,
+    "description": "Attraction between uncharged parallel plates due to the change in zero-point energy of the field modes between them.",
+    "math_structure": null,
+    "properties": null,
+    "section": 20
+   }
+  },
+  {
+   "uid": "EM:psiop",
+   "branch": "EM",
+   "native_id": "psiop",
+   "label": "Electron–positron field",
+   "layer": "S",
+   "sublayer": "S.hilbert",
+   "native_layer": "state",
+   "era": "quantum",
+   "t": 67,
+   "concept": "electron_field",
+   "extra": {
+    "symbol": "ψ̂",
+    "derived": false,
+    "description": "The electron as the quantum of a field. It annihilates electrons and creates positrons.",
+    "math_structure": "Anticommuting operator-valued spinor field on Fock space.",
+    "properties": null,
+    "section": 21
+   }
+  },
+  {
+   "uid": "EM:alpha",
+   "branch": "EM",
+   "native_id": "alpha",
+   "label": "Fine-structure constant",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 68,
+   "concept": "fine_structure_constant",
+   "extra": {
+    "symbol": "α",
+    "derived": true,
+    "description": "α = e²/4πε₀ħc ≈ 1/137.036, the dimensionless strength of electromagnetism. Measured from the electron's g-factor and from atom-recoil experiments.",
+    "math_structure": null,
+    "properties": null,
+    "section": 21
+   }
+  },
+  {
+   "uid": "EM:pert",
+   "branch": "EM",
+   "native_id": "pert",
+   "label": "Perturbation series",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "quantum",
+   "t": 68,
+   "concept": null,
+   "extra": {
+    "symbol": "Σαⁿ",
+    "derived": false,
+    "description": "Expands amplitudes in powers of the small coupling α. Each higher order involves more virtual particles.",
+    "math_structure": null,
+    "properties": [
+     "power series in α",
+     "asymptotic rather than convergent",
+     "computed order by order"
+    ],
+    "section": 21
+   }
+  },
+  {
+   "uid": "EM:lamb",
+   "branch": "EM",
+   "native_id": "lamb",
+   "label": "Lamb shift",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 70,
+   "concept": "lamb_shift",
+   "extra": {
+    "symbol": "ΔEL",
+    "derived": false,
+    "description": "Splitting between hydrogen's 2S½ and 2P½ levels: about 1000 MHz in Lamb and Retherford's 1947 measurement, about 1058 MHz in later, more precise measurements.",
+    "math_structure": null,
+    "properties": null,
+    "section": 21
+   }
+  },
+  {
+   "uid": "EM:amm",
+   "branch": "EM",
+   "native_id": "amm",
+   "label": "Anomalous magnetic moment",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 70,
+   "concept": "anomalous_moment",
+   "extra": {
+    "symbol": "ae",
+    "derived": true,
+    "description": "a_e = (g − 2)/2 ≈ 0.00115965, measured by Kusch and Foley (1947) and today to about a tenth of a part per billion.",
+    "math_structure": null,
+    "properties": null,
+    "section": 21
+   }
+  },
+  {
+   "uid": "EM:renorm",
+   "branch": "EM",
+   "native_id": "renorm",
+   "label": "Renormalization",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "quantum",
+   "t": 71,
+   "concept": null,
+   "extra": {
+    "symbol": "Z",
+    "derived": false,
+    "description": "Expresses predictions in terms of measured quantities, so that infinities cancel. Later understood through the renormalization group.",
+    "math_structure": null,
+    "properties": [
+     "absorbs divergences into measured m and e",
+     "finitely many parameters (renormalizable)",
+     "scale-dependent couplings"
+    ],
+    "section": 22
+   }
+  },
+  {
+   "uid": "EM:pathint",
+   "branch": "EM",
+   "native_id": "pathint",
+   "label": "Path integral",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "quantum",
+   "t": 72,
+   "concept": null,
+   "extra": {
+    "symbol": "∫Dx",
+    "derived": false,
+    "description": "Quantizes using the classical action directly, so the action principle of Part I becomes the core of quantum theory.",
+    "math_structure": null,
+    "properties": [
+     "sum over histories",
+     "weight e^{iS/ħ}",
+     "classical path = stationary phase"
+    ],
+    "section": 22
+   }
+  },
+  {
+   "uid": "EM:feyn",
+   "branch": "EM",
+   "native_id": "feyn",
+   "label": "Feynman diagrams",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "quantum",
+   "t": 72,
+   "concept": null,
+   "extra": {
+    "symbol": "FD",
+    "derived": false,
+    "description": "Pictorial rules for the terms of the perturbation series.",
+    "math_structure": null,
+    "properties": [
+     "propagators and vertices",
+     "each vertex contributes √α",
+     "combinatorial rules"
+    ],
+    "section": 22
+   }
+  },
+  {
+   "uid": "EM:smatrix",
+   "branch": "EM",
+   "native_id": "smatrix",
+   "label": "S-matrix",
+   "layer": "S",
+   "sublayer": "S.hilbert",
+   "native_layer": "state",
+   "era": "quantum",
+   "t": 73,
+   "concept": null,
+   "extra": {
+    "symbol": "Sfi",
+    "derived": false,
+    "description": "Packages everything that can be measured in a scattering experiment.",
+    "math_structure": "Unitary operator on Fock space mapping incoming to outgoing states.",
+    "properties": null,
+    "section": 22
+   }
+  },
+  {
+   "uid": "EM:xsec",
+   "branch": "EM",
+   "native_id": "xsec",
+   "label": "Cross sections",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 73,
+   "concept": "cross_section",
+   "extra": {
+    "symbol": "σ",
+    "derived": true,
+    "description": "Scattering rates per unit flux, measured in collision experiments (Compton, Møller, Bhabha scattering).",
+    "math_structure": null,
+    "properties": null,
+    "section": 22
+   }
+  },
+  {
+   "uid": "EM:runalpha",
+   "branch": "EM",
+   "native_id": "runalpha",
+   "label": "Running coupling",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "quantum",
+   "t": 74,
+   "concept": null,
+   "extra": {
+    "symbol": "α(Q)",
+    "derived": true,
+    "description": "The effective strength of electromagnetism at momentum transfer Q, measured at colliders: about 1/128 at the Z mass.",
+    "math_structure": null,
+    "properties": null,
+    "section": 22
+   }
+  },
+  {
+   "uid": "EM:localgauge",
+   "branch": "EM",
+   "native_id": "localgauge",
+   "label": "Local gauge principle",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "quantum",
+   "t": 75,
+   "concept": null,
+   "extra": {
+    "symbol": "U(1)ₓ",
+    "derived": false,
+    "description": "Demanding local phase invariance requires a connection, the electromagnetic potential, and fixes how it couples to charge.",
+    "math_structure": null,
+    "properties": [
+     "phase change at each point",
+     "forces a covariant derivative",
+     "abelian"
+    ],
+    "section": 23
+   }
+  },
+  {
+   "uid": "EM:qedL",
+   "branch": "EM",
+   "native_id": "qedL",
+   "label": "QED Lagrangian",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "quantum",
+   "t": 76,
+   "concept": "qed_interaction",
+   "extra": {
+    "symbol": "ℒQED",
+    "derived": false,
+    "description": "The complete specification of quantum electrodynamics in one line: Dirac field plus Maxwell field, coupled through the covariant derivative.",
+    "math_structure": null,
+    "properties": [
+     "Lorentz-invariant",
+     "local U(1) gauge-invariant",
+     "renormalizable"
+    ],
+    "section": 23
+   }
+  },
+  {
+   "uid": "EM:ward",
+   "branch": "EM",
+   "native_id": "ward",
+   "label": "Ward–Takahashi identities",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "quantum",
+   "t": 76,
+   "concept": null,
+   "extra": {
+    "symbol": "WT",
+    "derived": false,
+    "description": "Relations among amplitudes implied by gauge symmetry; they protect the theory's consistency through renormalization.",
+    "math_structure": null,
+    "properties": [
+     "consequence of gauge invariance",
+     "photon stays massless",
+     "universal charge renormalization"
+    ],
+    "section": 23
+   }
+  }
+ ],
+ "routes": [
+  {
+   "uid": "EM:g_newton",
+   "branch": "EM",
+   "native_id": "g_newton",
+   "inputs": [
+    "EM:F",
+    "EM:ddt"
+   ],
+   "target": "EM:traj",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 2,
+   "extra": {
+    "title": "Newton's second law",
+    "formula": "m dv/dt = F, dx/dt = v, integrated forward in time.",
+    "section": 1,
+    "text_marker_paragraph": 2
+   }
+  },
+  {
+   "uid": "EM:g_v",
+   "branch": "EM",
+   "native_id": "g_v",
+   "inputs": [
+    "EM:traj"
+   ],
+   "target": "EM:v",
+   "logic": "single",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 2,
+   "extra": {
+    "title": "Read off velocity",
+    "formula": "v = dx/dt.",
+    "section": 1,
+    "text_marker_paragraph": null
+   }
+  },
+  {
+   "uid": "EM:g_rtraj",
+   "branch": "EM",
+   "native_id": "g_rtraj",
+   "inputs": [
+    "EM:traj"
+   ],
+   "target": "EM:r",
+   "logic": "single",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 2,
+   "extra": {
+    "title": "Position along a trajectory",
+    "formula": "The position component of the state of motion.",
+    "section": 1,
+    "text_marker_paragraph": null
+   }
+  },
+  {
+   "uid": "EM:g_pos",
+   "branch": "EM",
+   "native_id": "g_pos",
+   "inputs": [
+    "EM:pts"
+   ],
+   "target": "EM:r",
+   "logic": "single",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 8,
+   "extra": {
+    "title": "Read positions off the configuration",
+    "formula": "A coordinate of the configuration is a position measurement.",
+    "section": 3,
+    "text_marker_paragraph": null
+   }
+  },
+  {
+   "uid": "EM:g_Fc",
+   "branch": "EM",
+   "native_id": "g_Fc",
+   "inputs": [
+    "EM:pts",
+    "EM:coul",
+    "EM:vec"
+   ],
+   "target": "EM:F",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 8,
+   "extra": {
+    "title": "Coulomb force sum",
+    "formula": "Fᵢ = Σⱼ k qᵢqⱼ(xᵢ − xⱼ)/|xᵢ − xⱼ|³.",
+    "section": 3,
+    "text_marker_paragraph": 8
+   }
+  },
+  {
+   "uid": "EM:g_rho",
+   "branch": "EM",
+   "native_id": "g_rho",
+   "inputs": [
+    "EM:pts",
+    "EM:delta"
+   ],
+   "target": "EM:rho",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 10,
+   "extra": {
+    "title": "Point charges as a density",
+    "formula": "ρ(x) = Σ qᵢ δ³(x − xᵢ).",
+    "section": 4,
+    "text_marker_paragraph": null
+   }
+  },
+  {
+   "uid": "EM:g_Q",
+   "branch": "EM",
+   "native_id": "g_Q",
+   "inputs": [
+    "EM:rho",
+    "EM:addq"
+   ],
+   "target": "EM:q",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 10,
+   "extra": {
+    "title": "Total charge from density",
+    "formula": "Q = ∫ρ dV.",
+    "section": 4,
+    "text_marker_paragraph": null
+   }
+  },
+  {
+   "uid": "EM:g_Etest",
+   "branch": "EM",
+   "native_id": "g_Etest",
+   "inputs": [
+    "EM:F",
+    "EM:q"
+   ],
+   "target": "EM:E",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 13,
+   "extra": {
+    "title": "Test-charge definition",
+    "formula": "E = lim F/q as q → 0.",
+    "section": 4,
+    "text_marker_paragraph": null
+   }
+  },
+  {
+   "uid": "EM:g_Eeval",
+   "branch": "EM",
+   "native_id": "g_Eeval",
+   "inputs": [
+    "EM:Efield",
+    "EM:r"
+   ],
+   "target": "EM:E",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 13,
+   "extra": {
+    "title": "Evaluate the field at a point",
+    "formula": "The observable E(x₀) is the state E(·) evaluated at x₀.",
+    "section": 4,
+    "text_marker_paragraph": null
+   }
+  },
+  {
+   "uid": "EM:g_Ecoul",
+   "branch": "EM",
+   "native_id": "g_Ecoul",
+   "inputs": [
+    "EM:rho",
+    "EM:coul",
+    "EM:sup"
+   ],
+   "target": "EM:Efield",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 13,
+   "extra": {
+    "title": "Coulomb integral",
+    "formula": "E(x) = (1/4πε₀)∫ρ(x′)(x − x′)/|x − x′|³ d³x′.",
+    "section": 4,
+    "text_marker_paragraph": null
+   }
+  },
+  {
+   "uid": "EM:g_Egauss",
+   "branch": "EM",
+   "native_id": "g_Egauss",
+   "inputs": [
+    "EM:rho",
+    "EM:div",
+    "EM:sym"
+   ],
+   "target": "EM:Efield",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 13,
+   "extra": {
+    "title": "Gauss's law with symmetry",
+    "formula": "Avoids integration when symmetry fixes the field's shape.",
+    "section": 4,
+    "text_marker_paragraph": null
+   }
+  },
+  {
+   "uid": "EM:g_Egrad",
+   "branch": "EM",
+   "native_id": "g_Egrad",
+   "inputs": [
+    "EM:phi",
+    "EM:grad"
+   ],
+   "target": "EM:Efield",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 13,
+   "extra": {
+    "title": "Field from the potential",
+    "formula": "E = −∇φ.",
+    "section": 4,
+    "text_marker_paragraph": null
+   }
+  },
+  {
+   "uid": "EM:g_static",
+   "branch": "EM",
+   "native_id": "g_static",
+   "inputs": [
+    "EM:EB",
+    "EM:ddt"
+   ],
+   "target": "EM:Efield",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 28,
+   "extra": {
+    "title": "Static limit of the dynamical field",
+    "formula": "With ∂/∂t = 0 the electric part decouples and is curl-free.",
+    "section": 9,
+    "text_marker_paragraph": 28
+   }
+  },
+  {
+   "uid": "EM:g_flux",
+   "branch": "EM",
+   "native_id": "g_flux",
+   "inputs": [
+    "EM:Efield",
+    "EM:div"
+   ],
+   "target": "EM:PhiE",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 13,
+   "extra": {
+    "title": "Direct flux integral",
+    "formula": "Φ_E = ∮E·dA.",
+    "section": 4,
+    "text_marker_paragraph": null
+   }
+  },
+  {
+   "uid": "EM:g_gausslaw",
+   "branch": "EM",
+   "native_id": "g_gausslaw",
+   "inputs": [
+    "EM:q",
+    "EM:div"
+   ],
+   "target": "EM:PhiE",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 12,
+   "extra": {
+    "title": "Gauss's law",
+    "formula": "Φ_E = Q_enc/ε₀.",
+    "section": 4,
+    "text_marker_paragraph": 12
+   }
+  },
+  {
+   "uid": "EM:g_philine",
+   "branch": "EM",
+   "native_id": "g_philine",
+   "inputs": [
+    "EM:Efield",
+    "EM:line"
+   ],
+   "target": "EM:phi",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 13,
+   "extra": {
+    "title": "Potential from a line integral",
+    "formula": "φ(x) = −∫E·dl from an arbitrary reference point.",
+    "section": 4,
+    "text_marker_paragraph": null
+   }
+  },
+  {
+   "uid": "EM:g_poisson",
+   "branch": "EM",
+   "native_id": "g_poisson",
+   "inputs": [
+    "EM:rho",
+    "EM:lap",
+    "EM:bc"
+   ],
+   "target": "EM:phi",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 11,
+   "extra": {
+    "title": "Solve Poisson's equation",
+    "formula": "∇²φ = −ρ/ε₀ with boundary conditions.",
+    "section": 4,
+    "text_marker_paragraph": null
+   }
+  },
+  {
+   "uid": "EM:g_phistatic",
+   "branch": "EM",
+   "native_id": "g_phistatic",
+   "inputs": [
+    "EM:pot",
+    "EM:gfix"
+   ],
+   "target": "EM:phi",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 31,
+   "extra": {
+    "title": "Static limit of the gauge potential",
+    "formula": "For static fields in Coulomb gauge, the scalar part of the representative is the electrostatic potential.",
+    "section": 10,
+    "text_marker_paragraph": null
+   }
+  },
+  {
+   "uid": "EM:g_U1",
+   "branch": "EM",
+   "native_id": "g_U1",
+   "inputs": [
+    "EM:rho",
+    "EM:phi",
+    "EM:bil"
+   ],
+   "target": "EM:U",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 13,
+   "extra": {
+    "title": "Energy as charge times potential",
+    "formula": "U = ½∫ρφ dV.",
+    "section": 4,
+    "text_marker_paragraph": null
+   }
+  },
+  {
+   "uid": "EM:g_U2",
+   "branch": "EM",
+   "native_id": "g_U2",
+   "inputs": [
+    "EM:Efield",
+    "EM:bil"
+   ],
+   "target": "EM:U",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 13,
+   "extra": {
+    "title": "Energy stored in the field",
+    "formula": "U = (ε₀/2)∫|E|² dV.",
+    "section": 4,
+    "text_marker_paragraph": null
+   }
+  },
+  {
+   "uid": "EM:g_dV1",
+   "branch": "EM",
+   "native_id": "g_dV1",
+   "inputs": [
+    "EM:phi",
+    "EM:r"
+   ],
+   "target": "EM:dV",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 16,
+   "extra": {
+    "title": "Difference of potential values",
+    "formula": "ΔV = φ(b) − φ(a); the arbitrary constant cancels.",
+    "section": 5,
+    "text_marker_paragraph": 16
+   }
+  },
+  {
+   "uid": "EM:g_dV2",
+   "branch": "EM",
+   "native_id": "g_dV2",
+   "inputs": [
+    "EM:Efield",
+    "EM:line",
+    "EM:r"
+   ],
+   "target": "EM:dV",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 16,
+   "extra": {
+    "title": "Line integral of the field",
+    "formula": "ΔV = −∫ₐᵇ E·dl, path-independent in statics.",
+    "section": 5,
+    "text_marker_paragraph": 16
+   }
+  },
+  {
+   "uid": "EM:g_C",
+   "branch": "EM",
+   "native_id": "g_C",
+   "inputs": [
+    "EM:q",
+    "EM:dV",
+    "EM:bc"
+   ],
+   "target": "EM:C",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 14,
+   "extra": {
+    "title": "Capacitance",
+    "formula": "C = Q/ΔV; linearity makes the ratio independent of Q.",
+    "section": 5,
+    "text_marker_paragraph": null
+   }
+  },
+  {
+   "uid": "EM:g_I",
+   "branch": "EM",
+   "native_id": "g_I",
+   "inputs": [
+    "EM:J",
+    "EM:div"
+   ],
+   "target": "EM:I",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 15,
+   "extra": {
+    "title": "Current as flux of J",
+    "formula": "I = ∫J·dA.",
+    "section": 5,
+    "text_marker_paragraph": null
+   }
+  },
+  {
+   "uid": "EM:g_R",
+   "branch": "EM",
+   "native_id": "g_R",
+   "inputs": [
+    "EM:dV",
+    "EM:I"
+   ],
+   "target": "EM:R",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 15,
+   "extra": {
+    "title": "Resistance from voltage and current",
+    "formula": "R = ΔV/I.",
+    "section": 5,
+    "text_marker_paragraph": null
+   }
+  },
+  {
+   "uid": "EM:g_Johm",
+   "branch": "EM",
+   "native_id": "g_Johm",
+   "inputs": [
+    "EM:Efield",
+    "EM:ohm"
+   ],
+   "target": "EM:J",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 15,
+   "extra": {
+    "title": "Local Ohm's law",
+    "formula": "J = σE inside a conductor.",
+    "section": 5,
+    "text_marker_paragraph": null
+   }
+  },
+  {
+   "uid": "EM:g_rhoevol",
+   "branch": "EM",
+   "native_id": "g_rhoevol",
+   "inputs": [
+    "EM:J",
+    "EM:cont"
+   ],
+   "target": "EM:rho",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 16,
+   "extra": {
+    "title": "Density evolves by continuity",
+    "formula": "∂ρ/∂t = −∇·J updates ρ in time.",
+    "section": 5,
+    "text_marker_paragraph": null
+   }
+  },
+  {
+   "uid": "EM:g_Bbs",
+   "branch": "EM",
+   "native_id": "g_Bbs",
+   "inputs": [
+    "EM:J",
+    "EM:bs",
+    "EM:sup"
+   ],
+   "target": "EM:Bfield",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 19,
+   "extra": {
+    "title": "Biot–Savart integral",
+    "formula": "B(x) = (μ₀/4π)∫J × (x − x′)/|x − x′|³ d³x′.",
+    "section": 6,
+    "text_marker_paragraph": 18
+   }
+  },
+  {
+   "uid": "EM:g_Bamp",
+   "branch": "EM",
+   "native_id": "g_Bamp",
+   "inputs": [
+    "EM:J",
+    "EM:curl",
+    "EM:sym"
+   ],
+   "target": "EM:Bfield",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 19,
+   "extra": {
+    "title": "Ampère's law with symmetry",
+    "formula": "∮B·dl = μ₀I_enc.",
+    "section": 6,
+    "text_marker_paragraph": 19
+   }
+  },
+  {
+   "uid": "EM:g_Bcurl",
+   "branch": "EM",
+   "native_id": "g_Bcurl",
+   "inputs": [
+    "EM:A",
+    "EM:curl"
+   ],
+   "target": "EM:Bfield",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 23,
+   "extra": {
+    "title": "Field from the vector potential",
+    "formula": "B = ∇×A.",
+    "section": 8,
+    "text_marker_paragraph": 23
+   }
+  },
+  {
+   "uid": "EM:g_Beval",
+   "branch": "EM",
+   "native_id": "g_Beval",
+   "inputs": [
+    "EM:Bfield",
+    "EM:r"
+   ],
+   "target": "EM:B",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 19,
+   "extra": {
+    "title": "Evaluate the field at a point",
+    "formula": "B(x₀) from the field B(·).",
+    "section": 6,
+    "text_marker_paragraph": null
+   }
+  },
+  {
+   "uid": "EM:g_Bforce",
+   "branch": "EM",
+   "native_id": "g_Bforce",
+   "inputs": [
+    "EM:F",
+    "EM:q",
+    "EM:v",
+    "EM:cross"
+   ],
+   "target": "EM:B",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 38,
+   "extra": {
+    "title": "Infer B from the velocity-dependent force",
+    "formula": "Solve F − qE = q v×B for B using several velocities.",
+    "section": 12,
+    "text_marker_paragraph": 38
+   }
+  },
+  {
+   "uid": "EM:g_Fwire",
+   "branch": "EM",
+   "native_id": "g_Fwire",
+   "inputs": [
+    "EM:I",
+    "EM:B",
+    "EM:cross"
+   ],
+   "target": "EM:F",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 19,
+   "extra": {
+    "title": "Force on a current element",
+    "formula": "dF = I dl × B (Ampère, Laplace).",
+    "section": 6,
+    "text_marker_paragraph": 19
+   }
+  },
+  {
+   "uid": "EM:g_PhiB",
+   "branch": "EM",
+   "native_id": "g_PhiB",
+   "inputs": [
+    "EM:Bfield",
+    "EM:div"
+   ],
+   "target": "EM:PhiB",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 20,
+   "extra": {
+    "title": "Flux integral of B",
+    "formula": "Φ_B = ∫B·dA; any surface with the same boundary gives the same answer because ∇·B = 0.",
+    "section": 7,
+    "text_marker_paragraph": null
+   }
+  },
+  {
+   "uid": "EM:g_PhiBA",
+   "branch": "EM",
+   "native_id": "g_PhiBA",
+   "inputs": [
+    "EM:A",
+    "EM:line",
+    "EM:curl"
+   ],
+   "target": "EM:PhiB",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 23,
+   "extra": {
+    "title": "Flux from the loop integral of A",
+    "formula": "Φ_B = ∮A·dl by Stokes' theorem.",
+    "section": 8,
+    "text_marker_paragraph": 23
+   }
+  },
+  {
+   "uid": "EM:g_emf1",
+   "branch": "EM",
+   "native_id": "g_emf1",
+   "inputs": [
+    "EM:PhiB",
+    "EM:ddt",
+    "EM:faraday"
+   ],
+   "target": "EM:emf",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 20,
+   "extra": {
+    "title": "Faraday's flux rule",
+    "formula": "ℰ = −dΦ_B/dt.",
+    "section": 7,
+    "text_marker_paragraph": 20
+   }
+  },
+  {
+   "uid": "EM:g_emf2",
+   "branch": "EM",
+   "native_id": "g_emf2",
+   "inputs": [
+    "EM:EB",
+    "EM:traj",
+    "EM:line",
+    "EM:cross"
+   ],
+   "target": "EM:emf",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 28,
+   "extra": {
+    "title": "Direct loop integral",
+    "formula": "ℰ = ∮(E + v×B)·dl.",
+    "section": 9,
+    "text_marker_paragraph": null
+   }
+  },
+  {
+   "uid": "EM:g_eps",
+   "branch": "EM",
+   "native_id": "g_eps",
+   "inputs": [
+    "EM:F",
+    "EM:q",
+    "EM:r",
+    "EM:I",
+    "EM:coul",
+    "EM:bs"
+   ],
+   "target": "EM:consts",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 24,
+   "extra": {
+    "title": "Measure the couplings",
+    "formula": "ε₀ from the strength of electric forces, μ₀ from forces between currents.",
+    "section": 8,
+    "text_marker_paragraph": 24
+   }
+  },
+  {
+   "uid": "EM:g_disp",
+   "branch": "EM",
+   "native_id": "g_disp",
+   "inputs": [
+    "EM:cont",
+    "EM:curl"
+   ],
+   "target": "EM:maxwell",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 27,
+   "extra": {
+    "title": "Displacement current",
+    "formula": "Adding μ₀ε₀∂E/∂t to Ampère's law restores consistency with charge conservation.",
+    "section": 9,
+    "text_marker_paragraph": 27
+   }
+  },
+  {
+   "uid": "EM:g_maxform",
+   "branch": "EM",
+   "native_id": "g_maxform",
+   "inputs": [
+    "EM:ext",
+    "EM:hodge"
+   ],
+   "target": "EM:maxwell",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 47,
+   "extra": {
+    "title": "Maxwell's equations as forms",
+    "formula": "dF = 0 and d⋆F = μ₀⋆J.",
+    "section": 15,
+    "text_marker_paragraph": 47
+   }
+  },
+  {
+   "uid": "EM:g_c",
+   "branch": "EM",
+   "native_id": "g_c",
+   "inputs": [
+    "EM:consts",
+    "EM:maxwell"
+   ],
+   "target": "EM:c",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 27,
+   "extra": {
+    "title": "Predicted wave speed",
+    "formula": "Combining the curl equations gives wave equations with speed 1/√(μ₀ε₀).",
+    "section": 9,
+    "text_marker_paragraph": 27
+   }
+  },
+  {
+   "uid": "EM:g_evolve",
+   "branch": "EM",
+   "native_id": "g_evolve",
+   "inputs": [
+    "EM:EB",
+    "EM:rho",
+    "EM:J",
+    "EM:maxwell",
+    "EM:ddt"
+   ],
+   "target": "EM:EB",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 28,
+   "extra": {
+    "title": "Time evolution by Maxwell's equations",
+    "formula": "∂E/∂t = c²∇×B − J/ε₀, ∂B/∂t = −∇×E.",
+    "section": 9,
+    "text_marker_paragraph": 28
+   }
+  },
+  {
+   "uid": "EM:g_EBpot",
+   "branch": "EM",
+   "native_id": "g_EBpot",
+   "inputs": [
+    "EM:pot",
+    "EM:grad",
+    "EM:curl",
+    "EM:ddt"
+   ],
+   "target": "EM:EB",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 31,
+   "extra": {
+    "title": "Fields from potentials",
+    "formula": "E = −∇φ − ∂A/∂t, B = ∇×A, the same for every member of the gauge class.",
+    "section": 10,
+    "text_marker_paragraph": null
+   }
+  },
+  {
+   "uid": "EM:g_EBF",
+   "branch": "EM",
+   "native_id": "g_EBF",
+   "inputs": [
+    "EM:Fmn",
+    "EM:lorentz"
+   ],
+   "target": "EM:EB",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 42,
+   "extra": {
+    "title": "Split F by an observer",
+    "formula": "E and B are the components of F relative to an observer's four-velocity.",
+    "section": 13,
+    "text_marker_paragraph": 42
+   }
+  },
+  {
+   "uid": "EM:g_u",
+   "branch": "EM",
+   "native_id": "g_u",
+   "inputs": [
+    "EM:EB",
+    "EM:bil"
+   ],
+   "target": "EM:u",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 29,
+   "extra": {
+    "title": "Energy density of the field",
+    "formula": "u = ½(ε₀|E|² + |B|²/μ₀).",
+    "section": 9,
+    "text_marker_paragraph": null
+   }
+  },
+  {
+   "uid": "EM:g_Fstress",
+   "branch": "EM",
+   "native_id": "g_Fstress",
+   "inputs": [
+    "EM:EB",
+    "EM:stress",
+    "EM:ddt"
+   ],
+   "target": "EM:F",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 29,
+   "extra": {
+    "title": "Force from the Maxwell stress",
+    "formula": "F = ∮σ·dA over a surface enclosing the charges (minus the change of field momentum inside, added after 1900).",
+    "section": 9,
+    "text_marker_paragraph": 29
+   }
+  },
+  {
+   "uid": "EM:g_ret",
+   "branch": "EM",
+   "native_id": "g_ret",
+   "inputs": [
+    "EM:rho",
+    "EM:J",
+    "EM:gfix",
+    "EM:wave"
+   ],
+   "target": "EM:pot",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 31,
+   "extra": {
+    "title": "Retarded potentials",
+    "formula": "φ(x,t) = (1/4πε₀)∫ρ(x′, t − |x − x′|/c)/|x − x′| d³x′, and likewise for A.",
+    "section": 10,
+    "text_marker_paragraph": 30
+   }
+  },
+  {
+   "uid": "EM:g_pot2",
+   "branch": "EM",
+   "native_id": "g_pot2",
+   "inputs": [
+    "EM:phi",
+    "EM:A",
+    "EM:gauge"
+   ],
+   "target": "EM:pot",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 31,
+   "extra": {
+    "title": "Gauge orbit of a pair",
+    "formula": "All pairs related by gauge transformations form one class.",
+    "section": 10,
+    "text_marker_paragraph": null
+   }
+  },
+  {
+   "uid": "EM:g_pot1",
+   "branch": "EM",
+   "native_id": "g_pot1",
+   "inputs": [
+    "EM:EB",
+    "EM:poinc"
+   ],
+   "target": "EM:pot",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 32,
+   "extra": {
+    "title": "Existence of potentials",
+    "formula": "Fields obeying ∇·B = 0 and Faraday's law come from some (φ, A), at least locally.",
+    "section": 10,
+    "text_marker_paragraph": 32
+   }
+  },
+  {
+   "uid": "EM:g_Arep",
+   "branch": "EM",
+   "native_id": "g_Arep",
+   "inputs": [
+    "EM:pot",
+    "EM:gfix"
+   ],
+   "target": "EM:A",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 31,
+   "extra": {
+    "title": "Pick a representative",
+    "formula": "A gauge condition selects a concrete A from the class.",
+    "section": 10,
+    "text_marker_paragraph": null
+   }
+  },
+  {
+   "uid": "EM:g_S",
+   "branch": "EM",
+   "native_id": "g_S",
+   "inputs": [
+    "EM:EB",
+    "EM:cross",
+    "EM:poynt"
+   ],
+   "target": "EM:S",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 33,
+   "extra": {
+    "title": "Poynting vector",
+    "formula": "S = E×B/μ₀.",
+    "section": 11,
+    "text_marker_paragraph": null
+   }
+  },
+  {
+   "uid": "EM:g_vac",
+   "branch": "EM",
+   "native_id": "g_vac",
+   "inputs": [
+    "EM:EB",
+    "EM:wave",
+    "EM:fourier"
+   ],
+   "target": "EM:vac",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 35,
+   "extra": {
+    "title": "Mode expansion of free fields",
+    "formula": "Source-free solutions as sums of plane waves.",
+    "section": 11,
+    "text_marker_paragraph": null
+   }
+  },
+  {
+   "uid": "EM:g_wave",
+   "branch": "EM",
+   "native_id": "g_wave",
+   "inputs": [
+    "EM:vac",
+    "EM:fourier"
+   ],
+   "target": "EM:wavedat",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 35,
+   "extra": {
+    "title": "Read off wave data",
+    "formula": "Each mode has definite k, ω = c|k| and polarization.",
+    "section": 11,
+    "text_marker_paragraph": null
+   }
+  },
+  {
+   "uid": "EM:g_g",
+   "branch": "EM",
+   "native_id": "g_g",
+   "inputs": [
+    "EM:S",
+    "EM:c"
+   ],
+   "target": "EM:g",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 36,
+   "extra": {
+    "title": "Momentum density",
+    "formula": "g = S/c².",
+    "section": 11,
+    "text_marker_paragraph": null
+   }
+  },
+  {
+   "uid": "EM:g_FL",
+   "branch": "EM",
+   "native_id": "g_FL",
+   "inputs": [
+    "EM:q",
+    "EM:E",
+    "EM:B",
+    "EM:v",
+    "EM:cross",
+    "EM:vec"
+   ],
+   "target": "EM:F",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 37,
+   "extra": {
+    "title": "Lorentz force law",
+    "formula": "F = q(E + v×B).",
+    "section": 12,
+    "text_marker_paragraph": 37
+   }
+  },
+  {
+   "uid": "EM:g_P1",
+   "branch": "EM",
+   "native_id": "g_P1",
+   "inputs": [
+    "EM:pot",
+    "EM:traj",
+    "EM:wave"
+   ],
+   "target": "EM:P",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 39,
+   "extra": {
+    "title": "Larmor formula",
+    "formula": "P = q²a²/(6πε₀c³) for slow charges.",
+    "section": 12,
+    "text_marker_paragraph": 39
+   }
+  },
+  {
+   "uid": "EM:g_P2",
+   "branch": "EM",
+   "native_id": "g_P2",
+   "inputs": [
+    "EM:S",
+    "EM:div"
+   ],
+   "target": "EM:P",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 39,
+   "extra": {
+    "title": "Flux of the Poynting vector",
+    "formula": "P = ∮S·dA over a large sphere.",
+    "section": 12,
+    "text_marker_paragraph": 39
+   }
+  },
+  {
+   "uid": "EM:g_Amu",
+   "branch": "EM",
+   "native_id": "g_Amu",
+   "inputs": [
+    "EM:pot",
+    "EM:lorentz"
+   ],
+   "target": "EM:Amu",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 42,
+   "extra": {
+    "title": "Assemble the four-potential",
+    "formula": "(φ/c, A) transform together as a four-vector.",
+    "section": 13,
+    "text_marker_paragraph": null
+   }
+  },
+  {
+   "uid": "EM:g_jmu",
+   "branch": "EM",
+   "native_id": "g_jmu",
+   "inputs": [
+    "EM:rho",
+    "EM:J",
+    "EM:lorentz"
+   ],
+   "target": "EM:jmu",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 42,
+   "extra": {
+    "title": "Assemble the four-current",
+    "formula": "J^μ = (cρ, J).",
+    "section": 13,
+    "text_marker_paragraph": null
+   }
+  },
+  {
+   "uid": "EM:g_Fmink",
+   "branch": "EM",
+   "native_id": "g_Fmink",
+   "inputs": [
+    "EM:Amu",
+    "EM:lorentz"
+   ],
+   "target": "EM:Fmn",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 42,
+   "extra": {
+    "title": "Antisymmetrized derivative of A",
+    "formula": "F_μν = ∂_μA_ν − ∂_νA_μ (Minkowski).",
+    "section": 13,
+    "text_marker_paragraph": 42
+   }
+  },
+  {
+   "uid": "EM:g_inv13",
+   "branch": "EM",
+   "native_id": "g_inv13",
+   "inputs": [
+    "EM:Fmn",
+    "EM:lorentz"
+   ],
+   "target": "EM:inv",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 42,
+   "extra": {
+    "title": "Contract the field tensor",
+    "formula": "F_μνF^μν ∝ |B|² − |E|²/c² and F_μνF̃^μν ∝ E·B.",
+    "section": 13,
+    "text_marker_paragraph": null
+   }
+  },
+  {
+   "uid": "EM:g_T",
+   "branch": "EM",
+   "native_id": "g_T",
+   "inputs": [
+    "EM:Fmn",
+    "EM:lorentz"
+   ],
+   "target": "EM:T",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 42,
+   "extra": {
+    "title": "Stress–energy tensor",
+    "formula": "T^μν = (1/μ₀)(F^μα F^ν_α − ¼ g^μν F_αβ F^αβ).",
+    "section": 13,
+    "text_marker_paragraph": null
+   }
+  },
+  {
+   "uid": "EM:g_FEL",
+   "branch": "EM",
+   "native_id": "g_FEL",
+   "inputs": [
+    "EM:traj",
+    "EM:pot",
+    "EM:action"
+   ],
+   "target": "EM:F",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 43,
+   "extra": {
+    "title": "Euler–Lagrange equation for a charge",
+    "formula": "Gauge-dependent terms cancel and the result is q(E + v×B).",
+    "section": 14,
+    "text_marker_paragraph": 43
+   }
+  },
+  {
+   "uid": "EM:g_phase",
+   "branch": "EM",
+   "native_id": "g_phase",
+   "inputs": [
+    "EM:traj",
+    "EM:pot",
+    "EM:legendre"
+   ],
+   "target": "EM:phase",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 44,
+   "extra": {
+    "title": "Canonical momentum",
+    "formula": "p = ∂L/∂v = mv + qA.",
+    "section": 14,
+    "text_marker_paragraph": null
+   }
+  },
+  {
+   "uid": "EM:g_pkin",
+   "branch": "EM",
+   "native_id": "g_pkin",
+   "inputs": [
+    "EM:phase",
+    "EM:pot"
+   ],
+   "target": "EM:pkin",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 44,
+   "extra": {
+    "title": "Subtract the potential",
+    "formula": "π = p − qA; the gauge shifts of p and qA cancel.",
+    "section": 14,
+    "text_marker_paragraph": null
+   }
+  },
+  {
+   "uid": "EM:g_ham",
+   "branch": "EM",
+   "native_id": "g_ham",
+   "inputs": [
+    "EM:phase",
+    "EM:pb"
+   ],
+   "target": "EM:traj",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 44,
+   "extra": {
+    "title": "Hamilton's equations",
+    "formula": "dx/dt = {x, H}, dp/dt = {p, H}.",
+    "section": 14,
+    "text_marker_paragraph": null
+   }
+  },
+  {
+   "uid": "EM:g_fphase",
+   "branch": "EM",
+   "native_id": "g_fphase",
+   "inputs": [
+    "EM:pot",
+    "EM:action",
+    "EM:gauge"
+   ],
+   "target": "EM:fphase",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 44,
+   "extra": {
+    "title": "Hamiltonian field theory",
+    "formula": "Canonical pairs from the field Lagrangian, with Gauss's law as a constraint.",
+    "section": 14,
+    "text_marker_paragraph": null
+   }
+  },
+  {
+   "uid": "EM:g_cons",
+   "branch": "EM",
+   "native_id": "g_cons",
+   "inputs": [
+    "EM:fphase",
+    "EM:phase",
+    "EM:noether"
+   ],
+   "target": "EM:cons",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 45,
+   "extra": {
+    "title": "Noether charges of matter plus field",
+    "formula": "Time translations give energy, space translations momentum, rotations angular momentum.",
+    "section": 14,
+    "text_marker_paragraph": null
+   }
+  },
+  {
+   "uid": "EM:g_noethcont",
+   "branch": "EM",
+   "native_id": "g_noethcont",
+   "inputs": [
+    "EM:noether",
+    "EM:gauge"
+   ],
+   "target": "EM:cont",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 46,
+   "extra": {
+    "title": "Charge conservation from gauge symmetry",
+    "formula": "Invariance of the action under gauge changes forces ∂ρ/∂t + ∇·J = 0.",
+    "section": 14,
+    "text_marker_paragraph": 46
+   }
+  },
+  {
+   "uid": "EM:g_FdA",
+   "branch": "EM",
+   "native_id": "g_FdA",
+   "inputs": [
+    "EM:Amu",
+    "EM:ext"
+   ],
+   "target": "EM:Fmn",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 47,
+   "extra": {
+    "title": "F = dA",
+    "formula": "Gauge shifts A → A + dχ drop out since d²χ = 0.",
+    "section": 15,
+    "text_marker_paragraph": null
+   }
+  },
+  {
+   "uid": "EM:g_inv",
+   "branch": "EM",
+   "native_id": "g_inv",
+   "inputs": [
+    "EM:Fmn",
+    "EM:hodge",
+    "EM:wedge"
+   ],
+   "target": "EM:inv",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 47,
+   "extra": {
+    "title": "Invariants as forms",
+    "formula": "F∧F ∝ E·B and F∧⋆F ∝ |E|² − c²|B|².",
+    "section": 15,
+    "text_marker_paragraph": 47
+   }
+  },
+  {
+   "uid": "EM:g_d2cont",
+   "branch": "EM",
+   "native_id": "g_d2cont",
+   "inputs": [
+    "EM:jmu",
+    "EM:ext",
+    "EM:maxwell"
+   ],
+   "target": "EM:cont",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 47,
+   "extra": {
+    "title": "Conservation from d² = 0",
+    "formula": "d⋆J = μ₀⁻¹ d(d⋆F) = 0.",
+    "section": 15,
+    "text_marker_paragraph": 47
+   }
+  },
+  {
+   "uid": "EM:g_bundle",
+   "branch": "EM",
+   "native_id": "g_bundle",
+   "inputs": [
+    "EM:Amu",
+    "EM:conn",
+    "EM:gauge"
+   ],
+   "target": "EM:bundle",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 48,
+   "extra": {
+    "title": "Glue local potentials",
+    "formula": "Potentials on overlapping patches differ by gauge transformations, which glue them into a bundle.",
+    "section": 15,
+    "text_marker_paragraph": null
+   }
+  },
+  {
+   "uid": "EM:g_Fcurv",
+   "branch": "EM",
+   "native_id": "g_Fcurv",
+   "inputs": [
+    "EM:bundle",
+    "EM:conn"
+   ],
+   "target": "EM:Fmn",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 48,
+   "extra": {
+    "title": "Curvature of the connection",
+    "formula": "F is the curvature 2-form of the U(1) connection.",
+    "section": 15,
+    "text_marker_paragraph": 48
+   }
+  },
+  {
+   "uid": "EM:g_hol",
+   "branch": "EM",
+   "native_id": "g_hol",
+   "inputs": [
+    "EM:bundle",
+    "EM:line"
+   ],
+   "target": "EM:hol",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical",
+   "status": "established",
+   "polarity": "structural",
+   "t": 49,
+   "extra": {
+    "title": "Parallel transport around a loop",
+    "formula": "Holonomy exp(i∮A); classically the loop integral ∮A·dl itself.",
+    "section": 15,
+    "text_marker_paragraph": null
+   }
+  },
+  {
+   "uid": "EM:g_RJ",
+   "branch": "EM",
+   "native_id": "g_RJ",
+   "inputs": [
+    "EM:vac",
+    "EM:equip"
+   ],
+   "target": "EM:bbspec",
+   "logic": "AND",
+   "kind": "failed",
+   "kind_native": "failed",
+   "status": "failed",
+   "polarity": "no_go",
+   "t": 50,
+   "extra": {
+    "title": "Rayleigh–Jeans law (classical)",
+    "formula": "u(ν,T) = 8πν²kT/c³: correct at low frequency, infinite total energy.",
+    "section": 16,
+    "text_marker_paragraph": 50
+   }
+  },
+  {
+   "uid": "EM:g_planckbb",
+   "branch": "EM",
+   "native_id": "g_planckbb",
+   "inputs": [
+    "EM:vac",
+    "EM:planck",
+    "EM:hbar"
+   ],
+   "target": "EM:bbspec",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "quantization",
+   "status": "established",
+   "polarity": "structural",
+   "t": 51,
+   "extra": {
+    "title": "Planck's law",
+    "formula": "u(ν,T) = (8πhν³/c³)/(e^{hν/kT} − 1).",
+    "section": 16,
+    "text_marker_paragraph": 51
+   }
+  },
+  {
+   "uid": "EM:g_photowave",
+   "branch": "EM",
+   "native_id": "g_photowave",
+   "inputs": [
+    "EM:S",
+    "EM:wavedat"
+   ],
+   "target": "EM:photoel",
+   "logic": "AND",
+   "kind": "failed",
+   "kind_native": "failed",
+   "status": "failed",
+   "polarity": "no_go",
+   "t": 52,
+   "extra": {
+    "title": "Classical wave prediction",
+    "formula": "Electron energy should grow with intensity and arrive after a delay; neither is observed.",
+    "section": 16,
+    "text_marker_paragraph": 52
+   }
+  },
+  {
+   "uid": "EM:g_photoel",
+   "branch": "EM",
+   "native_id": "g_photoel",
+   "inputs": [
+    "EM:planck",
+    "EM:hbar",
+    "EM:wavedat"
+   ],
+   "target": "EM:photoel",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "quantization",
+   "status": "established",
+   "polarity": "structural",
+   "t": 52,
+   "extra": {
+    "title": "Einstein's photoelectric equation",
+    "formula": "K_max = hν − W.",
+    "section": 16,
+    "text_marker_paragraph": 52
+   }
+  },
+  {
+   "uid": "EM:g_photon1",
+   "branch": "EM",
+   "native_id": "g_photon1",
+   "inputs": [
+    "EM:planck",
+    "EM:hbar",
+    "EM:wavedat"
+   ],
+   "target": "EM:photon",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "quantization",
+   "status": "established",
+   "polarity": "structural",
+   "t": 52,
+   "extra": {
+    "title": "Light quanta",
+    "formula": "E = hν, p = h/λ (Einstein 1905, Compton 1923).",
+    "section": 16,
+    "text_marker_paragraph": 52
+   }
+  },
+  {
+   "uid": "EM:g_collapse",
+   "branch": "EM",
+   "native_id": "g_collapse",
+   "inputs": [
+    "EM:P",
+    "EM:traj",
+    "EM:coul"
+   ],
+   "target": "EM:spectra",
+   "logic": "AND",
+   "kind": "failed",
+   "kind_native": "failed",
+   "status": "failed",
+   "polarity": "no_go",
+   "t": 53,
+   "extra": {
+    "title": "Classical atom (Larmor)",
+    "formula": "An orbiting electron radiates continuously and spirals into the nucleus within about 10⁻¹¹ s.",
+    "section": 16,
+    "text_marker_paragraph": 53
+   }
+  },
+  {
+   "uid": "EM:g_bohr",
+   "branch": "EM",
+   "native_id": "g_bohr",
+   "inputs": [
+    "EM:coul",
+    "EM:traj",
+    "EM:hbar"
+   ],
+   "target": "EM:bohr",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "quantization",
+   "status": "established",
+   "polarity": "structural",
+   "t": 53,
+   "extra": {
+    "title": "Bohr's quantization",
+    "formula": "Angular momentum mvr = nħ selects the allowed orbits.",
+    "section": 16,
+    "text_marker_paragraph": 53
+   }
+  },
+  {
+   "uid": "EM:g_bohrlines",
+   "branch": "EM",
+   "native_id": "g_bohrlines",
+   "inputs": [
+    "EM:bohr",
+    "EM:planck"
+   ],
+   "target": "EM:spectra",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "quantum",
+   "status": "established",
+   "polarity": "structural",
+   "t": 53,
+   "extra": {
+    "title": "Bohr's frequency rule",
+    "formula": "hν = Eₙ − Eₘ between stationary orbits.",
+    "section": 16,
+    "text_marker_paragraph": 53
+   }
+  },
+  {
+   "uid": "EM:g_dirac",
+   "branch": "EM",
+   "native_id": "g_dirac",
+   "inputs": [
+    "EM:pb",
+    "EM:hbar"
+   ],
+   "target": "EM:comm",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "quantization",
+   "status": "established",
+   "polarity": "structural",
+   "t": 55,
+   "extra": {
+    "title": "Dirac's quantization rule",
+    "formula": "{A, B} → [Â, B̂]/iħ.",
+    "section": 17,
+    "text_marker_paragraph": 55
+   }
+  },
+  {
+   "uid": "EM:g_ops",
+   "branch": "EM",
+   "native_id": "g_ops",
+   "inputs": [
+    "EM:phase",
+    "EM:comm"
+   ],
+   "target": "EM:ops",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "quantization",
+   "status": "established",
+   "polarity": "structural",
+   "t": 55,
+   "extra": {
+    "title": "Phase-space functions become operators",
+    "formula": "f(x, p) → f(x̂, p̂), with an ordering choice.",
+    "section": 17,
+    "text_marker_paragraph": 55
+   }
+  },
+  {
+   "uid": "EM:g_hilb",
+   "branch": "EM",
+   "native_id": "g_hilb",
+   "inputs": [
+    "EM:phase",
+    "EM:comm",
+    "EM:ops"
+   ],
+   "target": "EM:hilb",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "quantization",
+   "status": "established",
+   "polarity": "structural",
+   "t": 56,
+   "extra": {
+    "title": "Canonical quantization of the state",
+    "formula": "Points (x, p) are replaced by wave functions ψ(x); x̂ multiplies, p̂ = −iħ ∂/∂x.",
+    "section": 17,
+    "text_marker_paragraph": 56
+   }
+  },
+  {
+   "uid": "EM:g_levels",
+   "branch": "EM",
+   "native_id": "g_levels",
+   "inputs": [
+    "EM:hilb",
+    "EM:ops",
+    "EM:schro",
+    "EM:coul"
+   ],
+   "target": "EM:spectra",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "quantization",
+   "status": "established",
+   "polarity": "structural",
+   "t": 56,
+   "extra": {
+    "title": "Hydrogen from the Schrödinger equation",
+    "formula": "Eₙ = −13.6 eV/n² as eigenvalues of Ĥ.",
+    "section": 17,
+    "text_marker_paragraph": 56
+   }
+  },
+  {
+   "uid": "EM:g_expect",
+   "branch": "EM",
+   "native_id": "g_expect",
+   "inputs": [
+    "EM:hilb",
+    "EM:born",
+    "EM:ops"
+   ],
+   "target": "EM:expect",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "quantum",
+   "status": "established",
+   "polarity": "structural",
+   "t": 57,
+   "extra": {
+    "title": "Born rule statistics",
+    "formula": "Prob(a) = |⟨a|ψ⟩|², ⟨Â⟩ = ⟨ψ|Â|ψ⟩.",
+    "section": 17,
+    "text_marker_paragraph": 57
+   }
+  },
+  {
+   "uid": "EM:g_ehren",
+   "branch": "EM",
+   "native_id": "g_ehren",
+   "inputs": [
+    "EM:hilb",
+    "EM:schro",
+    "EM:ops"
+   ],
+   "target": "EM:traj",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical_limit",
+   "status": "established",
+   "polarity": "structural",
+   "t": 57,
+   "extra": {
+    "title": "Ehrenfest's theorem (classical limit)",
+    "formula": "d⟨x̂⟩/dt = ⟨p̂⟩/m, d⟨p̂⟩/dt = ⟨F⟩ ≈ F(⟨x̂⟩).",
+    "section": 17,
+    "text_marker_paragraph": 57
+   }
+  },
+  {
+   "uid": "EM:g_mincoup",
+   "branch": "EM",
+   "native_id": "g_mincoup",
+   "inputs": [
+    "EM:pkin",
+    "EM:gauge",
+    "EM:comm"
+   ],
+   "target": "EM:mincoup",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "quantization",
+   "status": "established",
+   "polarity": "structural",
+   "t": 58,
+   "extra": {
+    "title": "Quantize the kinetic momentum",
+    "formula": "π̂ = −iħ∇ − qA; a gauge change becomes a phase change of ψ.",
+    "section": 18,
+    "text_marker_paragraph": 58
+   }
+  },
+  {
+   "uid": "EM:g_landau",
+   "branch": "EM",
+   "native_id": "g_landau",
+   "inputs": [
+    "EM:hilb",
+    "EM:mincoup",
+    "EM:Bfield"
+   ],
+   "target": "EM:landau",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "quantization",
+   "status": "established",
+   "polarity": "structural",
+   "t": 59,
+   "extra": {
+    "title": "Landau quantization",
+    "formula": "Eₙ = ħω_c(n + ½), ω_c = qB/m.",
+    "section": 18,
+    "text_marker_paragraph": 59
+   }
+  },
+  {
+   "uid": "EM:g_ab",
+   "branch": "EM",
+   "native_id": "g_ab",
+   "inputs": [
+    "EM:hol",
+    "EM:hilb",
+    "EM:mincoup"
+   ],
+   "target": "EM:abphase",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "quantization",
+   "status": "established",
+   "polarity": "structural",
+   "t": 60,
+   "extra": {
+    "title": "Aharonov–Bohm phase",
+    "formula": "Δθ = q∮A·dl/ħ = qΦ_B/ħ.",
+    "section": 18,
+    "text_marker_paragraph": 60
+   }
+  },
+  {
+   "uid": "EM:g_diraceq",
+   "branch": "EM",
+   "native_id": "g_diraceq",
+   "inputs": [
+    "EM:clifford",
+    "EM:lorentz",
+    "EM:mincoup"
+   ],
+   "target": "EM:dirac",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "quantization",
+   "status": "established",
+   "polarity": "structural",
+   "t": 61,
+   "extra": {
+    "title": "Dirac's relativistic equation",
+    "formula": "(iħγ^μD_μ − mc)ψ = 0.",
+    "section": 19,
+    "text_marker_paragraph": 61
+   }
+  },
+  {
+   "uid": "EM:g_spinor",
+   "branch": "EM",
+   "native_id": "g_spinor",
+   "inputs": [
+    "EM:dirac",
+    "EM:hilb"
+   ],
+   "target": "EM:spinor",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "quantum",
+   "status": "established",
+   "polarity": "structural",
+   "t": 62,
+   "extra": {
+    "title": "Spinor solutions",
+    "formula": "Solutions carry spin ½ and come with positive and negative energy.",
+    "section": 19,
+    "text_marker_paragraph": 62
+   }
+  },
+  {
+   "uid": "EM:g_gfac",
+   "branch": "EM",
+   "native_id": "g_gfac",
+   "inputs": [
+    "EM:spinor",
+    "EM:dirac",
+    "EM:Bfield"
+   ],
+   "target": "EM:gfac",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "quantization",
+   "status": "established",
+   "polarity": "structural",
+   "t": 62,
+   "extra": {
+    "title": "Dirac's magnetic moment",
+    "formula": "g = 2 exactly at this level of the theory.",
+    "section": 19,
+    "text_marker_paragraph": 62
+   }
+  },
+  {
+   "uid": "EM:g_finestr",
+   "branch": "EM",
+   "native_id": "g_finestr",
+   "inputs": [
+    "EM:spinor",
+    "EM:dirac",
+    "EM:coul"
+   ],
+   "target": "EM:spectra",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "quantization",
+   "status": "established",
+   "polarity": "structural",
+   "t": 62,
+   "extra": {
+    "title": "Fine structure of hydrogen",
+    "formula": "Levels depend on n and total angular momentum j.",
+    "section": 19,
+    "text_marker_paragraph": 62
+   }
+  },
+  {
+   "uid": "EM:g_positron",
+   "branch": "EM",
+   "native_id": "g_positron",
+   "inputs": [
+    "EM:spinor",
+    "EM:dirac"
+   ],
+   "target": "EM:positron",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "quantum",
+   "status": "established",
+   "polarity": "structural",
+   "t": 63,
+   "extra": {
+    "title": "Negative-energy solutions",
+    "formula": "Holes in the Dirac sea behave as antiparticles.",
+    "section": 19,
+    "text_marker_paragraph": 63
+   }
+  },
+  {
+   "uid": "EM:g_ladder",
+   "branch": "EM",
+   "native_id": "g_ladder",
+   "inputs": [
+    "EM:vac",
+    "EM:comm"
+   ],
+   "target": "EM:ladder",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "quantization",
+   "status": "established",
+   "polarity": "structural",
+   "t": 64,
+   "extra": {
+    "title": "Each mode is a quantum oscillator",
+    "formula": "a_k, a_k† with [a_k, a_k′†] = δ_kk′.",
+    "section": 20,
+    "text_marker_paragraph": 64
+   }
+  },
+  {
+   "uid": "EM:g_photon2",
+   "branch": "EM",
+   "native_id": "g_photon2",
+   "inputs": [
+    "EM:ladder",
+    "EM:vac"
+   ],
+   "target": "EM:photon",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "quantization",
+   "status": "established",
+   "polarity": "structural",
+   "t": 64,
+   "extra": {
+    "title": "Photons as field quanta",
+    "formula": "One photon = one excitation of a mode.",
+    "section": 20,
+    "text_marker_paragraph": 64
+   }
+  },
+  {
+   "uid": "EM:g_fock",
+   "branch": "EM",
+   "native_id": "g_fock",
+   "inputs": [
+    "EM:ladder",
+    "EM:hilb"
+   ],
+   "target": "EM:fock",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "quantum",
+   "status": "established",
+   "polarity": "structural",
+   "t": 65,
+   "extra": {
+    "title": "Build Fock space",
+    "formula": "Apply creation operators to the vacuum |0⟩.",
+    "section": 20,
+    "text_marker_paragraph": 65
+   }
+  },
+  {
+   "uid": "EM:g_spont",
+   "branch": "EM",
+   "native_id": "g_spont",
+   "inputs": [
+    "EM:fock",
+    "EM:ladder",
+    "EM:spectra"
+   ],
+   "target": "EM:spont",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "quantum",
+   "status": "established",
+   "polarity": "structural",
+   "t": 65,
+   "extra": {
+    "title": "Vacuum fluctuations drive emission",
+    "formula": "Dirac 1927: the rate scales as ω³ times the squared dipole matrix element.",
+    "section": 20,
+    "text_marker_paragraph": 65
+   }
+  },
+  {
+   "uid": "EM:g_Aop",
+   "branch": "EM",
+   "native_id": "g_Aop",
+   "inputs": [
+    "EM:fphase",
+    "EM:comm",
+    "EM:gfix"
+   ],
+   "target": "EM:Aop",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "quantization",
+   "status": "established",
+   "polarity": "structural",
+   "t": 66,
+   "extra": {
+    "title": "Canonical quantization of the field",
+    "formula": "[Âᵢ(x), Π̂ⱼ(y)] = iħ δ⊥ᵢⱼ(x − y) in Coulomb gauge.",
+    "section": 20,
+    "text_marker_paragraph": 66
+   }
+  },
+  {
+   "uid": "EM:g_coherent",
+   "branch": "EM",
+   "native_id": "g_coherent",
+   "inputs": [
+    "EM:fock",
+    "EM:ladder"
+   ],
+   "target": "EM:EB",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical_limit",
+   "status": "established",
+   "polarity": "structural",
+   "t": 66,
+   "extra": {
+    "title": "Coherent states (classical limit)",
+    "formula": "Glauber 1963: ⟨Ê⟩ and ⟨B̂⟩ obey Maxwell's equations; fluctuations are negligible for many photons.",
+    "section": 20,
+    "text_marker_paragraph": 66
+   }
+  },
+  {
+   "uid": "EM:g_casimir",
+   "branch": "EM",
+   "native_id": "g_casimir",
+   "inputs": [
+    "EM:ladder",
+    "EM:bc"
+   ],
+   "target": "EM:casimir",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "quantization",
+   "status": "established",
+   "polarity": "structural",
+   "t": 66,
+   "extra": {
+    "title": "Zero-point energy between plates",
+    "formula": "F/A = −π²ħc/240d⁴.",
+    "section": 20,
+    "text_marker_paragraph": 66
+   }
+  },
+  {
+   "uid": "EM:g_psiop",
+   "branch": "EM",
+   "native_id": "g_psiop",
+   "inputs": [
+    "EM:spinor",
+    "EM:ladder"
+   ],
+   "target": "EM:psiop",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "quantum",
+   "status": "established",
+   "polarity": "structural",
+   "t": 67,
+   "extra": {
+    "title": "Quantize the Dirac field",
+    "formula": "Expand ψ in modes with anticommuting operators.",
+    "section": 21,
+    "text_marker_paragraph": 67
+   }
+  },
+  {
+   "uid": "EM:g_alpha",
+   "branch": "EM",
+   "native_id": "g_alpha",
+   "inputs": [
+    "EM:q",
+    "EM:consts",
+    "EM:hbar",
+    "EM:c"
+   ],
+   "target": "EM:alpha",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "quantization",
+   "status": "established",
+   "polarity": "structural",
+   "t": 68,
+   "extra": {
+    "title": "Combine the constants",
+    "formula": "α = e²/4πε₀ħc ≈ 1/137.036.",
+    "section": 21,
+    "text_marker_paragraph": 68
+   }
+  },
+  {
+   "uid": "EM:g_diverge",
+   "branch": "EM",
+   "native_id": "g_diverge",
+   "inputs": [
+    "EM:pert",
+    "EM:Aop",
+    "EM:psiop"
+   ],
+   "target": "EM:lamb",
+   "logic": "AND",
+   "kind": "failed",
+   "kind_native": "failed",
+   "status": "failed",
+   "polarity": "no_go",
+   "t": 70,
+   "extra": {
+    "title": "Naive perturbation theory",
+    "formula": "Self-energy corrections come out infinite.",
+    "section": 21,
+    "text_marker_paragraph": 69
+   }
+  },
+  {
+   "uid": "EM:g_lambdirac",
+   "branch": "EM",
+   "native_id": "g_lambdirac",
+   "inputs": [
+    "EM:spinor",
+    "EM:dirac",
+    "EM:coul"
+   ],
+   "target": "EM:lamb",
+   "logic": "AND",
+   "kind": "failed",
+   "kind_native": "failed",
+   "status": "failed",
+   "polarity": "no_go",
+   "t": 70,
+   "extra": {
+    "title": "Dirac's prediction",
+    "formula": "2S½ and 2P½ exactly degenerate: no shift.",
+    "section": 21,
+    "text_marker_paragraph": 70
+   }
+  },
+  {
+   "uid": "EM:g_ammdirac",
+   "branch": "EM",
+   "native_id": "g_ammdirac",
+   "inputs": [
+    "EM:gfac"
+   ],
+   "target": "EM:amm",
+   "logic": "single",
+   "kind": "failed",
+   "kind_native": "failed",
+   "status": "failed",
+   "polarity": "no_go",
+   "t": 70,
+   "extra": {
+    "title": "Dirac's prediction",
+    "formula": "g = 2 exactly, so a = 0.",
+    "section": 21,
+    "text_marker_paragraph": 70
+   }
+  },
+  {
+   "uid": "EM:g_pathint",
+   "branch": "EM",
+   "native_id": "g_pathint",
+   "inputs": [
+    "EM:action",
+    "EM:hbar",
+    "EM:hilb"
+   ],
+   "target": "EM:pathint",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "quantization",
+   "status": "established",
+   "polarity": "structural",
+   "t": 72,
+   "extra": {
+    "title": "Sum over histories",
+    "formula": "Amplitude = ∫Dx e^{iS[x]/ħ}.",
+    "section": 22,
+    "text_marker_paragraph": 72
+   }
+  },
+  {
+   "uid": "EM:g_pathclassical",
+   "branch": "EM",
+   "native_id": "g_pathclassical",
+   "inputs": [
+    "EM:pathint",
+    "EM:action"
+   ],
+   "target": "EM:traj",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "classical_limit",
+   "status": "established",
+   "polarity": "structural",
+   "t": 72,
+   "extra": {
+    "title": "Stationary phase (classical limit)",
+    "formula": "When S ≫ ħ, only paths near δS = 0 survive.",
+    "section": 22,
+    "text_marker_paragraph": 72
+   }
+  },
+  {
+   "uid": "EM:g_feyn",
+   "branch": "EM",
+   "native_id": "g_feyn",
+   "inputs": [
+    "EM:pathint",
+    "EM:pert",
+    "EM:Aop",
+    "EM:psiop"
+   ],
+   "target": "EM:feyn",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "quantum",
+   "status": "established",
+   "polarity": "structural",
+   "t": 72,
+   "extra": {
+    "title": "Expand the path integral",
+    "formula": "Each term of the series is a diagram.",
+    "section": 22,
+    "text_marker_paragraph": 72
+   }
+  },
+  {
+   "uid": "EM:g_smat",
+   "branch": "EM",
+   "native_id": "g_smat",
+   "inputs": [
+    "EM:feyn",
+    "EM:fock"
+   ],
+   "target": "EM:smatrix",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "quantum",
+   "status": "established",
+   "polarity": "structural",
+   "t": 73,
+   "extra": {
+    "title": "Sum diagrams into amplitudes",
+    "formula": "⟨f|S|i⟩ = sum of diagrams.",
+    "section": 22,
+    "text_marker_paragraph": 73
+   }
+  },
+  {
+   "uid": "EM:g_xsec",
+   "branch": "EM",
+   "native_id": "g_xsec",
+   "inputs": [
+    "EM:smatrix",
+    "EM:born"
+   ],
+   "target": "EM:xsec",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "quantum",
+   "status": "established",
+   "polarity": "structural",
+   "t": 73,
+   "extra": {
+    "title": "Cross sections from amplitudes",
+    "formula": "σ ∝ |⟨f|S|i⟩|² summed over final states.",
+    "section": 22,
+    "text_marker_paragraph": 73
+   }
+  },
+  {
+   "uid": "EM:g_amm",
+   "branch": "EM",
+   "native_id": "g_amm",
+   "inputs": [
+    "EM:feyn",
+    "EM:renorm",
+    "EM:alpha"
+   ],
+   "target": "EM:amm",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "quantum",
+   "status": "established",
+   "polarity": "structural",
+   "t": 73,
+   "extra": {
+    "title": "Schwinger's correction",
+    "formula": "a = α/2π + O(α²).",
+    "section": 22,
+    "text_marker_paragraph": 73
+   }
+  },
+  {
+   "uid": "EM:g_lamb",
+   "branch": "EM",
+   "native_id": "g_lamb",
+   "inputs": [
+    "EM:feyn",
+    "EM:renorm",
+    "EM:spinor"
+   ],
+   "target": "EM:lamb",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "quantum",
+   "status": "established",
+   "polarity": "structural",
+   "t": 73,
+   "extra": {
+    "title": "Renormalized Lamb shift",
+    "formula": "Self-energy and vacuum polarization give about 1058 MHz.",
+    "section": 22,
+    "text_marker_paragraph": 73
+   }
+  },
+  {
+   "uid": "EM:g_runalpha",
+   "branch": "EM",
+   "native_id": "g_runalpha",
+   "inputs": [
+    "EM:renorm",
+    "EM:feyn",
+    "EM:alpha"
+   ],
+   "target": "EM:runalpha",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "quantum",
+   "status": "established",
+   "polarity": "structural",
+   "t": 74,
+   "extra": {
+    "title": "Vacuum polarization",
+    "formula": "Virtual pairs screen charge; α(Q) grows logarithmically with Q.",
+    "section": 22,
+    "text_marker_paragraph": 74
+   }
+  },
+  {
+   "uid": "EM:g_localgauge",
+   "branch": "EM",
+   "native_id": "g_localgauge",
+   "inputs": [
+    "EM:conn",
+    "EM:gauge",
+    "EM:spinor"
+   ],
+   "target": "EM:localgauge",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "quantization",
+   "status": "established",
+   "polarity": "structural",
+   "t": 75,
+   "extra": {
+    "title": "Gauge the phase symmetry",
+    "formula": "Require invariance under ψ → e^{iqχ(x)/ħ}ψ.",
+    "section": 23,
+    "text_marker_paragraph": 75
+   }
+  },
+  {
+   "uid": "EM:g_qedL",
+   "branch": "EM",
+   "native_id": "g_qedL",
+   "inputs": [
+    "EM:localgauge",
+    "EM:dirac",
+    "EM:Fmn",
+    "EM:action"
+   ],
+   "target": "EM:qedL",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "quantization",
+   "status": "established",
+   "polarity": "structural",
+   "t": 76,
+   "extra": {
+    "title": "Assemble the QED Lagrangian",
+    "formula": "ℒ = ψ̄(iγ^μD_μ − m)ψ − ¼F_μνF^μν (natural units).",
+    "section": 23,
+    "text_marker_paragraph": 76
+   }
+  },
+  {
+   "uid": "EM:g_feyn2",
+   "branch": "EM",
+   "native_id": "g_feyn2",
+   "inputs": [
+    "EM:qedL",
+    "EM:pathint"
+   ],
+   "target": "EM:feyn",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "quantum",
+   "status": "established",
+   "polarity": "structural",
+   "t": 76,
+   "extra": {
+    "title": "Feynman rules from the Lagrangian",
+    "formula": "Propagators and vertices read off ℒ_QED.",
+    "section": 23,
+    "text_marker_paragraph": 76
+   }
+  },
+  {
+   "uid": "EM:g_ward",
+   "branch": "EM",
+   "native_id": "g_ward",
+   "inputs": [
+    "EM:qedL",
+    "EM:noether"
+   ],
+   "target": "EM:ward",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "quantization",
+   "status": "established",
+   "polarity": "structural",
+   "t": 76,
+   "extra": {
+    "title": "Gauge symmetry in amplitudes",
+    "formula": "k_μ M^μ = 0, Z₁ = Z₂.",
+    "section": 23,
+    "text_marker_paragraph": 76
+   }
+  },
+  {
+   "uid": "EM:g_ammprec",
+   "branch": "EM",
+   "native_id": "g_ammprec",
+   "inputs": [
+    "EM:qedL",
+    "EM:feyn",
+    "EM:renorm",
+    "EM:alpha",
+    "EM:ward"
+   ],
+   "target": "EM:amm",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "quantum",
+   "status": "established",
+   "polarity": "structural",
+   "t": 77,
+   "extra": {
+    "title": "Modern QED prediction",
+    "formula": "a_e computed through order α⁵ (tenth-order diagrams), agreeing with measurement to about 10⁻¹² in g.",
+    "section": 23,
+    "text_marker_paragraph": 77
+   }
+  }
+ ]
+}

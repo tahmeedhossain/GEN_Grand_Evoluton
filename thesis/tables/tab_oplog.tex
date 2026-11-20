@@ -1,0 +1,53 @@
+\begin{longtable}{@{}p{0.6cm}p{1.9cm}p{1.3cm}p{10.5cm}@{}}\toprule
+Step & Operation & Layer & Decomposition read off the data \\\midrule\endhead
+2 & \texttt{PARTITION} & S & H1 -> 9 irreducible classes (back-edge of a rewritten model node) \\
+\addlinespace[2pt]
+3 & \texttt{FLAG} & O & new unexplained observable o\_prod: precondition of R2 \\
+\addlinespace[2pt]
+4 & \texttt{EXTEND} & S & 9 classes -> 5 sectors with ladders, by the back-edge of m\_field \\
+ & \texttt{ADD} & M & m\_field; deficit o\_prod rewritten into finer observables \\
+\addlinespace[2pt]
+5 & \texttt{ADD} & M & m\_qed; deficit o\_sig, o\_G rewritten into finer observables; explains the observed-before-explained o\_compton, o\_ae, o\_lamb \\
+ & \texttt{ROUTE} & S->M & 1 new AND route(s): m\_qed <- 2 leg(s) \\
+ & \texttt{CALIBRATE} & O->M & calibration edge(s) added for o\_alpha; new parameter(s): o\_alpha \\
+\addlinespace[2pt]
+6 & \texttt{ADD} & M & m\_fermi; reaches the open deficit o\_beta \\
+ & \texttt{ADD} & M(eff) & effective node(s) m\_fermi: dimensionful coupling, temporary by construction \\
+ & \texttt{ROUTE} & S->M & 1 new AND route(s): m\_fermi <- 4 leg(s) \\
+ & \texttt{CALIBRATE} & O->M & calibration edge(s) added for o\_GF; new parameter(s): o\_GF \\
+\addlinespace[2pt]
+7 & \texttt{SPLIT} & S & s\_nu -> s\_nue, s\_num (same irreducible block, distinguished by an observable) \\
+ & \texttt{ADD} & S & new sector(s) s\_mu \\
+ & \texttt{ADD} & M & m\_mu; explains the observed-before-explained o\_mutau \\
+ & \texttt{ADD} & M(eff) & effective node(s) m\_mu: dimensionful coupling, temporary by construction \\
+ & \texttt{SIGNAL} & M & calibration edge transferred between coexisting nodes (o\_GF: m\_fermi -> m\_mu): a merge is due \\
+ & \texttt{ROUTE} & S->M & 1 new AND route(s): m\_mu <- 4 leg(s) \\
+ & \texttt{CALIBRATE} & O->M & calibration edge(s) added for o\_GF; re-attached only \\
+\addlinespace[2pt]
+8 & \texttt{ADD} & M & m\_va with no unexplained observable before the step: theory-internal form; new P-badged observables o\_wu, o\_hel \\
+ & \texttt{ADD} & M(eff) & effective node(s) m\_va: dimensionful coupling, temporary by construction \\
+ & \texttt{MERGE} & M & m\_fermi, m\_mu -> m\_va: 2 routes (union) contained in the 3 routes of the merged node \\
+ & \texttt{ROUTE} & S->M & 3 new AND route(s): m\_va <- 4 leg(s); m\_va <- 4 leg(s); m\_va <- 4 leg(s) \\
+ & \texttt{CALIBRATE} & O->M & calibration edge(s) added for o\_GF; re-attached only \\
+\addlinespace[2pt]
+9 & \texttt{REPLACE} & S & s\_n, s\_p -> s\_d, s\_u (same irreducible blocks: compositeness) \\
+ & \texttt{ADD} & S & new sector(s) s\_W, s\_Z \\
+ & \texttt{ADD} & M & m\_cc, m\_gs, m\_nc with no unexplained observable before the step: theory-internal form; new P-badged observables o\_nc, o\_mw, o\_mz, o\_nnu, o\_tgc \\
+ & \texttt{ABSORB} & M & m\_va absorbed into m\_cc, m\_gs, m\_nc: each of the 3 old routes is covered by new routes once the mediator leg(s) s\_W, s\_Z are removed \\
+ & \texttt{ROUTE} & S->M & 7 new AND route(s): m\_cc <- 3 leg(s); m\_cc <- 3 leg(s); m\_cc <- 3 leg(s); m\_gs <- 2 leg(s); m\_gs <- 2 leg(s); m\_nc <- 7 leg(s); m\_qed <- 5 leg(s) \\
+ & \texttt{CALIBRATE} & O->M & calibration edge(s) added for o\_GF, o\_sw; new parameter(s): o\_sw \\
+\addlinespace[2pt]
+10 & \texttt{ADD} & S & new sector(s) s\_H \\
+ & \texttt{ADD} & M & m\_hg, m\_pot, m\_yuk with no unexplained observable before the step: theory-internal form; new P-badged observables o\_mh, o\_hbr, o\_lam \\
+ & \texttt{ROUTE} & S->M & 3 new AND route(s): m\_hg <- 2 leg(s); m\_pot <- 1 leg(s); m\_yuk <- 5 leg(s) \\
+ & \texttt{CALIBRATE} & O->M & calibration edge(s) added for o\_mf, o\_mh; new parameter(s): o\_mf, o\_mh \\
+\addlinespace[2pt]
+11 & \texttt{ADD} & M(cand) & candidate node m\_numass: hypothesis announced, not established \\
+ & \texttt{ROUTE} & S->M & 1 new AND route(s): m\_numass <- 3 leg(s) \\
+\addlinespace[2pt]
+12 & \texttt{ROUTE} & S->M & 3 new AND route(s): c\_gf <- 3 leg(s); c\_gg <- 2 leg(s); c\_hg <- 2 leg(s) \\
+ & \texttt{ROUTE} & S->M & 9 route(s) re-attached to clusters \\
+ & \texttt{CALIBRATE} & O->M & calibration edge(s) added for o\_GF, o\_alpha, o\_mf, o\_mh; new parameter(s): o\_alpha \\
+ & \texttt{CLUSTER} & M & 6 clusters: c\_bsm, c\_gf, c\_gg, c\_hg, c\_pot, c\_yuk; absorbed members: m\_fermi, m\_mu, m\_va, m\_qed, m\_cc, m\_nc, m\_gs, m\_hg, m\_yuk, m\_pot, m\_numass \\
+\addlinespace[2pt]
+\bottomrule\end{longtable}

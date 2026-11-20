@@ -1,0 +1,5178 @@
+{
+ "steps": [
+  {
+   "S": 1,
+   "M": 3,
+   "O": 5,
+   "routes_expanded": 9,
+   "AND": 0,
+   "unexplained": [],
+   "eff": 0,
+   "fund": 0,
+   "cand": 0,
+   "cluster": 0,
+   "calibrations": 0,
+   "predictions": 1,
+   "badges": {
+    "A": 2,
+    "P": 0,
+    "F": 0
+   },
+   "shared_calibrations": [],
+   "records": 9,
+   "and_records": 0,
+   "id": "qm",
+   "index": 1,
+   "driver": "found",
+   "title": "One-particle quantum mechanics"
+  },
+  {
+   "S": 9,
+   "M": 3,
+   "O": 6,
+   "routes_expanded": 34,
+   "AND": 0,
+   "unexplained": [],
+   "eff": 0,
+   "fund": 0,
+   "cand": 0,
+   "cluster": 0,
+   "calibrations": 0,
+   "predictions": 3,
+   "badges": {
+    "A": 2,
+    "P": 2,
+    "F": 0
+   },
+   "shared_calibrations": [],
+   "records": 10,
+   "and_records": 0,
+   "id": "wigner",
+   "index": 2,
+   "driver": "sym",
+   "title": "Poincaré symmetry: Wigner's classification"
+  },
+  {
+   "S": 9,
+   "M": 3,
+   "O": 6,
+   "routes_expanded": 33,
+   "AND": 0,
+   "unexplained": [
+    "o_prod"
+   ],
+   "eff": 0,
+   "fund": 0,
+   "cand": 0,
+   "cluster": 0,
+   "calibrations": 0,
+   "predictions": 3,
+   "badges": {
+    "A": 3,
+    "P": 2,
+    "F": 0
+   },
+   "shared_calibrations": [],
+   "records": 9,
+   "and_records": 0,
+   "id": "anomaly",
+   "index": 3,
+   "driver": "anom",
+   "title": "An observable with no model edge: particle creation and destruction"
+  },
+  {
+   "S": 5,
+   "M": 3,
+   "O": 4,
+   "routes_expanded": 29,
+   "AND": 0,
+   "unexplained": [
+    "o_G",
+    "o_sig"
+   ],
+   "eff": 0,
+   "fund": 0,
+   "cand": 0,
+   "cluster": 0,
+   "calibrations": 0,
+   "predictions": 2,
+   "badges": {
+    "A": 2,
+    "P": 2,
+    "F": 0
+   },
+   "shared_calibrations": [],
+   "records": 9,
+   "and_records": 0,
+   "id": "fock",
+   "index": 4,
+   "driver": "resp",
+   "title": "Model response: quantum fields on Fock space"
+  },
+  {
+   "S": 5,
+   "M": 4,
+   "O": 6,
+   "routes_expanded": 31,
+   "AND": 1,
+   "unexplained": [
+    "o_beta"
+   ],
+   "eff": 0,
+   "fund": 1,
+   "cand": 0,
+   "cluster": 0,
+   "calibrations": 1,
+   "predictions": 4,
+   "badges": {
+    "A": 4,
+    "P": 1,
+    "F": 1
+   },
+   "shared_calibrations": [],
+   "records": 10,
+   "and_records": 1,
+   "id": "qed",
+   "index": 5,
+   "driver": "anom",
+   "title": "First interaction node: the QED vertex"
+  },
+  {
+   "S": 5,
+   "M": 5,
+   "O": 6,
+   "routes_expanded": 33,
+   "AND": 2,
+   "unexplained": [],
+   "eff": 1,
+   "fund": 1,
+   "cand": 0,
+   "cluster": 0,
+   "calibrations": 2,
+   "predictions": 4,
+   "badges": {
+    "A": 3,
+    "P": 1,
+    "F": 2
+   },
+   "shared_calibrations": [],
+   "records": 11,
+   "and_records": 2,
+   "id": "fermi",
+   "index": 6,
+   "driver": "anom",
+   "title": "Second interaction node: Fermi's contact term"
+  },
+  {
+   "S": 7,
+   "M": 6,
+   "O": 9,
+   "routes_expanded": 47,
+   "AND": 3,
+   "unexplained": [],
+   "eff": 2,
+   "fund": 1,
+   "cand": 0,
+   "cluster": 0,
+   "calibrations": 2,
+   "predictions": 7,
+   "badges": {
+    "A": 4,
+    "P": 3,
+    "F": 2
+   },
+   "shared_calibrations": [],
+   "records": 14,
+   "and_records": 3,
+   "id": "muon",
+   "index": 7,
+   "driver": "anom",
+   "title": "Universality: the muon and a second contact node"
+  },
+  {
+   "S": 7,
+   "M": 5,
+   "O": 11,
+   "routes_expanded": 50,
+   "AND": 4,
+   "unexplained": [],
+   "eff": 1,
+   "fund": 1,
+   "cand": 0,
+   "cluster": 0,
+   "calibrations": 2,
+   "predictions": 9,
+   "badges": {
+    "A": 4,
+    "P": 5,
+    "F": 2
+   },
+   "shared_calibrations": [],
+   "records": 16,
+   "and_records": 4,
+   "id": "va",
+   "index": 8,
+   "driver": "anom",
+   "title": "Parity violation: the two contact nodes merge into V−A"
+  },
+  {
+   "S": 9,
+   "M": 7,
+   "O": 12,
+   "routes_expanded": 64,
+   "AND": 7,
+   "unexplained": [],
+   "eff": 0,
+   "fund": 4,
+   "cand": 0,
+   "cluster": 0,
+   "calibrations": 3,
+   "predictions": 9,
+   "badges": {
+    "A": 3,
+    "P": 6,
+    "F": 3
+   },
+   "shared_calibrations": [],
+   "records": 17,
+   "and_records": 7,
+   "id": "ew",
+   "index": 9,
+   "driver": "pred",
+   "title": "Fundamental nodes: W, Z and SU(2)_{L} × U(1)_{Y}"
+  },
+  {
+   "S": 10,
+   "M": 10,
+   "O": 13,
+   "routes_expanded": 72,
+   "AND": 8,
+   "unexplained": [],
+   "eff": 0,
+   "fund": 7,
+   "cand": 0,
+   "cluster": 0,
+   "calibrations": 4,
+   "predictions": 10,
+   "badges": {
+    "A": 3,
+    "P": 7,
+    "F": 3
+   },
+   "shared_calibrations": [],
+   "records": 19,
+   "and_records": 8,
+   "id": "higgs",
+   "index": 10,
+   "driver": "pred",
+   "title": "Mass: the Higgs sector"
+  },
+  {
+   "S": 10,
+   "M": 11,
+   "O": 12,
+   "routes_expanded": 72,
+   "AND": 9,
+   "unexplained": [
+    "o_osc"
+   ],
+   "eff": 0,
+   "fund": 7,
+   "cand": 1,
+   "cluster": 0,
+   "calibrations": 3,
+   "predictions": 9,
+   "badges": {
+    "A": 4,
+    "P": 6,
+    "F": 2
+   },
+   "shared_calibrations": [],
+   "records": 18,
+   "and_records": 9,
+   "id": "frontier",
+   "index": 11,
+   "driver": "anom",
+   "title": "Frontier: an observable with no model edge, again"
+  },
+  {
+   "S": 10,
+   "M": 9,
+   "O": 16,
+   "routes_expanded": 79,
+   "AND": 12,
+   "unexplained": [
+    "o_osc"
+   ],
+   "eff": 0,
+   "fund": 0,
+   "cand": 0,
+   "cluster": 6,
+   "calibrations": 4,
+   "predictions": 12,
+   "badges": {
+    "A": 4,
+    "P": 9,
+    "F": 3
+   },
+   "shared_calibrations": [],
+   "records": 22,
+   "and_records": 12,
+   "id": "sm",
+   "index": 12,
+   "driver": "syn",
+   "title": "Final form: the Standard Model as clusters of its Lagrangian terms"
+  }
+ ],
+ "diffs": [
+  {
+   "ops": [
+    [
+     "PARTITION",
+     "S",
+     "H1 -> 9 irreducible classes (back-edge of a rewritten model node)"
+    ]
+   ],
+   "rules": {
+    "1": "●",
+    "8": "●"
+   },
+   "added_S": [
+    "HEP:u_01",
+    "HEP:u_02",
+    "HEP:u_0h",
+    "HEP:u_cs",
+    "HEP:u_m0",
+    "HEP:u_m1",
+    "HEP:u_mh",
+    "HEP:u_tach",
+    "HEP:u_vac"
+   ],
+   "removed_S": [
+    "HEP:H1"
+   ],
+   "added_M": [],
+   "removed_M": [],
+   "added_O": [
+    "HEP:o_m",
+    "HEP:o_s"
+   ],
+   "removed_O": [
+    "HEP:o_x"
+   ],
+   "added_routes": [
+    [
+     "backedge",
+     [
+      "HEP:m_U"
+     ],
+     "HEP:u_01"
+    ],
+    [
+     "backedge",
+     [
+      "HEP:m_U"
+     ],
+     "HEP:u_02"
+    ],
+    [
+     "backedge",
+     [
+      "HEP:m_U"
+     ],
+     "HEP:u_0h"
+    ],
+    [
+     "backedge",
+     [
+      "HEP:m_U"
+     ],
+     "HEP:u_cs"
+    ],
+    [
+     "backedge",
+     [
+      "HEP:m_U"
+     ],
+     "HEP:u_m0"
+    ],
+    [
+     "backedge",
+     [
+      "HEP:m_U"
+     ],
+     "HEP:u_m1"
+    ],
+    [
+     "backedge",
+     [
+      "HEP:m_U"
+     ],
+     "HEP:u_mh"
+    ],
+    [
+     "backedge",
+     [
+      "HEP:m_U"
+     ],
+     "HEP:u_tach"
+    ],
+    [
+     "backedge",
+     [
+      "HEP:m_U"
+     ],
+     "HEP:u_vac"
+    ],
+    [
+     "enters",
+     [
+      "HEP:u_01"
+     ],
+     "HEP:m_A"
+    ],
+    [
+     "enters",
+     [
+      "HEP:u_01"
+     ],
+     "HEP:m_U"
+    ],
+    [
+     "enters",
+     [
+      "HEP:u_02"
+     ],
+     "HEP:m_A"
+    ],
+    [
+     "enters",
+     [
+      "HEP:u_02"
+     ],
+     "HEP:m_U"
+    ],
+    [
+     "enters",
+     [
+      "HEP:u_0h"
+     ],
+     "HEP:m_A"
+    ],
+    [
+     "enters",
+     [
+      "HEP:u_0h"
+     ],
+     "HEP:m_U"
+    ],
+    [
+     "enters",
+     [
+      "HEP:u_cs"
+     ],
+     "HEP:m_A"
+    ],
+    [
+     "enters",
+     [
+      "HEP:u_cs"
+     ],
+     "HEP:m_U"
+    ],
+    [
+     "enters",
+     [
+      "HEP:u_m0"
+     ],
+     "HEP:m_A"
+    ],
+    [
+     "enters",
+     [
+      "HEP:u_m0"
+     ],
+     "HEP:m_U"
+    ],
+    [
+     "enters",
+     [
+      "HEP:u_m1"
+     ],
+     "HEP:m_A"
+    ],
+    [
+     "enters",
+     [
+      "HEP:u_m1"
+     ],
+     "HEP:m_U"
+    ],
+    [
+     "enters",
+     [
+      "HEP:u_mh"
+     ],
+     "HEP:m_A"
+    ],
+    [
+     "enters",
+     [
+      "HEP:u_mh"
+     ],
+     "HEP:m_U"
+    ],
+    [
+     "enters",
+     [
+      "HEP:u_tach"
+     ],
+     "HEP:m_A"
+    ],
+    [
+     "enters",
+     [
+      "HEP:u_tach"
+     ],
+     "HEP:m_U"
+    ],
+    [
+     "enters",
+     [
+      "HEP:u_vac"
+     ],
+     "HEP:m_A"
+    ],
+    [
+     "enters",
+     [
+      "HEP:u_vac"
+     ],
+     "HEP:m_U"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_U"
+     ],
+     "HEP:o_m"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_U"
+     ],
+     "HEP:o_s"
+    ]
+   ],
+   "removed_routes": [
+    [
+     "backedge",
+     [
+      "HEP:m_U"
+     ],
+     "HEP:H1"
+    ],
+    [
+     "enters",
+     [
+      "HEP:H1"
+     ],
+     "HEP:m_A"
+    ],
+    [
+     "enters",
+     [
+      "HEP:H1"
+     ],
+     "HEP:m_U"
+    ],
+    [
+     "frames",
+     [
+      "HEP:m_A"
+     ],
+     "HEP:o_x"
+    ]
+   ],
+   "unexplained_before": [],
+   "unexplained_after": [],
+   "newly_unexplained": [],
+   "sector_map": {},
+   "new_sectors": [],
+   "new_and_routes": 0,
+   "reattached_and_routes": 0,
+   "index": 2,
+   "id": "wigner",
+   "driver": "sym",
+   "recorded_ops": [
+    [
+     "REWRITE",
+     "M",
+     "U(t) → U(Λ, a); L → Klein–Gordon / Dirac equations"
+    ],
+    [
+     "PARTITION",
+     "S",
+     "H_{1} → 9 UIR classes, by the back-edge of U(Λ, a)"
+    ],
+    [
+     "ADD",
+     "O",
+     "mass and spin (Casimir invariants: P)"
+    ]
+   ]
+  },
+  {
+   "ops": [
+    [
+     "FLAG",
+     "O",
+     "new unexplained observable o_prod: precondition of R2"
+    ]
+   ],
+   "rules": {
+    "2": "○"
+   },
+   "added_S": [],
+   "removed_S": [],
+   "added_M": [],
+   "removed_M": [],
+   "added_O": [
+    "HEP:o_prod"
+   ],
+   "removed_O": [
+    "HEP:o_L"
+   ],
+   "added_routes": [],
+   "removed_routes": [
+    [
+     "frames",
+     [
+      "HEP:m_A"
+     ],
+     "HEP:o_L"
+    ]
+   ],
+   "unexplained_before": [],
+   "unexplained_after": [
+    "o_prod"
+   ],
+   "newly_unexplained": [
+    "o_prod"
+   ],
+   "sector_map": {},
+   "new_sectors": [],
+   "r2_form": "flagged",
+   "new_and_routes": 0,
+   "reattached_and_routes": 0,
+   "index": 3,
+   "id": "anomaly",
+   "driver": "anom",
+   "recorded_ops": [
+    [
+     "ADD",
+     "O",
+     "particle production and decay (A)"
+    ],
+    [
+     "FLAG",
+     "O",
+     "in-degree 0 from the model layer: anomaly"
+    ]
+   ]
+  },
+  {
+   "ops": [
+    [
+     "EXTEND",
+     "S",
+     "9 classes -> 5 sectors with ladders, by the back-edge of m_field"
+    ],
+    [
+     "ADD",
+     "M",
+     "m_field; deficit o_prod rewritten into finer observables"
+    ]
+   ],
+   "rules": {
+    "3": "●",
+    "2": "●"
+   },
+   "added_S": [
+    "HEP:s_e",
+    "HEP:s_g",
+    "HEP:s_n",
+    "HEP:s_nu",
+    "HEP:s_p"
+   ],
+   "removed_S": [
+    "HEP:u_01",
+    "HEP:u_02",
+    "HEP:u_0h",
+    "HEP:u_cs",
+    "HEP:u_m0",
+    "HEP:u_m1",
+    "HEP:u_mh",
+    "HEP:u_tach",
+    "HEP:u_vac"
+   ],
+   "added_M": [
+    "HEP:m_field"
+   ],
+   "removed_M": [
+    "HEP:m_L"
+   ],
+   "added_O": [
+    "HEP:o_G",
+    "HEP:o_sig"
+   ],
+   "removed_O": [
+    "HEP:o_E",
+    "HEP:o_S",
+    "HEP:o_p",
+    "HEP:o_prod"
+   ],
+   "added_routes": [
+    [
+     "backedge",
+     [
+      "HEP:m_U"
+     ],
+     "HEP:s_e"
+    ],
+    [
+     "backedge",
+     [
+      "HEP:m_U"
+     ],
+     "HEP:s_g"
+    ],
+    [
+     "backedge",
+     [
+      "HEP:m_U"
+     ],
+     "HEP:s_n"
+    ],
+    [
+     "backedge",
+     [
+      "HEP:m_U"
+     ],
+     "HEP:s_nu"
+    ],
+    [
+     "backedge",
+     [
+      "HEP:m_U"
+     ],
+     "HEP:s_p"
+    ],
+    [
+     "backedge",
+     [
+      "HEP:m_field"
+     ],
+     "HEP:s_e"
+    ],
+    [
+     "backedge",
+     [
+      "HEP:m_field"
+     ],
+     "HEP:s_g"
+    ],
+    [
+     "backedge",
+     [
+      "HEP:m_field"
+     ],
+     "HEP:s_n"
+    ],
+    [
+     "backedge",
+     [
+      "HEP:m_field"
+     ],
+     "HEP:s_nu"
+    ],
+    [
+     "backedge",
+     [
+      "HEP:m_field"
+     ],
+     "HEP:s_p"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_e"
+     ],
+     "HEP:m_A"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_e"
+     ],
+     "HEP:m_U"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_e"
+     ],
+     "HEP:m_field"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_g"
+     ],
+     "HEP:m_A"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_g"
+     ],
+     "HEP:m_U"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_g"
+     ],
+     "HEP:m_field"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_n"
+     ],
+     "HEP:m_A"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_n"
+     ],
+     "HEP:m_U"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_n"
+     ],
+     "HEP:m_field"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_nu"
+     ],
+     "HEP:m_A"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_nu"
+     ],
+     "HEP:m_U"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_nu"
+     ],
+     "HEP:m_field"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_p"
+     ],
+     "HEP:m_A"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_p"
+     ],
+     "HEP:m_U"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_p"
+     ],
+     "HEP:m_field"
+    ],
+    [
+     "frames",
+     [
+      "HEP:m_A"
+     ],
+     "HEP:o_G"
+    ],
+    [
+     "frames",
+     [
+      "HEP:m_A"
+     ],
+     "HEP:o_sig"
+    ]
+   ],
+   "removed_routes": [
+    [
+     "backedge",
+     [
+      "HEP:m_U"
+     ],
+     "HEP:u_01"
+    ],
+    [
+     "backedge",
+     [
+      "HEP:m_U"
+     ],
+     "HEP:u_02"
+    ],
+    [
+     "backedge",
+     [
+      "HEP:m_U"
+     ],
+     "HEP:u_0h"
+    ],
+    [
+     "backedge",
+     [
+      "HEP:m_U"
+     ],
+     "HEP:u_cs"
+    ],
+    [
+     "backedge",
+     [
+      "HEP:m_U"
+     ],
+     "HEP:u_m0"
+    ],
+    [
+     "backedge",
+     [
+      "HEP:m_U"
+     ],
+     "HEP:u_m1"
+    ],
+    [
+     "backedge",
+     [
+      "HEP:m_U"
+     ],
+     "HEP:u_mh"
+    ],
+    [
+     "backedge",
+     [
+      "HEP:m_U"
+     ],
+     "HEP:u_tach"
+    ],
+    [
+     "backedge",
+     [
+      "HEP:m_U"
+     ],
+     "HEP:u_vac"
+    ],
+    [
+     "enters",
+     [
+      "HEP:u_01"
+     ],
+     "HEP:m_A"
+    ],
+    [
+     "enters",
+     [
+      "HEP:u_01"
+     ],
+     "HEP:m_U"
+    ],
+    [
+     "enters",
+     [
+      "HEP:u_02"
+     ],
+     "HEP:m_A"
+    ],
+    [
+     "enters",
+     [
+      "HEP:u_02"
+     ],
+     "HEP:m_U"
+    ],
+    [
+     "enters",
+     [
+      "HEP:u_0h"
+     ],
+     "HEP:m_A"
+    ],
+    [
+     "enters",
+     [
+      "HEP:u_0h"
+     ],
+     "HEP:m_U"
+    ],
+    [
+     "enters",
+     [
+      "HEP:u_cs"
+     ],
+     "HEP:m_A"
+    ],
+    [
+     "enters",
+     [
+      "HEP:u_cs"
+     ],
+     "HEP:m_U"
+    ],
+    [
+     "enters",
+     [
+      "HEP:u_m0"
+     ],
+     "HEP:m_A"
+    ],
+    [
+     "enters",
+     [
+      "HEP:u_m0"
+     ],
+     "HEP:m_U"
+    ],
+    [
+     "enters",
+     [
+      "HEP:u_m1"
+     ],
+     "HEP:m_A"
+    ],
+    [
+     "enters",
+     [
+      "HEP:u_m1"
+     ],
+     "HEP:m_U"
+    ],
+    [
+     "enters",
+     [
+      "HEP:u_mh"
+     ],
+     "HEP:m_A"
+    ],
+    [
+     "enters",
+     [
+      "HEP:u_mh"
+     ],
+     "HEP:m_U"
+    ],
+    [
+     "enters",
+     [
+      "HEP:u_tach"
+     ],
+     "HEP:m_A"
+    ],
+    [
+     "enters",
+     [
+      "HEP:u_tach"
+     ],
+     "HEP:m_U"
+    ],
+    [
+     "enters",
+     [
+      "HEP:u_vac"
+     ],
+     "HEP:m_A"
+    ],
+    [
+     "enters",
+     [
+      "HEP:u_vac"
+     ],
+     "HEP:m_U"
+    ],
+    [
+     "frames",
+     [
+      "HEP:m_A"
+     ],
+     "HEP:o_S"
+    ],
+    [
+     "frames",
+     [
+      "HEP:m_A"
+     ],
+     "HEP:o_p"
+    ],
+    [
+     "lineage",
+     [
+      "HEP:m_L"
+     ],
+     "HEP:m_U"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_L"
+     ],
+     "HEP:o_E"
+    ]
+   ],
+   "unexplained_before": [
+    "o_prod"
+   ],
+   "unexplained_after": [
+    "o_G",
+    "o_sig"
+   ],
+   "newly_unexplained": [
+    "o_G",
+    "o_sig"
+   ],
+   "sector_map": {},
+   "new_sectors": [],
+   "r2_form": "anomaly",
+   "new_and_routes": 0,
+   "reattached_and_routes": 0,
+   "index": 4,
+   "id": "fock",
+   "driver": "resp",
+   "recorded_ops": [
+    [
+     "ADD",
+     "M",
+     "quantum field a, a^{†} on Fock space (L merges into L_{0})"
+    ],
+    [
+     "EXTEND",
+     "S",
+     "each realized UIR → Fock sector with the ladder |0⟩…|N⟩, by the back-edge of the field"
+    ],
+    [
+     "REWRITE",
+     "O",
+     "particle production → Γ, σ (still in-degree 0: S = 1 without L_{int})"
+    ]
+   ]
+  },
+  {
+   "ops": [
+    [
+     "ADD",
+     "M",
+     "m_qed; deficit o_sig, o_G rewritten into finer observables; explains the observed-before-explained o_compton, o_ae, o_lamb"
+    ],
+    [
+     "ROUTE",
+     "S->M",
+     "1 new AND route(s): m_qed <- 2 leg(s)"
+    ],
+    [
+     "CALIBRATE",
+     "O->M",
+     "calibration edge(s) added for o_alpha; new parameter(s): o_alpha"
+    ]
+   ],
+   "rules": {
+    "2": "●",
+    "4": "●",
+    "9": "●"
+   },
+   "added_S": [],
+   "removed_S": [],
+   "added_M": [
+    "HEP:m_qed"
+   ],
+   "removed_M": [],
+   "added_O": [
+    "HEP:o_ae",
+    "HEP:o_alpha",
+    "HEP:o_beta",
+    "HEP:o_compton",
+    "HEP:o_lamb",
+    "HEP:o_pair"
+   ],
+   "removed_O": [
+    "HEP:o_G",
+    "HEP:o_m",
+    "HEP:o_s",
+    "HEP:o_sig"
+   ],
+   "added_routes": [
+    [
+     "calibrates",
+     [
+      "HEP:m_qed"
+     ],
+     "HEP:o_alpha"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_e",
+      "HEP:s_g"
+     ],
+     "HEP:m_qed"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_qed"
+     ],
+     "HEP:o_ae"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_qed"
+     ],
+     "HEP:o_compton"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_qed"
+     ],
+     "HEP:o_lamb"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_qed"
+     ],
+     "HEP:o_pair"
+    ]
+   ],
+   "removed_routes": [
+    [
+     "frames",
+     [
+      "HEP:m_A"
+     ],
+     "HEP:o_G"
+    ],
+    [
+     "frames",
+     [
+      "HEP:m_A"
+     ],
+     "HEP:o_sig"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_U"
+     ],
+     "HEP:o_m"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_U"
+     ],
+     "HEP:o_s"
+    ]
+   ],
+   "unexplained_before": [
+    "o_G",
+    "o_sig"
+   ],
+   "unexplained_after": [
+    "o_beta"
+   ],
+   "newly_unexplained": [
+    "o_beta"
+   ],
+   "sector_map": {},
+   "new_sectors": [],
+   "r2_form": "anomaly",
+   "new_and_routes": 1,
+   "reattached_and_routes": 0,
+   "index": 5,
+   "id": "qed",
+   "driver": "anom",
+   "recorded_ops": [
+    [
+     "ADD",
+     "M",
+     "QED vertex (fundamental, dimensionless e)"
+    ],
+    [
+     "ROUTE",
+     "S→M",
+     "e(1)∧γ(1)"
+    ],
+    [
+     "ADD",
+     "O",
+     "Compton, pair production, a_{e}, Lamb shift, α"
+    ],
+    [
+     "PREDICT",
+     "M→O",
+     "pair production (P); Compton, a_{e}, Lamb explained (A)"
+    ],
+    [
+     "CALIBRATE",
+     "O→M",
+     "α fixes e"
+    ]
+   ]
+  },
+  {
+   "ops": [
+    [
+     "ADD",
+     "M",
+     "m_fermi; reaches the open deficit o_beta"
+    ],
+    [
+     "ADD",
+     "M(eff)",
+     "effective node(s) m_fermi: dimensionful coupling, temporary by construction"
+    ],
+    [
+     "ROUTE",
+     "S->M",
+     "1 new AND route(s): m_fermi <- 4 leg(s)"
+    ],
+    [
+     "CALIBRATE",
+     "O->M",
+     "calibration edge(s) added for o_GF; new parameter(s): o_GF"
+    ]
+   ],
+   "rules": {
+    "2": "●",
+    "5": "●",
+    "4": "●",
+    "9": "●"
+   },
+   "added_S": [],
+   "removed_S": [],
+   "added_M": [
+    "HEP:m_fermi"
+   ],
+   "removed_M": [],
+   "added_O": [
+    "HEP:o_GF",
+    "HEP:o_ntau"
+   ],
+   "removed_O": [
+    "HEP:o_lamb",
+    "HEP:o_pair"
+   ],
+   "added_routes": [
+    [
+     "calibrates",
+     [
+      "HEP:m_fermi"
+     ],
+     "HEP:o_GF"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_n",
+      "HEP:s_p",
+      "HEP:s_e",
+      "HEP:s_nu"
+     ],
+     "HEP:m_fermi"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_fermi"
+     ],
+     "HEP:o_beta"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_fermi"
+     ],
+     "HEP:o_ntau"
+    ]
+   ],
+   "removed_routes": [
+    [
+     "predicts",
+     [
+      "HEP:m_qed"
+     ],
+     "HEP:o_lamb"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_qed"
+     ],
+     "HEP:o_pair"
+    ]
+   ],
+   "unexplained_before": [
+    "o_beta"
+   ],
+   "unexplained_after": [],
+   "newly_unexplained": [],
+   "sector_map": {},
+   "new_sectors": [],
+   "r2_form": "anomaly",
+   "new_and_routes": 1,
+   "reattached_and_routes": 0,
+   "index": 6,
+   "id": "fermi",
+   "driver": "anom",
+   "recorded_ops": [
+    [
+     "ADD",
+     "M",
+     "Fermi contact term (effective: dim G_{F} = −2)"
+    ],
+    [
+     "ROUTE",
+     "S→M",
+     "n(1)∧p(1)∧e(1)∧ν̄(1)"
+    ],
+    [
+     "PREDICT",
+     "M→O",
+     "β spectrum shape (A explained), τ_{n} (P)"
+    ],
+    [
+     "CALIBRATE",
+     "O→M",
+     "G_{F}"
+    ]
+   ]
+  },
+  {
+   "ops": [
+    [
+     "SPLIT",
+     "S",
+     "s_nu -> s_nue, s_num (same irreducible block, distinguished by an observable)"
+    ],
+    [
+     "ADD",
+     "S",
+     "new sector(s) s_mu"
+    ],
+    [
+     "ADD",
+     "M",
+     "m_mu; explains the observed-before-explained o_mutau"
+    ],
+    [
+     "ADD",
+     "M(eff)",
+     "effective node(s) m_mu: dimensionful coupling, temporary by construction"
+    ],
+    [
+     "SIGNAL",
+     "M",
+     "calibration edge transferred between coexisting nodes (o_GF: m_fermi -> m_mu): a merge is due"
+    ],
+    [
+     "ROUTE",
+     "S->M",
+     "1 new AND route(s): m_mu <- 4 leg(s)"
+    ],
+    [
+     "CALIBRATE",
+     "O->M",
+     "calibration edge(s) added for o_GF; re-attached only"
+    ]
+   ],
+   "rules": {
+    "8": "●",
+    "2": "●",
+    "5": "●",
+    "6": "○",
+    "4": "●",
+    "9": "●"
+   },
+   "added_S": [
+    "HEP:s_mu",
+    "HEP:s_nue",
+    "HEP:s_num"
+   ],
+   "removed_S": [
+    "HEP:s_nu"
+   ],
+   "added_M": [
+    "HEP:m_mu"
+   ],
+   "removed_M": [],
+   "added_O": [
+    "HEP:o_michel",
+    "HEP:o_mutau",
+    "HEP:o_twonu"
+   ],
+   "removed_O": [],
+   "added_routes": [
+    [
+     "backedge",
+     [
+      "HEP:m_U"
+     ],
+     "HEP:s_mu"
+    ],
+    [
+     "backedge",
+     [
+      "HEP:m_U"
+     ],
+     "HEP:s_nue"
+    ],
+    [
+     "backedge",
+     [
+      "HEP:m_U"
+     ],
+     "HEP:s_num"
+    ],
+    [
+     "backedge",
+     [
+      "HEP:m_field"
+     ],
+     "HEP:s_mu"
+    ],
+    [
+     "backedge",
+     [
+      "HEP:m_field"
+     ],
+     "HEP:s_nue"
+    ],
+    [
+     "backedge",
+     [
+      "HEP:m_field"
+     ],
+     "HEP:s_num"
+    ],
+    [
+     "calibrates",
+     [
+      "HEP:m_mu"
+     ],
+     "HEP:o_GF"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_mu"
+     ],
+     "HEP:m_A"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_mu"
+     ],
+     "HEP:m_U"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_mu"
+     ],
+     "HEP:m_field"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_mu",
+      "HEP:s_num",
+      "HEP:s_e",
+      "HEP:s_nue"
+     ],
+     "HEP:m_mu"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_n",
+      "HEP:s_p",
+      "HEP:s_e",
+      "HEP:s_nue"
+     ],
+     "HEP:m_fermi"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_nue"
+     ],
+     "HEP:m_A"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_nue"
+     ],
+     "HEP:m_U"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_nue"
+     ],
+     "HEP:m_field"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_num"
+     ],
+     "HEP:m_A"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_num"
+     ],
+     "HEP:m_U"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_num"
+     ],
+     "HEP:m_field"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_mu"
+     ],
+     "HEP:o_michel"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_mu"
+     ],
+     "HEP:o_mutau"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_mu"
+     ],
+     "HEP:o_twonu"
+    ]
+   ],
+   "removed_routes": [
+    [
+     "backedge",
+     [
+      "HEP:m_U"
+     ],
+     "HEP:s_nu"
+    ],
+    [
+     "backedge",
+     [
+      "HEP:m_field"
+     ],
+     "HEP:s_nu"
+    ],
+    [
+     "calibrates",
+     [
+      "HEP:m_fermi"
+     ],
+     "HEP:o_GF"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_n",
+      "HEP:s_p",
+      "HEP:s_e",
+      "HEP:s_nu"
+     ],
+     "HEP:m_fermi"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_nu"
+     ],
+     "HEP:m_A"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_nu"
+     ],
+     "HEP:m_U"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_nu"
+     ],
+     "HEP:m_field"
+    ]
+   ],
+   "unexplained_before": [],
+   "unexplained_after": [],
+   "newly_unexplained": [],
+   "sector_map": {
+    "s_nu": [
+     "s_nue",
+     "s_num"
+    ]
+   },
+   "new_sectors": [
+    "s_mu"
+   ],
+   "r2_form": "anomaly",
+   "new_and_routes": 1,
+   "reattached_and_routes": 0,
+   "index": 7,
+   "id": "muon",
+   "driver": "anom",
+   "recorded_ops": [
+    [
+     "ADD",
+     "S",
+     "μ sector"
+    ],
+    [
+     "SPLIT",
+     "S",
+     "ν → ν_{e}, ν_{μ} (Danby et al. 1962)"
+    ],
+    [
+     "ADD",
+     "M",
+     "μ-decay contact term (effective, same G_{F})"
+    ],
+    [
+     "ROUTE",
+     "S→M",
+     "μ(1)∧ν_{μ}(1)∧e(1)∧ν̄_{e}(1)"
+    ],
+    [
+     "PREDICT",
+     "M→O",
+     "Michel ρ, ν_{μ} ≠ ν_{e} (P)"
+    ],
+    [
+     "CALIBRATE",
+     "O→M",
+     "G_{F} from τ_{μ}"
+    ],
+    [
+     "SIGNAL",
+     "M",
+     "two nodes share one coupling: a merge is due"
+    ]
+   ]
+  },
+  {
+   "ops": [
+    [
+     "ADD",
+     "M",
+     "m_va with no unexplained observable before the step: theory-internal form; new P-badged observables o_wu, o_hel"
+    ],
+    [
+     "ADD",
+     "M(eff)",
+     "effective node(s) m_va: dimensionful coupling, temporary by construction"
+    ],
+    [
+     "MERGE",
+     "M",
+     "m_fermi, m_mu -> m_va: 2 routes (union) contained in the 3 routes of the merged node"
+    ],
+    [
+     "ROUTE",
+     "S->M",
+     "3 new AND route(s): m_va <- 4 leg(s); m_va <- 4 leg(s); m_va <- 4 leg(s)"
+    ],
+    [
+     "CALIBRATE",
+     "O->M",
+     "calibration edge(s) added for o_GF; re-attached only"
+    ]
+   ],
+   "rules": {
+    "2": "●",
+    "5": "●",
+    "6": "●",
+    "4": "●",
+    "9": "●"
+   },
+   "added_S": [],
+   "removed_S": [],
+   "added_M": [
+    "HEP:m_va"
+   ],
+   "removed_M": [
+    "HEP:m_fermi",
+    "HEP:m_mu"
+   ],
+   "added_O": [
+    "HEP:o_hel",
+    "HEP:o_wu"
+   ],
+   "removed_O": [],
+   "added_routes": [
+    [
+     "calibrates",
+     [
+      "HEP:m_va"
+     ],
+     "HEP:o_GF"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_mu",
+      "HEP:s_num",
+      "HEP:s_e",
+      "HEP:s_nue"
+     ],
+     "HEP:m_va"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_mu",
+      "HEP:s_num",
+      "HEP:s_p",
+      "HEP:s_n"
+     ],
+     "HEP:m_va"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_n",
+      "HEP:s_p",
+      "HEP:s_e",
+      "HEP:s_nue"
+     ],
+     "HEP:m_va"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_va"
+     ],
+     "HEP:o_beta"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_va"
+     ],
+     "HEP:o_hel"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_va"
+     ],
+     "HEP:o_michel"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_va"
+     ],
+     "HEP:o_mutau"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_va"
+     ],
+     "HEP:o_ntau"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_va"
+     ],
+     "HEP:o_twonu"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_va"
+     ],
+     "HEP:o_wu"
+    ]
+   ],
+   "removed_routes": [
+    [
+     "calibrates",
+     [
+      "HEP:m_mu"
+     ],
+     "HEP:o_GF"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_mu",
+      "HEP:s_num",
+      "HEP:s_e",
+      "HEP:s_nue"
+     ],
+     "HEP:m_mu"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_n",
+      "HEP:s_p",
+      "HEP:s_e",
+      "HEP:s_nue"
+     ],
+     "HEP:m_fermi"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_fermi"
+     ],
+     "HEP:o_beta"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_fermi"
+     ],
+     "HEP:o_ntau"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_mu"
+     ],
+     "HEP:o_michel"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_mu"
+     ],
+     "HEP:o_mutau"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_mu"
+     ],
+     "HEP:o_twonu"
+    ]
+   ],
+   "unexplained_before": [],
+   "unexplained_after": [],
+   "newly_unexplained": [],
+   "sector_map": {},
+   "new_sectors": [],
+   "r2_form": "theory-internal",
+   "new_and_routes": 3,
+   "reattached_and_routes": 0,
+   "index": 8,
+   "id": "va",
+   "driver": "anom",
+   "recorded_ops": [
+    [
+     "ADD",
+     "O",
+     "parity asymmetries, ν helicity (P, test proposed by Lee & Yang)"
+    ],
+    [
+     "FLAG",
+     "O",
+     "parity-even nodes cannot reach them"
+    ],
+    [
+     "MERGE",
+     "M",
+     "Fermi + μ-decay → one V−A current–current node"
+    ],
+    [
+     "ROUTE",
+     "S→M",
+     "three routes: β decay, μ decay, μ capture"
+    ],
+    [
+     "PREDICT",
+     "M→O",
+     "ρ = ¾, h(ν) = −1"
+    ]
+   ]
+  },
+  {
+   "ops": [
+    [
+     "REPLACE",
+     "S",
+     "s_n, s_p -> s_d, s_u (same irreducible blocks: compositeness)"
+    ],
+    [
+     "ADD",
+     "S",
+     "new sector(s) s_W, s_Z"
+    ],
+    [
+     "ADD",
+     "M",
+     "m_cc, m_gs, m_nc with no unexplained observable before the step: theory-internal form; new P-badged observables o_nc, o_mw, o_mz, o_nnu, o_tgc"
+    ],
+    [
+     "ABSORB",
+     "M",
+     "m_va absorbed into m_cc, m_gs, m_nc: each of the 3 old routes is covered by new routes once the mediator leg(s) s_W, s_Z are removed"
+    ],
+    [
+     "ROUTE",
+     "S->M",
+     "7 new AND route(s): m_cc <- 3 leg(s); m_cc <- 3 leg(s); m_cc <- 3 leg(s); m_gs <- 2 leg(s); m_gs <- 2 leg(s); m_nc <- 7 leg(s); m_qed <- 5 leg(s)"
+    ],
+    [
+     "CALIBRATE",
+     "O->M",
+     "calibration edge(s) added for o_GF, o_sw; new parameter(s): o_sw"
+    ]
+   ],
+   "rules": {
+    "8": "●",
+    "2": "●",
+    "7": "●",
+    "4": "●",
+    "9": "●"
+   },
+   "added_S": [
+    "HEP:s_W",
+    "HEP:s_Z",
+    "HEP:s_d",
+    "HEP:s_u"
+   ],
+   "removed_S": [
+    "HEP:s_n",
+    "HEP:s_p"
+   ],
+   "added_M": [
+    "HEP:m_cc",
+    "HEP:m_gs",
+    "HEP:m_nc"
+   ],
+   "removed_M": [
+    "HEP:m_va"
+   ],
+   "added_O": [
+    "HEP:o_mw",
+    "HEP:o_mz",
+    "HEP:o_nc",
+    "HEP:o_nnu",
+    "HEP:o_sw",
+    "HEP:o_tgc"
+   ],
+   "removed_O": [
+    "HEP:o_compton",
+    "HEP:o_hel",
+    "HEP:o_michel",
+    "HEP:o_ntau",
+    "HEP:o_twonu"
+   ],
+   "added_routes": [
+    [
+     "backedge",
+     [
+      "HEP:m_U"
+     ],
+     "HEP:s_W"
+    ],
+    [
+     "backedge",
+     [
+      "HEP:m_U"
+     ],
+     "HEP:s_Z"
+    ],
+    [
+     "backedge",
+     [
+      "HEP:m_U"
+     ],
+     "HEP:s_d"
+    ],
+    [
+     "backedge",
+     [
+      "HEP:m_U"
+     ],
+     "HEP:s_u"
+    ],
+    [
+     "backedge",
+     [
+      "HEP:m_field"
+     ],
+     "HEP:s_W"
+    ],
+    [
+     "backedge",
+     [
+      "HEP:m_field"
+     ],
+     "HEP:s_Z"
+    ],
+    [
+     "backedge",
+     [
+      "HEP:m_field"
+     ],
+     "HEP:s_d"
+    ],
+    [
+     "backedge",
+     [
+      "HEP:m_field"
+     ],
+     "HEP:s_u"
+    ],
+    [
+     "calibrates",
+     [
+      "HEP:m_cc"
+     ],
+     "HEP:o_GF"
+    ],
+    [
+     "calibrates",
+     [
+      "HEP:m_nc"
+     ],
+     "HEP:o_sw"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_W"
+     ],
+     "HEP:m_A"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_W"
+     ],
+     "HEP:m_U"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_W"
+     ],
+     "HEP:m_field"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_W",
+      "HEP:s_Z"
+     ],
+     "HEP:m_gs"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_W",
+      "HEP:s_g"
+     ],
+     "HEP:m_gs"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_Z"
+     ],
+     "HEP:m_A"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_Z"
+     ],
+     "HEP:m_U"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_Z"
+     ],
+     "HEP:m_field"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_d"
+     ],
+     "HEP:m_A"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_d"
+     ],
+     "HEP:m_U"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_d"
+     ],
+     "HEP:m_field"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_e",
+      "HEP:s_mu",
+      "HEP:s_u",
+      "HEP:s_d",
+      "HEP:s_g"
+     ],
+     "HEP:m_qed"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_nue",
+      "HEP:s_e",
+      "HEP:s_W"
+     ],
+     "HEP:m_cc"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_nue",
+      "HEP:s_e",
+      "HEP:s_num",
+      "HEP:s_mu",
+      "HEP:s_u",
+      "HEP:s_d",
+      "HEP:s_Z"
+     ],
+     "HEP:m_nc"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_num",
+      "HEP:s_mu",
+      "HEP:s_W"
+     ],
+     "HEP:m_cc"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_u"
+     ],
+     "HEP:m_A"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_u"
+     ],
+     "HEP:m_U"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_u"
+     ],
+     "HEP:m_field"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_u",
+      "HEP:s_d",
+      "HEP:s_W"
+     ],
+     "HEP:m_cc"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_cc"
+     ],
+     "HEP:o_beta"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_cc"
+     ],
+     "HEP:o_mutau"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_cc"
+     ],
+     "HEP:o_mw"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_cc"
+     ],
+     "HEP:o_wu"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_gs"
+     ],
+     "HEP:o_tgc"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_nc"
+     ],
+     "HEP:o_mz"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_nc"
+     ],
+     "HEP:o_nc"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_nc"
+     ],
+     "HEP:o_nnu"
+    ]
+   ],
+   "removed_routes": [
+    [
+     "backedge",
+     [
+      "HEP:m_U"
+     ],
+     "HEP:s_n"
+    ],
+    [
+     "backedge",
+     [
+      "HEP:m_U"
+     ],
+     "HEP:s_p"
+    ],
+    [
+     "backedge",
+     [
+      "HEP:m_field"
+     ],
+     "HEP:s_n"
+    ],
+    [
+     "backedge",
+     [
+      "HEP:m_field"
+     ],
+     "HEP:s_p"
+    ],
+    [
+     "calibrates",
+     [
+      "HEP:m_va"
+     ],
+     "HEP:o_GF"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_e",
+      "HEP:s_g"
+     ],
+     "HEP:m_qed"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_mu",
+      "HEP:s_num",
+      "HEP:s_e",
+      "HEP:s_nue"
+     ],
+     "HEP:m_va"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_mu",
+      "HEP:s_num",
+      "HEP:s_p",
+      "HEP:s_n"
+     ],
+     "HEP:m_va"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_n"
+     ],
+     "HEP:m_A"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_n"
+     ],
+     "HEP:m_U"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_n"
+     ],
+     "HEP:m_field"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_n",
+      "HEP:s_p",
+      "HEP:s_e",
+      "HEP:s_nue"
+     ],
+     "HEP:m_va"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_p"
+     ],
+     "HEP:m_A"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_p"
+     ],
+     "HEP:m_U"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_p"
+     ],
+     "HEP:m_field"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_qed"
+     ],
+     "HEP:o_compton"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_va"
+     ],
+     "HEP:o_beta"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_va"
+     ],
+     "HEP:o_hel"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_va"
+     ],
+     "HEP:o_michel"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_va"
+     ],
+     "HEP:o_mutau"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_va"
+     ],
+     "HEP:o_ntau"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_va"
+     ],
+     "HEP:o_twonu"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_va"
+     ],
+     "HEP:o_wu"
+    ]
+   ],
+   "unexplained_before": [],
+   "unexplained_after": [],
+   "newly_unexplained": [],
+   "sector_map": {
+    "s_n": [
+     "s_d",
+     "s_u"
+    ],
+    "s_p": [
+     "s_d",
+     "s_u"
+    ]
+   },
+   "new_sectors": [
+    "s_W",
+    "s_Z"
+   ],
+   "r2_form": "theory-internal",
+   "new_and_routes": 7,
+   "reattached_and_routes": 0,
+   "index": 9,
+   "id": "ew",
+   "driver": "pred",
+   "recorded_ops": [
+    [
+     "ADD",
+     "S",
+     "W^{±}, Z^{0} sectors"
+    ],
+    [
+     "REPLACE",
+     "S",
+     "(n, p) → (u, d)"
+    ],
+    [
+     "ABSORB",
+     "M",
+     "V−A → charged-current gauge vertex; G_{F}/√2 = g^{2}/8M_{W}^{2}"
+    ],
+    [
+     "ADD",
+     "M",
+     "neutral current and gauge self-couplings, forced by the symmetry"
+    ],
+    [
+     "REWRITE",
+     "M",
+     "QED vertex → electromagnetic part, e = g sinθ_{W}"
+    ],
+    [
+     "PREDICT",
+     "M→O",
+     "neutral currents (1973), M_{W}, M_{Z} (1983), N_{ν}, triple-gauge couplings (P)"
+    ],
+    [
+     "CALIBRATE",
+     "O→M",
+     "sin^{2}θ_{W}; G_{F}"
+    ]
+   ]
+  },
+  {
+   "ops": [
+    [
+     "ADD",
+     "S",
+     "new sector(s) s_H"
+    ],
+    [
+     "ADD",
+     "M",
+     "m_hg, m_pot, m_yuk with no unexplained observable before the step: theory-internal form; new P-badged observables o_mh, o_hbr, o_lam"
+    ],
+    [
+     "ROUTE",
+     "S->M",
+     "3 new AND route(s): m_hg <- 2 leg(s); m_pot <- 1 leg(s); m_yuk <- 5 leg(s)"
+    ],
+    [
+     "CALIBRATE",
+     "O->M",
+     "calibration edge(s) added for o_mf, o_mh; new parameter(s): o_mf, o_mh"
+    ]
+   ],
+   "rules": {
+    "2": "●",
+    "4": "●",
+    "9": "●"
+   },
+   "added_S": [
+    "HEP:s_H"
+   ],
+   "removed_S": [],
+   "added_M": [
+    "HEP:m_hg",
+    "HEP:m_pot",
+    "HEP:m_yuk"
+   ],
+   "removed_M": [],
+   "added_O": [
+    "HEP:o_hbr",
+    "HEP:o_lam",
+    "HEP:o_mf",
+    "HEP:o_mh"
+   ],
+   "removed_O": [
+    "HEP:o_sw",
+    "HEP:o_tgc",
+    "HEP:o_wu"
+   ],
+   "added_routes": [
+    [
+     "backedge",
+     [
+      "HEP:m_U"
+     ],
+     "HEP:s_H"
+    ],
+    [
+     "backedge",
+     [
+      "HEP:m_field"
+     ],
+     "HEP:s_H"
+    ],
+    [
+     "calibrates",
+     [
+      "HEP:m_pot"
+     ],
+     "HEP:o_mh"
+    ],
+    [
+     "calibrates",
+     [
+      "HEP:m_yuk"
+     ],
+     "HEP:o_mf"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_H"
+     ],
+     "HEP:m_A"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_H"
+     ],
+     "HEP:m_U"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_H"
+     ],
+     "HEP:m_field"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_H"
+     ],
+     "HEP:m_pot"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_H",
+      "HEP:s_W"
+     ],
+     "HEP:m_hg"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_H",
+      "HEP:s_e",
+      "HEP:s_mu",
+      "HEP:s_u",
+      "HEP:s_d"
+     ],
+     "HEP:m_yuk"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_hg"
+     ],
+     "HEP:o_hbr"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_hg"
+     ],
+     "HEP:o_mw"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_hg"
+     ],
+     "HEP:o_mz"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_pot"
+     ],
+     "HEP:o_lam"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_yuk"
+     ],
+     "HEP:o_hbr"
+    ]
+   ],
+   "removed_routes": [
+    [
+     "calibrates",
+     [
+      "HEP:m_nc"
+     ],
+     "HEP:o_sw"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_W",
+      "HEP:s_g"
+     ],
+     "HEP:m_gs"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_num",
+      "HEP:s_mu",
+      "HEP:s_W"
+     ],
+     "HEP:m_cc"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_cc"
+     ],
+     "HEP:o_mw"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_cc"
+     ],
+     "HEP:o_wu"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_gs"
+     ],
+     "HEP:o_tgc"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_nc"
+     ],
+     "HEP:o_mz"
+    ]
+   ],
+   "unexplained_before": [],
+   "unexplained_after": [],
+   "newly_unexplained": [],
+   "sector_map": {},
+   "new_sectors": [
+    "s_H"
+   ],
+   "r2_form": "theory-internal",
+   "new_and_routes": 3,
+   "reattached_and_routes": 0,
+   "index": 10,
+   "id": "higgs",
+   "driver": "pred",
+   "recorded_ops": [
+    [
+     "ADD",
+     "S",
+     "H sector"
+    ],
+    [
+     "ADD",
+     "M",
+     "Higgs–gauge, Yukawa, potential"
+    ],
+    [
+     "ROUTE",
+     "S→M",
+     "H(1)∧W(2), H(1)∧Z(2), H(1)∧f(2), H(3)"
+    ],
+    [
+     "PREDICT",
+     "M→O",
+     "m_{H} (P, 2012), Higgs rates (P); λ_{HHH} untested"
+    ],
+    [
+     "CALIBRATE",
+     "O→M",
+     "m_{f} → y_{f}; m_{H} → λ"
+    ]
+   ]
+  },
+  {
+   "ops": [
+    [
+     "ADD",
+     "M(cand)",
+     "candidate node m_numass: hypothesis announced, not established"
+    ],
+    [
+     "ROUTE",
+     "S->M",
+     "1 new AND route(s): m_numass <- 3 leg(s)"
+    ]
+   ],
+   "rules": {
+    "2": "○",
+    "4": "●"
+   },
+   "added_S": [],
+   "removed_S": [],
+   "added_M": [
+    "HEP:m_numass"
+   ],
+   "removed_M": [],
+   "added_O": [
+    "HEP:o_osc"
+   ],
+   "removed_O": [
+    "HEP:o_alpha",
+    "HEP:o_nc"
+   ],
+   "added_routes": [
+    [
+     "candidate",
+     [
+      "HEP:m_numass"
+     ],
+     "HEP:o_osc"
+    ],
+    [
+     "candidate",
+     [
+      "HEP:s_nue",
+      "HEP:s_num",
+      "HEP:s_H"
+     ],
+     "HEP:m_numass"
+    ]
+   ],
+   "removed_routes": [
+    [
+     "calibrates",
+     [
+      "HEP:m_qed"
+     ],
+     "HEP:o_alpha"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_nc"
+     ],
+     "HEP:o_nc"
+    ]
+   ],
+   "unexplained_before": [],
+   "unexplained_after": [
+    "o_osc"
+   ],
+   "newly_unexplained": [
+    "o_osc"
+   ],
+   "sector_map": {},
+   "new_sectors": [],
+   "r2_form": "announced",
+   "new_and_routes": 1,
+   "reattached_and_routes": 0,
+   "index": 11,
+   "id": "frontier",
+   "driver": "anom",
+   "recorded_ops": [
+    [
+     "ADD",
+     "O",
+     "ν flavour oscillation (A)"
+    ],
+    [
+     "FLAG",
+     "O",
+     "in-degree 0: massless ν sectors cannot carry Δm^{2}"
+    ],
+    [
+     "ADD",
+     "M",
+     "candidate ν-mass node (dashed, not established)"
+    ],
+    [
+     "ROUTE",
+     "S→M",
+     "ν(2)∧H(2) (candidate)"
+    ]
+   ]
+  },
+  {
+   "ops": [
+    [
+     "ROUTE",
+     "S->M",
+     "3 new AND route(s): c_gf <- 3 leg(s); c_gg <- 2 leg(s); c_hg <- 2 leg(s)"
+    ],
+    [
+     "ROUTE",
+     "S->M",
+     "9 route(s) re-attached to clusters"
+    ],
+    [
+     "CALIBRATE",
+     "O->M",
+     "calibration edge(s) added for o_GF, o_alpha, o_mf, o_mh; new parameter(s): o_alpha"
+    ],
+    [
+     "CLUSTER",
+     "M",
+     "6 clusters: c_bsm, c_gf, c_gg, c_hg, c_pot, c_yuk; absorbed members: m_fermi, m_mu, m_va, m_qed, m_cc, m_nc, m_gs, m_hg, m_yuk, m_pot, m_numass"
+    ]
+   ],
+   "rules": {
+    "4": "●",
+    "9": "●",
+    "10": "●"
+   },
+   "added_S": [],
+   "removed_S": [],
+   "added_M": [
+    "HEP:c_bsm",
+    "HEP:c_gf",
+    "HEP:c_gg",
+    "HEP:c_hg",
+    "HEP:c_pot",
+    "HEP:c_yuk"
+   ],
+   "removed_M": [
+    "HEP:m_cc",
+    "HEP:m_gs",
+    "HEP:m_hg",
+    "HEP:m_nc",
+    "HEP:m_numass",
+    "HEP:m_pot",
+    "HEP:m_qed",
+    "HEP:m_yuk"
+   ],
+   "added_O": [
+    "HEP:o_alpha",
+    "HEP:o_nc",
+    "HEP:o_tgc",
+    "HEP:o_wu"
+   ],
+   "removed_O": [],
+   "added_routes": [
+    [
+     "calibrates",
+     [
+      "HEP:c_gf"
+     ],
+     "HEP:o_GF"
+    ],
+    [
+     "calibrates",
+     [
+      "HEP:c_gf"
+     ],
+     "HEP:o_alpha"
+    ],
+    [
+     "calibrates",
+     [
+      "HEP:c_pot"
+     ],
+     "HEP:o_mh"
+    ],
+    [
+     "calibrates",
+     [
+      "HEP:c_yuk"
+     ],
+     "HEP:o_mf"
+    ],
+    [
+     "candidate",
+     [
+      "HEP:c_bsm"
+     ],
+     "HEP:o_osc"
+    ],
+    [
+     "candidate",
+     [
+      "HEP:s_nue",
+      "HEP:s_num",
+      "HEP:s_H"
+     ],
+     "HEP:c_bsm"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_H"
+     ],
+     "HEP:c_pot"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_H",
+      "HEP:s_W"
+     ],
+     "HEP:c_hg"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_H",
+      "HEP:s_Z"
+     ],
+     "HEP:c_hg"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_H",
+      "HEP:s_e",
+      "HEP:s_mu",
+      "HEP:s_u",
+      "HEP:s_d"
+     ],
+     "HEP:c_yuk"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_W",
+      "HEP:s_Z"
+     ],
+     "HEP:c_gg"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_W",
+      "HEP:s_g"
+     ],
+     "HEP:c_gg"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_e",
+      "HEP:s_mu",
+      "HEP:s_u",
+      "HEP:s_d",
+      "HEP:s_g"
+     ],
+     "HEP:c_gf"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_nue",
+      "HEP:s_e",
+      "HEP:s_W"
+     ],
+     "HEP:c_gf"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_nue",
+      "HEP:s_e",
+      "HEP:s_num",
+      "HEP:s_mu",
+      "HEP:s_u",
+      "HEP:s_d",
+      "HEP:s_Z"
+     ],
+     "HEP:c_gf"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_num",
+      "HEP:s_mu",
+      "HEP:s_W"
+     ],
+     "HEP:c_gf"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_u",
+      "HEP:s_d",
+      "HEP:s_W"
+     ],
+     "HEP:c_gf"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:c_gf"
+     ],
+     "HEP:o_ae"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:c_gf"
+     ],
+     "HEP:o_beta"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:c_gf"
+     ],
+     "HEP:o_mutau"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:c_gf"
+     ],
+     "HEP:o_nc"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:c_gf"
+     ],
+     "HEP:o_nnu"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:c_gf"
+     ],
+     "HEP:o_wu"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:c_gg"
+     ],
+     "HEP:o_tgc"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:c_hg"
+     ],
+     "HEP:o_hbr"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:c_hg"
+     ],
+     "HEP:o_mw"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:c_hg"
+     ],
+     "HEP:o_mz"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:c_pot"
+     ],
+     "HEP:o_lam"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:c_yuk"
+     ],
+     "HEP:o_hbr"
+    ]
+   ],
+   "removed_routes": [
+    [
+     "calibrates",
+     [
+      "HEP:m_cc"
+     ],
+     "HEP:o_GF"
+    ],
+    [
+     "calibrates",
+     [
+      "HEP:m_pot"
+     ],
+     "HEP:o_mh"
+    ],
+    [
+     "calibrates",
+     [
+      "HEP:m_yuk"
+     ],
+     "HEP:o_mf"
+    ],
+    [
+     "candidate",
+     [
+      "HEP:m_numass"
+     ],
+     "HEP:o_osc"
+    ],
+    [
+     "candidate",
+     [
+      "HEP:s_nue",
+      "HEP:s_num",
+      "HEP:s_H"
+     ],
+     "HEP:m_numass"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_H"
+     ],
+     "HEP:m_pot"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_H",
+      "HEP:s_W"
+     ],
+     "HEP:m_hg"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_H",
+      "HEP:s_e",
+      "HEP:s_mu",
+      "HEP:s_u",
+      "HEP:s_d"
+     ],
+     "HEP:m_yuk"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_W",
+      "HEP:s_Z"
+     ],
+     "HEP:m_gs"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_e",
+      "HEP:s_mu",
+      "HEP:s_u",
+      "HEP:s_d",
+      "HEP:s_g"
+     ],
+     "HEP:m_qed"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_nue",
+      "HEP:s_e",
+      "HEP:s_W"
+     ],
+     "HEP:m_cc"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_nue",
+      "HEP:s_e",
+      "HEP:s_num",
+      "HEP:s_mu",
+      "HEP:s_u",
+      "HEP:s_d",
+      "HEP:s_Z"
+     ],
+     "HEP:m_nc"
+    ],
+    [
+     "enters",
+     [
+      "HEP:s_u",
+      "HEP:s_d",
+      "HEP:s_W"
+     ],
+     "HEP:m_cc"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_cc"
+     ],
+     "HEP:o_beta"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_cc"
+     ],
+     "HEP:o_mutau"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_hg"
+     ],
+     "HEP:o_hbr"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_hg"
+     ],
+     "HEP:o_mw"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_hg"
+     ],
+     "HEP:o_mz"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_nc"
+     ],
+     "HEP:o_nnu"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_pot"
+     ],
+     "HEP:o_lam"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_qed"
+     ],
+     "HEP:o_ae"
+    ],
+    [
+     "predicts",
+     [
+      "HEP:m_yuk"
+     ],
+     "HEP:o_hbr"
+    ]
+   ],
+   "unexplained_before": [
+    "o_osc"
+   ],
+   "unexplained_after": [
+    "o_osc"
+   ],
+   "newly_unexplained": [],
+   "sector_map": {},
+   "new_sectors": [],
+   "new_and_routes": 3,
+   "reattached_and_routes": 9,
+   "index": 12,
+   "id": "sm",
+   "driver": "syn",
+   "recorded_ops": [
+    [
+     "CLUSTER",
+     "M",
+     "7 vertices + 3 absorbed effective nodes → 5 SM Lagrangian terms + 1 candidate cluster"
+    ],
+    [
+     "LINEAGE",
+     "M→M",
+     "Fermi → V−A ← μ-decay; V−A → charged current"
+    ],
+    [
+     "ROUTE",
+     "S→M",
+     "12 routes re-attached to the clusters"
+    ]
+   ]
+  }
+ ],
+ "auto_matrix": {
+  "1": {},
+  "2": {
+   "1": "●",
+   "8": "●"
+  },
+  "3": {
+   "2": "○"
+  },
+  "4": {
+   "2": "●",
+   "3": "●"
+  },
+  "5": {
+   "2": "●",
+   "4": "●",
+   "9": "●"
+  },
+  "6": {
+   "2": "●",
+   "4": "●",
+   "5": "●",
+   "9": "●"
+  },
+  "7": {
+   "2": "●",
+   "4": "●",
+   "5": "●",
+   "6": "○",
+   "8": "●",
+   "9": "●"
+  },
+  "8": {
+   "2": "●",
+   "4": "●",
+   "5": "●",
+   "6": "●",
+   "9": "●"
+  },
+  "9": {
+   "2": "●",
+   "4": "●",
+   "7": "●",
+   "8": "●",
+   "9": "●"
+  },
+  "10": {
+   "2": "●",
+   "4": "●",
+   "9": "●"
+  },
+  "11": {
+   "2": "○",
+   "4": "●"
+  },
+  "12": {
+   "4": "●",
+   "9": "●",
+   "10": "●"
+  }
+ },
+ "hand_matrix": {
+  "1": {},
+  "2": {
+   "1": "●",
+   "8": "●"
+  },
+  "3": {
+   "2": "○"
+  },
+  "4": {
+   "2": "●",
+   "3": "●"
+  },
+  "5": {
+   "2": "●",
+   "4": "●",
+   "9": "●"
+  },
+  "6": {
+   "2": "●",
+   "4": "●",
+   "5": "●",
+   "9": "●"
+  },
+  "7": {
+   "4": "●",
+   "5": "●",
+   "6": "○",
+   "8": "●",
+   "9": "●"
+  },
+  "8": {
+   "2": "●",
+   "4": "●",
+   "6": "●",
+   "9": "●"
+  },
+  "9": {
+   "2": "●",
+   "4": "●",
+   "7": "●",
+   "8": "●",
+   "9": "●"
+  },
+  "10": {
+   "2": "●",
+   "4": "●",
+   "9": "●"
+  },
+  "11": {
+   "2": "○",
+   "4": "●",
+   "8": "○"
+  },
+  "12": {
+   "4": "●",
+   "9": "●",
+   "10": "●"
+  }
+ },
+ "comparison": {
+  "cells": 120,
+  "agree": 117,
+  "disagree": 3,
+  "details": [
+   {
+    "step": 7,
+    "rule": 2,
+    "auto": "●",
+    "hand": ""
+   },
+   {
+    "step": 8,
+    "rule": 5,
+    "auto": "●",
+    "hand": ""
+   },
+   {
+    "step": 11,
+    "rule": 8,
+    "auto": "",
+    "hand": "○"
+   }
+  ],
+  "paper_table_agree": 114,
+  "paper_table_disagree": 6,
+  "paper_table_details": [
+   {
+    "step": 2,
+    "rule": 8,
+    "auto": "●",
+    "paper_table": ""
+   },
+   {
+    "step": 7,
+    "rule": 6,
+    "auto": "○",
+    "paper_table": "●"
+   },
+   {
+    "step": 8,
+    "rule": 9,
+    "auto": "●",
+    "paper_table": ""
+   },
+   {
+    "step": 11,
+    "rule": 2,
+    "auto": "○",
+    "paper_table": "●"
+   },
+   {
+    "step": 11,
+    "rule": 8,
+    "auto": "",
+    "paper_table": "●"
+   },
+   {
+    "step": 12,
+    "rule": 9,
+    "auto": "●",
+    "paper_table": ""
+   }
+  ]
+ },
+ "invariants": {
+  "S_to_S_routes": 0,
+  "O_as_input": 0,
+  "m2o_from_nonM": 0,
+  "and_routes_with_nonS_leg": 0,
+  "and_routes_into_nonM": 0,
+  "routes_checked": 553
+ },
+ "driver_consistency": [
+  {
+   "step": 2,
+   "id": "wigner",
+   "driver": "sym",
+   "deficit_before": false,
+   "r2_form": null
+  },
+  {
+   "step": 3,
+   "id": "anomaly",
+   "driver": "anom",
+   "deficit_before": false,
+   "r2_form": "flagged"
+  },
+  {
+   "step": 4,
+   "id": "fock",
+   "driver": "resp",
+   "deficit_before": true,
+   "r2_form": "anomaly"
+  },
+  {
+   "step": 5,
+   "id": "qed",
+   "driver": "anom",
+   "deficit_before": true,
+   "r2_form": "anomaly"
+  },
+  {
+   "step": 6,
+   "id": "fermi",
+   "driver": "anom",
+   "deficit_before": true,
+   "r2_form": "anomaly"
+  },
+  {
+   "step": 7,
+   "id": "muon",
+   "driver": "anom",
+   "deficit_before": false,
+   "r2_form": "anomaly"
+  },
+  {
+   "step": 8,
+   "id": "va",
+   "driver": "anom",
+   "deficit_before": false,
+   "r2_form": "theory-internal"
+  },
+  {
+   "step": 9,
+   "id": "ew",
+   "driver": "pred",
+   "deficit_before": false,
+   "r2_form": "theory-internal"
+  },
+  {
+   "step": 10,
+   "id": "higgs",
+   "driver": "pred",
+   "deficit_before": false,
+   "r2_form": "theory-internal"
+  },
+  {
+   "step": 11,
+   "id": "frontier",
+   "driver": "anom",
+   "deficit_before": false,
+   "r2_form": "announced"
+  },
+  {
+   "step": 12,
+   "id": "sm",
+   "driver": "syn",
+   "deficit_before": true,
+   "r2_form": null
+  }
+ ],
+ "trajectories": {
+  "S": [
+   1,
+   9,
+   9,
+   5,
+   5,
+   5,
+   7,
+   7,
+   9,
+   10,
+   10,
+   10
+  ],
+  "M": [
+   3,
+   3,
+   3,
+   3,
+   4,
+   5,
+   6,
+   5,
+   7,
+   10,
+   11,
+   9
+  ],
+  "O": [
+   5,
+   6,
+   6,
+   4,
+   6,
+   6,
+   9,
+   11,
+   12,
+   13,
+   12,
+   16
+  ],
+  "AND": [
+   0,
+   0,
+   0,
+   0,
+   1,
+   2,
+   3,
+   4,
+   7,
+   8,
+   9,
+   12
+  ],
+  "eff": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   2,
+   1,
+   0,
+   0,
+   0,
+   0
+  ],
+  "fund": [
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   1,
+   1,
+   4,
+   7,
+   7,
+   0
+  ],
+  "cluster": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   6
+  ],
+  "calibrations": [
+   0,
+   0,
+   0,
+   0,
+   1,
+   2,
+   2,
+   2,
+   3,
+   4,
+   3,
+   4
+  ],
+  "predictions": [
+   1,
+   3,
+   3,
+   2,
+   4,
+   4,
+   7,
+   9,
+   9,
+   10,
+   9,
+   12
+  ],
+  "unexplained": [
+   0,
+   0,
+   1,
+   2,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1
+  ]
+ },
+ "removals": [
+  {
+   "step": 2,
+   "removed_S": [
+    "H1"
+   ],
+   "removed_M": [],
+   "removed_O": [
+    "o_x"
+   ]
+  },
+  {
+   "step": 3,
+   "removed_S": [],
+   "removed_M": [],
+   "removed_O": [
+    "o_L"
+   ]
+  },
+  {
+   "step": 4,
+   "removed_S": [
+    "u_01",
+    "u_02",
+    "u_0h",
+    "u_cs",
+    "u_m0",
+    "u_m1",
+    "u_mh",
+    "u_tach",
+    "u_vac"
+   ],
+   "removed_M": [
+    "m_L"
+   ],
+   "removed_O": [
+    "o_E",
+    "o_S",
+    "o_p",
+    "o_prod"
+   ]
+  },
+  {
+   "step": 5,
+   "removed_S": [],
+   "removed_M": [],
+   "removed_O": [
+    "o_G",
+    "o_m",
+    "o_s",
+    "o_sig"
+   ]
+  },
+  {
+   "step": 6,
+   "removed_S": [],
+   "removed_M": [],
+   "removed_O": [
+    "o_lamb",
+    "o_pair"
+   ]
+  },
+  {
+   "step": 7,
+   "removed_S": [
+    "s_nu"
+   ],
+   "removed_M": [],
+   "removed_O": []
+  },
+  {
+   "step": 8,
+   "removed_S": [],
+   "removed_M": [
+    "m_fermi",
+    "m_mu"
+   ],
+   "removed_O": []
+  },
+  {
+   "step": 9,
+   "removed_S": [
+    "s_n",
+    "s_p"
+   ],
+   "removed_M": [
+    "m_va"
+   ],
+   "removed_O": [
+    "o_compton",
+    "o_hel",
+    "o_michel",
+    "o_ntau",
+    "o_twonu"
+   ]
+  },
+  {
+   "step": 10,
+   "removed_S": [],
+   "removed_M": [],
+   "removed_O": [
+    "o_sw",
+    "o_tgc",
+    "o_wu"
+   ]
+  },
+  {
+   "step": 11,
+   "removed_S": [],
+   "removed_M": [],
+   "removed_O": [
+    "o_alpha",
+    "o_nc"
+   ]
+  },
+  {
+   "step": 12,
+   "removed_S": [],
+   "removed_M": [
+    "m_cc",
+    "m_gs",
+    "m_hg",
+    "m_nc",
+    "m_numass",
+    "m_pot",
+    "m_qed",
+    "m_yuk"
+   ],
+   "removed_O": []
+  }
+ ],
+ "cumulative": [
+  {
+   "step": 1,
+   "id": "qm",
+   "O_cumulative": 5,
+   "O_shown": 5,
+   "unexplained_cumulative": [],
+   "routes_m2o_cumulative": 5,
+   "calibrated_parameters_so_far": [],
+   "badges_cumulative": {
+    "A": 2,
+    "P": 0,
+    "F": 0
+   },
+   "explained_by": {
+    "o_E": [
+     "m_L"
+    ],
+    "o_x": [
+     "m_A"
+    ],
+    "o_p": [
+     "m_A"
+    ],
+    "o_L": [
+     "m_A"
+    ],
+    "o_S": [
+     "m_A"
+    ]
+   }
+  },
+  {
+   "step": 2,
+   "id": "wigner",
+   "O_cumulative": 7,
+   "O_shown": 6,
+   "unexplained_cumulative": [],
+   "routes_m2o_cumulative": 7,
+   "calibrated_parameters_so_far": [],
+   "badges_cumulative": {
+    "A": 2,
+    "P": 2,
+    "F": 0
+   },
+   "explained_by": {
+    "o_E": [
+     "m_L"
+    ],
+    "o_x": [
+     "m_A"
+    ],
+    "o_p": [
+     "m_A"
+    ],
+    "o_L": [
+     "m_A"
+    ],
+    "o_S": [
+     "m_A"
+    ],
+    "o_m": [
+     "m_U"
+    ],
+    "o_s": [
+     "m_U"
+    ]
+   }
+  },
+  {
+   "step": 3,
+   "id": "anomaly",
+   "O_cumulative": 8,
+   "O_shown": 6,
+   "unexplained_cumulative": [
+    "o_prod"
+   ],
+   "routes_m2o_cumulative": 7,
+   "calibrated_parameters_so_far": [],
+   "badges_cumulative": {
+    "A": 3,
+    "P": 2,
+    "F": 0
+   },
+   "explained_by": {
+    "o_E": [
+     "m_L"
+    ],
+    "o_x": [
+     "m_A"
+    ],
+    "o_p": [
+     "m_A"
+    ],
+    "o_L": [
+     "m_A"
+    ],
+    "o_S": [
+     "m_A"
+    ],
+    "o_m": [
+     "m_U"
+    ],
+    "o_s": [
+     "m_U"
+    ]
+   }
+  },
+  {
+   "step": 4,
+   "id": "fock",
+   "O_cumulative": 10,
+   "O_shown": 4,
+   "unexplained_cumulative": [
+    "o_G",
+    "o_prod",
+    "o_sig"
+   ],
+   "routes_m2o_cumulative": 7,
+   "calibrated_parameters_so_far": [],
+   "badges_cumulative": {
+    "A": 5,
+    "P": 2,
+    "F": 0
+   },
+   "explained_by": {
+    "o_E": [
+     "m_field"
+    ],
+    "o_x": [
+     "m_A"
+    ],
+    "o_p": [
+     "m_A"
+    ],
+    "o_L": [
+     "m_A"
+    ],
+    "o_S": [
+     "m_A"
+    ],
+    "o_m": [
+     "m_U"
+    ],
+    "o_s": [
+     "m_U"
+    ]
+   }
+  },
+  {
+   "step": 5,
+   "id": "qed",
+   "O_cumulative": 16,
+   "O_shown": 6,
+   "unexplained_cumulative": [
+    "o_G",
+    "o_beta"
+   ],
+   "routes_m2o_cumulative": 12,
+   "calibrated_parameters_so_far": [
+    "o_alpha"
+   ],
+   "badges_cumulative": {
+    "A": 9,
+    "P": 3,
+    "F": 1
+   },
+   "explained_by": {
+    "o_E": [
+     "m_field"
+    ],
+    "o_x": [
+     "m_A"
+    ],
+    "o_p": [
+     "m_A"
+    ],
+    "o_L": [
+     "m_A"
+    ],
+    "o_S": [
+     "m_A"
+    ],
+    "o_m": [
+     "m_U"
+    ],
+    "o_s": [
+     "m_U"
+    ],
+    "o_compton": [
+     "m_qed"
+    ],
+    "o_pair": [
+     "m_qed"
+    ],
+    "o_ae": [
+     "m_qed"
+    ],
+    "o_lamb": [
+     "m_qed"
+    ],
+    "o_alpha": [
+     "m_qed"
+    ],
+    "o_sig": [
+     "o_compton,o_pair"
+    ],
+    "o_prod": [
+     "o_sig"
+    ]
+   }
+  },
+  {
+   "step": 6,
+   "id": "fermi",
+   "O_cumulative": 18,
+   "O_shown": 6,
+   "unexplained_cumulative": [],
+   "routes_m2o_cumulative": 15,
+   "calibrated_parameters_so_far": [
+    "o_GF",
+    "o_alpha"
+   ],
+   "badges_cumulative": {
+    "A": 9,
+    "P": 4,
+    "F": 2
+   },
+   "explained_by": {
+    "o_E": [
+     "m_field"
+    ],
+    "o_x": [
+     "m_A"
+    ],
+    "o_p": [
+     "m_A"
+    ],
+    "o_L": [
+     "m_A"
+    ],
+    "o_S": [
+     "m_A"
+    ],
+    "o_m": [
+     "m_U"
+    ],
+    "o_s": [
+     "m_U"
+    ],
+    "o_compton": [
+     "m_qed"
+    ],
+    "o_pair": [
+     "m_qed"
+    ],
+    "o_ae": [
+     "m_qed"
+    ],
+    "o_lamb": [
+     "m_qed"
+    ],
+    "o_alpha": [
+     "m_qed"
+    ],
+    "o_beta": [
+     "m_fermi"
+    ],
+    "o_ntau": [
+     "m_fermi"
+    ],
+    "o_GF": [
+     "m_fermi"
+    ],
+    "o_sig": [
+     "o_compton,o_pair"
+    ],
+    "o_G": [
+     "o_beta,o_ntau"
+    ],
+    "o_prod": [
+     "o_G,o_sig"
+    ]
+   }
+  },
+  {
+   "step": 7,
+   "id": "muon",
+   "O_cumulative": 21,
+   "O_shown": 9,
+   "unexplained_cumulative": [],
+   "routes_m2o_cumulative": 19,
+   "calibrated_parameters_so_far": [
+    "o_GF",
+    "o_alpha"
+   ],
+   "badges_cumulative": {
+    "A": 10,
+    "P": 6,
+    "F": 2
+   },
+   "explained_by": {
+    "o_E": [
+     "m_field"
+    ],
+    "o_x": [
+     "m_A"
+    ],
+    "o_p": [
+     "m_A"
+    ],
+    "o_L": [
+     "m_A"
+    ],
+    "o_S": [
+     "m_A"
+    ],
+    "o_m": [
+     "m_U"
+    ],
+    "o_s": [
+     "m_U"
+    ],
+    "o_compton": [
+     "m_qed"
+    ],
+    "o_pair": [
+     "m_qed"
+    ],
+    "o_ae": [
+     "m_qed"
+    ],
+    "o_lamb": [
+     "m_qed"
+    ],
+    "o_alpha": [
+     "m_qed"
+    ],
+    "o_beta": [
+     "m_fermi"
+    ],
+    "o_ntau": [
+     "m_fermi"
+    ],
+    "o_GF": [
+     "m_fermi",
+     "m_mu"
+    ],
+    "o_mutau": [
+     "m_mu"
+    ],
+    "o_michel": [
+     "m_mu"
+    ],
+    "o_twonu": [
+     "m_mu"
+    ],
+    "o_sig": [
+     "o_compton,o_pair"
+    ],
+    "o_G": [
+     "o_beta,o_mutau,o_ntau"
+    ],
+    "o_prod": [
+     "o_G,o_sig"
+    ]
+   }
+  },
+  {
+   "step": 8,
+   "id": "va",
+   "O_cumulative": 23,
+   "O_shown": 11,
+   "unexplained_cumulative": [],
+   "routes_m2o_cumulative": 27,
+   "calibrated_parameters_so_far": [
+    "o_GF",
+    "o_alpha"
+   ],
+   "badges_cumulative": {
+    "A": 10,
+    "P": 8,
+    "F": 2
+   },
+   "explained_by": {
+    "o_E": [
+     "m_field"
+    ],
+    "o_x": [
+     "m_A"
+    ],
+    "o_p": [
+     "m_A"
+    ],
+    "o_L": [
+     "m_A"
+    ],
+    "o_S": [
+     "m_A"
+    ],
+    "o_m": [
+     "m_U"
+    ],
+    "o_s": [
+     "m_U"
+    ],
+    "o_compton": [
+     "m_qed"
+    ],
+    "o_pair": [
+     "m_qed"
+    ],
+    "o_ae": [
+     "m_qed"
+    ],
+    "o_lamb": [
+     "m_qed"
+    ],
+    "o_alpha": [
+     "m_qed"
+    ],
+    "o_beta": [
+     "m_va"
+    ],
+    "o_ntau": [
+     "m_va"
+    ],
+    "o_GF": [
+     "m_va"
+    ],
+    "o_mutau": [
+     "m_va"
+    ],
+    "o_michel": [
+     "m_va"
+    ],
+    "o_twonu": [
+     "m_va"
+    ],
+    "o_wu": [
+     "m_va"
+    ],
+    "o_hel": [
+     "m_va"
+    ],
+    "o_sig": [
+     "o_compton,o_pair"
+    ],
+    "o_G": [
+     "o_beta,o_mutau,o_ntau"
+    ],
+    "o_prod": [
+     "o_G,o_sig"
+    ]
+   }
+  },
+  {
+   "step": 9,
+   "id": "ew",
+   "O_cumulative": 29,
+   "O_shown": 12,
+   "unexplained_cumulative": [],
+   "routes_m2o_cumulative": 37,
+   "calibrated_parameters_so_far": [
+    "o_GF",
+    "o_alpha",
+    "o_sw"
+   ],
+   "badges_cumulative": {
+    "A": 10,
+    "P": 13,
+    "F": 3
+   },
+   "explained_by": {
+    "o_E": [
+     "m_field"
+    ],
+    "o_x": [
+     "m_A"
+    ],
+    "o_p": [
+     "m_A"
+    ],
+    "o_L": [
+     "m_A"
+    ],
+    "o_S": [
+     "m_A"
+    ],
+    "o_m": [
+     "m_U"
+    ],
+    "o_s": [
+     "m_U"
+    ],
+    "o_compton": [
+     "m_qed"
+    ],
+    "o_pair": [
+     "m_qed"
+    ],
+    "o_ae": [
+     "m_qed"
+    ],
+    "o_lamb": [
+     "m_qed"
+    ],
+    "o_alpha": [
+     "m_qed"
+    ],
+    "o_beta": [
+     "m_cc"
+    ],
+    "o_ntau": [
+     "m_cc"
+    ],
+    "o_GF": [
+     "m_cc"
+    ],
+    "o_mutau": [
+     "m_cc"
+    ],
+    "o_michel": [
+     "m_cc"
+    ],
+    "o_twonu": [
+     "m_cc"
+    ],
+    "o_wu": [
+     "m_cc"
+    ],
+    "o_hel": [
+     "m_cc"
+    ],
+    "o_mw": [
+     "m_cc"
+    ],
+    "o_nc": [
+     "m_nc"
+    ],
+    "o_sw": [
+     "m_nc"
+    ],
+    "o_mz": [
+     "m_nc"
+    ],
+    "o_nnu": [
+     "m_nc"
+    ],
+    "o_tgc": [
+     "m_gs"
+    ],
+    "o_sig": [
+     "o_compton,o_nc,o_pair,o_tgc"
+    ],
+    "o_G": [
+     "o_beta,o_mutau,o_ntau"
+    ],
+    "o_prod": [
+     "o_G,o_sig"
+    ]
+   }
+  },
+  {
+   "step": 10,
+   "id": "higgs",
+   "O_cumulative": 33,
+   "O_shown": 13,
+   "unexplained_cumulative": [],
+   "routes_m2o_cumulative": 44,
+   "calibrated_parameters_so_far": [
+    "o_GF",
+    "o_alpha",
+    "o_mf",
+    "o_mh",
+    "o_sw"
+   ],
+   "badges_cumulative": {
+    "A": 10,
+    "P": 16,
+    "F": 4
+   },
+   "explained_by": {
+    "o_E": [
+     "m_field"
+    ],
+    "o_x": [
+     "m_A"
+    ],
+    "o_p": [
+     "m_A"
+    ],
+    "o_L": [
+     "m_A"
+    ],
+    "o_S": [
+     "m_A"
+    ],
+    "o_m": [
+     "m_U"
+    ],
+    "o_s": [
+     "m_U"
+    ],
+    "o_compton": [
+     "m_qed"
+    ],
+    "o_pair": [
+     "m_qed"
+    ],
+    "o_ae": [
+     "m_qed"
+    ],
+    "o_lamb": [
+     "m_qed"
+    ],
+    "o_alpha": [
+     "m_qed"
+    ],
+    "o_beta": [
+     "m_cc"
+    ],
+    "o_ntau": [
+     "m_cc"
+    ],
+    "o_GF": [
+     "m_cc"
+    ],
+    "o_mutau": [
+     "m_cc"
+    ],
+    "o_michel": [
+     "m_cc"
+    ],
+    "o_twonu": [
+     "m_cc"
+    ],
+    "o_wu": [
+     "m_cc"
+    ],
+    "o_hel": [
+     "m_cc"
+    ],
+    "o_mw": [
+     "m_cc",
+     "m_hg"
+    ],
+    "o_nc": [
+     "m_nc"
+    ],
+    "o_sw": [
+     "m_nc"
+    ],
+    "o_mz": [
+     "m_hg",
+     "m_nc"
+    ],
+    "o_nnu": [
+     "m_nc"
+    ],
+    "o_tgc": [
+     "m_gs"
+    ],
+    "o_hbr": [
+     "m_hg",
+     "m_yuk"
+    ],
+    "o_mf": [
+     "m_yuk"
+    ],
+    "o_mh": [
+     "m_pot"
+    ],
+    "o_lam": [
+     "m_pot"
+    ],
+    "o_sig": [
+     "o_compton,o_hbr,o_nc,o_pair,o_tgc"
+    ],
+    "o_G": [
+     "o_beta,o_mutau,o_ntau"
+    ],
+    "o_prod": [
+     "o_G,o_sig"
+    ]
+   }
+  },
+  {
+   "step": 11,
+   "id": "frontier",
+   "O_cumulative": 34,
+   "O_shown": 12,
+   "unexplained_cumulative": [
+    "o_osc"
+   ],
+   "routes_m2o_cumulative": 44,
+   "calibrated_parameters_so_far": [
+    "o_GF",
+    "o_alpha",
+    "o_mf",
+    "o_mh",
+    "o_sw"
+   ],
+   "badges_cumulative": {
+    "A": 11,
+    "P": 16,
+    "F": 4
+   },
+   "explained_by": {
+    "o_E": [
+     "m_field"
+    ],
+    "o_x": [
+     "m_A"
+    ],
+    "o_p": [
+     "m_A"
+    ],
+    "o_L": [
+     "m_A"
+    ],
+    "o_S": [
+     "m_A"
+    ],
+    "o_m": [
+     "m_U"
+    ],
+    "o_s": [
+     "m_U"
+    ],
+    "o_compton": [
+     "m_qed"
+    ],
+    "o_pair": [
+     "m_qed"
+    ],
+    "o_ae": [
+     "m_qed"
+    ],
+    "o_lamb": [
+     "m_qed"
+    ],
+    "o_alpha": [
+     "m_qed"
+    ],
+    "o_beta": [
+     "m_cc"
+    ],
+    "o_ntau": [
+     "m_cc"
+    ],
+    "o_GF": [
+     "m_cc"
+    ],
+    "o_mutau": [
+     "m_cc"
+    ],
+    "o_michel": [
+     "m_cc"
+    ],
+    "o_twonu": [
+     "m_cc"
+    ],
+    "o_wu": [
+     "m_cc"
+    ],
+    "o_hel": [
+     "m_cc"
+    ],
+    "o_mw": [
+     "m_cc",
+     "m_hg"
+    ],
+    "o_nc": [
+     "m_nc"
+    ],
+    "o_sw": [
+     "m_nc"
+    ],
+    "o_mz": [
+     "m_hg",
+     "m_nc"
+    ],
+    "o_nnu": [
+     "m_nc"
+    ],
+    "o_tgc": [
+     "m_gs"
+    ],
+    "o_hbr": [
+     "m_hg",
+     "m_yuk"
+    ],
+    "o_mf": [
+     "m_yuk"
+    ],
+    "o_mh": [
+     "m_pot"
+    ],
+    "o_lam": [
+     "m_pot"
+    ],
+    "o_sig": [
+     "o_compton,o_hbr,o_nc,o_pair,o_tgc"
+    ],
+    "o_G": [
+     "o_beta,o_mutau,o_ntau"
+    ],
+    "o_prod": [
+     "o_G,o_sig"
+    ]
+   }
+  },
+  {
+   "step": 12,
+   "id": "sm",
+   "O_cumulative": 34,
+   "O_shown": 16,
+   "unexplained_cumulative": [
+    "o_osc"
+   ],
+   "routes_m2o_cumulative": 60,
+   "calibrated_parameters_so_far": [
+    "o_GF",
+    "o_alpha",
+    "o_mf",
+    "o_mh",
+    "o_sw"
+   ],
+   "badges_cumulative": {
+    "A": 11,
+    "P": 16,
+    "F": 4
+   },
+   "explained_by": {
+    "o_E": [
+     "m_field"
+    ],
+    "o_x": [
+     "m_A"
+    ],
+    "o_p": [
+     "m_A"
+    ],
+    "o_L": [
+     "m_A"
+    ],
+    "o_S": [
+     "m_A"
+    ],
+    "o_m": [
+     "m_U"
+    ],
+    "o_s": [
+     "m_U"
+    ],
+    "o_compton": [
+     "c_gf"
+    ],
+    "o_pair": [
+     "c_gf"
+    ],
+    "o_ae": [
+     "c_gf"
+    ],
+    "o_lamb": [
+     "c_gf"
+    ],
+    "o_alpha": [
+     "c_gf"
+    ],
+    "o_beta": [
+     "c_gf"
+    ],
+    "o_ntau": [
+     "c_gf"
+    ],
+    "o_GF": [
+     "c_gf"
+    ],
+    "o_mutau": [
+     "c_gf"
+    ],
+    "o_michel": [
+     "c_gf"
+    ],
+    "o_twonu": [
+     "c_gf"
+    ],
+    "o_wu": [
+     "c_gf"
+    ],
+    "o_hel": [
+     "c_gf"
+    ],
+    "o_mw": [
+     "c_gf",
+     "c_hg"
+    ],
+    "o_nc": [
+     "c_gf"
+    ],
+    "o_sw": [
+     "c_gf"
+    ],
+    "o_mz": [
+     "c_gf",
+     "c_hg"
+    ],
+    "o_nnu": [
+     "c_gf"
+    ],
+    "o_tgc": [
+     "c_gg"
+    ],
+    "o_hbr": [
+     "c_hg",
+     "c_yuk"
+    ],
+    "o_mf": [
+     "c_yuk"
+    ],
+    "o_mh": [
+     "c_pot"
+    ],
+    "o_lam": [
+     "c_pot"
+    ],
+    "o_sig": [
+     "o_compton,o_hbr,o_nc,o_pair,o_tgc"
+    ],
+    "o_G": [
+     "o_beta,o_mutau,o_ntau"
+    ],
+    "o_prod": [
+     "o_G,o_sig"
+    ]
+   }
+  }
+ ],
+ "predictive_content": {
+  "m_field": {
+   "pred": [
+    "o_E"
+   ],
+   "fit": [],
+   "frame": [],
+   "n_pred": 1,
+   "n_fit": 0,
+   "n_frame": 0,
+   "predictive_content": 1
+  },
+  "m_A": {
+   "pred": [],
+   "fit": [],
+   "frame": [
+    "o_L",
+    "o_S",
+    "o_p",
+    "o_x"
+   ],
+   "n_pred": 0,
+   "n_fit": 0,
+   "n_frame": 4,
+   "predictive_content": 0
+  },
+  "m_U": {
+   "pred": [
+    "o_m",
+    "o_s"
+   ],
+   "fit": [],
+   "frame": [],
+   "n_pred": 2,
+   "n_fit": 0,
+   "n_frame": 0,
+   "predictive_content": 2
+  },
+  "c_gf": {
+   "pred": [
+    "o_ae",
+    "o_beta",
+    "o_compton",
+    "o_hel",
+    "o_lamb",
+    "o_michel",
+    "o_mutau",
+    "o_mw",
+    "o_mz",
+    "o_nc",
+    "o_nnu",
+    "o_ntau",
+    "o_pair",
+    "o_twonu",
+    "o_wu"
+   ],
+   "fit": [
+    "o_GF",
+    "o_alpha",
+    "o_sw"
+   ],
+   "frame": [],
+   "n_pred": 15,
+   "n_fit": 3,
+   "n_frame": 0,
+   "predictive_content": 15
+  },
+  "c_gg": {
+   "pred": [
+    "o_tgc"
+   ],
+   "fit": [],
+   "frame": [],
+   "n_pred": 1,
+   "n_fit": 0,
+   "n_frame": 0,
+   "predictive_content": 1
+  },
+  "c_hg": {
+   "pred": [
+    "o_hbr",
+    "o_mw",
+    "o_mz"
+   ],
+   "fit": [],
+   "frame": [],
+   "n_pred": 3,
+   "n_fit": 0,
+   "n_frame": 0,
+   "predictive_content": 3
+  },
+  "c_yuk": {
+   "pred": [
+    "o_hbr"
+   ],
+   "fit": [
+    "o_mf"
+   ],
+   "frame": [],
+   "n_pred": 1,
+   "n_fit": 1,
+   "n_frame": 0,
+   "predictive_content": 1
+  },
+  "c_pot": {
+   "pred": [
+    "o_lam"
+   ],
+   "fit": [
+    "o_mh"
+   ],
+   "frame": [],
+   "n_pred": 1,
+   "n_fit": 1,
+   "n_frame": 0,
+   "predictive_content": 1
+  }
+ },
+ "sector_term_census": {
+  "sectors": 10,
+  "terms": 6,
+  "cells": 60,
+  "entered": 24,
+  "empty": 36,
+  "matrix": {
+   "s_nue": {
+    "c_gf": true,
+    "c_gg": false,
+    "c_hg": false,
+    "c_yuk": false,
+    "c_pot": false,
+    "c_bsm": true
+   },
+   "s_e": {
+    "c_gf": true,
+    "c_gg": false,
+    "c_hg": false,
+    "c_yuk": true,
+    "c_pot": false,
+    "c_bsm": false
+   },
+   "s_num": {
+    "c_gf": true,
+    "c_gg": false,
+    "c_hg": false,
+    "c_yuk": false,
+    "c_pot": false,
+    "c_bsm": true
+   },
+   "s_mu": {
+    "c_gf": true,
+    "c_gg": false,
+    "c_hg": false,
+    "c_yuk": true,
+    "c_pot": false,
+    "c_bsm": false
+   },
+   "s_u": {
+    "c_gf": true,
+    "c_gg": false,
+    "c_hg": false,
+    "c_yuk": true,
+    "c_pot": false,
+    "c_bsm": false
+   },
+   "s_d": {
+    "c_gf": true,
+    "c_gg": false,
+    "c_hg": false,
+    "c_yuk": true,
+    "c_pot": false,
+    "c_bsm": false
+   },
+   "s_g": {
+    "c_gf": true,
+    "c_gg": true,
+    "c_hg": false,
+    "c_yuk": false,
+    "c_pot": false,
+    "c_bsm": false
+   },
+   "s_W": {
+    "c_gf": true,
+    "c_gg": true,
+    "c_hg": true,
+    "c_yuk": false,
+    "c_pot": false,
+    "c_bsm": false
+   },
+   "s_Z": {
+    "c_gf": true,
+    "c_gg": true,
+    "c_hg": true,
+    "c_yuk": false,
+    "c_pot": false,
+    "c_bsm": false
+   },
+   "s_H": {
+    "c_gf": false,
+    "c_gg": false,
+    "c_hg": true,
+    "c_yuk": true,
+    "c_pot": true,
+    "c_bsm": true
+   }
+  }
+ }
+}

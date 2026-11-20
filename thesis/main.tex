@@ -1,0 +1,617 @@
+% !TEX program = xelatex
+\documentclass[11pt,a4paper,twoside,openany]{report}
+\usepackage{fontspec}
+\setmainfont{DejaVu Serif}[Scale=0.92]
+\setsansfont{DejaVu Sans}[Scale=0.9]
+\setmonofont{DejaVu Sans Mono}[Scale=0.85]
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=2.4cm]{geometry}
+\usepackage{booktabs,longtable,array,multirow}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage[ruled,linesnumbered,noend]{algorithm2e}
+\usepackage{enumitem}
+\usepackage{caption}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+\usepackage{cleveref}
+\usepackage[numbers,sort&compress]{natbib}
+\setlength{\parskip}{3pt}
+\setlength{\emergencystretch}{2.5em}
+\captionsetup{font=small,labelfont=bf}
+\graphicspath{{../figures/}}
+\input{numbers.tex}
+\input{numbers_evo.tex}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{rule_}[theorem]{Rule}
+\newtheorem{example}[theorem]{Example}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\lay}[1]{\mathsf{#1}}
+\newcommand{\VS}{V_{\lay S}}\newcommand{\VM}{V_{\lay M}}\newcommand{\VO}{V_{\lay O}}
+\newcommand{\id}[1]{\texttt{#1}}
+\newcommand{\op}[1]{\texttt{\MakeUppercase{#1}}}
+\DeclareMathOperator{\indeg}{indeg}\DeclareMathOperator{\outdeg}{outdeg}\DeclareMathOperator{\supp}{supp}
+
+\title{\textbf{The Grand Epistemic Network of Physics}\\[4pt]
+\large A layered concept-graph framework with mechanical update rules,\\ built from six released instances: electromagnetism, the Standard Model,\\ the textbook, energy flow, nonclassicality and quantum resource theories;\\ and the evolution of four of them on a calendar axis}
+\author{Tahmeed Hossain\\ \small Department of Theoretical Physics, University of Dhaka\\[6pt]
+\small Text, code, data and figures generated with Claude (Anthropic); see the disclosure in \cref{ch:ai}}
+\date{14 November 2026 (version 2; version 1 of 13 November 2026 is Part I)}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+The Great Epistemic Network (GEN) project has produced six concept graphs of physics in which nodes are concepts sorted into three layers (states, models, observables) and edges are mathematically checkable connections: a reading-indexed network of classical electromagnetism up to QED, a lattice energy-flow network of electromagnetism, a reader of a university physics textbook, a step-indexed history of the electroweak Standard Model, a theorem network of quantum nonclassicality, and a network of thirteen quantum resource theories. This thesis merges the six into one \emph{grand} network and makes the method behind them explicit and mechanical. Every number quoted here is computed by the accompanying engine from the released data files of the six repositories (commit hashes in \cref{sec:provenance}); the merged network has \NnBranches{} branches, \NnNodes{} nodes, \NnRoutes{} routes (directed hyperedges) and \NnConcepts{} concepts glued across branches, \NnFlips{} of which change layer from one branch to another.
+
+Three results organise the work. (i)~\emph{Branch types and layer sorting.} The six instances fall into three types that differ in which layer pairs carry edges: dynamic readers (type~D), where model and state nodes jointly derive states and observables; historical theory-building (type~H), where state sectors enter model nodes by AND routes with occupation numbers, model nodes reach observables, and the state layer changes only from outside itself; and effect/resource networks (type~E), where the model is fixed, the state layer is refined into clusters, the observable layer is coarse-grained into witness--effect pairs, and states reach effects directly. A contraction lemma shows that type~E graphs are the fibres of type~H graphs over a fixed model node, which explains the direct state--effect edges; the same coarse-graining appears inside the historical graph as the $\sigma$- and $\Gamma$-type observable families. (ii)~\emph{Rules as guarded graph operations.} Twenty-four primitive operations and sixteen rules (ten from the Standard Model history, two from the readers, two from the census/closure loop of the quantum networks, two from the project's inference engine) are stated with their node and edge count deltas; the research agenda of any concept graph (in-degree-zero observables, uncharted cells, shared calibrations, effective nodes, failed routes) is shown to be computable in time linear in the graph plus the census. (iii)~\emph{Regeneration and exploration.} Replaying the Standard Model data as operations, the engine detects the rules from structure alone and reproduces the hand-assigned rule matrix in \NhepAgree{} of 120 cells (and the paper's own rule table in \NhepPaperAgree{} cells); the three disagreements are explained, two of them being inconsistencies between the two hand-made tables. The reading-indexed graphs are verified to be filtrations with no forward links (\NEMForwardLinks{}/\NUPForwardLinks{}/\NLGForwardLinks{} violations), failed classical predictions are resolved within three paragraphs in the history reader and, in one textbook case, 305 paragraphs later; the uncharted-cell census of the nonclassicality network (\NgptSettled{}/\NgptCells{} cells settled) and the conversion census of the resource-theory network (\NqrtCharted{}/\NqrtCells{} cells charted) are reproduced exactly from the data and the same census is applied to the historical graph (\NhepSectorTermEntered{}/\NhepSectorTermCells{} sector--term cells). Historical and pedagogical order agree on \NorderN{} shared concepts with Kendall $\tau_b=\NorderTau$. Part I closes with the methodology written as an algorithm, a statement of exactly what remains non-mechanical (the content of a new model node, supplied by a solver), and the data format of the merged network.
+
+Part II (added in version 2) derives the \emph{evolution} of the networks. The two quantum networks have no time axis; a calendar year is computed for every one of their nodes and routes from the references they carry (earliest cited source, with explicit provenance and a robustness check against the latest cited source), and the readers and the history are placed on the same axis. The nonclassicality network grows from \EGPTVAtOneNineFiveZero{} nodes in 1950 to \EGPTVfin{} nodes and \EGPTEfin{} routes, \EGPTClosureFrac\% of its routes being closures between nodes already present with a median latency of \EGPTLatMedian{} years; the resource-theory network grows from \EQRTYZero{} with \EQRTClosureFrac\% closures and median latency \EQRTLatMedian{} years. Electromagnetism, the Standard Model history (as the union of its steps, with \EhepRemovedNodes{} removed nodes), the nonclassicality and the resource-theory networks are merged into one four-branch evolutionary network of \EmergedV{} nodes, \EmergedE{} routes and \EmergedGlue{} identifications across \EnSharedFour{} shared concepts, with a year slider in the accompanying page. The growth obeys counting identities and rules that are stated and verified: an arrival--closure identity $E=\sum_v d_{\mathrm{arr}}(v)-\sum_r(a(r)-1)^+ +C$ that holds exactly in every branch; densification $E\propto V^{\alpha}$ with $\alpha=\EEMAlpha,\EHEPAlpha,\EGPTAlpha,\EQRTAlpha$; preferential closure (ratios \EGPTPAratio{}, \EQRTPAratio{}, \EEMPAratio{}); removal only in the history; and transfer lags between branches (median \ElagMedian{} years, effect network before resource network in \EfirstGPTamongGQ{} of \EnSharedGPTQRT{} shared concepts). Every route is attributed to an update rule of Part I and to a method phase (observe, deficit, hypothesize, restructure, predict, falsify, calibrate, reduce) by a lookup table, which gives the rules' contributions to the node and edge counts year by year and shows the phases running concurrently in every decade; the phases are then read against the philosophy of science (Popper, Lakatos, Kuhn, Duhem--Quine, Hempel, Reichenbach, Nagel) with the counts as evidence, including where the data do not support the received picture.
+\end{abstract}
+
+\tableofcontents
+
+%=====================================================================
+\part{The grand network}\label{part:network}
+\chapter{Introduction}\label{ch:intro}
+
+\section{Motivation}
+Science begins with observations. Observations are made of \emph{observables}: quantities that an instrument records. What is observed hints at the \emph{state} of the system that produced it, whether that state is a point in a configuration space, a vector, a distribution, or something else. The loop observe $\to$ hypothesise $\to$ feed back $\to$ observe turns hypotheses into \emph{models}: a model gives the observable outcomes for a given state and the dynamical evolution of states. Three layers therefore suffice to write down what a physical theory \emph{does}: observables, states and models, with every edge between two nodes described by the mathematical connection that justifies it. Writing a field of physics in this form reduces a vast modelling effort to the verification of edges, and verifying an edge often reduces to a piece of mathematics that a machine can carry out reliably.
+
+The GEN project built six instances of this idea as proofs of concept, each released with data, an interactive page and a paper \citep{gen_em,gen_lg,gen_learning,gen_hep,gen_gpt,gen_qrt,gen_combined}. The instances are listed in \cref{tab:instances}. They were built for different purposes: a history that grows as one reads (electromagnetism), a lattice simulation whose conservation laws are read off the graph (energy flow), a textbook whose concepts appear as the reader meets them (university physics), a theory whose model layer was rebuilt step by step by the discoveries of a century (the Standard Model), and two quantum networks in which the missing edges are the research agenda (nonclassicality; resource theories). The instances were built one after the other and each adapted the three layers to its material: the two quantum networks added witness, effect and task layers and let states reach effects directly; the Standard Model graph disallowed exactly that and routed every observable through a model node; the readers let observables and states be combined by models in AND routes. The purpose of this thesis is to put the six on one footing, to say precisely how each branch sorts its layers, to extract the update rules that the instances obey, and to show, by recomputing everything from the released data, which parts of the method are mechanical.
+
+\section{The six instances}
+\begin{table}[htbp]\centering\small
+\caption{The six released instances normalised in this thesis. Type D: dynamic/pedagogical reader; H: historical theory-building; E: effect/resource network. Counts are those of the normalised graphs (\cref{ch:graph}); for the Standard Model branch they are the atlas view (every node that ever existed, routes of the final step). OR targets: nodes with two or more routes into them.}\label{tab:instances}
+\resizebox{\textwidth}{!}{\input{tables/tab_instances.tex}}
+\end{table}
+The branch abbreviations used throughout are UP (University Physics reader, OpenStax \emph{University Physics}, 44 chapters), EM (electromagnetism from Coulomb's law to QED, 23 sections), LG (local cycles and global conservation of energy on a one-dimensional lattice), HEP (the Standard Model as a 12-step history), GPT (the nonclassicality network with generalised probabilistic theories, states, processes, witnesses, effects and tasks) and QRT (the quantum resource theory network). The sources are the released JSON files at the commits recorded in \cref{sec:provenance}.
+
+\section{Contributions}
+\begin{enumerate}[nosep]
+\item A universal schema into which all six instances are normalised without changing their content (\cref{ch:graph}), and the merged network, delivered as one data file with \NnNodes{} nodes and \NnRoutes{} routes (\cref{ch:atlas}, \cref{app:data}).
+\item The classification of the branches into three types by their \emph{layer-pair signature}, with the contraction lemma relating the effect networks to the historical graph, and the catalogue of \NnConcepts{} shared concepts with their \NnFlips{} role flips (\cref{ch:types}).
+\item The operations and rules of the network as a formal system: 24 primitive operations with node and edge count deltas, 16 rules as guarded operations, the agenda theorem, and the loop that the instances run (\cref{ch:rules}).
+\item The regeneration of the Standard Model history by replay and automatic rule detection (\cref{ch:hep}), the verification of the readers as filtrations (\cref{ch:readers}), the reproduction of the census of the quantum networks and its transfer to the other branches (\cref{ch:explore}), and the measurement of pedagogical growth against historical growth (\cref{ch:pedagogy}).
+\item The methodology written as an algorithm, with an honest separation between what the graph decides and what a solver must supply (\cref{ch:algorithm}).
+\item[] \emph{Part II (version 2):}
+\item A calendar-year index for the two quantum networks computed from their references, with provenance and a robustness check, and the derivation of their growth node by node and route by route: arrivals, closures, latencies, witness--effect timing, explanation lags and the census in time (\cref{ch:evoE}).
+\item The four-branch evolutionary network (electromagnetism, the Standard Model history as the union of its steps with removals, nonclassicality, resource theories) on one axis, with its glue, its collapsed node count and the transfer lags of its shared concepts (\cref{ch:merged}); delivered as \texttt{data/gen\_evolution\_network.json} and as the page \texttt{gen\_evolution\_explorer.html} with a year slider.
+\item Growth rules and counting identities: the arrival--closure identity, degree at arrival, closure latency, preferential closure, densification, removals, the attribution of every route to a rule of Part I with the rules' node and edge deltas on the year axis, and six temporal rules TE1--TE6 (\cref{ch:growth}).
+\item The method in the evolution: a mechanical phase assignment of every event, the phase profile of each branch type, and the correspondence of the phases with the philosophy of science, stated with the counts as evidence (\cref{ch:method-time}).
+\end{enumerate}
+
+\section{Reproducibility}\label{sec:provenance}
+All counts, tables and figures of this thesis are generated by \texttt{build.py} and the package \texttt{gen\_engine} from the files in \texttt{data/sources/}, copies of the released data at the following commits: GEN\_HEP \texttt{4258f6e} (2026-11-12), GEN\_GPT\_Level \texttt{e18fa8c} (2026-11-01), GEN\_QRT\_Level \texttt{198ca02} (2026-11-01), GEN\_epistemic\_evolution \texttt{17bde64} (2026-10-23), GEN\_LocGlob\_Flow \texttt{42751ee} (2026-10-23), GEN\_Learning \texttt{c6e2fa4} (2026-11-01). Numbers in the text are LaTeX macros written by the build (\texttt{numbers.tex}; for Part II \texttt{numbers\_evo.tex}, written by \texttt{build\_evolution.py}); the tables are written by \texttt{gen\_engine/tables.py} and \texttt{tables\_evo.py}; the figures by \texttt{gen\_engine/figures.py} and \texttt{figures\_evo.py}. Nothing in the thesis is quoted from memory of the repositories.
+
+\section{What is and is not mechanical}\label{sec:scope}
+The word \emph{mechanical} is used in a precise sense. Given a concept graph $G_t$ and an event (a new observable, a new theorem, the next paragraph of a text), the following are computed by the engine without judgement: which layer the event's node belongs to under the branch's conventions; which rules are enabled by the structure of $G_t$ (an observable with no model edge, two model nodes sharing a calibration, an effective node, an uncharted cell); the operations that the rules prescribe and their effect on the counts; the research agenda after the step; and the invariants that the new graph must satisfy. What the engine does \emph{not} supply is the content of a new model node or of a new edge: which Lagrangian term repairs the deficit, which theorem settles the cell. That content comes from a \emph{solver}: the literature, a derivation, or an inference engine such as the project's compose--modify--reduce engine or the inverse-inference network TFO-Net (\cref{sec:solvers}). The claim of this thesis is therefore that the \emph{control loop} of physics research, as realised in the six instances, is mechanical, and that the places where a solver is called are themselves located mechanically.
+
+%=====================================================================
+\chapter{The concept graph}\label{ch:graph}
+
+\section{Nodes, layers, routes}
+\begin{definition}[Concept graph]\label{def:graph}
+A \emph{concept graph} is a tuple $G=(V,R,\lambda,\kappa,\sigma,\tau)$ where $V$ is a finite set of nodes; $\lambda\colon V\to\{\lay S,\lay M,\lay O\}$ assigns each node a layer (state, model, observable); $R$ is a finite set of \emph{routes}, each a triple $r=(I_r,t_r,\ell_r)$ with input set $I_r\subseteq V$, $I_r\neq\emptyset$, target $t_r\in V$, and logic $\ell_r\in\{\textsc{and},\textsc{single}\}$ with $\ell_r=\textsc{single}$ iff $|I_r|=1$; $\kappa\colon R\to K$ assigns a kind and $\sigma\colon R\to\Sigma$ a status; and $\tau\colon V\cup R\to\mathbb{R}\cup\{\bot\}$ is a time index on the branch's own axis. A route with $\ell_r=\textsc{single}$ is an ordinary directed edge. In the language of hypergraph theory \citep{berge1989,bretto2013} $R$ is a set of directed hyperedges with a distinguished head; the 2-section of \cref{ch:readers} is the ordinary digraph \citep{diestel2017} obtained by joining every leg to the head.
+\end{definition}
+The layer map is refined by a \emph{sub-layer} (\cref{tab:sublayers}) that records how a branch uses the layer: a state node may be a point of a phase space, a field configuration, a Hilbert-space ray, an irreducible representation, a Fock sector, a cluster of state operators, or the free or resource set of a resource theory; a model node may be a law, a framework node, an axiom, a concrete theory, a fundamental or effective interaction term, a candidate, a cluster of terms, or a process class; an observable node may be a directly measured quantity, an effect, a witness or a task. The sub-layer is the branch's \emph{sorting} of its layer and is the subject of \cref{ch:types}.
+
+\begin{table}[htbp]\centering\small
+\caption{Sub-layers of the three layers, as used by the six branches.}\label{tab:sublayers}
+\begin{tabular}{@{}llp{9cm}@{}}\toprule
+Layer & Sub-layer & Meaning \\\midrule
+S & point & point / vector / distribution state of a dynamical system (readers) \\
+S & field & field configuration (readers, LocGlob) \\
+S & hilbert & Hilbert-space ray (readers; HEP one-particle space) \\
+S & uir & irreducible representation, the building block of the state layer (HEP Step 2) \\
+S & sector & Fock sector with occupation ladder (HEP from Step 4) \\
+S & cluster & cluster of state operators, a subset of the state space (GPT) \\
+S & free / resource / dist & free set, resource set, distinguished shared state (QRT) \\
+M & law & law, equation or construction (readers, LocGlob) \\
+M & frame & framework node: evolution, observable postulate, field construction (HEP) \\
+M & axiom & axiom of a theory space or of a resource framework (GPT, QRT) \\
+M & model & a concrete theory, GPT or resource theory (GPT, QRT) \\
+M & fund / eff / cand / cluster & fundamental, effective or candidate interaction node; cluster of terms (HEP) \\
+M & process & process or operation class: channels, free operations (GPT, QRT) \\
+O & direct & directly measured quantity (readers, HEP, LocGlob) \\
+O & effect & cluster of observable outcomes that a witness detects (GPT; LocGlob results) \\
+O & witness & operator-valued test paired with an effect (GPT, QRT) \\
+O & task & operational task powered by an effect or resource (GPT, QRT) \\\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{definition}[Route logic, OR targets]\label{def:logic}
+An \textsc{and} route asserts that its inputs jointly produce its target. Alternatives are not a logic of a route but a multiplicity of routes: a node $t$ is an \emph{OR target} if $|\{r\in R: t_r=t\}|\ge 2$.
+\end{definition}
+\begin{remark}[Gate and edge encodings]
+The first release of the electromagnetism network drew AND and OR as gate nodes; the later releases draw routes as converging edges. The two encodings carry the same information: a graph with $a$ AND routes and $o$ OR targets needs $a$ AND gates and $o$ OR gates. In the data this gives \NEMAND{} AND routes and \NEMortargets{} OR targets for EM v3.1, \NUPAND{} and \NUPortargets{} for the textbook reader; the published statistics of the readers quote the same numbers (401 AND routes and 72 OR targets for the textbook).
+\end{remark}
+
+\section{Kinds, statuses, polarity}
+Each branch has its own vocabulary of route kinds, kept verbatim in the normalised data as \texttt{kind\_native}. The universal kind set $K$ contains the kinds of the readers (\id{derives}, \id{failed}), of the historical graph (\id{enters}, \id{predicts}, \id{calibrates}, \id{frames}, \id{candidate}, \id{backedge}, \id{lineage}) and of the quantum networks (\id{implies}, \id{equiv}, \id{necessary}, \id{not\_implies}, \id{enables}, \id{forbids}, \id{witness}, \id{hides}, \id{generates}, \id{subset}, \id{pairs}, \id{excludes}, \id{hosts}, \id{open}, \id{specializes}, \id{distinct}, \id{contains}, \id{converts\_to}, \id{activates}, \id{bounds}, \id{member\_free}, \id{member\_resource}, \id{violates}, \id{satisfies}, \id{irreversible}, \id{reversible}), plus the two energy-flow kinds \id{transport} and \id{conversion}. Every kind has a \emph{polarity}: structural (a set relation, an assignment, a construction), possibility (the source yields or implies the target), no-go (the source rules the target out, or a counterexample), or open. Polarity is semantic; status (theorem, partial, counterexample, derived, definition, open; or established, failed, candidate) is epistemic. The two are orthogonal, a convention adopted from the nonclassicality network and kept for all branches.
+
+\section{Time index and growing graphs}
+Every branch has a time axis: the paragraph of the reading text (EM, UP), the version (LG, GPT, QRT), the step of the history (HEP). A \emph{growing graph} is a family $(G_t)_{t}$. Two kinds occur in the data.
+\begin{definition}[Filtration]
+$(G_t)$ is a \emph{filtration} if $V_t\subseteq V_{t'}$ and $R_t\subseteq R_{t'}$ for $t\le t'$, and no route appears before its inputs and its target: $\tau(r)\ge\tau(v)$ for every $v\in I_r\cup\{t_r\}$ (\emph{no forward links}).
+\end{definition}
+The readers are filtrations (\cref{prop:filtration}). The historical graph is not: nodes are removed by partition, extension, merge, absorption, replacement and clustering (\NhepRemovalEvents{} steps remove nodes; \NhepRemovedSNodes{} state and \NhepRemovedMNodes{} model nodes are removed in all), which is why its rules are operations rather than insertions (\cref{ch:rules}).
+
+\section{The layer-pair signature}
+\begin{definition}[Signature]\label{def:signature}
+The \emph{layer-pair signature} of $G$ is the $3\times 3$ matrix $\Sigma(G)$ with
+\[\Sigma(G)_{ab}=\big|\{(v,r): r\in R,\ v\in I_r,\ \lambda(v)=a,\ \lambda(t_r)=b\}\big|,\qquad a,b\in\{\lay S,\lay M,\lay O\},\]
+the number of leg--route incidences from layer $a$ into layer $b$. The \emph{support} $\supp\Sigma(G)$ is the set of pairs with a nonzero entry.
+\end{definition}
+The signature is the quantitative form of the question ``which layers does this branch connect''; the support is its qualitative form. \Cref{ch:types} classifies the branches by it. Two counting identities tie the signature to the hypergraph: $\sum_{a,b}\Sigma(G)_{ab}=\sum_{r\in R}|I_r|$, the number of leg--route incidences, which is \NEMIncidences{} for the electromagnetism reader (\NEMMeanLegs{} legs per route), \NUPIncidences{} for the textbook (\NUPMeanLegs), \NLGIncidences{} for the energy flow (\NLGMeanLegs), and the 2-section digraph of \cref{ch:readers} has at most that many edges, with equality exactly when no two routes share a (leg, target) pair.
+
+\section{Normalisation of the six instances}\label{sec:normalisation}
+The loaders in \texttt{gen\_engine/load.py} map each branch to \cref{def:graph} by explicit rules.
+\begin{itemize}[nosep]
+\item \textbf{EM, UP (type D).} Node types observable/model/state map to $\lay O/\lay M/\lay S$; routes keep their input lists, logic and kind; a route of kind \texttt{failed} gets the universal kind \id{failed}, every other reader route \id{derives}. Time index: paragraph of first appearance (nodes) or of explanation (routes).
+\item \textbf{LG (type D).} The energy-flow network records routes with several targets (expanded to one route per target), four \emph{flow rules} (conversion and transport laws derived from the field laws; model layer) and four \emph{results} (claims about cycling and conservation that the simulation establishes; observable layer, sub-layer effect). Flows between observables are routes of kind \id{transport} or \id{conversion}.
+\item \textbf{HEP (type H).} The released file lists, per step, the state, model and observable nodes drawn and the edges and AND routes among them. Edge kinds \texttt{s2m}, \texttt{m2o} (with status pred/fit/frame/cand), \texttt{m2s}, \texttt{m2m} map to \id{enters}, \id{predicts}/\id{calibrates}/\id{frames}/\id{candidate}, \id{backedge}, \id{lineage}. Edges written from or to ``the whole state layer'' are expanded to one route per state node present at the step and flagged generic; AND routes with group legs (all charged fermions, all fermions, the neutrino sectors) are expanded to the member sectors present at the step. One graph is built per step; the atlas view carries every node that ever existed with its steps of presence, the routes of the final step, the lineage and membership edges of the clusters, and the observable families of \cref{sec:families}.
+\item \textbf{GPT (type E).} Seven native layers fold into three: axiom, model and process into $\lay M$; state into $\lay S$; witness, effect and task into $\lay O$. The native layer is kept as the sub-layer. Edges keep kind and status; the polarity follows the network's own convention. Version of first appearance from the three released files (v1, v2.4, v2.6) and the edge-id groups.
+\item \textbf{QRT (type E).} Five native layers fold into three: model and process into $\lay M$; state into $\lay S$; witness and task into $\lay O$; the node roles (free/resource/distinguished state; free, resource-utilising and impossible operations; detector and quantifier) are kept as sub-layers.
+\end{itemize}
+The normalised branches reproduce the published counts: 120 nodes and 122 routes (EM), 445 nodes, 516 routes, 401 AND routes and 72 OR targets (UP), 78 distinct nodes of which 23/21/34 are S/M/O and 12 AND routes in the final step (HEP), 92 nodes and 156 edges (GPT), 116 nodes and 86 edges (QRT).
+
+%=====================================================================
+\chapter{Branch types and how they sort the layers}\label{ch:types}
+
+\section{Signatures from the data}
+\begin{figure}[htbp]\centering
+\includegraphics[width=\textwidth]{fig_signatures.pdf}
+\caption{Layer-pair signatures of the six branches (rows: input layer; columns: target layer; shading normalised per branch). For HEP the record-level matrix of the final step is shown (a generic layer edge counted once, an AND route once, plus the ten observable-family edges), so that the expansion of generic edges does not inflate the S$\to$M entry.}\label{fig:signatures}
+\end{figure}
+\begin{table}[htbp]\centering\small
+\caption{Layer-pair signatures $\Sigma(G)$ (leg--route incidences). The last row gives the record-level signature of the HEP final step.}\label{tab:signatures}
+\input{tables/tab_signatures.tex}
+\end{table}
+\Cref{fig:signatures} and \cref{tab:signatures} give the signatures. Three patterns are visible and they define the branch types.
+
+\begin{definition}[Branch types]\label{def:types}
+\begin{itemize}[nosep]
+\item \textbf{Type D (dynamic / pedagogical).} Routes have AND logic and combine model and state nodes (and observables) into states and observables; the support of $\Sigma$ contains $(\lay M,\lay S)$, $(\lay M,\lay O)$, $(\lay S,\lay O)$ and usually $(\lay O,\lay O)$. Observables may be primitive (no route into them). The time axis is a reading order and the graph is a filtration.
+\item \textbf{Type H (historical theory-building).} The support of $\Sigma$ is contained in the set $\{(\lay S,\lay M),\allowbreak(\lay M,\lay O),\allowbreak(\lay M,\lay S),\allowbreak(\lay M,\lay M),\allowbreak(\lay O,\lay O)\}$: state sectors enter model nodes by AND routes whose legs are (sector, occupation number) pairs, model nodes reach observables, model nodes act back on the state layer, model nodes have lineage, and observables refine one another. The model layer is the moving part; nodes are removed and merged.
+\item \textbf{Type E (effect / resource).} All routes are single edges; the observable layer is split into witnesses, effects and tasks with a witness--effect pairing; the state layer is refined into clusters or free/resource sets; the model layer is fixed (quantum theory and its neighbours) or a lattice of theories; the support contains $(\lay S,\lay O)$ directly.
+\end{itemize}
+\end{definition}
+
+\section{The layer discipline of the historical graph}
+\begin{proposition}[Layer discipline, verified on the data]\label{prop:discipline}
+In every one of the \NhepStepsGraph{} step graphs of the Standard Model branch (\NhepRoutesChecked{} expanded routes in all): (i) no route has a state target and a state input; (ii) no route has an observable input; (iii) every route of kind \id{predicts}, \id{calibrates}, \id{frames} or \id{candidate} with a single input leaves a model node; (iv) every AND route has only state legs and a model target. Consequently every directed path from a state node to an observable node passes through a model node.
+\end{proposition}
+\begin{proof}
+(i)--(iv) are checked exhaustively by the engine (\texttt{replay\_hep.py}, field \texttt{invariants}): the violation counts are \NhepInvStoSroutes{}, \NhepInvOasinput{}, \NhepInvmTwoofromnonM{} and \NhepInvandrouteswithnonSleg{}+\NhepInvandroutesintononM{}. For the consequence: a path from $s\in\VS$ to $o\in\VO$ consists of routes; the route that enters $o$ has, by (ii) and (iii) and because AND routes have model targets by (iv), a model-node input; hence the path contains a model node.
+\end{proof}
+The proposition is the formal content of the convention stated when the branch was built (``edges to observables only from model-layer nodes; edges into model nodes only from state sectors''). It is also the structural difference between type H and type E: in the nonclassicality network \NGPTPairStoO{} leg--route incidences go from the state layer straight into the observable layer, in the resource-theory network \NQRTPairOtoS{} go from witnesses into states.
+
+\section{Effect networks as fibres: the contraction lemma}\label{sec:contraction}
+\begin{proposition}[Contraction and lift]\label{prop:contraction}
+Let $G$ be a concept graph and $m_0\in\VM$ a model node. Define the \emph{contraction} $G/m_0$ by deleting $m_0$ and its routes and adding, for every pair of single routes $(s\to m_0,\ m_0\to o)$ with $s\in\VS$ and $o\in\VO$, the route $s\to o$ with the kind and status of $m_0\to o$ and the label $m_0$. Then
+\begin{enumerate}[nosep]
+\item $\Sigma(G/m_0)_{\lay S\lay O}=\Sigma(G)_{\lay S\lay O}+\indeg_{\lay S}(m_0)\cdot\outdeg_{\lay O}(m_0)$, where the degrees count single routes into $m_0$ from state nodes and out of $m_0$ into observables;
+\item the \emph{lift} $(G/m_0)\!\uparrow\! m_0$, which re-inserts $m_0$ and replaces every route labelled $m_0$ by the two routes through $m_0$, recovers $G$ whenever $m_0$'s other routes (back-edges, lineage) are stored with the label;
+\item if every state node of $G$ has a route into $m_0$ (a fixed model), then $G/m_0$ has no model node adjacent to those states, i.e.\ it is of type E with respect to $m_0$.
+\end{enumerate}
+\end{proposition}
+\begin{proof}
+(1) Each deleted pair contributes one new $\lay S\to\lay O$ incidence and the pairs are in bijection with $I\times O$ for $I$ the set of state in-neighbours and $O$ the set of observable out-neighbours of $m_0$. (2) The label identifies the pairs; re-inserting $m_0$ and splitting each labelled route into $s\to m_0$ and $m_0\to o$ restores the deleted routes, and the stored remaining routes restore the rest. (3) After contraction no route between a state node and $m_0$ exists, and the state--observable routes carry $m_0$ only as a label.
+\end{proof}
+\begin{corollary}
+The direct state--effect edges of the quantum networks (\NGPTPairStoO{} in GPT, 21 of which have an effect node as target) are the contracted form of two-step paths through the hosting model. In the lifted graph every such edge becomes $s\to m\to e$ with $m$ the model node that hosts $s$ (quantum theory for the quantum state clusters; the network records the hosting relation explicitly by its \id{hosts} edges for entangled states in four models).
+\end{corollary}
+The corollary answers the question why the quantum networks can draw states into observables directly: they are drawn \emph{inside one model}. When the model layer varies, as in the readers and in the history, the model must be written on the path. This is not a difference of philosophy between the instances but a difference of what is held fixed, and \cref{prop:contraction} is the dictionary between the two drawings.
+
+\section{Effects as clusters of observables}\label{sec:families}
+In the quantum networks an \emph{effect} is a phenomenon (Bell violation, steering, contextuality) and a \emph{witness} is the operator-valued test that detects it; the network pairs them one-to-one (\id{pairs} edges) with the recorded exception of a stratified functional. An effect is therefore the class of all direct observables whose outcome statistics the witness evaluates: a Bell functional is one number computed from many correlators. In the normalised schema an effect is an observable node of sub-layer \emph{effect} together with its witness, and the direct observables behind it are not drawn because the branch treats them as the witness's input data. The same coarse-graining is present in the historical graph, where it is drawn: the Standard Model data types its observables as $\sigma$-type (cross sections: Compton, pair production, neutral-current events, triple-gauge couplings, Higgs rates), $\Gamma$-type (widths and lifetimes: $\beta$ decay, neutron and muon lifetimes) and parameters, with the generic nodes $\sigma$, $\Gamma$ and ``particle production and decay'' as family heads; the step that introduces the field node rewrites the generic observable into the two families, and the specific processes refine them. The engine records these as ten \id{subset} routes among observables (\cref{fig:signatures}, HEP entry $\lay O\to\lay O$), and uses them in \cref{ch:hep}: a family head counts as explained when one member is.
+
+Thus the three types use three resolutions of the observable layer: primitive measurements (D), families of measurements with a head (H), and effects with a witness (E). The grand network keeps all three as sub-layers; the family and the witness--effect pair are both instances of one operation, \op{cluster} applied to the observable layer.
+
+\section{Roles are branch-relative: the gluing and the role flips}\label{sec:flips}
+The branches share concepts. The engine glues them through a curated table of \NnConcepts{} concepts (\cref{app:concepts}), each listing its member nodes per branch with a one-line justification taken from the node labels and descriptions; a node belongs to at most one concept and \NnGlued{} nodes are glued. \NnCross{} looser relations (part-of, refinement, model-of) are kept separately as cross-edges and are not identifications. Of the \NnConcepts{} concepts, \NnConceptsReaders{} join only the three readers, \NnConceptsQuantumInfo{} join only the two quantum networks, and \NnConceptsBridge{} bridge the groups; \NnConceptsThreePlus{} concepts are shared by three or more branches (position; Faraday's law; the electromagnetic field state; Planck's constant; the photon; the Schr\"odinger equation, in four branches; the Hilbert-space state; the Gibbs state; the second law).
+
+\begin{table}[htbp]\centering\small
+\caption{The \NnFlips{} role flips: concepts whose layer differs between branches.}\label{tab:flips}
+\input{tables/tab_flips.tex}
+\end{table}
+\Cref{tab:flips} lists the \NnFlips{} concepts whose layer differs between branches. They are not errors of one branch or the other. The photon is \emph{detected} in the history of electromagnetism (an observable: one photon at a time in a photomultiplier), \emph{posited} in the textbook (a state with $E=hf$) and \emph{a sector} in the Standard Model graph (the Fock sector that the field creates). Planck's constant is a measured number in the readers and the deformation scale of the Moyal lift in the nonclassicality network, where it is an axiom. The second law is a model-layer law in the textbook and, in the quantum networks, a family of observable-layer tests on state conversion. Bell nonlocality, steering, Kochen--Specker contextuality and incompatibility are effects in the nonclassicality network and resource states in the resource-theory network; the device-independent and metrological tasks are observable-layer tasks in one and resource-utilising operation classes (model layer) in the other. The conclusion is that \emph{role is a function of the branch's epistemic process}, not of the concept: the layer of a concept records what the branch does with it (measure it, posit it as what exists, hypothesise it as a law or an operation). The grand network therefore stores the triple (concept, branch, role), and the flips are the places where two branches use one concept for two purposes. Several cross-edges carry further flips of the same kind: the S-matrix is a state-layer node in the electromagnetism reader and the rewritten observable postulate (model layer) in the history; the radioactive decay law, a model-layer law in the textbook, refines the decay width, an observable in the history; the positron, an observable in the electromagnetism reader, lives in the electron sector of the history.
+
+\section{The atlas}\label{ch:atlas}
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.9\textwidth]{fig_atlas.pdf}
+\caption{The grand network as an atlas: six branch graphs with their layer sizes, joined by chords whose labels count the concepts the two branches share.}\label{fig:atlas}
+\end{figure}
+\Cref{fig:atlas} draws the merged network as an atlas. \NnConceptsReaders{} concepts involve only the three readers (the electromagnetism history and the textbook share 41 concepts in all, a few of them also present in another branch); \NnConceptsQuantumInfo{} involve only the two quantum networks; the \NnConceptsBridge{} bridges are the classical-to-quantum concepts of the electromagnetism reader (Poisson bracket and canonical commutator, glued to the genesis axioms of the nonclassicality network; Planck's constant; the Schr\"odinger equation, glued to unitary evolution in the history and to the unitary process cluster of the nonclassicality network; the Hilbert-space state, which the quantum state clusters refine), the quantum-electrodynamics concepts shared by the electromagnetism reader and the history (the QED vertex, the Lamb shift, the anomalous moment, the fine-structure constant, cross sections, creation and annihilation operators, the electron field), the textbook--history concepts (Compton effect, spin, angular momentum, hydrogen levels, decays, the Standard Model), and the thermodynamic concepts (Gibbs state, second law) shared by the textbook and the quantum networks. The data file \texttt{gen\_grand\_network.json} (\cref{app:data}) holds all nodes and routes with their universal and native fields, the concepts with roles, the cross-edges and the cluster records of the Standard Model.
+
+%=====================================================================
+\chapter{Operations and rules}\label{ch:rules}
+
+\section{Primitive operations}
+Every change of a concept graph in the six instances decomposes into the operations of \cref{tab:ops}. The table states the layer on which each operation acts, its effect on the node count of that layer and on the route count in the elementary case, and the rule that fires it. The operations of the Standard Model page's operation log (\op{add}, \op{rewrite}, \op{partition}, \op{extend}, \op{split}, \op{replace}, \op{merge}, \op{absorb}, \op{cluster}, \op{lineage}, \op{route}, \op{predict}, \op{calibrate}, \op{flag}, \op{signal}, \op{back}) are taken as they are; the readers add \op{derive} and \op{fail}; the inference engine of the project adds \op{compose} and \op{reduce}; \cref{sec:contraction} adds \op{contract} and \op{lift}; the quantum networks add \op{census} and \op{close}.
+\begin{table}[htbp]\centering\scriptsize
+\caption{Primitive operations with their count deltas.}\label{tab:ops}
+\input{tables/tab_ops.tex}
+\end{table}
+
+\begin{proposition}[Count deltas, verified on the history]\label{prop:deltas}
+On the Standard Model data the deltas of \cref{tab:ops} are realised as follows: \op{partition} at Step 2 takes the state count from 1 to 9 ($+8$ for $k=9$ classes); \op{extend} at Step 4 takes it from 9 to 5 with no new irreducible block (the classes without a realised particle and the vacuum are not separate sectors, and three species share the $m>0$, $s=\tfrac12$ class); \op{split} at Step 7 adds one state node net of the split ($\nu\to\nu_e,\nu_\mu$) and \op{add} one more ($\mu$); \op{merge} at Step 8 takes the model count from 6 to 5; \op{absorb} at Step 9 removes one effective node, adds three fundamental nodes and two mediator sectors; \op{cluster} at Step 12 replaces eight model nodes by six clusters. The trajectories are $S$: \NhepTrajS; $M$: \NhepTrajM; effective: \NhepTrajEff; fundamental: \NhepTrajFund; AND routes: \NhepTrajAND.
+\end{proposition}
+\begin{proof}
+Read off \cref{tab:steps}, which is computed from the data by the replay of \cref{ch:hep}.
+\end{proof}
+
+\section{Rules as guarded operations}
+A \emph{rule} is a pair (predicate on $G_t$, operation schema): when the predicate holds, the operation is enabled. The ten rules of the Standard Model paper are restated here in that form, with the predicate written so that the engine can evaluate it. Notation: $N^-_{\lay M}(o)$ is the set of model nodes with a single route of kind \id{predicts}, \id{calibrates} or \id{frames} into $o$ (framework assignments flagged weak and candidate edges excluded); $\dim[g]$ is the mass dimension of the coupling of an interaction node, recorded in the data as the node kind \emph{eff} ($\dim[g]<0$) or \emph{fund} ($\dim[g]=0$); a route $(L,m)$ has legs $L\subseteq\VS\times\mathbb N$ and head $m\in\VM$.
+
+\begin{rule_}[R1, symmetry partition]
+Predicate: a framework node $m$ represents a symmetry group on a state node $s$ (in the data: a back-edge $m\to s$ from a rewritten framework node; Wigner's classification of the Poincar\'e group \citep{wigner1939} is the instance). Operation: \op{partition} $s$ into the irreducible components $\{s_i\}$, each receiving the back-edge; the labels of the components (Casimir invariants) become observables with routes $m\to o$ of status \emph{pred} (badge P).
+\end{rule_}
+\begin{rule_}[R2, in-degree-zero drive]
+Predicate: $\exists o\in\VO$ with $N^-_{\lay M}(o)=\emptyset$ (an \emph{unexplained} observable), or the model layer is inconsistent on theory-internal grounds (recorded in the data by the step driver). Operation: \op{add} a model node $m$ with a route $m\to o$; in the theory-internal case $m$ must reproduce every route of the node it replaces. No model node is added otherwise. A candidate node (kind \emph{cand}) announces the rule without executing it.
+\end{rule_}
+\begin{rule_}[R3, Fock extension]
+Predicate: the repairing node of R2 connects states of different particle number. Operation: \op{extend} \citep{fock1932,weinberg1995}: every irreducible block $\mathcal H_s$ becomes the ladder $\bigoplus_N \mathrm{Sym}^N\mathcal H_s$ or $\bigoplus_N\Lambda^N\mathcal H_s$ by the back-edge of the new node; no new irreducible block is introduced.
+\end{rule_}
+\begin{rule_}[R4, route composition]
+Predicate: an interaction node $m$ with a Lagrangian term. Operation: \op{route}: one AND route into $m$ per sector combination the term couples, with legs the (sector, minimal occupation change) pairs of the fields in the term.
+\end{rule_}
+\begin{rule_}[R5, effective status]
+Predicate: a model node with $\dim[g]<0$. Operation: mark it effective (dashed): its observable routes are valid for $q^2\ll\Lambda^2$ and it cannot be final.
+\end{rule_}
+\begin{rule_}[R6, universality merge]
+Predicate: two coexisting model nodes share a calibration edge into the same observable (in the data this appears either as two \id{calibrates} routes into one observable or as the transfer of the calibration edge from one node to a second while the first persists). Operation: \op{merge} them into one node whose routes are the union of theirs (the universal V$-$A interaction \citep{feynman_gellmann1958,sudarshan_marshak1958} merging Fermi's term \citep{fermi1934} with the muon-decay term).
+\end{rule_}
+\begin{rule_}[R7, absorption]
+Predicate: an effective node $m_{\rm eff}$ and a fundamental node $m_{\rm fund}$ with a new mediator sector $s$ such that every route of $m_{\rm eff}$ is covered by routes of $m_{\rm fund}$ once the leg $s(1)$ is removed. Operation: \op{absorb}: remove $m_{\rm eff}$, record the lineage $m_{\rm eff}\to m_{\rm fund}$, and add the further fundamental nodes that the symmetry forces, with their predicted observables (badge P); the electroweak gauge theory \citep{glashow1961,weinberg1967} absorbing V$-$A is the instance.
+\end{rule_}
+\begin{rule_}[R8, sector refinement]
+Predicate: a state node changes. Operation: only \op{partition} (R1), \op{extend} (R3), \op{split} (an observable distinguishes two instances of the same irreducible block, as the two-neutrino experiment did \citep{danby1962}) or \op{replace} (an observable shows compositeness; $k$ sectors replaced by $k$ with the same blocks). The state layer never changes from a state node.
+\end{rule_}
+\begin{rule_}[R9, calibration]
+Predicate: a model node with $p$ free parameters. Operation: \op{calibrate}: $p$ routes of status \emph{fit} (badge F); the predictive content of the node is its number of observable routes minus $p$.
+\end{rule_}
+\begin{rule_}[R10, clustering]
+Predicate: no effective node outside a fundamental one. Operation: \op{cluster} the fundamental nodes by Lagrangian term; absorbed nodes sit inside the cluster whose member reproduces them; routes and observable edges are re-attached to the clusters.
+\end{rule_}
+The readers add two rules.
+\begin{rule_}[R11, reading-order growth]
+Predicate: the next paragraph of the text. Operation: \op{add} the node at the paragraph that introduces it and \op{derive} the route at the paragraph that explains it; no route precedes its inputs or its target.
+\end{rule_}
+\begin{rule_}[R12, failed-route resolution]
+Predicate: a route marked \emph{failed} into $o$. Operation: a later non-failed route into $o$ (of another kind family) resolves it; the distance in paragraphs is recorded.
+\end{rule_}
+The quantum networks add two rules, which are the operational form of the project's aim to generate research ideas automatically. Their edges are theorems of the generalised-probabilistic-theory and resource-theory literature \citep{spekkens2005,plavala2016,barnum2007,schmid2021,aubrun2022,howard2014,marvian2016,chitambar2019,takagi2019,lostaglio2018}; the rules say how the edge set grows.
+\begin{rule_}[R13, census]
+Predicate: a designated layer pair $(a,b)$ (witness $\times$ state $\times$ process; theory $\times$ theory; node pairs). Operation: \op{census}: enumerate the pairs with no recorded edge; each is a candidate theorem.
+\end{rule_}
+\begin{rule_}[R14, closure]
+Predicate: an uncharted cell. Operation: \op{close} it by one of four routes: composition of existing edges, elementary proof, counterexample, or literature fill; the new edge carries the route as its status (derived, counterexample, theorem) and no edge means \emph{unsettled}, never false.
+\end{rule_}
+The inference engine of the project (\cref{sec:solvers}) adds the two rules that act on a model's \emph{sectors}: \op{compose} (adjoin an independent sector by tensor product when the refit of the old structure cannot explain new data) and \op{reduce} (tie parameters when the evidence favours the symmetry and decompose the representation by the commutant of the model's own operator algebra). They are listed as R15 and R16 and are not exercised on the six graphs, which record their outputs (sectors, merged nodes) rather than their runs.
+
+\section{The agenda theorem}
+\begin{definition}[Agenda]
+For a concept graph $G$ with designated census pairs $\mathcal C$, the \emph{agenda} is
+\[A(G)=U(G)\ \cup\ C(G)\ \cup\ Q(G)\ \cup\ E(G)\ \cup\ F(G)\ \cup\ P(G),\]
+where $U(G)=\{o\in\VO: N^-_{\lay M}(o)=\emptyset\}$ (unexplained observables), $C(G)$ is the set of uncharted cells of $\mathcal C$, $Q(G)$ the set of pairs of model nodes sharing a calibration edge, $E(G)$ the set of effective nodes, $F(G)$ the set of failed routes without a forward resolver, and $P(G)$ the set of untested predictions (observable nodes flagged untested or candidate edges).
+\end{definition}
+\begin{theorem}[Agenda]\label{thm:agenda}
+$A(G)$ is computable in time $O\big(|V|+\sum_{r\in R}|I_r|+|\mathcal C|\big)$.
+\end{theorem}
+\begin{proof}
+$U(G)$: one pass over the routes marks every observable with an incoming single route from a model node of the three explanatory kinds; the unmarked observables are $U(G)$. $Q(G)$: one pass over the calibration routes groups model nodes by target; pairs within a group are $Q(G)$ (their number is bounded by the number of calibration routes squared, which in the data never exceeds two per observable). $E(G)$ and $P(G)$: one pass over the nodes. $F(G)$: for each failed route, the forward resolver is the minimum-time non-failed route into the same target, found in one pass per target after sorting the routes once by time, $O(|R|\log|R|)$ in the worst case and linear when the routes are stored in time order as the readers store them. $C(G)$: one pass over the designated cells with a lookup of recorded verdicts.
+\end{proof}
+The theorem is modest, and that is its point: the \emph{location} of the next question is computed, not judged. For the six graphs the agenda is listed in \cref{ch:explore}; the quantum networks and the Standard Model page already compute parts of it (the red ring of an unexplained observable, the grey cells of the witness matrix), and the engine computes all parts for all branches with one code path.
+
+\begin{proposition}[Monotone closure]\label{prop:closure}
+Under \op{close} alone the number of uncharted cells $|C(G)|$ strictly decreases and the process terminates after at most $|\mathcal C|$ steps. Under \op{add} of a node of layer $a$ the number of cells increases by $\sum_{b}|V_b|$ over the partner layers $b$ of $a$ in $\mathcal C$, so the census of a growing graph is bounded by the product of the layer sizes.
+\end{proposition}
+\begin{proof}
+Immediate from the definitions; a closed cell is never reopened (its edge keeps its status), and the cells of a new node are its pairs with the existing partner layer.
+\end{proof}
+
+\section{The loop}
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.7\textwidth]{fig_cycle.pdf}
+\caption{The loop the instances run. Every box except \emph{hypothesize} is executed by the engine on the graph; \emph{hypothesize} calls a solver. The agenda at the centre is recomputed after each step (\cref{thm:agenda}).}\label{fig:cycle}
+\end{figure}
+Rules R2--R7 compose into a loop (\cref{fig:cycle}): an unexplained observable appears (R2), a model node repairs it and, if needed, extends the state layer (R3), its routes are read off its term (R4), a dimensionful coupling marks it temporary (R5), nodes sharing a coupling merge (R6), the merged node is absorbed by a fundamental one with a new sector and the symmetry predicts further observables (R7), the fundamental nodes cluster (R10). The quantum networks run the same loop with \op{census} in the place of the red ring and \op{close} in the place of the model node. The readers run it in replay: every failed route is the \emph{deficit} phase, every resolving route the \emph{restructure} phase of a loop that the text narrates.
+
+%=====================================================================
+\chapter{Regenerating the historical graph: the Standard Model replay}\label{ch:hep}
+
+\section{The data and the two views}
+The released file of the Standard Model branch records twelve graph steps (a thirteenth, the synthesis, has no graph of its own). For each step it lists the state, model and observable nodes drawn and the edges and AND routes among them, together with the method phases active at the step and a hand-written operation log. The page draws a \emph{selection} of observables at every step for readability: the spectra of one-particle quantum mechanics (position, momentum, angular momentum, spin, the energy levels) are dropped between Steps 2 and 4, the generic width and cross section after Step 4, and so on; \NhepOCumFinal{} distinct observables exist over the sequence while the final step draws \NhepOShownFinal{}. The engine therefore keeps two views: the \emph{page view}, the graph exactly as drawn at each step, on which the rule predicates are evaluated and which is the object the hand-made tables describe; and the \emph{cumulative view}, in which an observable, once measured, stays in the graph, and a model$\to$observable route persists through the successors of its source node (the successor of a removed model node is derived from the data: the single node added when it is removed, for Steps 4 and 8; the lineage edges of the final clusters, for Step 9; cluster membership, for Step 12). The cumulative view is the state of knowledge; the page view is its drawing.
+
+\begin{table}[htbp]\centering\scriptsize
+\caption{Per-step counts of the Standard Model graph, page view and cumulative view. ``edge records'' counts the edge records of the data file (a generic layer edge once); ``F edges'' are calibration edges; ``deficit'' is the number of unexplained observables.}\label{tab:steps}
+\input{tables/tab_steps.tex}
+\end{table}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=\textwidth]{fig_hep_trajectories.pdf}
+\caption{Trajectories across the twelve steps: layer sizes (left; dashed: cumulative observables), model-layer composition and AND routes (middle), deficits and calibration edges (right).}\label{fig:hep}
+\end{figure}
+
+\section{Decomposition into operations}
+For each pair of consecutive steps the engine computes the set differences of nodes and routes and decomposes them into the operations of \cref{tab:ops} by structural tests only (layers, node kinds, the irreducible-representation label of a sector, the A/P/F badge of an observable, route kinds and AND-route leg sets; no step text is read). \Cref{tab:oplog} is the resulting log. It should be read against the hand-written operation log on the page; the two agree in content, and the engine's version is reproducible.
+\begin{table}[htbp]\centering\scriptsize
+\caption{Decomposition of every step transition into primitive operations, computed from the data.}\label{tab:oplog}
+\input{tables/tab_oplog.tex}
+\end{table}
+
+\section{Automatic rule detection}\label{sec:detection}
+The predicates used for the ten rules are:
+\begin{itemize}[nosep]
+\item[P1] one state node removed, at least two state nodes of kind \emph{uir} added, all receiving a back-edge;
+\item[P2] a model node of kind other than candidate or cluster added, and either an unexplained observable before the step, or an observable with badge A added in the same step and reached by the new node (anomaly form), or neither (theory-internal form); a candidate node or a newly unexplained observable gives the prepared mark;
+\item[P3] state nodes of kind \emph{uir} replaced by nodes of kind \emph{sector} that receive the back-edge of a model node added in the same step;
+\item[P4] a new AND route (leg set modulo the sector map of P8), re-attachments to clusters listed separately;
+\item[P5] a model node of kind \emph{eff} added;
+\item[P6] at least two model nodes removed and one added whose routes contain the union of theirs; prepared when a calibration edge is shared, or transferred between coexisting nodes;
+\item[P7] an effective node removed and fundamental nodes added together with new sectors such that every old route is covered by new routes with the new-sector legs removed;
+\item[P8] a removed sector whose irreducible-representation label equals that of two or more added sectors (split) or of as many added sectors (replace); R1 counts as a cause of R8;
+\item[P9] a new calibration route;
+\item[P10] cluster nodes added.
+\end{itemize}
+\begin{table}[htbp]\centering\small
+\caption{Rule matrix detected from the data ($\bullet$ fires, $\circ$ prepared). Bold entries differ from the hand-assigned matrix of the repository; the superscript is the hand value.}\label{tab:rulematrix}
+\input{tables/tab_rulematrix.tex}
+\end{table}
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.62\textwidth]{fig_rule_matrix.pdf}
+\caption{The detected rule matrix (orange: cells that differ from the hand matrix; the small symbol is the hand value).}\label{fig:rulematrix}
+\end{figure}
+
+\begin{proposition}[Rule detection]\label{prop:detection}
+The predicates P1--P10 evaluated on the page view reproduce the hand-assigned rule matrix of the repository in \NhepAgree{} of its 120 cells and the ``where each rule fires'' table of the branch's paper in \NhepPaperAgree{} of 120 cells. The \NhepDisagree{} disagreements with the hand matrix are: (Step 7, R2) the engine fires R2 because the new contact node reaches the muon lifetime, an observable with badge A added in the same step, whereas the hand matrix leaves the cell empty although the paper's table lists Step 7 under R2; (Step 8, R5) the engine marks the merged V$-$A node effective because its coupling is dimensionful (kind \emph{eff}), whereas the hand matrix leaves the cell empty although the paper's table lists Step 8 under R5; (Step 11, R8) the hand matrix marks R8 as prepared because a massless neutrino representation cannot carry a mass difference, a statement about the content of the representation that no structural predicate sees.
+\end{proposition}
+\begin{proof}
+By computation (\texttt{replay\_hep.py}, fields \texttt{comparison}); the three cells are listed in the output with the engine's and the hand value.
+\end{proof}
+Two of the three disagreements are thus inconsistencies between the two hand-made tables of the repository, which the automatic detection exposes. Read with a prepared mark counted as not firing, the page matrix and the paper's table disagree in eight cells: (2,R8), (8,R9) and (12,R9), where the matrix marks a firing the table omits (the partition as a change of the state layer; re-attached calibration edges), and (7,R2), (7,R6), (8,R5), (11,R2) and (11,R8), where the table lists a firing the matrix records as prepared or omits. The engine sides with the matrix in six of the eight (its predicates distinguish a firing from a preparation and count a re-attached calibration edge as a calibration), with the table in (7,R2) and (8,R5), and with neither in (11,R8). The third disagreement with the matrix is the one place in twelve steps where a rule's precondition is a fact about the physics of a node (a massless representation) rather than about the graph. This is a measurement of how mechanical the history is: \NhepAgree{} of 120 cells are decided by structure, and the one content-based cell is identified as such.
+
+\section{Generation from the observables}
+\begin{table}[htbp]\centering\footnotesize
+\caption{The recorded driver of each step against the engine's reading of the observable layer: whether an unexplained observable exists before the step, and the form of R2 detected (anomaly: a deficit or a same-step observed-before-explained observable is reached by the new model node; theory-internal: no such observable; announced: a candidate node; flagged: a new deficit and no model node).}\label{tab:drivers}
+\input{tables/tab_drivers.tex}
+\end{table}
+The history is driven by its observables, and \cref{tab:drivers} measures that statement. Each step of the data carries a hand-written \emph{driver} (foundation, symmetry, anomaly, response, prediction, synthesis); the engine reads the observable layer and classifies the model-layer change by R2 alone. The two agree step by step: the steps whose driver is \emph{anomaly} or \emph{response} are exactly the steps at which a deficit exists before the step or an observed-before-explained observable arrives with the node that explains it (Steps 4--7), the steps whose driver is \emph{prediction} are exactly the theory-internal firings (Steps 9, 10), the symmetry step (2) and the synthesis (12) add no interaction node, and the two steps with driver \emph{anomaly} that the engine classifies otherwise are the announcements (Step 3, a flag without a node; Step 11, a candidate node) and the V$-$A merge of Step 8, where the engine reads the parity observables as predictions of the merged node (badge P) rather than as a deficit. In this sense the historical graph is generated from clusters of observables: every interaction node is placed by an observable family (the $\sigma$- and $\Gamma$-type members of \cref{sec:families}) or by a symmetry requirement, and the engine locates which.
+
+\section{Families and the cumulative deficit}
+With the observable families of \cref{sec:families}, the cumulative deficit runs \NhepTrajUnexpCum{} over the twelve steps, against \NhepTrajUnexp{} in the page view (\cref{tab:steps}, \cref{fig:hep}). The two views agree on when a deficit opens (Steps 3, 11) and closes (Step 6, after the Fermi node reaches $\beta$ decay, the only $\Gamma$-type member then present), and the cumulative view adds the information that the $\sigma$-type family is closed at Step 5 by the first explicit cross sections while the $\Gamma$-type family stays open until Step 6. In the final cumulative graph \NhepUnexplainedFinal{} observable is unexplained (\NhepUnexplainedFinalList{}, neutrino flavour oscillation), the badges count \NhepBadgeA{} observed-before-explained, \NhepBadgeP{} predicted-before-observed and \NhepBadgeF{} calibrations, and \NhepMTwoOCumFinal{} model$\to$observable routes persist through the successor map. Without the family closure four observables would remain unexplained (the three generic heads and oscillation): the families are what the page means when it rewrites ``particle production'' into widths and cross sections, and the engine has to know it.
+
+\section{Predictive content (Rule 9 on the final graph)}
+\begin{table}[htbp]\centering\scriptsize
+\caption{Rule 9 evaluated on the final cumulative graph: per surviving model node, the observables it predicts (an observable that calibrates the node is counted as a calibration, not a prediction), its calibrations and its framework assignments.}\label{tab:predictive}
+\input{tables/tab_predictive.tex}
+\end{table}
+\Cref{tab:predictive} gives, for each surviving model node, its predicted and calibrating observables after the successor map has re-attached the routes of absorbed nodes. The gauge--fermion cluster predicts \NhepPCcgfpred{} observables with \NhepPCcgffit{} calibrations ($\alpha$, $G_F$, $\sin^2\theta_W$); the Yukawa cluster predicts the Higgs rates with the fermion masses as calibration; the potential predicts the self-coupling, untested, with $m_H$ as calibration; in all \NhepPCtotalPred{} predictions against \NhepPCtotalFit{} calibrations. This is the graph's statement of the predictive power of the electroweak theory: the excess of solid over dashed edges, computed rather than asserted.
+
+\section{The sector--term census and the agenda of the history}
+\begin{table}[htbp]\centering\small
+\caption{Sector $\times$ term census of the final Standard Model graph: a filled cell means the sector is a leg of a route into the term.}\label{tab:sectorterm}
+\input{tables/tab_sector_term.tex}
+\end{table}
+Rule R13 applied to the history takes the pair (sector, Lagrangian term) as its cell. \Cref{tab:sectorterm} shows \NhepSectorTermEntered{} of \NhepSectorTermCells{} cells filled. The empty cells are of two kinds: cells that the theory forbids (the photon and the gauge bosons do not enter the Yukawa term; the neutrinos, massless as drawn, do not enter it either) and cells that the drawing omits (the neutral-current route is drawn with one group leg over all fermions and the gauge self-interactions with the massive bosons only). The census does not know which is which; that is the content a solver adds. The agenda of the history is therefore: $U=\{$neutrino oscillation$\}$; $P=\{\lambda_{HHH}$, untested$\}$ together with the candidate neutrino-mass node and its candidate route; $Q=E=\emptyset$ (no shared calibration, no effective node survives); and \NhepSectorTermEmpty{} empty sector--term cells to be labelled forbidden or omitted. The first two items are exactly the frontier that the page marks; the third is what the uniform census adds.
+
+%=====================================================================
+\chapter{Regenerating the reading-indexed graphs}\label{ch:readers}
+
+\section{Filtration}
+\begin{proposition}[Filtration]\label{prop:filtration}
+The electromagnetism reader (\NEMroutes{} routes over \NEMTimePoints{} paragraph indices up to \NEMTmax), the textbook reader (\NUProutes{} routes over \NUPTimePoints{} indices up to \NUPTmax) and the energy-flow network have no forward links: the numbers of routes that appear before one of their inputs or before their target are \NEMForwardLinks{}, \NUPForwardLinks{} and \NLGForwardLinks{}.
+\end{proposition}
+\begin{proof}
+Exhaustive check of every route against the first-appearance index of its inputs and target (\texttt{filtration.py}).
+\end{proof}
+Rule R11 is thus satisfied by both texts. It is a non-trivial property of the writing: a textbook routinely uses a concept before it defines it, and the readers were written so that this never happens at the level of the graph.
+
+\section{Failed routes and their resolution}
+\begin{table}[htbp]\centering\scriptsize
+\caption{Failed routes (Rule R12): the forward resolver is the first non-failed route into the same target at or after the failed route; the last column is the nearest non-failed route before it, usually the measurement the failed prediction is compared with.}\label{tab:failed}
+\resizebox{\textwidth}{!}{\input{tables/tab_failed.tex}}
+\end{table}
+\Cref{tab:failed} lists the \NEMFailed{} failed routes of the history reader and the \NUPFailed{} of the textbook. In the history every failed classical prediction (Rayleigh--Jeans, the wave picture of the photoelectric effect, the collapsing atom, the divergent self-energy, the Dirac values of the Lamb shift and of the magnetic moment) is resolved by a quantisation or quantum route into the same target within \NEMFailedMaxDist{} paragraphs. In the textbook four of six failed routes are resolved forward, three of them within three paragraphs; the equipartition prediction of the heat capacity of hydrogen fails at paragraph 270 (volume 2, chapter 2) and is resolved only at paragraph 575, by the quantum freezing of degrees of freedom in the condensed-matter chapter of volume 3. The two unresolved cases are instructive: the ether prediction fails against the Michelson--Morley null result (the measurement route precedes it by one paragraph) and the resolution, special relativity, is added as a model node without a route back into the null-result node; the classical barrier is stated as failed one paragraph \emph{after} the quantum tunnelling route that resolves it. Both are properties of how the text was written, and the engine lists them because R12 asks for a forward route.
+
+\section{Cycles and chains}
+The 2-section of a reader (the digraph with an edge from every leg to its route's target) has \NEMEdgesTwosection{} edges for the history and \NUPEdgesTwosection{} for the textbook. It is not acyclic: the history has one strongly connected component of \NEMLargestSCC{} nodes, the textbook two components with \NUPNodesInCycles{} nodes in all (the larger of \NUPLargestSCC{}), the energy-flow network none. A representative cycle is force $\to$ state of motion $\to$ velocity $\to$ (with the magnetic field) force: observables and states determine each other in a loop, which is exactly the \emph{local cycle} the energy-flow branch studies in time. The filtration is nevertheless consistent, because the cycle closes across paragraphs (Newton's law at paragraph 2, the magnetic force at paragraph 18), and the longest chain of the condensed graph is \NEMLongestChain{} (history), \NUPLongestChain{} (textbook) and \NLGLongestChain{} (energy flow, acyclic). The hubs are states and models in the history (the gauge class of potentials, the state of motion, the Hilbert-space state) and laws and base quantities in the textbook (Newton's second law, mass, the time derivative and integral, current, temperature, Coulomb's law); the most frequent target in both is the force.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=\textwidth]{fig_growth.pdf}
+\caption{Growth of the two readers with the paragraph index: cumulative states, models, observables and routes (left axis), quantum and relativistic nodes (right axis), failed routes (red lines).}\label{fig:growth}
+\end{figure}
+\Cref{fig:growth} shows the growth curves. Both readers grow almost linearly in the paragraph index with the observable layer ahead of the model layer and the state layer behind; the quantum nodes of the history enter at paragraph 50 and those of the textbook at paragraph 522 (one earlier quantum-era node, the superconducting state, is introduced in the chapter on current at paragraph 372), in both cases marked by a cluster of failed routes; the relativistic nodes of the textbook appear twice, with general relativity in the gravitation chapter (paragraph 177) and with special relativity in volume 3.
+
+\section{The energy-flow branch}
+The energy-flow network is the smallest branch (\NLGnodes{} nodes, \NLGroutes{} routes) and the one with the highest density of model nodes: nine of its model nodes are primitive (the field laws, the two parts of the lattice curl, the force coupling, the skew pairing, the energy form, the restriction to a region, the resistance), and every observable and state is derived from them by AND routes. Its four flow rules (conversion inside a region, conversion of field energy into matter energy, transport across the two boundaries) are glued in the grand network to Poynting's theorem of the history reader, and its four results (local observables cycle; the global observable is conserved; the local state wanders; the global state rotates) are the effect-type observables of a type D branch: claims about the behaviour of observables that the simulation establishes. The branch is acyclic as a graph; the cycles it studies are in the time evolution of its observables.
+
+%=====================================================================
+\chapter{Automatic exploration: census and closure}\label{ch:explore}
+
+\section{The witness matrix of the nonclassicality network}
+The nonclassicality network records, for each of its \NgptWitnesses{} witnesses, which state clusters and process clusters it requires and which it is blind to, and \NgptCombos{} combination records that give a verdict (fires, hidden, blind) for a (state, process) pair under several witnesses. The page computes from these a verdict for every cell of the witness $\times$ state $\times$ process matrix: the combination record if one exists, else blind if the state or the process is in the witness's blind list, else \emph{uncharted}. The engine implements the same rule and obtains \NgptSettled{} of \NgptCells{} cells settled (\NgptVerdictfires{} fires, \NgptVerdicthidden{} hidden, \NgptVerdictblind{} blind) and \NgptUncharted{} uncharted, the numbers the repository publishes for its version 2.6.
+\begin{table}[htbp]\centering\small
+\caption{Witness-matrix census per witness (182 cells each).}\label{tab:witness}
+\input{tables/tab_witness.tex}
+\end{table}
+\begin{figure}[htbp]\centering
+\includegraphics[width=\textwidth]{fig_census.pdf}
+\caption{Left: settled cells per witness of the nonclassicality network. Right: the conversion matrix of the resource-theory network (dark: charted conversion cells; light: other cross-theory edges).}\label{fig:census}
+\end{figure}
+\Cref{tab:witness} and \cref{fig:census} show the census per witness. Three witnesses (joint-measurability SDP, fringe visibility, Sorkin $I_3$) have no settled cell at all; the magic and coherence witnesses have the most, because the round-4 results of the project recorded their blindness on covariant probes and on energy-diagonal states.
+
+\section{The pair census}
+The repository also counts node pairs: of \NgptPairs{} unordered pairs of the \NgptNodes{} nodes, \NgptConnectedPairs{} carry at least one edge and \NgptUnconnectedPairs{} do not; the \NGPTroutes{} edges are \NgptNoGo{} no-go, \NgptPossibility{} possibility or structure and \NgptOpen{} open. The engine reproduces these numbers. By native layer pair (\cref{app:pairs}) the census is far from uniform: nine layer pairs have no edge at all (axiom--process, axiom--witness, model--process, model--task, model--witness, process--witness, task--task, task--witness, witness--witness), while effect--effect, state--state and effect--state pairs are the densest (12/78, 13/91 and 15/182 pairs connected). The structural zeros are not gaps; they are the layer pairs the branch does not designate, and the designated pairs are the ones R13 enumerates. The uniform census over all pairs is therefore an overestimate of the research agenda by the undesignated pairs, and the engine reports the census per layer pair so that the designation can be read off.
+
+\section{The conversion matrix of the resource-theory network}
+\begin{table}[htbp]\centering\small
+\caption{Conversion matrix of the thirteen resource theories ($\blacksquare$ charted by the repository's conversion group; $\square$ other state-to-state cross-theory edge; $\cdot$ other cross-theory edge).}\label{tab:qrt}
+\resizebox{0.9\textwidth}{!}{\input{tables/tab_qrt_matrix.tex}}
+\end{table}
+The resource-theory network treats its $13\times 13$ matrix of ordered theory pairs (\NqrtCells{} off-diagonal cells) as its automation hook: a cell is charted when a conversion of one theory's resource into another's is recorded with the operation class under which it holds. The engine finds \NqrtCharted{} charted cells in the repository's conversion group (\cref{tab:qrt}), the number the repository publishes after its version 1.2 (the thermal-magic cell), and in addition \NqrtChartedStateState{} cells with some state-to-state cross-theory edge (set inclusions and memberships count here) and \NqrtCrossAny{} with any cross-theory edge. The \NqrtUncharted{} uncharted conversion cells are the branch's agenda; the \NqrtPartialEdges{} edges of status partial and the \NqrtGaps{} recorded gaps complete it.
+
+\section{The record of closures}
+The data contain the evidence that the loop of \cref{fig:cycle} has run. In the nonclassicality network the edge statuses are theorem (91), definition (22), derived (13), partial (11), open (10) and counterexample (9); the thirteen derived and nine counterexample edges are closures by elementary proof and by counterexample, and the edges whose statements begin with ``literature fill'' are closures by the fourth route. The eight edges of version 2.6 (U1--U7 and U5b) close two recorded gaps (SG1 at the level of models, SG5) and were generated from uncharted cells with the literature searched first; the seven edges of version 2.4 (R1--R6) were generated the same way one release earlier. In the resource-theory network the single edge of version 1.2 (C20) is a literature fill of a formerly uncharted conversion cell \citep{deoliveira2025}, and \NqrtGaps{} gaps are recorded. These are not claims of this thesis; they are the recorded history of two branches, read off their data, and they show the census and closure rules in operation.
+
+\section{The same census on the other branches}
+Applying R13 uniformly: for the history the cell is (sector, term), \cref{tab:sectorterm}; for the readers the natural cells are the primitive nodes (nodes with no route into them) and the OR targets (nodes with alternative derivations). The history reader has \NEMPrimitiveO{} primitive observable (\NEMPrimitiveOList), as its paper states, \NEMPrimitiveS{} primitive states and \NEMPrimitiveM{} primitive models; the textbook reader has \NUPPrimitiveO{} primitive observables (the base quantities and constants: \NUPPrimitiveOList), no primitive state and \NUPPrimitiveM{} primitive models. A primitive observable is a measurement with no derivation in the branch; the agenda of a reader is the list of these together with its failed routes without forward resolution (\cref{tab:failed}). The energy-flow branch has nine primitive models and nothing else primitive, as a simulation should.
+
+%=====================================================================
+\chapter{Pedagogical development}\label{ch:pedagogy}
+
+\section{The textbook as a growing graph}
+The textbook reader \citep{gen_learning}, written for the OpenStax text \citep{openstax_up}, grows by Rule R11 through \NUPChapters{} chapters. \Cref{fig:carryin} and \cref{app:chapters} give, per chapter, the new nodes, the routes and the \emph{carried-in} nodes: the nodes of earlier chapters that the chapter's routes connect to. The engine recomputes the carried-in counts from the routes and reproduces the per-chapter lists stored in the released file; across the book \NUPCarriedTotal{} carry-ins occur (a node is counted once per chapter it is carried into), with a maximum of \NUPCarriedMax{} in one chapter. The carry-in is what the page shows when the reader moves to a new chapter: only the earlier nodes that the chapter uses. It is a projection of the filtration, computable from the routes alone, and it is the pedagogical analogue of the cumulative view of the history: what the student must have in hand to read the chapter.
+\begin{figure}[htbp]\centering
+\includegraphics[width=\textwidth]{fig_carry_in.pdf}
+\caption{Per-chapter growth of the textbook reader: new nodes, routes, and earlier nodes carried into the chapter by its routes.}\label{fig:carryin}
+\end{figure}
+
+\section{Historical versus pedagogical order}
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.62\textwidth]{fig_order.pdf}
+\caption{First-appearance paragraph of the \NorderN{} concepts shared by the electromagnetism history reader and the textbook reader.}\label{fig:order}
+\end{figure}
+Two of the readers cover the same physics in two orders: the history reader in the order of discovery and the textbook in the order of teaching. On the \NorderN{} concepts they share (\cref{app:order}), the rank correlation of first appearance is Kendall $\tau_b=\NorderTau$ (Spearman $\rho=\NorderRho$), with \NorderConc{} concordant and \NorderDisc{} discordant pairs. The orders agree on the large scale (electrostatics, currents, magnetism, induction, Maxwell, relativity, quanta) and disagree in a few identifiable places: the cross product is a chapter-2 tool in the textbook and arrives with Ørsted and Ampère in the history; the speed of light is introduced with gravitation in the textbook (volume 1, chapter 13) and with the units of electromagnetism in the history; the electromotive force precedes the magnetic field in the textbook (circuits before magnetism) and follows it in the history (Faraday after Ørsted). The inversions are the places where teaching order departs from discovery order, listed mechanically.
+
+\section{Role flips as a pedagogical signal}
+Four of the \NnFlips{} role flips are between the two readers (blackbody radiation, a measured spectrum in the history and a state in the textbook; the photon; the Bohr model, orbits in one and postulates in the other; and, through the history of the Standard Model, hydrogen levels and decays). They mark the points where a textbook posits what history measured. A reader built from the grand network can show both: the measured spectrum that classical physics could not reproduce and the state that the textbook asks the student to accept, with the failed route between them.
+
+%=====================================================================
+\chapter{The methodology as an algorithm}\label{ch:algorithm}
+
+\section{One step}
+\begin{algorithm}[htbp]
+\caption{\textsc{GenStep}: one step of the epistemic loop on a concept graph}\label{alg:step}
+\KwIn{graph $G_t$ of a branch with conventions (type D/H/E, designated census pairs $\mathcal C$); an event $e$: a new observable node, a theorem, or the next paragraph of a text; a solver $\mathcal S$}
+\KwOut{graph $G_{t+1}$, operation log $L$, agenda $A(G_{t+1})$}
+place $e$ in its layer and sub-layer by the branch conventions; $G\gets G_t\cup\{e\}$\;
+\If{$e$ is an observable with $N^-_{\lay M}(e)=\emptyset$}{\op{flag} $e$ (R2 precondition)\;}
+\If{$e$ is a paragraph}{\op{add} its new nodes, \op{derive} its routes; check no forward links (R11); \op{fail} marked routes and record resolvers (R12)\;}
+compute $U(G),Q(G),E(G),F(G),P(G)$ and the census $C(G)$ over $\mathcal C$ (\cref{thm:agenda})\;
+\ForEach{enabled rule in R1--R10, R13}{
+  \uIf{the rule needs content (R2 model node, R14 closure)}{ask $\mathcal S$ for a candidate; if none, record the cell as open\;}
+  \Else{apply the operation; append to $L$ with the count deltas of \cref{tab:ops}\;}
+}
+check the invariants of the branch type (\cref{prop:discipline} for H; filtration for D; witness--effect pairing for E)\;
+\Return $G_{t+1}=G$, $L$, $A(G_{t+1})$\;
+\end{algorithm}
+\Cref{alg:step} is the loop of \cref{fig:cycle} written as code. Lines 1--8 and 10--13 are executed by the engine; line 9 calls the solver. Everything in the instances that is logged (the operation logs of the Standard Model page, the version changelogs of the quantum networks, the paragraph markers of the readers) is the output $L$ of this step.
+
+\section{What the solver must supply}\label{sec:solvers}
+The solver is asked two kinds of question. For R2 it is asked for a model node that sends a route to the flagged observable and reproduces the routes of the node it replaces; R4 then reads the node's routes off its term, R5 marks its status from the dimension of its coupling, and R9 counts its calibrations. For R14 it is asked for the verdict of a cell: a composition of existing edges, an elementary proof, a counterexample, or a reference. The project has three solvers in use. The \emph{literature} is the solver of the quantum networks: every edge carries references, and a closure by literature fill is a search. A \emph{derivation} is the solver of the derived edges and of the propositions of the combined paper. An \emph{inference engine} is the solver of the project's two inverse-direction results, in the tradition of model learning from data \citep{brunton2016,wu2019,gentile2021}: the compose--modify--reduce engine, which on a simulated three-spin world with an impurity composed three spin-$\tfrac12$ sectors, tied the couplings by symmetry, reduced the representation by the commutant and predicted a neutron-scattering line before it was measured in the simulation; and TFO-Net, a factor-graph network that infers the operator content of a polynomial Lagrangian from response observables. Both engines answer R2 in the dynamic setting (which sector or term the data require), and both are instances of R15 and R16. The engine of this thesis does not run them; it locates where they are needed.
+
+\section{Verification obligations}
+A step is accepted when the new graph satisfies the invariants of its branch type: for type H, \cref{prop:discipline} and the rule that the state layer changes only from outside itself; for type D, the filtration property and the resolution of failed routes; for type E, the witness--effect pairing and the polarity convention. The engine checks them after every build; the counts in this thesis are the outcome of those checks on the released data.
+
+\input{part2.tex}
+
+%=====================================================================
+\part{Closing}\label{part:closing}
+\chapter{Discussion and limitations}\label{ch:limits}
+\begin{itemize}
+\item \textbf{Gaps are curation-relative.} An uncharted cell or an empty sector--term cell means that the compiled data record no edge, not that none exists. The project's standing rule is that a relation the literature establishes must already be an edge, so a gap is a question the compilation does not answer; closing it may be a literature fill. The engine cannot tell a forbidden cell from an omitted one; that is content.
+\item \textbf{Page view versus state of knowledge.} The Standard Model page draws selections; the engine's cumulative view is a reconstruction with explicit rules (persistence of observables, successor map, family closure). Different rules give different final deficits (one with family closure, four without), and the thesis states which rule it uses.
+\item \textbf{The gluing is curated.} The \NnConcepts{} identifications were made by reading labels and descriptions; they are listed with justifications so that each can be disputed by naming the concept. Several are identifications at a level of detail (the Compton shift and the Compton cross section; the Clifford group and the stabilizer operations; the general-group and the $U(1)$ symmetric states) and are marked as such.
+\item \textbf{Sub-layers of the readers are heuristic.} The point/field/Hilbert sorting of reader states is by era and label words; it does not affect any count in the thesis and is recorded for the reader of the data.
+\item \textbf{Scope of the instances.} The Standard Model branch omits the strong sector, the electromagnetism reader stops at QED, the textbook reader is one book, and the quantum networks are reviews, not exhaustive compilations. The grand network inherits these scopes.
+\item \textbf{The calendar axis is an ingredient chronology.} A route of the quantum networks is dated by the oldest source it cites (\cref{sec:dating}); this is a lower bound on the year the route was established and can precede the historical origin of a concept or follow it (\cref{sec:dating-caveat}). The project-dated nodes are flagged and excluded from the lags; the growth quantities are recomputed under the latest-source convention (\cref{tab:evo_robust}) and the conclusions of Part II are those that survive the change. No statement of Part II is a claim about the history of physics beyond the sources the networks cite.
+\item \textbf{The history's steps are thematic.} The Standard Model page orders its steps by theme (the anomaly step starts in 1914, the Wigner step in 1926); the year index uses the nodes' own year fields and places a removal at the start year of the removing step, never before the item's own year, and the final view at 2012. Items added and removed by steps whose ranges overlap are present for one year on the axis.
+\item \textbf{The phase table is hand-made.} The assignment of kinds to phases (\cref{tab:phase_map}) is the one lookup table of Part II that is not computed; it is stated in full so that a different assignment can be run. The philosophical correspondences of \cref{sec:philosophy} are readings of the counts, and the thesis records where the counts do not fit the received picture rather than adjusting either.
+\item \textbf{The rules are regularities, not laws.} R1--R10 were read off one history and are written so that they can fail on the next instance; they describe the normal growth of a research programme in Lakatos's sense \citep{lakatos1970} rather than the revolutions of Kuhn's \citep{kuhn1962}, and the replay suggests why: in the graph a revolution is a sequence of ordinary operations (partition, extend, merge, absorb) whose count deltas are the same as those of normal growth; the replay shows they are decidable from structure in 117 of 120 cells on that history and locates the cell that is not.
+\end{itemize}
+
+%=====================================================================
+\chapter{Conclusion}
+The six instances of the Great Epistemic Network are one object. Normalised into a single schema they differ in how they sort the three layers, and the difference is captured by one matrix per branch, the layer-pair signature; the three supports it takes define the dynamic, historical and effect branches, and the contraction lemma relates the last two. Their changes decompose into two dozen primitive operations whose count deltas are stated, and the rules that fire the operations are predicates that an engine evaluates: on the Standard Model history the engine recovers the hand-assigned rules from structure alone with three explained exceptions; on the readers it verifies the filtration and resolves the failed routes; on the quantum networks it reproduces the census that is their research agenda and applies the same census to the other branches. The research agenda of any concept graph, which is where the next model node, the next theorem or the next paragraph must go, is computable in linear time. What the agenda does not contain is the content that fills it, and the thesis names the solvers that supply it. The grand network, with its \NnNodes{} nodes, \NnRoutes{} routes and \NnConcepts{} shared concepts, is delivered as data so that the next branch, the strong sector or a second textbook, can be added by the same loop.
+
+Placed on a calendar axis, four of the branches show how the loop runs in time. The effect and resource networks grow by arrivals and, to a large degree, by closures with latencies of years; the reader and the history grow by arrivals; only the history removes. The counts obey an exact arrival--closure identity, densify with exponents between one and two, close preferentially around the best-connected nodes, and transfer concepts between branches with lags of a decade; the rules of Part I account for every route and for the sign of every change in the counts. The method phases run concurrently in every decade, their mix fixed by the branch's signature, and the philosophical positions on how science grows appear as graph operations whose frequencies can be counted, with the data agreeing with some readings and not with others. The evolutionary network of \EmergedV{} nodes and \EmergedE{} routes is delivered with a year slider so that each of these statements can be watched happening.
+
+%=====================================================================
+\chapter{AI-generation disclosure}\label{ch:ai}
+This thesis, the engine (\texttt{gen\_engine}), the build scripts (\texttt{build.py}, \texttt{build\_evolution.py}), the gluing table, the chronology rules, the phase table, the figures, the tables and the two explorer pages were generated by Claude (Anthropic) in working sessions directed by the author, from the released data files of the six repositories cloned at the commits listed in \cref{sec:provenance}. The author takes responsibility for the content and invites correction: every count can be recomputed with \texttt{python3 build.py}, every identification in \cref{app:concepts} can be disputed by concept id, and every rule predicate is stated in \cref{sec:detection}. The six instances themselves were produced earlier in the same project, also with AI assistance, and are cited as their repositories.
+
+\appendix
+%=====================================================================
+\chapter{The gluing catalogue}\label{app:concepts}
+\scriptsize
+\input{tables/tab_concepts.tex}
+\normalsize
+
+\chapter{Pair census of the nonclassicality network by layer pair}\label{app:pairs}
+\small
+\input{tables/tab_pairs.tex}
+\normalsize
+
+\chapter{Shared concepts of the two readers with first-appearance paragraphs}\label{app:order}
+\small
+\input{tables/tab_order.tex}
+\normalsize
+
+\chapter{Per-chapter growth of the textbook reader}\label{app:chapters}
+\small
+\input{tables/tab_chapters.tex}
+\normalsize
+
+\chapter{Yearly event logs of the effect networks}\label{app:events}
+\small
+\subsection*{Nonclassicality network}
+\label{tab:evo_events_gpt}
+\input{tables/tab_evo_events_GPT.tex}
+\subsection*{Resource-theory network}
+\label{tab:evo_events_qrt}
+\input{tables/tab_evo_events_QRT.tex}
+\normalsize
+
+\chapter{Shared concepts of the four branches with years and lags}\label{app:lags}
+\small
+\label{tab:evo_concepts_lag}
+\input{tables/tab_evo_concepts.tex}
+\normalsize
+
+\chapter{Per-decade growth by branch and phase}\label{app:decades}
+\scriptsize
+\input{tables/tab_evo_decades.tex}
+\normalsize
+
+\chapter{Rule firings by decade and by year}\label{app:rulesyear}
+\small
+\label{tab:evo_rules_decade}
+\input{tables/tab_evo_rules_decade.tex}
+\subsection*{Standard Model history: detected rule firings by year}
+\input{tables/tab_evo_hep_rules_year.tex}
+\subsection*{Layer half-years}
+Year at which each layer of each branch reaches half of its final node count.\par\medskip
+\input{tables/tab_evo_layer_half.tex}
+\normalsize
+
+\chapter{Data format and files}\label{app:data}
+\section{\texttt{gen\_grand\_network.json}}
+One JSON object with the keys \texttt{schema} (\texttt{gen-grand/1}), \texttt{branches} (one record per branch: id, title, type, source file, version, time axis, native layers and layer map), \texttt{nodes} (records with \texttt{uid} = \texttt{branch:native\_id}, \texttt{label}, \texttt{layer}, \texttt{sublayer}, \texttt{native\_layer}, \texttt{era}, time index \texttt{t}, \texttt{concept} and the branch's native fields in \texttt{extra}), \texttt{routes} (records with \texttt{uid}, \texttt{inputs}, \texttt{target}, \texttt{logic}, universal \texttt{kind}, \texttt{kind\_native}, \texttt{status}, \texttt{polarity}, \texttt{t}, \texttt{extra}), \texttt{concepts} (id, label, members, roles per branch, flip flag, note), \texttt{cross\_edges}, \texttt{hep\_clusters} and \texttt{counts}.
+\section{\texttt{gen\_evolution\_network.json}}
+One JSON object (\texttt{schema} \texttt{gen-evolution/1}) with \texttt{dating\_rules} (the text of \cref{def:dating}), \texttt{branches}, \texttt{nodes} (as above, plus \texttt{year}, \texttt{year\_prov}, \texttt{concept} restricted to the concepts shared among the four branches with the full catalogue membership in \texttt{concept\_any}, and for the history \texttt{step\_first}, \texttt{step\_last}, \texttt{removed}, \texttt{removal\_step}, \texttt{removal\_year}), \texttt{routes} (plus \texttt{year}, \texttt{year\_prov}, \texttt{phase}, \texttt{rule}, removal fields) and \texttt{concepts} (the \EnSharedFour{} shared concepts with years per branch, provenance flags, first branch and lag). The HEP part is the union of the twelve step graphs.
+\section{Files}
+\begin{itemize}[nosep]
+\item \texttt{data/sources/}: the six released data files and \texttt{PROVENANCE.txt}.
+\item \texttt{data/gen\_grand\_network.json}: the merged network.
+\item \texttt{gen\_engine/}: \texttt{schema.py} (definitions), \texttt{load.py} (normalisation), \texttt{glue.py} (the gluing table), \texttt{atlas.py}, \texttt{ops.py} (operations and rules), \texttt{replay\_hep.py} (replay and rule detection), \texttt{filtration.py}, \texttt{census.py}, \texttt{figures.py}, \texttt{tables.py}.
+\item \texttt{build.py}: runs everything. It writes the results file \texttt{out/results.json}, one normalised file per branch (\texttt{out/branch\_*.json}), the replay \texttt{out/hep\_replay.json}, the reader analyses \texttt{out/typeD.json}, the census \texttt{out/typeE.json}, the number list \texttt{out/numbers.json} and the macro file \texttt{thesis/numbers.tex}.
+\item \sloppy \texttt{gen\_engine/chrono.py} (the year index), \texttt{evolution.py} (growth analyses), \texttt{figures\_evo.py}, \texttt{tables\_evo.py}, \texttt{page\_evo.py}; \texttt{build\_evolution.py} runs Part II and writes \texttt{out/evolution.json}, \texttt{data/gen\_evolution\_network.json}, \texttt{out/numbers\_evo.json} and \texttt{thesis/numbers\_evo.tex}.
+\item \texttt{gen\_grand\_explorer.html} (Part I) and \texttt{gen\_evolution\_explorer.html} (Part II, with the year slider): self-contained pages.
+\item \texttt{figures/}, \texttt{thesis/}: this document and its generated tables.
+\end{itemize}
+
+\bibliographystyle{unsrtnat}
+\bibliography{refs}
+\end{document}

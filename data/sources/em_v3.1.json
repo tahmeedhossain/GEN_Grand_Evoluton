@@ -1,0 +1,6298 @@
+{
+ "schema": "gen-epistemic-network/1",
+ "version": "v3.1",
+ "title": "From Maxwell to QED: a history in a growing network",
+ "time_axis": "paragraph",
+ "sections": [
+  {
+   "index": 1,
+   "part": null,
+   "years": "c. 600 BCE – 1687",
+   "short": "Prelude",
+   "title": "Prelude: amber, lodestone and Newton's mechanics",
+   "first_paragraph": 0,
+   "equations": [
+    "m dv/dt = F,   dx/dt = v",
+    "F_total = F₁ + F₂ + …"
+   ]
+  },
+  {
+   "index": 2,
+   "part": null,
+   "years": "1729 – 1747",
+   "short": "Two electricities",
+   "title": "Two kinds of electricity and the conservation of charge",
+   "first_paragraph": 3,
+   "equations": [
+    "q_total = Σ qᵢ",
+    "Σ q is constant in an isolated system"
+   ]
+  },
+  {
+   "index": 3,
+   "part": null,
+   "years": "1767 – 1785",
+   "short": "Inverse-square law",
+   "title": "The inverse-square law",
+   "first_paragraph": 6,
+   "equations": [
+    "F = k q₁q₂ r̂ / r²   (k = 1/4πε₀ in SI units)",
+    "Fᵢ = Σⱼ k qᵢqⱼ (xᵢ − xⱼ) / |xᵢ − xⱼ|³"
+   ]
+  },
+  {
+   "index": 4,
+   "part": null,
+   "years": "1773 – 1839",
+   "short": "Potential theory",
+   "title": "Potential theory",
+   "first_paragraph": 9,
+   "equations": [
+    "E = −∇φ,   φ ~ φ + const",
+    "∇²φ = −ρ/ε₀",
+    "∮ E·dA = Q_enc/ε₀",
+    "U = ½∫ρφ dV"
+   ]
+  },
+  {
+   "index": 5,
+   "part": null,
+   "years": "1791 – 1849",
+   "short": "Volta and Ohm",
+   "title": "Galvanic currents: Volta and Ohm",
+   "first_paragraph": 14,
+   "equations": [
+    "ΔV = φ(b) − φ(a),   C = Q/ΔV",
+    "ΔV = IR,   J = σE",
+    "∂ρ/∂t + ∇·J = 0"
+   ]
+  },
+  {
+   "index": 6,
+   "part": null,
+   "years": "1820 – 1827",
+   "short": "Ørsted and Ampère",
+   "title": "Ørsted and Ampère: currents make magnetism",
+   "first_paragraph": 17,
+   "equations": [
+    "dB = (μ₀/4π) I dl × r̂ / r²",
+    "dF = I dl × B",
+    "∮ B·dl = μ₀ I_enc,   ∇·B = 0"
+   ]
+  },
+  {
+   "index": 7,
+   "part": null,
+   "years": "1831 – 1852",
+   "short": "Faraday",
+   "title": "Faraday: induction and lines of force",
+   "first_paragraph": 20,
+   "equations": [
+    "ℰ = −dΦ_B/dt",
+    "Φ_B = ∫ B·dA"
+   ]
+  },
+  {
+   "index": 8,
+   "part": null,
+   "years": "1845 – 1857",
+   "short": "Units and c",
+   "title": "Potentials, units and the speed of light",
+   "first_paragraph": 23,
+   "equations": [
+    "B = ∇×A,   Φ_B = ∮ A·dl",
+    "1/√(ε₀μ₀) ≈ 3.1 × 10⁸ m/s"
+   ]
+  },
+  {
+   "index": 9,
+   "part": null,
+   "years": "1855 – 1873",
+   "short": "Maxwell",
+   "title": "Maxwell's synthesis",
+   "first_paragraph": 26,
+   "equations": [
+    "∇·E = ρ/ε₀,   ∇·B = 0",
+    "∇×E = −∂B/∂t",
+    "∇×B = μ₀J + μ₀ε₀ ∂E/∂t",
+    "c = 1/√(μ₀ε₀)"
+   ]
+  },
+  {
+   "index": 10,
+   "part": null,
+   "years": "1858 – 1870",
+   "short": "Gauge freedom",
+   "title": "Retarded potentials and gauge freedom",
+   "first_paragraph": 30,
+   "equations": [
+    "E = −∇φ − ∂A/∂t,   B = ∇×A",
+    "A → A + ∇χ,   φ → φ − ∂χ/∂t",
+    "□φ = ρ/ε₀,   □A = μ₀J   (□ = c⁻²∂²ₜ − ∇²)"
+   ]
+  },
+  {
+   "index": 11,
+   "part": null,
+   "years": "1884 – 1901",
+   "short": "Poynting and Hertz",
+   "title": "Energy flow, Heaviside's equations and Hertz's waves",
+   "first_paragraph": 33,
+   "equations": [
+    "u = ½(ε₀|E|² + |B|²/μ₀),   S = E×B/μ₀",
+    "∂u/∂t + ∇·S = −J·E",
+    "g = S/c²,   ω = c|k|"
+   ]
+  },
+  {
+   "index": 12,
+   "part": null,
+   "years": "1889 – 1909",
+   "short": "Electrons",
+   "title": "Electrons and the Lorentz force",
+   "first_paragraph": 37,
+   "equations": [
+    "F = q(E + v×B)",
+    "P = q²a² / 6πε₀c³"
+   ]
+  },
+  {
+   "index": 13,
+   "part": null,
+   "years": "1887 – 1908",
+   "short": "Relativity",
+   "title": "Relativity",
+   "first_paragraph": 40,
+   "equations": [
+    "A^μ = (φ/c, A),   J^μ = (cρ, J)",
+    "F_μν = ∂_μA_ν − ∂_νA_μ,   ∂_μF^μν = μ₀J^ν",
+    "E·B  and  |E|² − c²|B|²  are invariant"
+   ]
+  },
+  {
+   "index": 14,
+   "part": null,
+   "years": "1903 – 1950",
+   "short": "Action and gauge",
+   "title": "Action, symmetry and the gauge principle",
+   "first_paragraph": 43,
+   "equations": [
+    "L = ½mv² − qφ + q v·A",
+    "p = mv + qA,   H = (p − qA)²/2m + qφ",
+    "{πᵢ, πⱼ} = q εᵢⱼₖ Bₖ"
+   ]
+  },
+  {
+   "index": 15,
+   "part": null,
+   "years": "1899 – 1986",
+   "short": "Geometry",
+   "title": "Geometry: forms, bundles and holonomy",
+   "first_paragraph": 47,
+   "equations": [
+    "F = dA,   dF = 0,   d⋆F = μ₀⋆J",
+    "d⋆J = 0  follows from  d² = 0",
+    "∮A·dl is gauge-invariant"
+   ]
+  },
+  {
+   "index": 16,
+   "part": "Part II: Toward quantum electrodynamics",
+   "years": "1859 – 1926",
+   "short": "Quanta",
+   "title": "Cracks in the classical picture",
+   "first_paragraph": 50,
+   "equations": [
+    "E = hν = ħω,   p = h/λ",
+    "u(ν,T) = (8πhν³/c³) / (e^{hν/kT} − 1)",
+    "K_max = hν − W,   hν = Eₙ − Eₘ"
+   ]
+  },
+  {
+   "index": 17,
+   "part": null,
+   "years": "1924 – 1932",
+   "short": "Quantum mechanics",
+   "title": "Quantum mechanics",
+   "first_paragraph": 54,
+   "equations": [
+    "[x̂, p̂] = iħ,   {A, B} → [Â, B̂]/iħ",
+    "iħ ∂ψ/∂t = Ĥψ",
+    "Prob(a) = |⟨a|ψ⟩|²,   d⟨x̂⟩/dt = ⟨p̂⟩/m"
+   ]
+  },
+  {
+   "index": 18,
+   "part": null,
+   "years": "1926 – 1980",
+   "short": "Minimal coupling",
+   "title": "Charges in quantum mechanics",
+   "first_paragraph": 58,
+   "equations": [
+    "Ĥ = (−iħ∇ − qA)²/2m + qφ",
+    "ψ → e^{iqχ/ħ} ψ",
+    "Eₙ = ħω_c (n + ½),   Δθ = qΦ_B/ħ"
+   ]
+  },
+  {
+   "index": 19,
+   "part": null,
+   "years": "1922 – 1932",
+   "short": "Dirac equation",
+   "title": "The Dirac equation and antimatter",
+   "first_paragraph": 61,
+   "equations": [
+    "(iħγ^μ D_μ − mc) ψ = 0,   D_μ = ∂_μ + (iq/ħ) A_μ",
+    "{γ^μ, γ^ν} = 2η^μν",
+    "g = 2 (Dirac)"
+   ]
+  },
+  {
+   "index": 20,
+   "part": null,
+   "years": "1925 – 1997",
+   "short": "Photons",
+   "title": "Quantizing the field: photons",
+   "first_paragraph": 64,
+   "equations": [
+    "[a_k, a_k′†] = δ_kk′,   Ĥ = Σ ħω_k (a_k†a_k + ½)",
+    "|n_k⟩ ∈ Fock space",
+    "F/A = −π²ħc / 240 d⁴"
+   ]
+  },
+  {
+   "index": 21,
+   "part": null,
+   "years": "1928 – 1947",
+   "short": "Infinities",
+   "title": "Quantum electrodynamics and its infinities",
+   "first_paragraph": 67,
+   "equations": [
+    "α = e² / 4πε₀ħc ≈ 1/137.036",
+    "{ψ̂_a(x), ψ̂_b†(y)} = δ_ab δ³(x − y)",
+    "ΔE_Lamb ≈ 1058 MHz × h"
+   ]
+  },
+  {
+   "index": 22,
+   "part": null,
+   "years": "1947 – 1954",
+   "short": "Renormalization",
+   "title": "Renormalization and Feynman diagrams",
+   "first_paragraph": 71,
+   "equations": [
+    "⟨f|S|i⟩ = Σ (Feynman diagrams)",
+    "a_e = (g − 2)/2 = α/2π + O(α²)",
+    "α(Q) grows from 1/137 to ≈ 1/128 at Q ≈ M_Z c²"
+   ]
+  },
+  {
+   "index": 23,
+   "part": null,
+   "years": "1950 – today",
+   "short": "QED as gauge theory",
+   "title": "QED as a gauge theory",
+   "first_paragraph": 75,
+   "equations": [
+    "ℒ_QED = ψ̄(iħcγ^μD_μ − mc²)ψ − (1/4μ₀) F_μνF^μν",
+    "D_μ = ∂_μ + (iq/ħ) A_μ",
+    "k_μ M^μ = 0  (Ward identity)"
+   ]
+  }
+ ],
+ "paragraphs": [
+  {
+   "index": 0,
+   "section": 1,
+   "text": "Two curiosities stood at the start. Rubbed amber, called elektron in Greek, attracts chaff and feathers, and the lodestone attracts iron. Greek tradition credits Thales of Miletus with noticing both around 600 BCE. By the eleventh century Chinese writers such as Shen Kuo described the magnetic compass, and in Europe it guided navigators from the twelfth century onward.",
+   "nodes_mentioned": [],
+   "routes_marked": []
+  },
+  {
+   "index": 1,
+   "section": 1,
+   "text": "In De Magnete (1600) William Gilbert separated the two effects. With a pivoted needle, the versorium, he showed that many substances besides amber attract when rubbed, coined the Latin word electricus for them, and argued that the Earth itself is a great magnet. Electricity and magnetism entered the seventeenth century as distinct phenomena.",
+   "nodes_mentioned": [],
+   "routes_marked": []
+  },
+  {
+   "index": 2,
+   "section": 1,
+   "text": "The mathematical frame came from mechanics. Newton's Principia (1687) describes a body by its position in Euclidean space and its state of motion, given by position together with velocity. Rates of change in time connect them, and a force is whatever changes velocity: m dv/dt = F. Forces from several sources combine by the parallelogram rule, already used by Simon Stevin in 1586. Newton's inverse-square law of gravity became the template that the electricians of the next century would imitate.",
+   "nodes_mentioned": [
+    "r",
+    "traj",
+    "v",
+    "ddt",
+    "F",
+    "vec"
+   ],
+   "routes_marked": [
+    "g_newton"
+   ]
+  },
+  {
+   "index": 3,
+   "section": 2,
+   "text": "Stephen Gray showed in 1729 that the \"electric virtue\" could travel hundreds of feet along a packthread line but not along silk, the first clear distinction between conductors and insulators. In 1733 Charles Du Fay found two kinds of electrification, which he called vitreous and resinous: like kinds repel and unlike kinds attract.",
+   "nodes_mentioned": [],
+   "routes_marked": []
+  },
+  {
+   "index": 4,
+   "section": 2,
+   "text": "In 1745 and 1746 Ewald von Kleist and Pieter van Musschenbroek independently found that a water-filled glass jar could store a startling amount of electricity. The Leyden jar made it possible to accumulate, carry and discharge electricity at will, and so made experiments repeatable.",
+   "nodes_mentioned": [],
+   "routes_marked": []
+  },
+  {
+   "index": 5,
+   "section": 2,
+   "text": "Benjamin Franklin, in letters from 1747 onward, proposed a single electric fluid whose excess or deficit makes a body positive or negative. His central claim was that electrification only moves the fluid around: what one body gains, another loses. In modern terms, electric charge is a signed quantity that is additive and conserved. Charging a Leyden jar does not create charge; it separates it.",
+   "nodes_mentioned": [
+    "q",
+    "addq"
+   ],
+   "routes_marked": []
+  },
+  {
+   "index": 6,
+   "section": 3,
+   "text": "Joseph Priestley noticed in 1767 that no electric force acts on objects inside a charged hollow conductor. Newton had shown that a uniform shell exerts no gravitational force on bodies inside it, and only an inverse-square law has that property, so Priestley guessed that the electric force also falls off as 1/r². Henry Cavendish tested the idea around 1773 with concentric spheres and found the exponent to be 2 within about one part in fifty, but he never published; Maxwell edited his notes in 1879.",
+   "nodes_mentioned": [],
+   "routes_marked": []
+  },
+  {
+   "index": 7,
+   "section": 3,
+   "text": "Charles-Augustin de Coulomb measured the force directly in 1785 with a torsion balance. The repulsion between two small charged spheres varies inversely as the square of their distance, and the same law holds between magnetic poles. The Coulomb law gives the force between any two point charges.",
+   "nodes_mentioned": [
+    "coul"
+   ],
+   "routes_marked": []
+  },
+  {
+   "index": 8,
+   "section": 3,
+   "text": "For many charges one needs the whole configuration of charges and their positions. The force on any one charge is the vector sum of the pairwise forces, each pair acting as though the others were absent. This principle of superposition is so natural that it was rarely stated, yet it is a strong physical claim: electrostatics is linear.",
+   "nodes_mentioned": [
+    "pts",
+    "sup"
+   ],
+   "routes_marked": [
+    "g_Fc"
+   ]
+  },
+  {
+   "index": 9,
+   "section": 4,
+   "text": "Coulomb's law said what happens between a pair. The mathematicians who had been studying Newtonian gravitation asked a different question: what is the force at each point of space due to a whole distribution of matter? Lagrange noticed in 1773 that the gravitational force is the gradient of a single scalar function. Laplace showed in the 1780s that this function satisfies ∇²V = 0 in empty space, and Poisson in 1813 added the source term inside matter, giving Poisson's equation.",
+   "nodes_mentioned": [
+    "lap"
+   ],
+   "routes_marked": []
+  },
+  {
+   "index": 10,
+   "section": 4,
+   "text": "Poisson brought these methods to electricity in 1812, treating charge as a continuous density spread over the surfaces of conductors. Point charges and smooth densities were later put on one footing by the delta function of Dirac (1927) and Laurent Schwartz's theory of distributions (1945), a modern convenience adopted here.",
+   "nodes_mentioned": [
+    "rho",
+    "delta"
+   ],
+   "routes_marked": []
+  },
+  {
+   "index": 11,
+   "section": 4,
+   "text": "George Green, a self-taught miller from Nottingham, published his Essay in 1828. He named the scalar function the potential, proved the integral theorem now called Green's theorem, and introduced the Green's function for solving Poisson's equation with given boundary values on conductors. Because only the potential's gradient gives the force, the potential is fixed only up to an additive constant.",
+   "nodes_mentioned": [
+    "phi",
+    "bc",
+    "grad"
+   ],
+   "routes_marked": []
+  },
+  {
+   "index": 12,
+   "section": 4,
+   "text": "Mikhail Ostrogradsky (1826) and Carl Friedrich Gauss (1813, 1839) established the divergence theorem, which turns a volume integral of sources into a surface integral of flux. For electricity it says that the flux of force through a closed surface measures the charge enclosed. Combined with symmetry, it gives the force of a charged sphere or wire without any integration.",
+   "nodes_mentioned": [
+    "div",
+    "PhiE",
+    "sym"
+   ],
+   "routes_marked": [
+    "g_gausslaw"
+   ]
+  },
+  {
+   "index": 13,
+   "section": 4,
+   "text": "These tools make it natural to speak of the electric force per unit charge at each point, and of the whole distribution of that force over space, obtained from the potential by a gradient and recovered from it by line integrals that do not depend on the path. The work needed to assemble a distribution of charge turns out to be a quadratic form in the charges. For now the field is a calculating device: the forces themselves are still thought to act at a distance.",
+   "nodes_mentioned": [
+    "E",
+    "Efield",
+    "line",
+    "U",
+    "bil"
+   ],
+   "routes_marked": []
+  },
+  {
+   "index": 14,
+   "section": 5,
+   "text": "Luigi Galvani's experiments on frog legs (1791) led Alessandro Volta to build the first battery, a pile of zinc and copper discs announced in 1800. For the first time electricity could flow steadily. Volta described the driving \"tension\" of the pile, our voltage, and had earlier related a conductor's charge to its tension through its capacity, Q = CV.",
+   "nodes_mentioned": [
+    "dV",
+    "C"
+   ],
+   "routes_marked": []
+  },
+  {
+   "index": 15,
+   "section": 5,
+   "text": "A steady flow of charge is a current, and its distribution through a conductor is the current density. Georg Simon Ohm found in 1827 that the current through a wire is proportional to the tension across it, which defines the wire's resistance. In local form, Ohm's law says the current density is proportional to the electric field.",
+   "nodes_mentioned": [
+    "I",
+    "J",
+    "R",
+    "ohm"
+   ],
+   "routes_marked": []
+  },
+  {
+   "index": 16,
+   "section": 5,
+   "text": "Gustav Kirchhoff stated his circuit laws in 1845: the currents entering a junction sum to zero. Its local version is the continuity equation, which expresses Franklin's conservation of charge point by point. In 1849 Kirchhoff identified Ohm's tension with a difference of Green's electrostatic potential, joining the theory of currents to the theory of static charges.",
+   "nodes_mentioned": [
+    "cont"
+   ],
+   "routes_marked": [
+    "g_dV1",
+    "g_dV2"
+   ]
+  },
+  {
+   "index": 17,
+   "section": 6,
+   "text": "In 1820 Hans Christian Ørsted saw a compass needle swing when a nearby wire carried a current. It was the first link between electricity and magnetism, and a strange one: the needle turned to stand across the wire rather than pointing toward it.",
+   "nodes_mentioned": [],
+   "routes_marked": []
+  },
+  {
+   "index": 18,
+   "section": 6,
+   "text": "Within months Jean-Baptiste Biot and Félix Savart measured how the magnetic action of a long straight wire falls off with distance, and Laplace distilled their results into a law for each small element of current, the Biot–Savart law. Its direction is given by a cross product, notation that Gibbs and Heaviside standardized only in the 1880s. Because a cross product depends on a choice of handedness, the magnetic field is a pseudovector.",
+   "nodes_mentioned": [
+    "B",
+    "bs",
+    "cross"
+   ],
+   "routes_marked": [
+    "g_Bbs"
+   ]
+  },
+  {
+   "index": 19,
+   "section": 6,
+   "text": "André-Marie Ampère, starting in September 1820, measured the forces between current-carrying wires and proposed that magnets owe their power to tiny circulating currents. His 1826 memoir founded \"electrodynamics\". Each element of wire feels a force at right angles to both itself and the magnetic field. Ampère's law, in the circulation form that Maxwell later wrote with the curl, says that the magnetic field circulates around currents in proportion to the current enclosed.",
+   "nodes_mentioned": [
+    "curl",
+    "Bfield"
+   ],
+   "routes_marked": [
+    "g_Fwire",
+    "g_Bamp"
+   ]
+  },
+  {
+   "index": 20,
+   "section": 7,
+   "text": "On 29 August 1831 Michael Faraday wound two coils on an iron ring. Closing the circuit of one produced a brief current in the other, while a steady current produced nothing. Moving a magnet into a coil had the same effect. What drives the induced electromotive force is change: the rate at which the magnetic flux through the circuit changes, which Faraday pictured as the number of lines of force threading it. Emil Lenz supplied the sign in 1834: the induced current opposes the change. Together these make Faraday's law of induction.",
+   "nodes_mentioned": [
+    "emf",
+    "PhiB",
+    "faraday"
+   ],
+   "routes_marked": [
+    "g_emf1"
+   ]
+  },
+  {
+   "index": 21,
+   "section": 7,
+   "text": "Faraday had no formal mathematics and thought in pictures. Lines of force filled the space around magnets and charges, and he came to regard them as physically real, a condition of space itself rather than a bookkeeping device. In 1845 he found that a magnetic field rotates the plane of polarized light passing through heavy glass, and in 1846 he speculated that light might be a vibration of the lines of force.",
+   "nodes_mentioned": [],
+   "routes_marked": []
+  },
+  {
+   "index": 22,
+   "section": 7,
+   "text": "This is the birth of the field concept in physics. The electric and magnetic fields stop being sums of distant forces and become the state of the region in which forces act.",
+   "nodes_mentioned": [
+    "Efield",
+    "Bfield"
+   ],
+   "routes_marked": []
+  },
+  {
+   "index": 23,
+   "section": 8,
+   "text": "On the continent, physicists kept to action at a distance but made it quantitative. Franz Neumann (1845) derived induced currents from a potential built from the currents in a circuit, and William Thomson (1847) represented magnetic forces through a vector function in a mechanical analogy. These are the first appearances of what Maxwell would call the electromagnetic momentum and we call the vector potential, whose curl gives the magnetic field and whose loop integral gives the flux.",
+   "nodes_mentioned": [
+    "A"
+   ],
+   "routes_marked": [
+    "g_Bcurl",
+    "g_PhiBA"
+   ]
+  },
+  {
+   "index": 24,
+   "section": 8,
+   "text": "Wilhelm Weber (1846) proposed a force law between moving charges and, with Rudolf Kohlrausch in 1856, measured the ratio between the electrostatic and electromagnetic units of charge. That ratio is fixed by the two couplings in the electric and magnetic force laws, and it has the units of a speed. In modern terms it is about 3.1 × 10⁸ m/s.",
+   "nodes_mentioned": [
+    "consts"
+   ],
+   "routes_marked": [
+    "g_eps"
+   ]
+  },
+  {
+   "index": 25,
+   "section": 8,
+   "text": "Meanwhile Hippolyte Fizeau (1849) and Léon Foucault (1850, 1862) had measured the speed of light on Earth, finding values near 3 × 10⁸ m/s. Kirchhoff showed in 1857 that electrical signals on an ideal wire travel at Weber's speed. The numerical match was noticed, but no theory yet explained it.",
+   "nodes_mentioned": [
+    "c"
+   ],
+   "routes_marked": []
+  },
+  {
+   "index": 26,
+   "section": 9,
+   "text": "James Clerk Maxwell set out to put Faraday's pictures into mathematics. \"On Faraday's Lines of Force\" (1855–56) built analogies with fluid flow. \"On Physical Lines of Force\" (1861–62) imagined space filled with rotating molecular vortices separated by idle wheels. That mechanical model led him to an extra term in Ampère's law, the displacement current.",
+   "nodes_mentioned": [],
+   "routes_marked": []
+  },
+  {
+   "index": 27,
+   "section": 9,
+   "text": "The term is forced by consistency. Ampère's law sets the curl of the magnetic field equal to the current, and the divergence of any curl vanishes, so the current would have to be divergence-free. But the continuity equation says the divergence of the current is minus the rate at which charge accumulates, which is not zero while a capacitor charges. Adding μ₀ε₀ ∂E/∂t restores agreement. The corrected equations admit transverse waves whose speed Maxwell computed from the Weber–Kohlrausch ratio. It matched Fizeau's speed of light, and Maxwell concluded that light is an electromagnetic disturbance.",
+   "nodes_mentioned": [
+    "cont",
+    "maxwell",
+    "c"
+   ],
+   "routes_marked": [
+    "g_disp",
+    "g_c"
+   ]
+  },
+  {
+   "index": 28,
+   "section": 9,
+   "text": "\"A Dynamical Theory of the Electromagnetic Field\" (1865) dropped the vortices and stated the theory as twenty equations in twenty variables, which we now write as the four Maxwell equations. The electric and magnetic fields together form a single dynamical state that evolves in time from its present values, with electrostatics as the special case in which nothing changes.",
+   "nodes_mentioned": [
+    "maxwell",
+    "EB"
+   ],
+   "routes_marked": [
+    "g_evolve",
+    "g_static"
+   ]
+  },
+  {
+   "index": 29,
+   "section": 9,
+   "text": "The Treatise on Electricity and Magnetism (1873) located energy in the field itself and expressed electromagnetic forces as stresses transmitted through the medium. From these stresses Maxwell predicted that light exerts a pressure on any surface it strikes.",
+   "nodes_mentioned": [
+    "u",
+    "stress"
+   ],
+   "routes_marked": [
+    "g_Fstress"
+   ]
+  },
+  {
+   "index": 30,
+   "section": 10,
+   "text": "Bernhard Riemann suggested in 1858, in a paper published only in 1867, that electrical action spreads at the speed of light. In 1867 the Danish physicist Ludvig Lorenz, independently of Maxwell, wrote the scalar and vector potentials as integrals over sources evaluated at the earlier, retarded time, under a condition that makes each potential obey the wave equation. The condition is called the Lorenz gauge and is often misattributed to H. A. Lorentz.",
+   "nodes_mentioned": [
+    "wave"
+   ],
+   "routes_marked": [
+    "g_ret"
+   ]
+  },
+  {
+   "index": 31,
+   "section": 10,
+   "text": "Potentials are not unique. Adding the gradient of any function to A, and subtracting that function's time derivative from φ, leaves the electric and magnetic fields unchanged. Maxwell, in the Treatise, chose the condition ∇·A = 0, now the Coulomb gauge, and Hermann von Helmholtz (1870) compared a whole family of choices while weighing the rival theories. Such a condition is a gauge fixing. The freedom itself, later named a gauge transformation, means that the physical content lies in the class of equivalent potentials rather than in any single pair.",
+   "nodes_mentioned": [
+    "gfix",
+    "gauge",
+    "pot"
+   ],
+   "routes_marked": []
+  },
+  {
+   "index": 32,
+   "section": 10,
+   "text": "That potentials exist at all is a statement about the field equations: a divergence-free field is a curl and a curl-free field is a gradient, at least in regions without holes. This is the Poincaré lemma, named for work of the 1880s although Stokes, Thomson and Maxwell already relied on it. In the decades that followed, Heaviside and Hertz regarded potentials as mathematical scaffolding to be removed from the theory.",
+   "nodes_mentioned": [
+    "poinc"
+   ],
+   "routes_marked": [
+    "g_pot1"
+   ]
+  },
+  {
+   "index": 33,
+   "section": 11,
+   "text": "John Henry Poynting (1884) and Oliver Heaviside (1885) independently derived the local law of energy conservation for the field, Poynting's theorem. Energy flows through space along the Poynting vector E × B / μ₀. In a circuit, energy reaches a resistor through the surrounding field rather than along the inside of the wires.",
+   "nodes_mentioned": [
+    "poynt",
+    "S"
+   ],
+   "routes_marked": []
+  },
+  {
+   "index": 34,
+   "section": 11,
+   "text": "Heaviside, and Heinrich Hertz shortly after, eliminated the potentials from Maxwell's equations and rewrote them as the four vector equations in E and B used today. Josiah Willard Gibbs and Heaviside developed the vector algebra and calculus that made this compact notation possible.",
+   "nodes_mentioned": [],
+   "routes_marked": []
+  },
+  {
+   "index": 35,
+   "section": 11,
+   "text": "Between 1886 and 1888 Hertz generated electromagnetic waves with spark-gap oscillators and detected them across his laboratory. He measured their wavelength and showed that they reflect, refract and can be polarized, just like light. Free radiation modes are naturally described by Fourier's decomposition (1822) into plane waves.",
+   "nodes_mentioned": [
+    "wavedat",
+    "vac",
+    "fourier"
+   ],
+   "routes_marked": []
+  },
+  {
+   "index": 36,
+   "section": 11,
+   "text": "Fields carry momentum as well as energy. Henri Poincaré assigned the field a momentum density S/c² in 1900, and Pyotr Lebedev (1900) and Ernest Nichols with Gordon Hull (1901) measured the radiation pressure that Maxwell had predicted.",
+   "nodes_mentioned": [
+    "g"
+   ],
+   "routes_marked": []
+  },
+  {
+   "index": 37,
+   "section": 12,
+   "text": "Maxwell's theory described continuous media. Hendrik Antoon Lorentz, from 1892, split the world into a field in empty space and discrete charged particles that act as its sources. Heaviside (1889) and Lorentz (1895) gave the force on a moving charge, F = q(E + v × B). This completes the theory: fields tell charges how to move, and charges tell fields how to change.",
+   "nodes_mentioned": [],
+   "routes_marked": [
+    "g_FL"
+   ]
+  },
+  {
+   "index": 38,
+   "section": 12,
+   "text": "In 1897 J. J. Thomson deflected cathode rays with crossed electric and magnetic fields, balanced the two forces to find the particles' speed, and measured their charge-to-mass ratio; the velocity-dependent force is also how a magnetic field is probed with moving charges. Robert Millikan's oil-drop experiments, from 1909, showed that charge comes in whole multiples of the electron's charge e.",
+   "nodes_mentioned": [],
+   "routes_marked": [
+    "g_Bforce"
+   ]
+  },
+  {
+   "index": 39,
+   "section": 12,
+   "text": "An accelerating charge radiates. Joseph Larmor (1897) gave the radiated power of a slowly moving charge, and Alfred-Marie Liénard (1898) and Emil Wiechert (1900) found the exact retarded potentials of a point charge in arbitrary motion. The same power follows from integrating the Poynting flux over a distant sphere.",
+   "nodes_mentioned": [
+    "P"
+   ],
+   "routes_marked": [
+    "g_P1",
+    "g_P2"
+   ]
+  },
+  {
+   "index": 40,
+   "section": 13,
+   "text": "Maxwell's equations predict a single speed c, but relative to what? Experiments such as Michelson and Morley's (1887) found no trace of motion through the ether. Lorentz (1904) found the transformations of space and time that leave Maxwell's equations unchanged, and Henri Poincaré (1905) showed that they form a group, the Lorentz group. Unlike rotations about a single axis, boosts in different directions do not commute.",
+   "nodes_mentioned": [
+    "lorentz"
+   ],
+   "routes_marked": []
+  },
+  {
+   "index": 41,
+   "section": 13,
+   "text": "Albert Einstein's 1905 paper \"On the Electrodynamics of Moving Bodies\" began from an electromagnetic puzzle: a magnet moving past a conductor and a conductor moving past a magnet produce the same current, yet were explained differently. Einstein took the relativity principle and the constancy of c as postulates, so that Maxwell's theory needed no change while mechanics did.",
+   "nodes_mentioned": [],
+   "routes_marked": []
+  },
+  {
+   "index": 42,
+   "section": 13,
+   "text": "Hermann Minkowski (1908) recast the theory in four-dimensional spacetime. The potentials combine into a four-potential, charge and current into a four-current, and the electric and magnetic fields into one antisymmetric field tensor. What one observer calls electric another calls partly magnetic, but two invariants are the same for everyone. Energy density, energy flux, momentum density and stress combine into a single energy–momentum tensor.",
+   "nodes_mentioned": [
+    "Amu",
+    "jmu",
+    "Fmn",
+    "inv",
+    "T"
+   ],
+   "routes_marked": [
+    "g_Fmink",
+    "g_EBF"
+   ]
+  },
+  {
+   "index": 43,
+   "section": 14,
+   "text": "Karl Schwarzschild (1903) derived the motion of charges and the field equations together from a single action principle. For a charge, the Lagrangian contains the term q v·A, and its Euler–Lagrange equation is the Lorentz force. A gauge transformation changes the Lagrangian only by a total time derivative, which leaves the motion unchanged.",
+   "nodes_mentioned": [
+    "action"
+   ],
+   "routes_marked": [
+    "g_FEL"
+   ]
+  },
+  {
+   "index": 44,
+   "section": 14,
+   "text": "The Legendre transform leads to the Hamiltonian description in phase space. The canonical momentum p = mv + qA shifts under gauge transformations, so it is not directly measurable; the kinetic momentum p − qA is. In terms of Poisson brackets, the components of the kinetic momentum fail to commute in a magnetic field. The field itself becomes a Hamiltonian system on its own phase space, with Gauss's law acting as a constraint, a structure Dirac made systematic around 1950.",
+   "nodes_mentioned": [
+    "legendre",
+    "phase",
+    "pkin",
+    "pb",
+    "fphase"
+   ],
+   "routes_marked": []
+  },
+  {
+   "index": 45,
+   "section": 14,
+   "text": "Emmy Noether proved in 1918 that every continuous symmetry of an action yields a conservation law. Applied to electromagnetism, Noether's theorem gives conserved totals of energy, momentum and angular momentum, which balance only when the field's contributions are counted.",
+   "nodes_mentioned": [
+    "noether",
+    "cons"
+   ],
+   "routes_marked": []
+  },
+  {
+   "index": 46,
+   "section": 14,
+   "text": "Hermann Weyl (1918) proposed a scale invariance he called Eichinvarianz, \"gauge invariance\", hoping to unify electromagnetism with gravity. Einstein objected, and the idea failed in that form. After quantum mechanics, Vladimir Fock (1926) and Fritz London (1927) saw that the right symmetry is a change of quantum phase, and Weyl (1929) recast his idea accordingly. Gauge symmetry now explains charge conservation instead of assuming it.",
+   "nodes_mentioned": [],
+   "routes_marked": [
+    "g_noethcont"
+   ]
+  },
+  {
+   "index": 47,
+   "section": 15,
+   "text": "Élie Cartan's calculus of differential forms, developed from 1899, gives the theory its most compact statement. The exterior derivative unifies gradient, curl and divergence, and its property d² = 0 contains both curl∘grad = 0 and div∘curl = 0. The wedge product builds higher forms, and the Hodge star, developed by W. V. D. Hodge in the 1930s, carries all the metric information. Maxwell's equations become dF = 0 and d⋆F = μ₀⋆J, and charge conservation follows from d² = 0.",
+   "nodes_mentioned": [
+    "ext",
+    "wedge",
+    "hodge"
+   ],
+   "routes_marked": [
+    "g_inv",
+    "g_maxform",
+    "g_d2cont"
+   ]
+  },
+  {
+   "index": 48,
+   "section": 15,
+   "text": "Paul Dirac (1931) showed that a magnetic monopole is consistent with quantum mechanics only if the potentials live on overlapping patches glued together by gauge transformations. The global object is a principal U(1) bundle whose connection is the potential and whose curvature is the field. Because U(1) is commutative, the curvature has no quadratic term, and the theory stays linear. Chen Ning Yang and Robert Mills (1954) generalized the construction to non-commutative groups.",
+   "nodes_mentioned": [
+    "bundle",
+    "conn"
+   ],
+   "routes_marked": [
+    "g_Fcurv"
+   ]
+  },
+  {
+   "index": 49,
+   "section": 15,
+   "text": "Werner Ehrenberg and Raymond Siday (1949) and, independently, Yakir Aharonov and David Bohm (1959) predicted that electrons passing on either side of a shielded solenoid, where B = 0, acquire a phase difference set by the holonomy ∮A·dl. Robert Chambers observed the effect in 1960, and Akira Tonomura's group confirmed it decisively in 1986. Tai Tsun Wu and Yang (1975) wrote out the dictionary between gauge physics and fibre-bundle geometry. Classical electromagnetism had turned out to be the simplest gauge theory, the model on which the forces of particle physics are built.",
+   "nodes_mentioned": [
+    "hol"
+   ],
+   "routes_marked": []
+  },
+  {
+   "index": 50,
+   "section": 16,
+   "text": "By 1900 the classical theory looked complete, yet it failed on the light emitted by hot bodies. Kirchhoff (1859) showed that the radiation inside a cavity at temperature T has a universal spectrum, and by 1900 Otto Lummer, Ernst Pringsheim, Heinrich Rubens and Ferdinand Kurlbaum had measured it precisely. Classical physics makes a definite prediction: treat each radiation mode as an oscillator and give it the average energy kT required by the equipartition theorem. The result, worked out by Rayleigh (1900) and Jeans (1905), agrees at long wavelengths but makes the energy grow without bound at short ones, what Ehrenfest later called the ultraviolet catastrophe.",
+   "nodes_mentioned": [
+    "bbspec",
+    "equip"
+   ],
+   "routes_marked": [
+    "g_RJ"
+   ]
+  },
+  {
+   "index": 51,
+   "section": 16,
+   "text": "Max Planck found a formula that fits the data in October 1900 and, in December, derived it by assuming that oscillators exchange energy with radiation only in packets E = hν. The Planck relation introduced a new constant of nature, Planck's constant, and with it the correct spectrum. Planck regarded the packets as a feature of emission and absorption, not of light itself.",
+   "nodes_mentioned": [
+    "planck",
+    "hbar"
+   ],
+   "routes_marked": [
+    "g_planckbb"
+   ]
+  },
+  {
+   "index": 52,
+   "section": 16,
+   "text": "Einstein went further in 1905: light itself comes in quanta. This explained the photoelectric effect, in which the energy of ejected electrons depends on the light's frequency rather than its intensity, contrary to the classical wave picture. Millikan confirmed Einstein's equation in 1916, and Arthur Compton's 1923 X-ray scattering experiments showed that the light quantum, named the photon by Gilbert Lewis in 1926, carries momentum h/λ as well as energy.",
+   "nodes_mentioned": [
+    "photoel",
+    "photon"
+   ],
+   "routes_marked": [
+    "g_photoel",
+    "g_photowave",
+    "g_photon1"
+   ]
+  },
+  {
+   "index": 53,
+   "section": 16,
+   "text": "Atoms posed a second crisis. Rutherford's 1911 nuclear atom has electrons orbiting a tiny nucleus, but an accelerating charge radiates, so by Larmor's formula a classical atom should collapse in about 10⁻¹¹ s while emitting a continuous spectrum. Real atoms are stable and emit sharp spectral lines, whose hydrogen series Balmer (1885) and Rydberg (1888) had already fitted. Niels Bohr (1913) postulated stationary orbits with quantized angular momentum, the atom emitting a quantum hν only when it jumps between them. The rules worked for hydrogen but were an uneasy patchwork of classical orbits and quantum conditions.",
+   "nodes_mentioned": [
+    "spectra",
+    "bohr"
+   ],
+   "routes_marked": [
+    "g_collapse",
+    "g_bohr",
+    "g_bohrlines"
+   ]
+  },
+  {
+   "index": 54,
+   "section": 17,
+   "text": "Louis de Broglie proposed in 1924 that matter also has wave properties, with wavelength h/p. In 1925 Werner Heisenberg rebuilt atomic physics from arrays of transition quantities, which Max Born and Pascual Jordan recognized as matrices that do not commute. They found the rule xp − px = iħ, where ħ = h/2π.",
+   "nodes_mentioned": [],
+   "routes_marked": []
+  },
+  {
+   "index": 55,
+   "section": 17,
+   "text": "Paul Dirac, reading Heisenberg's paper, noticed that the commutator of two quantum quantities behaves exactly like the Poisson bracket of the corresponding classical ones: both are bilinear, antisymmetric and satisfy the Jacobi identity. His rule replaces {A, B} by [Â, B̂]/iħ. This canonical commutation relation is the heart of the move from classical to quantum: the commutative algebra of functions on phase space becomes a non-commutative algebra of operators.",
+   "nodes_mentioned": [
+    "comm",
+    "ops"
+   ],
+   "routes_marked": [
+    "g_dirac",
+    "g_ops"
+   ]
+  },
+  {
+   "index": 56,
+   "section": 17,
+   "text": "Erwin Schrödinger (1926) wrote a wave equation for de Broglie's waves, the Schrödinger equation, and showed that it reproduces Heisenberg's results. The state of a system is no longer a point (x, p) in phase space but a vector in a Hilbert space, a structure John von Neumann made rigorous in 1932. Hydrogen's energy levels now follow from an eigenvalue problem, without Bohr's ad hoc orbits.",
+   "nodes_mentioned": [
+    "schro",
+    "hilb"
+   ],
+   "routes_marked": [
+    "g_hilb",
+    "g_levels"
+   ]
+  },
+  {
+   "index": 57,
+   "section": 17,
+   "text": "Max Born (1926) supplied the interpretation: the wave function gives probabilities. The Born rule turns the state into the statistics of measurement outcomes. Paul Ehrenfest (1927) showed that expectation values of position and momentum obey Newton's laws when the force varies slowly across the wave packet, which is how classical mechanics reappears as a limit.",
+   "nodes_mentioned": [
+    "born",
+    "expect"
+   ],
+   "routes_marked": [
+    "g_expect",
+    "g_ehren"
+   ]
+  },
+  {
+   "index": 58,
+   "section": 18,
+   "text": "To put a charge in an electromagnetic field, quantum mechanics takes the classical Hamiltonian H = (p − qA)²/2m + qφ and replaces p by the operator −iħ∇. With this minimal coupling, the potentials themselves, not only E and B, enter the Schrödinger equation. A gauge transformation of the potentials must then be accompanied by a change of the wave function's phase, ψ → e^{iqχ/ħ}ψ: Weyl's idea of 1929 at work.",
+   "nodes_mentioned": [
+    "mincoup"
+   ],
+   "routes_marked": [
+    "g_mincoup"
+   ]
+  },
+  {
+   "index": 59,
+   "section": 18,
+   "text": "In a magnetic field the kinetic momenta do not commute, just as their Poisson brackets did not. Lev Landau showed in 1930 that an electron's motion in a uniform field is quantized into Landau levels spaced by ħ times the cyclotron frequency. The quantum Hall effect, discovered by Klaus von Klitzing in 1980, is a striking consequence.",
+   "nodes_mentioned": [
+    "landau"
+   ],
+   "routes_marked": [
+    "g_landau"
+   ]
+  },
+  {
+   "index": 60,
+   "section": 18,
+   "text": "The holonomy of the classical potential becomes measurable. An electron wave split around a solenoid recombines with a relative phase q∮A·dl/ħ, shifting the interference pattern although the electron never enters the region where B is non-zero. This is the Aharonov–Bohm effect of Part I, now seen from the quantum side.",
+   "nodes_mentioned": [
+    "abphase"
+   ],
+   "routes_marked": [
+    "g_ab"
+   ]
+  },
+  {
+   "index": 61,
+   "section": 19,
+   "text": "Schrödinger's equation is not relativistic, and electrons have spin, revealed by Otto Stern and Walther Gerlach (1922) and described by Wolfgang Pauli (1927) with two-component wave functions. In 1928 Dirac found a first-order relativistic equation by taking a square root of the relativistic energy relation. It requires matrices γ^μ obeying the anticommutation rules of a Clifford algebra. The Dirac equation, with minimal coupling built in, is Lorentz-covariant.",
+   "nodes_mentioned": [
+    "clifford",
+    "dirac"
+   ],
+   "routes_marked": [
+    "g_diraceq"
+   ]
+  },
+  {
+   "index": 62,
+   "section": 19,
+   "text": "Its solutions are four-component spinors, which transform under a double cover of the Lorentz group. Spin emerges automatically, together with a magnetic moment whose g-factor is exactly 2 and the fine structure of hydrogen's lines.",
+   "nodes_mentioned": [
+    "spinor",
+    "gfac"
+   ],
+   "routes_marked": [
+    "g_spinor",
+    "g_gfac",
+    "g_finestr"
+   ]
+  },
+  {
+   "index": 63,
+   "section": 19,
+   "text": "The equation also has negative-energy solutions. Dirac first imagined them filled by a sea of electrons and in 1931 predicted that a hole in the sea would be a particle with the electron's mass and opposite charge. Carl Anderson found the positron in cosmic rays in 1932. Particles can be created and destroyed in pairs, so a theory with a fixed number of particles cannot be the whole story.",
+   "nodes_mentioned": [
+    "positron"
+   ],
+   "routes_marked": [
+    "g_positron"
+   ]
+  },
+  {
+   "index": 64,
+   "section": 20,
+   "text": "Field quantization began with the 1925–26 \"three-man paper\" of Born, Heisenberg and Jordan. Each classical radiation mode is a harmonic oscillator, and quantizing it with the canonical commutator gives creation and annihilation operators that add or remove one quantum of energy ħω. The quanta of the electromagnetic field are photons: Einstein's light quanta follow from Maxwell's theory plus quantization.",
+   "nodes_mentioned": [
+    "ladder",
+    "photon"
+   ],
+   "routes_marked": [
+    "g_ladder",
+    "g_photon2"
+   ]
+  },
+  {
+   "index": 65,
+   "section": 20,
+   "text": "Dirac's 1927 paper on the emission and absorption of radiation treated the field and an atom together. The states of the field live in Fock space (Vladimir Fock, 1932), which contains any number of photons. Even with no photons present the field fluctuates, and these fluctuations drive spontaneous emission, explaining the coefficient Einstein had introduced in 1917.",
+   "nodes_mentioned": [
+    "fock",
+    "spont"
+   ],
+   "routes_marked": [
+    "g_fock",
+    "g_spont"
+   ]
+  },
+  {
+   "index": 66,
+   "section": 20,
+   "text": "Enrico Fermi (1932) wrote the quantized potentials as field operators in the Coulomb gauge, the form used in most early calculations. Roy Glauber (1963) showed that coherent states with many photons behave exactly like classical Maxwell fields. The vacuum's zero-point energy has measurable effects: Hendrik Casimir predicted in 1948 that two uncharged parallel conducting plates attract, because they restrict the modes between them, and the Casimir force was measured precisely by Steven Lamoreaux in 1997.",
+   "nodes_mentioned": [
+    "Aop",
+    "casimir"
+   ],
+   "routes_marked": [
+    "g_Aop",
+    "g_coherent",
+    "g_casimir"
+   ]
+  },
+  {
+   "index": 67,
+   "section": 21,
+   "text": "Heisenberg and Pauli (1929) formulated a general quantum field theory in which the electron, like the photon, is the quantum of a field. The electron–positron field obeys anticommutation relations, which encode Pauli's exclusion principle (Jordan and Wigner, 1928).",
+   "nodes_mentioned": [
+    "psiop"
+   ],
+   "routes_marked": [
+    "g_psiop"
+   ]
+  },
+  {
+   "index": 68,
+   "section": 21,
+   "text": "The strength of the interaction is set by the fine-structure constant α = e²/4πε₀ħc ≈ 1/137, introduced by Arnold Sommerfeld in 1916. It is a pure number combining the charge, the classical coupling ε₀, the speed of light and Planck's constant. Because α is small, calculations proceed by perturbation theory as a power series in α.",
+   "nodes_mentioned": [
+    "alpha",
+    "pert"
+   ],
+   "routes_marked": [
+    "g_alpha"
+   ]
+  },
+  {
+   "index": 69,
+   "section": 21,
+   "text": "First-order results were excellent, for example the Klein–Nishina formula (1929) for Compton scattering. Higher orders gave infinities. J. Robert Oppenheimer (1930) found that the electron's interaction with its own field shifts its energy by an infinite amount, and Victor Weisskopf (1934, 1939) showed the divergence to be milder than the classical one but still present. For nearly two decades the infinities stalled QED.",
+   "nodes_mentioned": [],
+   "routes_marked": [
+    "g_diverge"
+   ]
+  },
+  {
+   "index": 70,
+   "section": 21,
+   "text": "Experiment forced the issue. In 1947 Willis Lamb and Robert Retherford found that two hydrogen levels which the Dirac equation predicts to be exactly degenerate are split by about 1000 MHz (about 1058 MHz in later, more precise measurements), the Lamb shift. In the same year Polykarp Kusch and Henry Foley measured an anomalous magnetic moment: the electron's g-factor is slightly larger than Dirac's 2.",
+   "nodes_mentioned": [
+    "lamb",
+    "amm"
+   ],
+   "routes_marked": [
+    "g_lambdirac",
+    "g_ammdirac"
+   ]
+  },
+  {
+   "index": 71,
+   "section": 22,
+   "text": "Hans Bethe (1947) estimated the Lamb shift on a train ride by subtracting the infinite self-energy of a free electron from that of a bound one, and found about 1040 MHz. The idea became renormalization: the infinities are absorbed into the electron's measured mass and charge, and predictions are expressed in terms of those measured values.",
+   "nodes_mentioned": [
+    "renorm"
+   ],
+   "routes_marked": []
+  },
+  {
+   "index": 72,
+   "section": 22,
+   "text": "Sin-Itiro Tomonaga, Julian Schwinger and Richard Feynman built fully relativistic versions of the theory. Feynman's route started from the classical action: in the path integral (1948) every possible history contributes a phase e^{iS/ħ}, and the classical path dominates when the action is large compared with ħ. Feynman's diagrams organize the perturbation series as pictures of photons and electrons being emitted and absorbed.",
+   "nodes_mentioned": [
+    "pathint",
+    "feyn"
+   ],
+   "routes_marked": [
+    "g_pathint",
+    "g_pathclassical",
+    "g_feyn"
+   ]
+  },
+  {
+   "index": 73,
+   "section": 22,
+   "text": "Freeman Dyson (1949) proved the approaches equivalent and showed that QED is renormalizable: a finite number of measured quantities absorbs all the infinities, to every order. The theory is packaged in the S-matrix of transition amplitudes, from which cross sections follow. Schwinger (1948) obtained the anomalous moment α/2π ≈ 0.00116, matching Kusch and Foley, and the Lamb shift came out right.",
+   "nodes_mentioned": [
+    "smatrix",
+    "xsec"
+   ],
+   "routes_marked": [
+    "g_smat",
+    "g_xsec",
+    "g_amm",
+    "g_lamb"
+   ]
+  },
+  {
+   "index": 74,
+   "section": 22,
+   "text": "Renormalization also changes the meaning of charge. Virtual electron–positron pairs screen a charge, so the effective coupling grows at short distances, the vacuum polarization computed by Edwin Uehling in 1935. Murray Gell-Mann and Francis Low (1954) described how the coupling runs with energy; at the mass of the Z boson α is measured to be about 1/128.",
+   "nodes_mentioned": [
+    "runalpha"
+   ],
+   "routes_marked": [
+    "g_runalpha"
+   ]
+  },
+  {
+   "index": 75,
+   "section": 23,
+   "text": "The modern view starts from symmetry. Require the theory to be unchanged when the electron field's phase is changed independently at every point, ψ → e^{iqχ(x)/ħ}ψ. Derivatives of ψ then pick up unwanted terms unless they are replaced by covariant derivatives containing a potential, and that potential must transform exactly as the electromagnetic gauge transformation does. The local gauge principle turns Part I's U(1) connection into the coupling between light and matter.",
+   "nodes_mentioned": [
+    "localgauge"
+   ],
+   "routes_marked": [
+    "g_localgauge"
+   ]
+  },
+  {
+   "index": 76,
+   "section": 23,
+   "text": "The result is the QED Lagrangian: the Dirac term for the electron with its covariant derivative, plus the Maxwell term for the photon. Feynman's rules follow from it directly. John Ward (1950) and Yasushi Takahashi (1957) derived the identities that express gauge invariance among the amplitudes; they keep the photon massless and make charge renormalization the same for every charged particle.",
+   "nodes_mentioned": [
+    "qedL",
+    "ward"
+   ],
+   "routes_marked": [
+    "g_qedL",
+    "g_feyn2",
+    "g_ward"
+   ]
+  },
+  {
+   "index": 77,
+   "section": 23,
+   "text": "Yang and Mills (1954) extended the gauge principle to non-commutative groups, the route to the electroweak theory and quantum chromodynamics; QED remains the abelian case. Its predictions are among the most precisely tested in science: the electron's anomalous magnetic moment, computed through fifth order in α, agrees with measurement to roughly a part in a trillion in g. Maxwell's equations survive as the classical limit of a quantum field, recovered when photon numbers are large.",
+   "nodes_mentioned": [],
+   "routes_marked": [
+    "g_ammprec"
+   ]
+  }
+ ],
+ "nodes": [
+  {
+   "id": "F",
+   "type": "observable",
+   "era": "classical",
+   "symbol": "F",
+   "label": "Force on a charge",
+   "derived": false,
+   "description": "Measured from a body's acceleration (F = ma) or by balancing it against a known force. Every force law in the story predicts it, so more and more alternative routes lead here.",
+   "math_structure": null,
+   "properties": null,
+   "first_paragraph": 2,
+   "section": 1,
+   "mentioned_in": [
+    2
+   ]
+  },
+  {
+   "id": "r",
+   "type": "observable",
+   "era": "classical",
+   "symbol": "x",
+   "label": "Position",
+   "derived": false,
+   "description": "Where a body sits in Euclidean 3-space, measured with rulers. Separations r = x − x′ enter every force law. A primitive geometric observable.",
+   "math_structure": null,
+   "properties": null,
+   "first_paragraph": 2,
+   "section": 1,
+   "mentioned_in": [
+    2
+   ]
+  },
+  {
+   "id": "v",
+   "type": "observable",
+   "era": "classical",
+   "symbol": "v",
+   "label": "Velocity",
+   "derived": true,
+   "description": "v = dx/dt from successive position measurements. It becomes essential once magnetic forces turn out to depend on motion.",
+   "math_structure": null,
+   "properties": null,
+   "first_paragraph": 2,
+   "section": 1,
+   "mentioned_in": [
+    2
+   ]
+  },
+  {
+   "id": "traj",
+   "type": "state",
+   "era": "classical",
+   "symbol": "(x,v)",
+   "label": "Particle state of motion",
+   "derived": false,
+   "description": "Position and velocity together: Newton's description of a body's state.",
+   "math_structure": "Point of the tangent bundle Tℝ³; over time, a curve x(t).",
+   "properties": null,
+   "first_paragraph": 2,
+   "section": 1,
+   "mentioned_in": [
+    2
+   ]
+  },
+  {
+   "id": "vec",
+   "type": "model",
+   "era": "classical",
+   "symbol": "+",
+   "label": "Vector addition",
+   "derived": false,
+   "description": "How forces and fields combine. Because order and grouping do not matter, the total force from any number of sources is well defined.",
+   "math_structure": null,
+   "properties": [
+    "commutative",
+    "associative",
+    "identity 0",
+    "inverses",
+    "abelian group"
+   ],
+   "first_paragraph": 2,
+   "section": 1,
+   "mentioned_in": [
+    2
+   ]
+  },
+  {
+   "id": "ddt",
+   "type": "model",
+   "era": "classical",
+   "symbol": "∂ₜ",
+   "label": "Time derivative",
+   "derived": false,
+   "description": "Generates time evolution. Its commuting with spatial derivatives is used when the curl equations are combined into wave equations.",
+   "math_structure": null,
+   "properties": [
+    "linear",
+    "commutes with ∇ for smooth fields",
+    "Leibniz rule"
+   ],
+   "first_paragraph": 2,
+   "section": 1,
+   "mentioned_in": [
+    2
+   ]
+  },
+  {
+   "id": "q",
+   "type": "observable",
+   "era": "classical",
+   "symbol": "q",
+   "label": "Electric charge",
+   "derived": false,
+   "description": "A signed scalar property of bodies, inferred from the forces they exert on one another. Experimentally additive and conserved, and (Millikan) quantized in units of e.",
+   "math_structure": null,
+   "properties": null,
+   "first_paragraph": 5,
+   "section": 2,
+   "mentioned_in": [
+    5
+   ]
+  },
+  {
+   "id": "addq",
+   "type": "model",
+   "era": "classical",
+   "symbol": "Σq",
+   "label": "Additivity and conservation of charge",
+   "derived": false,
+   "description": "Franklin's principle: charges add with sign, and electrification only moves charge from one body to another. A global statement that the continuity equation later makes local.",
+   "math_structure": null,
+   "properties": [
+    "signed quantity",
+    "additive (group ℝ under +)",
+    "conserved in isolated systems"
+   ],
+   "first_paragraph": 5,
+   "section": 2,
+   "mentioned_in": [
+    5
+   ]
+  },
+  {
+   "id": "coul",
+   "type": "model",
+   "era": "classical",
+   "symbol": "1/r²",
+   "label": "Coulomb law",
+   "derived": false,
+   "description": "k q₁q₂ r̂/r² with k = 1/4πε₀. Exchange symmetry gives Newton's third law; the inverse-square form is exactly what makes Gauss's law hold.",
+   "math_structure": null,
+   "properties": [
+    "inverse-square",
+    "central",
+    "exchange-symmetric",
+    "rotation-invariant",
+    "homogeneous of degree −2"
+   ],
+   "first_paragraph": 7,
+   "section": 3,
+   "mentioned_in": [
+    7
+   ]
+  },
+  {
+   "id": "pts",
+   "type": "state",
+   "era": "classical",
+   "symbol": "{xᵢ}",
+   "label": "Point-charge configuration",
+   "derived": false,
+   "description": "The simplest state of an electrostatic system: which charges there are and where they sit.",
+   "math_structure": "A point in ℝ³ᴺ with a charge label qᵢ on each of N points.",
+   "properties": null,
+   "first_paragraph": 8,
+   "section": 3,
+   "mentioned_in": [
+    8
+   ]
+  },
+  {
+   "id": "sup",
+   "type": "model",
+   "era": "classical",
+   "symbol": "Σ",
+   "label": "Superposition",
+   "derived": false,
+   "description": "The map from sources to forces and fields is linear: contributions from separate sources simply add. Exact in vacuum Maxwell theory.",
+   "math_structure": null,
+   "properties": [
+    "additive",
+    "homogeneous",
+    "linear operator"
+   ],
+   "first_paragraph": 8,
+   "section": 3,
+   "mentioned_in": [
+    8
+   ]
+  },
+  {
+   "id": "lap",
+   "type": "model",
+   "era": "classical",
+   "symbol": "∇²",
+   "label": "Poisson's equation",
+   "derived": false,
+   "description": "∇²φ = −ρ/ε₀. Linearity means solutions superpose; uniqueness means sources plus boundary data fully determine the state.",
+   "math_structure": null,
+   "properties": [
+    "linear",
+    "elliptic",
+    "self-adjoint",
+    "Green's function −1/4π|x − x′|",
+    "unique with boundary data"
+   ],
+   "first_paragraph": 9,
+   "section": 4,
+   "mentioned_in": [
+    9
+   ]
+  },
+  {
+   "id": "rho",
+   "type": "state",
+   "era": "classical",
+   "symbol": "ρ",
+   "label": "Charge density",
+   "derived": false,
+   "description": "Charge per unit volume. Smooth densities and point charges (via δ functions) are elements of the same space.",
+   "math_structure": "Scalar distribution (signed measure) on ℝ³.",
+   "properties": null,
+   "first_paragraph": 10,
+   "section": 4,
+   "mentioned_in": [
+    10
+   ]
+  },
+  {
+   "id": "delta",
+   "type": "model",
+   "era": "classical",
+   "symbol": "δ",
+   "label": "Delta function",
+   "derived": false,
+   "description": "Lets point charges and smooth densities live in one space: ρ = Σ qᵢ δ³(x − xᵢ). Introduced by Dirac (1927) and made rigorous by Schwartz (1945).",
+   "math_structure": null,
+   "properties": [
+    "linear functional",
+    "∫δ(x − a) f = f(a)",
+    "support at a point"
+   ],
+   "first_paragraph": 10,
+   "section": 4,
+   "mentioned_in": [
+    10
+   ]
+  },
+  {
+   "id": "phi",
+   "type": "state",
+   "era": "classical",
+   "symbol": "[φ]",
+   "label": "Potential up to a constant",
+   "derived": false,
+   "description": "The electrostatic state written as one scalar function, with its built-in redundancy made explicit.",
+   "math_structure": "Element of the quotient C^∞(ℝ³)/ℝ: an equivalence class of functions differing by constants.",
+   "properties": null,
+   "first_paragraph": 11,
+   "section": 4,
+   "mentioned_in": [
+    11
+   ]
+  },
+  {
+   "id": "bc",
+   "type": "state",
+   "era": "classical",
+   "symbol": "∂Ω",
+   "label": "Boundary values",
+   "derived": false,
+   "description": "The part of the state fixed by conductors and the outside world. Needed to make Poisson's problem well posed.",
+   "math_structure": "Values φ|∂Ω (Dirichlet) or ∂φ/∂n (Neumann) on boundary surfaces.",
+   "properties": null,
+   "first_paragraph": 11,
+   "section": 4,
+   "mentioned_in": [
+    11
+   ]
+  },
+  {
+   "id": "grad",
+   "type": "model",
+   "era": "classical",
+   "symbol": "∇",
+   "label": "Gradient",
+   "derived": false,
+   "description": "Because ∇ kills constants, φ and φ + c give the same force. This is the first redundancy (gauge freedom) in the description of the state.",
+   "math_structure": null,
+   "properties": [
+    "linear",
+    "kernel = constants",
+    "∇×∇f = 0"
+   ],
+   "first_paragraph": 11,
+   "section": 4,
+   "mentioned_in": [
+    11
+   ]
+  },
+  {
+   "id": "div",
+   "type": "model",
+   "era": "classical",
+   "symbol": "∇·",
+   "label": "Divergence theorem",
+   "derived": false,
+   "description": "Converts local statements about sources into statements about flux through surfaces, and back. Also used for any flux integral.",
+   "math_structure": null,
+   "properties": [
+    "linear",
+    "∫∇·F dV = ∮F·dA",
+    "∇·(r̂/r²) = 4πδ³"
+   ],
+   "first_paragraph": 12,
+   "section": 4,
+   "mentioned_in": [
+    12
+   ]
+  },
+  {
+   "id": "PhiE",
+   "type": "observable",
+   "era": "classical",
+   "symbol": "ΦE",
+   "label": "Electric flux",
+   "derived": true,
+   "description": "Φ_E = ∮E·dA through a closed surface. Gauss's law says it equals Q_enc/ε₀ however the enclosed charges are arranged.",
+   "math_structure": null,
+   "properties": null,
+   "first_paragraph": 12,
+   "section": 4,
+   "mentioned_in": [
+    12
+   ]
+  },
+  {
+   "id": "sym",
+   "type": "model",
+   "era": "classical",
+   "symbol": "G",
+   "label": "Symmetry arguments",
+   "derived": false,
+   "description": "If a source distribution is unchanged by rotations, translations or reflections, the field it produces must transform the same way. With Gauss's or Ampère's law this fixes fields without integrating.",
+   "math_structure": null,
+   "properties": [
+    "group action on space",
+    "equivariance",
+    "invariance"
+   ],
+   "first_paragraph": 12,
+   "section": 4,
+   "mentioned_in": [
+    12
+   ]
+  },
+  {
+   "id": "E",
+   "type": "observable",
+   "era": "classical",
+   "symbol": "E",
+   "label": "Electric field value",
+   "derived": true,
+   "description": "Operationally E = lim F/q for a small test charge at rest: a derived observable built from force and charge measurements.",
+   "math_structure": null,
+   "properties": null,
+   "first_paragraph": 13,
+   "section": 4,
+   "mentioned_in": [
+    13
+   ]
+  },
+  {
+   "id": "Efield",
+   "type": "state",
+   "era": "classical",
+   "symbol": "E(·)",
+   "label": "Electric field",
+   "derived": false,
+   "description": "The whole field as one object, a function on space. A calculating device for Green and Gauss; a physical state for Faraday and Maxwell.",
+   "math_structure": "Vector field ℝ³ → ℝ³ (curl-free in statics).",
+   "properties": null,
+   "first_paragraph": 13,
+   "section": 4,
+   "mentioned_in": [
+    13,
+    22
+   ]
+  },
+  {
+   "id": "line",
+   "type": "model",
+   "era": "classical",
+   "symbol": "∫dl",
+   "label": "Line integrals",
+   "derived": false,
+   "description": "Integrals along curves. Path independence holds for curl-free fields on regions without holes; the exception returns with holonomy in the final section.",
+   "math_structure": null,
+   "properties": [
+    "additive over joined paths",
+    "sign flips on reversal",
+    "path-independent ⇔ curl-free (simply connected)"
+   ],
+   "first_paragraph": 13,
+   "section": 4,
+   "mentioned_in": [
+    13
+   ]
+  },
+  {
+   "id": "U",
+   "type": "observable",
+   "era": "classical",
+   "symbol": "U",
+   "label": "Electrostatic energy",
+   "derived": true,
+   "description": "Work needed to assemble a configuration from charges far apart. Measured through work done or heat released on discharge.",
+   "math_structure": null,
+   "properties": null,
+   "first_paragraph": 13,
+   "section": 4,
+   "mentioned_in": [
+    13
+   ]
+  },
+  {
+   "id": "bil",
+   "type": "model",
+   "era": "classical",
+   "symbol": "½⟨,⟩",
+   "label": "Quadratic energy form",
+   "derived": false,
+   "description": "U(E₁ + E₂) = U(E₁) + U(E₂) + a cross term. The cross term is why energies do not simply add even though fields do.",
+   "math_structure": null,
+   "properties": [
+    "symmetric bilinear",
+    "positive definite",
+    "not additive in fields"
+   ],
+   "first_paragraph": 13,
+   "section": 4,
+   "mentioned_in": [
+    13
+   ]
+  },
+  {
+   "id": "dV",
+   "type": "observable",
+   "era": "classical",
+   "symbol": "ΔV",
+   "label": "Voltage",
+   "derived": true,
+   "description": "Volta's tension, a potential difference φ(b) − φ(a): what a voltmeter reads. Invariant under φ → φ + const, which is why it is measurable while φ itself is not.",
+   "math_structure": null,
+   "properties": null,
+   "first_paragraph": 14,
+   "section": 5,
+   "mentioned_in": [
+    14
+   ]
+  },
+  {
+   "id": "C",
+   "type": "observable",
+   "era": "classical",
+   "symbol": "C",
+   "label": "Capacitance",
+   "derived": true,
+   "description": "C = Q/ΔV for a conductor or pair of conductors. Depends only on geometry (and the medium) because electrostatics is linear.",
+   "math_structure": null,
+   "properties": null,
+   "first_paragraph": 14,
+   "section": 5,
+   "mentioned_in": [
+    14
+   ]
+  },
+  {
+   "id": "I",
+   "type": "observable",
+   "era": "classical",
+   "symbol": "I",
+   "label": "Current",
+   "derived": true,
+   "description": "I = dQ/dt through a surface, read by an ammeter. Equal to the flux of the current density.",
+   "math_structure": null,
+   "properties": null,
+   "first_paragraph": 15,
+   "section": 5,
+   "mentioned_in": [
+    15
+   ]
+  },
+  {
+   "id": "J",
+   "type": "state",
+   "era": "classical",
+   "symbol": "J",
+   "label": "Current density",
+   "derived": false,
+   "description": "Charge flux per unit area. Together with ρ it specifies all the sources of the field.",
+   "math_structure": "Vector field J(x, t); in steady flow ∇·J = 0.",
+   "properties": null,
+   "first_paragraph": 15,
+   "section": 5,
+   "mentioned_in": [
+    15
+   ]
+  },
+  {
+   "id": "R",
+   "type": "observable",
+   "era": "classical",
+   "symbol": "R",
+   "label": "Resistance",
+   "derived": true,
+   "description": "R = ΔV/I for a conductor. Ohm found it independent of the current for a given wire at fixed temperature.",
+   "math_structure": null,
+   "properties": null,
+   "first_paragraph": 15,
+   "section": 5,
+   "mentioned_in": [
+    15
+   ]
+  },
+  {
+   "id": "ohm",
+   "type": "model",
+   "era": "classical",
+   "symbol": "σ",
+   "label": "Ohm's law",
+   "derived": false,
+   "description": "J = σE inside a conductor, or ΔV = IR for a whole wire. Unlike Maxwell's equations it describes a material, valid for many conductors at moderate fields.",
+   "math_structure": null,
+   "properties": [
+    "linear constitutive relation",
+    "material-dependent",
+    "not a fundamental law"
+   ],
+   "first_paragraph": 15,
+   "section": 5,
+   "mentioned_in": [
+    15
+   ]
+  },
+  {
+   "id": "cont",
+   "type": "model",
+   "era": "classical",
+   "symbol": "∂ₜρ",
+   "label": "Continuity equation",
+   "derived": false,
+   "description": "Charge cannot vanish in one place and reappear in another: change inside a volume equals flux through its boundary. Later developments derive it rather than assume it.",
+   "math_structure": null,
+   "properties": [
+    "local conservation",
+    "∂ρ/∂t + ∇·J = 0"
+   ],
+   "first_paragraph": 16,
+   "section": 5,
+   "mentioned_in": [
+    16,
+    27
+   ]
+  },
+  {
+   "id": "B",
+   "type": "observable",
+   "era": "classical",
+   "symbol": "B",
+   "label": "Magnetic field value",
+   "derived": true,
+   "description": "The magnetic action at a point, read with a compass or a probe coil, or inferred from the velocity-dependent force on a moving charge.",
+   "math_structure": null,
+   "properties": null,
+   "first_paragraph": 18,
+   "section": 6,
+   "mentioned_in": [
+    18
+   ]
+  },
+  {
+   "id": "bs",
+   "type": "model",
+   "era": "classical",
+   "symbol": "BS",
+   "label": "Biot–Savart law",
+   "derived": false,
+   "description": "Field of a current element, (μ₀/4π) I dl × r̂/r². The magnetic counterpart of the Coulomb law.",
+   "math_structure": null,
+   "properties": [
+    "linear in current",
+    "inverse-square",
+    "⟂ to dl and r̂"
+   ],
+   "first_paragraph": 18,
+   "section": 6,
+   "mentioned_in": [
+    18
+   ]
+  },
+  {
+   "id": "cross",
+   "type": "model",
+   "era": "classical",
+   "symbol": "×",
+   "label": "Cross product",
+   "derived": false,
+   "description": "a×b = −b×a, and a×(b×c) ≠ (a×b)×c. Its dependence on handedness makes B a pseudovector, and since v×B ⟂ v, magnetic forces do no work.",
+   "math_structure": null,
+   "properties": [
+    "bilinear",
+    "anticommutative",
+    "non-associative",
+    "Jacobi identity",
+    "orientation-dependent"
+   ],
+   "first_paragraph": 18,
+   "section": 6,
+   "mentioned_in": [
+    18
+   ]
+  },
+  {
+   "id": "curl",
+   "type": "model",
+   "era": "classical",
+   "symbol": "∇×",
+   "label": "Curl and Stokes' theorem",
+   "derived": false,
+   "description": "Measures circulation. The identity div∘curl = 0 is what later forces the displacement current.",
+   "math_structure": null,
+   "properties": [
+    "linear",
+    "∇·(∇×F) = 0",
+    "∮F·dl = ∫(∇×F)·dA"
+   ],
+   "first_paragraph": 19,
+   "section": 6,
+   "mentioned_in": [
+    19
+   ]
+  },
+  {
+   "id": "Bfield",
+   "type": "state",
+   "era": "classical",
+   "symbol": "B(·)",
+   "label": "Magnetic field",
+   "derived": false,
+   "description": "The magnetic field as a single object on space.",
+   "math_structure": "Divergence-free pseudovector field on ℝ³.",
+   "properties": null,
+   "first_paragraph": 19,
+   "section": 6,
+   "mentioned_in": [
+    19,
+    22
+   ]
+  },
+  {
+   "id": "emf",
+   "type": "observable",
+   "era": "classical",
+   "symbol": "ℰ",
+   "label": "Electromotive force",
+   "derived": true,
+   "description": "ℰ = ∮(E + v×B)·dl around a circuit, measured as the voltage across a small gap in the loop.",
+   "math_structure": null,
+   "properties": null,
+   "first_paragraph": 20,
+   "section": 7,
+   "mentioned_in": [
+    20
+   ]
+  },
+  {
+   "id": "PhiB",
+   "type": "observable",
+   "era": "classical",
+   "symbol": "ΦB",
+   "label": "Magnetic flux",
+   "derived": true,
+   "description": "Φ_B = ∫B·dA through a surface bounded by a loop: Faraday's count of lines of force threading a circuit.",
+   "math_structure": null,
+   "properties": null,
+   "first_paragraph": 20,
+   "section": 7,
+   "mentioned_in": [
+    20
+   ]
+  },
+  {
+   "id": "faraday",
+   "type": "model",
+   "era": "classical",
+   "symbol": "−Φ̇",
+   "label": "Faraday's law",
+   "derived": false,
+   "description": "A changing magnetic flux induces a circulating electric field; the minus sign makes induced currents oppose the change.",
+   "math_structure": null,
+   "properties": [
+    "linear",
+    "∇×E = −∂B/∂t",
+    "Lenz sign"
+   ],
+   "first_paragraph": 20,
+   "section": 7,
+   "mentioned_in": [
+    20
+   ]
+  },
+  {
+   "id": "A",
+   "type": "state",
+   "era": "classical",
+   "symbol": "A",
+   "label": "Vector potential",
+   "derived": false,
+   "description": "Neumann's and Thomson's potential, Maxwell's electromagnetic momentum. Useful for calculation; not observable by itself.",
+   "math_structure": "Vector field A(x, t) whose curl is B: one representative of a gauge class.",
+   "properties": null,
+   "first_paragraph": 23,
+   "section": 8,
+   "mentioned_in": [
+    23
+   ]
+  },
+  {
+   "id": "consts",
+   "type": "observable",
+   "era": "classical",
+   "symbol": "ε₀μ₀",
+   "label": "Couplings ε₀ and μ₀",
+   "derived": false,
+   "description": "Fix the strength of electric forces between charges and magnetic forces between currents. 1/√(ε₀μ₀) is the speed Weber and Kohlrausch found as a ratio of units. (In the 2019 SI they are fixed through the measured fine-structure constant.)",
+   "math_structure": null,
+   "properties": null,
+   "first_paragraph": 24,
+   "section": 8,
+   "mentioned_in": [
+    24
+   ]
+  },
+  {
+   "id": "c",
+   "type": "observable",
+   "era": "classical",
+   "symbol": "c",
+   "label": "Speed of light",
+   "derived": false,
+   "description": "Measured astronomically (Rømer 1676, Bradley 1729) and on Earth by Fizeau (1849). After Maxwell it is also predicted from ε₀ and μ₀. Only the prediction is drawn as a route; the measurements are not.",
+   "math_structure": null,
+   "properties": null,
+   "first_paragraph": 25,
+   "section": 8,
+   "mentioned_in": [
+    25,
+    27
+   ]
+  },
+  {
+   "id": "maxwell",
+   "type": "model",
+   "era": "classical",
+   "symbol": "Mx",
+   "label": "Maxwell's equations",
+   "derived": false,
+   "description": "The complete field law. Gauss's two laws constrain each moment; Faraday's and the Ampère–Maxwell law evolve it.",
+   "math_structure": null,
+   "properties": [
+    "linear",
+    "first-order hyperbolic",
+    "2 constraints + 2 evolution equations",
+    "constraints preserved iff continuity holds"
+   ],
+   "first_paragraph": 27,
+   "section": 9,
+   "mentioned_in": [
+    27,
+    28
+   ]
+  },
+  {
+   "id": "EB",
+   "type": "state",
+   "era": "classical",
+   "symbol": "(E,B)",
+   "label": "Dynamical field state",
+   "derived": false,
+   "description": "Electric and magnetic fields as one state that evolves in time.",
+   "math_structure": "Pair of vector fields with ∇·E = ρ/ε₀ and ∇·B = 0 at one time: Cauchy data.",
+   "properties": null,
+   "first_paragraph": 28,
+   "section": 9,
+   "mentioned_in": [
+    28
+   ]
+  },
+  {
+   "id": "u",
+   "type": "observable",
+   "era": "classical",
+   "symbol": "u",
+   "label": "Field energy density",
+   "derived": true,
+   "description": "u = ½(ε₀|E|² + |B|²/μ₀). Integrates to the total energy stored in the field.",
+   "math_structure": null,
+   "properties": null,
+   "first_paragraph": 29,
+   "section": 9,
+   "mentioned_in": [
+    29
+   ]
+  },
+  {
+   "id": "stress",
+   "type": "model",
+   "era": "classical",
+   "symbol": "σᵢⱼ",
+   "label": "Maxwell stress tensor",
+   "derived": false,
+   "description": "Expresses the force on charges inside a volume as a surface integral over the field around them.",
+   "math_structure": null,
+   "properties": [
+    "symmetric rank-2 tensor",
+    "quadratic in fields",
+    "momentum balance"
+   ],
+   "first_paragraph": 29,
+   "section": 9,
+   "mentioned_in": [
+    29
+   ]
+  },
+  {
+   "id": "wave",
+   "type": "model",
+   "era": "classical",
+   "symbol": "□",
+   "label": "Wave operator",
+   "derived": false,
+   "description": "□ = c⁻²∂²/∂t² − ∇². Choosing the retarded Green's function means influences travel at c from the past.",
+   "math_structure": null,
+   "properties": [
+    "linear",
+    "hyperbolic",
+    "Lorentz-invariant",
+    "retarded and advanced Green's functions"
+   ],
+   "first_paragraph": 30,
+   "section": 10,
+   "mentioned_in": [
+    30
+   ]
+  },
+  {
+   "id": "gfix",
+   "type": "model",
+   "era": "classical",
+   "symbol": "∂·A",
+   "label": "Gauge fixing",
+   "derived": false,
+   "description": "A rule that picks one pair (φ, A) from each class, chosen to simplify the equations.",
+   "math_structure": null,
+   "properties": [
+    "selects one representative",
+    "Coulomb ∇·A = 0",
+    "Lorenz ∇·A + c⁻²∂ₜφ = 0",
+    "residual freedom remains"
+   ],
+   "first_paragraph": 31,
+   "section": 10,
+   "mentioned_in": [
+    31
+   ]
+  },
+  {
+   "id": "gauge",
+   "type": "model",
+   "era": "classical",
+   "symbol": "χ",
+   "label": "Gauge transformations",
+   "derived": false,
+   "description": "(φ, A) → (φ − ∂χ/∂t, A + ∇χ). Two transformations compose in either order to χ₁ + χ₂: the group is commutative.",
+   "math_structure": null,
+   "properties": [
+    "abelian group U(1)",
+    "commutative composition",
+    "associative",
+    "leave E and B invariant"
+   ],
+   "first_paragraph": 31,
+   "section": 10,
+   "mentioned_in": [
+    31
+   ]
+  },
+  {
+   "id": "pot",
+   "type": "state",
+   "era": "classical",
+   "symbol": "[φ,A]",
+   "label": "Gauge class of potentials",
+   "derived": false,
+   "description": "The physical state in the potential description. Everything observable is a function of these classes.",
+   "math_structure": "Orbit of the gauge group in the space of pairs (φ, A): a point of a quotient space.",
+   "properties": null,
+   "first_paragraph": 31,
+   "section": 10,
+   "mentioned_in": [
+    31
+   ]
+  },
+  {
+   "id": "poinc",
+   "type": "model",
+   "era": "classical",
+   "symbol": "P",
+   "label": "Poincaré lemma",
+   "derived": false,
+   "description": "∇·B = 0 ⇒ B = ∇×A, and ∇×(E + ∂A/∂t) = 0 ⇒ E + ∂A/∂t = −∇φ. It can fail on regions with holes, which is where holonomy lives.",
+   "math_structure": null,
+   "properties": [
+    "closed ⇒ exact",
+    "holds on contractible regions",
+    "topology-dependent"
+   ],
+   "first_paragraph": 32,
+   "section": 10,
+   "mentioned_in": [
+    32
+   ]
+  },
+  {
+   "id": "poynt",
+   "type": "model",
+   "era": "classical",
+   "symbol": "∇·S",
+   "label": "Poynting's theorem",
+   "derived": false,
+   "description": "∂u/∂t + ∇·S = −J·E: field energy changes by flowing away or by doing work on charges.",
+   "math_structure": null,
+   "properties": [
+    "local conservation law",
+    "quadratic in fields"
+   ],
+   "first_paragraph": 33,
+   "section": 11,
+   "mentioned_in": [
+    33
+   ]
+  },
+  {
+   "id": "S",
+   "type": "observable",
+   "era": "classical",
+   "symbol": "S",
+   "label": "Poynting vector",
+   "derived": true,
+   "description": "S = E×B/μ₀, the energy flux in W/m². Its time average is the intensity a detector measures.",
+   "math_structure": null,
+   "properties": null,
+   "first_paragraph": 33,
+   "section": 11,
+   "mentioned_in": [
+    33
+   ]
+  },
+  {
+   "id": "wavedat",
+   "type": "observable",
+   "era": "classical",
+   "symbol": "λ,ω",
+   "label": "Wave data",
+   "derived": true,
+   "description": "Wavelength, frequency and polarization, measured with standing waves, interferometers and polarizers. In vacuum ω = c|k| and k ⟂ E ⟂ B.",
+   "math_structure": null,
+   "properties": null,
+   "first_paragraph": 35,
+   "section": 11,
+   "mentioned_in": [
+    35
+   ]
+  },
+  {
+   "id": "vac",
+   "type": "state",
+   "era": "classical",
+   "symbol": "ak",
+   "label": "Radiation modes",
+   "derived": false,
+   "description": "The source-free field described by its modes rather than by its values at points.",
+   "math_structure": "Amplitudes a(k, λ) for wave vectors k and two transverse polarizations λ.",
+   "properties": null,
+   "first_paragraph": 35,
+   "section": 11,
+   "mentioned_in": [
+    35
+   ]
+  },
+  {
+   "id": "fourier",
+   "type": "model",
+   "era": "classical",
+   "symbol": "ℱ",
+   "label": "Fourier decomposition",
+   "derived": false,
+   "description": "Writes any field as a superposition of plane waves e^{i(k·x − ωt)}, in which the field equations become algebraic.",
+   "math_structure": null,
+   "properties": [
+    "linear isomorphism",
+    "unitary (Parseval)",
+    "diagonalizes ∇ and □"
+   ],
+   "first_paragraph": 35,
+   "section": 11,
+   "mentioned_in": [
+    35
+   ]
+  },
+  {
+   "id": "g",
+   "type": "observable",
+   "era": "classical",
+   "symbol": "g",
+   "label": "Field momentum density",
+   "derived": true,
+   "description": "g = S/c². Observed as radiation pressure on mirrors and absorbers.",
+   "math_structure": null,
+   "properties": null,
+   "first_paragraph": 36,
+   "section": 11,
+   "mentioned_in": [
+    36
+   ]
+  },
+  {
+   "id": "P",
+   "type": "observable",
+   "era": "classical",
+   "symbol": "P",
+   "label": "Radiated power",
+   "derived": true,
+   "description": "Energy per unit time leaving an accelerating charge through a distant sphere.",
+   "math_structure": null,
+   "properties": null,
+   "first_paragraph": 39,
+   "section": 12,
+   "mentioned_in": [
+    39
+   ]
+  },
+  {
+   "id": "lorentz",
+   "type": "model",
+   "era": "classical",
+   "symbol": "Λ",
+   "label": "Lorentz group",
+   "derived": false,
+   "description": "Two non-parallel boosts compose to a boost plus a rotation (the Wigner rotation). Under boosts, E and B mix.",
+   "math_structure": null,
+   "properties": [
+    "associative",
+    "non-commutative",
+    "preserves the Minkowski metric"
+   ],
+   "first_paragraph": 40,
+   "section": 13,
+   "mentioned_in": [
+    40
+   ]
+  },
+  {
+   "id": "Amu",
+   "type": "state",
+   "era": "classical",
+   "symbol": "Aμ",
+   "label": "Four-potential",
+   "derived": false,
+   "description": "Scalar and vector potentials as a single spacetime object.",
+   "math_structure": "1-form A on Minkowski spacetime with components (φ/c, A).",
+   "properties": null,
+   "first_paragraph": 42,
+   "section": 13,
+   "mentioned_in": [
+    42
+   ]
+  },
+  {
+   "id": "jmu",
+   "type": "state",
+   "era": "classical",
+   "symbol": "J^μ",
+   "label": "Four-current",
+   "derived": false,
+   "description": "Charge and current density as a single spacetime object.",
+   "math_structure": "Vector field on spacetime (cρ, J), equivalently the 3-form ⋆J.",
+   "properties": null,
+   "first_paragraph": 42,
+   "section": 13,
+   "mentioned_in": [
+    42
+   ]
+  },
+  {
+   "id": "Fmn",
+   "type": "state",
+   "era": "classical",
+   "symbol": "Fμν",
+   "label": "Field tensor",
+   "derived": false,
+   "description": "Electric and magnetic fields as one observer-independent object.",
+   "math_structure": "Antisymmetric rank-2 tensor (2-form) on spacetime; F₀ᵢ ∝ Eᵢ/c, Fᵢⱼ ∝ εᵢⱼₖBₖ.",
+   "properties": null,
+   "first_paragraph": 42,
+   "section": 13,
+   "mentioned_in": [
+    42
+   ]
+  },
+  {
+   "id": "inv",
+   "type": "observable",
+   "era": "classical",
+   "symbol": "E·B",
+   "label": "Lorentz invariants",
+   "derived": true,
+   "description": "E·B and |E|² − c²|B|² take the same value for every inertial observer. If E ⟂ B and |E| < c|B|, some frame sees a purely magnetic field.",
+   "math_structure": null,
+   "properties": null,
+   "first_paragraph": 42,
+   "section": 13,
+   "mentioned_in": [
+    42
+   ]
+  },
+  {
+   "id": "T",
+   "type": "observable",
+   "era": "classical",
+   "symbol": "Tμν",
+   "label": "Energy–momentum tensor",
+   "derived": true,
+   "description": "One symmetric tensor whose components, for a given observer, are the energy density, Poynting flux, momentum density and Maxwell stress.",
+   "math_structure": null,
+   "properties": null,
+   "first_paragraph": 42,
+   "section": 13,
+   "mentioned_in": [
+    42
+   ]
+  },
+  {
+   "id": "action",
+   "type": "model",
+   "era": "classical",
+   "symbol": "δS",
+   "label": "Action principle",
+   "derived": false,
+   "description": "Under a gauge change L shifts by q dχ/dt, a total time derivative, so the equations of motion are unchanged.",
+   "math_structure": null,
+   "properties": [
+    "variational",
+    "Euler–Lagrange equations",
+    "L defined up to a total derivative"
+   ],
+   "first_paragraph": 43,
+   "section": 14,
+   "mentioned_in": [
+    43
+   ]
+  },
+  {
+   "id": "legendre",
+   "type": "model",
+   "era": "classical",
+   "symbol": "L→H",
+   "label": "Legendre transform",
+   "derived": false,
+   "description": "Moves from the velocity description to the momentum description: p = ∂L/∂v, H = p·v − L.",
+   "math_structure": null,
+   "properties": [
+    "involutive",
+    "requires convexity",
+    "velocities ↦ momenta"
+   ],
+   "first_paragraph": 44,
+   "section": 14,
+   "mentioned_in": [
+    44
+   ]
+  },
+  {
+   "id": "phase",
+   "type": "state",
+   "era": "classical",
+   "symbol": "(x,p)",
+   "label": "Particle phase space",
+   "derived": false,
+   "description": "The Hamiltonian state of a charge. Using kinetic momenta as coordinates instead puts the magnetic field into the symplectic form.",
+   "math_structure": "Cotangent bundle T*ℝ³ with symplectic form ω = dp∧dx.",
+   "properties": null,
+   "first_paragraph": 44,
+   "section": 14,
+   "mentioned_in": [
+    44
+   ]
+  },
+  {
+   "id": "pkin",
+   "type": "observable",
+   "era": "classical",
+   "symbol": "mv",
+   "label": "Kinetic momentum",
+   "derived": true,
+   "description": "π = mv = p − qA. Gauge-invariant and measurable, for example from the curvature of a particle track. The canonical momentum p is not.",
+   "math_structure": null,
+   "properties": null,
+   "first_paragraph": 44,
+   "section": 14,
+   "mentioned_in": [
+    44
+   ]
+  },
+  {
+   "id": "pb",
+   "type": "model",
+   "era": "classical",
+   "symbol": "{,}",
+   "label": "Poisson bracket",
+   "derived": false,
+   "description": "dF/dt = {F, H}. In a magnetic field the kinetic momenta do not commute: a classical non-commutativity that becomes Landau levels in quantum mechanics.",
+   "math_structure": null,
+   "properties": [
+    "bilinear",
+    "antisymmetric",
+    "Jacobi identity (Lie algebra)",
+    "Leibniz rule",
+    "{πᵢ, πⱼ} = q εᵢⱼₖBₖ"
+   ],
+   "first_paragraph": 44,
+   "section": 14,
+   "mentioned_in": [
+    44
+   ]
+  },
+  {
+   "id": "fphase",
+   "type": "state",
+   "era": "classical",
+   "symbol": "(A,Π)",
+   "label": "Field phase space",
+   "derived": false,
+   "description": "The field as a constrained Hamiltonian system. Gauss's law generates the gauge transformations.",
+   "math_structure": "Canonical pairs (A, Π = −ε₀E) with Gauss's law as a constraint, reduced by gauge orbits.",
+   "properties": null,
+   "first_paragraph": 44,
+   "section": 14,
+   "mentioned_in": [
+    44
+   ]
+  },
+  {
+   "id": "noether",
+   "type": "model",
+   "era": "classical",
+   "symbol": "N",
+   "label": "Noether's theorem",
+   "derived": false,
+   "description": "Every continuous symmetry of the action yields a conservation law.",
+   "math_structure": null,
+   "properties": [
+    "continuous symmetry ↔ conserved current"
+   ],
+   "first_paragraph": 45,
+   "section": 14,
+   "mentioned_in": [
+    45
+   ]
+  },
+  {
+   "id": "cons",
+   "type": "observable",
+   "era": "classical",
+   "symbol": "E,P,L",
+   "label": "Conserved totals",
+   "derived": true,
+   "description": "Total energy, momentum and angular momentum of matter plus field. Conservation holds only when the field's contributions are included.",
+   "math_structure": null,
+   "properties": null,
+   "first_paragraph": 45,
+   "section": 14,
+   "mentioned_in": [
+    45
+   ]
+  },
+  {
+   "id": "ext",
+   "type": "model",
+   "era": "classical",
+   "symbol": "d",
+   "label": "Exterior derivative",
+   "derived": false,
+   "description": "Unifies grad, curl and div. d² = 0 contains both curl∘grad = 0 and div∘curl = 0.",
+   "math_structure": null,
+   "properties": [
+    "linear",
+    "d∘d = 0",
+    "graded Leibniz rule",
+    "metric-free"
+   ],
+   "first_paragraph": 47,
+   "section": 15,
+   "mentioned_in": [
+    47
+   ]
+  },
+  {
+   "id": "wedge",
+   "type": "model",
+   "era": "classical",
+   "symbol": "∧",
+   "label": "Wedge product",
+   "derived": false,
+   "description": "α∧β = (−1)^{pq} β∧α: 1-forms anticommute, 2-forms commute. F∧F is a 4-form proportional to E·B.",
+   "math_structure": null,
+   "properties": [
+    "associative",
+    "graded-commutative",
+    "bilinear"
+   ],
+   "first_paragraph": 47,
+   "section": 15,
+   "mentioned_in": [
+    47
+   ]
+  },
+  {
+   "id": "hodge",
+   "type": "model",
+   "era": "classical",
+   "symbol": "⋆",
+   "label": "Hodge star",
+   "derived": false,
+   "description": "Carries all metric (and constitutive) information. In form language it is the only place c and spacetime geometry enter Maxwell's equations.",
+   "math_structure": null,
+   "properties": [
+    "linear",
+    "metric-dependent",
+    "⋆⋆ = ±1"
+   ],
+   "first_paragraph": 47,
+   "section": 15,
+   "mentioned_in": [
+    47
+   ]
+  },
+  {
+   "id": "bundle",
+   "type": "state",
+   "era": "classical",
+   "symbol": "P→M",
+   "label": "U(1) bundle",
+   "derived": false,
+   "description": "The global geometric state. It can carry information, such as holonomy around holes, that no single local potential captures.",
+   "math_structure": "Principal U(1)-bundle over spacetime with a connection 1-form; potentials are its local expressions.",
+   "properties": null,
+   "first_paragraph": 48,
+   "section": 15,
+   "mentioned_in": [
+    48
+   ]
+  },
+  {
+   "id": "conn",
+   "type": "model",
+   "era": "classical",
+   "symbol": "∇A",
+   "label": "U(1) connection",
+   "derived": false,
+   "description": "In a non-abelian (Yang–Mills) theory the curvature is dA + A∧A. Electromagnetism's commutative group keeps it linear.",
+   "math_structure": null,
+   "properties": [
+    "abelian structure group",
+    "curvature F = dA (no A∧A)",
+    "gauge = bundle automorphism",
+    "defines holonomy"
+   ],
+   "first_paragraph": 48,
+   "section": 15,
+   "mentioned_in": [
+    48
+   ]
+  },
+  {
+   "id": "hol",
+   "type": "observable",
+   "era": "classical",
+   "symbol": "∮A",
+   "label": "Holonomy",
+   "derived": true,
+   "description": "∮A·dl around a closed loop: gauge-invariant and equal to the enclosed flux. Around a solenoid it is non-zero on loops where B = 0. With ħ, the phase exp(iq∮A·dl/ħ) is the Aharonov–Bohm phase.",
+   "math_structure": null,
+   "properties": null,
+   "first_paragraph": 49,
+   "section": 15,
+   "mentioned_in": [
+    49
+   ]
+  },
+  {
+   "id": "bbspec",
+   "type": "observable",
+   "era": "quantum",
+   "symbol": "uν",
+   "label": "Blackbody spectrum",
+   "derived": false,
+   "description": "Energy density of cavity radiation per unit frequency at temperature T, measured with bolometers around 1900. It has a peak and falls at high frequency, which classical physics cannot reproduce.",
+   "math_structure": null,
+   "properties": null,
+   "first_paragraph": 50,
+   "section": 16,
+   "mentioned_in": [
+    50
+   ]
+  },
+  {
+   "id": "equip",
+   "type": "model",
+   "era": "classical",
+   "symbol": "½kT",
+   "label": "Equipartition theorem",
+   "derived": false,
+   "description": "Classical statistical mechanics gives every oscillator mean energy kT. Applied to infinitely many radiation modes, it gives infinite energy.",
+   "math_structure": null,
+   "properties": [
+    "½kT per quadratic degree of freedom",
+    "classical statistical mechanics",
+    "fails when kT ≪ hν"
+   ],
+   "first_paragraph": 50,
+   "section": 16,
+   "mentioned_in": [
+    50
+   ]
+  },
+  {
+   "id": "planck",
+   "type": "model",
+   "era": "quantum",
+   "symbol": "E=hν",
+   "label": "Planck relation",
+   "derived": false,
+   "description": "The first quantum rule. It ties a frequency, a wave property, to an energy, a particle property.",
+   "math_structure": null,
+   "properties": [
+    "energy exchanged in steps hν",
+    "links particle energy to wave frequency",
+    "p = h/λ for light"
+   ],
+   "first_paragraph": 51,
+   "section": 16,
+   "mentioned_in": [
+    51
+   ]
+  },
+  {
+   "id": "hbar",
+   "type": "observable",
+   "era": "quantum",
+   "symbol": "ħ",
+   "label": "Planck's constant",
+   "derived": false,
+   "description": "h ≈ 6.626 × 10⁻³⁴ J s, with ħ = h/2π. The quantum of action; classical physics is the regime where actions are large compared with ħ. Exact by definition in the 2019 SI.",
+   "math_structure": null,
+   "properties": null,
+   "first_paragraph": 51,
+   "section": 16,
+   "mentioned_in": [
+    51
+   ]
+  },
+  {
+   "id": "photoel",
+   "type": "observable",
+   "era": "quantum",
+   "symbol": "Kmax",
+   "label": "Photoelectric effect",
+   "derived": true,
+   "description": "Maximum kinetic energy of electrons ejected by light. It rises linearly with frequency above a threshold and does not depend on intensity.",
+   "math_structure": null,
+   "properties": null,
+   "first_paragraph": 52,
+   "section": 16,
+   "mentioned_in": [
+    52
+   ]
+  },
+  {
+   "id": "photon",
+   "type": "observable",
+   "era": "quantum",
+   "symbol": "γ",
+   "label": "Photon",
+   "derived": false,
+   "description": "A quantum of the electromagnetic field, with energy ħω and momentum ħk. Detected one at a time by photomultipliers and in Compton scattering.",
+   "math_structure": null,
+   "properties": null,
+   "first_paragraph": 52,
+   "section": 16,
+   "mentioned_in": [
+    52,
+    64
+   ]
+  },
+  {
+   "id": "spectra",
+   "type": "observable",
+   "era": "quantum",
+   "symbol": "λₙₘ",
+   "label": "Spectral lines",
+   "derived": false,
+   "description": "Sharp wavelengths emitted or absorbed by atoms. Hydrogen's lines fit 1/λ = R(1/m² − 1/n²).",
+   "math_structure": null,
+   "properties": null,
+   "first_paragraph": 53,
+   "section": 16,
+   "mentioned_in": [
+    53
+   ]
+  },
+  {
+   "id": "bohr",
+   "type": "state",
+   "era": "quantum",
+   "symbol": "n",
+   "label": "Bohr orbits",
+   "derived": false,
+   "description": "The old quantum theory's hybrid state: classical orbits with quantum selection rules. Superseded by quantum mechanics but historically the bridge.",
+   "math_structure": "Discrete set of classical orbits labelled by n, with angular momentum nħ.",
+   "properties": null,
+   "first_paragraph": 53,
+   "section": 16,
+   "mentioned_in": [
+    53
+   ]
+  },
+  {
+   "id": "comm",
+   "type": "model",
+   "era": "quantum",
+   "symbol": "[,]",
+   "label": "Canonical commutator",
+   "derived": false,
+   "description": "Shares every algebraic property of the Poisson bracket, which is why Dirac could map one to the other. Its non-zero value iħ is the quantum.",
+   "math_structure": null,
+   "properties": [
+    "bilinear",
+    "antisymmetric",
+    "Jacobi identity",
+    "[x̂, p̂] = iħ",
+    "non-commutative"
+   ],
+   "first_paragraph": 55,
+   "section": 17,
+   "mentioned_in": [
+    55
+   ]
+  },
+  {
+   "id": "ops",
+   "type": "model",
+   "era": "quantum",
+   "symbol": "Â",
+   "label": "Operator algebra",
+   "derived": false,
+   "description": "Observables become operators on states. Position and momentum no longer commute, so they cannot both be sharp: Heisenberg's uncertainty relation.",
+   "math_structure": null,
+   "properties": [
+    "associative",
+    "non-commutative",
+    "observables are self-adjoint",
+    "eigenvalues = possible outcomes"
+   ],
+   "first_paragraph": 55,
+   "section": 17,
+   "mentioned_in": [
+    55
+   ]
+  },
+  {
+   "id": "schro",
+   "type": "model",
+   "era": "quantum",
+   "symbol": "iħ∂ₜ",
+   "label": "Schrödinger equation",
+   "derived": false,
+   "description": "iħ ∂ψ/∂t = Ĥψ. Linearity means quantum states superpose, the quantum descendant of the superposition principle of Part I.",
+   "math_structure": null,
+   "properties": [
+    "linear",
+    "unitary evolution",
+    "first order in time"
+   ],
+   "first_paragraph": 56,
+   "section": 17,
+   "mentioned_in": [
+    56
+   ]
+  },
+  {
+   "id": "hilb",
+   "type": "state",
+   "era": "quantum",
+   "symbol": "|ψ⟩",
+   "label": "Hilbert-space state",
+   "derived": false,
+   "description": "Replaces the point in phase space. It assigns amplitudes, not definite values, to every observable.",
+   "math_structure": "Unit ray in a complex Hilbert space (a vector up to an overall phase).",
+   "properties": null,
+   "first_paragraph": 56,
+   "section": 17,
+   "mentioned_in": [
+    56
+   ]
+  },
+  {
+   "id": "born",
+   "type": "model",
+   "era": "quantum",
+   "symbol": "|⟨⟩|²",
+   "label": "Born rule",
+   "derived": false,
+   "description": "Connects the abstract state to what detectors record: frequencies of outcomes over many runs.",
+   "math_structure": null,
+   "properties": [
+    "probability = |amplitude|²",
+    "non-negative, sums to 1"
+   ],
+   "first_paragraph": 57,
+   "section": 17,
+   "mentioned_in": [
+    57
+   ]
+  },
+  {
+   "id": "expect",
+   "type": "observable",
+   "era": "quantum",
+   "symbol": "⟨Â⟩",
+   "label": "Outcome statistics",
+   "derived": true,
+   "description": "Probabilities and averages of measurement results over many identically prepared systems.",
+   "math_structure": null,
+   "properties": null,
+   "first_paragraph": 57,
+   "section": 17,
+   "mentioned_in": [
+    57
+   ]
+  },
+  {
+   "id": "mincoup",
+   "type": "model",
+   "era": "quantum",
+   "symbol": "p−qA",
+   "label": "Minimal coupling",
+   "derived": false,
+   "description": "The quantum version of the classical kinetic momentum. It makes the potentials, not only the fields, act on charged quantum particles.",
+   "math_structure": null,
+   "properties": [
+    "p̂ → −iħ∇ − qA",
+    "gauge change = local phase change",
+    "covariant derivative"
+   ],
+   "first_paragraph": 58,
+   "section": 18,
+   "mentioned_in": [
+    58
+   ]
+  },
+  {
+   "id": "landau",
+   "type": "observable",
+   "era": "quantum",
+   "symbol": "ħωc",
+   "label": "Landau levels",
+   "derived": true,
+   "description": "Discrete energies of a charge in a uniform magnetic field, seen in cyclotron resonance and the quantum Hall effect.",
+   "math_structure": null,
+   "properties": null,
+   "first_paragraph": 59,
+   "section": 18,
+   "mentioned_in": [
+    59
+   ]
+  },
+  {
+   "id": "abphase",
+   "type": "observable",
+   "era": "quantum",
+   "symbol": "Δθ",
+   "label": "Aharonov–Bohm shift",
+   "derived": true,
+   "description": "Shift of an interference pattern by qΦ_B/ħ for electrons passing around a region of magnetic flux they never enter.",
+   "math_structure": null,
+   "properties": null,
+   "first_paragraph": 60,
+   "section": 18,
+   "mentioned_in": [
+    60
+   ]
+  },
+  {
+   "id": "clifford",
+   "type": "model",
+   "era": "quantum",
+   "symbol": "γ^μ",
+   "label": "Clifford algebra",
+   "derived": false,
+   "description": "The algebra needed to take a square root of p² − m²c². Its anticommutation, not commutation, is what produces spin ½.",
+   "math_structure": null,
+   "properties": [
+    "{γ^μ, γ^ν} = 2η^μν",
+    "anticommuting generators",
+    "associative"
+   ],
+   "first_paragraph": 61,
+   "section": 19,
+   "mentioned_in": [
+    61
+   ]
+  },
+  {
+   "id": "dirac",
+   "type": "model",
+   "era": "quantum",
+   "symbol": "iγ·D",
+   "label": "Dirac equation",
+   "derived": false,
+   "description": "The relativistic wave equation of the electron, the matter half of QED.",
+   "math_structure": null,
+   "properties": [
+    "linear",
+    "first order",
+    "Lorentz-covariant",
+    "minimal coupling built in"
+   ],
+   "first_paragraph": 61,
+   "section": 19,
+   "mentioned_in": [
+    61
+   ]
+  },
+  {
+   "id": "spinor",
+   "type": "state",
+   "era": "quantum",
+   "symbol": "ψ",
+   "label": "Dirac spinor",
+   "derived": false,
+   "description": "A spinor changes sign under a full 360° rotation, something no classical vector field does.",
+   "math_structure": "4-component field transforming under SL(2,ℂ), the double cover of the Lorentz group.",
+   "properties": null,
+   "first_paragraph": 62,
+   "section": 19,
+   "mentioned_in": [
+    62
+   ]
+  },
+  {
+   "id": "gfac",
+   "type": "observable",
+   "era": "quantum",
+   "symbol": "g",
+   "label": "Electron g-factor",
+   "derived": true,
+   "description": "Ratio of the electron's magnetic moment to its spin in natural units. Dirac predicted exactly 2.",
+   "math_structure": null,
+   "properties": null,
+   "first_paragraph": 62,
+   "section": 19,
+   "mentioned_in": [
+    62
+   ]
+  },
+  {
+   "id": "positron",
+   "type": "observable",
+   "era": "quantum",
+   "symbol": "e⁺",
+   "label": "Positron",
+   "derived": false,
+   "description": "The electron's antiparticle, same mass, opposite charge. Electron–positron pairs are created and annihilated.",
+   "math_structure": null,
+   "properties": null,
+   "first_paragraph": 63,
+   "section": 19,
+   "mentioned_in": [
+    63
+   ]
+  },
+  {
+   "id": "ladder",
+   "type": "model",
+   "era": "quantum",
+   "symbol": "a,a†",
+   "label": "Creation and annihilation operators",
+   "derived": false,
+   "description": "Quantizing each field mode as an oscillator. Commutators give bosons (photons); anticommutators give fermions (electrons).",
+   "math_structure": null,
+   "properties": [
+    "[a, a†] = 1 for photons",
+    "{b, b†} = 1 for electrons",
+    "raise or lower quanta by one"
+   ],
+   "first_paragraph": 64,
+   "section": 20,
+   "mentioned_in": [
+    64
+   ]
+  },
+  {
+   "id": "fock",
+   "type": "state",
+   "era": "quantum",
+   "symbol": "|nk⟩",
+   "label": "Fock space",
+   "derived": false,
+   "description": "The state space of a quantum field, in which particle number can change.",
+   "math_structure": "Direct sum of n-particle Hilbert spaces, n = 0, 1, 2, …; basis labelled by occupation numbers.",
+   "properties": null,
+   "first_paragraph": 65,
+   "section": 20,
+   "mentioned_in": [
+    65
+   ]
+  },
+  {
+   "id": "Aop",
+   "type": "state",
+   "era": "quantum",
+   "symbol": "Â(x)",
+   "label": "Field operator",
+   "derived": false,
+   "description": "The quantized electromagnetic potential. Its expectation values in coherent states are classical fields.",
+   "math_structure": "Operator-valued distribution on Fock space (Coulomb gauge: transverse components only).",
+   "properties": null,
+   "first_paragraph": 66,
+   "section": 20,
+   "mentioned_in": [
+    66
+   ]
+  },
+  {
+   "id": "spont",
+   "type": "observable",
+   "era": "quantum",
+   "symbol": "A₂₁",
+   "label": "Spontaneous emission rate",
+   "derived": true,
+   "description": "Rate at which an excited atom emits a photon with no field present, set by vacuum fluctuations.",
+   "math_structure": null,
+   "properties": null,
+   "first_paragraph": 65,
+   "section": 20,
+   "mentioned_in": [
+    65
+   ]
+  },
+  {
+   "id": "casimir",
+   "type": "observable",
+   "era": "quantum",
+   "symbol": "FC",
+   "label": "Casimir force",
+   "derived": true,
+   "description": "Attraction between uncharged parallel plates due to the change in zero-point energy of the field modes between them.",
+   "math_structure": null,
+   "properties": null,
+   "first_paragraph": 66,
+   "section": 20,
+   "mentioned_in": [
+    66
+   ]
+  },
+  {
+   "id": "psiop",
+   "type": "state",
+   "era": "quantum",
+   "symbol": "ψ̂",
+   "label": "Electron–positron field",
+   "derived": false,
+   "description": "The electron as the quantum of a field. It annihilates electrons and creates positrons.",
+   "math_structure": "Anticommuting operator-valued spinor field on Fock space.",
+   "properties": null,
+   "first_paragraph": 67,
+   "section": 21,
+   "mentioned_in": [
+    67
+   ]
+  },
+  {
+   "id": "alpha",
+   "type": "observable",
+   "era": "quantum",
+   "symbol": "α",
+   "label": "Fine-structure constant",
+   "derived": true,
+   "description": "α = e²/4πε₀ħc ≈ 1/137.036, the dimensionless strength of electromagnetism. Measured from the electron's g-factor and from atom-recoil experiments.",
+   "math_structure": null,
+   "properties": null,
+   "first_paragraph": 68,
+   "section": 21,
+   "mentioned_in": [
+    68
+   ]
+  },
+  {
+   "id": "pert",
+   "type": "model",
+   "era": "quantum",
+   "symbol": "Σαⁿ",
+   "label": "Perturbation series",
+   "derived": false,
+   "description": "Expands amplitudes in powers of the small coupling α. Each higher order involves more virtual particles.",
+   "math_structure": null,
+   "properties": [
+    "power series in α",
+    "asymptotic rather than convergent",
+    "computed order by order"
+   ],
+   "first_paragraph": 68,
+   "section": 21,
+   "mentioned_in": [
+    68
+   ]
+  },
+  {
+   "id": "lamb",
+   "type": "observable",
+   "era": "quantum",
+   "symbol": "ΔEL",
+   "label": "Lamb shift",
+   "derived": false,
+   "description": "Splitting between hydrogen's 2S½ and 2P½ levels: about 1000 MHz in Lamb and Retherford's 1947 measurement, about 1058 MHz in later, more precise measurements.",
+   "math_structure": null,
+   "properties": null,
+   "first_paragraph": 70,
+   "section": 21,
+   "mentioned_in": [
+    70
+   ]
+  },
+  {
+   "id": "amm",
+   "type": "observable",
+   "era": "quantum",
+   "symbol": "ae",
+   "label": "Anomalous magnetic moment",
+   "derived": true,
+   "description": "a_e = (g − 2)/2 ≈ 0.00115965, measured by Kusch and Foley (1947) and today to about a tenth of a part per billion.",
+   "math_structure": null,
+   "properties": null,
+   "first_paragraph": 70,
+   "section": 21,
+   "mentioned_in": [
+    70
+   ]
+  },
+  {
+   "id": "renorm",
+   "type": "model",
+   "era": "quantum",
+   "symbol": "Z",
+   "label": "Renormalization",
+   "derived": false,
+   "description": "Expresses predictions in terms of measured quantities, so that infinities cancel. Later understood through the renormalization group.",
+   "math_structure": null,
+   "properties": [
+    "absorbs divergences into measured m and e",
+    "finitely many parameters (renormalizable)",
+    "scale-dependent couplings"
+   ],
+   "first_paragraph": 71,
+   "section": 22,
+   "mentioned_in": [
+    71
+   ]
+  },
+  {
+   "id": "pathint",
+   "type": "model",
+   "era": "quantum",
+   "symbol": "∫Dx",
+   "label": "Path integral",
+   "derived": false,
+   "description": "Quantizes using the classical action directly, so the action principle of Part I becomes the core of quantum theory.",
+   "math_structure": null,
+   "properties": [
+    "sum over histories",
+    "weight e^{iS/ħ}",
+    "classical path = stationary phase"
+   ],
+   "first_paragraph": 72,
+   "section": 22,
+   "mentioned_in": [
+    72
+   ]
+  },
+  {
+   "id": "feyn",
+   "type": "model",
+   "era": "quantum",
+   "symbol": "FD",
+   "label": "Feynman diagrams",
+   "derived": false,
+   "description": "Pictorial rules for the terms of the perturbation series.",
+   "math_structure": null,
+   "properties": [
+    "propagators and vertices",
+    "each vertex contributes √α",
+    "combinatorial rules"
+   ],
+   "first_paragraph": 72,
+   "section": 22,
+   "mentioned_in": [
+    72
+   ]
+  },
+  {
+   "id": "smatrix",
+   "type": "state",
+   "era": "quantum",
+   "symbol": "Sfi",
+   "label": "S-matrix",
+   "derived": false,
+   "description": "Packages everything that can be measured in a scattering experiment.",
+   "math_structure": "Unitary operator on Fock space mapping incoming to outgoing states.",
+   "properties": null,
+   "first_paragraph": 73,
+   "section": 22,
+   "mentioned_in": [
+    73
+   ]
+  },
+  {
+   "id": "xsec",
+   "type": "observable",
+   "era": "quantum",
+   "symbol": "σ",
+   "label": "Cross sections",
+   "derived": true,
+   "description": "Scattering rates per unit flux, measured in collision experiments (Compton, Møller, Bhabha scattering).",
+   "math_structure": null,
+   "properties": null,
+   "first_paragraph": 73,
+   "section": 22,
+   "mentioned_in": [
+    73
+   ]
+  },
+  {
+   "id": "runalpha",
+   "type": "observable",
+   "era": "quantum",
+   "symbol": "α(Q)",
+   "label": "Running coupling",
+   "derived": true,
+   "description": "The effective strength of electromagnetism at momentum transfer Q, measured at colliders: about 1/128 at the Z mass.",
+   "math_structure": null,
+   "properties": null,
+   "first_paragraph": 74,
+   "section": 22,
+   "mentioned_in": [
+    74
+   ]
+  },
+  {
+   "id": "localgauge",
+   "type": "model",
+   "era": "quantum",
+   "symbol": "U(1)ₓ",
+   "label": "Local gauge principle",
+   "derived": false,
+   "description": "Demanding local phase invariance requires a connection, the electromagnetic potential, and fixes how it couples to charge.",
+   "math_structure": null,
+   "properties": [
+    "phase change at each point",
+    "forces a covariant derivative",
+    "abelian"
+   ],
+   "first_paragraph": 75,
+   "section": 23,
+   "mentioned_in": [
+    75
+   ]
+  },
+  {
+   "id": "qedL",
+   "type": "model",
+   "era": "quantum",
+   "symbol": "ℒQED",
+   "label": "QED Lagrangian",
+   "derived": false,
+   "description": "The complete specification of quantum electrodynamics in one line: Dirac field plus Maxwell field, coupled through the covariant derivative.",
+   "math_structure": null,
+   "properties": [
+    "Lorentz-invariant",
+    "local U(1) gauge-invariant",
+    "renormalizable"
+   ],
+   "first_paragraph": 76,
+   "section": 23,
+   "mentioned_in": [
+    76
+   ]
+  },
+  {
+   "id": "ward",
+   "type": "model",
+   "era": "quantum",
+   "symbol": "WT",
+   "label": "Ward–Takahashi identities",
+   "derived": false,
+   "description": "Relations among amplitudes implied by gauge symmetry; they protect the theory's consistency through renormalization.",
+   "math_structure": null,
+   "properties": [
+    "consequence of gauge invariance",
+    "photon stays massless",
+    "universal charge renormalization"
+   ],
+   "first_paragraph": 76,
+   "section": 23,
+   "mentioned_in": [
+    76
+   ]
+  }
+ ],
+ "routes": [
+  {
+   "id": "g_newton",
+   "target": "traj",
+   "title": "Newton's second law",
+   "formula": "m dv/dt = F, dx/dt = v, integrated forward in time.",
+   "inputs": [
+    {
+     "node": "F",
+     "role": "The force at each instant."
+    },
+    {
+     "node": "ddt",
+     "role": "Integrates the equations of motion."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": 2,
+   "appears_at_paragraph": 2,
+   "section": 1
+  },
+  {
+   "id": "g_v",
+   "target": "v",
+   "title": "Read off velocity",
+   "formula": "v = dx/dt.",
+   "inputs": [
+    {
+     "node": "traj",
+     "role": "Velocity component of the state of motion."
+    }
+   ],
+   "logic": "single",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": null,
+   "appears_at_paragraph": 2,
+   "section": 1
+  },
+  {
+   "id": "g_rtraj",
+   "target": "r",
+   "title": "Position along a trajectory",
+   "formula": "The position component of the state of motion.",
+   "inputs": [
+    {
+     "node": "traj",
+     "role": "Supplies x(t) at the moment of measurement."
+    }
+   ],
+   "logic": "single",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": null,
+   "appears_at_paragraph": 2,
+   "section": 1
+  },
+  {
+   "id": "g_pos",
+   "target": "r",
+   "title": "Read positions off the configuration",
+   "formula": "A coordinate of the configuration is a position measurement.",
+   "inputs": [
+    {
+     "node": "pts",
+     "role": "Each configuration lists where every charge is."
+    }
+   ],
+   "logic": "single",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": null,
+   "appears_at_paragraph": 8,
+   "section": 3
+  },
+  {
+   "id": "g_Fc",
+   "target": "F",
+   "title": "Coulomb force sum",
+   "formula": "Fᵢ = Σⱼ k qᵢqⱼ(xᵢ − xⱼ)/|xᵢ − xⱼ|³.",
+   "inputs": [
+    {
+     "node": "pts",
+     "role": "Every pair of charges and their separation vectors."
+    },
+    {
+     "node": "coul",
+     "role": "The force each pair exerts on the other."
+    },
+    {
+     "node": "vec",
+     "role": "Adds the pairwise forces; commutativity and associativity make the sum independent of ordering."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": 8,
+   "appears_at_paragraph": 8,
+   "section": 3
+  },
+  {
+   "id": "g_rho",
+   "target": "rho",
+   "title": "Point charges as a density",
+   "formula": "ρ(x) = Σ qᵢ δ³(x − xᵢ).",
+   "inputs": [
+    {
+     "node": "pts",
+     "role": "The discrete charges qᵢ at points xᵢ."
+    },
+    {
+     "node": "delta",
+     "role": "Turns each point charge into a density spike, so points and continua share one description."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": null,
+   "appears_at_paragraph": 10,
+   "section": 4
+  },
+  {
+   "id": "g_Q",
+   "target": "q",
+   "title": "Total charge from density",
+   "formula": "Q = ∫ρ dV.",
+   "inputs": [
+    {
+     "node": "rho",
+     "role": "The density to integrate."
+    },
+    {
+     "node": "addq",
+     "role": "Additivity: the charge of a region is the sum (integral) of its parts."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": null,
+   "appears_at_paragraph": 10,
+   "section": 4
+  },
+  {
+   "id": "g_Etest",
+   "target": "E",
+   "title": "Test-charge definition",
+   "formula": "E = lim F/q as q → 0.",
+   "inputs": [
+    {
+     "node": "F",
+     "role": "Force measured on a small test charge at rest."
+    },
+    {
+     "node": "q",
+     "role": "The test charge; dividing removes the dependence on the probe."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": null,
+   "appears_at_paragraph": 13,
+   "section": 4
+  },
+  {
+   "id": "g_Eeval",
+   "target": "E",
+   "title": "Evaluate the field at a point",
+   "formula": "The observable E(x₀) is the state E(·) evaluated at x₀.",
+   "inputs": [
+    {
+     "node": "Efield",
+     "role": "The full field configuration."
+    },
+    {
+     "node": "r",
+     "role": "The point at which it is read."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": null,
+   "appears_at_paragraph": 13,
+   "section": 4
+  },
+  {
+   "id": "g_Ecoul",
+   "target": "Efield",
+   "title": "Coulomb integral",
+   "formula": "E(x) = (1/4πε₀)∫ρ(x′)(x − x′)/|x − x′|³ d³x′.",
+   "inputs": [
+    {
+     "node": "rho",
+     "role": "Source distribution to integrate over."
+    },
+    {
+     "node": "coul",
+     "role": "Field of a unit point source."
+    },
+    {
+     "node": "sup",
+     "role": "The total field is the integral of point-source fields."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": null,
+   "appears_at_paragraph": 13,
+   "section": 4
+  },
+  {
+   "id": "g_Egauss",
+   "target": "Efield",
+   "title": "Gauss's law with symmetry",
+   "formula": "Avoids integration when symmetry fixes the field's shape.",
+   "inputs": [
+    {
+     "node": "rho",
+     "role": "Must be highly symmetric (sphere, line, plane)."
+    },
+    {
+     "node": "div",
+     "role": "∮E·dA = Q_enc/ε₀ links field and enclosed charge."
+    },
+    {
+     "node": "sym",
+     "role": "Makes |E| constant on a chosen surface so the integral can be inverted."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": null,
+   "appears_at_paragraph": 13,
+   "section": 4
+  },
+  {
+   "id": "g_Egrad",
+   "target": "Efield",
+   "title": "Field from the potential",
+   "formula": "E = −∇φ.",
+   "inputs": [
+    {
+     "node": "phi",
+     "role": "Any representative of the potential class."
+    },
+    {
+     "node": "grad",
+     "role": "The constant ambiguity drops out because ∇(const) = 0."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": null,
+   "appears_at_paragraph": 13,
+   "section": 4
+  },
+  {
+   "id": "g_static",
+   "target": "Efield",
+   "title": "Static limit of the dynamical field",
+   "formula": "With ∂/∂t = 0 the electric part decouples and is curl-free.",
+   "inputs": [
+    {
+     "node": "EB",
+     "role": "The full dynamical state."
+    },
+    {
+     "node": "ddt",
+     "role": "Set all time derivatives to zero."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": 28,
+   "appears_at_paragraph": 28,
+   "section": 9
+  },
+  {
+   "id": "g_flux",
+   "target": "PhiE",
+   "title": "Direct flux integral",
+   "formula": "Φ_E = ∮E·dA.",
+   "inputs": [
+    {
+     "node": "Efield",
+     "role": "The field to integrate over the surface."
+    },
+    {
+     "node": "div",
+     "role": "The surface integral."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": null,
+   "appears_at_paragraph": 13,
+   "section": 4
+  },
+  {
+   "id": "g_gausslaw",
+   "target": "PhiE",
+   "title": "Gauss's law",
+   "formula": "Φ_E = Q_enc/ε₀.",
+   "inputs": [
+    {
+     "node": "q",
+     "role": "Charge enclosed by the surface."
+    },
+    {
+     "node": "div",
+     "role": "Divergence theorem with ∇·E = ρ/ε₀."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": 12,
+   "appears_at_paragraph": 12,
+   "section": 4
+  },
+  {
+   "id": "g_philine",
+   "target": "phi",
+   "title": "Potential from a line integral",
+   "formula": "φ(x) = −∫E·dl from an arbitrary reference point.",
+   "inputs": [
+    {
+     "node": "Efield",
+     "role": "A curl-free field, so the integral is path-independent."
+    },
+    {
+     "node": "line",
+     "role": "The integral; moving the reference point shifts φ by a constant."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": null,
+   "appears_at_paragraph": 13,
+   "section": 4
+  },
+  {
+   "id": "g_poisson",
+   "target": "phi",
+   "title": "Solve Poisson's equation",
+   "formula": "∇²φ = −ρ/ε₀ with boundary conditions.",
+   "inputs": [
+    {
+     "node": "rho",
+     "role": "Source term."
+    },
+    {
+     "node": "lap",
+     "role": "Linear elliptic equation solved with a Green's function."
+    },
+    {
+     "node": "bc",
+     "role": "Boundary values make the solution unique."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": null,
+   "appears_at_paragraph": 11,
+   "section": 4
+  },
+  {
+   "id": "g_phistatic",
+   "target": "phi",
+   "title": "Static limit of the gauge potential",
+   "formula": "For static fields in Coulomb gauge, the scalar part of the representative is the electrostatic potential.",
+   "inputs": [
+    {
+     "node": "pot",
+     "role": "The gauge class of potentials."
+    },
+    {
+     "node": "gfix",
+     "role": "Fixes a representative in which φ is time-independent."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": null,
+   "appears_at_paragraph": 31,
+   "section": 10
+  },
+  {
+   "id": "g_U1",
+   "target": "U",
+   "title": "Energy as charge times potential",
+   "formula": "U = ½∫ρφ dV.",
+   "inputs": [
+    {
+     "node": "rho",
+     "role": "The charges being assembled."
+    },
+    {
+     "node": "phi",
+     "role": "The potential they sit in."
+    },
+    {
+     "node": "bil",
+     "role": "The ½ corrects for counting each pair twice."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": null,
+   "appears_at_paragraph": 13,
+   "section": 4
+  },
+  {
+   "id": "g_U2",
+   "target": "U",
+   "title": "Energy stored in the field",
+   "formula": "U = (ε₀/2)∫|E|² dV.",
+   "inputs": [
+    {
+     "node": "Efield",
+     "role": "The field everywhere in space."
+    },
+    {
+     "node": "bil",
+     "role": "Positive-definite quadratic form in the field."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": null,
+   "appears_at_paragraph": 13,
+   "section": 4
+  },
+  {
+   "id": "g_dV1",
+   "target": "dV",
+   "title": "Difference of potential values",
+   "formula": "ΔV = φ(b) − φ(a); the arbitrary constant cancels.",
+   "inputs": [
+    {
+     "node": "phi",
+     "role": "Potential at two points."
+    },
+    {
+     "node": "r",
+     "role": "The two endpoints."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": 16,
+   "appears_at_paragraph": 16,
+   "section": 5
+  },
+  {
+   "id": "g_dV2",
+   "target": "dV",
+   "title": "Line integral of the field",
+   "formula": "ΔV = −∫ₐᵇ E·dl, path-independent in statics.",
+   "inputs": [
+    {
+     "node": "Efield",
+     "role": "Field along a path."
+    },
+    {
+     "node": "line",
+     "role": "Integrates −E·dl."
+    },
+    {
+     "node": "r",
+     "role": "The endpoints."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": 16,
+   "appears_at_paragraph": 16,
+   "section": 5
+  },
+  {
+   "id": "g_C",
+   "target": "C",
+   "title": "Capacitance",
+   "formula": "C = Q/ΔV; linearity makes the ratio independent of Q.",
+   "inputs": [
+    {
+     "node": "q",
+     "role": "Charge on the conductor."
+    },
+    {
+     "node": "dV",
+     "role": "The resulting voltage."
+    },
+    {
+     "node": "bc",
+     "role": "Conductor geometry, which fixes the ratio."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": null,
+   "appears_at_paragraph": 14,
+   "section": 5
+  },
+  {
+   "id": "g_I",
+   "target": "I",
+   "title": "Current as flux of J",
+   "formula": "I = ∫J·dA.",
+   "inputs": [
+    {
+     "node": "J",
+     "role": "Current density across the surface."
+    },
+    {
+     "node": "div",
+     "role": "The flux integral."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": null,
+   "appears_at_paragraph": 15,
+   "section": 5
+  },
+  {
+   "id": "g_R",
+   "target": "R",
+   "title": "Resistance from voltage and current",
+   "formula": "R = ΔV/I.",
+   "inputs": [
+    {
+     "node": "dV",
+     "role": "Voltage across the conductor."
+    },
+    {
+     "node": "I",
+     "role": "Current through it."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": null,
+   "appears_at_paragraph": 15,
+   "section": 5
+  },
+  {
+   "id": "g_Johm",
+   "target": "J",
+   "title": "Local Ohm's law",
+   "formula": "J = σE inside a conductor.",
+   "inputs": [
+    {
+     "node": "Efield",
+     "role": "The field inside the conductor."
+    },
+    {
+     "node": "ohm",
+     "role": "The material's conductivity σ."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": null,
+   "appears_at_paragraph": 15,
+   "section": 5
+  },
+  {
+   "id": "g_rhoevol",
+   "target": "rho",
+   "title": "Density evolves by continuity",
+   "formula": "∂ρ/∂t = −∇·J updates ρ in time.",
+   "inputs": [
+    {
+     "node": "J",
+     "role": "Flux of charge out of each region."
+    },
+    {
+     "node": "cont",
+     "role": "Converts outflow into a decrease of density."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": null,
+   "appears_at_paragraph": 16,
+   "section": 5
+  },
+  {
+   "id": "g_Bbs",
+   "target": "Bfield",
+   "title": "Biot–Savart integral",
+   "formula": "B(x) = (μ₀/4π)∫J × (x − x′)/|x − x′|³ d³x′.",
+   "inputs": [
+    {
+     "node": "J",
+     "role": "The current distribution."
+    },
+    {
+     "node": "bs",
+     "role": "Field of one current element."
+    },
+    {
+     "node": "sup",
+     "role": "Integrate over all elements."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": 18,
+   "appears_at_paragraph": 19,
+   "section": 6
+  },
+  {
+   "id": "g_Bamp",
+   "target": "Bfield",
+   "title": "Ampère's law with symmetry",
+   "formula": "∮B·dl = μ₀I_enc.",
+   "inputs": [
+    {
+     "node": "J",
+     "role": "A symmetric current (wire, solenoid, sheet)."
+    },
+    {
+     "node": "curl",
+     "role": "Stokes form of Ampère's law."
+    },
+    {
+     "node": "sym",
+     "role": "Makes |B| constant along the loop."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": 19,
+   "appears_at_paragraph": 19,
+   "section": 6
+  },
+  {
+   "id": "g_Bcurl",
+   "target": "Bfield",
+   "title": "Field from the vector potential",
+   "formula": "B = ∇×A.",
+   "inputs": [
+    {
+     "node": "A",
+     "role": "Any representative vector potential."
+    },
+    {
+     "node": "curl",
+     "role": "Gradient shifts drop out because ∇×∇χ = 0."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": 23,
+   "appears_at_paragraph": 23,
+   "section": 8
+  },
+  {
+   "id": "g_Beval",
+   "target": "B",
+   "title": "Evaluate the field at a point",
+   "formula": "B(x₀) from the field B(·).",
+   "inputs": [
+    {
+     "node": "Bfield",
+     "role": "The field configuration."
+    },
+    {
+     "node": "r",
+     "role": "Where it is read."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": null,
+   "appears_at_paragraph": 19,
+   "section": 6
+  },
+  {
+   "id": "g_Bforce",
+   "target": "B",
+   "title": "Infer B from the velocity-dependent force",
+   "formula": "Solve F − qE = q v×B for B using several velocities.",
+   "inputs": [
+    {
+     "node": "F",
+     "role": "Total force on a moving test charge."
+    },
+    {
+     "node": "q",
+     "role": "Its charge."
+    },
+    {
+     "node": "v",
+     "role": "Its velocity, varied in direction."
+    },
+    {
+     "node": "cross",
+     "role": "Inverting the cross product needs at least two independent velocities."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": 38,
+   "appears_at_paragraph": 38,
+   "section": 12
+  },
+  {
+   "id": "g_Fwire",
+   "target": "F",
+   "title": "Force on a current element",
+   "formula": "dF = I dl × B (Ampère, Laplace).",
+   "inputs": [
+    {
+     "node": "I",
+     "role": "Current in the wire element."
+    },
+    {
+     "node": "B",
+     "role": "Magnetic field at the element."
+    },
+    {
+     "node": "cross",
+     "role": "Makes the force perpendicular to both wire and field."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": 19,
+   "appears_at_paragraph": 19,
+   "section": 6
+  },
+  {
+   "id": "g_PhiB",
+   "target": "PhiB",
+   "title": "Flux integral of B",
+   "formula": "Φ_B = ∫B·dA; any surface with the same boundary gives the same answer because ∇·B = 0.",
+   "inputs": [
+    {
+     "node": "Bfield",
+     "role": "The field to integrate."
+    },
+    {
+     "node": "div",
+     "role": "The surface integral."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": null,
+   "appears_at_paragraph": 20,
+   "section": 7
+  },
+  {
+   "id": "g_PhiBA",
+   "target": "PhiB",
+   "title": "Flux from the loop integral of A",
+   "formula": "Φ_B = ∮A·dl by Stokes' theorem.",
+   "inputs": [
+    {
+     "node": "A",
+     "role": "Vector potential around the loop."
+    },
+    {
+     "node": "line",
+     "role": "Integrate A along the loop."
+    },
+    {
+     "node": "curl",
+     "role": "Stokes: ∮A·dl = ∫(∇×A)·dA."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": 23,
+   "appears_at_paragraph": 23,
+   "section": 8
+  },
+  {
+   "id": "g_emf1",
+   "target": "emf",
+   "title": "Faraday's flux rule",
+   "formula": "ℰ = −dΦ_B/dt.",
+   "inputs": [
+    {
+     "node": "PhiB",
+     "role": "Flux through the circuit."
+    },
+    {
+     "node": "ddt",
+     "role": "Its rate of change."
+    },
+    {
+     "node": "faraday",
+     "role": "Supplies the law and Lenz's sign."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": 20,
+   "appears_at_paragraph": 20,
+   "section": 7
+  },
+  {
+   "id": "g_emf2",
+   "target": "emf",
+   "title": "Direct loop integral",
+   "formula": "ℰ = ∮(E + v×B)·dl.",
+   "inputs": [
+    {
+     "node": "EB",
+     "role": "Fields along the circuit."
+    },
+    {
+     "node": "traj",
+     "role": "Motion of the circuit's elements."
+    },
+    {
+     "node": "line",
+     "role": "Integration around the loop."
+    },
+    {
+     "node": "cross",
+     "role": "The motional part v×B."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": null,
+   "appears_at_paragraph": 28,
+   "section": 9
+  },
+  {
+   "id": "g_eps",
+   "target": "consts",
+   "title": "Measure the couplings",
+   "formula": "ε₀ from the strength of electric forces, μ₀ from forces between currents.",
+   "inputs": [
+    {
+     "node": "F",
+     "role": "Measured forces."
+    },
+    {
+     "node": "q",
+     "role": "Charges involved."
+    },
+    {
+     "node": "r",
+     "role": "Separations."
+    },
+    {
+     "node": "I",
+     "role": "Currents in parallel wires."
+    },
+    {
+     "node": "coul",
+     "role": "Electric force law containing ε₀."
+    },
+    {
+     "node": "bs",
+     "role": "Magnetic force law containing μ₀."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": 24,
+   "appears_at_paragraph": 24,
+   "section": 8
+  },
+  {
+   "id": "g_disp",
+   "target": "maxwell",
+   "title": "Displacement current",
+   "formula": "Adding μ₀ε₀∂E/∂t to Ampère's law restores consistency with charge conservation.",
+   "inputs": [
+    {
+     "node": "cont",
+     "role": "∇·J = −∂ρ/∂t, non-zero when charge accumulates."
+    },
+    {
+     "node": "curl",
+     "role": "∇·(∇×B) = 0 would force ∇·J = 0: the contradiction to repair."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": 27,
+   "appears_at_paragraph": 27,
+   "section": 9
+  },
+  {
+   "id": "g_maxform",
+   "target": "maxwell",
+   "title": "Maxwell's equations as forms",
+   "formula": "dF = 0 and d⋆F = μ₀⋆J.",
+   "inputs": [
+    {
+     "node": "ext",
+     "role": "dF = 0 packages ∇·B = 0 and Faraday's law."
+    },
+    {
+     "node": "hodge",
+     "role": "d⋆F = μ₀⋆J packages Gauss and Ampère–Maxwell; ⋆ supplies the metric."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": 47,
+   "appears_at_paragraph": 47,
+   "section": 15
+  },
+  {
+   "id": "g_c",
+   "target": "c",
+   "title": "Predicted wave speed",
+   "formula": "Combining the curl equations gives wave equations with speed 1/√(μ₀ε₀).",
+   "inputs": [
+    {
+     "node": "consts",
+     "role": "Measured ε₀ and μ₀."
+    },
+    {
+     "node": "maxwell",
+     "role": "The coupled curl equations."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": 27,
+   "appears_at_paragraph": 27,
+   "section": 9
+  },
+  {
+   "id": "g_evolve",
+   "target": "EB",
+   "title": "Time evolution by Maxwell's equations",
+   "formula": "∂E/∂t = c²∇×B − J/ε₀, ∂B/∂t = −∇×E.",
+   "inputs": [
+    {
+     "node": "EB",
+     "role": "Present field state (Cauchy data)."
+    },
+    {
+     "node": "rho",
+     "role": "Sources entering the constraints."
+    },
+    {
+     "node": "J",
+     "role": "Sources entering the evolution."
+    },
+    {
+     "node": "maxwell",
+     "role": "The evolution equations."
+    },
+    {
+     "node": "ddt",
+     "role": "Steps the state forward in time."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": 28,
+   "appears_at_paragraph": 28,
+   "section": 9
+  },
+  {
+   "id": "g_EBpot",
+   "target": "EB",
+   "title": "Fields from potentials",
+   "formula": "E = −∇φ − ∂A/∂t, B = ∇×A, the same for every member of the gauge class.",
+   "inputs": [
+    {
+     "node": "pot",
+     "role": "Any representative (φ, A)."
+    },
+    {
+     "node": "grad",
+     "role": "The −∇φ term."
+    },
+    {
+     "node": "curl",
+     "role": "The ∇×A term."
+    },
+    {
+     "node": "ddt",
+     "role": "The −∂A/∂t term."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": null,
+   "appears_at_paragraph": 31,
+   "section": 10
+  },
+  {
+   "id": "g_EBF",
+   "target": "EB",
+   "title": "Split F by an observer",
+   "formula": "E and B are the components of F relative to an observer's four-velocity.",
+   "inputs": [
+    {
+     "node": "Fmn",
+     "role": "The spacetime field tensor."
+    },
+    {
+     "node": "lorentz",
+     "role": "Choice of inertial frame; different frames give different splits."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": 42,
+   "appears_at_paragraph": 42,
+   "section": 13
+  },
+  {
+   "id": "g_u",
+   "target": "u",
+   "title": "Energy density of the field",
+   "formula": "u = ½(ε₀|E|² + |B|²/μ₀).",
+   "inputs": [
+    {
+     "node": "EB",
+     "role": "Fields at the point."
+    },
+    {
+     "node": "bil",
+     "role": "The quadratic form, now with its magnetic part."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": null,
+   "appears_at_paragraph": 29,
+   "section": 9
+  },
+  {
+   "id": "g_Fstress",
+   "target": "F",
+   "title": "Force from the Maxwell stress",
+   "formula": "F = ∮σ·dA over a surface enclosing the charges (minus the change of field momentum inside, added after 1900).",
+   "inputs": [
+    {
+     "node": "EB",
+     "role": "Fields on a surface surrounding the charges."
+    },
+    {
+     "node": "stress",
+     "role": "Momentum flux through that surface."
+    },
+    {
+     "node": "ddt",
+     "role": "Rate of change of field momentum inside."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": 29,
+   "appears_at_paragraph": 29,
+   "section": 9
+  },
+  {
+   "id": "g_ret",
+   "target": "pot",
+   "title": "Retarded potentials",
+   "formula": "φ(x,t) = (1/4πε₀)∫ρ(x′, t − |x − x′|/c)/|x − x′| d³x′, and likewise for A.",
+   "inputs": [
+    {
+     "node": "rho",
+     "role": "Charge sources."
+    },
+    {
+     "node": "J",
+     "role": "Current sources."
+    },
+    {
+     "node": "gfix",
+     "role": "Lorenz gauge decouples the equations into □φ = ρ/ε₀, □A = μ₀J."
+    },
+    {
+     "node": "wave",
+     "role": "The retarded Green's function."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": 30,
+   "appears_at_paragraph": 31,
+   "section": 10
+  },
+  {
+   "id": "g_pot2",
+   "target": "pot",
+   "title": "Gauge orbit of a pair",
+   "formula": "All pairs related by gauge transformations form one class.",
+   "inputs": [
+    {
+     "node": "phi",
+     "role": "A scalar potential, now allowed to depend on time."
+    },
+    {
+     "node": "A",
+     "role": "A vector potential."
+    },
+    {
+     "node": "gauge",
+     "role": "Sweeps out the whole orbit."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": null,
+   "appears_at_paragraph": 31,
+   "section": 10
+  },
+  {
+   "id": "g_pot1",
+   "target": "pot",
+   "title": "Existence of potentials",
+   "formula": "Fields obeying ∇·B = 0 and Faraday's law come from some (φ, A), at least locally.",
+   "inputs": [
+    {
+     "node": "EB",
+     "role": "The fields and their two homogeneous equations."
+    },
+    {
+     "node": "poinc",
+     "role": "Closed implies exact on regions without holes."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": 32,
+   "appears_at_paragraph": 32,
+   "section": 10
+  },
+  {
+   "id": "g_Arep",
+   "target": "A",
+   "title": "Pick a representative",
+   "formula": "A gauge condition selects a concrete A from the class.",
+   "inputs": [
+    {
+     "node": "pot",
+     "role": "The gauge class."
+    },
+    {
+     "node": "gfix",
+     "role": "The selection rule (e.g. Coulomb gauge)."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": null,
+   "appears_at_paragraph": 31,
+   "section": 10
+  },
+  {
+   "id": "g_S",
+   "target": "S",
+   "title": "Poynting vector",
+   "formula": "S = E×B/μ₀.",
+   "inputs": [
+    {
+     "node": "EB",
+     "role": "Fields at the point."
+    },
+    {
+     "node": "cross",
+     "role": "Forms E×B."
+    },
+    {
+     "node": "poynt",
+     "role": "Identifies it as the energy flux in the conservation law."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": null,
+   "appears_at_paragraph": 33,
+   "section": 11
+  },
+  {
+   "id": "g_vac",
+   "target": "vac",
+   "title": "Mode expansion of free fields",
+   "formula": "Source-free solutions as sums of plane waves.",
+   "inputs": [
+    {
+     "node": "EB",
+     "role": "Fields in a source-free region."
+    },
+    {
+     "node": "wave",
+     "role": "□E = □B = 0 there."
+    },
+    {
+     "node": "fourier",
+     "role": "Expands in modes e^{i(k·x − ωt)}."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": null,
+   "appears_at_paragraph": 35,
+   "section": 11
+  },
+  {
+   "id": "g_wave",
+   "target": "wavedat",
+   "title": "Read off wave data",
+   "formula": "Each mode has definite k, ω = c|k| and polarization.",
+   "inputs": [
+    {
+     "node": "vac",
+     "role": "Mode amplitudes."
+    },
+    {
+     "node": "fourier",
+     "role": "Labels modes by wave vector and polarization."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": null,
+   "appears_at_paragraph": 35,
+   "section": 11
+  },
+  {
+   "id": "g_g",
+   "target": "g",
+   "title": "Momentum density",
+   "formula": "g = S/c².",
+   "inputs": [
+    {
+     "node": "S",
+     "role": "Energy flux."
+    },
+    {
+     "node": "c",
+     "role": "Converts energy flux into momentum density."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": null,
+   "appears_at_paragraph": 36,
+   "section": 11
+  },
+  {
+   "id": "g_FL",
+   "target": "F",
+   "title": "Lorentz force law",
+   "formula": "F = q(E + v×B).",
+   "inputs": [
+    {
+     "node": "q",
+     "role": "Charge of the particle."
+    },
+    {
+     "node": "E",
+     "role": "Electric field at its location."
+    },
+    {
+     "node": "B",
+     "role": "Magnetic field at its location."
+    },
+    {
+     "node": "v",
+     "role": "Its velocity."
+    },
+    {
+     "node": "cross",
+     "role": "Builds the magnetic part q v×B, perpendicular to v."
+    },
+    {
+     "node": "vec",
+     "role": "Adds the electric and magnetic parts."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": 37,
+   "appears_at_paragraph": 37,
+   "section": 12
+  },
+  {
+   "id": "g_P1",
+   "target": "P",
+   "title": "Larmor formula",
+   "formula": "P = q²a²/(6πε₀c³) for slow charges.",
+   "inputs": [
+    {
+     "node": "pot",
+     "role": "Liénard–Wiechert potentials of the moving charge."
+    },
+    {
+     "node": "traj",
+     "role": "Its acceleration."
+    },
+    {
+     "node": "wave",
+     "role": "Far-field part of the retarded solution."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": 39,
+   "appears_at_paragraph": 39,
+   "section": 12
+  },
+  {
+   "id": "g_P2",
+   "target": "P",
+   "title": "Flux of the Poynting vector",
+   "formula": "P = ∮S·dA over a large sphere.",
+   "inputs": [
+    {
+     "node": "S",
+     "role": "Energy flux far from the charge."
+    },
+    {
+     "node": "div",
+     "role": "Integrates the flux over the sphere."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": 39,
+   "appears_at_paragraph": 39,
+   "section": 12
+  },
+  {
+   "id": "g_Amu",
+   "target": "Amu",
+   "title": "Assemble the four-potential",
+   "formula": "(φ/c, A) transform together as a four-vector.",
+   "inputs": [
+    {
+     "node": "pot",
+     "role": "Scalar and vector potentials."
+    },
+    {
+     "node": "lorentz",
+     "role": "How they transform together."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": null,
+   "appears_at_paragraph": 42,
+   "section": 13
+  },
+  {
+   "id": "g_jmu",
+   "target": "jmu",
+   "title": "Assemble the four-current",
+   "formula": "J^μ = (cρ, J).",
+   "inputs": [
+    {
+     "node": "rho",
+     "role": "Charge density."
+    },
+    {
+     "node": "J",
+     "role": "Current density."
+    },
+    {
+     "node": "lorentz",
+     "role": "They transform together as a four-vector."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": null,
+   "appears_at_paragraph": 42,
+   "section": 13
+  },
+  {
+   "id": "g_Fmink",
+   "target": "Fmn",
+   "title": "Antisymmetrized derivative of A",
+   "formula": "F_μν = ∂_μA_ν − ∂_νA_μ (Minkowski).",
+   "inputs": [
+    {
+     "node": "Amu",
+     "role": "The four-potential."
+    },
+    {
+     "node": "lorentz",
+     "role": "Guarantees the result transforms as a tensor."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": 42,
+   "appears_at_paragraph": 42,
+   "section": 13
+  },
+  {
+   "id": "g_inv13",
+   "target": "inv",
+   "title": "Contract the field tensor",
+   "formula": "F_μνF^μν ∝ |B|² − |E|²/c² and F_μνF̃^μν ∝ E·B.",
+   "inputs": [
+    {
+     "node": "Fmn",
+     "role": "The field tensor."
+    },
+    {
+     "node": "lorentz",
+     "role": "Full contractions are unchanged by every boost and rotation."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": null,
+   "appears_at_paragraph": 42,
+   "section": 13
+  },
+  {
+   "id": "g_T",
+   "target": "T",
+   "title": "Stress–energy tensor",
+   "formula": "T^μν = (1/μ₀)(F^μα F^ν_α − ¼ g^μν F_αβ F^αβ).",
+   "inputs": [
+    {
+     "node": "Fmn",
+     "role": "The field tensor."
+    },
+    {
+     "node": "lorentz",
+     "role": "Its components transform as a tensor."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": null,
+   "appears_at_paragraph": 42,
+   "section": 13
+  },
+  {
+   "id": "g_FEL",
+   "target": "F",
+   "title": "Euler–Lagrange equation for a charge",
+   "formula": "Gauge-dependent terms cancel and the result is q(E + v×B).",
+   "inputs": [
+    {
+     "node": "traj",
+     "role": "The path being varied."
+    },
+    {
+     "node": "pot",
+     "role": "Enters through L = ½mv² − qφ + q v·A."
+    },
+    {
+     "node": "action",
+     "role": "Stationarity gives the Euler–Lagrange equation."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": 43,
+   "appears_at_paragraph": 43,
+   "section": 14
+  },
+  {
+   "id": "g_phase",
+   "target": "phase",
+   "title": "Canonical momentum",
+   "formula": "p = ∂L/∂v = mv + qA.",
+   "inputs": [
+    {
+     "node": "traj",
+     "role": "Position and velocity."
+    },
+    {
+     "node": "pot",
+     "role": "A appears in the canonical momentum."
+    },
+    {
+     "node": "legendre",
+     "role": "Converts velocities into momenta."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": null,
+   "appears_at_paragraph": 44,
+   "section": 14
+  },
+  {
+   "id": "g_pkin",
+   "target": "pkin",
+   "title": "Subtract the potential",
+   "formula": "π = p − qA; the gauge shifts of p and qA cancel.",
+   "inputs": [
+    {
+     "node": "phase",
+     "role": "Canonical momentum p."
+    },
+    {
+     "node": "pot",
+     "role": "The term qA to subtract."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": null,
+   "appears_at_paragraph": 44,
+   "section": 14
+  },
+  {
+   "id": "g_ham",
+   "target": "traj",
+   "title": "Hamilton's equations",
+   "formula": "dx/dt = {x, H}, dp/dt = {p, H}.",
+   "inputs": [
+    {
+     "node": "phase",
+     "role": "State in phase space."
+    },
+    {
+     "node": "pb",
+     "role": "Generates the flow from H."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": null,
+   "appears_at_paragraph": 44,
+   "section": 14
+  },
+  {
+   "id": "g_fphase",
+   "target": "fphase",
+   "title": "Hamiltonian field theory",
+   "formula": "Canonical pairs from the field Lagrangian, with Gauss's law as a constraint.",
+   "inputs": [
+    {
+     "node": "pot",
+     "role": "Field variables."
+    },
+    {
+     "node": "action",
+     "role": "Field Lagrangian density."
+    },
+    {
+     "node": "gauge",
+     "role": "The constraint generates gauge transformations; orbits are identified."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": null,
+   "appears_at_paragraph": 44,
+   "section": 14
+  },
+  {
+   "id": "g_cons",
+   "target": "cons",
+   "title": "Noether charges of matter plus field",
+   "formula": "Time translations give energy, space translations momentum, rotations angular momentum.",
+   "inputs": [
+    {
+     "node": "fphase",
+     "role": "Field degrees of freedom."
+    },
+    {
+     "node": "phase",
+     "role": "Particle degrees of freedom."
+    },
+    {
+     "node": "noether",
+     "role": "Turns each symmetry into a conserved total."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": null,
+   "appears_at_paragraph": 45,
+   "section": 14
+  },
+  {
+   "id": "g_noethcont",
+   "target": "cont",
+   "title": "Charge conservation from gauge symmetry",
+   "formula": "Invariance of the action under gauge changes forces ∂ρ/∂t + ∇·J = 0.",
+   "inputs": [
+    {
+     "node": "noether",
+     "role": "Symmetry ↔ conserved current."
+    },
+    {
+     "node": "gauge",
+     "role": "The symmetry in question."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": 46,
+   "appears_at_paragraph": 46,
+   "section": 14
+  },
+  {
+   "id": "g_FdA",
+   "target": "Fmn",
+   "title": "F = dA",
+   "formula": "Gauge shifts A → A + dχ drop out since d²χ = 0.",
+   "inputs": [
+    {
+     "node": "Amu",
+     "role": "The four-potential."
+    },
+    {
+     "node": "ext",
+     "role": "Exterior derivative."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": null,
+   "appears_at_paragraph": 47,
+   "section": 15
+  },
+  {
+   "id": "g_inv",
+   "target": "inv",
+   "title": "Invariants as forms",
+   "formula": "F∧F ∝ E·B and F∧⋆F ∝ |E|² − c²|B|².",
+   "inputs": [
+    {
+     "node": "Fmn",
+     "role": "The field 2-form."
+    },
+    {
+     "node": "hodge",
+     "role": "Needed for F∧⋆F."
+    },
+    {
+     "node": "wedge",
+     "role": "Builds the top-degree forms."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": 47,
+   "appears_at_paragraph": 47,
+   "section": 15
+  },
+  {
+   "id": "g_d2cont",
+   "target": "cont",
+   "title": "Conservation from d² = 0",
+   "formula": "d⋆J = μ₀⁻¹ d(d⋆F) = 0.",
+   "inputs": [
+    {
+     "node": "jmu",
+     "role": "The four-current."
+    },
+    {
+     "node": "ext",
+     "role": "d∘d = 0."
+    },
+    {
+     "node": "maxwell",
+     "role": "d⋆F = μ₀⋆J."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": 47,
+   "appears_at_paragraph": 47,
+   "section": 15
+  },
+  {
+   "id": "g_bundle",
+   "target": "bundle",
+   "title": "Glue local potentials",
+   "formula": "Potentials on overlapping patches differ by gauge transformations, which glue them into a bundle.",
+   "inputs": [
+    {
+     "node": "Amu",
+     "role": "Local potentials on patches."
+    },
+    {
+     "node": "conn",
+     "role": "Interprets them as a connection."
+    },
+    {
+     "node": "gauge",
+     "role": "Transition functions on the overlaps."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": null,
+   "appears_at_paragraph": 48,
+   "section": 15
+  },
+  {
+   "id": "g_Fcurv",
+   "target": "Fmn",
+   "title": "Curvature of the connection",
+   "formula": "F is the curvature 2-form of the U(1) connection.",
+   "inputs": [
+    {
+     "node": "bundle",
+     "role": "The global geometric state."
+    },
+    {
+     "node": "conn",
+     "role": "Its curvature."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": 48,
+   "appears_at_paragraph": 48,
+   "section": 15
+  },
+  {
+   "id": "g_hol",
+   "target": "hol",
+   "title": "Parallel transport around a loop",
+   "formula": "Holonomy exp(i∮A); classically the loop integral ∮A·dl itself.",
+   "inputs": [
+    {
+     "node": "bundle",
+     "role": "The connection to transport with."
+    },
+    {
+     "node": "line",
+     "role": "The closed path."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical",
+   "text_marker_paragraph": null,
+   "appears_at_paragraph": 49,
+   "section": 15
+  },
+  {
+   "id": "g_RJ",
+   "target": "bbspec",
+   "title": "Rayleigh–Jeans law (classical)",
+   "formula": "u(ν,T) = 8πν²kT/c³: correct at low frequency, infinite total energy.",
+   "inputs": [
+    {
+     "node": "vac",
+     "role": "Count the radiation modes in the cavity."
+    },
+    {
+     "node": "equip",
+     "role": "Give each mode energy kT."
+    }
+   ],
+   "logic": "AND",
+   "failed": true,
+   "kind": "failed",
+   "text_marker_paragraph": 50,
+   "appears_at_paragraph": 50,
+   "section": 16
+  },
+  {
+   "id": "g_planckbb",
+   "target": "bbspec",
+   "title": "Planck's law",
+   "formula": "u(ν,T) = (8πhν³/c³)/(e^{hν/kT} − 1).",
+   "inputs": [
+    {
+     "node": "vac",
+     "role": "Count the radiation modes."
+    },
+    {
+     "node": "planck",
+     "role": "Each mode holds energy only in multiples of hν."
+    },
+    {
+     "node": "hbar",
+     "role": "Sets the size of the steps."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "quantization",
+   "text_marker_paragraph": 51,
+   "appears_at_paragraph": 51,
+   "section": 16
+  },
+  {
+   "id": "g_photowave",
+   "target": "photoel",
+   "title": "Classical wave prediction",
+   "formula": "Electron energy should grow with intensity and arrive after a delay; neither is observed.",
+   "inputs": [
+    {
+     "node": "S",
+     "role": "Energy flux of the wave."
+    },
+    {
+     "node": "wavedat",
+     "role": "Frequency should not matter classically."
+    }
+   ],
+   "logic": "AND",
+   "failed": true,
+   "kind": "failed",
+   "text_marker_paragraph": 52,
+   "appears_at_paragraph": 52,
+   "section": 16
+  },
+  {
+   "id": "g_photoel",
+   "target": "photoel",
+   "title": "Einstein's photoelectric equation",
+   "formula": "K_max = hν − W.",
+   "inputs": [
+    {
+     "node": "planck",
+     "role": "Each quantum delivers energy hν."
+    },
+    {
+     "node": "hbar",
+     "role": "Slope of K_max against ν."
+    },
+    {
+     "node": "wavedat",
+     "role": "The light's frequency."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "quantization",
+   "text_marker_paragraph": 52,
+   "appears_at_paragraph": 52,
+   "section": 16
+  },
+  {
+   "id": "g_photon1",
+   "target": "photon",
+   "title": "Light quanta",
+   "formula": "E = hν, p = h/λ (Einstein 1905, Compton 1923).",
+   "inputs": [
+    {
+     "node": "planck",
+     "role": "Energy per quantum."
+    },
+    {
+     "node": "hbar",
+     "role": "Momentum per quantum ħk."
+    },
+    {
+     "node": "wavedat",
+     "role": "Frequency and wavelength of the light."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "quantization",
+   "text_marker_paragraph": 52,
+   "appears_at_paragraph": 52,
+   "section": 16
+  },
+  {
+   "id": "g_collapse",
+   "target": "spectra",
+   "title": "Classical atom (Larmor)",
+   "formula": "An orbiting electron radiates continuously and spirals into the nucleus within about 10⁻¹¹ s.",
+   "inputs": [
+    {
+     "node": "P",
+     "role": "Larmor radiation from the accelerating electron."
+    },
+    {
+     "node": "traj",
+     "role": "Its shrinking orbit."
+    },
+    {
+     "node": "coul",
+     "role": "The nuclear attraction."
+    }
+   ],
+   "logic": "AND",
+   "failed": true,
+   "kind": "failed",
+   "text_marker_paragraph": 53,
+   "appears_at_paragraph": 53,
+   "section": 16
+  },
+  {
+   "id": "g_bohr",
+   "target": "bohr",
+   "title": "Bohr's quantization",
+   "formula": "Angular momentum mvr = nħ selects the allowed orbits.",
+   "inputs": [
+    {
+     "node": "coul",
+     "role": "Classical orbits in the Coulomb field."
+    },
+    {
+     "node": "traj",
+     "role": "Orbital motion."
+    },
+    {
+     "node": "hbar",
+     "role": "The unit of angular momentum."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "quantization",
+   "text_marker_paragraph": 53,
+   "appears_at_paragraph": 53,
+   "section": 16
+  },
+  {
+   "id": "g_bohrlines",
+   "target": "spectra",
+   "title": "Bohr's frequency rule",
+   "formula": "hν = Eₙ − Eₘ between stationary orbits.",
+   "inputs": [
+    {
+     "node": "bohr",
+     "role": "Energies of the stationary orbits."
+    },
+    {
+     "node": "planck",
+     "role": "Each jump emits one quantum."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "quantum",
+   "text_marker_paragraph": 53,
+   "appears_at_paragraph": 53,
+   "section": 16
+  },
+  {
+   "id": "g_dirac",
+   "target": "comm",
+   "title": "Dirac's quantization rule",
+   "formula": "{A, B} → [Â, B̂]/iħ.",
+   "inputs": [
+    {
+     "node": "pb",
+     "role": "The classical bracket, whose algebra is kept."
+    },
+    {
+     "node": "hbar",
+     "role": "The constant that makes the algebra non-commutative."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "quantization",
+   "text_marker_paragraph": 55,
+   "appears_at_paragraph": 55,
+   "section": 17
+  },
+  {
+   "id": "g_ops",
+   "target": "ops",
+   "title": "Phase-space functions become operators",
+   "formula": "f(x, p) → f(x̂, p̂), with an ordering choice.",
+   "inputs": [
+    {
+     "node": "phase",
+     "role": "Classical observables are functions on phase space."
+    },
+    {
+     "node": "comm",
+     "role": "Their quantum versions obey the commutator."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "quantization",
+   "text_marker_paragraph": 55,
+   "appears_at_paragraph": 55,
+   "section": 17
+  },
+  {
+   "id": "g_hilb",
+   "target": "hilb",
+   "title": "Canonical quantization of the state",
+   "formula": "Points (x, p) are replaced by wave functions ψ(x); x̂ multiplies, p̂ = −iħ ∂/∂x.",
+   "inputs": [
+    {
+     "node": "phase",
+     "role": "The classical state space being replaced."
+    },
+    {
+     "node": "comm",
+     "role": "Fixes how x̂ and p̂ act."
+    },
+    {
+     "node": "ops",
+     "role": "Operators act on the new states."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "quantization",
+   "text_marker_paragraph": 56,
+   "appears_at_paragraph": 56,
+   "section": 17
+  },
+  {
+   "id": "g_levels",
+   "target": "spectra",
+   "title": "Hydrogen from the Schrödinger equation",
+   "formula": "Eₙ = −13.6 eV/n² as eigenvalues of Ĥ.",
+   "inputs": [
+    {
+     "node": "hilb",
+     "role": "Bound-state wave functions."
+    },
+    {
+     "node": "ops",
+     "role": "The Hamiltonian operator."
+    },
+    {
+     "node": "schro",
+     "role": "Stationary states solve Ĥψ = Eψ."
+    },
+    {
+     "node": "coul",
+     "role": "The Coulomb potential of the nucleus."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "quantization",
+   "text_marker_paragraph": 56,
+   "appears_at_paragraph": 56,
+   "section": 17
+  },
+  {
+   "id": "g_expect",
+   "target": "expect",
+   "title": "Born rule statistics",
+   "formula": "Prob(a) = |⟨a|ψ⟩|², ⟨Â⟩ = ⟨ψ|Â|ψ⟩.",
+   "inputs": [
+    {
+     "node": "hilb",
+     "role": "The prepared state."
+    },
+    {
+     "node": "born",
+     "role": "Converts amplitudes into probabilities."
+    },
+    {
+     "node": "ops",
+     "role": "The measured observable."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "quantum",
+   "text_marker_paragraph": 57,
+   "appears_at_paragraph": 57,
+   "section": 17
+  },
+  {
+   "id": "g_ehren",
+   "target": "traj",
+   "title": "Ehrenfest's theorem (classical limit)",
+   "formula": "d⟨x̂⟩/dt = ⟨p̂⟩/m, d⟨p̂⟩/dt = ⟨F⟩ ≈ F(⟨x̂⟩).",
+   "inputs": [
+    {
+     "node": "hilb",
+     "role": "A narrow wave packet."
+    },
+    {
+     "node": "schro",
+     "role": "Its evolution."
+    },
+    {
+     "node": "ops",
+     "role": "Expectation values of x̂ and p̂."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical_limit",
+   "text_marker_paragraph": 57,
+   "appears_at_paragraph": 57,
+   "section": 17
+  },
+  {
+   "id": "g_mincoup",
+   "target": "mincoup",
+   "title": "Quantize the kinetic momentum",
+   "formula": "π̂ = −iħ∇ − qA; a gauge change becomes a phase change of ψ.",
+   "inputs": [
+    {
+     "node": "pkin",
+     "role": "The classical gauge-invariant momentum p − qA."
+    },
+    {
+     "node": "gauge",
+     "role": "The classical gauge freedom."
+    },
+    {
+     "node": "comm",
+     "role": "Turns p into −iħ∇."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "quantization",
+   "text_marker_paragraph": 58,
+   "appears_at_paragraph": 58,
+   "section": 18
+  },
+  {
+   "id": "g_landau",
+   "target": "landau",
+   "title": "Landau quantization",
+   "formula": "Eₙ = ħω_c(n + ½), ω_c = qB/m.",
+   "inputs": [
+    {
+     "node": "hilb",
+     "role": "Electron states in the plane."
+    },
+    {
+     "node": "mincoup",
+     "role": "Non-commuting kinetic momenta."
+    },
+    {
+     "node": "Bfield",
+     "role": "A uniform magnetic field."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "quantization",
+   "text_marker_paragraph": 59,
+   "appears_at_paragraph": 59,
+   "section": 18
+  },
+  {
+   "id": "g_ab",
+   "target": "abphase",
+   "title": "Aharonov–Bohm phase",
+   "formula": "Δθ = q∮A·dl/ħ = qΦ_B/ħ.",
+   "inputs": [
+    {
+     "node": "hol",
+     "role": "The classical holonomy around the solenoid."
+    },
+    {
+     "node": "hilb",
+     "role": "The electron's two interfering paths."
+    },
+    {
+     "node": "mincoup",
+     "role": "How A enters the wave function's phase."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "quantization",
+   "text_marker_paragraph": 60,
+   "appears_at_paragraph": 60,
+   "section": 18
+  },
+  {
+   "id": "g_diraceq",
+   "target": "dirac",
+   "title": "Dirac's relativistic equation",
+   "formula": "(iħγ^μD_μ − mc)ψ = 0.",
+   "inputs": [
+    {
+     "node": "clifford",
+     "role": "Matrices that square to the metric."
+    },
+    {
+     "node": "lorentz",
+     "role": "Required covariance."
+    },
+    {
+     "node": "mincoup",
+     "role": "The coupling to the potential."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "quantization",
+   "text_marker_paragraph": 61,
+   "appears_at_paragraph": 61,
+   "section": 19
+  },
+  {
+   "id": "g_spinor",
+   "target": "spinor",
+   "title": "Spinor solutions",
+   "formula": "Solutions carry spin ½ and come with positive and negative energy.",
+   "inputs": [
+    {
+     "node": "dirac",
+     "role": "The equation."
+    },
+    {
+     "node": "hilb",
+     "role": "Solutions as quantum states."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "quantum",
+   "text_marker_paragraph": 62,
+   "appears_at_paragraph": 62,
+   "section": 19
+  },
+  {
+   "id": "g_gfac",
+   "target": "gfac",
+   "title": "Dirac's magnetic moment",
+   "formula": "g = 2 exactly at this level of the theory.",
+   "inputs": [
+    {
+     "node": "spinor",
+     "role": "The electron's spin."
+    },
+    {
+     "node": "dirac",
+     "role": "Non-relativistic limit gives the Pauli term."
+    },
+    {
+     "node": "Bfield",
+     "role": "The field the moment couples to."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "quantization",
+   "text_marker_paragraph": 62,
+   "appears_at_paragraph": 62,
+   "section": 19
+  },
+  {
+   "id": "g_finestr",
+   "target": "spectra",
+   "title": "Fine structure of hydrogen",
+   "formula": "Levels depend on n and total angular momentum j.",
+   "inputs": [
+    {
+     "node": "spinor",
+     "role": "Spin–orbit coupled states."
+    },
+    {
+     "node": "dirac",
+     "role": "The equation solved exactly."
+    },
+    {
+     "node": "coul",
+     "role": "The nuclear potential."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "quantization",
+   "text_marker_paragraph": 62,
+   "appears_at_paragraph": 62,
+   "section": 19
+  },
+  {
+   "id": "g_positron",
+   "target": "positron",
+   "title": "Negative-energy solutions",
+   "formula": "Holes in the Dirac sea behave as antiparticles.",
+   "inputs": [
+    {
+     "node": "spinor",
+     "role": "Negative-energy components."
+    },
+    {
+     "node": "dirac",
+     "role": "The equation that forces them."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "quantum",
+   "text_marker_paragraph": 63,
+   "appears_at_paragraph": 63,
+   "section": 19
+  },
+  {
+   "id": "g_ladder",
+   "target": "ladder",
+   "title": "Each mode is a quantum oscillator",
+   "formula": "a_k, a_k† with [a_k, a_k′†] = δ_kk′.",
+   "inputs": [
+    {
+     "node": "vac",
+     "role": "Classical mode amplitudes."
+    },
+    {
+     "node": "comm",
+     "role": "Promotes them to operators."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "quantization",
+   "text_marker_paragraph": 64,
+   "appears_at_paragraph": 64,
+   "section": 20
+  },
+  {
+   "id": "g_photon2",
+   "target": "photon",
+   "title": "Photons as field quanta",
+   "formula": "One photon = one excitation of a mode.",
+   "inputs": [
+    {
+     "node": "ladder",
+     "role": "a† adds one quantum ħω."
+    },
+    {
+     "node": "vac",
+     "role": "The mode it belongs to."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "quantization",
+   "text_marker_paragraph": 64,
+   "appears_at_paragraph": 64,
+   "section": 20
+  },
+  {
+   "id": "g_fock",
+   "target": "fock",
+   "title": "Build Fock space",
+   "formula": "Apply creation operators to the vacuum |0⟩.",
+   "inputs": [
+    {
+     "node": "ladder",
+     "role": "Generates every multi-photon state."
+    },
+    {
+     "node": "hilb",
+     "role": "Each sector is a Hilbert space."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "quantum",
+   "text_marker_paragraph": 65,
+   "appears_at_paragraph": 65,
+   "section": 20
+  },
+  {
+   "id": "g_spont",
+   "target": "spont",
+   "title": "Vacuum fluctuations drive emission",
+   "formula": "Dirac 1927: the rate scales as ω³ times the squared dipole matrix element.",
+   "inputs": [
+    {
+     "node": "fock",
+     "role": "The vacuum and one-photon states."
+    },
+    {
+     "node": "ladder",
+     "role": "The emission operator a†."
+    },
+    {
+     "node": "spectra",
+     "role": "The atomic transition."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "quantum",
+   "text_marker_paragraph": 65,
+   "appears_at_paragraph": 65,
+   "section": 20
+  },
+  {
+   "id": "g_Aop",
+   "target": "Aop",
+   "title": "Canonical quantization of the field",
+   "formula": "[Âᵢ(x), Π̂ⱼ(y)] = iħ δ⊥ᵢⱼ(x − y) in Coulomb gauge.",
+   "inputs": [
+    {
+     "node": "fphase",
+     "role": "Classical field phase space."
+    },
+    {
+     "node": "comm",
+     "role": "Promotes field and conjugate momentum to operators."
+    },
+    {
+     "node": "gfix",
+     "role": "Coulomb gauge removes redundant components."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "quantization",
+   "text_marker_paragraph": 66,
+   "appears_at_paragraph": 66,
+   "section": 20
+  },
+  {
+   "id": "g_coherent",
+   "target": "EB",
+   "title": "Coherent states (classical limit)",
+   "formula": "Glauber 1963: ⟨Ê⟩ and ⟨B̂⟩ obey Maxwell's equations; fluctuations are negligible for many photons.",
+   "inputs": [
+    {
+     "node": "fock",
+     "role": "Superpositions of all photon numbers."
+    },
+    {
+     "node": "ladder",
+     "role": "Eigenstates of the annihilation operator."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical_limit",
+   "text_marker_paragraph": 66,
+   "appears_at_paragraph": 66,
+   "section": 20
+  },
+  {
+   "id": "g_casimir",
+   "target": "casimir",
+   "title": "Zero-point energy between plates",
+   "formula": "F/A = −π²ħc/240d⁴.",
+   "inputs": [
+    {
+     "node": "ladder",
+     "role": "Each mode has zero-point energy ½ħω."
+    },
+    {
+     "node": "bc",
+     "role": "Conducting plates restrict the allowed modes."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "quantization",
+   "text_marker_paragraph": 66,
+   "appears_at_paragraph": 66,
+   "section": 20
+  },
+  {
+   "id": "g_psiop",
+   "target": "psiop",
+   "title": "Quantize the Dirac field",
+   "formula": "Expand ψ in modes with anticommuting operators.",
+   "inputs": [
+    {
+     "node": "spinor",
+     "role": "Classical solutions as modes."
+    },
+    {
+     "node": "ladder",
+     "role": "Fermionic creation and annihilation operators."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "quantum",
+   "text_marker_paragraph": 67,
+   "appears_at_paragraph": 67,
+   "section": 21
+  },
+  {
+   "id": "g_alpha",
+   "target": "alpha",
+   "title": "Combine the constants",
+   "formula": "α = e²/4πε₀ħc ≈ 1/137.036.",
+   "inputs": [
+    {
+     "node": "q",
+     "role": "The elementary charge e."
+    },
+    {
+     "node": "consts",
+     "role": "The classical coupling ε₀."
+    },
+    {
+     "node": "hbar",
+     "role": "Planck's constant."
+    },
+    {
+     "node": "c",
+     "role": "The speed of light."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "quantization",
+   "text_marker_paragraph": 68,
+   "appears_at_paragraph": 68,
+   "section": 21
+  },
+  {
+   "id": "g_diverge",
+   "target": "lamb",
+   "title": "Naive perturbation theory",
+   "formula": "Self-energy corrections come out infinite.",
+   "inputs": [
+    {
+     "node": "pert",
+     "role": "Expand beyond first order."
+    },
+    {
+     "node": "Aop",
+     "role": "The quantized field."
+    },
+    {
+     "node": "psiop",
+     "role": "The electron field."
+    }
+   ],
+   "logic": "AND",
+   "failed": true,
+   "kind": "failed",
+   "text_marker_paragraph": 69,
+   "appears_at_paragraph": 70,
+   "section": 21
+  },
+  {
+   "id": "g_lambdirac",
+   "target": "lamb",
+   "title": "Dirac's prediction",
+   "formula": "2S½ and 2P½ exactly degenerate: no shift.",
+   "inputs": [
+    {
+     "node": "spinor",
+     "role": "Dirac states of hydrogen."
+    },
+    {
+     "node": "dirac",
+     "role": "The single-particle equation."
+    },
+    {
+     "node": "coul",
+     "role": "The nuclear potential."
+    }
+   ],
+   "logic": "AND",
+   "failed": true,
+   "kind": "failed",
+   "text_marker_paragraph": 70,
+   "appears_at_paragraph": 70,
+   "section": 21
+  },
+  {
+   "id": "g_ammdirac",
+   "target": "amm",
+   "title": "Dirac's prediction",
+   "formula": "g = 2 exactly, so a = 0.",
+   "inputs": [
+    {
+     "node": "gfac",
+     "role": "Dirac's value."
+    }
+   ],
+   "logic": "single",
+   "failed": true,
+   "kind": "failed",
+   "text_marker_paragraph": 70,
+   "appears_at_paragraph": 70,
+   "section": 21
+  },
+  {
+   "id": "g_pathint",
+   "target": "pathint",
+   "title": "Sum over histories",
+   "formula": "Amplitude = ∫Dx e^{iS[x]/ħ}.",
+   "inputs": [
+    {
+     "node": "action",
+     "role": "The classical action S."
+    },
+    {
+     "node": "hbar",
+     "role": "Sets the scale of the phase."
+    },
+    {
+     "node": "hilb",
+     "role": "Amplitudes between states."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "quantization",
+   "text_marker_paragraph": 72,
+   "appears_at_paragraph": 72,
+   "section": 22
+  },
+  {
+   "id": "g_pathclassical",
+   "target": "traj",
+   "title": "Stationary phase (classical limit)",
+   "formula": "When S ≫ ħ, only paths near δS = 0 survive.",
+   "inputs": [
+    {
+     "node": "pathint",
+     "role": "The sum over histories."
+    },
+    {
+     "node": "action",
+     "role": "Its stationary point."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "classical_limit",
+   "text_marker_paragraph": 72,
+   "appears_at_paragraph": 72,
+   "section": 22
+  },
+  {
+   "id": "g_feyn",
+   "target": "feyn",
+   "title": "Expand the path integral",
+   "formula": "Each term of the series is a diagram.",
+   "inputs": [
+    {
+     "node": "pathint",
+     "role": "The generating integral."
+    },
+    {
+     "node": "pert",
+     "role": "Expansion in α."
+    },
+    {
+     "node": "Aop",
+     "role": "Photon lines."
+    },
+    {
+     "node": "psiop",
+     "role": "Electron lines."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "quantum",
+   "text_marker_paragraph": 72,
+   "appears_at_paragraph": 72,
+   "section": 22
+  },
+  {
+   "id": "g_smat",
+   "target": "smatrix",
+   "title": "Sum diagrams into amplitudes",
+   "formula": "⟨f|S|i⟩ = sum of diagrams.",
+   "inputs": [
+    {
+     "node": "feyn",
+     "role": "The diagrams."
+    },
+    {
+     "node": "fock",
+     "role": "In and out states."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "quantum",
+   "text_marker_paragraph": 73,
+   "appears_at_paragraph": 73,
+   "section": 22
+  },
+  {
+   "id": "g_xsec",
+   "target": "xsec",
+   "title": "Cross sections from amplitudes",
+   "formula": "σ ∝ |⟨f|S|i⟩|² summed over final states.",
+   "inputs": [
+    {
+     "node": "smatrix",
+     "role": "Transition amplitudes."
+    },
+    {
+     "node": "born",
+     "role": "Squared amplitudes give rates."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "quantum",
+   "text_marker_paragraph": 73,
+   "appears_at_paragraph": 73,
+   "section": 22
+  },
+  {
+   "id": "g_amm",
+   "target": "amm",
+   "title": "Schwinger's correction",
+   "formula": "a = α/2π + O(α²).",
+   "inputs": [
+    {
+     "node": "feyn",
+     "role": "The one-loop vertex diagram."
+    },
+    {
+     "node": "renorm",
+     "role": "Removes the divergent part."
+    },
+    {
+     "node": "alpha",
+     "role": "Sets the size."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "quantum",
+   "text_marker_paragraph": 73,
+   "appears_at_paragraph": 73,
+   "section": 22
+  },
+  {
+   "id": "g_lamb",
+   "target": "lamb",
+   "title": "Renormalized Lamb shift",
+   "formula": "Self-energy and vacuum polarization give about 1058 MHz.",
+   "inputs": [
+    {
+     "node": "feyn",
+     "role": "Bound-state radiative diagrams."
+    },
+    {
+     "node": "renorm",
+     "role": "Subtract the free-electron self-energy."
+    },
+    {
+     "node": "spinor",
+     "role": "Dirac states of hydrogen."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "quantum",
+   "text_marker_paragraph": 73,
+   "appears_at_paragraph": 73,
+   "section": 22
+  },
+  {
+   "id": "g_runalpha",
+   "target": "runalpha",
+   "title": "Vacuum polarization",
+   "formula": "Virtual pairs screen charge; α(Q) grows logarithmically with Q.",
+   "inputs": [
+    {
+     "node": "renorm",
+     "role": "Scale dependence of the coupling."
+    },
+    {
+     "node": "feyn",
+     "role": "Loop diagrams of virtual pairs."
+    },
+    {
+     "node": "alpha",
+     "role": "The low-energy value."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "quantum",
+   "text_marker_paragraph": 74,
+   "appears_at_paragraph": 74,
+   "section": 22
+  },
+  {
+   "id": "g_localgauge",
+   "target": "localgauge",
+   "title": "Gauge the phase symmetry",
+   "formula": "Require invariance under ψ → e^{iqχ(x)/ħ}ψ.",
+   "inputs": [
+    {
+     "node": "conn",
+     "role": "Part I's U(1) connection supplies the covariant derivative."
+    },
+    {
+     "node": "gauge",
+     "role": "Classical gauge transformations of A."
+    },
+    {
+     "node": "spinor",
+     "role": "The matter field whose phase is changed."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "quantization",
+   "text_marker_paragraph": 75,
+   "appears_at_paragraph": 75,
+   "section": 23
+  },
+  {
+   "id": "g_qedL",
+   "target": "qedL",
+   "title": "Assemble the QED Lagrangian",
+   "formula": "ℒ = ψ̄(iγ^μD_μ − m)ψ − ¼F_μνF^μν (natural units).",
+   "inputs": [
+    {
+     "node": "localgauge",
+     "role": "Fixes the coupling."
+    },
+    {
+     "node": "dirac",
+     "role": "The matter term."
+    },
+    {
+     "node": "Fmn",
+     "role": "The Maxwell term."
+    },
+    {
+     "node": "action",
+     "role": "Everything follows from one action."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "quantization",
+   "text_marker_paragraph": 76,
+   "appears_at_paragraph": 76,
+   "section": 23
+  },
+  {
+   "id": "g_feyn2",
+   "target": "feyn",
+   "title": "Feynman rules from the Lagrangian",
+   "formula": "Propagators and vertices read off ℒ_QED.",
+   "inputs": [
+    {
+     "node": "qedL",
+     "role": "The Lagrangian."
+    },
+    {
+     "node": "pathint",
+     "role": "Its quantization."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "quantum",
+   "text_marker_paragraph": 76,
+   "appears_at_paragraph": 76,
+   "section": 23
+  },
+  {
+   "id": "g_ward",
+   "target": "ward",
+   "title": "Gauge symmetry in amplitudes",
+   "formula": "k_μ M^μ = 0, Z₁ = Z₂.",
+   "inputs": [
+    {
+     "node": "qedL",
+     "role": "Gauge-invariant Lagrangian."
+    },
+    {
+     "node": "noether",
+     "role": "Symmetry ↔ conserved current, now for operators."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "quantization",
+   "text_marker_paragraph": 76,
+   "appears_at_paragraph": 76,
+   "section": 23
+  },
+  {
+   "id": "g_ammprec",
+   "target": "amm",
+   "title": "Modern QED prediction",
+   "formula": "a_e computed through order α⁵ (tenth-order diagrams), agreeing with measurement to about 10⁻¹² in g.",
+   "inputs": [
+    {
+     "node": "qedL",
+     "role": "The full theory."
+    },
+    {
+     "node": "feyn",
+     "role": "Over 12,000 diagrams at the highest order."
+    },
+    {
+     "node": "renorm",
+     "role": "Finite renormalized results."
+    },
+    {
+     "node": "alpha",
+     "role": "Measured independently."
+    },
+    {
+     "node": "ward",
+     "role": "Guarantees consistency."
+    }
+   ],
+   "logic": "AND",
+   "failed": false,
+   "kind": "quantum",
+   "text_marker_paragraph": 77,
+   "appears_at_paragraph": 77,
+   "section": 23
+  }
+ ]
+}

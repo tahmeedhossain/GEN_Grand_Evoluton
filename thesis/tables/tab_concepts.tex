@@ -1,0 +1,108 @@
+\begin{longtable}{@{}p{3.1cm}p{3.6cm}p{5.0cm}p{2.9cm}@{}}\toprule
+Concept & Label & Members (branch: native ids) & Roles \\\midrule\endhead
+\texttt{force} & Force (on a body / on a charge) & EM: F; UP: F & EM=O, UP=O \\
+\texttt{position} & Position & EM: r; UP: r; HEP: o\_x & EM=O, UP=O, HEP=O \\
+\texttt{velocity} & Velocity & EM: v; UP: v & EM=O, UP=O \\
+\texttt{momentum} & Momentum & UP: p; HEP: o\_p & UP=O, HEP=O \\
+\texttt{mass} & Mass & UP: m; HEP: o\_m & UP=O, HEP=O \\
+\texttt{time\_\allowbreak{{}}derivative} & Time derivative & EM: ddt; UP: ddt & EM=M, UP=M \\
+\texttt{vector\_\allowbreak{{}}addition} & Vector addition & EM: vec; UP: vadd & EM=M, UP=M \\
+\texttt{cross\_\allowbreak{{}}product} & Cross (vector) product & EM: cross; UP: cross & EM=M, UP=M \\
+\texttt{electric\_\allowbreak{{}}charge} & Electric charge & EM: q; UP: q & EM=O, UP=O \\
+\texttt{charge\_\allowbreak{{}}conservation} & Conservation of charge & EM: addq; UP: qcons & EM=M, UP=M \\
+\texttt{coulomb\_\allowbreak{{}}law} & Coulomb's law & EM: coul; UP: coul & EM=M, UP=M \\
+\texttt{point\_\allowbreak{{}}charges} & Point-charge configuration & EM: pts; UP: pts & EM=S, UP=S \\
+\texttt{superposition} & Superposition of sources & EM: sup; UP: esup & EM=M, UP=M \\
+\texttt{charge\_\allowbreak{{}}density} & Continuous charge distribution & EM: rho; UP: chdist & EM=S, UP=S \\
+\texttt{electric\_\allowbreak{{}}field} & Electric field (state) & EM: Efield; UP: Efield & EM=S, UP=S \\
+\texttt{electric\_\allowbreak{{}}flux} & Electric flux & EM: PhiE; UP: PhiE & EM=O, UP=O \\
+\texttt{electrostatic\_\allowbreak{{}}energy} & Electrostatic (electric potential) energy & EM: U; UP: Ue & EM=O, UP=O \\
+\texttt{electric\_\allowbreak{{}}potential} & Electric potential (state) & EM: phi; UP: Vfield & EM=S, UP=S \\
+\texttt{capacitance} & Capacitance & EM: C; UP: Cap & EM=O, UP=O \\
+\texttt{current} & Electric current & EM: I; UP: curr & EM=O, UP=O \\
+\texttt{current\_\allowbreak{{}}density} & Current density (state) & EM: J; UP: Jcur & EM=S, UP=S \\
+\texttt{resistance} & Resistance & EM: R; UP: Rres & EM=O, UP=O \\
+\texttt{ohm\_\allowbreak{{}}law} & Ohm's law & EM: ohm; UP: ohm & EM=M, UP=M \\
+\texttt{magnetic\_\allowbreak{{}}field} & Magnetic field (state) & EM: Bfield; UP: Bfield & EM=S, UP=S \\
+\texttt{magnetic\_\allowbreak{{}}field\_\allowbreak{{}}value} & Magnetic field value & EM: B; UP: Bval & EM=O, UP=O \\
+\texttt{biot\_\allowbreak{{}}savart} & Biot-Savart law & EM: bs; UP: bs & EM=M, UP=M \\
+\texttt{emf} & Electromotive force & EM: emf; UP: emf & EM=O, UP=O \\
+\texttt{magnetic\_\allowbreak{{}}flux} & Magnetic flux & EM: PhiB; UP: PhiB & EM=O, UP=O \\
+\texttt{faraday\_\allowbreak{{}}law} & Faraday's law & EM: faraday; UP: faraday; LG: Fa & EM=M, UP=M, LG=M \\
+\texttt{maxwell\_\allowbreak{{}}equations} & Maxwell's equations & EM: maxwell; UP: maxwell & EM=M, UP=M \\
+\texttt{em\_\allowbreak{{}}field\_\allowbreak{{}}state} & Electromagnetic field state (E, B) & EM: EB; UP: EB; LG: x & EM=S, UP=S, LG=S \\
+\texttt{speed\_\allowbreak{{}}of\_\allowbreak{{}}light} & Speed of light & EM: c; UP: c & EM=O, UP=O \\
+\texttt{electric\_\allowbreak{{}}energy\_\allowbreak{{}}density} & Electric energy (density) & UP: uE; LG: uE & UP=O, LG=O \\
+\texttt{magnetic\_\allowbreak{{}}energy\_\allowbreak{{}}density} & Magnetic energy (density) & UP: uB; LG: uB & UP=O, LG=O \\
+\texttt{poynting\_\allowbreak{{}}vector} & Poynting vector & EM: S; UP: Spoynt & EM=O, UP=O \\
+\texttt{poynting\_\allowbreak{{}}theorem} & Poynting's theorem (energy bookkeeping) & EM: poynt; LG: fJE, fPi, fSin, fSout & EM=M, LG=M \\
+\texttt{lorentz\_\allowbreak{{}}transformation} & Lorentz transformation / group & EM: lorentz; UP: lorentzT & EM=M, UP=M \\
+\texttt{poisson\_\allowbreak{{}}structure} & Poisson bracket / symplectic structure & EM: pb; GPT: ax-symplectic & EM=M, GPT=M \\
+\texttt{poisson\_\allowbreak{{}}to\_\allowbreak{{}}commutator} & Canonical commutator / Poisson-to-commutator lift & EM: comm; GPT: ax-moyal & EM=M, GPT=M \\
+\texttt{planck\_\allowbreak{{}}constant}$\ast$ & Planck's constant & EM: hbar; UP: hbar; GPT: ax-hbar & EM=O, UP=O, GPT=M \\
+\texttt{blackbody}$\ast$ & Blackbody radiation / spectrum & EM: bbspec; UP: bbrad & EM=O, UP=S \\
+\texttt{planck\_\allowbreak{{}}relation} & Planck's relation / hypothesis & EM: planck; UP: planck & EM=M, UP=M \\
+\texttt{photon}$\ast$ & Photon & EM: photon; UP: photon; HEP: s\_g & EM=O, UP=S, HEP=S \\
+\texttt{spectral\_\allowbreak{{}}lines} & Spectral lines (hydrogen) & EM: spectra; UP: Hspec & EM=O, UP=O \\
+\texttt{bohr\_\allowbreak{{}}model}$\ast$ & Bohr model / orbits & EM: bohr; UP: bohr & EM=S, UP=M \\
+\texttt{hydrogen\_\allowbreak{{}}levels}$\ast$ & Hydrogen energy levels & UP: bohrlev; HEP: o\_E & UP=S, HEP=O \\
+\texttt{schrodinger\_\allowbreak{{}}evolution} & Schrodinger equation / unitary evolution & EM: schro; UP: tdse; HEP: m\_U; GPT: p-unitary & EM=M, UP=M, HEP=M, GPT=M \\
+\texttt{hilbert\_\allowbreak{{}}state} & Hilbert-space state / wave function & EM: hilb; UP: psi; HEP: H1 & EM=S, UP=S, HEP=S \\
+\texttt{observable\_\allowbreak{{}}postulate} & Operator algebra and Born rule & EM: born, ops; HEP: m\_A & EM=M, HEP=M \\
+\texttt{outcome\_\allowbreak{{}}statistics} & Outcome statistics / expectation values & EM: expect; UP: expval & EM=O, UP=O \\
+\texttt{lagrangian} & Lagrangian / action principle & EM: action; HEP: m\_L & EM=M, HEP=M \\
+\texttt{creation\_\allowbreak{{}}annihilation} & Creation and annihilation operators / quantum field & EM: ladder; HEP: m\_field & EM=M, HEP=M \\
+\texttt{electron\_\allowbreak{{}}field} & Electron-positron field / electron sector & EM: psiop; HEP: s\_e & EM=S, HEP=S \\
+\texttt{qed\_\allowbreak{{}}interaction} & QED interaction (Lagrangian / vertex) & EM: qedL; HEP: m\_qed & EM=M, HEP=M \\
+\texttt{cross\_\allowbreak{{}}section} & Cross sections & EM: xsec; HEP: o\_sig & EM=O, HEP=O \\
+\texttt{lamb\_\allowbreak{{}}shift} & Lamb shift & EM: lamb; HEP: o\_lamb & EM=O, HEP=O \\
+\texttt{anomalous\_\allowbreak{{}}moment} & Anomalous magnetic moment of the electron & EM: amm; HEP: o\_ae & EM=O, HEP=O \\
+\texttt{fine\_\allowbreak{{}}structure\_\allowbreak{{}}constant} & Fine-structure constant & EM: alpha; HEP: o\_alpha & EM=O, HEP=O \\
+\texttt{compton} & Compton effect & UP: compton; HEP: o\_compton & UP=O, HEP=O \\
+\texttt{electron\_\allowbreak{{}}spin} & Electron spin & UP: spin; HEP: o\_S & UP=O, HEP=O \\
+\texttt{orbital\_\allowbreak{{}}angular\_\allowbreak{{}}momentum} & Quantized orbital angular momentum & UP: Lq; HEP: o\_L & UP=O, HEP=O \\
+\texttt{particle\_\allowbreak{{}}decay}$\ast$ & Particle production and decay & UP: decay; HEP: o\_prod & UP=S, HEP=O \\
+\texttt{standard\_\allowbreak{{}}model} & The Standard Model Lagrangian & UP: sm; HEP: c\_gf, c\_gg, c\_hg, c\_pot, c\_yuk & UP=M, HEP=M \\
+\texttt{gibbs\_\allowbreak{{}}state} & Gibbs (thermal) state & UP: mbd; GPT: s-thermal; QRT: d-gibbs, sF-ath & UP=S, GPT=S, QRT=S \\
+\texttt{second\_\allowbreak{{}}law}$\ast$ & Second law(s) of thermodynamics & UP: slaw; GPT: t-secondlaws; QRT: wQ-ath & UP=M, GPT=O, QRT=O \\
+\texttt{interference}$\ast$ & Two-path (second-order) interference & UP: dslit; GPT: e-interf2 & UP=S, GPT=O \\
+\texttt{entangled\_\allowbreak{{}}states} & Entangled states & GPT: s-ent; QRT: sR-ent & GPT=S, QRT=S \\
+\texttt{separable\_\allowbreak{{}}states} & Separable states & GPT: s-sep; QRT: sF-ent & GPT=S, QRT=S \\
+\texttt{bound\_\allowbreak{{}}entangled} & Bound (PPT) entangled states & GPT: s-bound; QRT: d-bound & GPT=S, QRT=S \\
+\texttt{magic\_\allowbreak{{}}states} & Magic (non-stabilizer) states & GPT: s-magic; QRT: sR-mag & GPT=S, QRT=S \\
+\texttt{stabilizer\_\allowbreak{{}}states} & Stabilizer states & GPT: s-stab; QRT: sF-mag & GPT=S, QRT=S \\
+\texttt{coherent\_\allowbreak{{}}states} & Basis-coherent states & GPT: s-coh; QRT: sR-coh & GPT=S, QRT=S \\
+\texttt{athermal\_\allowbreak{{}}states} & Athermal states & GPT: s-athermal; QRT: sR-ath & GPT=S, QRT=S \\
+\texttt{wigner\_\allowbreak{{}}negative} & Wigner-negative states & GPT: s-wneg; QRT: sR-nga & GPT=S, QRT=S \\
+\texttt{discordant\_\allowbreak{{}}states} & Discordant states & GPT: s-discord; QRT: sR-dis & GPT=S, QRT=S \\
+\texttt{zero\_\allowbreak{{}}discord} & Classical-classical (zero-discord) states & GPT: s-zerodisc; QRT: sF-dis & GPT=S, QRT=S \\
+\texttt{symmetric\_\allowbreak{{}}states} & Symmetric (TTS / energy-diagonal) states & GPT: s-tts; QRT: sF-asy & GPT=S, QRT=S \\
+\texttt{asymmetric\_\allowbreak{{}}states} & Asymmetric (energy-coherent) states & GPT: s-cohE; QRT: sR-asy & GPT=S, QRT=S \\
+\texttt{locc} & LOCC / non-entangling operations & GPT: p-locc; QRT: pF-ent & GPT=M, QRT=M \\
+\texttt{thermal\_\allowbreak{{}}operations} & Thermal operations & GPT: p-thermalops; QRT: pF-ath & GPT=M, QRT=M \\
+\texttt{covariant\_\allowbreak{{}}operations} & Covariant (symmetric) operations & GPT: p-cov; QRT: pF-asy & GPT=M, QRT=M \\
+\texttt{incoherent\_\allowbreak{{}}operations} & Incoherent operations & GPT: p-incoh; QRT: pF-coh & GPT=M, QRT=M \\
+\texttt{stabilizer\_\allowbreak{{}}operations} & Stabilizer / Clifford operations & GPT: p-clifford; QRT: pF-mag & GPT=M, QRT=M \\
+\texttt{gaussian\_\allowbreak{{}}operations} & Gaussian operations / protocols & GPT: p-gaussU; QRT: pF-nga & GPT=M, QRT=M \\
+\texttt{stabilizer\_\allowbreak{{}}subtheory} & Stabilizer subtheory & GPT: m-stab-even, m-stab-odd; QRT: m-mag & GPT=M, QRT=M \\
+\texttt{gaussian\_\allowbreak{{}}subtheory} & Gaussian subtheory (CV) & GPT: m-gaussian; QRT: m-nga & GPT=M, QRT=M \\
+\texttt{bell\_\allowbreak{{}}witness} & Bell / CHSH inequalities & GPT: w-bell; QRT: wD-nlo & GPT=O, QRT=O \\
+\texttt{steering\_\allowbreak{{}}witness} & Steering inequalities / LHS tests & GPT: w-steer; QRT: wD-ste & GPT=O, QRT=O \\
+\texttt{entanglement\_\allowbreak{{}}witness} & Entanglement witnesses & GPT: w-entw; QRT: wD-ent & GPT=O, QRT=O \\
+\texttt{noncontextuality\_\allowbreak{{}}witness} & Noncontextuality inequalities & GPT: w-ncineq; QRT: wD-ctx & GPT=O, QRT=O \\
+\texttt{wigner\_\allowbreak{{}}witness} & Wigner-negativity estimators & GPT: w-wig; QRT: wD-nga & GPT=O, QRT=O \\
+\texttt{magic\_\allowbreak{{}}witness} & Magic witnesses & GPT: w-magicw; QRT: wD-mag & GPT=O, QRT=O \\
+\texttt{coherence\_\allowbreak{{}}monotones} & Coherence monotones & GPT: w-cohw; QRT: wQ-coh & GPT=O, QRT=O \\
+\texttt{discord\_\allowbreak{{}}witness} & Local-broadcasting test & GPT: w-discw; QRT: wD-dis & GPT=O, QRT=O \\
+\texttt{incompatibility\_\allowbreak{{}}witness} & Incompatibility witnesses / joint-measurability SDP & GPT: w-incomp; QRT: wD-inc & GPT=O, QRT=O \\
+\texttt{bell\_\allowbreak{{}}nonlocality}$\ast$ & Bell nonlocality & GPT: e-bell; QRT: sR-nlo & GPT=O, QRT=S \\
+\texttt{epr\_\allowbreak{{}}steering}$\ast$ & EPR steering & GPT: e-steer; QRT: sR-ste & GPT=O, QRT=S \\
+\texttt{ks\_\allowbreak{{}}contextuality}$\ast$ & Kochen-Specker contextuality & GPT: e-ks, e-ksdep; QRT: sR-ctx & GPT=O, QRT=S \\
+\texttt{measurement\_\allowbreak{{}}incompatibility}$\ast$ & Measurement incompatibility & GPT: e-incomp; QRT: sR-inc & GPT=O, QRT=S \\
+\texttt{di\_\allowbreak{{}}tasks}$\ast$ & Device-independent tasks & GPT: t-di; QRT: pU-nlo & GPT=O, QRT=M \\
+\texttt{one\_\allowbreak{{}}sided\_\allowbreak{{}}di}$\ast$ & One-sided device-independent tasks & GPT: t-1sdi; QRT: pU-ste & GPT=O, QRT=M \\
+\texttt{state\_\allowbreak{{}}injection}$\ast$ & State injection / universal computation & GPT: t-mbqc; QRT: pU-mag & GPT=O, QRT=M \\
+\texttt{pom\_\allowbreak{{}}rac}$\ast$ & Parity-oblivious multiplexing / RAC advantage & GPT: t-pom; QRT: pU-ctx & GPT=O, QRT=M \\
+\texttt{metrology}$\ast$ & Metrology / clocks & GPT: t-metro; QRT: pU-asy & GPT=O, QRT=M \\
+\texttt{discrimination} & Discrimination advantage & GPT: t-disc; QRT: t-discrim & GPT=O, QRT=O \\
+\bottomrule\end{longtable}

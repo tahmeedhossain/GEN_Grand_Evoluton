@@ -1,0 +1,998 @@
+{
+ "branch": {
+  "id": "LG",
+  "title": "Local cycles and global conservation (Local and global, corrected)",
+  "btype": "D",
+  "source": "tahmeedhossain/GEN_LocGlob_Flow, data/v6.1_local-global.json",
+  "version": "v6.1",
+  "time_axis": "version (1.0 .. 6.1); v6.1 loaded",
+  "native_layers": [
+   "observable",
+   "model",
+   "state"
+  ],
+  "layer_map": {
+   "observable": "O",
+   "model": "M",
+   "state": "S"
+  },
+  "notes": "Routes may have several targets (expanded one per target); energy flows are observable->observable routes of kind transport/conversion. Page 'result' and 'flow rule' entries are not concept nodes."
+ },
+ "nodes": [
+  {
+   "uid": "LG:Dd",
+   "branch": "LG",
+   "native_id": "Dd",
+   "label": "curl inside a region",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "classical",
+   "t": 6.1,
+   "concept": null,
+   "extra": {
+    "symbol": "D_in",
+    "property": "diagonal part of D",
+    "switch": "Dd"
+   }
+  },
+  {
+   "uid": "LG:Do",
+   "branch": "LG",
+   "native_id": "Do",
+   "label": "curl across a boundary",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "classical",
+   "t": 6.1,
+   "concept": null,
+   "extra": {
+    "symbol": "D_out",
+    "property": "shift part of D",
+    "switch": "Do"
+   }
+  },
+  {
+   "uid": "LG:Fa",
+   "branch": "LG",
+   "native_id": "Fa",
+   "label": "Faraday's law",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "classical",
+   "t": 6.1,
+   "concept": "faraday_law",
+   "extra": {
+    "symbol": "Ḃ = −D E"
+   }
+  },
+  {
+   "uid": "LG:Am",
+   "branch": "LG",
+   "native_id": "Am",
+   "label": "Ampère–Maxwell",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "classical",
+   "t": 6.1,
+   "concept": null,
+   "extra": {
+    "symbol": "Ė = Dᵀ B − gJ"
+   }
+  },
+  {
+   "uid": "LG:Lf",
+   "branch": "LG",
+   "native_id": "Lf",
+   "label": "Lorentz force on charges",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "classical",
+   "t": 6.1,
+   "concept": null,
+   "extra": {
+    "symbol": "J̇ = g E",
+    "switch": "Lf"
+   }
+  },
+  {
+   "uid": "LG:Sk",
+   "branch": "LG",
+   "native_id": "Sk",
+   "label": "skew pairing",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "classical",
+   "t": 6.1,
+   "concept": null,
+   "extra": {
+    "symbol": "Aᵀ = −A",
+    "property": "Ampère mirrors Faraday",
+    "switch": "Sk"
+   }
+  },
+  {
+   "uid": "LG:Sp",
+   "branch": "LG",
+   "native_id": "Sp",
+   "label": "imaginary spectrum",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "classical",
+   "t": 6.1,
+   "concept": null,
+   "extra": {
+    "symbol": "±iω",
+    "property": "follows from Aᵀ = −A"
+   }
+  },
+  {
+   "uid": "LG:Ef",
+   "branch": "LG",
+   "native_id": "Ef",
+   "label": "energy form",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "classical",
+   "t": 6.1,
+   "concept": null,
+   "extra": {
+    "symbol": "U = ½|x|²",
+    "property": "positive; sums over regions"
+   }
+  },
+  {
+   "uid": "LG:Pr",
+   "branch": "LG",
+   "native_id": "Pr",
+   "label": "restrict to one region",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "classical",
+   "t": 6.1,
+   "concept": null,
+   "extra": {
+    "symbol": "P_R",
+    "property": "does not commute with D_out"
+   }
+  },
+  {
+   "uid": "LG:Rs",
+   "branch": "LG",
+   "native_id": "Rs",
+   "label": "resistance (optional)",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "model",
+   "era": "classical",
+   "t": 6.1,
+   "concept": null,
+   "extra": {
+    "symbol": "−γJ",
+    "property": "J·E → heat",
+    "switch": "Rs"
+   }
+  },
+  {
+   "uid": "LG:Sin",
+   "branch": "LG",
+   "native_id": "Sin",
+   "label": "flux from C",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "classical",
+   "t": 6.1,
+   "concept": null,
+   "extra": {
+    "symbol": "S_in"
+   }
+  },
+  {
+   "uid": "LG:uE",
+   "branch": "LG",
+   "native_id": "uE",
+   "label": "electric energy",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "classical",
+   "t": 6.1,
+   "concept": "electric_energy_density",
+   "extra": {
+    "symbol": "u_E,A"
+   }
+  },
+  {
+   "uid": "LG:uB",
+   "branch": "LG",
+   "native_id": "uB",
+   "label": "magnetic energy",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "classical",
+   "t": 6.1,
+   "concept": "magnetic_energy_density",
+   "extra": {
+    "symbol": "u_B,A"
+   }
+  },
+  {
+   "uid": "LG:Sout",
+   "branch": "LG",
+   "native_id": "Sout",
+   "label": "flux to B",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "classical",
+   "t": 6.1,
+   "concept": null,
+   "extra": {
+    "symbol": "S_out"
+   }
+  },
+  {
+   "uid": "LG:uM",
+   "branch": "LG",
+   "native_id": "uM",
+   "label": "matter energy",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "classical",
+   "t": 6.1,
+   "concept": null,
+   "extra": {
+    "symbol": "u_M,A"
+   }
+  },
+  {
+   "uid": "LG:uR",
+   "branch": "LG",
+   "native_id": "uR",
+   "label": "region total",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "classical",
+   "t": 6.1,
+   "concept": null,
+   "extra": {
+    "symbol": "u_A"
+   }
+  },
+  {
+   "uid": "LG:U",
+   "branch": "LG",
+   "native_id": "U",
+   "label": "total energy",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "classical",
+   "t": 6.1,
+   "concept": null,
+   "extra": {
+    "symbol": "U"
+   }
+  },
+  {
+   "uid": "LG:Hq",
+   "branch": "LG",
+   "native_id": "Hq",
+   "label": "heat (if γ > 0)",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "classical",
+   "t": 6.1,
+   "concept": null,
+   "extra": {
+    "symbol": "Q_heat"
+   }
+  },
+  {
+   "uid": "LG:Ek",
+   "branch": "LG",
+   "native_id": "Ek",
+   "label": "energy in mode k",
+   "layer": "O",
+   "sublayer": "O.direct",
+   "native_layer": "observable",
+   "era": "classical",
+   "t": 6.1,
+   "concept": null,
+   "extra": {
+    "symbol": "E_k"
+   }
+  },
+  {
+   "uid": "LG:sR",
+   "branch": "LG",
+   "native_id": "sR",
+   "label": "local state of R",
+   "layer": "S",
+   "sublayer": "S.field",
+   "native_layer": "state",
+   "era": "classical",
+   "t": 6.1,
+   "concept": null,
+   "extra": {
+    "symbol": "s_A"
+   }
+  },
+  {
+   "uid": "LG:sN",
+   "branch": "LG",
+   "native_id": "sN",
+   "label": "neighbour states",
+   "layer": "S",
+   "sublayer": "S.field",
+   "native_layer": "state",
+   "era": "classical",
+   "t": 6.1,
+   "concept": null,
+   "extra": {
+    "symbol": "s_C, B"
+   }
+  },
+  {
+   "uid": "LG:x",
+   "branch": "LG",
+   "native_id": "x",
+   "label": "global state (9 amplitudes)",
+   "layer": "S",
+   "sublayer": "S.field",
+   "native_layer": "state",
+   "era": "classical",
+   "t": 6.1,
+   "concept": "em_field_state",
+   "extra": {
+    "symbol": "x"
+   }
+  },
+  {
+   "uid": "LG:mo",
+   "branch": "LG",
+   "native_id": "mo",
+   "label": "rotation planes of A",
+   "layer": "S",
+   "sublayer": "S.field",
+   "native_layer": "state",
+   "era": "classical",
+   "t": 6.1,
+   "concept": null,
+   "extra": {
+    "symbol": "φ_k"
+   }
+  },
+  {
+   "uid": "LG:rt",
+   "branch": "LG",
+   "native_id": "rt",
+   "label": "global state in mode coordinates",
+   "layer": "S",
+   "sublayer": "S.field",
+   "native_layer": "state",
+   "era": "classical",
+   "t": 6.1,
+   "concept": null,
+   "extra": {
+    "symbol": "(r,θ)_k"
+   }
+  },
+  {
+   "uid": "LG:Rlo",
+   "branch": "LG",
+   "native_id": "Rlo",
+   "label": "Local observables of A cycle; u_A is not conserved",
+   "layer": "O",
+   "sublayer": "O.effect",
+   "native_layer": "result",
+   "era": "classical",
+   "t": 6.1,
+   "concept": null,
+   "extra": {}
+  },
+  {
+   "uid": "LG:Rgo",
+   "branch": "LG",
+   "native_id": "Rgo",
+   "label": "Global observable U is conserved",
+   "layer": "O",
+   "sublayer": "O.effect",
+   "native_layer": "result",
+   "era": "classical",
+   "t": 6.1,
+   "concept": null,
+   "extra": {}
+  },
+  {
+   "uid": "LG:Rls",
+   "branch": "LG",
+   "native_id": "Rls",
+   "label": "Local state s_A wanders: |s| varies, path not closed",
+   "layer": "O",
+   "sublayer": "O.effect",
+   "native_layer": "result",
+   "era": "classical",
+   "t": 6.1,
+   "concept": null,
+   "extra": {}
+  },
+  {
+   "uid": "LG:Rgs",
+   "branch": "LG",
+   "native_id": "Rgs",
+   "label": "Global state rotates at fixed radii",
+   "layer": "O",
+   "sublayer": "O.effect",
+   "native_layer": "result",
+   "era": "classical",
+   "t": 6.1,
+   "concept": null,
+   "extra": {}
+  },
+  {
+   "uid": "LG:fSin",
+   "branch": "LG",
+   "native_id": "fSin",
+   "label": "S_in: transport Sin -> uE",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "flow rule",
+   "era": "classical",
+   "t": 6.1,
+   "concept": "poynting_theorem",
+   "extra": {}
+  },
+  {
+   "uid": "LG:fPi",
+   "branch": "LG",
+   "native_id": "fPi",
+   "label": "Π: conversion uE -> uB",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "flow rule",
+   "era": "classical",
+   "t": 6.1,
+   "concept": "poynting_theorem",
+   "extra": {}
+  },
+  {
+   "uid": "LG:fSout",
+   "branch": "LG",
+   "native_id": "fSout",
+   "label": "S_out: transport uB -> Sout",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "flow rule",
+   "era": "classical",
+   "t": 6.1,
+   "concept": "poynting_theorem",
+   "extra": {}
+  },
+  {
+   "uid": "LG:fJE",
+   "branch": "LG",
+   "native_id": "fJE",
+   "label": "J·E: conversion uE -> uM",
+   "layer": "M",
+   "sublayer": "M.law",
+   "native_layer": "flow rule",
+   "era": "classical",
+   "t": 6.1,
+   "concept": "poynting_theorem",
+   "extra": {}
+  }
+ ],
+ "routes": [
+  {
+   "uid": "LG:r_x",
+   "branch": "LG",
+   "native_id": "r_x",
+   "inputs": [
+    "LG:Fa",
+    "LG:Am",
+    "LG:Lf"
+   ],
+   "target": "LG:x",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "route",
+   "status": "established",
+   "polarity": "structural",
+   "t": 6.1,
+   "extra": {}
+  },
+  {
+   "uid": "LG:r_sR",
+   "branch": "LG",
+   "native_id": "r_sR",
+   "inputs": [
+    "LG:x",
+    "LG:Pr"
+   ],
+   "target": "LG:sR",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "route",
+   "status": "established",
+   "polarity": "structural",
+   "t": 6.1,
+   "extra": {}
+  },
+  {
+   "uid": "LG:r_sN",
+   "branch": "LG",
+   "native_id": "r_sN",
+   "inputs": [
+    "LG:x",
+    "LG:Pr"
+   ],
+   "target": "LG:sN",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "route",
+   "status": "established",
+   "polarity": "structural",
+   "t": 6.1,
+   "extra": {}
+  },
+  {
+   "uid": "LG:r_pool#0",
+   "branch": "LG",
+   "native_id": "r_pool",
+   "inputs": [
+    "LG:sR",
+    "LG:Ef"
+   ],
+   "target": "LG:uE",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "route",
+   "status": "established",
+   "polarity": "structural",
+   "t": 6.1,
+   "extra": {}
+  },
+  {
+   "uid": "LG:r_pool#1",
+   "branch": "LG",
+   "native_id": "r_pool",
+   "inputs": [
+    "LG:sR",
+    "LG:Ef"
+   ],
+   "target": "LG:uB",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "route",
+   "status": "established",
+   "polarity": "structural",
+   "t": 6.1,
+   "extra": {}
+  },
+  {
+   "uid": "LG:r_pool#2",
+   "branch": "LG",
+   "native_id": "r_pool",
+   "inputs": [
+    "LG:sR",
+    "LG:Ef"
+   ],
+   "target": "LG:uM",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "route",
+   "status": "established",
+   "polarity": "structural",
+   "t": 6.1,
+   "extra": {}
+  },
+  {
+   "uid": "LG:r_uR",
+   "branch": "LG",
+   "native_id": "r_uR",
+   "inputs": [
+    "LG:uE",
+    "LG:uB",
+    "LG:uM",
+    "LG:Ef"
+   ],
+   "target": "LG:uR",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "route",
+   "status": "established",
+   "polarity": "structural",
+   "t": 6.1,
+   "extra": {}
+  },
+  {
+   "uid": "LG:r_Sin",
+   "branch": "LG",
+   "native_id": "r_Sin",
+   "inputs": [
+    "LG:sR",
+    "LG:sN",
+    "LG:Do"
+   ],
+   "target": "LG:Sin",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "route",
+   "status": "established",
+   "polarity": "structural",
+   "t": 6.1,
+   "extra": {}
+  },
+  {
+   "uid": "LG:r_Sout",
+   "branch": "LG",
+   "native_id": "r_Sout",
+   "inputs": [
+    "LG:sR",
+    "LG:sN",
+    "LG:Do"
+   ],
+   "target": "LG:Sout",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "route",
+   "status": "established",
+   "polarity": "structural",
+   "t": 6.1,
+   "extra": {}
+  },
+  {
+   "uid": "LG:f_Pi",
+   "branch": "LG",
+   "native_id": "f_Pi",
+   "inputs": [
+    "LG:Dd",
+    "LG:Fa",
+    "LG:Am"
+   ],
+   "target": "LG:fPi",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "route",
+   "status": "established",
+   "polarity": "structural",
+   "t": 6.1,
+   "extra": {}
+  },
+  {
+   "uid": "LG:f_JE",
+   "branch": "LG",
+   "native_id": "f_JE",
+   "inputs": [
+    "LG:Lf",
+    "LG:Am"
+   ],
+   "target": "LG:fJE",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "route",
+   "status": "established",
+   "polarity": "structural",
+   "t": 6.1,
+   "extra": {}
+  },
+  {
+   "uid": "LG:f_Sin",
+   "branch": "LG",
+   "native_id": "f_Sin",
+   "inputs": [
+    "LG:Do",
+    "LG:Fa",
+    "LG:Am"
+   ],
+   "target": "LG:fSin",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "route",
+   "status": "established",
+   "polarity": "structural",
+   "t": 6.1,
+   "extra": {}
+  },
+  {
+   "uid": "LG:f_Sout",
+   "branch": "LG",
+   "native_id": "f_Sout",
+   "inputs": [
+    "LG:Do",
+    "LG:Fa",
+    "LG:Am"
+   ],
+   "target": "LG:fSout",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "route",
+   "status": "established",
+   "polarity": "structural",
+   "t": 6.1,
+   "extra": {}
+  },
+  {
+   "uid": "LG:r_Sp",
+   "branch": "LG",
+   "native_id": "r_Sp",
+   "inputs": [
+    "LG:Sk"
+   ],
+   "target": "LG:Sp",
+   "logic": "single",
+   "kind": "derives",
+   "kind_native": "route",
+   "status": "established",
+   "polarity": "structural",
+   "t": 6.1,
+   "extra": {}
+  },
+  {
+   "uid": "LG:r_U1",
+   "branch": "LG",
+   "native_id": "r_U1",
+   "inputs": [
+    "LG:uR",
+    "LG:Ef"
+   ],
+   "target": "LG:U",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "route",
+   "status": "established",
+   "polarity": "structural",
+   "t": 6.1,
+   "extra": {}
+  },
+  {
+   "uid": "LG:r_U2",
+   "branch": "LG",
+   "native_id": "r_U2",
+   "inputs": [
+    "LG:x",
+    "LG:Ef"
+   ],
+   "target": "LG:U",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "route",
+   "status": "established",
+   "polarity": "structural",
+   "t": 6.1,
+   "extra": {}
+  },
+  {
+   "uid": "LG:r_H",
+   "branch": "LG",
+   "native_id": "r_H",
+   "inputs": [
+    "LG:Rs",
+    "LG:uM"
+   ],
+   "target": "LG:Hq",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "route",
+   "status": "established",
+   "polarity": "structural",
+   "t": 6.1,
+   "extra": {}
+  },
+  {
+   "uid": "LG:r_mo",
+   "branch": "LG",
+   "native_id": "r_mo",
+   "inputs": [
+    "LG:Fa",
+    "LG:Am",
+    "LG:Lf",
+    "LG:Sk"
+   ],
+   "target": "LG:mo",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "route",
+   "status": "established",
+   "polarity": "structural",
+   "t": 6.1,
+   "extra": {}
+  },
+  {
+   "uid": "LG:r_rt",
+   "branch": "LG",
+   "native_id": "r_rt",
+   "inputs": [
+    "LG:x",
+    "LG:mo"
+   ],
+   "target": "LG:rt",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "route",
+   "status": "established",
+   "polarity": "structural",
+   "t": 6.1,
+   "extra": {}
+  },
+  {
+   "uid": "LG:r_Ek",
+   "branch": "LG",
+   "native_id": "r_Ek",
+   "inputs": [
+    "LG:rt",
+    "LG:Ef"
+   ],
+   "target": "LG:Ek",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "route",
+   "status": "established",
+   "polarity": "structural",
+   "t": 6.1,
+   "extra": {}
+  },
+  {
+   "uid": "LG:r_lo",
+   "branch": "LG",
+   "native_id": "r_lo",
+   "inputs": [
+    "LG:uE",
+    "LG:uB",
+    "LG:uM",
+    "LG:uR",
+    "LG:Sp"
+   ],
+   "target": "LG:Rlo",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "route",
+   "status": "established",
+   "polarity": "structural",
+   "t": 6.1,
+   "extra": {}
+  },
+  {
+   "uid": "LG:r_go",
+   "branch": "LG",
+   "native_id": "r_go",
+   "inputs": [
+    "LG:U",
+    "LG:Hq",
+    "LG:Sk",
+    "LG:Ef"
+   ],
+   "target": "LG:Rgo",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "route",
+   "status": "established",
+   "polarity": "structural",
+   "t": 6.1,
+   "extra": {}
+  },
+  {
+   "uid": "LG:r_ls",
+   "branch": "LG",
+   "native_id": "r_ls",
+   "inputs": [
+    "LG:sR",
+    "LG:sN",
+    "LG:Pr",
+    "LG:Do"
+   ],
+   "target": "LG:Rls",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "route",
+   "status": "established",
+   "polarity": "structural",
+   "t": 6.1,
+   "extra": {}
+  },
+  {
+   "uid": "LG:r_gs",
+   "branch": "LG",
+   "native_id": "r_gs",
+   "inputs": [
+    "LG:rt",
+    "LG:Sp",
+    "LG:Sk"
+   ],
+   "target": "LG:Rgs",
+   "logic": "AND",
+   "kind": "derives",
+   "kind_native": "route",
+   "status": "established",
+   "polarity": "structural",
+   "t": 6.1,
+   "extra": {}
+  },
+  {
+   "uid": "LG:fSin",
+   "branch": "LG",
+   "native_id": "fSin",
+   "inputs": [
+    "LG:Sin"
+   ],
+   "target": "LG:uE",
+   "logic": "single",
+   "kind": "transport",
+   "kind_native": "flow:transport",
+   "status": "established",
+   "polarity": "structural",
+   "t": 6.1,
+   "extra": {
+    "label": "S_in"
+   }
+  },
+  {
+   "uid": "LG:fPi",
+   "branch": "LG",
+   "native_id": "fPi",
+   "inputs": [
+    "LG:uE"
+   ],
+   "target": "LG:uB",
+   "logic": "single",
+   "kind": "conversion",
+   "kind_native": "flow:conversion",
+   "status": "established",
+   "polarity": "structural",
+   "t": 6.1,
+   "extra": {
+    "label": "Π"
+   }
+  },
+  {
+   "uid": "LG:fSout",
+   "branch": "LG",
+   "native_id": "fSout",
+   "inputs": [
+    "LG:uB"
+   ],
+   "target": "LG:Sout",
+   "logic": "single",
+   "kind": "transport",
+   "kind_native": "flow:transport",
+   "status": "established",
+   "polarity": "structural",
+   "t": 6.1,
+   "extra": {
+    "label": "S_out"
+   }
+  },
+  {
+   "uid": "LG:fJE",
+   "branch": "LG",
+   "native_id": "fJE",
+   "inputs": [
+    "LG:uE"
+   ],
+   "target": "LG:uM",
+   "logic": "single",
+   "kind": "conversion",
+   "kind_native": "flow:conversion",
+   "status": "established",
+   "polarity": "structural",
+   "t": 6.1,
+   "extra": {
+    "label": "J·E"
+   }
+  }
+ ]
+}

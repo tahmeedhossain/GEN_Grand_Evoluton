@@ -1,0 +1,3669 @@
+{
+ "v1": {
+  "nodes": 76,
+  "node_types": {
+   "observable": 25,
+   "model": 33,
+   "state": 18
+  },
+  "routes": 70,
+  "gates": 90,
+  "and_gates": 70,
+  "or_gates": 20,
+  "stages": 8,
+  "by_stage": [
+   {
+    "stage": 1,
+    "nodes": 14,
+    "gate_encoding": {
+     "gates": 16,
+     "and_gates": 10,
+     "or_gates": 6,
+     "or_gates_with_one_visible_route": 3,
+     "edges_counter_on_page": 47,
+     "edges_distinct": 38,
+     "drawn_elements": 30
+    },
+    "edge_encoding": {
+     "routes": 10,
+     "or_targets": 3,
+     "edge_segments": 31,
+     "junction_dots": 9,
+     "drawn_elements": 14
+    }
+   },
+   {
+    "stage": 2,
+    "nodes": 23,
+    "gate_encoding": {
+     "gates": 27,
+     "and_gates": 18,
+     "or_gates": 9,
+     "or_gates_with_one_visible_route": 3,
+     "edges_counter_on_page": 85,
+     "edges_distinct": 69,
+     "drawn_elements": 50
+    },
+    "edge_encoding": {
+     "routes": 18,
+     "or_targets": 6,
+     "edge_segments": 59,
+     "junction_dots": 17,
+     "drawn_elements": 23
+    }
+   },
+   {
+    "stage": 3,
+    "nodes": 34,
+    "gate_encoding": {
+     "gates": 41,
+     "and_gates": 29,
+     "or_gates": 12,
+     "or_gates_with_one_visible_route": 1,
+     "edges_counter_on_page": 134,
+     "edges_distinct": 110,
+     "drawn_elements": 75
+    },
+    "edge_encoding": {
+     "routes": 28,
+     "or_targets": 11,
+     "edge_segments": 93,
+     "junction_dots": 25,
+     "drawn_elements": 34
+    }
+   },
+   {
+    "stage": 4,
+    "nodes": 41,
+    "gate_encoding": {
+     "gates": 52,
+     "and_gates": 36,
+     "or_gates": 16,
+     "or_gates_with_one_visible_route": 4,
+     "edges_counter_on_page": 176,
+     "edges_distinct": 146,
+     "drawn_elements": 93
+    },
+    "edge_encoding": {
+     "routes": 36,
+     "or_targets": 12,
+     "edge_segments": 127,
+     "junction_dots": 33,
+     "drawn_elements": 41
+    }
+   },
+   {
+    "stage": 5,
+    "nodes": 47,
+    "gate_encoding": {
+     "gates": 62,
+     "and_gates": 45,
+     "or_gates": 17,
+     "or_gates_with_one_visible_route": 2,
+     "edges_counter_on_page": 217,
+     "edges_distinct": 180,
+     "drawn_elements": 109
+    },
+    "edge_encoding": {
+     "routes": 44,
+     "or_targets": 15,
+     "edge_segments": 157,
+     "junction_dots": 41,
+     "drawn_elements": 47
+    }
+   },
+   {
+    "stage": 6,
+    "nodes": 56,
+    "gate_encoding": {
+     "gates": 70,
+     "and_gates": 52,
+     "or_gates": 18,
+     "or_gates_with_one_visible_route": 2,
+     "edges_counter_on_page": 246,
+     "edges_distinct": 206,
+     "drawn_elements": 126
+    },
+    "edge_encoding": {
+     "routes": 52,
+     "or_targets": 16,
+     "edge_segments": 185,
+     "junction_dots": 49,
+     "drawn_elements": 56
+    }
+   },
+   {
+    "stage": 7,
+    "nodes": 64,
+    "gate_encoding": {
+     "gates": 78,
+     "and_gates": 59,
+     "or_gates": 19,
+     "or_gates_with_one_visible_route": 2,
+     "edges_counter_on_page": 275,
+     "edges_distinct": 232,
+     "drawn_elements": 142
+    },
+    "edge_encoding": {
+     "routes": 59,
+     "or_targets": 17,
+     "edge_segments": 210,
+     "junction_dots": 56,
+     "drawn_elements": 64
+    }
+   },
+   {
+    "stage": 8,
+    "nodes": 76,
+    "gate_encoding": {
+     "gates": 90,
+     "and_gates": 70,
+     "or_gates": 20,
+     "or_gates_with_one_visible_route": 0,
+     "edges_counter_on_page": 319,
+     "edges_distinct": 271,
+     "drawn_elements": 166
+    },
+    "edge_encoding": {
+     "routes": 70,
+     "or_targets": 20,
+     "edge_segments": 248,
+     "junction_dots": 67,
+     "drawn_elements": 76
+    }
+   }
+  ]
+ },
+ "v2": {
+  "sections": 15,
+  "paragraphs": 50,
+  "nodes": 79,
+  "routes": 75,
+  "node_types": {
+   "observable": 26,
+   "model": 35,
+   "state": 18
+  },
+  "node_era": {
+   "classical": 79
+  },
+  "node_types_by_era": {
+   "classical": {
+    "observable": 26,
+    "model": 35,
+    "state": 18
+   }
+  },
+  "route_kinds": {
+   "classical": 75
+  },
+  "route_logic": {
+   "AND": 72,
+   "single": 3
+  },
+  "inputs_per_route": {
+   "1": 3,
+   "2": 40,
+   "3": 25,
+   "4": 4,
+   "5": 1,
+   "6": 2
+  },
+  "mean_inputs_per_route": 2.547,
+  "derived_observables": 21,
+  "or_nodes_final": 21,
+  "single_route_nodes_final": 23,
+  "working_routes": 75,
+  "working_route_targets": {
+   "observable": 40,
+   "model": 4,
+   "state": 31
+  },
+  "working_routes_with_model_and_state": 52,
+  "working_routes_with_model": 64,
+  "routes_into_observables_with_model_and_state": 21,
+  "max_working_routes": 5,
+  "most_derivable": [
+   {
+    "id": "F",
+    "label": "Force on a charge",
+    "working_routes": 5,
+    "route_ids": [
+     "g_Fc",
+     "g_Fwire",
+     "g_Fstress",
+     "g_FL",
+     "g_FEL"
+    ]
+   },
+   {
+    "id": "Efield",
+    "label": "Electric field",
+    "working_routes": 4,
+    "route_ids": [
+     "g_Ecoul",
+     "g_Egauss",
+     "g_Egrad",
+     "g_static"
+    ]
+   },
+   {
+    "id": "EB",
+    "label": "Dynamical field state",
+    "working_routes": 3,
+    "route_ids": [
+     "g_evolve",
+     "g_EBpot",
+     "g_EBF"
+    ]
+   },
+   {
+    "id": "Fmn",
+    "label": "Field tensor",
+    "working_routes": 3,
+    "route_ids": [
+     "g_Fmink",
+     "g_FdA",
+     "g_Fcurv"
+    ]
+   },
+   {
+    "id": "pot",
+    "label": "Gauge class of potentials",
+    "working_routes": 3,
+    "route_ids": [
+     "g_ret",
+     "g_pot2",
+     "g_pot1"
+    ]
+   },
+   {
+    "id": "Bfield",
+    "label": "Magnetic field",
+    "working_routes": 3,
+    "route_ids": [
+     "g_Bbs",
+     "g_Bamp",
+     "g_Bcurl"
+    ]
+   },
+   {
+    "id": "phi",
+    "label": "Potential up to a constant",
+    "working_routes": 3,
+    "route_ids": [
+     "g_philine",
+     "g_poisson",
+     "g_phistatic"
+    ]
+   }
+  ],
+  "primitive_nodes_final": {
+   "count": 35,
+   "by_type": {
+    "observable": 0,
+    "model": 33,
+    "state": 2
+   },
+   "ids": [
+    "vec",
+    "ddt",
+    "addq",
+    "coul",
+    "pts",
+    "sup",
+    "lap",
+    "delta",
+    "bc",
+    "grad",
+    "div",
+    "sym",
+    "line",
+    "bil",
+    "ohm",
+    "bs",
+    "cross",
+    "curl",
+    "faraday",
+    "stress",
+    "wave",
+    "gfix",
+    "gauge",
+    "poinc",
+    "poynt",
+    "fourier",
+    "lorentz",
+    "action",
+    "legendre",
+    "pb",
+    "noether",
+    "ext",
+    "wedge",
+    "hodge",
+    "conn"
+   ]
+  },
+  "closure_from_primitives": {
+   "reached": 79,
+   "unreached": []
+  },
+  "hubs": [
+   {
+    "id": "pot",
+    "label": "Gauge class of potentials",
+    "type": "state",
+    "era": "classical",
+    "used_in_routes": 9
+   },
+   {
+    "id": "rho",
+    "label": "Charge density",
+    "type": "state",
+    "era": "classical",
+    "used_in_routes": 8
+   },
+   {
+    "id": "EB",
+    "label": "Dynamical field state",
+    "type": "state",
+    "era": "classical",
+    "used_in_routes": 8
+   },
+   {
+    "id": "J",
+    "label": "Current density",
+    "type": "state",
+    "era": "classical",
+    "used_in_routes": 7
+   },
+   {
+    "id": "ddt",
+    "label": "Time derivative",
+    "type": "model",
+    "era": "classical",
+    "used_in_routes": 6
+   },
+   {
+    "id": "traj",
+    "label": "Particle state of motion",
+    "type": "state",
+    "era": "classical",
+    "used_in_routes": 6
+   },
+   {
+    "id": "q",
+    "label": "Electric charge",
+    "type": "observable",
+    "era": "classical",
+    "used_in_routes": 6
+   },
+   {
+    "id": "Efield",
+    "label": "Electric field",
+    "type": "state",
+    "era": "classical",
+    "used_in_routes": 6
+   },
+   {
+    "id": "div",
+    "label": "Divergence theorem",
+    "type": "model",
+    "era": "classical",
+    "used_in_routes": 6
+   },
+   {
+    "id": "lorentz",
+    "label": "Lorentz group",
+    "type": "model",
+    "era": "classical",
+    "used_in_routes": 6
+   },
+   {
+    "id": "r",
+    "label": "Position",
+    "type": "observable",
+    "era": "classical",
+    "used_in_routes": 5
+   },
+   {
+    "id": "line",
+    "label": "Line integrals",
+    "type": "model",
+    "era": "classical",
+    "used_in_routes": 5
+   }
+  ],
+  "unused_nodes": [
+   "C",
+   "P",
+   "PhiE",
+   "R",
+   "T",
+   "U",
+   "cons",
+   "emf",
+   "g",
+   "hol",
+   "inv",
+   "pkin",
+   "u",
+   "wavedat"
+  ],
+  "unused_nodes_by_type": {
+   "observable": 14,
+   "model": 0,
+   "state": 0
+  },
+  "hub_types_top5": [
+   "state",
+   "state",
+   "state",
+   "state",
+   "model"
+  ],
+  "failed_routes": [],
+  "quantization_routes": [],
+  "classical_limit_routes": [],
+  "classical_feeders_of_quantization": {
+   "distinct_nodes": 0,
+   "by_type": {
+    "observable": 0,
+    "model": 0,
+    "state": 0
+   },
+   "ranked": []
+  },
+  "classical_limit_targets": [],
+  "marker_lag": [
+   {
+    "id": "g_Bbs",
+    "marker": 18,
+    "appears": 19
+   },
+   {
+    "id": "g_ret",
+    "marker": 30,
+    "appears": 31
+   }
+  ],
+  "routes_with_text_marker": 31,
+  "lookback_sections": {
+   "mean": 3.35,
+   "max": 13,
+   "share_reaching_back_5_or_more": 0.293
+  },
+  "per_section": [
+   {
+    "section": 1,
+    "short": "Prelude",
+    "years": "c. 600 BCE – 1687",
+    "new_nodes": 6,
+    "new_quantum_nodes": 0,
+    "new_routes": 3,
+    "new_routes_into_earlier_nodes": 0
+   },
+   {
+    "section": 2,
+    "short": "Two electricities",
+    "years": "1729 – 1747",
+    "new_nodes": 2,
+    "new_quantum_nodes": 0,
+    "new_routes": 0,
+    "new_routes_into_earlier_nodes": 0
+   },
+   {
+    "section": 3,
+    "short": "Inverse-square law",
+    "years": "1767 – 1785",
+    "new_nodes": 3,
+    "new_quantum_nodes": 0,
+    "new_routes": 2,
+    "new_routes_into_earlier_nodes": 2
+   },
+   {
+    "section": 4,
+    "short": "Potential theory",
+    "years": "1773 – 1839",
+    "new_nodes": 14,
+    "new_quantum_nodes": 0,
+    "new_routes": 13,
+    "new_routes_into_earlier_nodes": 1
+   },
+   {
+    "section": 5,
+    "short": "Volta and Ohm",
+    "years": "1791 – 1849",
+    "new_nodes": 7,
+    "new_quantum_nodes": 0,
+    "new_routes": 7,
+    "new_routes_into_earlier_nodes": 1
+   },
+   {
+    "section": 6,
+    "short": "Ørsted and Ampère",
+    "years": "1820 – 1827",
+    "new_nodes": 5,
+    "new_quantum_nodes": 0,
+    "new_routes": 4,
+    "new_routes_into_earlier_nodes": 1
+   },
+   {
+    "section": 7,
+    "short": "Faraday",
+    "years": "1831 – 1852",
+    "new_nodes": 3,
+    "new_quantum_nodes": 0,
+    "new_routes": 2,
+    "new_routes_into_earlier_nodes": 0
+   },
+   {
+    "section": 8,
+    "short": "Units and c",
+    "years": "1845 – 1857",
+    "new_nodes": 3,
+    "new_quantum_nodes": 0,
+    "new_routes": 3,
+    "new_routes_into_earlier_nodes": 2
+   },
+   {
+    "section": 9,
+    "short": "Maxwell",
+    "years": "1855 – 1873",
+    "new_nodes": 4,
+    "new_quantum_nodes": 0,
+    "new_routes": 7,
+    "new_routes_into_earlier_nodes": 4
+   },
+   {
+    "section": 10,
+    "short": "Gauge freedom",
+    "years": "1858 – 1870",
+    "new_nodes": 5,
+    "new_quantum_nodes": 0,
+    "new_routes": 6,
+    "new_routes_into_earlier_nodes": 3
+   },
+   {
+    "section": 11,
+    "short": "Poynting and Hertz",
+    "years": "1884 – 1901",
+    "new_nodes": 6,
+    "new_quantum_nodes": 0,
+    "new_routes": 4,
+    "new_routes_into_earlier_nodes": 0
+   },
+   {
+    "section": 12,
+    "short": "Electrons",
+    "years": "1889 – 1909",
+    "new_nodes": 1,
+    "new_quantum_nodes": 0,
+    "new_routes": 4,
+    "new_routes_into_earlier_nodes": 2
+   },
+   {
+    "section": 13,
+    "short": "Relativity",
+    "years": "1887 – 1908",
+    "new_nodes": 6,
+    "new_quantum_nodes": 0,
+    "new_routes": 6,
+    "new_routes_into_earlier_nodes": 1
+   },
+   {
+    "section": 14,
+    "short": "Action and gauge",
+    "years": "1903 – 1950",
+    "new_nodes": 8,
+    "new_quantum_nodes": 0,
+    "new_routes": 7,
+    "new_routes_into_earlier_nodes": 3
+   },
+   {
+    "section": 15,
+    "short": "Geometry",
+    "years": "1899 – 1986",
+    "new_nodes": 6,
+    "new_quantum_nodes": 0,
+    "new_routes": 7,
+    "new_routes_into_earlier_nodes": 5
+   }
+  ],
+  "growth": [
+   {
+    "paragraph": 0,
+    "section": 1,
+    "nodes": 0,
+    "nodes_observable": 0,
+    "nodes_model": 0,
+    "nodes_state": 0,
+    "nodes_quantum": 0,
+    "routes": 0,
+    "or_nodes": 0
+   },
+   {
+    "paragraph": 1,
+    "section": 1,
+    "nodes": 0,
+    "nodes_observable": 0,
+    "nodes_model": 0,
+    "nodes_state": 0,
+    "nodes_quantum": 0,
+    "routes": 0,
+    "or_nodes": 0
+   },
+   {
+    "paragraph": 2,
+    "section": 1,
+    "nodes": 6,
+    "nodes_observable": 3,
+    "nodes_model": 2,
+    "nodes_state": 1,
+    "nodes_quantum": 0,
+    "routes": 3,
+    "routes_classical": 3,
+    "or_nodes": 0
+   },
+   {
+    "paragraph": 3,
+    "section": 2,
+    "nodes": 6,
+    "nodes_observable": 3,
+    "nodes_model": 2,
+    "nodes_state": 1,
+    "nodes_quantum": 0,
+    "routes": 3,
+    "routes_classical": 3,
+    "or_nodes": 0
+   },
+   {
+    "paragraph": 4,
+    "section": 2,
+    "nodes": 6,
+    "nodes_observable": 3,
+    "nodes_model": 2,
+    "nodes_state": 1,
+    "nodes_quantum": 0,
+    "routes": 3,
+    "routes_classical": 3,
+    "or_nodes": 0
+   },
+   {
+    "paragraph": 5,
+    "section": 2,
+    "nodes": 8,
+    "nodes_observable": 4,
+    "nodes_model": 3,
+    "nodes_state": 1,
+    "nodes_quantum": 0,
+    "routes": 3,
+    "routes_classical": 3,
+    "or_nodes": 0
+   },
+   {
+    "paragraph": 6,
+    "section": 3,
+    "nodes": 8,
+    "nodes_observable": 4,
+    "nodes_model": 3,
+    "nodes_state": 1,
+    "nodes_quantum": 0,
+    "routes": 3,
+    "routes_classical": 3,
+    "or_nodes": 0
+   },
+   {
+    "paragraph": 7,
+    "section": 3,
+    "nodes": 9,
+    "nodes_observable": 4,
+    "nodes_model": 4,
+    "nodes_state": 1,
+    "nodes_quantum": 0,
+    "routes": 3,
+    "routes_classical": 3,
+    "or_nodes": 0
+   },
+   {
+    "paragraph": 8,
+    "section": 3,
+    "nodes": 11,
+    "nodes_observable": 4,
+    "nodes_model": 5,
+    "nodes_state": 2,
+    "nodes_quantum": 0,
+    "routes": 5,
+    "routes_classical": 5,
+    "or_nodes": 1
+   },
+   {
+    "paragraph": 9,
+    "section": 4,
+    "nodes": 12,
+    "nodes_observable": 4,
+    "nodes_model": 6,
+    "nodes_state": 2,
+    "nodes_quantum": 0,
+    "routes": 5,
+    "routes_classical": 5,
+    "or_nodes": 1
+   },
+   {
+    "paragraph": 10,
+    "section": 4,
+    "nodes": 14,
+    "nodes_observable": 4,
+    "nodes_model": 7,
+    "nodes_state": 3,
+    "nodes_quantum": 0,
+    "routes": 7,
+    "routes_classical": 7,
+    "or_nodes": 1
+   },
+   {
+    "paragraph": 11,
+    "section": 4,
+    "nodes": 17,
+    "nodes_observable": 4,
+    "nodes_model": 8,
+    "nodes_state": 5,
+    "nodes_quantum": 0,
+    "routes": 8,
+    "routes_classical": 8,
+    "or_nodes": 1
+   },
+   {
+    "paragraph": 12,
+    "section": 4,
+    "nodes": 20,
+    "nodes_observable": 5,
+    "nodes_model": 10,
+    "nodes_state": 5,
+    "nodes_quantum": 0,
+    "routes": 9,
+    "routes_classical": 9,
+    "or_nodes": 1
+   },
+   {
+    "paragraph": 13,
+    "section": 4,
+    "nodes": 25,
+    "nodes_observable": 7,
+    "nodes_model": 12,
+    "nodes_state": 6,
+    "nodes_quantum": 0,
+    "routes": 18,
+    "routes_classical": 18,
+    "or_nodes": 6
+   },
+   {
+    "paragraph": 14,
+    "section": 5,
+    "nodes": 27,
+    "nodes_observable": 9,
+    "nodes_model": 12,
+    "nodes_state": 6,
+    "nodes_quantum": 0,
+    "routes": 19,
+    "routes_classical": 19,
+    "or_nodes": 6
+   },
+   {
+    "paragraph": 15,
+    "section": 5,
+    "nodes": 31,
+    "nodes_observable": 11,
+    "nodes_model": 13,
+    "nodes_state": 7,
+    "nodes_quantum": 0,
+    "routes": 22,
+    "routes_classical": 22,
+    "or_nodes": 6
+   },
+   {
+    "paragraph": 16,
+    "section": 5,
+    "nodes": 32,
+    "nodes_observable": 11,
+    "nodes_model": 14,
+    "nodes_state": 7,
+    "nodes_quantum": 0,
+    "routes": 25,
+    "routes_classical": 25,
+    "or_nodes": 8
+   },
+   {
+    "paragraph": 17,
+    "section": 6,
+    "nodes": 32,
+    "nodes_observable": 11,
+    "nodes_model": 14,
+    "nodes_state": 7,
+    "nodes_quantum": 0,
+    "routes": 25,
+    "routes_classical": 25,
+    "or_nodes": 8
+   },
+   {
+    "paragraph": 18,
+    "section": 6,
+    "nodes": 35,
+    "nodes_observable": 12,
+    "nodes_model": 16,
+    "nodes_state": 7,
+    "nodes_quantum": 0,
+    "routes": 25,
+    "routes_classical": 25,
+    "or_nodes": 8
+   },
+   {
+    "paragraph": 19,
+    "section": 6,
+    "nodes": 37,
+    "nodes_observable": 12,
+    "nodes_model": 17,
+    "nodes_state": 8,
+    "nodes_quantum": 0,
+    "routes": 29,
+    "routes_classical": 29,
+    "or_nodes": 10
+   },
+   {
+    "paragraph": 20,
+    "section": 7,
+    "nodes": 40,
+    "nodes_observable": 14,
+    "nodes_model": 18,
+    "nodes_state": 8,
+    "nodes_quantum": 0,
+    "routes": 31,
+    "routes_classical": 31,
+    "or_nodes": 10
+   },
+   {
+    "paragraph": 21,
+    "section": 7,
+    "nodes": 40,
+    "nodes_observable": 14,
+    "nodes_model": 18,
+    "nodes_state": 8,
+    "nodes_quantum": 0,
+    "routes": 31,
+    "routes_classical": 31,
+    "or_nodes": 10
+   },
+   {
+    "paragraph": 22,
+    "section": 7,
+    "nodes": 40,
+    "nodes_observable": 14,
+    "nodes_model": 18,
+    "nodes_state": 8,
+    "nodes_quantum": 0,
+    "routes": 31,
+    "routes_classical": 31,
+    "or_nodes": 10
+   },
+   {
+    "paragraph": 23,
+    "section": 8,
+    "nodes": 41,
+    "nodes_observable": 14,
+    "nodes_model": 18,
+    "nodes_state": 9,
+    "nodes_quantum": 0,
+    "routes": 33,
+    "routes_classical": 33,
+    "or_nodes": 11
+   },
+   {
+    "paragraph": 24,
+    "section": 8,
+    "nodes": 42,
+    "nodes_observable": 15,
+    "nodes_model": 18,
+    "nodes_state": 9,
+    "nodes_quantum": 0,
+    "routes": 34,
+    "routes_classical": 34,
+    "or_nodes": 11
+   },
+   {
+    "paragraph": 25,
+    "section": 8,
+    "nodes": 43,
+    "nodes_observable": 16,
+    "nodes_model": 18,
+    "nodes_state": 9,
+    "nodes_quantum": 0,
+    "routes": 34,
+    "routes_classical": 34,
+    "or_nodes": 11
+   },
+   {
+    "paragraph": 26,
+    "section": 9,
+    "nodes": 43,
+    "nodes_observable": 16,
+    "nodes_model": 18,
+    "nodes_state": 9,
+    "nodes_quantum": 0,
+    "routes": 34,
+    "routes_classical": 34,
+    "or_nodes": 11
+   },
+   {
+    "paragraph": 27,
+    "section": 9,
+    "nodes": 44,
+    "nodes_observable": 16,
+    "nodes_model": 19,
+    "nodes_state": 9,
+    "nodes_quantum": 0,
+    "routes": 36,
+    "routes_classical": 36,
+    "or_nodes": 11
+   },
+   {
+    "paragraph": 28,
+    "section": 9,
+    "nodes": 45,
+    "nodes_observable": 16,
+    "nodes_model": 19,
+    "nodes_state": 10,
+    "nodes_quantum": 0,
+    "routes": 39,
+    "routes_classical": 39,
+    "or_nodes": 12
+   },
+   {
+    "paragraph": 29,
+    "section": 9,
+    "nodes": 47,
+    "nodes_observable": 17,
+    "nodes_model": 20,
+    "nodes_state": 10,
+    "nodes_quantum": 0,
+    "routes": 41,
+    "routes_classical": 41,
+    "or_nodes": 12
+   },
+   {
+    "paragraph": 30,
+    "section": 10,
+    "nodes": 48,
+    "nodes_observable": 17,
+    "nodes_model": 21,
+    "nodes_state": 10,
+    "nodes_quantum": 0,
+    "routes": 41,
+    "routes_classical": 41,
+    "or_nodes": 12
+   },
+   {
+    "paragraph": 31,
+    "section": 10,
+    "nodes": 51,
+    "nodes_observable": 17,
+    "nodes_model": 23,
+    "nodes_state": 11,
+    "nodes_quantum": 0,
+    "routes": 46,
+    "routes_classical": 46,
+    "or_nodes": 14
+   },
+   {
+    "paragraph": 32,
+    "section": 10,
+    "nodes": 52,
+    "nodes_observable": 17,
+    "nodes_model": 24,
+    "nodes_state": 11,
+    "nodes_quantum": 0,
+    "routes": 47,
+    "routes_classical": 47,
+    "or_nodes": 14
+   },
+   {
+    "paragraph": 33,
+    "section": 11,
+    "nodes": 54,
+    "nodes_observable": 18,
+    "nodes_model": 25,
+    "nodes_state": 11,
+    "nodes_quantum": 0,
+    "routes": 48,
+    "routes_classical": 48,
+    "or_nodes": 14
+   },
+   {
+    "paragraph": 34,
+    "section": 11,
+    "nodes": 54,
+    "nodes_observable": 18,
+    "nodes_model": 25,
+    "nodes_state": 11,
+    "nodes_quantum": 0,
+    "routes": 48,
+    "routes_classical": 48,
+    "or_nodes": 14
+   },
+   {
+    "paragraph": 35,
+    "section": 11,
+    "nodes": 57,
+    "nodes_observable": 19,
+    "nodes_model": 26,
+    "nodes_state": 12,
+    "nodes_quantum": 0,
+    "routes": 50,
+    "routes_classical": 50,
+    "or_nodes": 14
+   },
+   {
+    "paragraph": 36,
+    "section": 11,
+    "nodes": 58,
+    "nodes_observable": 20,
+    "nodes_model": 26,
+    "nodes_state": 12,
+    "nodes_quantum": 0,
+    "routes": 51,
+    "routes_classical": 51,
+    "or_nodes": 14
+   },
+   {
+    "paragraph": 37,
+    "section": 12,
+    "nodes": 58,
+    "nodes_observable": 20,
+    "nodes_model": 26,
+    "nodes_state": 12,
+    "nodes_quantum": 0,
+    "routes": 52,
+    "routes_classical": 52,
+    "or_nodes": 14
+   },
+   {
+    "paragraph": 38,
+    "section": 12,
+    "nodes": 58,
+    "nodes_observable": 20,
+    "nodes_model": 26,
+    "nodes_state": 12,
+    "nodes_quantum": 0,
+    "routes": 53,
+    "routes_classical": 53,
+    "or_nodes": 15
+   },
+   {
+    "paragraph": 39,
+    "section": 12,
+    "nodes": 59,
+    "nodes_observable": 21,
+    "nodes_model": 26,
+    "nodes_state": 12,
+    "nodes_quantum": 0,
+    "routes": 55,
+    "routes_classical": 55,
+    "or_nodes": 16
+   },
+   {
+    "paragraph": 40,
+    "section": 13,
+    "nodes": 60,
+    "nodes_observable": 21,
+    "nodes_model": 27,
+    "nodes_state": 12,
+    "nodes_quantum": 0,
+    "routes": 55,
+    "routes_classical": 55,
+    "or_nodes": 16
+   },
+   {
+    "paragraph": 41,
+    "section": 13,
+    "nodes": 60,
+    "nodes_observable": 21,
+    "nodes_model": 27,
+    "nodes_state": 12,
+    "nodes_quantum": 0,
+    "routes": 55,
+    "routes_classical": 55,
+    "or_nodes": 16
+   },
+   {
+    "paragraph": 42,
+    "section": 13,
+    "nodes": 65,
+    "nodes_observable": 23,
+    "nodes_model": 27,
+    "nodes_state": 15,
+    "nodes_quantum": 0,
+    "routes": 61,
+    "routes_classical": 61,
+    "or_nodes": 16
+   },
+   {
+    "paragraph": 43,
+    "section": 14,
+    "nodes": 66,
+    "nodes_observable": 23,
+    "nodes_model": 28,
+    "nodes_state": 15,
+    "nodes_quantum": 0,
+    "routes": 62,
+    "routes_classical": 62,
+    "or_nodes": 16
+   },
+   {
+    "paragraph": 44,
+    "section": 14,
+    "nodes": 71,
+    "nodes_observable": 24,
+    "nodes_model": 30,
+    "nodes_state": 17,
+    "nodes_quantum": 0,
+    "routes": 66,
+    "routes_classical": 66,
+    "or_nodes": 17
+   },
+   {
+    "paragraph": 45,
+    "section": 14,
+    "nodes": 73,
+    "nodes_observable": 25,
+    "nodes_model": 31,
+    "nodes_state": 17,
+    "nodes_quantum": 0,
+    "routes": 67,
+    "routes_classical": 67,
+    "or_nodes": 17
+   },
+   {
+    "paragraph": 46,
+    "section": 14,
+    "nodes": 73,
+    "nodes_observable": 25,
+    "nodes_model": 31,
+    "nodes_state": 17,
+    "nodes_quantum": 0,
+    "routes": 68,
+    "routes_classical": 68,
+    "or_nodes": 17
+   },
+   {
+    "paragraph": 47,
+    "section": 15,
+    "nodes": 76,
+    "nodes_observable": 25,
+    "nodes_model": 34,
+    "nodes_state": 17,
+    "nodes_quantum": 0,
+    "routes": 72,
+    "routes_classical": 72,
+    "or_nodes": 21
+   },
+   {
+    "paragraph": 48,
+    "section": 15,
+    "nodes": 78,
+    "nodes_observable": 25,
+    "nodes_model": 35,
+    "nodes_state": 18,
+    "nodes_quantum": 0,
+    "routes": 74,
+    "routes_classical": 74,
+    "or_nodes": 21
+   },
+   {
+    "paragraph": 49,
+    "section": 15,
+    "nodes": 79,
+    "nodes_observable": 26,
+    "nodes_model": 35,
+    "nodes_state": 18,
+    "nodes_quantum": 0,
+    "routes": 75,
+    "routes_classical": 75,
+    "or_nodes": 21
+   }
+  ]
+ },
+ "v3": {
+  "sections": 23,
+  "paragraphs": 78,
+  "nodes": 120,
+  "routes": 122,
+  "node_types": {
+   "observable": 43,
+   "model": 52,
+   "state": 25
+  },
+  "node_era": {
+   "classical": 80,
+   "quantum": 40
+  },
+  "node_types_by_era": {
+   "classical": {
+    "observable": 26,
+    "model": 36,
+    "state": 18
+   },
+   "quantum": {
+    "observable": 17,
+    "model": 16,
+    "state": 7
+   }
+  },
+  "route_kinds": {
+   "classical": 75,
+   "failed": 6,
+   "quantization": 23,
+   "quantum": 15,
+   "classical_limit": 3
+  },
+  "route_logic": {
+   "AND": 118,
+   "single": 4
+  },
+  "inputs_per_route": {
+   "1": 4,
+   "2": 58,
+   "3": 48,
+   "4": 8,
+   "5": 2,
+   "6": 2
+  },
+  "mean_inputs_per_route": 2.607,
+  "derived_observables": 32,
+  "or_nodes_final": 25,
+  "single_route_nodes_final": 52,
+  "working_routes": 116,
+  "working_route_targets": {
+   "observable": 60,
+   "model": 15,
+   "state": 41
+  },
+  "working_routes_with_model_and_state": 81,
+  "working_routes_with_model": 104,
+  "routes_into_observables_with_model_and_state": 35,
+  "max_working_routes": 5,
+  "most_derivable": [
+   {
+    "id": "F",
+    "label": "Force on a charge",
+    "working_routes": 5,
+    "route_ids": [
+     "g_Fc",
+     "g_Fwire",
+     "g_Fstress",
+     "g_FL",
+     "g_FEL"
+    ]
+   },
+   {
+    "id": "EB",
+    "label": "Dynamical field state",
+    "working_routes": 4,
+    "route_ids": [
+     "g_evolve",
+     "g_EBpot",
+     "g_EBF",
+     "g_coherent"
+    ]
+   },
+   {
+    "id": "Efield",
+    "label": "Electric field",
+    "working_routes": 4,
+    "route_ids": [
+     "g_Ecoul",
+     "g_Egauss",
+     "g_Egrad",
+     "g_static"
+    ]
+   },
+   {
+    "id": "traj",
+    "label": "Particle state of motion",
+    "working_routes": 4,
+    "route_ids": [
+     "g_newton",
+     "g_ham",
+     "g_ehren",
+     "g_pathclassical"
+    ]
+   },
+   {
+    "id": "Fmn",
+    "label": "Field tensor",
+    "working_routes": 3,
+    "route_ids": [
+     "g_Fmink",
+     "g_FdA",
+     "g_Fcurv"
+    ]
+   },
+   {
+    "id": "pot",
+    "label": "Gauge class of potentials",
+    "working_routes": 3,
+    "route_ids": [
+     "g_ret",
+     "g_pot2",
+     "g_pot1"
+    ]
+   },
+   {
+    "id": "Bfield",
+    "label": "Magnetic field",
+    "working_routes": 3,
+    "route_ids": [
+     "g_Bbs",
+     "g_Bamp",
+     "g_Bcurl"
+    ]
+   },
+   {
+    "id": "phi",
+    "label": "Potential up to a constant",
+    "working_routes": 3,
+    "route_ids": [
+     "g_philine",
+     "g_poisson",
+     "g_phistatic"
+    ]
+   },
+   {
+    "id": "spectra",
+    "label": "Spectral lines",
+    "working_routes": 3,
+    "route_ids": [
+     "g_bohrlines",
+     "g_levels",
+     "g_finestr"
+    ]
+   }
+  ],
+  "primitive_nodes_final": {
+   "count": 43,
+   "by_type": {
+    "observable": 1,
+    "model": 40,
+    "state": 2
+   },
+   "ids": [
+    "vec",
+    "ddt",
+    "addq",
+    "coul",
+    "pts",
+    "sup",
+    "lap",
+    "delta",
+    "bc",
+    "grad",
+    "div",
+    "sym",
+    "line",
+    "bil",
+    "ohm",
+    "bs",
+    "cross",
+    "curl",
+    "faraday",
+    "stress",
+    "wave",
+    "gfix",
+    "gauge",
+    "poinc",
+    "poynt",
+    "fourier",
+    "lorentz",
+    "action",
+    "legendre",
+    "pb",
+    "noether",
+    "ext",
+    "wedge",
+    "hodge",
+    "conn",
+    "equip",
+    "planck",
+    "hbar",
+    "schro",
+    "born",
+    "clifford",
+    "pert",
+    "renorm"
+   ]
+  },
+  "closure_from_primitives": {
+   "reached": 120,
+   "unreached": []
+  },
+  "hubs": [
+   {
+    "id": "pot",
+    "label": "Gauge class of potentials",
+    "type": "state",
+    "era": "classical",
+    "used_in_routes": 9
+   },
+   {
+    "id": "rho",
+    "label": "Charge density",
+    "type": "state",
+    "era": "classical",
+    "used_in_routes": 8
+   },
+   {
+    "id": "EB",
+    "label": "Dynamical field state",
+    "type": "state",
+    "era": "classical",
+    "used_in_routes": 8
+   },
+   {
+    "id": "hilb",
+    "label": "Hilbert-space state",
+    "type": "state",
+    "era": "quantum",
+    "used_in_routes": 8
+   },
+   {
+    "id": "traj",
+    "label": "Particle state of motion",
+    "type": "state",
+    "era": "classical",
+    "used_in_routes": 7
+   },
+   {
+    "id": "q",
+    "label": "Electric charge",
+    "type": "observable",
+    "era": "classical",
+    "used_in_routes": 7
+   },
+   {
+    "id": "J",
+    "label": "Current density",
+    "type": "state",
+    "era": "classical",
+    "used_in_routes": 7
+   },
+   {
+    "id": "lorentz",
+    "label": "Lorentz group",
+    "type": "model",
+    "era": "classical",
+    "used_in_routes": 7
+   },
+   {
+    "id": "hbar",
+    "label": "Planck's constant",
+    "type": "observable",
+    "era": "quantum",
+    "used_in_routes": 7
+   },
+   {
+    "id": "ddt",
+    "label": "Time derivative",
+    "type": "model",
+    "era": "classical",
+    "used_in_routes": 6
+   },
+   {
+    "id": "coul",
+    "label": "Coulomb law",
+    "type": "model",
+    "era": "classical",
+    "used_in_routes": 6
+   },
+   {
+    "id": "Efield",
+    "label": "Electric field",
+    "type": "state",
+    "era": "classical",
+    "used_in_routes": 6
+   }
+  ],
+  "unused_nodes": [
+   "C",
+   "P",
+   "PhiE",
+   "R",
+   "T",
+   "U",
+   "abphase",
+   "amm",
+   "bbspec",
+   "casimir",
+   "cons",
+   "emf",
+   "equip",
+   "expect",
+   "g",
+   "gfac",
+   "inv",
+   "lamb",
+   "landau",
+   "photoel",
+   "photon",
+   "positron",
+   "runalpha",
+   "spont",
+   "u",
+   "xsec"
+  ],
+  "unused_nodes_by_type": {
+   "observable": 25,
+   "model": 1,
+   "state": 0
+  },
+  "hub_types_top5": [
+   "state",
+   "state",
+   "state",
+   "state",
+   "state"
+  ],
+  "failed_routes": [
+   {
+    "failed_route": "g_RJ",
+    "title": "Rayleigh–Jeans law (classical)",
+    "target": "bbspec",
+    "target_label": "Blackbody spectrum",
+    "failed_at_paragraph": 50,
+    "failed_in_section": 16,
+    "working_route_before": [],
+    "first_working_route_after": "g_planckbb",
+    "resolved_at_paragraph": 51,
+    "resolved_in_section": 16,
+    "latency_paragraphs": 1
+   },
+   {
+    "failed_route": "g_photowave",
+    "title": "Classical wave prediction",
+    "target": "photoel",
+    "target_label": "Photoelectric effect",
+    "failed_at_paragraph": 52,
+    "failed_in_section": 16,
+    "working_route_before": [],
+    "first_working_route_after": "g_photoel",
+    "resolved_at_paragraph": 52,
+    "resolved_in_section": 16,
+    "latency_paragraphs": 0
+   },
+   {
+    "failed_route": "g_collapse",
+    "title": "Classical atom (Larmor)",
+    "target": "spectra",
+    "target_label": "Spectral lines",
+    "failed_at_paragraph": 53,
+    "failed_in_section": 16,
+    "working_route_before": [],
+    "first_working_route_after": "g_bohrlines",
+    "resolved_at_paragraph": 53,
+    "resolved_in_section": 16,
+    "latency_paragraphs": 0
+   },
+   {
+    "failed_route": "g_diverge",
+    "title": "Naive perturbation theory",
+    "target": "lamb",
+    "target_label": "Lamb shift",
+    "failed_at_paragraph": 70,
+    "failed_in_section": 21,
+    "working_route_before": [],
+    "first_working_route_after": "g_lamb",
+    "resolved_at_paragraph": 73,
+    "resolved_in_section": 22,
+    "latency_paragraphs": 3
+   },
+   {
+    "failed_route": "g_lambdirac",
+    "title": "Dirac's prediction",
+    "target": "lamb",
+    "target_label": "Lamb shift",
+    "failed_at_paragraph": 70,
+    "failed_in_section": 21,
+    "working_route_before": [],
+    "first_working_route_after": "g_lamb",
+    "resolved_at_paragraph": 73,
+    "resolved_in_section": 22,
+    "latency_paragraphs": 3
+   },
+   {
+    "failed_route": "g_ammdirac",
+    "title": "Dirac's prediction",
+    "target": "amm",
+    "target_label": "Anomalous magnetic moment",
+    "failed_at_paragraph": 70,
+    "failed_in_section": 21,
+    "working_route_before": [],
+    "first_working_route_after": "g_amm",
+    "resolved_at_paragraph": 73,
+    "resolved_in_section": 22,
+    "latency_paragraphs": 3
+   }
+  ],
+  "quantization_routes": [
+   {
+    "id": "g_planckbb",
+    "title": "Planck's law",
+    "target": "bbspec",
+    "target_label": "Blackbody spectrum",
+    "classical_inputs": [
+     "vac"
+    ],
+    "quantum_inputs": [
+     "planck",
+     "hbar"
+    ],
+    "section": 16
+   },
+   {
+    "id": "g_photoel",
+    "title": "Einstein's photoelectric equation",
+    "target": "photoel",
+    "target_label": "Photoelectric effect",
+    "classical_inputs": [
+     "wavedat"
+    ],
+    "quantum_inputs": [
+     "planck",
+     "hbar"
+    ],
+    "section": 16
+   },
+   {
+    "id": "g_photon1",
+    "title": "Light quanta",
+    "target": "photon",
+    "target_label": "Photon",
+    "classical_inputs": [
+     "wavedat"
+    ],
+    "quantum_inputs": [
+     "planck",
+     "hbar"
+    ],
+    "section": 16
+   },
+   {
+    "id": "g_bohr",
+    "title": "Bohr's quantization",
+    "target": "bohr",
+    "target_label": "Bohr orbits",
+    "classical_inputs": [
+     "coul",
+     "traj"
+    ],
+    "quantum_inputs": [
+     "hbar"
+    ],
+    "section": 16
+   },
+   {
+    "id": "g_dirac",
+    "title": "Dirac's quantization rule",
+    "target": "comm",
+    "target_label": "Canonical commutator",
+    "classical_inputs": [
+     "pb"
+    ],
+    "quantum_inputs": [
+     "hbar"
+    ],
+    "section": 17
+   },
+   {
+    "id": "g_ops",
+    "title": "Phase-space functions become operators",
+    "target": "ops",
+    "target_label": "Operator algebra",
+    "classical_inputs": [
+     "phase"
+    ],
+    "quantum_inputs": [
+     "comm"
+    ],
+    "section": 17
+   },
+   {
+    "id": "g_hilb",
+    "title": "Canonical quantization of the state",
+    "target": "hilb",
+    "target_label": "Hilbert-space state",
+    "classical_inputs": [
+     "phase"
+    ],
+    "quantum_inputs": [
+     "comm",
+     "ops"
+    ],
+    "section": 17
+   },
+   {
+    "id": "g_levels",
+    "title": "Hydrogen from the Schrödinger equation",
+    "target": "spectra",
+    "target_label": "Spectral lines",
+    "classical_inputs": [
+     "coul"
+    ],
+    "quantum_inputs": [
+     "hilb",
+     "ops",
+     "schro"
+    ],
+    "section": 17
+   },
+   {
+    "id": "g_mincoup",
+    "title": "Quantize the kinetic momentum",
+    "target": "mincoup",
+    "target_label": "Minimal coupling",
+    "classical_inputs": [
+     "pkin",
+     "gauge"
+    ],
+    "quantum_inputs": [
+     "comm"
+    ],
+    "section": 18
+   },
+   {
+    "id": "g_landau",
+    "title": "Landau quantization",
+    "target": "landau",
+    "target_label": "Landau levels",
+    "classical_inputs": [
+     "Bfield"
+    ],
+    "quantum_inputs": [
+     "hilb",
+     "mincoup"
+    ],
+    "section": 18
+   },
+   {
+    "id": "g_ab",
+    "title": "Aharonov–Bohm phase",
+    "target": "abphase",
+    "target_label": "Aharonov–Bohm shift",
+    "classical_inputs": [
+     "hol"
+    ],
+    "quantum_inputs": [
+     "hilb",
+     "mincoup"
+    ],
+    "section": 18
+   },
+   {
+    "id": "g_diraceq",
+    "title": "Dirac's relativistic equation",
+    "target": "dirac",
+    "target_label": "Dirac equation",
+    "classical_inputs": [
+     "lorentz"
+    ],
+    "quantum_inputs": [
+     "clifford",
+     "mincoup"
+    ],
+    "section": 19
+   },
+   {
+    "id": "g_gfac",
+    "title": "Dirac's magnetic moment",
+    "target": "gfac",
+    "target_label": "Electron g-factor",
+    "classical_inputs": [
+     "Bfield"
+    ],
+    "quantum_inputs": [
+     "spinor",
+     "dirac"
+    ],
+    "section": 19
+   },
+   {
+    "id": "g_finestr",
+    "title": "Fine structure of hydrogen",
+    "target": "spectra",
+    "target_label": "Spectral lines",
+    "classical_inputs": [
+     "coul"
+    ],
+    "quantum_inputs": [
+     "spinor",
+     "dirac"
+    ],
+    "section": 19
+   },
+   {
+    "id": "g_ladder",
+    "title": "Each mode is a quantum oscillator",
+    "target": "ladder",
+    "target_label": "Creation and annihilation operators",
+    "classical_inputs": [
+     "vac"
+    ],
+    "quantum_inputs": [
+     "comm"
+    ],
+    "section": 20
+   },
+   {
+    "id": "g_photon2",
+    "title": "Photons as field quanta",
+    "target": "photon",
+    "target_label": "Photon",
+    "classical_inputs": [
+     "vac"
+    ],
+    "quantum_inputs": [
+     "ladder"
+    ],
+    "section": 20
+   },
+   {
+    "id": "g_Aop",
+    "title": "Canonical quantization of the field",
+    "target": "Aop",
+    "target_label": "Field operator",
+    "classical_inputs": [
+     "fphase",
+     "gfix"
+    ],
+    "quantum_inputs": [
+     "comm"
+    ],
+    "section": 20
+   },
+   {
+    "id": "g_casimir",
+    "title": "Zero-point energy between plates",
+    "target": "casimir",
+    "target_label": "Casimir force",
+    "classical_inputs": [
+     "bc"
+    ],
+    "quantum_inputs": [
+     "ladder"
+    ],
+    "section": 20
+   },
+   {
+    "id": "g_alpha",
+    "title": "Combine the constants",
+    "target": "alpha",
+    "target_label": "Fine-structure constant",
+    "classical_inputs": [
+     "q",
+     "consts",
+     "c"
+    ],
+    "quantum_inputs": [
+     "hbar"
+    ],
+    "section": 21
+   },
+   {
+    "id": "g_pathint",
+    "title": "Sum over histories",
+    "target": "pathint",
+    "target_label": "Path integral",
+    "classical_inputs": [
+     "action"
+    ],
+    "quantum_inputs": [
+     "hbar",
+     "hilb"
+    ],
+    "section": 22
+   },
+   {
+    "id": "g_localgauge",
+    "title": "Gauge the phase symmetry",
+    "target": "localgauge",
+    "target_label": "Local gauge principle",
+    "classical_inputs": [
+     "conn",
+     "gauge"
+    ],
+    "quantum_inputs": [
+     "spinor"
+    ],
+    "section": 23
+   },
+   {
+    "id": "g_qedL",
+    "title": "Assemble the QED Lagrangian",
+    "target": "qedL",
+    "target_label": "QED Lagrangian",
+    "classical_inputs": [
+     "Fmn",
+     "action"
+    ],
+    "quantum_inputs": [
+     "localgauge",
+     "dirac"
+    ],
+    "section": 23
+   },
+   {
+    "id": "g_ward",
+    "title": "Gauge symmetry in amplitudes",
+    "target": "ward",
+    "target_label": "Ward–Takahashi identities",
+    "classical_inputs": [
+     "noether"
+    ],
+    "quantum_inputs": [
+     "qedL"
+    ],
+    "section": 23
+   }
+  ],
+  "classical_limit_routes": [
+   {
+    "id": "g_ehren",
+    "title": "Ehrenfest's theorem (classical limit)",
+    "target": "traj",
+    "target_label": "Particle state of motion",
+    "classical_inputs": [],
+    "quantum_inputs": [
+     "hilb",
+     "schro",
+     "ops"
+    ],
+    "section": 17
+   },
+   {
+    "id": "g_coherent",
+    "title": "Coherent states (classical limit)",
+    "target": "EB",
+    "target_label": "Dynamical field state",
+    "classical_inputs": [],
+    "quantum_inputs": [
+     "fock",
+     "ladder"
+    ],
+    "section": 20
+   },
+   {
+    "id": "g_pathclassical",
+    "title": "Stationary phase (classical limit)",
+    "target": "traj",
+    "target_label": "Particle state of motion",
+    "classical_inputs": [
+     "action"
+    ],
+    "quantum_inputs": [
+     "pathint"
+    ],
+    "section": 22
+   }
+  ],
+  "classical_feeders_of_quantization": {
+   "distinct_nodes": 21,
+   "by_type": {
+    "observable": 6,
+    "model": 8,
+    "state": 7
+   },
+   "ranked": [
+    {
+     "id": "vac",
+     "label": "Radiation modes",
+     "type": "state",
+     "routes": 3
+    },
+    {
+     "id": "coul",
+     "label": "Coulomb law",
+     "type": "model",
+     "routes": 3
+    },
+    {
+     "id": "wavedat",
+     "label": "Wave data",
+     "type": "observable",
+     "routes": 2
+    },
+    {
+     "id": "phase",
+     "label": "Particle phase space",
+     "type": "state",
+     "routes": 2
+    },
+    {
+     "id": "gauge",
+     "label": "Gauge transformations",
+     "type": "model",
+     "routes": 2
+    },
+    {
+     "id": "Bfield",
+     "label": "Magnetic field",
+     "type": "state",
+     "routes": 2
+    },
+    {
+     "id": "action",
+     "label": "Action principle",
+     "type": "model",
+     "routes": 2
+    },
+    {
+     "id": "traj",
+     "label": "Particle state of motion",
+     "type": "state",
+     "routes": 1
+    },
+    {
+     "id": "pb",
+     "label": "Poisson bracket",
+     "type": "model",
+     "routes": 1
+    },
+    {
+     "id": "pkin",
+     "label": "Kinetic momentum",
+     "type": "observable",
+     "routes": 1
+    },
+    {
+     "id": "hol",
+     "label": "Holonomy",
+     "type": "observable",
+     "routes": 1
+    },
+    {
+     "id": "lorentz",
+     "label": "Lorentz group",
+     "type": "model",
+     "routes": 1
+    },
+    {
+     "id": "fphase",
+     "label": "Field phase space",
+     "type": "state",
+     "routes": 1
+    },
+    {
+     "id": "gfix",
+     "label": "Gauge fixing",
+     "type": "model",
+     "routes": 1
+    },
+    {
+     "id": "bc",
+     "label": "Boundary values",
+     "type": "state",
+     "routes": 1
+    },
+    {
+     "id": "q",
+     "label": "Electric charge",
+     "type": "observable",
+     "routes": 1
+    },
+    {
+     "id": "consts",
+     "label": "Couplings ε₀ and μ₀",
+     "type": "observable",
+     "routes": 1
+    },
+    {
+     "id": "c",
+     "label": "Speed of light",
+     "type": "observable",
+     "routes": 1
+    },
+    {
+     "id": "conn",
+     "label": "U(1) connection",
+     "type": "model",
+     "routes": 1
+    },
+    {
+     "id": "Fmn",
+     "label": "Field tensor",
+     "type": "state",
+     "routes": 1
+    },
+    {
+     "id": "noether",
+     "label": "Noether's theorem",
+     "type": "model",
+     "routes": 1
+    }
+   ]
+  },
+  "classical_limit_targets": [
+   "EB",
+   "traj"
+  ],
+  "marker_lag": [
+   {
+    "id": "g_Bbs",
+    "marker": 18,
+    "appears": 19
+   },
+   {
+    "id": "g_ret",
+    "marker": 30,
+    "appears": 31
+   },
+   {
+    "id": "g_diverge",
+    "marker": 69,
+    "appears": 70
+   }
+  ],
+  "routes_with_text_marker": 78,
+  "lookback_sections": {
+   "mean": 4.48,
+   "max": 19,
+   "share_reaching_back_5_or_more": 0.385
+  },
+  "per_section": [
+   {
+    "section": 1,
+    "short": "Prelude",
+    "years": "c. 600 BCE – 1687",
+    "new_nodes": 6,
+    "new_quantum_nodes": 0,
+    "new_routes": 3,
+    "new_routes_into_earlier_nodes": 0
+   },
+   {
+    "section": 2,
+    "short": "Two electricities",
+    "years": "1729 – 1747",
+    "new_nodes": 2,
+    "new_quantum_nodes": 0,
+    "new_routes": 0,
+    "new_routes_into_earlier_nodes": 0
+   },
+   {
+    "section": 3,
+    "short": "Inverse-square law",
+    "years": "1767 – 1785",
+    "new_nodes": 3,
+    "new_quantum_nodes": 0,
+    "new_routes": 2,
+    "new_routes_into_earlier_nodes": 2
+   },
+   {
+    "section": 4,
+    "short": "Potential theory",
+    "years": "1773 – 1839",
+    "new_nodes": 14,
+    "new_quantum_nodes": 0,
+    "new_routes": 13,
+    "new_routes_into_earlier_nodes": 1
+   },
+   {
+    "section": 5,
+    "short": "Volta and Ohm",
+    "years": "1791 – 1849",
+    "new_nodes": 7,
+    "new_quantum_nodes": 0,
+    "new_routes": 7,
+    "new_routes_into_earlier_nodes": 1
+   },
+   {
+    "section": 6,
+    "short": "Ørsted and Ampère",
+    "years": "1820 – 1827",
+    "new_nodes": 5,
+    "new_quantum_nodes": 0,
+    "new_routes": 4,
+    "new_routes_into_earlier_nodes": 1
+   },
+   {
+    "section": 7,
+    "short": "Faraday",
+    "years": "1831 – 1852",
+    "new_nodes": 3,
+    "new_quantum_nodes": 0,
+    "new_routes": 2,
+    "new_routes_into_earlier_nodes": 0
+   },
+   {
+    "section": 8,
+    "short": "Units and c",
+    "years": "1845 – 1857",
+    "new_nodes": 3,
+    "new_quantum_nodes": 0,
+    "new_routes": 3,
+    "new_routes_into_earlier_nodes": 2
+   },
+   {
+    "section": 9,
+    "short": "Maxwell",
+    "years": "1855 – 1873",
+    "new_nodes": 4,
+    "new_quantum_nodes": 0,
+    "new_routes": 7,
+    "new_routes_into_earlier_nodes": 4
+   },
+   {
+    "section": 10,
+    "short": "Gauge freedom",
+    "years": "1858 – 1870",
+    "new_nodes": 5,
+    "new_quantum_nodes": 0,
+    "new_routes": 6,
+    "new_routes_into_earlier_nodes": 3
+   },
+   {
+    "section": 11,
+    "short": "Poynting and Hertz",
+    "years": "1884 – 1901",
+    "new_nodes": 6,
+    "new_quantum_nodes": 0,
+    "new_routes": 4,
+    "new_routes_into_earlier_nodes": 0
+   },
+   {
+    "section": 12,
+    "short": "Electrons",
+    "years": "1889 – 1909",
+    "new_nodes": 1,
+    "new_quantum_nodes": 0,
+    "new_routes": 4,
+    "new_routes_into_earlier_nodes": 2
+   },
+   {
+    "section": 13,
+    "short": "Relativity",
+    "years": "1887 – 1908",
+    "new_nodes": 6,
+    "new_quantum_nodes": 0,
+    "new_routes": 6,
+    "new_routes_into_earlier_nodes": 1
+   },
+   {
+    "section": 14,
+    "short": "Action and gauge",
+    "years": "1903 – 1950",
+    "new_nodes": 8,
+    "new_quantum_nodes": 0,
+    "new_routes": 7,
+    "new_routes_into_earlier_nodes": 3
+   },
+   {
+    "section": 15,
+    "short": "Geometry",
+    "years": "1899 – 1986",
+    "new_nodes": 6,
+    "new_quantum_nodes": 0,
+    "new_routes": 7,
+    "new_routes_into_earlier_nodes": 5
+   },
+   {
+    "section": 16,
+    "short": "Quanta",
+    "years": "1859 – 1926",
+    "new_nodes": 8,
+    "new_quantum_nodes": 7,
+    "new_routes": 8,
+    "new_routes_into_earlier_nodes": 0
+   },
+   {
+    "section": 17,
+    "short": "Quantum mechanics",
+    "years": "1924 – 1932",
+    "new_nodes": 6,
+    "new_quantum_nodes": 6,
+    "new_routes": 6,
+    "new_routes_into_earlier_nodes": 2
+   },
+   {
+    "section": 18,
+    "short": "Minimal coupling",
+    "years": "1926 – 1980",
+    "new_nodes": 3,
+    "new_quantum_nodes": 3,
+    "new_routes": 3,
+    "new_routes_into_earlier_nodes": 0
+   },
+   {
+    "section": 19,
+    "short": "Dirac equation",
+    "years": "1922 – 1932",
+    "new_nodes": 5,
+    "new_quantum_nodes": 5,
+    "new_routes": 5,
+    "new_routes_into_earlier_nodes": 1
+   },
+   {
+    "section": 20,
+    "short": "Photons",
+    "years": "1925 – 1997",
+    "new_nodes": 5,
+    "new_quantum_nodes": 5,
+    "new_routes": 7,
+    "new_routes_into_earlier_nodes": 2
+   },
+   {
+    "section": 21,
+    "short": "Infinities",
+    "years": "1928 – 1947",
+    "new_nodes": 5,
+    "new_quantum_nodes": 5,
+    "new_routes": 5,
+    "new_routes_into_earlier_nodes": 0
+   },
+   {
+    "section": 22,
+    "short": "Renormalization",
+    "years": "1947 – 1954",
+    "new_nodes": 6,
+    "new_quantum_nodes": 6,
+    "new_routes": 8,
+    "new_routes_into_earlier_nodes": 3
+   },
+   {
+    "section": 23,
+    "short": "QED as gauge theory",
+    "years": "1950 – today",
+    "new_nodes": 3,
+    "new_quantum_nodes": 3,
+    "new_routes": 5,
+    "new_routes_into_earlier_nodes": 2
+   }
+  ],
+  "growth": [
+   {
+    "paragraph": 0,
+    "section": 1,
+    "nodes": 0,
+    "nodes_observable": 0,
+    "nodes_model": 0,
+    "nodes_state": 0,
+    "nodes_quantum": 0,
+    "routes": 0,
+    "or_nodes": 0
+   },
+   {
+    "paragraph": 1,
+    "section": 1,
+    "nodes": 0,
+    "nodes_observable": 0,
+    "nodes_model": 0,
+    "nodes_state": 0,
+    "nodes_quantum": 0,
+    "routes": 0,
+    "or_nodes": 0
+   },
+   {
+    "paragraph": 2,
+    "section": 1,
+    "nodes": 6,
+    "nodes_observable": 3,
+    "nodes_model": 2,
+    "nodes_state": 1,
+    "nodes_quantum": 0,
+    "routes": 3,
+    "routes_classical": 3,
+    "or_nodes": 0
+   },
+   {
+    "paragraph": 3,
+    "section": 2,
+    "nodes": 6,
+    "nodes_observable": 3,
+    "nodes_model": 2,
+    "nodes_state": 1,
+    "nodes_quantum": 0,
+    "routes": 3,
+    "routes_classical": 3,
+    "or_nodes": 0
+   },
+   {
+    "paragraph": 4,
+    "section": 2,
+    "nodes": 6,
+    "nodes_observable": 3,
+    "nodes_model": 2,
+    "nodes_state": 1,
+    "nodes_quantum": 0,
+    "routes": 3,
+    "routes_classical": 3,
+    "or_nodes": 0
+   },
+   {
+    "paragraph": 5,
+    "section": 2,
+    "nodes": 8,
+    "nodes_observable": 4,
+    "nodes_model": 3,
+    "nodes_state": 1,
+    "nodes_quantum": 0,
+    "routes": 3,
+    "routes_classical": 3,
+    "or_nodes": 0
+   },
+   {
+    "paragraph": 6,
+    "section": 3,
+    "nodes": 8,
+    "nodes_observable": 4,
+    "nodes_model": 3,
+    "nodes_state": 1,
+    "nodes_quantum": 0,
+    "routes": 3,
+    "routes_classical": 3,
+    "or_nodes": 0
+   },
+   {
+    "paragraph": 7,
+    "section": 3,
+    "nodes": 9,
+    "nodes_observable": 4,
+    "nodes_model": 4,
+    "nodes_state": 1,
+    "nodes_quantum": 0,
+    "routes": 3,
+    "routes_classical": 3,
+    "or_nodes": 0
+   },
+   {
+    "paragraph": 8,
+    "section": 3,
+    "nodes": 11,
+    "nodes_observable": 4,
+    "nodes_model": 5,
+    "nodes_state": 2,
+    "nodes_quantum": 0,
+    "routes": 5,
+    "routes_classical": 5,
+    "or_nodes": 1
+   },
+   {
+    "paragraph": 9,
+    "section": 4,
+    "nodes": 12,
+    "nodes_observable": 4,
+    "nodes_model": 6,
+    "nodes_state": 2,
+    "nodes_quantum": 0,
+    "routes": 5,
+    "routes_classical": 5,
+    "or_nodes": 1
+   },
+   {
+    "paragraph": 10,
+    "section": 4,
+    "nodes": 14,
+    "nodes_observable": 4,
+    "nodes_model": 7,
+    "nodes_state": 3,
+    "nodes_quantum": 0,
+    "routes": 7,
+    "routes_classical": 7,
+    "or_nodes": 1
+   },
+   {
+    "paragraph": 11,
+    "section": 4,
+    "nodes": 17,
+    "nodes_observable": 4,
+    "nodes_model": 8,
+    "nodes_state": 5,
+    "nodes_quantum": 0,
+    "routes": 8,
+    "routes_classical": 8,
+    "or_nodes": 1
+   },
+   {
+    "paragraph": 12,
+    "section": 4,
+    "nodes": 20,
+    "nodes_observable": 5,
+    "nodes_model": 10,
+    "nodes_state": 5,
+    "nodes_quantum": 0,
+    "routes": 9,
+    "routes_classical": 9,
+    "or_nodes": 1
+   },
+   {
+    "paragraph": 13,
+    "section": 4,
+    "nodes": 25,
+    "nodes_observable": 7,
+    "nodes_model": 12,
+    "nodes_state": 6,
+    "nodes_quantum": 0,
+    "routes": 18,
+    "routes_classical": 18,
+    "or_nodes": 6
+   },
+   {
+    "paragraph": 14,
+    "section": 5,
+    "nodes": 27,
+    "nodes_observable": 9,
+    "nodes_model": 12,
+    "nodes_state": 6,
+    "nodes_quantum": 0,
+    "routes": 19,
+    "routes_classical": 19,
+    "or_nodes": 6
+   },
+   {
+    "paragraph": 15,
+    "section": 5,
+    "nodes": 31,
+    "nodes_observable": 11,
+    "nodes_model": 13,
+    "nodes_state": 7,
+    "nodes_quantum": 0,
+    "routes": 22,
+    "routes_classical": 22,
+    "or_nodes": 6
+   },
+   {
+    "paragraph": 16,
+    "section": 5,
+    "nodes": 32,
+    "nodes_observable": 11,
+    "nodes_model": 14,
+    "nodes_state": 7,
+    "nodes_quantum": 0,
+    "routes": 25,
+    "routes_classical": 25,
+    "or_nodes": 8
+   },
+   {
+    "paragraph": 17,
+    "section": 6,
+    "nodes": 32,
+    "nodes_observable": 11,
+    "nodes_model": 14,
+    "nodes_state": 7,
+    "nodes_quantum": 0,
+    "routes": 25,
+    "routes_classical": 25,
+    "or_nodes": 8
+   },
+   {
+    "paragraph": 18,
+    "section": 6,
+    "nodes": 35,
+    "nodes_observable": 12,
+    "nodes_model": 16,
+    "nodes_state": 7,
+    "nodes_quantum": 0,
+    "routes": 25,
+    "routes_classical": 25,
+    "or_nodes": 8
+   },
+   {
+    "paragraph": 19,
+    "section": 6,
+    "nodes": 37,
+    "nodes_observable": 12,
+    "nodes_model": 17,
+    "nodes_state": 8,
+    "nodes_quantum": 0,
+    "routes": 29,
+    "routes_classical": 29,
+    "or_nodes": 10
+   },
+   {
+    "paragraph": 20,
+    "section": 7,
+    "nodes": 40,
+    "nodes_observable": 14,
+    "nodes_model": 18,
+    "nodes_state": 8,
+    "nodes_quantum": 0,
+    "routes": 31,
+    "routes_classical": 31,
+    "or_nodes": 10
+   },
+   {
+    "paragraph": 21,
+    "section": 7,
+    "nodes": 40,
+    "nodes_observable": 14,
+    "nodes_model": 18,
+    "nodes_state": 8,
+    "nodes_quantum": 0,
+    "routes": 31,
+    "routes_classical": 31,
+    "or_nodes": 10
+   },
+   {
+    "paragraph": 22,
+    "section": 7,
+    "nodes": 40,
+    "nodes_observable": 14,
+    "nodes_model": 18,
+    "nodes_state": 8,
+    "nodes_quantum": 0,
+    "routes": 31,
+    "routes_classical": 31,
+    "or_nodes": 10
+   },
+   {
+    "paragraph": 23,
+    "section": 8,
+    "nodes": 41,
+    "nodes_observable": 14,
+    "nodes_model": 18,
+    "nodes_state": 9,
+    "nodes_quantum": 0,
+    "routes": 33,
+    "routes_classical": 33,
+    "or_nodes": 11
+   },
+   {
+    "paragraph": 24,
+    "section": 8,
+    "nodes": 42,
+    "nodes_observable": 15,
+    "nodes_model": 18,
+    "nodes_state": 9,
+    "nodes_quantum": 0,
+    "routes": 34,
+    "routes_classical": 34,
+    "or_nodes": 11
+   },
+   {
+    "paragraph": 25,
+    "section": 8,
+    "nodes": 43,
+    "nodes_observable": 16,
+    "nodes_model": 18,
+    "nodes_state": 9,
+    "nodes_quantum": 0,
+    "routes": 34,
+    "routes_classical": 34,
+    "or_nodes": 11
+   },
+   {
+    "paragraph": 26,
+    "section": 9,
+    "nodes": 43,
+    "nodes_observable": 16,
+    "nodes_model": 18,
+    "nodes_state": 9,
+    "nodes_quantum": 0,
+    "routes": 34,
+    "routes_classical": 34,
+    "or_nodes": 11
+   },
+   {
+    "paragraph": 27,
+    "section": 9,
+    "nodes": 44,
+    "nodes_observable": 16,
+    "nodes_model": 19,
+    "nodes_state": 9,
+    "nodes_quantum": 0,
+    "routes": 36,
+    "routes_classical": 36,
+    "or_nodes": 11
+   },
+   {
+    "paragraph": 28,
+    "section": 9,
+    "nodes": 45,
+    "nodes_observable": 16,
+    "nodes_model": 19,
+    "nodes_state": 10,
+    "nodes_quantum": 0,
+    "routes": 39,
+    "routes_classical": 39,
+    "or_nodes": 12
+   },
+   {
+    "paragraph": 29,
+    "section": 9,
+    "nodes": 47,
+    "nodes_observable": 17,
+    "nodes_model": 20,
+    "nodes_state": 10,
+    "nodes_quantum": 0,
+    "routes": 41,
+    "routes_classical": 41,
+    "or_nodes": 12
+   },
+   {
+    "paragraph": 30,
+    "section": 10,
+    "nodes": 48,
+    "nodes_observable": 17,
+    "nodes_model": 21,
+    "nodes_state": 10,
+    "nodes_quantum": 0,
+    "routes": 41,
+    "routes_classical": 41,
+    "or_nodes": 12
+   },
+   {
+    "paragraph": 31,
+    "section": 10,
+    "nodes": 51,
+    "nodes_observable": 17,
+    "nodes_model": 23,
+    "nodes_state": 11,
+    "nodes_quantum": 0,
+    "routes": 46,
+    "routes_classical": 46,
+    "or_nodes": 14
+   },
+   {
+    "paragraph": 32,
+    "section": 10,
+    "nodes": 52,
+    "nodes_observable": 17,
+    "nodes_model": 24,
+    "nodes_state": 11,
+    "nodes_quantum": 0,
+    "routes": 47,
+    "routes_classical": 47,
+    "or_nodes": 14
+   },
+   {
+    "paragraph": 33,
+    "section": 11,
+    "nodes": 54,
+    "nodes_observable": 18,
+    "nodes_model": 25,
+    "nodes_state": 11,
+    "nodes_quantum": 0,
+    "routes": 48,
+    "routes_classical": 48,
+    "or_nodes": 14
+   },
+   {
+    "paragraph": 34,
+    "section": 11,
+    "nodes": 54,
+    "nodes_observable": 18,
+    "nodes_model": 25,
+    "nodes_state": 11,
+    "nodes_quantum": 0,
+    "routes": 48,
+    "routes_classical": 48,
+    "or_nodes": 14
+   },
+   {
+    "paragraph": 35,
+    "section": 11,
+    "nodes": 57,
+    "nodes_observable": 19,
+    "nodes_model": 26,
+    "nodes_state": 12,
+    "nodes_quantum": 0,
+    "routes": 50,
+    "routes_classical": 50,
+    "or_nodes": 14
+   },
+   {
+    "paragraph": 36,
+    "section": 11,
+    "nodes": 58,
+    "nodes_observable": 20,
+    "nodes_model": 26,
+    "nodes_state": 12,
+    "nodes_quantum": 0,
+    "routes": 51,
+    "routes_classical": 51,
+    "or_nodes": 14
+   },
+   {
+    "paragraph": 37,
+    "section": 12,
+    "nodes": 58,
+    "nodes_observable": 20,
+    "nodes_model": 26,
+    "nodes_state": 12,
+    "nodes_quantum": 0,
+    "routes": 52,
+    "routes_classical": 52,
+    "or_nodes": 14
+   },
+   {
+    "paragraph": 38,
+    "section": 12,
+    "nodes": 58,
+    "nodes_observable": 20,
+    "nodes_model": 26,
+    "nodes_state": 12,
+    "nodes_quantum": 0,
+    "routes": 53,
+    "routes_classical": 53,
+    "or_nodes": 15
+   },
+   {
+    "paragraph": 39,
+    "section": 12,
+    "nodes": 59,
+    "nodes_observable": 21,
+    "nodes_model": 26,
+    "nodes_state": 12,
+    "nodes_quantum": 0,
+    "routes": 55,
+    "routes_classical": 55,
+    "or_nodes": 16
+   },
+   {
+    "paragraph": 40,
+    "section": 13,
+    "nodes": 60,
+    "nodes_observable": 21,
+    "nodes_model": 27,
+    "nodes_state": 12,
+    "nodes_quantum": 0,
+    "routes": 55,
+    "routes_classical": 55,
+    "or_nodes": 16
+   },
+   {
+    "paragraph": 41,
+    "section": 13,
+    "nodes": 60,
+    "nodes_observable": 21,
+    "nodes_model": 27,
+    "nodes_state": 12,
+    "nodes_quantum": 0,
+    "routes": 55,
+    "routes_classical": 55,
+    "or_nodes": 16
+   },
+   {
+    "paragraph": 42,
+    "section": 13,
+    "nodes": 65,
+    "nodes_observable": 23,
+    "nodes_model": 27,
+    "nodes_state": 15,
+    "nodes_quantum": 0,
+    "routes": 61,
+    "routes_classical": 61,
+    "or_nodes": 16
+   },
+   {
+    "paragraph": 43,
+    "section": 14,
+    "nodes": 66,
+    "nodes_observable": 23,
+    "nodes_model": 28,
+    "nodes_state": 15,
+    "nodes_quantum": 0,
+    "routes": 62,
+    "routes_classical": 62,
+    "or_nodes": 16
+   },
+   {
+    "paragraph": 44,
+    "section": 14,
+    "nodes": 71,
+    "nodes_observable": 24,
+    "nodes_model": 30,
+    "nodes_state": 17,
+    "nodes_quantum": 0,
+    "routes": 66,
+    "routes_classical": 66,
+    "or_nodes": 17
+   },
+   {
+    "paragraph": 45,
+    "section": 14,
+    "nodes": 73,
+    "nodes_observable": 25,
+    "nodes_model": 31,
+    "nodes_state": 17,
+    "nodes_quantum": 0,
+    "routes": 67,
+    "routes_classical": 67,
+    "or_nodes": 17
+   },
+   {
+    "paragraph": 46,
+    "section": 14,
+    "nodes": 73,
+    "nodes_observable": 25,
+    "nodes_model": 31,
+    "nodes_state": 17,
+    "nodes_quantum": 0,
+    "routes": 68,
+    "routes_classical": 68,
+    "or_nodes": 17
+   },
+   {
+    "paragraph": 47,
+    "section": 15,
+    "nodes": 76,
+    "nodes_observable": 25,
+    "nodes_model": 34,
+    "nodes_state": 17,
+    "nodes_quantum": 0,
+    "routes": 72,
+    "routes_classical": 72,
+    "or_nodes": 21
+   },
+   {
+    "paragraph": 48,
+    "section": 15,
+    "nodes": 78,
+    "nodes_observable": 25,
+    "nodes_model": 35,
+    "nodes_state": 18,
+    "nodes_quantum": 0,
+    "routes": 74,
+    "routes_classical": 74,
+    "or_nodes": 21
+   },
+   {
+    "paragraph": 49,
+    "section": 15,
+    "nodes": 79,
+    "nodes_observable": 26,
+    "nodes_model": 35,
+    "nodes_state": 18,
+    "nodes_quantum": 0,
+    "routes": 75,
+    "routes_classical": 75,
+    "or_nodes": 21
+   },
+   {
+    "paragraph": 50,
+    "section": 16,
+    "nodes": 81,
+    "nodes_observable": 27,
+    "nodes_model": 36,
+    "nodes_state": 18,
+    "nodes_quantum": 1,
+    "routes": 76,
+    "routes_classical": 75,
+    "routes_failed": 1,
+    "or_nodes": 21
+   },
+   {
+    "paragraph": 51,
+    "section": 16,
+    "nodes": 83,
+    "nodes_observable": 28,
+    "nodes_model": 37,
+    "nodes_state": 18,
+    "nodes_quantum": 3,
+    "routes": 77,
+    "routes_classical": 75,
+    "routes_failed": 1,
+    "routes_quantization": 1,
+    "or_nodes": 21
+   },
+   {
+    "paragraph": 52,
+    "section": 16,
+    "nodes": 85,
+    "nodes_observable": 30,
+    "nodes_model": 37,
+    "nodes_state": 18,
+    "nodes_quantum": 5,
+    "routes": 80,
+    "routes_classical": 75,
+    "routes_failed": 2,
+    "routes_quantization": 3,
+    "or_nodes": 21
+   },
+   {
+    "paragraph": 53,
+    "section": 16,
+    "nodes": 87,
+    "nodes_observable": 31,
+    "nodes_model": 37,
+    "nodes_state": 19,
+    "nodes_quantum": 7,
+    "routes": 83,
+    "routes_classical": 75,
+    "routes_failed": 3,
+    "routes_quantization": 4,
+    "routes_quantum": 1,
+    "or_nodes": 21
+   },
+   {
+    "paragraph": 54,
+    "section": 17,
+    "nodes": 87,
+    "nodes_observable": 31,
+    "nodes_model": 37,
+    "nodes_state": 19,
+    "nodes_quantum": 7,
+    "routes": 83,
+    "routes_classical": 75,
+    "routes_failed": 3,
+    "routes_quantization": 4,
+    "routes_quantum": 1,
+    "or_nodes": 21
+   },
+   {
+    "paragraph": 55,
+    "section": 17,
+    "nodes": 89,
+    "nodes_observable": 31,
+    "nodes_model": 39,
+    "nodes_state": 19,
+    "nodes_quantum": 9,
+    "routes": 85,
+    "routes_classical": 75,
+    "routes_failed": 3,
+    "routes_quantization": 6,
+    "routes_quantum": 1,
+    "or_nodes": 21
+   },
+   {
+    "paragraph": 56,
+    "section": 17,
+    "nodes": 91,
+    "nodes_observable": 31,
+    "nodes_model": 40,
+    "nodes_state": 20,
+    "nodes_quantum": 11,
+    "routes": 87,
+    "routes_classical": 75,
+    "routes_failed": 3,
+    "routes_quantization": 8,
+    "routes_quantum": 1,
+    "or_nodes": 22
+   },
+   {
+    "paragraph": 57,
+    "section": 17,
+    "nodes": 93,
+    "nodes_observable": 32,
+    "nodes_model": 41,
+    "nodes_state": 20,
+    "nodes_quantum": 13,
+    "routes": 89,
+    "routes_classical": 75,
+    "routes_failed": 3,
+    "routes_quantization": 8,
+    "routes_quantum": 2,
+    "routes_classical_limit": 1,
+    "or_nodes": 22
+   },
+   {
+    "paragraph": 58,
+    "section": 18,
+    "nodes": 94,
+    "nodes_observable": 32,
+    "nodes_model": 42,
+    "nodes_state": 20,
+    "nodes_quantum": 14,
+    "routes": 90,
+    "routes_classical": 75,
+    "routes_failed": 3,
+    "routes_quantization": 9,
+    "routes_quantum": 2,
+    "routes_classical_limit": 1,
+    "or_nodes": 22
+   },
+   {
+    "paragraph": 59,
+    "section": 18,
+    "nodes": 95,
+    "nodes_observable": 33,
+    "nodes_model": 42,
+    "nodes_state": 20,
+    "nodes_quantum": 15,
+    "routes": 91,
+    "routes_classical": 75,
+    "routes_failed": 3,
+    "routes_quantization": 10,
+    "routes_quantum": 2,
+    "routes_classical_limit": 1,
+    "or_nodes": 22
+   },
+   {
+    "paragraph": 60,
+    "section": 18,
+    "nodes": 96,
+    "nodes_observable": 34,
+    "nodes_model": 42,
+    "nodes_state": 20,
+    "nodes_quantum": 16,
+    "routes": 92,
+    "routes_classical": 75,
+    "routes_failed": 3,
+    "routes_quantization": 11,
+    "routes_quantum": 2,
+    "routes_classical_limit": 1,
+    "or_nodes": 22
+   },
+   {
+    "paragraph": 61,
+    "section": 19,
+    "nodes": 98,
+    "nodes_observable": 34,
+    "nodes_model": 44,
+    "nodes_state": 20,
+    "nodes_quantum": 18,
+    "routes": 93,
+    "routes_classical": 75,
+    "routes_failed": 3,
+    "routes_quantization": 12,
+    "routes_quantum": 2,
+    "routes_classical_limit": 1,
+    "or_nodes": 22
+   },
+   {
+    "paragraph": 62,
+    "section": 19,
+    "nodes": 100,
+    "nodes_observable": 35,
+    "nodes_model": 44,
+    "nodes_state": 21,
+    "nodes_quantum": 20,
+    "routes": 96,
+    "routes_classical": 75,
+    "routes_failed": 3,
+    "routes_quantization": 14,
+    "routes_quantum": 3,
+    "routes_classical_limit": 1,
+    "or_nodes": 22
+   },
+   {
+    "paragraph": 63,
+    "section": 19,
+    "nodes": 101,
+    "nodes_observable": 36,
+    "nodes_model": 44,
+    "nodes_state": 21,
+    "nodes_quantum": 21,
+    "routes": 97,
+    "routes_classical": 75,
+    "routes_failed": 3,
+    "routes_quantization": 14,
+    "routes_quantum": 4,
+    "routes_classical_limit": 1,
+    "or_nodes": 22
+   },
+   {
+    "paragraph": 64,
+    "section": 20,
+    "nodes": 102,
+    "nodes_observable": 36,
+    "nodes_model": 45,
+    "nodes_state": 21,
+    "nodes_quantum": 22,
+    "routes": 99,
+    "routes_classical": 75,
+    "routes_failed": 3,
+    "routes_quantization": 16,
+    "routes_quantum": 4,
+    "routes_classical_limit": 1,
+    "or_nodes": 23
+   },
+   {
+    "paragraph": 65,
+    "section": 20,
+    "nodes": 104,
+    "nodes_observable": 37,
+    "nodes_model": 45,
+    "nodes_state": 22,
+    "nodes_quantum": 24,
+    "routes": 101,
+    "routes_classical": 75,
+    "routes_failed": 3,
+    "routes_quantization": 16,
+    "routes_quantum": 6,
+    "routes_classical_limit": 1,
+    "or_nodes": 23
+   },
+   {
+    "paragraph": 66,
+    "section": 20,
+    "nodes": 106,
+    "nodes_observable": 38,
+    "nodes_model": 45,
+    "nodes_state": 23,
+    "nodes_quantum": 26,
+    "routes": 104,
+    "routes_classical": 75,
+    "routes_failed": 3,
+    "routes_quantization": 18,
+    "routes_quantum": 6,
+    "routes_classical_limit": 2,
+    "or_nodes": 23
+   },
+   {
+    "paragraph": 67,
+    "section": 21,
+    "nodes": 107,
+    "nodes_observable": 38,
+    "nodes_model": 45,
+    "nodes_state": 24,
+    "nodes_quantum": 27,
+    "routes": 105,
+    "routes_classical": 75,
+    "routes_failed": 3,
+    "routes_quantization": 18,
+    "routes_quantum": 7,
+    "routes_classical_limit": 2,
+    "or_nodes": 23
+   },
+   {
+    "paragraph": 68,
+    "section": 21,
+    "nodes": 109,
+    "nodes_observable": 39,
+    "nodes_model": 46,
+    "nodes_state": 24,
+    "nodes_quantum": 29,
+    "routes": 106,
+    "routes_classical": 75,
+    "routes_failed": 3,
+    "routes_quantization": 19,
+    "routes_quantum": 7,
+    "routes_classical_limit": 2,
+    "or_nodes": 23
+   },
+   {
+    "paragraph": 69,
+    "section": 21,
+    "nodes": 109,
+    "nodes_observable": 39,
+    "nodes_model": 46,
+    "nodes_state": 24,
+    "nodes_quantum": 29,
+    "routes": 106,
+    "routes_classical": 75,
+    "routes_failed": 3,
+    "routes_quantization": 19,
+    "routes_quantum": 7,
+    "routes_classical_limit": 2,
+    "or_nodes": 23
+   },
+   {
+    "paragraph": 70,
+    "section": 21,
+    "nodes": 111,
+    "nodes_observable": 41,
+    "nodes_model": 46,
+    "nodes_state": 24,
+    "nodes_quantum": 31,
+    "routes": 109,
+    "routes_classical": 75,
+    "routes_failed": 6,
+    "routes_quantization": 19,
+    "routes_quantum": 7,
+    "routes_classical_limit": 2,
+    "or_nodes": 23
+   },
+   {
+    "paragraph": 71,
+    "section": 22,
+    "nodes": 112,
+    "nodes_observable": 41,
+    "nodes_model": 47,
+    "nodes_state": 24,
+    "nodes_quantum": 32,
+    "routes": 109,
+    "routes_classical": 75,
+    "routes_failed": 6,
+    "routes_quantization": 19,
+    "routes_quantum": 7,
+    "routes_classical_limit": 2,
+    "or_nodes": 23
+   },
+   {
+    "paragraph": 72,
+    "section": 22,
+    "nodes": 114,
+    "nodes_observable": 41,
+    "nodes_model": 49,
+    "nodes_state": 24,
+    "nodes_quantum": 34,
+    "routes": 112,
+    "routes_classical": 75,
+    "routes_failed": 6,
+    "routes_quantization": 20,
+    "routes_quantum": 8,
+    "routes_classical_limit": 3,
+    "or_nodes": 23
+   },
+   {
+    "paragraph": 73,
+    "section": 22,
+    "nodes": 116,
+    "nodes_observable": 42,
+    "nodes_model": 49,
+    "nodes_state": 25,
+    "nodes_quantum": 36,
+    "routes": 116,
+    "routes_classical": 75,
+    "routes_failed": 6,
+    "routes_quantization": 20,
+    "routes_quantum": 12,
+    "routes_classical_limit": 3,
+    "or_nodes": 23
+   },
+   {
+    "paragraph": 74,
+    "section": 22,
+    "nodes": 117,
+    "nodes_observable": 43,
+    "nodes_model": 49,
+    "nodes_state": 25,
+    "nodes_quantum": 37,
+    "routes": 117,
+    "routes_classical": 75,
+    "routes_failed": 6,
+    "routes_quantization": 20,
+    "routes_quantum": 13,
+    "routes_classical_limit": 3,
+    "or_nodes": 23
+   },
+   {
+    "paragraph": 75,
+    "section": 23,
+    "nodes": 118,
+    "nodes_observable": 43,
+    "nodes_model": 50,
+    "nodes_state": 25,
+    "nodes_quantum": 38,
+    "routes": 118,
+    "routes_classical": 75,
+    "routes_failed": 6,
+    "routes_quantization": 21,
+    "routes_quantum": 13,
+    "routes_classical_limit": 3,
+    "or_nodes": 23
+   },
+   {
+    "paragraph": 76,
+    "section": 23,
+    "nodes": 120,
+    "nodes_observable": 43,
+    "nodes_model": 52,
+    "nodes_state": 25,
+    "nodes_quantum": 40,
+    "routes": 121,
+    "routes_classical": 75,
+    "routes_failed": 6,
+    "routes_quantization": 23,
+    "routes_quantum": 14,
+    "routes_classical_limit": 3,
+    "or_nodes": 24
+   },
+   {
+    "paragraph": 77,
+    "section": 23,
+    "nodes": 120,
+    "nodes_observable": 43,
+    "nodes_model": 52,
+    "nodes_state": 25,
+    "nodes_quantum": 40,
+    "routes": 122,
+    "routes_classical": 75,
+    "routes_failed": 6,
+    "routes_quantization": 23,
+    "routes_quantum": 15,
+    "routes_classical_limit": 3,
+    "or_nodes": 25
+   }
+  ]
+ },
+ "diff_v1_to_v2": {
+  "nodes_added": [
+   "R",
+   "addq",
+   "ohm"
+  ],
+  "nodes_removed": [],
+  "nodes_relabelled": [
+   {
+    "id": "Bfield",
+    "from": "Magnetostatic field",
+    "to": "Magnetic field"
+   },
+   {
+    "id": "EB",
+    "from": "Field state on a time slice",
+    "to": "Dynamical field state"
+   },
+   {
+    "id": "Efield",
+    "from": "Electrostatic field",
+    "to": "Electric field"
+   },
+   {
+    "id": "action",
+    "from": "Stationary action",
+    "to": "Action principle"
+   },
+   {
+    "id": "bc",
+    "from": "Boundary data",
+    "to": "Boundary values"
+   },
+   {
+    "id": "bs",
+    "from": "Biot–Savart kernel",
+    "to": "Biot–Savart law"
+   },
+   {
+    "id": "bundle",
+    "from": "U(1) bundle with connection",
+    "to": "U(1) bundle"
+   },
+   {
+    "id": "consts",
+    "from": "Couplings ε₀, μ₀",
+    "to": "Couplings ε₀ and μ₀"
+   },
+   {
+    "id": "coul",
+    "from": "Coulomb kernel",
+    "to": "Coulomb law"
+   },
+   {
+    "id": "curl",
+    "from": "Curl and Stokes",
+    "to": "Curl and Stokes' theorem"
+   },
+   {
+    "id": "delta",
+    "from": "Distributions (Dirac δ)",
+    "to": "Delta function"
+   },
+   {
+    "id": "div",
+    "from": "Divergence and flux",
+    "to": "Divergence theorem"
+   },
+   {
+    "id": "emf",
+    "from": "EMF",
+    "to": "Electromotive force"
+   },
+   {
+    "id": "fourier",
+    "from": "Plane-wave decomposition",
+    "to": "Fourier decomposition"
+   },
+   {
+    "id": "gauge",
+    "from": "Gauge group U(1)",
+    "to": "Gauge transformations"
+   },
+   {
+    "id": "lap",
+    "from": "Poisson problem",
+    "to": "Poisson's equation"
+   },
+   {
+    "id": "line",
+    "from": "Line integrals (Stokes)",
+    "to": "Line integrals"
+   },
+   {
+    "id": "sup",
+    "from": "Linear superposition",
+    "to": "Superposition"
+   },
+   {
+    "id": "traj",
+    "from": "Particle kinematic state",
+    "to": "Particle state of motion"
+   },
+   {
+    "id": "u",
+    "from": "Energy density",
+    "to": "Field energy density"
+   }
+  ],
+  "routes_added": [
+   "g_Fmink",
+   "g_Fwire",
+   "g_Johm",
+   "g_R",
+   "g_inv13"
+  ],
+  "routes_removed": [],
+  "routes_with_changed_inputs_or_target": [
+   "g_Q",
+   "g_T"
+  ]
+ },
+ "diff_v2_to_v3": {
+  "nodes_added": [
+   "Aop",
+   "abphase",
+   "alpha",
+   "amm",
+   "bbspec",
+   "bohr",
+   "born",
+   "casimir",
+   "clifford",
+   "comm",
+   "dirac",
+   "equip",
+   "expect",
+   "feyn",
+   "fock",
+   "gfac",
+   "hbar",
+   "hilb",
+   "ladder",
+   "lamb",
+   "landau",
+   "localgauge",
+   "mincoup",
+   "ops",
+   "pathint",
+   "pert",
+   "photoel",
+   "photon",
+   "planck",
+   "positron",
+   "psiop",
+   "qedL",
+   "renorm",
+   "runalpha",
+   "schro",
+   "smatrix",
+   "spectra",
+   "spinor",
+   "spont",
+   "ward",
+   "xsec"
+  ],
+  "nodes_removed": [],
+  "nodes_relabelled": [],
+  "routes_added": [
+   "g_Aop",
+   "g_RJ",
+   "g_ab",
+   "g_alpha",
+   "g_amm",
+   "g_ammdirac",
+   "g_ammprec",
+   "g_bohr",
+   "g_bohrlines",
+   "g_casimir",
+   "g_coherent",
+   "g_collapse",
+   "g_dirac",
+   "g_diraceq",
+   "g_diverge",
+   "g_ehren",
+   "g_expect",
+   "g_feyn",
+   "g_feyn2",
+   "g_finestr",
+   "g_fock",
+   "g_gfac",
+   "g_hilb",
+   "g_ladder",
+   "g_lamb",
+   "g_lambdirac",
+   "g_landau",
+   "g_levels",
+   "g_localgauge",
+   "g_mincoup",
+   "g_ops",
+   "g_pathclassical",
+   "g_pathint",
+   "g_photoel",
+   "g_photon1",
+   "g_photon2",
+   "g_photowave",
+   "g_planckbb",
+   "g_positron",
+   "g_psiop",
+   "g_qedL",
+   "g_runalpha",
+   "g_smat",
+   "g_spinor",
+   "g_spont",
+   "g_ward",
+   "g_xsec"
+  ],
+  "routes_removed": [],
+  "routes_with_changed_inputs_or_target": []
+ },
+ "diff_v3.0_to_v3.1": {
+  "structure_identical": true,
+  "paragraphs_changed": [
+   {
+    "paragraph": 3,
+    "section": 2
+   },
+   {
+    "paragraph": 13,
+    "section": 4
+   },
+   {
+    "paragraph": 30,
+    "section": 10
+   },
+   {
+    "paragraph": 70,
+    "section": 21
+   }
+  ],
+  "node_descriptions_changed": [
+   "c",
+   "lamb"
+  ],
+  "routes_changed": []
+ }
+}

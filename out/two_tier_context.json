@@ -1,0 +1,9047 @@
+{
+ "frame": {
+  "wA": 1.0,
+  "wB": 1.5,
+  "beta": 2.0,
+  "H": "(wA/2) Z x 1 + (wB/2) 1 x Z",
+  "tilted": "first qubit: -(wA/2) n.sigma with n = (1,1,1)/sqrt(3)"
+ },
+ "attrs": [
+  {
+   "id": "pur",
+   "label": "maximally mixed",
+   "node": "QRT:sF-pur"
+  },
+  {
+   "id": "ath",
+   "label": "Gibbs state",
+   "node": "QRT:sF-ath"
+  },
+  {
+   "id": "asy",
+   "label": "time-translation symmetric",
+   "node": "QRT:sF-asy"
+  },
+  {
+   "id": "coh",
+   "label": "incoherent (energy basis)",
+   "node": "QRT:sF-coh"
+  },
+  {
+   "id": "ima",
+   "label": "real (energy basis)",
+   "node": "QRT:sF-ima"
+  },
+  {
+   "id": "mag",
+   "label": "stabilizer polytope",
+   "node": "QRT:sF-mag"
+  },
+  {
+   "id": "dis",
+   "label": "classical-classical",
+   "node": "QRT:sF-dis"
+  },
+  {
+   "id": "ent",
+   "label": "separable",
+   "node": "QRT:sF-ent"
+  },
+  {
+   "id": "ste",
+   "label": "unsteerable",
+   "node": "QRT:sF-ste"
+  },
+  {
+   "id": "nlo",
+   "label": "Bell-local",
+   "node": "QRT:sF-nlo"
+  }
+ ],
+ "objects": [
+  {
+   "id": "I4",
+   "label": "I/4",
+   "node": "QRT:d-maxmix",
+   "round": 0,
+   "note": "",
+   "cells": {
+    "pur": {
+     "val": true,
+     "grade": "computed",
+     "detail": "|rho - I/4| = 0"
+    },
+    "ath": {
+     "val": false,
+     "grade": "computed",
+     "detail": "|rho - gamma| = 0.685"
+    },
+    "asy": {
+     "val": true,
+     "grade": "computed",
+     "detail": "|[rho, H]| = 0"
+    },
+    "coh": {
+     "val": true,
+     "grade": "computed",
+     "detail": "off-diagonal norm in the eigenbasis of H = 0"
+    },
+    "ima": {
+     "val": true,
+     "grade": "computed",
+     "detail": "max |Im rho| in the eigenbasis of H = 0"
+    },
+    "mag": {
+     "val": true,
+     "grade": "computed",
+     "detail": "robustness of magic = 1.000000"
+    },
+    "dis": {
+     "val": true,
+     "grade": "computed",
+     "detail": "least off-diagonal weight over local product bases = 0 (numerical minimisation)"
+    },
+    "ent": {
+     "val": true,
+     "grade": "computed",
+     "detail": "least eigenvalue of the partial transpose = 0.2500 (PPT is exact for two qubits)"
+    },
+    "ste": {
+     "val": true,
+     "grade": "derived",
+     "detail": "separable, hence unsteerable (QRT:SS16)"
+    },
+    "nlo": {
+     "val": true,
+     "grade": "derived",
+     "detail": "unsteerable, hence Bell-local (QRT:SS17)"
+    }
+   }
+  },
+  {
+   "id": "00",
+   "label": "|00>",
+   "node": null,
+   "round": 0,
+   "note": "",
+   "cells": {
+    "pur": {
+     "val": false,
+     "grade": "computed",
+     "detail": "|rho - I/4| = 0.866"
+    },
+    "ath": {
+     "val": false,
+     "grade": "computed",
+     "detail": "|rho - gamma| = 1.31"
+    },
+    "asy": {
+     "val": true,
+     "grade": "computed",
+     "detail": "|[rho, H]| = 0"
+    },
+    "coh": {
+     "val": true,
+     "grade": "computed",
+     "detail": "off-diagonal norm in the eigenbasis of H = 0"
+    },
+    "ima": {
+     "val": true,
+     "grade": "computed",
+     "detail": "max |Im rho| in the eigenbasis of H = 0"
+    },
+    "mag": {
+     "val": true,
+     "grade": "computed",
+     "detail": "robustness of magic = 1.000000"
+    },
+    "dis": {
+     "val": true,
+     "grade": "computed",
+     "detail": "least off-diagonal weight over local product bases = 0 (numerical minimisation)"
+    },
+    "ent": {
+     "val": true,
+     "grade": "computed",
+     "detail": "least eigenvalue of the partial transpose = 0.0000 (PPT is exact for two qubits)"
+    },
+    "ste": {
+     "val": true,
+     "grade": "derived",
+     "detail": "separable, hence unsteerable (QRT:SS16)"
+    },
+    "nlo": {
+     "val": true,
+     "grade": "derived",
+     "detail": "unsteerable, hence Bell-local (QRT:SS17)"
+    }
+   }
+  },
+  {
+   "id": "p0",
+   "label": "|+>|0>",
+   "node": "QRT:d-plus",
+   "round": 0,
+   "note": "|+> of the network, with |0> on the second qubit",
+   "cells": {
+    "pur": {
+     "val": false,
+     "grade": "computed",
+     "detail": "|rho - I/4| = 0.866"
+    },
+    "ath": {
+     "val": false,
+     "grade": "computed",
+     "detail": "|rho - gamma| = 1.29"
+    },
+    "asy": {
+     "val": false,
+     "grade": "computed",
+     "detail": "|[rho, H]| = 0.707"
+    },
+    "coh": {
+     "val": false,
+     "grade": "computed",
+     "detail": "off-diagonal norm in the eigenbasis of H = 0.707"
+    },
+    "ima": {
+     "val": true,
+     "grade": "computed",
+     "detail": "max |Im rho| in the eigenbasis of H = 0"
+    },
+    "mag": {
+     "val": true,
+     "grade": "computed",
+     "detail": "robustness of magic = 1.000000"
+    },
+    "dis": {
+     "val": true,
+     "grade": "computed",
+     "detail": "least off-diagonal weight over local product bases = 8.31e-17 (numerical minimisation)"
+    },
+    "ent": {
+     "val": true,
+     "grade": "computed",
+     "detail": "least eigenvalue of the partial transpose = 0.0000 (PPT is exact for two qubits)"
+    },
+    "ste": {
+     "val": true,
+     "grade": "derived",
+     "detail": "separable, hence unsteerable (QRT:SS16)"
+    },
+    "nlo": {
+     "val": true,
+     "grade": "derived",
+     "detail": "unsteerable, hence Bell-local (QRT:SS17)"
+    }
+   }
+  },
+  {
+   "id": "T0",
+   "label": "|T>|0>",
+   "node": "QRT:d-tstate",
+   "round": 0,
+   "note": "named in QRT:SS13 and GPT:R4a",
+   "cells": {
+    "pur": {
+     "val": false,
+     "grade": "computed",
+     "detail": "|rho - I/4| = 0.866"
+    },
+    "ath": {
+     "val": false,
+     "grade": "computed",
+     "detail": "|rho - gamma| = 1.3"
+    },
+    "asy": {
+     "val": false,
+     "grade": "computed",
+     "detail": "|[rho, H]| = 0.577"
+    },
+    "coh": {
+     "val": false,
+     "grade": "computed",
+     "detail": "off-diagonal norm in the eigenbasis of H = 0.577"
+    },
+    "ima": {
+     "val": false,
+     "grade": "computed",
+     "detail": "max |Im rho| in the eigenbasis of H = 0.289"
+    },
+    "mag": {
+     "val": false,
+     "grade": "computed",
+     "detail": "robustness of magic = 1.732051"
+    },
+    "dis": {
+     "val": true,
+     "grade": "computed",
+     "detail": "least off-diagonal weight over local product bases = 7.4e-17 (numerical minimisation)"
+    },
+    "ent": {
+     "val": true,
+     "grade": "computed",
+     "detail": "least eigenvalue of the partial transpose = -0.0000 (PPT is exact for two qubits)"
+    },
+    "ste": {
+     "val": true,
+     "grade": "derived",
+     "detail": "separable, hence unsteerable (QRT:SS16)"
+    },
+    "nlo": {
+     "val": true,
+     "grade": "derived",
+     "detail": "unsteerable, hence Bell-local (QRT:SS17)"
+    }
+   }
+  },
+  {
+   "id": "gibbs",
+   "label": "Gibbs state of H",
+   "node": null,
+   "round": 0,
+   "note": "H diagonal in the Pauli-Z product basis",
+   "cells": {
+    "pur": {
+     "val": false,
+     "grade": "computed",
+     "detail": "|rho - I/4| = 0.685"
+    },
+    "ath": {
+     "val": true,
+     "grade": "computed",
+     "detail": "|rho - gamma| = 0"
+    },
+    "asy": {
+     "val": true,
+     "grade": "computed",
+     "detail": "|[rho, H]| = 0"
+    },
+    "coh": {
+     "val": true,
+     "grade": "computed",
+     "detail": "off-diagonal norm in the eigenbasis of H = 0"
+    },
+    "ima": {
+     "val": true,
+     "grade": "computed",
+     "detail": "max |Im rho| in the eigenbasis of H = 0"
+    },
+    "mag": {
+     "val": true,
+     "grade": "computed",
+     "detail": "robustness of magic = 1.000000"
+    },
+    "dis": {
+     "val": true,
+     "grade": "computed",
+     "detail": "least off-diagonal weight over local product bases = 0 (numerical minimisation)"
+    },
+    "ent": {
+     "val": true,
+     "grade": "computed",
+     "detail": "least eigenvalue of the partial transpose = 0.0057 (PPT is exact for two qubits)"
+    },
+    "ste": {
+     "val": true,
+     "grade": "derived",
+     "detail": "separable, hence unsteerable (QRT:SS16)"
+    },
+    "nlo": {
+     "val": true,
+     "grade": "derived",
+     "detail": "unsteerable, hence Bell-local (QRT:SS17)"
+    }
+   }
+  },
+  {
+   "id": "gibbsT",
+   "label": "Gibbs state of a tilted H",
+   "node": "QRT:d-gibbs",
+   "round": 0,
+   "note": "first qubit: H along (1,1,1)/sqrt(3); the generic case of QRT:SS3",
+   "cells": {
+    "pur": {
+     "val": false,
+     "grade": "computed",
+     "detail": "|rho - I/4| = 0.685"
+    },
+    "ath": {
+     "val": true,
+     "grade": "computed",
+     "detail": "|rho - gamma| = 0"
+    },
+    "asy": {
+     "val": true,
+     "grade": "computed",
+     "detail": "|[rho, H]| = 6.25e-16"
+    },
+    "coh": {
+     "val": true,
+     "grade": "computed",
+     "detail": "off-diagonal norm in the eigenbasis of H = 3.27e-16"
+    },
+    "ima": {
+     "val": true,
+     "grade": "computed",
+     "detail": "diagonal in the eigenbasis of H, hence real there"
+    },
+    "mag": {
+     "val": false,
+     "grade": "computed",
+     "detail": "robustness of magic = 1.319120"
+    },
+    "dis": {
+     "val": true,
+     "grade": "computed",
+     "detail": "least off-diagonal weight over local product bases = 1.79e-17 (numerical minimisation)"
+    },
+    "ent": {
+     "val": true,
+     "grade": "computed",
+     "detail": "least eigenvalue of the partial transpose = 0.0057 (PPT is exact for two qubits)"
+    },
+    "ste": {
+     "val": true,
+     "grade": "derived",
+     "detail": "separable, hence unsteerable (QRT:SS16)"
+    },
+    "nlo": {
+     "val": true,
+     "grade": "derived",
+     "detail": "unsteerable, hence Bell-local (QRT:SS17)"
+    }
+   }
+  },
+  {
+   "id": "bell",
+   "label": "|Phi+>",
+   "node": "QRT:d-bell",
+   "round": 0,
+   "note": "",
+   "cells": {
+    "pur": {
+     "val": false,
+     "grade": "computed",
+     "detail": "|rho - I/4| = 0.866"
+    },
+    "ath": {
+     "val": false,
+     "grade": "computed",
+     "detail": "|rho - gamma| = 0.935"
+    },
+    "asy": {
+     "val": false,
+     "grade": "computed",
+     "detail": "|[rho, H]| = 1.77"
+    },
+    "coh": {
+     "val": false,
+     "grade": "computed",
+     "detail": "off-diagonal norm in the eigenbasis of H = 0.707"
+    },
+    "ima": {
+     "val": true,
+     "grade": "computed",
+     "detail": "max |Im rho| in the eigenbasis of H = 0"
+    },
+    "mag": {
+     "val": true,
+     "grade": "computed",
+     "detail": "robustness of magic = 1.000000"
+    },
+    "dis": {
+     "val": false,
+     "grade": "computed",
+     "detail": "least off-diagonal weight over local product bases = 0.5 (numerical minimisation)"
+    },
+    "ent": {
+     "val": false,
+     "grade": "computed",
+     "detail": "least eigenvalue of the partial transpose = -0.5000 (PPT is exact for two qubits)"
+    },
+    "nlo": {
+     "val": false,
+     "grade": "computed",
+     "detail": "CHSH: M = 2.0000 > 1 (Horodecki criterion), maximal value 2.8284"
+    },
+    "ste": {
+     "val": false,
+     "grade": "derived",
+     "detail": "not Bell-local, hence steerable (QRT:SS17)"
+    }
+   }
+  },
+  {
+   "id": "w20",
+   "label": "Werner p = 0.2",
+   "node": null,
+   "round": 0,
+   "note": "",
+   "cells": {
+    "pur": {
+     "val": false,
+     "grade": "computed",
+     "detail": "|rho - I/4| = 0.173"
+    },
+    "ath": {
+     "val": false,
+     "grade": "computed",
+     "detail": "|rho - gamma| = 0.753"
+    },
+    "asy": {
+     "val": false,
+     "grade": "computed",
+     "detail": "|[rho, H]| = 0.0707"
+    },
+    "coh": {
+     "val": false,
+     "grade": "computed",
+     "detail": "off-diagonal norm in the eigenbasis of H = 0.141"
+    },
+    "ima": {
+     "val": true,
+     "grade": "computed",
+     "detail": "max |Im rho| in the eigenbasis of H = 0"
+    },
+    "mag": {
+     "val": true,
+     "grade": "computed",
+     "detail": "robustness of magic = 1.000000"
+    },
+    "dis": {
+     "val": false,
+     "grade": "computed",
+     "detail": "least off-diagonal weight over local product bases = 0.02 (numerical minimisation)"
+    },
+    "ent": {
+     "val": true,
+     "grade": "computed",
+     "detail": "least eigenvalue of the partial transpose = 0.1000 (PPT is exact for two qubits)"
+    },
+    "ste": {
+     "val": true,
+     "grade": "derived",
+     "detail": "separable, hence unsteerable (QRT:SS16)"
+    },
+    "nlo": {
+     "val": true,
+     "grade": "derived",
+     "detail": "unsteerable, hence Bell-local (QRT:SS17)"
+    }
+   }
+  },
+  {
+   "id": "w40",
+   "label": "Werner p = 0.4",
+   "node": "QRT:d-werner",
+   "round": 0,
+   "note": "",
+   "cells": {
+    "pur": {
+     "val": false,
+     "grade": "computed",
+     "detail": "|rho - I/4| = 0.346"
+    },
+    "ath": {
+     "val": false,
+     "grade": "computed",
+     "detail": "|rho - gamma| = 0.852"
+    },
+    "asy": {
+     "val": false,
+     "grade": "computed",
+     "detail": "|[rho, H]| = 0.141"
+    },
+    "coh": {
+     "val": false,
+     "grade": "computed",
+     "detail": "off-diagonal norm in the eigenbasis of H = 0.283"
+    },
+    "ima": {
+     "val": true,
+     "grade": "computed",
+     "detail": "max |Im rho| in the eigenbasis of H = 0"
+    },
+    "mag": {
+     "val": true,
+     "grade": "computed",
+     "detail": "robustness of magic = 1.000000"
+    },
+    "dis": {
+     "val": false,
+     "grade": "computed",
+     "detail": "least off-diagonal weight over local product bases = 0.08 (numerical minimisation)"
+    },
+    "ent": {
+     "val": false,
+     "grade": "computed",
+     "detail": "least eigenvalue of the partial transpose = -0.0500 (PPT is exact for two qubits)"
+    },
+    "ste": {
+     "val": true,
+     "grade": "import",
+     "detail": "unsteerable for p <= 1/2 (Wiseman, Jones, Doherty, Phys. Rev. Lett. 98, 140402 (2007)); local model for all measurements for p <= 5/12 (Barrett, Phys. Rev. A 65, 042302 (2002))"
+    },
+    "nlo": {
+     "val": true,
+     "grade": "import",
+     "detail": "unsteerable for p <= 1/2 (Wiseman, Jones, Doherty, Phys. Rev. Lett. 98, 140402 (2007)); local model for all measurements for p <= 5/12 (Barrett, Phys. Rev. A 65, 042302 (2002)); CHSH: M = 0.3200 <= 1"
+    }
+   }
+  },
+  {
+   "id": "w60",
+   "label": "Werner p = 0.6",
+   "node": "QRT:d-werner",
+   "round": 0,
+   "note": "",
+   "cells": {
+    "pur": {
+     "val": false,
+     "grade": "computed",
+     "detail": "|rho - I/4| = 0.52"
+    },
+    "ath": {
+     "val": false,
+     "grade": "computed",
+     "detail": "|rho - gamma| = 0.972"
+    },
+    "asy": {
+     "val": false,
+     "grade": "computed",
+     "detail": "|[rho, H]| = 0.212"
+    },
+    "coh": {
+     "val": false,
+     "grade": "computed",
+     "detail": "off-diagonal norm in the eigenbasis of H = 0.424"
+    },
+    "ima": {
+     "val": true,
+     "grade": "computed",
+     "detail": "max |Im rho| in the eigenbasis of H = 0"
+    },
+    "mag": {
+     "val": true,
+     "grade": "computed",
+     "detail": "robustness of magic = 1.000000"
+    },
+    "dis": {
+     "val": false,
+     "grade": "computed",
+     "detail": "least off-diagonal weight over local product bases = 0.18 (numerical minimisation)"
+    },
+    "ent": {
+     "val": false,
+     "grade": "computed",
+     "detail": "least eigenvalue of the partial transpose = -0.2000 (PPT is exact for two qubits)"
+    },
+    "ste": {
+     "val": false,
+     "grade": "import",
+     "detail": "steerable for p > 1/2 (Wiseman, Jones, Doherty 2007); local model for projective measurements iff p <= 1/K_G(3) (Acin, Gisin, Toner, arXiv:quant-ph/0606138), a range that contains p = 0.6 (local for p <= 0.6875 as quoted in arXiv:2309.09960); locality under general measurements is not established at this p"
+    },
+    "nlo": {
+     "val": true,
+     "grade": "import",
+     "detail": "steerable for p > 1/2 (Wiseman, Jones, Doherty 2007); local model for projective measurements iff p <= 1/K_G(3) (Acin, Gisin, Toner, arXiv:quant-ph/0606138), a range that contains p = 0.6 (local for p <= 0.6875 as quoted in arXiv:2309.09960); locality under general measurements is not established at this p; CHSH: M = 0.7200 <= 1"
+    }
+   }
+  },
+  {
+   "id": "w90",
+   "label": "Werner p = 0.9",
+   "node": null,
+   "round": 0,
+   "note": "",
+   "cells": {
+    "pur": {
+     "val": false,
+     "grade": "computed",
+     "detail": "|rho - I/4| = 0.779"
+    },
+    "ath": {
+     "val": false,
+     "grade": "computed",
+     "detail": "|rho - gamma| = 1.18"
+    },
+    "asy": {
+     "val": false,
+     "grade": "computed",
+     "detail": "|[rho, H]| = 0.318"
+    },
+    "coh": {
+     "val": false,
+     "grade": "computed",
+     "detail": "off-diagonal norm in the eigenbasis of H = 0.636"
+    },
+    "ima": {
+     "val": true,
+     "grade": "computed",
+     "detail": "max |Im rho| in the eigenbasis of H = 0"
+    },
+    "mag": {
+     "val": true,
+     "grade": "computed",
+     "detail": "robustness of magic = 1.000000"
+    },
+    "dis": {
+     "val": false,
+     "grade": "computed",
+     "detail": "least off-diagonal weight over local product bases = 0.405 (numerical minimisation)"
+    },
+    "ent": {
+     "val": false,
+     "grade": "computed",
+     "detail": "least eigenvalue of the partial transpose = -0.4250 (PPT is exact for two qubits)"
+    },
+    "nlo": {
+     "val": false,
+     "grade": "computed",
+     "detail": "CHSH: M = 1.6200 > 1 (Horodecki criterion), maximal value 2.5456"
+    },
+    "ste": {
+     "val": false,
+     "grade": "derived",
+     "detail": "not Bell-local, hence steerable (QRT:SS17)"
+    }
+   }
+  },
+  {
+   "id": "cc",
+   "label": "(|00><00| + |11><11|)/2",
+   "node": null,
+   "round": 0,
+   "note": "",
+   "cells": {
+    "pur": {
+     "val": false,
+     "grade": "computed",
+     "detail": "|rho - I/4| = 0.5"
+    },
+    "ath": {
+     "val": false,
+     "grade": "computed",
+     "detail": "|rho - gamma| = 0.612"
+    },
+    "asy": {
+     "val": true,
+     "grade": "computed",
+     "detail": "|[rho, H]| = 0"
+    },
+    "coh": {
+     "val": true,
+     "grade": "computed",
+     "detail": "off-diagonal norm in the eigenbasis of H = 0"
+    },
+    "ima": {
+     "val": true,
+     "grade": "computed",
+     "detail": "max |Im rho| in the eigenbasis of H = 0"
+    },
+    "mag": {
+     "val": true,
+     "grade": "computed",
+     "detail": "robustness of magic = 1.000000"
+    },
+    "dis": {
+     "val": true,
+     "grade": "computed",
+     "detail": "least off-diagonal weight over local product bases = 0 (numerical minimisation)"
+    },
+    "ent": {
+     "val": true,
+     "grade": "computed",
+     "detail": "least eigenvalue of the partial transpose = 0.0000 (PPT is exact for two qubits)"
+    },
+    "ste": {
+     "val": true,
+     "grade": "derived",
+     "detail": "separable, hence unsteerable (QRT:SS16)"
+    },
+    "nlo": {
+     "val": true,
+     "grade": "derived",
+     "detail": "unsteerable, hence Bell-local (QRT:SS17)"
+    }
+   }
+  },
+  {
+   "id": "ccdis",
+   "label": "(|00><00| + |++><++|)/2",
+   "node": "QRT:d-ccdis",
+   "round": 0,
+   "note": "example of GPT:R4b",
+   "cells": {
+    "pur": {
+     "val": false,
+     "grade": "computed",
+     "detail": "|rho - I/4| = 0.612"
+    },
+    "ath": {
+     "val": false,
+     "grade": "computed",
+     "detail": "|rho - gamma| = 1.04"
+    },
+    "asy": {
+     "val": false,
+     "grade": "computed",
+     "detail": "|[rho, H]| = 0.637"
+    },
+    "coh": {
+     "val": false,
+     "grade": "computed",
+     "detail": "off-diagonal norm in the eigenbasis of H = 0.433"
+    },
+    "ima": {
+     "val": true,
+     "grade": "computed",
+     "detail": "max |Im rho| in the eigenbasis of H = 0"
+    },
+    "mag": {
+     "val": true,
+     "grade": "computed",
+     "detail": "robustness of magic = 1.000000"
+    },
+    "dis": {
+     "val": false,
+     "grade": "computed",
+     "detail": "least off-diagonal weight over local product bases = 0.0625 (numerical minimisation)"
+    },
+    "ent": {
+     "val": true,
+     "grade": "computed",
+     "detail": "least eigenvalue of the partial transpose = -0.0000 (PPT is exact for two qubits)"
+    },
+    "ste": {
+     "val": true,
+     "grade": "derived",
+     "detail": "separable, hence unsteerable (QRT:SS16)"
+    },
+    "nlo": {
+     "val": true,
+     "grade": "derived",
+     "detail": "unsteerable, hence Bell-local (QRT:SS17)"
+    }
+   }
+  },
+  {
+   "id": "pi0",
+   "label": "|+i>|0>",
+   "node": null,
+   "round": 1,
+   "note": "stabilizer state with an imaginary density matrix",
+   "cells": {
+    "pur": {
+     "val": false,
+     "grade": "computed",
+     "detail": "|rho - I/4| = 0.866"
+    },
+    "ath": {
+     "val": false,
+     "grade": "computed",
+     "detail": "|rho - gamma| = 1.29"
+    },
+    "asy": {
+     "val": false,
+     "grade": "computed",
+     "detail": "|[rho, H]| = 0.707"
+    },
+    "coh": {
+     "val": false,
+     "grade": "computed",
+     "detail": "off-diagonal norm in the eigenbasis of H = 0.707"
+    },
+    "ima": {
+     "val": false,
+     "grade": "computed",
+     "detail": "max |Im rho| in the eigenbasis of H = 0.5"
+    },
+    "mag": {
+     "val": true,
+     "grade": "computed",
+     "detail": "robustness of magic = 1.000000"
+    },
+    "dis": {
+     "val": true,
+     "grade": "computed",
+     "detail": "least off-diagonal weight over local product bases = 8.32e-17 (numerical minimisation)"
+    },
+    "ent": {
+     "val": true,
+     "grade": "computed",
+     "detail": "least eigenvalue of the partial transpose = 0.0000 (PPT is exact for two qubits)"
+    },
+    "ste": {
+     "val": true,
+     "grade": "derived",
+     "detail": "separable, hence unsteerable (QRT:SS16)"
+    },
+    "nlo": {
+     "val": true,
+     "grade": "derived",
+     "detail": "unsteerable, hence Bell-local (QRT:SS17)"
+    }
+   }
+  },
+  {
+   "id": "H0",
+   "label": "|H>|0>",
+   "node": null,
+   "round": 1,
+   "note": "real state outside the stabilizer polytope",
+   "cells": {
+    "pur": {
+     "val": false,
+     "grade": "computed",
+     "detail": "|rho - I/4| = 0.866"
+    },
+    "ath": {
+     "val": false,
+     "grade": "computed",
+     "detail": "|rho - gamma| = 1.3"
+    },
+    "asy": {
+     "val": false,
+     "grade": "computed",
+     "detail": "|[rho, H]| = 0.5"
+    },
+    "coh": {
+     "val": false,
+     "grade": "computed",
+     "detail": "off-diagonal norm in the eigenbasis of H = 0.5"
+    },
+    "ima": {
+     "val": true,
+     "grade": "computed",
+     "detail": "max |Im rho| in the eigenbasis of H = 0"
+    },
+    "mag": {
+     "val": false,
+     "grade": "computed",
+     "detail": "robustness of magic = 1.414214"
+    },
+    "dis": {
+     "val": true,
+     "grade": "computed",
+     "detail": "least off-diagonal weight over local product bases = 6.94e-17 (numerical minimisation)"
+    },
+    "ent": {
+     "val": true,
+     "grade": "computed",
+     "detail": "least eigenvalue of the partial transpose = -0.0000 (PPT is exact for two qubits)"
+    },
+    "ste": {
+     "val": true,
+     "grade": "derived",
+     "detail": "separable, hence unsteerable (QRT:SS16)"
+    },
+    "nlo": {
+     "val": true,
+     "grade": "derived",
+     "detail": "unsteerable, hence Bell-local (QRT:SS17)"
+    }
+   }
+  }
+ ],
+ "n_stabilizer_states": 60,
+ "rounds": [
+  {
+   "round": 0,
+   "n_objects": 13,
+   "levels": [
+    {
+     "level": "QRT",
+     "counts": {
+      "refuted": 56,
+      "recorded": 14,
+      "candidate": 8,
+      "transitive": 12
+     },
+     "contradictions": [],
+     "candidates": [
+      {
+       "a": "pur",
+       "b": "dis",
+       "support": 1
+      },
+      {
+       "a": "ath",
+       "b": "dis",
+       "support": 2
+      },
+      {
+       "a": "asy",
+       "b": "dis",
+       "support": 5
+      },
+      {
+       "a": "coh",
+       "b": "dis",
+       "support": 5
+      },
+      {
+       "a": "mag",
+       "b": "ima",
+       "support": 11
+      },
+      {
+       "a": "dis",
+       "b": "ent",
+       "support": 7
+      },
+      {
+       "a": "dis",
+       "b": "ste",
+       "support": 7
+      },
+      {
+       "a": "dis",
+       "b": "nlo",
+       "support": 7
+      }
+     ],
+     "implications": [
+      {
+       "a": "pur",
+       "b": "ath",
+       "support": 1,
+       "refuted_by": [
+        "I4"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "pur",
+       "b": "asy",
+       "support": 1,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS2"
+      },
+      {
+       "a": "pur",
+       "b": "coh",
+       "support": 1,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS2"
+      },
+      {
+       "a": "pur",
+       "b": "ima",
+       "support": 1,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS2"
+      },
+      {
+       "a": "pur",
+       "b": "mag",
+       "support": 1,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS2"
+      },
+      {
+       "a": "pur",
+       "b": "dis",
+       "support": 1,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "candidate",
+       "source": null
+      },
+      {
+       "a": "pur",
+       "b": "ent",
+       "support": 1,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS2"
+      },
+      {
+       "a": "pur",
+       "b": "ste",
+       "support": 1,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "pur",
+       "b": "nlo",
+       "support": 1,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "ath",
+       "b": "pur",
+       "support": 2,
+       "refuted_by": [
+        "gibbs",
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ath",
+       "b": "asy",
+       "support": 2,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS3b"
+      },
+      {
+       "a": "ath",
+       "b": "coh",
+       "support": 2,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS12"
+      },
+      {
+       "a": "ath",
+       "b": "ima",
+       "support": 2,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS3b"
+      },
+      {
+       "a": "ath",
+       "b": "mag",
+       "support": 2,
+       "refuted_by": [
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ath",
+       "b": "dis",
+       "support": 2,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "candidate",
+       "source": null
+      },
+      {
+       "a": "ath",
+       "b": "ent",
+       "support": 2,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "ath",
+       "b": "ste",
+       "support": 2,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "ath",
+       "b": "nlo",
+       "support": 2,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "asy",
+       "b": "pur",
+       "support": 5,
+       "refuted_by": [
+        "00",
+        "gibbs",
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "asy",
+       "b": "ath",
+       "support": 5,
+       "refuted_by": [
+        "I4",
+        "00",
+        "cc"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "asy",
+       "b": "coh",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS18"
+      },
+      {
+       "a": "asy",
+       "b": "ima",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "asy",
+       "b": "mag",
+       "support": 5,
+       "refuted_by": [
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "asy",
+       "b": "dis",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "candidate",
+       "source": null
+      },
+      {
+       "a": "asy",
+       "b": "ent",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "asy",
+       "b": "ste",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "asy",
+       "b": "nlo",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "coh",
+       "b": "pur",
+       "support": 5,
+       "refuted_by": [
+        "00",
+        "gibbs",
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "coh",
+       "b": "ath",
+       "support": 5,
+       "refuted_by": [
+        "I4",
+        "00",
+        "cc"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "coh",
+       "b": "asy",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS18"
+      },
+      {
+       "a": "coh",
+       "b": "ima",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS14"
+      },
+      {
+       "a": "coh",
+       "b": "mag",
+       "support": 5,
+       "refuted_by": [
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "coh",
+       "b": "dis",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "candidate",
+       "source": null
+      },
+      {
+       "a": "coh",
+       "b": "ent",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS1"
+      },
+      {
+       "a": "coh",
+       "b": "ste",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "coh",
+       "b": "nlo",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "pur",
+       "support": 12,
+       "refuted_by": [
+        "00",
+        "p0",
+        "gibbs"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "ath",
+       "support": 12,
+       "refuted_by": [
+        "I4",
+        "00",
+        "p0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "asy",
+       "support": 12,
+       "refuted_by": [
+        "p0",
+        "bell",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "coh",
+       "support": 12,
+       "refuted_by": [
+        "p0",
+        "bell",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "mag",
+       "support": 12,
+       "refuted_by": [
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "dis",
+       "support": 12,
+       "refuted_by": [
+        "bell",
+        "w20",
+        "w40"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "ent",
+       "support": 12,
+       "refuted_by": [
+        "bell",
+        "w40",
+        "w60"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "ste",
+       "support": 12,
+       "refuted_by": [
+        "bell",
+        "w60",
+        "w90"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "nlo",
+       "support": 12,
+       "refuted_by": [
+        "bell",
+        "w90"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "pur",
+       "support": 11,
+       "refuted_by": [
+        "00",
+        "p0",
+        "gibbs"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "ath",
+       "support": 11,
+       "refuted_by": [
+        "I4",
+        "00",
+        "p0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "asy",
+       "support": 11,
+       "refuted_by": [
+        "p0",
+        "bell",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "coh",
+       "support": 11,
+       "refuted_by": [
+        "p0",
+        "bell",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "ima",
+       "support": 11,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "candidate",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "dis",
+       "support": 11,
+       "refuted_by": [
+        "bell",
+        "w20",
+        "w40"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "ent",
+       "support": 11,
+       "refuted_by": [
+        "bell",
+        "w40",
+        "w60"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "ste",
+       "support": 11,
+       "refuted_by": [
+        "bell",
+        "w60",
+        "w90"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "nlo",
+       "support": 11,
+       "refuted_by": [
+        "bell",
+        "w90"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "dis",
+       "b": "pur",
+       "support": 7,
+       "refuted_by": [
+        "00",
+        "p0",
+        "T0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "dis",
+       "b": "ath",
+       "support": 7,
+       "refuted_by": [
+        "I4",
+        "00",
+        "p0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "dis",
+       "b": "asy",
+       "support": 7,
+       "refuted_by": [
+        "p0",
+        "T0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "dis",
+       "b": "coh",
+       "support": 7,
+       "refuted_by": [
+        "p0",
+        "T0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "dis",
+       "b": "ima",
+       "support": 7,
+       "refuted_by": [
+        "T0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "dis",
+       "b": "mag",
+       "support": 7,
+       "refuted_by": [
+        "T0",
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "dis",
+       "b": "ent",
+       "support": 7,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "candidate",
+       "source": null
+      },
+      {
+       "a": "dis",
+       "b": "ste",
+       "support": 7,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "candidate",
+       "source": null
+      },
+      {
+       "a": "dis",
+       "b": "nlo",
+       "support": 7,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "candidate",
+       "source": null
+      },
+      {
+       "a": "ent",
+       "b": "pur",
+       "support": 9,
+       "refuted_by": [
+        "00",
+        "p0",
+        "T0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ent",
+       "b": "ath",
+       "support": 9,
+       "refuted_by": [
+        "I4",
+        "00",
+        "p0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ent",
+       "b": "asy",
+       "support": 9,
+       "refuted_by": [
+        "p0",
+        "T0",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ent",
+       "b": "coh",
+       "support": 9,
+       "refuted_by": [
+        "p0",
+        "T0",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ent",
+       "b": "ima",
+       "support": 9,
+       "refuted_by": [
+        "T0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ent",
+       "b": "mag",
+       "support": 9,
+       "refuted_by": [
+        "T0",
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ent",
+       "b": "dis",
+       "support": 9,
+       "refuted_by": [
+        "w20",
+        "ccdis"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ent",
+       "b": "ste",
+       "support": 9,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS16"
+      },
+      {
+       "a": "ent",
+       "b": "nlo",
+       "support": 9,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "pur",
+       "support": 10,
+       "refuted_by": [
+        "00",
+        "p0",
+        "T0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "ath",
+       "support": 10,
+       "refuted_by": [
+        "I4",
+        "00",
+        "p0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "asy",
+       "support": 10,
+       "refuted_by": [
+        "p0",
+        "T0",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "coh",
+       "support": 10,
+       "refuted_by": [
+        "p0",
+        "T0",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "ima",
+       "support": 10,
+       "refuted_by": [
+        "T0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "mag",
+       "support": 10,
+       "refuted_by": [
+        "T0",
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "dis",
+       "support": 10,
+       "refuted_by": [
+        "w20",
+        "w40",
+        "ccdis"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "ent",
+       "support": 10,
+       "refuted_by": [
+        "w40"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": true,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "nlo",
+       "support": 10,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS17"
+      },
+      {
+       "a": "nlo",
+       "b": "pur",
+       "support": 11,
+       "refuted_by": [
+        "00",
+        "p0",
+        "T0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "nlo",
+       "b": "ath",
+       "support": 11,
+       "refuted_by": [
+        "I4",
+        "00",
+        "p0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "nlo",
+       "b": "asy",
+       "support": 11,
+       "refuted_by": [
+        "p0",
+        "T0",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "nlo",
+       "b": "coh",
+       "support": 11,
+       "refuted_by": [
+        "p0",
+        "T0",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "nlo",
+       "b": "ima",
+       "support": 11,
+       "refuted_by": [
+        "T0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "nlo",
+       "b": "mag",
+       "support": 11,
+       "refuted_by": [
+        "T0",
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "nlo",
+       "b": "dis",
+       "support": 11,
+       "refuted_by": [
+        "w20",
+        "w40",
+        "w60"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "nlo",
+       "b": "ent",
+       "support": 11,
+       "refuted_by": [
+        "w40",
+        "w60"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": true,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "nlo",
+       "b": "ste",
+       "support": 11,
+       "refuted_by": [
+        "w60"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": true,
+       "kind": "refuted",
+       "source": null
+      }
+     ]
+    },
+    {
+     "level": "QRT+GPT",
+     "counts": {
+      "refuted": 56,
+      "recorded": 15,
+      "candidate": 5,
+      "transitive": 14
+     },
+     "contradictions": [],
+     "candidates": [
+      {
+       "a": "pur",
+       "b": "dis",
+       "support": 1
+      },
+      {
+       "a": "ath",
+       "b": "dis",
+       "support": 2
+      },
+      {
+       "a": "asy",
+       "b": "dis",
+       "support": 5
+      },
+      {
+       "a": "coh",
+       "b": "dis",
+       "support": 5
+      },
+      {
+       "a": "mag",
+       "b": "ima",
+       "support": 11
+      }
+     ],
+     "implications": [
+      {
+       "a": "pur",
+       "b": "ath",
+       "support": 1,
+       "refuted_by": [
+        "I4"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "pur",
+       "b": "asy",
+       "support": 1,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS2"
+      },
+      {
+       "a": "pur",
+       "b": "coh",
+       "support": 1,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS2"
+      },
+      {
+       "a": "pur",
+       "b": "ima",
+       "support": 1,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS2"
+      },
+      {
+       "a": "pur",
+       "b": "mag",
+       "support": 1,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS2"
+      },
+      {
+       "a": "pur",
+       "b": "dis",
+       "support": 1,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "candidate",
+       "source": null
+      },
+      {
+       "a": "pur",
+       "b": "ent",
+       "support": 1,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS2"
+      },
+      {
+       "a": "pur",
+       "b": "ste",
+       "support": 1,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "pur",
+       "b": "nlo",
+       "support": 1,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "ath",
+       "b": "pur",
+       "support": 2,
+       "refuted_by": [
+        "gibbs",
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ath",
+       "b": "asy",
+       "support": 2,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS3b"
+      },
+      {
+       "a": "ath",
+       "b": "coh",
+       "support": 2,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS12"
+      },
+      {
+       "a": "ath",
+       "b": "ima",
+       "support": 2,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS3b"
+      },
+      {
+       "a": "ath",
+       "b": "mag",
+       "support": 2,
+       "refuted_by": [
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ath",
+       "b": "dis",
+       "support": 2,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "candidate",
+       "source": null
+      },
+      {
+       "a": "ath",
+       "b": "ent",
+       "support": 2,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "ath",
+       "b": "ste",
+       "support": 2,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "ath",
+       "b": "nlo",
+       "support": 2,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "asy",
+       "b": "pur",
+       "support": 5,
+       "refuted_by": [
+        "00",
+        "gibbs",
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "asy",
+       "b": "ath",
+       "support": 5,
+       "refuted_by": [
+        "I4",
+        "00",
+        "cc"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "asy",
+       "b": "coh",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS18"
+      },
+      {
+       "a": "asy",
+       "b": "ima",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "asy",
+       "b": "mag",
+       "support": 5,
+       "refuted_by": [
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "asy",
+       "b": "dis",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "candidate",
+       "source": null
+      },
+      {
+       "a": "asy",
+       "b": "ent",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "asy",
+       "b": "ste",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "asy",
+       "b": "nlo",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "coh",
+       "b": "pur",
+       "support": 5,
+       "refuted_by": [
+        "00",
+        "gibbs",
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "coh",
+       "b": "ath",
+       "support": 5,
+       "refuted_by": [
+        "I4",
+        "00",
+        "cc"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "coh",
+       "b": "asy",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS18"
+      },
+      {
+       "a": "coh",
+       "b": "ima",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS14"
+      },
+      {
+       "a": "coh",
+       "b": "mag",
+       "support": 5,
+       "refuted_by": [
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "coh",
+       "b": "dis",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "candidate",
+       "source": null
+      },
+      {
+       "a": "coh",
+       "b": "ent",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS1"
+      },
+      {
+       "a": "coh",
+       "b": "ste",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "coh",
+       "b": "nlo",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "pur",
+       "support": 12,
+       "refuted_by": [
+        "00",
+        "p0",
+        "gibbs"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "ath",
+       "support": 12,
+       "refuted_by": [
+        "I4",
+        "00",
+        "p0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "asy",
+       "support": 12,
+       "refuted_by": [
+        "p0",
+        "bell",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "coh",
+       "support": 12,
+       "refuted_by": [
+        "p0",
+        "bell",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "mag",
+       "support": 12,
+       "refuted_by": [
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "dis",
+       "support": 12,
+       "refuted_by": [
+        "bell",
+        "w20",
+        "w40"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "ent",
+       "support": 12,
+       "refuted_by": [
+        "bell",
+        "w40",
+        "w60"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "ste",
+       "support": 12,
+       "refuted_by": [
+        "bell",
+        "w60",
+        "w90"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "nlo",
+       "support": 12,
+       "refuted_by": [
+        "bell",
+        "w90"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "pur",
+       "support": 11,
+       "refuted_by": [
+        "00",
+        "p0",
+        "gibbs"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "ath",
+       "support": 11,
+       "refuted_by": [
+        "I4",
+        "00",
+        "p0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "asy",
+       "support": 11,
+       "refuted_by": [
+        "p0",
+        "bell",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "coh",
+       "support": 11,
+       "refuted_by": [
+        "p0",
+        "bell",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "ima",
+       "support": 11,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "candidate",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "dis",
+       "support": 11,
+       "refuted_by": [
+        "bell",
+        "w20",
+        "w40"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "ent",
+       "support": 11,
+       "refuted_by": [
+        "bell",
+        "w40",
+        "w60"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "ste",
+       "support": 11,
+       "refuted_by": [
+        "bell",
+        "w60",
+        "w90"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "nlo",
+       "support": 11,
+       "refuted_by": [
+        "bell",
+        "w90"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "dis",
+       "b": "pur",
+       "support": 7,
+       "refuted_by": [
+        "00",
+        "p0",
+        "T0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "dis",
+       "b": "ath",
+       "support": 7,
+       "refuted_by": [
+        "I4",
+        "00",
+        "p0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "dis",
+       "b": "asy",
+       "support": 7,
+       "refuted_by": [
+        "p0",
+        "T0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "dis",
+       "b": "coh",
+       "support": 7,
+       "refuted_by": [
+        "p0",
+        "T0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "dis",
+       "b": "ima",
+       "support": 7,
+       "refuted_by": [
+        "T0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "dis",
+       "b": "mag",
+       "support": 7,
+       "refuted_by": [
+        "T0",
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "dis",
+       "b": "ent",
+       "support": 7,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "GPT:S7 (zero-discord states are separable), through the glue of the two networks"
+      },
+      {
+       "a": "dis",
+       "b": "ste",
+       "support": 7,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "dis",
+       "b": "nlo",
+       "support": 7,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "ent",
+       "b": "pur",
+       "support": 9,
+       "refuted_by": [
+        "00",
+        "p0",
+        "T0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ent",
+       "b": "ath",
+       "support": 9,
+       "refuted_by": [
+        "I4",
+        "00",
+        "p0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ent",
+       "b": "asy",
+       "support": 9,
+       "refuted_by": [
+        "p0",
+        "T0",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ent",
+       "b": "coh",
+       "support": 9,
+       "refuted_by": [
+        "p0",
+        "T0",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ent",
+       "b": "ima",
+       "support": 9,
+       "refuted_by": [
+        "T0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ent",
+       "b": "mag",
+       "support": 9,
+       "refuted_by": [
+        "T0",
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ent",
+       "b": "dis",
+       "support": 9,
+       "refuted_by": [
+        "w20",
+        "ccdis"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ent",
+       "b": "ste",
+       "support": 9,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS16"
+      },
+      {
+       "a": "ent",
+       "b": "nlo",
+       "support": 9,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "pur",
+       "support": 10,
+       "refuted_by": [
+        "00",
+        "p0",
+        "T0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "ath",
+       "support": 10,
+       "refuted_by": [
+        "I4",
+        "00",
+        "p0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "asy",
+       "support": 10,
+       "refuted_by": [
+        "p0",
+        "T0",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "coh",
+       "support": 10,
+       "refuted_by": [
+        "p0",
+        "T0",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "ima",
+       "support": 10,
+       "refuted_by": [
+        "T0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "mag",
+       "support": 10,
+       "refuted_by": [
+        "T0",
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "dis",
+       "support": 10,
+       "refuted_by": [
+        "w20",
+        "w40",
+        "ccdis"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "ent",
+       "support": 10,
+       "refuted_by": [
+        "w40"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": true,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "nlo",
+       "support": 10,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS17"
+      },
+      {
+       "a": "nlo",
+       "b": "pur",
+       "support": 11,
+       "refuted_by": [
+        "00",
+        "p0",
+        "T0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "nlo",
+       "b": "ath",
+       "support": 11,
+       "refuted_by": [
+        "I4",
+        "00",
+        "p0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "nlo",
+       "b": "asy",
+       "support": 11,
+       "refuted_by": [
+        "p0",
+        "T0",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "nlo",
+       "b": "coh",
+       "support": 11,
+       "refuted_by": [
+        "p0",
+        "T0",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "nlo",
+       "b": "ima",
+       "support": 11,
+       "refuted_by": [
+        "T0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "nlo",
+       "b": "mag",
+       "support": 11,
+       "refuted_by": [
+        "T0",
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "nlo",
+       "b": "dis",
+       "support": 11,
+       "refuted_by": [
+        "w20",
+        "w40",
+        "w60"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "nlo",
+       "b": "ent",
+       "support": 11,
+       "refuted_by": [
+        "w40",
+        "w60"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": true,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "nlo",
+       "b": "ste",
+       "support": 11,
+       "refuted_by": [
+        "w60"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": true,
+       "kind": "refuted",
+       "source": null
+      }
+     ]
+    },
+    {
+     "level": "QRT+GPT+R1",
+     "counts": {
+      "refuted": 56,
+      "recorded": 16,
+      "transitive": 17,
+      "candidate": 1
+     },
+     "contradictions": [],
+     "candidates": [
+      {
+       "a": "mag",
+       "b": "ima",
+       "support": 11
+      }
+     ],
+     "implications": [
+      {
+       "a": "pur",
+       "b": "ath",
+       "support": 1,
+       "refuted_by": [
+        "I4"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "pur",
+       "b": "asy",
+       "support": 1,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS2"
+      },
+      {
+       "a": "pur",
+       "b": "coh",
+       "support": 1,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS2"
+      },
+      {
+       "a": "pur",
+       "b": "ima",
+       "support": 1,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS2"
+      },
+      {
+       "a": "pur",
+       "b": "mag",
+       "support": 1,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS2"
+      },
+      {
+       "a": "pur",
+       "b": "dis",
+       "support": 1,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "pur",
+       "b": "ent",
+       "support": 1,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS2"
+      },
+      {
+       "a": "pur",
+       "b": "ste",
+       "support": 1,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "pur",
+       "b": "nlo",
+       "support": 1,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "ath",
+       "b": "pur",
+       "support": 2,
+       "refuted_by": [
+        "gibbs",
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ath",
+       "b": "asy",
+       "support": 2,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS3b"
+      },
+      {
+       "a": "ath",
+       "b": "coh",
+       "support": 2,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS12"
+      },
+      {
+       "a": "ath",
+       "b": "ima",
+       "support": 2,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS3b"
+      },
+      {
+       "a": "ath",
+       "b": "mag",
+       "support": 2,
+       "refuted_by": [
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ath",
+       "b": "dis",
+       "support": 2,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "ath",
+       "b": "ent",
+       "support": 2,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "ath",
+       "b": "ste",
+       "support": 2,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "ath",
+       "b": "nlo",
+       "support": 2,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "asy",
+       "b": "pur",
+       "support": 5,
+       "refuted_by": [
+        "00",
+        "gibbs",
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "asy",
+       "b": "ath",
+       "support": 5,
+       "refuted_by": [
+        "I4",
+        "00",
+        "cc"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "asy",
+       "b": "coh",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS18"
+      },
+      {
+       "a": "asy",
+       "b": "ima",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "asy",
+       "b": "mag",
+       "support": 5,
+       "refuted_by": [
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "asy",
+       "b": "dis",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "GPT:R1 (derived in the project: nondegenerate noninteracting H, symmetric states are classical-classical)"
+      },
+      {
+       "a": "asy",
+       "b": "ent",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "asy",
+       "b": "ste",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "asy",
+       "b": "nlo",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "coh",
+       "b": "pur",
+       "support": 5,
+       "refuted_by": [
+        "00",
+        "gibbs",
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "coh",
+       "b": "ath",
+       "support": 5,
+       "refuted_by": [
+        "I4",
+        "00",
+        "cc"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "coh",
+       "b": "asy",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS18"
+      },
+      {
+       "a": "coh",
+       "b": "ima",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS14"
+      },
+      {
+       "a": "coh",
+       "b": "mag",
+       "support": 5,
+       "refuted_by": [
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "coh",
+       "b": "dis",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "coh",
+       "b": "ent",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS1"
+      },
+      {
+       "a": "coh",
+       "b": "ste",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "coh",
+       "b": "nlo",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "pur",
+       "support": 12,
+       "refuted_by": [
+        "00",
+        "p0",
+        "gibbs"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "ath",
+       "support": 12,
+       "refuted_by": [
+        "I4",
+        "00",
+        "p0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "asy",
+       "support": 12,
+       "refuted_by": [
+        "p0",
+        "bell",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "coh",
+       "support": 12,
+       "refuted_by": [
+        "p0",
+        "bell",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "mag",
+       "support": 12,
+       "refuted_by": [
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "dis",
+       "support": 12,
+       "refuted_by": [
+        "bell",
+        "w20",
+        "w40"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "ent",
+       "support": 12,
+       "refuted_by": [
+        "bell",
+        "w40",
+        "w60"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "ste",
+       "support": 12,
+       "refuted_by": [
+        "bell",
+        "w60",
+        "w90"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "nlo",
+       "support": 12,
+       "refuted_by": [
+        "bell",
+        "w90"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "pur",
+       "support": 11,
+       "refuted_by": [
+        "00",
+        "p0",
+        "gibbs"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "ath",
+       "support": 11,
+       "refuted_by": [
+        "I4",
+        "00",
+        "p0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "asy",
+       "support": 11,
+       "refuted_by": [
+        "p0",
+        "bell",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "coh",
+       "support": 11,
+       "refuted_by": [
+        "p0",
+        "bell",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "ima",
+       "support": 11,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "candidate",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "dis",
+       "support": 11,
+       "refuted_by": [
+        "bell",
+        "w20",
+        "w40"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "ent",
+       "support": 11,
+       "refuted_by": [
+        "bell",
+        "w40",
+        "w60"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "ste",
+       "support": 11,
+       "refuted_by": [
+        "bell",
+        "w60",
+        "w90"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "nlo",
+       "support": 11,
+       "refuted_by": [
+        "bell",
+        "w90"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "dis",
+       "b": "pur",
+       "support": 7,
+       "refuted_by": [
+        "00",
+        "p0",
+        "T0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "dis",
+       "b": "ath",
+       "support": 7,
+       "refuted_by": [
+        "I4",
+        "00",
+        "p0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "dis",
+       "b": "asy",
+       "support": 7,
+       "refuted_by": [
+        "p0",
+        "T0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "dis",
+       "b": "coh",
+       "support": 7,
+       "refuted_by": [
+        "p0",
+        "T0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "dis",
+       "b": "ima",
+       "support": 7,
+       "refuted_by": [
+        "T0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "dis",
+       "b": "mag",
+       "support": 7,
+       "refuted_by": [
+        "T0",
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "dis",
+       "b": "ent",
+       "support": 7,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "GPT:S7 (zero-discord states are separable), through the glue of the two networks"
+      },
+      {
+       "a": "dis",
+       "b": "ste",
+       "support": 7,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "dis",
+       "b": "nlo",
+       "support": 7,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "ent",
+       "b": "pur",
+       "support": 9,
+       "refuted_by": [
+        "00",
+        "p0",
+        "T0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ent",
+       "b": "ath",
+       "support": 9,
+       "refuted_by": [
+        "I4",
+        "00",
+        "p0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ent",
+       "b": "asy",
+       "support": 9,
+       "refuted_by": [
+        "p0",
+        "T0",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ent",
+       "b": "coh",
+       "support": 9,
+       "refuted_by": [
+        "p0",
+        "T0",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ent",
+       "b": "ima",
+       "support": 9,
+       "refuted_by": [
+        "T0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ent",
+       "b": "mag",
+       "support": 9,
+       "refuted_by": [
+        "T0",
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ent",
+       "b": "dis",
+       "support": 9,
+       "refuted_by": [
+        "w20",
+        "ccdis"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ent",
+       "b": "ste",
+       "support": 9,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS16"
+      },
+      {
+       "a": "ent",
+       "b": "nlo",
+       "support": 9,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "pur",
+       "support": 10,
+       "refuted_by": [
+        "00",
+        "p0",
+        "T0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "ath",
+       "support": 10,
+       "refuted_by": [
+        "I4",
+        "00",
+        "p0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "asy",
+       "support": 10,
+       "refuted_by": [
+        "p0",
+        "T0",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "coh",
+       "support": 10,
+       "refuted_by": [
+        "p0",
+        "T0",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "ima",
+       "support": 10,
+       "refuted_by": [
+        "T0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "mag",
+       "support": 10,
+       "refuted_by": [
+        "T0",
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "dis",
+       "support": 10,
+       "refuted_by": [
+        "w20",
+        "w40",
+        "ccdis"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "ent",
+       "support": 10,
+       "refuted_by": [
+        "w40"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": true,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "nlo",
+       "support": 10,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS17"
+      },
+      {
+       "a": "nlo",
+       "b": "pur",
+       "support": 11,
+       "refuted_by": [
+        "00",
+        "p0",
+        "T0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "nlo",
+       "b": "ath",
+       "support": 11,
+       "refuted_by": [
+        "I4",
+        "00",
+        "p0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "nlo",
+       "b": "asy",
+       "support": 11,
+       "refuted_by": [
+        "p0",
+        "T0",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "nlo",
+       "b": "coh",
+       "support": 11,
+       "refuted_by": [
+        "p0",
+        "T0",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "nlo",
+       "b": "ima",
+       "support": 11,
+       "refuted_by": [
+        "T0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "nlo",
+       "b": "mag",
+       "support": 11,
+       "refuted_by": [
+        "T0",
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "nlo",
+       "b": "dis",
+       "support": 11,
+       "refuted_by": [
+        "w20",
+        "w40",
+        "w60"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "nlo",
+       "b": "ent",
+       "support": 11,
+       "refuted_by": [
+        "w40",
+        "w60"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": true,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "nlo",
+       "b": "ste",
+       "support": 11,
+       "refuted_by": [
+        "w60"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": true,
+       "kind": "refuted",
+       "source": null
+      }
+     ]
+    }
+   ],
+   "strict": [
+    {
+     "a": "ent",
+     "b": "coh",
+     "source": "QRT:SS1 (strict)",
+     "witnessed": true,
+     "by": [
+      "p0",
+      "T0",
+      "w20"
+     ],
+     "only_by_import": false
+    },
+    {
+     "a": "coh",
+     "b": "ath",
+     "source": "QRT:SS12 (the Gibbs state is one incoherent state)",
+     "witnessed": true,
+     "by": [
+      "I4",
+      "00",
+      "cc"
+     ],
+     "only_by_import": false
+    },
+    {
+     "a": "ima",
+     "b": "coh",
+     "source": "QRT:SS14 (strict)",
+     "witnessed": true,
+     "by": [
+      "p0",
+      "bell",
+      "w20"
+     ],
+     "only_by_import": false
+    },
+    {
+     "a": "ste",
+     "b": "ent",
+     "source": "QRT:SS16 (strict)",
+     "witnessed": true,
+     "by": [
+      "w40"
+     ],
+     "only_by_import": true
+    },
+    {
+     "a": "nlo",
+     "b": "ste",
+     "source": "QRT:SS17 (strict)",
+     "witnessed": true,
+     "by": [
+      "w60"
+     ],
+     "only_by_import": true
+    },
+    {
+     "a": "mag",
+     "b": "ent",
+     "source": "QRT:SS13",
+     "witnessed": true,
+     "by": [
+      "bell",
+      "w40",
+      "w60"
+     ],
+     "only_by_import": false
+    },
+    {
+     "a": "ent",
+     "b": "mag",
+     "source": "QRT:SS13",
+     "witnessed": true,
+     "by": [
+      "T0",
+      "gibbsT"
+     ],
+     "only_by_import": false
+    },
+    {
+     "a": "ent",
+     "b": "dis",
+     "source": "GPT:S7 (strict)",
+     "witnessed": true,
+     "by": [
+      "w20",
+      "ccdis"
+     ],
+     "only_by_import": false
+    },
+    {
+     "a": "coh",
+     "b": "mag",
+     "source": "QRT:SS3 (thermal magic: energy-incoherent yet magic)",
+     "witnessed": true,
+     "by": [
+      "gibbsT"
+     ],
+     "only_by_import": false
+    }
+   ]
+  },
+  {
+   "round": 1,
+   "n_objects": 15,
+   "levels": [
+    {
+     "level": "QRT",
+     "counts": {
+      "refuted": 57,
+      "recorded": 14,
+      "candidate": 7,
+      "transitive": 12
+     },
+     "contradictions": [],
+     "candidates": [
+      {
+       "a": "pur",
+       "b": "dis",
+       "support": 1
+      },
+      {
+       "a": "ath",
+       "b": "dis",
+       "support": 2
+      },
+      {
+       "a": "asy",
+       "b": "dis",
+       "support": 5
+      },
+      {
+       "a": "coh",
+       "b": "dis",
+       "support": 5
+      },
+      {
+       "a": "dis",
+       "b": "ent",
+       "support": 9
+      },
+      {
+       "a": "dis",
+       "b": "ste",
+       "support": 9
+      },
+      {
+       "a": "dis",
+       "b": "nlo",
+       "support": 9
+      }
+     ],
+     "implications": [
+      {
+       "a": "pur",
+       "b": "ath",
+       "support": 1,
+       "refuted_by": [
+        "I4"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "pur",
+       "b": "asy",
+       "support": 1,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS2"
+      },
+      {
+       "a": "pur",
+       "b": "coh",
+       "support": 1,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS2"
+      },
+      {
+       "a": "pur",
+       "b": "ima",
+       "support": 1,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS2"
+      },
+      {
+       "a": "pur",
+       "b": "mag",
+       "support": 1,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS2"
+      },
+      {
+       "a": "pur",
+       "b": "dis",
+       "support": 1,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "candidate",
+       "source": null
+      },
+      {
+       "a": "pur",
+       "b": "ent",
+       "support": 1,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS2"
+      },
+      {
+       "a": "pur",
+       "b": "ste",
+       "support": 1,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "pur",
+       "b": "nlo",
+       "support": 1,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "ath",
+       "b": "pur",
+       "support": 2,
+       "refuted_by": [
+        "gibbs",
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ath",
+       "b": "asy",
+       "support": 2,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS3b"
+      },
+      {
+       "a": "ath",
+       "b": "coh",
+       "support": 2,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS12"
+      },
+      {
+       "a": "ath",
+       "b": "ima",
+       "support": 2,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS3b"
+      },
+      {
+       "a": "ath",
+       "b": "mag",
+       "support": 2,
+       "refuted_by": [
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ath",
+       "b": "dis",
+       "support": 2,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "candidate",
+       "source": null
+      },
+      {
+       "a": "ath",
+       "b": "ent",
+       "support": 2,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "ath",
+       "b": "ste",
+       "support": 2,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "ath",
+       "b": "nlo",
+       "support": 2,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "asy",
+       "b": "pur",
+       "support": 5,
+       "refuted_by": [
+        "00",
+        "gibbs",
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "asy",
+       "b": "ath",
+       "support": 5,
+       "refuted_by": [
+        "I4",
+        "00",
+        "cc"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "asy",
+       "b": "coh",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS18"
+      },
+      {
+       "a": "asy",
+       "b": "ima",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "asy",
+       "b": "mag",
+       "support": 5,
+       "refuted_by": [
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "asy",
+       "b": "dis",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "candidate",
+       "source": null
+      },
+      {
+       "a": "asy",
+       "b": "ent",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "asy",
+       "b": "ste",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "asy",
+       "b": "nlo",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "coh",
+       "b": "pur",
+       "support": 5,
+       "refuted_by": [
+        "00",
+        "gibbs",
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "coh",
+       "b": "ath",
+       "support": 5,
+       "refuted_by": [
+        "I4",
+        "00",
+        "cc"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "coh",
+       "b": "asy",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS18"
+      },
+      {
+       "a": "coh",
+       "b": "ima",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS14"
+      },
+      {
+       "a": "coh",
+       "b": "mag",
+       "support": 5,
+       "refuted_by": [
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "coh",
+       "b": "dis",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "candidate",
+       "source": null
+      },
+      {
+       "a": "coh",
+       "b": "ent",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS1"
+      },
+      {
+       "a": "coh",
+       "b": "ste",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "coh",
+       "b": "nlo",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "pur",
+       "support": 13,
+       "refuted_by": [
+        "00",
+        "p0",
+        "gibbs"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "ath",
+       "support": 13,
+       "refuted_by": [
+        "I4",
+        "00",
+        "p0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "asy",
+       "support": 13,
+       "refuted_by": [
+        "p0",
+        "bell",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "coh",
+       "support": 13,
+       "refuted_by": [
+        "p0",
+        "bell",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "mag",
+       "support": 13,
+       "refuted_by": [
+        "gibbsT",
+        "H0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "dis",
+       "support": 13,
+       "refuted_by": [
+        "bell",
+        "w20",
+        "w40"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "ent",
+       "support": 13,
+       "refuted_by": [
+        "bell",
+        "w40",
+        "w60"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "ste",
+       "support": 13,
+       "refuted_by": [
+        "bell",
+        "w60",
+        "w90"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "nlo",
+       "support": 13,
+       "refuted_by": [
+        "bell",
+        "w90"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "pur",
+       "support": 12,
+       "refuted_by": [
+        "00",
+        "p0",
+        "gibbs"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "ath",
+       "support": 12,
+       "refuted_by": [
+        "I4",
+        "00",
+        "p0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "asy",
+       "support": 12,
+       "refuted_by": [
+        "p0",
+        "bell",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "coh",
+       "support": 12,
+       "refuted_by": [
+        "p0",
+        "bell",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "ima",
+       "support": 12,
+       "refuted_by": [
+        "pi0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "dis",
+       "support": 12,
+       "refuted_by": [
+        "bell",
+        "w20",
+        "w40"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "ent",
+       "support": 12,
+       "refuted_by": [
+        "bell",
+        "w40",
+        "w60"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "ste",
+       "support": 12,
+       "refuted_by": [
+        "bell",
+        "w60",
+        "w90"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "nlo",
+       "support": 12,
+       "refuted_by": [
+        "bell",
+        "w90"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "dis",
+       "b": "pur",
+       "support": 9,
+       "refuted_by": [
+        "00",
+        "p0",
+        "T0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "dis",
+       "b": "ath",
+       "support": 9,
+       "refuted_by": [
+        "I4",
+        "00",
+        "p0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "dis",
+       "b": "asy",
+       "support": 9,
+       "refuted_by": [
+        "p0",
+        "T0",
+        "pi0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "dis",
+       "b": "coh",
+       "support": 9,
+       "refuted_by": [
+        "p0",
+        "T0",
+        "pi0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "dis",
+       "b": "ima",
+       "support": 9,
+       "refuted_by": [
+        "T0",
+        "pi0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "dis",
+       "b": "mag",
+       "support": 9,
+       "refuted_by": [
+        "T0",
+        "gibbsT",
+        "H0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "dis",
+       "b": "ent",
+       "support": 9,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "candidate",
+       "source": null
+      },
+      {
+       "a": "dis",
+       "b": "ste",
+       "support": 9,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "candidate",
+       "source": null
+      },
+      {
+       "a": "dis",
+       "b": "nlo",
+       "support": 9,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "candidate",
+       "source": null
+      },
+      {
+       "a": "ent",
+       "b": "pur",
+       "support": 11,
+       "refuted_by": [
+        "00",
+        "p0",
+        "T0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ent",
+       "b": "ath",
+       "support": 11,
+       "refuted_by": [
+        "I4",
+        "00",
+        "p0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ent",
+       "b": "asy",
+       "support": 11,
+       "refuted_by": [
+        "p0",
+        "T0",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ent",
+       "b": "coh",
+       "support": 11,
+       "refuted_by": [
+        "p0",
+        "T0",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ent",
+       "b": "ima",
+       "support": 11,
+       "refuted_by": [
+        "T0",
+        "pi0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ent",
+       "b": "mag",
+       "support": 11,
+       "refuted_by": [
+        "T0",
+        "gibbsT",
+        "H0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ent",
+       "b": "dis",
+       "support": 11,
+       "refuted_by": [
+        "w20",
+        "ccdis"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ent",
+       "b": "ste",
+       "support": 11,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS16"
+      },
+      {
+       "a": "ent",
+       "b": "nlo",
+       "support": 11,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "pur",
+       "support": 12,
+       "refuted_by": [
+        "00",
+        "p0",
+        "T0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "ath",
+       "support": 12,
+       "refuted_by": [
+        "I4",
+        "00",
+        "p0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "asy",
+       "support": 12,
+       "refuted_by": [
+        "p0",
+        "T0",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "coh",
+       "support": 12,
+       "refuted_by": [
+        "p0",
+        "T0",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "ima",
+       "support": 12,
+       "refuted_by": [
+        "T0",
+        "pi0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "mag",
+       "support": 12,
+       "refuted_by": [
+        "T0",
+        "gibbsT",
+        "H0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "dis",
+       "support": 12,
+       "refuted_by": [
+        "w20",
+        "w40",
+        "ccdis"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "ent",
+       "support": 12,
+       "refuted_by": [
+        "w40"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": true,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "nlo",
+       "support": 12,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS17"
+      },
+      {
+       "a": "nlo",
+       "b": "pur",
+       "support": 13,
+       "refuted_by": [
+        "00",
+        "p0",
+        "T0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "nlo",
+       "b": "ath",
+       "support": 13,
+       "refuted_by": [
+        "I4",
+        "00",
+        "p0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "nlo",
+       "b": "asy",
+       "support": 13,
+       "refuted_by": [
+        "p0",
+        "T0",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "nlo",
+       "b": "coh",
+       "support": 13,
+       "refuted_by": [
+        "p0",
+        "T0",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "nlo",
+       "b": "ima",
+       "support": 13,
+       "refuted_by": [
+        "T0",
+        "pi0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "nlo",
+       "b": "mag",
+       "support": 13,
+       "refuted_by": [
+        "T0",
+        "gibbsT",
+        "H0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "nlo",
+       "b": "dis",
+       "support": 13,
+       "refuted_by": [
+        "w20",
+        "w40",
+        "w60"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "nlo",
+       "b": "ent",
+       "support": 13,
+       "refuted_by": [
+        "w40",
+        "w60"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": true,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "nlo",
+       "b": "ste",
+       "support": 13,
+       "refuted_by": [
+        "w60"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": true,
+       "kind": "refuted",
+       "source": null
+      }
+     ]
+    },
+    {
+     "level": "QRT+GPT",
+     "counts": {
+      "refuted": 57,
+      "recorded": 15,
+      "candidate": 4,
+      "transitive": 14
+     },
+     "contradictions": [],
+     "candidates": [
+      {
+       "a": "pur",
+       "b": "dis",
+       "support": 1
+      },
+      {
+       "a": "ath",
+       "b": "dis",
+       "support": 2
+      },
+      {
+       "a": "asy",
+       "b": "dis",
+       "support": 5
+      },
+      {
+       "a": "coh",
+       "b": "dis",
+       "support": 5
+      }
+     ],
+     "implications": [
+      {
+       "a": "pur",
+       "b": "ath",
+       "support": 1,
+       "refuted_by": [
+        "I4"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "pur",
+       "b": "asy",
+       "support": 1,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS2"
+      },
+      {
+       "a": "pur",
+       "b": "coh",
+       "support": 1,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS2"
+      },
+      {
+       "a": "pur",
+       "b": "ima",
+       "support": 1,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS2"
+      },
+      {
+       "a": "pur",
+       "b": "mag",
+       "support": 1,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS2"
+      },
+      {
+       "a": "pur",
+       "b": "dis",
+       "support": 1,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "candidate",
+       "source": null
+      },
+      {
+       "a": "pur",
+       "b": "ent",
+       "support": 1,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS2"
+      },
+      {
+       "a": "pur",
+       "b": "ste",
+       "support": 1,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "pur",
+       "b": "nlo",
+       "support": 1,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "ath",
+       "b": "pur",
+       "support": 2,
+       "refuted_by": [
+        "gibbs",
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ath",
+       "b": "asy",
+       "support": 2,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS3b"
+      },
+      {
+       "a": "ath",
+       "b": "coh",
+       "support": 2,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS12"
+      },
+      {
+       "a": "ath",
+       "b": "ima",
+       "support": 2,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS3b"
+      },
+      {
+       "a": "ath",
+       "b": "mag",
+       "support": 2,
+       "refuted_by": [
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ath",
+       "b": "dis",
+       "support": 2,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "candidate",
+       "source": null
+      },
+      {
+       "a": "ath",
+       "b": "ent",
+       "support": 2,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "ath",
+       "b": "ste",
+       "support": 2,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "ath",
+       "b": "nlo",
+       "support": 2,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "asy",
+       "b": "pur",
+       "support": 5,
+       "refuted_by": [
+        "00",
+        "gibbs",
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "asy",
+       "b": "ath",
+       "support": 5,
+       "refuted_by": [
+        "I4",
+        "00",
+        "cc"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "asy",
+       "b": "coh",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS18"
+      },
+      {
+       "a": "asy",
+       "b": "ima",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "asy",
+       "b": "mag",
+       "support": 5,
+       "refuted_by": [
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "asy",
+       "b": "dis",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "candidate",
+       "source": null
+      },
+      {
+       "a": "asy",
+       "b": "ent",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "asy",
+       "b": "ste",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "asy",
+       "b": "nlo",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "coh",
+       "b": "pur",
+       "support": 5,
+       "refuted_by": [
+        "00",
+        "gibbs",
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "coh",
+       "b": "ath",
+       "support": 5,
+       "refuted_by": [
+        "I4",
+        "00",
+        "cc"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "coh",
+       "b": "asy",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS18"
+      },
+      {
+       "a": "coh",
+       "b": "ima",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS14"
+      },
+      {
+       "a": "coh",
+       "b": "mag",
+       "support": 5,
+       "refuted_by": [
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "coh",
+       "b": "dis",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "candidate",
+       "source": null
+      },
+      {
+       "a": "coh",
+       "b": "ent",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS1"
+      },
+      {
+       "a": "coh",
+       "b": "ste",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "coh",
+       "b": "nlo",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "pur",
+       "support": 13,
+       "refuted_by": [
+        "00",
+        "p0",
+        "gibbs"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "ath",
+       "support": 13,
+       "refuted_by": [
+        "I4",
+        "00",
+        "p0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "asy",
+       "support": 13,
+       "refuted_by": [
+        "p0",
+        "bell",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "coh",
+       "support": 13,
+       "refuted_by": [
+        "p0",
+        "bell",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "mag",
+       "support": 13,
+       "refuted_by": [
+        "gibbsT",
+        "H0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "dis",
+       "support": 13,
+       "refuted_by": [
+        "bell",
+        "w20",
+        "w40"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "ent",
+       "support": 13,
+       "refuted_by": [
+        "bell",
+        "w40",
+        "w60"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "ste",
+       "support": 13,
+       "refuted_by": [
+        "bell",
+        "w60",
+        "w90"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "nlo",
+       "support": 13,
+       "refuted_by": [
+        "bell",
+        "w90"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "pur",
+       "support": 12,
+       "refuted_by": [
+        "00",
+        "p0",
+        "gibbs"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "ath",
+       "support": 12,
+       "refuted_by": [
+        "I4",
+        "00",
+        "p0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "asy",
+       "support": 12,
+       "refuted_by": [
+        "p0",
+        "bell",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "coh",
+       "support": 12,
+       "refuted_by": [
+        "p0",
+        "bell",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "ima",
+       "support": 12,
+       "refuted_by": [
+        "pi0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "dis",
+       "support": 12,
+       "refuted_by": [
+        "bell",
+        "w20",
+        "w40"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "ent",
+       "support": 12,
+       "refuted_by": [
+        "bell",
+        "w40",
+        "w60"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "ste",
+       "support": 12,
+       "refuted_by": [
+        "bell",
+        "w60",
+        "w90"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "nlo",
+       "support": 12,
+       "refuted_by": [
+        "bell",
+        "w90"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "dis",
+       "b": "pur",
+       "support": 9,
+       "refuted_by": [
+        "00",
+        "p0",
+        "T0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "dis",
+       "b": "ath",
+       "support": 9,
+       "refuted_by": [
+        "I4",
+        "00",
+        "p0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "dis",
+       "b": "asy",
+       "support": 9,
+       "refuted_by": [
+        "p0",
+        "T0",
+        "pi0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "dis",
+       "b": "coh",
+       "support": 9,
+       "refuted_by": [
+        "p0",
+        "T0",
+        "pi0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "dis",
+       "b": "ima",
+       "support": 9,
+       "refuted_by": [
+        "T0",
+        "pi0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "dis",
+       "b": "mag",
+       "support": 9,
+       "refuted_by": [
+        "T0",
+        "gibbsT",
+        "H0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "dis",
+       "b": "ent",
+       "support": 9,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "GPT:S7 (zero-discord states are separable), through the glue of the two networks"
+      },
+      {
+       "a": "dis",
+       "b": "ste",
+       "support": 9,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "dis",
+       "b": "nlo",
+       "support": 9,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "ent",
+       "b": "pur",
+       "support": 11,
+       "refuted_by": [
+        "00",
+        "p0",
+        "T0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ent",
+       "b": "ath",
+       "support": 11,
+       "refuted_by": [
+        "I4",
+        "00",
+        "p0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ent",
+       "b": "asy",
+       "support": 11,
+       "refuted_by": [
+        "p0",
+        "T0",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ent",
+       "b": "coh",
+       "support": 11,
+       "refuted_by": [
+        "p0",
+        "T0",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ent",
+       "b": "ima",
+       "support": 11,
+       "refuted_by": [
+        "T0",
+        "pi0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ent",
+       "b": "mag",
+       "support": 11,
+       "refuted_by": [
+        "T0",
+        "gibbsT",
+        "H0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ent",
+       "b": "dis",
+       "support": 11,
+       "refuted_by": [
+        "w20",
+        "ccdis"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ent",
+       "b": "ste",
+       "support": 11,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS16"
+      },
+      {
+       "a": "ent",
+       "b": "nlo",
+       "support": 11,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "pur",
+       "support": 12,
+       "refuted_by": [
+        "00",
+        "p0",
+        "T0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "ath",
+       "support": 12,
+       "refuted_by": [
+        "I4",
+        "00",
+        "p0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "asy",
+       "support": 12,
+       "refuted_by": [
+        "p0",
+        "T0",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "coh",
+       "support": 12,
+       "refuted_by": [
+        "p0",
+        "T0",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "ima",
+       "support": 12,
+       "refuted_by": [
+        "T0",
+        "pi0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "mag",
+       "support": 12,
+       "refuted_by": [
+        "T0",
+        "gibbsT",
+        "H0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "dis",
+       "support": 12,
+       "refuted_by": [
+        "w20",
+        "w40",
+        "ccdis"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "ent",
+       "support": 12,
+       "refuted_by": [
+        "w40"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": true,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "nlo",
+       "support": 12,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS17"
+      },
+      {
+       "a": "nlo",
+       "b": "pur",
+       "support": 13,
+       "refuted_by": [
+        "00",
+        "p0",
+        "T0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "nlo",
+       "b": "ath",
+       "support": 13,
+       "refuted_by": [
+        "I4",
+        "00",
+        "p0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "nlo",
+       "b": "asy",
+       "support": 13,
+       "refuted_by": [
+        "p0",
+        "T0",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "nlo",
+       "b": "coh",
+       "support": 13,
+       "refuted_by": [
+        "p0",
+        "T0",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "nlo",
+       "b": "ima",
+       "support": 13,
+       "refuted_by": [
+        "T0",
+        "pi0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "nlo",
+       "b": "mag",
+       "support": 13,
+       "refuted_by": [
+        "T0",
+        "gibbsT",
+        "H0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "nlo",
+       "b": "dis",
+       "support": 13,
+       "refuted_by": [
+        "w20",
+        "w40",
+        "w60"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "nlo",
+       "b": "ent",
+       "support": 13,
+       "refuted_by": [
+        "w40",
+        "w60"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": true,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "nlo",
+       "b": "ste",
+       "support": 13,
+       "refuted_by": [
+        "w60"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": true,
+       "kind": "refuted",
+       "source": null
+      }
+     ]
+    },
+    {
+     "level": "QRT+GPT+R1",
+     "counts": {
+      "refuted": 57,
+      "recorded": 16,
+      "transitive": 17
+     },
+     "contradictions": [],
+     "candidates": [],
+     "implications": [
+      {
+       "a": "pur",
+       "b": "ath",
+       "support": 1,
+       "refuted_by": [
+        "I4"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "pur",
+       "b": "asy",
+       "support": 1,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS2"
+      },
+      {
+       "a": "pur",
+       "b": "coh",
+       "support": 1,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS2"
+      },
+      {
+       "a": "pur",
+       "b": "ima",
+       "support": 1,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS2"
+      },
+      {
+       "a": "pur",
+       "b": "mag",
+       "support": 1,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS2"
+      },
+      {
+       "a": "pur",
+       "b": "dis",
+       "support": 1,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "pur",
+       "b": "ent",
+       "support": 1,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS2"
+      },
+      {
+       "a": "pur",
+       "b": "ste",
+       "support": 1,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "pur",
+       "b": "nlo",
+       "support": 1,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "ath",
+       "b": "pur",
+       "support": 2,
+       "refuted_by": [
+        "gibbs",
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ath",
+       "b": "asy",
+       "support": 2,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS3b"
+      },
+      {
+       "a": "ath",
+       "b": "coh",
+       "support": 2,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS12"
+      },
+      {
+       "a": "ath",
+       "b": "ima",
+       "support": 2,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS3b"
+      },
+      {
+       "a": "ath",
+       "b": "mag",
+       "support": 2,
+       "refuted_by": [
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ath",
+       "b": "dis",
+       "support": 2,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "ath",
+       "b": "ent",
+       "support": 2,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "ath",
+       "b": "ste",
+       "support": 2,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "ath",
+       "b": "nlo",
+       "support": 2,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "asy",
+       "b": "pur",
+       "support": 5,
+       "refuted_by": [
+        "00",
+        "gibbs",
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "asy",
+       "b": "ath",
+       "support": 5,
+       "refuted_by": [
+        "I4",
+        "00",
+        "cc"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "asy",
+       "b": "coh",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS18"
+      },
+      {
+       "a": "asy",
+       "b": "ima",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "asy",
+       "b": "mag",
+       "support": 5,
+       "refuted_by": [
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "asy",
+       "b": "dis",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "GPT:R1 (derived in the project: nondegenerate noninteracting H, symmetric states are classical-classical)"
+      },
+      {
+       "a": "asy",
+       "b": "ent",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "asy",
+       "b": "ste",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "asy",
+       "b": "nlo",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "coh",
+       "b": "pur",
+       "support": 5,
+       "refuted_by": [
+        "00",
+        "gibbs",
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "coh",
+       "b": "ath",
+       "support": 5,
+       "refuted_by": [
+        "I4",
+        "00",
+        "cc"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "coh",
+       "b": "asy",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS18"
+      },
+      {
+       "a": "coh",
+       "b": "ima",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS14"
+      },
+      {
+       "a": "coh",
+       "b": "mag",
+       "support": 5,
+       "refuted_by": [
+        "gibbsT"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "coh",
+       "b": "dis",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "coh",
+       "b": "ent",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS1"
+      },
+      {
+       "a": "coh",
+       "b": "ste",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "coh",
+       "b": "nlo",
+       "support": 5,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "pur",
+       "support": 13,
+       "refuted_by": [
+        "00",
+        "p0",
+        "gibbs"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "ath",
+       "support": 13,
+       "refuted_by": [
+        "I4",
+        "00",
+        "p0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "asy",
+       "support": 13,
+       "refuted_by": [
+        "p0",
+        "bell",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "coh",
+       "support": 13,
+       "refuted_by": [
+        "p0",
+        "bell",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "mag",
+       "support": 13,
+       "refuted_by": [
+        "gibbsT",
+        "H0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "dis",
+       "support": 13,
+       "refuted_by": [
+        "bell",
+        "w20",
+        "w40"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "ent",
+       "support": 13,
+       "refuted_by": [
+        "bell",
+        "w40",
+        "w60"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "ste",
+       "support": 13,
+       "refuted_by": [
+        "bell",
+        "w60",
+        "w90"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ima",
+       "b": "nlo",
+       "support": 13,
+       "refuted_by": [
+        "bell",
+        "w90"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "pur",
+       "support": 12,
+       "refuted_by": [
+        "00",
+        "p0",
+        "gibbs"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "ath",
+       "support": 12,
+       "refuted_by": [
+        "I4",
+        "00",
+        "p0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "asy",
+       "support": 12,
+       "refuted_by": [
+        "p0",
+        "bell",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "coh",
+       "support": 12,
+       "refuted_by": [
+        "p0",
+        "bell",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "ima",
+       "support": 12,
+       "refuted_by": [
+        "pi0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "dis",
+       "support": 12,
+       "refuted_by": [
+        "bell",
+        "w20",
+        "w40"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "ent",
+       "support": 12,
+       "refuted_by": [
+        "bell",
+        "w40",
+        "w60"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "ste",
+       "support": 12,
+       "refuted_by": [
+        "bell",
+        "w60",
+        "w90"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "mag",
+       "b": "nlo",
+       "support": 12,
+       "refuted_by": [
+        "bell",
+        "w90"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "dis",
+       "b": "pur",
+       "support": 9,
+       "refuted_by": [
+        "00",
+        "p0",
+        "T0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "dis",
+       "b": "ath",
+       "support": 9,
+       "refuted_by": [
+        "I4",
+        "00",
+        "p0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "dis",
+       "b": "asy",
+       "support": 9,
+       "refuted_by": [
+        "p0",
+        "T0",
+        "pi0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "dis",
+       "b": "coh",
+       "support": 9,
+       "refuted_by": [
+        "p0",
+        "T0",
+        "pi0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "dis",
+       "b": "ima",
+       "support": 9,
+       "refuted_by": [
+        "T0",
+        "pi0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "dis",
+       "b": "mag",
+       "support": 9,
+       "refuted_by": [
+        "T0",
+        "gibbsT",
+        "H0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "dis",
+       "b": "ent",
+       "support": 9,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "GPT:S7 (zero-discord states are separable), through the glue of the two networks"
+      },
+      {
+       "a": "dis",
+       "b": "ste",
+       "support": 9,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "dis",
+       "b": "nlo",
+       "support": 9,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "ent",
+       "b": "pur",
+       "support": 11,
+       "refuted_by": [
+        "00",
+        "p0",
+        "T0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ent",
+       "b": "ath",
+       "support": 11,
+       "refuted_by": [
+        "I4",
+        "00",
+        "p0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ent",
+       "b": "asy",
+       "support": 11,
+       "refuted_by": [
+        "p0",
+        "T0",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ent",
+       "b": "coh",
+       "support": 11,
+       "refuted_by": [
+        "p0",
+        "T0",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ent",
+       "b": "ima",
+       "support": 11,
+       "refuted_by": [
+        "T0",
+        "pi0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ent",
+       "b": "mag",
+       "support": 11,
+       "refuted_by": [
+        "T0",
+        "gibbsT",
+        "H0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ent",
+       "b": "dis",
+       "support": 11,
+       "refuted_by": [
+        "w20",
+        "ccdis"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ent",
+       "b": "ste",
+       "support": 11,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS16"
+      },
+      {
+       "a": "ent",
+       "b": "nlo",
+       "support": 11,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "transitive",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "pur",
+       "support": 12,
+       "refuted_by": [
+        "00",
+        "p0",
+        "T0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "ath",
+       "support": 12,
+       "refuted_by": [
+        "I4",
+        "00",
+        "p0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "asy",
+       "support": 12,
+       "refuted_by": [
+        "p0",
+        "T0",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "coh",
+       "support": 12,
+       "refuted_by": [
+        "p0",
+        "T0",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "ima",
+       "support": 12,
+       "refuted_by": [
+        "T0",
+        "pi0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "mag",
+       "support": 12,
+       "refuted_by": [
+        "T0",
+        "gibbsT",
+        "H0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "dis",
+       "support": 12,
+       "refuted_by": [
+        "w20",
+        "w40",
+        "ccdis"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "ent",
+       "support": 12,
+       "refuted_by": [
+        "w40"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": true,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "ste",
+       "b": "nlo",
+       "support": 12,
+       "refuted_by": [],
+       "unknown": [],
+       "refuted": false,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "recorded",
+       "source": "QRT:SS17"
+      },
+      {
+       "a": "nlo",
+       "b": "pur",
+       "support": 13,
+       "refuted_by": [
+        "00",
+        "p0",
+        "T0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "nlo",
+       "b": "ath",
+       "support": 13,
+       "refuted_by": [
+        "I4",
+        "00",
+        "p0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "nlo",
+       "b": "asy",
+       "support": 13,
+       "refuted_by": [
+        "p0",
+        "T0",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "nlo",
+       "b": "coh",
+       "support": 13,
+       "refuted_by": [
+        "p0",
+        "T0",
+        "w20"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "nlo",
+       "b": "ima",
+       "support": 13,
+       "refuted_by": [
+        "T0",
+        "pi0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "nlo",
+       "b": "mag",
+       "support": 13,
+       "refuted_by": [
+        "T0",
+        "gibbsT",
+        "H0"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "nlo",
+       "b": "dis",
+       "support": 13,
+       "refuted_by": [
+        "w20",
+        "w40",
+        "w60"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": false,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "nlo",
+       "b": "ent",
+       "support": 13,
+       "refuted_by": [
+        "w40",
+        "w60"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": true,
+       "kind": "refuted",
+       "source": null
+      },
+      {
+       "a": "nlo",
+       "b": "ste",
+       "support": 13,
+       "refuted_by": [
+        "w60"
+       ],
+       "unknown": [],
+       "refuted": true,
+       "vacuous": false,
+       "refuted_only_by_import": true,
+       "kind": "refuted",
+       "source": null
+      }
+     ]
+    }
+   ],
+   "strict": [
+    {
+     "a": "ent",
+     "b": "coh",
+     "source": "QRT:SS1 (strict)",
+     "witnessed": true,
+     "by": [
+      "p0",
+      "T0",
+      "w20"
+     ],
+     "only_by_import": false
+    },
+    {
+     "a": "coh",
+     "b": "ath",
+     "source": "QRT:SS12 (the Gibbs state is one incoherent state)",
+     "witnessed": true,
+     "by": [
+      "I4",
+      "00",
+      "cc"
+     ],
+     "only_by_import": false
+    },
+    {
+     "a": "ima",
+     "b": "coh",
+     "source": "QRT:SS14 (strict)",
+     "witnessed": true,
+     "by": [
+      "p0",
+      "bell",
+      "w20"
+     ],
+     "only_by_import": false
+    },
+    {
+     "a": "ste",
+     "b": "ent",
+     "source": "QRT:SS16 (strict)",
+     "witnessed": true,
+     "by": [
+      "w40"
+     ],
+     "only_by_import": true
+    },
+    {
+     "a": "nlo",
+     "b": "ste",
+     "source": "QRT:SS17 (strict)",
+     "witnessed": true,
+     "by": [
+      "w60"
+     ],
+     "only_by_import": true
+    },
+    {
+     "a": "mag",
+     "b": "ent",
+     "source": "QRT:SS13",
+     "witnessed": true,
+     "by": [
+      "bell",
+      "w40",
+      "w60"
+     ],
+     "only_by_import": false
+    },
+    {
+     "a": "ent",
+     "b": "mag",
+     "source": "QRT:SS13",
+     "witnessed": true,
+     "by": [
+      "T0",
+      "gibbsT",
+      "H0"
+     ],
+     "only_by_import": false
+    },
+    {
+     "a": "ent",
+     "b": "dis",
+     "source": "GPT:S7 (strict)",
+     "witnessed": true,
+     "by": [
+      "w20",
+      "ccdis"
+     ],
+     "only_by_import": false
+    },
+    {
+     "a": "coh",
+     "b": "mag",
+     "source": "QRT:SS3 (thermal magic: energy-incoherent yet magic)",
+     "witnessed": true,
+     "by": [
+      "gibbsT"
+     ],
+     "only_by_import": false
+    }
+   ]
+  }
+ ],
+ "crosscheck": {
+  "agree": 125,
+  "disagree": [],
+  "unknown": 0,
+  "compared": 125,
+  "facts": 112
+ }
+}
